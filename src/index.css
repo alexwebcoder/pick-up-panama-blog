@@ -3,7 +3,7 @@
 /* base styles */
 * {
   margin: 0;
-  font-family: "Quicksand";
+  font-family: "Arial";
   color: #333;
 }
 .navbar {
@@ -13,9 +13,12 @@
   max-width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  background-color: #00356B;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: #F9FAF8;
+  font-size: 36px;
+  font-weight: bolder;
 }
 .navbar .links {
   margin-left: auto;
@@ -24,9 +27,10 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: #F9FAF8;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #3882f6;
 }
 .content {
   max-width: 600px;
