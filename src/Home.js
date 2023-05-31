@@ -1,31 +1,21 @@
 import { useState } from "react";
 
 const Home = () => {
-    
-    const [name, setName] = useState('Coronado');
+    const [blogs, setBlogs] = useState([
+        { title: 'My new website', body: 'lorem ipusm...', author: 'mario', id: 1 },
+        { title: 'Welcome party!', body: 'lorem ipusm...', author: 'yoshi', id: 2 },
+        { title: 'Web dev top tips', body: 'lorem ipusm...', author: 'mario', id: 3 }
+    ]);
 
-    const handleClick = (e) => {
-        setName('Colon');
-    }
-
-    
-    const [message, setMessage] = useState('');
-
-     const [color, setColor] = useState('red');
-     
     return ( 
         <div className="home">
-            <h2>Homepage</h2>
-            <p>{name}</p>
-            <p>{message}</p>
-            <p>`My favorite color is {color}`</p>
-            <button onClick={handleClick}>Click Me</button>
-            <button onClick={ () => setColor('Green')}>Green</button>
-            
-            <input type="text" 
-            value={message} 
-            placeholder="Enter a message" 
-            onChange={e => setMessage(e.target.value)} />
+          {blogs.map((blog) => (
+            <div className="blog-preview">
+              <h2>{ blog.title }</h2>
+              <p>Written by: { blog.author }</p>
+            </div>
+          
+          ))}
         </div>
      );
 }
