@@ -22,15 +22,14 @@ const Home = () => {
             })
             .then((data) => {
               setBlogs(data);
-              setIsPending(false);
               setError(null); //if it is successfull, we set this back the initial state.
             })
             //catch statement defines a block of code to run if an error is thrown.
             .catch(err => {
               setError(err.message);
-              setIsPending(false);
               setBlogs(null);  //prevents error message and blogs from showing up at same time
-            });
+            })
+             .finally(() => setIsPending(false));
             
       }, []);
 
