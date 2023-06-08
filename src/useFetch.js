@@ -11,7 +11,11 @@ const useFetch = (url) => {
     //runs after every render, but a dependency array limits the useEffect to running only on the first render
       //fetch the data as soon as the component renders
       useEffect(() => {
-        fetch(url)
+        //associate it with the fetch to abort the fetch
+        const abortControl = new AbortController();
+
+
+        fetch(url, {signal: abortControl.signal })
         //if there is an error, server will send an error back
           .then(res => {
             console.log(res); // this is the response object
@@ -31,6 +35,8 @@ const useFetch = (url) => {
             setData(null);  //prevents error message and blogs from showing up at same time
           })
            .finally(() => setIsPending(false));
+          //this will abort the fetch that it is associated with
+           return () => abortControl.abort();
           
     }, [url]);
 
