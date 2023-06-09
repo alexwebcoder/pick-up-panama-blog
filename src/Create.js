@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Create = () => {
     //two way data binding gives components in an app a way to share data. use two way binding to listen for events and update values simultaneously between parent and child components
@@ -8,6 +9,10 @@ const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('mario');
+    const [isPending, setIsPending] = useState(false);
+    const navigate = useNavigate();
+
+    //useNavigate is to redirect the user and also go back and forward. it gives you access to the navigate object that you can use to navigate the user
 
     const handleSubmit = (e) => {
         //this prevents the page from refreshing
@@ -15,7 +20,22 @@ const Create = () => {
       //a blog object is created on submit
       const blog = { title, body, author };
 
-      console.log(blog);
+      setIsPending(true);
+
+      //this makes a post request to the endpoint to add a new blog
+      fetch('http://localhost:8000/blogs', {
+        method: 'POST',
+        headers: { "Content-Type": "application/json"},
+        body: JSON.stringify(blog)
+      }).then(() => {
+        //since the fetch method is asyncronous and returns a promise, you can add a then method and pass in a callback to run after the blog is created
+        console.log('new blog added');
+         setIsPending(false);
+        //  navigate(-1); this will take the user back one page after the blog is created
+        //navigate.push will take the use to the home page
+        navigate('/');
+      });
+
     }
 
 
@@ -43,7 +63,7 @@ const Create = () => {
                     <option value="mario">mario</option>
                     <option value="yoshi">yoshi</option>
                  </select>
-                 <button>Add blog</button>
+                 { isPending ? <button disabled>Adding blog...</button> : <button>Add blog</button>}
             </form>
         </div>
     )
