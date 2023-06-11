@@ -15,15 +15,9 @@ function App() {
           <div className="content">
               <Routes>
                  <Route path='/' element={ <Home/> } />
-              </Routes>
-              <Routes>
                  <Route path='/create' element={ <Create/> } />
-              </Routes>
-              <Routes>
                  <Route path='/blogs/:id' element={ <BlogDetails/> } />
-              </Routes>
-              <Routes>
-                 <Route path='*' element={ <NotFound /> } />
+                 <Route path='/*' element={ <NotFound /> } />
               </Routes>
           </div>
        </div>
