@@ -8,7 +8,7 @@ const Create = () => {
 
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
-    const [author, setAuthor] = useState('mario');
+    const [author, setAuthor] = useState('Alex DeLeon');
     const [isPending, setIsPending] = useState(false);
     const navigate = useNavigate();
 
@@ -60,7 +60,7 @@ const Create = () => {
                    value={author}
                    onChange={(e)=> setAuthor(e.target.value)}
                  >
-                    <option value="mario">mario</option>
+                    <option value="Alex DeLeon">Alex DeLeon</option>
                     <option value="yoshi">yoshi</option>
                  </select>
                  { isPending ? <button disabled>Adding blog...</button> : <button>Add blog</button>}
