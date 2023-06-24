@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import useFetch from './useFetch';
+import useFetch from '../../useFetch';
 
 const BlogDetails = () => {
  //using the useParams hook to grab values (route params) from current url (route)
@@ -10,7 +10,7 @@ const BlogDetails = () => {
     const handleClick = () => {
       fetch('http://localhost:8000/blogs/' + blog.id, {
         method: 'DELETE'
-        //this is asyncronous and fire a function when complete
+        //this is asyncronous and fires a function when complete
       }).then (() => {
         navigate('/');
       })

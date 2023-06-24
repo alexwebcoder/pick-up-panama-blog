@@ -3,10 +3,11 @@ import Navbar from './components/Header/Navbar';
 import Home from './pages/Home/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Create from './pages/Create/Create';
-import BlogDetails from './BlogDetails';
+import BlogDetails from './pages/Home/BlogDetails';
 import NotFound from './pages/NotFound/NotFound';
-import SearchBar from './components/Searchbar/SearchBar';
+import SearchBar from './components/SearchBar/SearchBar';
 import SearchResults from './components/SearchResults/SearchResult';
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [results, setResults] = useState([]);
@@ -25,6 +26,7 @@ function App() {
                  <Route path='/*' element={ <NotFound /> } />
               </Routes>
           </div>
+          <Footer />
        </div>
     </Router>
   );
