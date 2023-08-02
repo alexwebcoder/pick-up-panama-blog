@@ -1,0 +1,595 @@
+/* mobile menu */
+
+nav {
+    height: 70px;
+  }
+  
+  .definition {
+    background: #fff;
+    padding: 0 0 4px 10px;
+    font-size: .875rem;
+    font-weight: 500;
+    letter-spacing: .09rem;
+    border-bottom: 1px solid #a1a1a1;
+  }
+  
+  .definition span {
+    letter-spacing: .037rem;
+  }
+  
+
+  .hamburger-container {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 21px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 7px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -8.5px) rotate(45deg);
+  }
+  
+  .logo {
+    padding: 4.5px 10px 4.5px 91px;
+    transition: background 0.3s;
+  }
+  
+  /* psudo-element to make the flag clickable */
+  
+  .logo a::before {
+    content: "";
+    top: 7px;
+    left: -81px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 87px;
+    height: 52px;
+    z-index: 1;
+  }
+  
+  /* nav progress bar */
+  
+  .header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    height: 91px;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .progress-bar {
+    height: 4px;
+    background: #1493f3;
+    width: 0;
+  }
+  
+  
+  /* sticky header styles */
+  
+  .header.is-sticky {
+    position: fixed;
+    padding: 0;
+    animation: slideDown 0.35s ease-out;
+    height: 65px;
+  }
+  
+  .header.is-sticky .definition {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .header.is-sticky .definition p {
+   position: relative;
+   top: -5px;
+   font-size: 0.8125rem;
+  }
+  
+  .header.header.is-sticky .logo {
+    padding-left: 72px;
+  }
+  
+  .header.header.is-sticky .item {
+    top: 16px;
+  }
+  
+  .header.header.is-sticky .logo a {
+    font-size: 1.125rem;
+    padding-top: 6.5px;
+    position: relative;
+    top: -3px;
+  }
+  
+  .header.header.is-sticky .menu li.logo a:focus::after {
+    left: -66px;
+    height: 45px;
+    width: 150px;
+  }
+  
+  .header.header.is-sticky .flag {
+    width: 58px;
+    height: 37px
+  }
+  
+  .header.header.is-sticky .panama-star {
+    width: 13px;
+  }
+  
+  .header.header.header.is-sticky nav {
+    height: 58px;
+  }
+  
+  .header.header.is-sticky .menu li:not(.logo, .toggle) a {
+    font-size: .875rem;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .flag {
+    position: absolute;
+    width: 79px;
+    height: 52px;
+    overflow: hidden;
+    top: 10px;
+    left: 10px;
+    border: .15rem solid #000;
+    transition: background 0.3s;
+  }
+  
+  .panama {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .panama > div {
+    display: grid;
+    place-items: center;
+  }
+  
+  .panama-star {
+    width: 19px;
+    aspect-ratio: 1;
+    background-color: #fff;
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+  }
+  
+  .red, .red-field {
+    background-color: #a91319;
+  }
+  
+  .blue, .blue-field {
+    background-color: #011e56;
+  }
+  
+  .menu {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* transition: 0.5s; */
+  }
+  
+  /* pseudo-element for logo to focus over flag */
+  .menu li.logo a:focus::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -84px;
+    outline: 5px auto Highlight;
+    outline: 5px auto -webkit-focus-ring-color;
+    height: 60px;
+    width: 193px;
+  }
+  
+  .sidenav {
+    height: auto;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 0;
+    z-index: 1;
+    top: 91px;
+    left: 0;
+    background-color:  #132257;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .sidenav  li {
+    list-style-type: none;
+    width: 100%;
+  }
+  
+  .sidenav a {
+    padding: 11px;
+    text-decoration: none;
+    font-size: .875rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: .03rem;
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+    color: #fff;
+    position: relative;
+    border-bottom: 1px solid #a1a1a1;
+    visibility: hidden;
+  }
+  
+  
+  .sidenav.active {
+    display: flex;
+    border-right: 1px solid #a1a1a1;
+    border-bottom: 1px solid #a1a1a1;
+    width: 189px;
+  }
+  
+  .sidenav.active a {
+    visibility: visible;
+  }
+  
+  .sidenav.active li a:focus { 
+    outline: none;
+  }
+  
+  .sidenav.active li a:focus::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;;
+    right: 0;  
+    outline: 5px auto Highlight;
+    outline: 5px auto -webkit-focus-ring-color;
+    height: 22px;
+    width: 74px;
+    margin: auto;
+  }
+  
+  .menu li.logo a:focus { 
+    outline: none;
+  }
+  
+   .menu li.toggle div.toggle-anchor:focus::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 4px;  
+    outline: 5px auto Highlight;
+    outline: 5px auto -webkit-focus-ring-color;
+    height: 33px;
+    width: 33px;
+    z-index: -1;
+  }
+  
+  .header.is-sticky .menu li.toggle div.toggle-anchor:focus::after {
+    top: 13px;
+  }
+  
+  .header.header.is-sticky .sidenav {
+    top: 74px;
+  }
+  
+  .header.header.is-sticky .definition {
+    border-bottom: 1px solid #a1a1a1;
+  }
+  
+  .menu li.toggle div:focus { 
+    outline: none;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 5px 5px;
+    white-space: nowrap;
+    font-weight: 500;
+    letter-spacing: .0rem;
+    transition: 0.3s;
+    font-size: 1rem;
+  }
+  
+  .menu li.logo a {
+    font-weight: 900;
+    font-size: 1.5rem;
+    position: relative;
+    top: -2px;
+  }
+  
+  .menu li.subitem a {
+    padding: 15px;
+  }
+  
+  .toggle {
+    font-size: 1.25rem;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
+  .item {
+    width: 100%;
+    display: none;
+  }
+  
+
+  @media all and (max-width: 285px) {
+
+    .header, .header.header.is-sticky {
+        height: 69px;
+      }
+  
+    .definition, .header.is-sticky .definition {
+        font-size: .72rem;
+        position: relative;
+        top: -20px;
+        /* background: none; */
+        padding-right: 25px;
+        padding-left: 6px;
+        padding-bottom: 9px;
+        z-index: -1;
+    }
+  
+    .header.is-sticky .definition {
+      padding-top: 18px;
+      top: -23px;
+    }
+  
+    .toggle, .header.header.is-sticky .toggle {
+      margin-top: -9px;
+      margin-right: 1px;
+    }
+  
+    .progress-container {
+      position: relative;
+      top: -20px;
+      height: 2px;
+    }
+  
+    .header.is-sticky .definition p {
+      position: relative;
+      top: 0;
+      white-space: nowrap;
+  }
+  
+  .definition p {
+    top: 3px;
+    position: relative;
+  }
+  
+    .header.header.is-sticky .progress-container {
+      top: -23px;
+    }
+  
+    .progress-bar, .header.header.is-sticky .progress-bar {
+      height: 2px;
+    }
+  
+    .flag, .header.header.is-sticky .flag {
+      width: 50px;
+      height: 36px;
+      left: 6px;
+    }
+  
+    .panama-star, .header.header.is-sticky .panama-star {
+      width: 13px;
+    }
+  
+    .logo, .header.header.is-sticky .logo {
+      padding-left: 56px;
+    }
+  
+   .menu li.logo a,  .header.header.is-sticky .logo  a {
+      font-size: 1rem;
+    }
+  
+    .menu li.logo a:focus::after {
+      left: -54px;
+      height: 43px;
+      width: 130px;
+    }
+  
+    .menu li.toggle div.toggle-anchor:focus::after {
+      top: 6px;
+      right: 7px;
+      height: 31px;
+      width: 30px;
+    }
+  
+    .header.is-sticky .menu li.toggle div.toggle-anchor:focus::after {
+      top: 7px;
+    }
+  
+  .sidenav.active {
+    top: 75px;
+    width: 115px;
+  }
+  
+  .header.header.is-sticky .sidenav {
+    top: 69px;
+  }
+  
+  
+  }
+
+  
+@media all and (max-width: 257px) {
+  
+
+    .definition span {
+      white-space: nowrap;
+    }
+  
+    .menu li.toggle div.toggle-anchor:focus::after,  .header.is-sticky .menu li.toggle div.toggle-anchor:focus::after  {
+      top: 8px;
+      height: 29px;
+      width: 31px;
+    }
+  
+    .menu li.toggle div.toggle-anchor:focus::after {
+      right: 6px;
+      top: 7px;
+    }
+  
+  }
+
+  @media all and (max-width: 195px) {
+
+    .definition {
+      display: none;
+    }
+  
+    .header.is-sticky .menu li.toggle div.toggle-anchor:focus::after, .menu li.toggle div.toggle-anchor:focus::after {
+      top: 7px;
+      right: 6px;
+   }
+  
+   .menu li.toggle div:focus::after {
+    top: 8px;
+   }
+  
+   .sidenav.active {
+    top: 85px;
+   }
+   
+   .progress-container {
+    top: 15px;
+   }
+  
+   .header.header.is-sticky .progress-container {
+    top: 11px;
+  }
+  
+  .header {
+    height: 85px;
+  }
+  
+  }
+
+  @media all and (max-width: 185px) {
+
+    .header.is-sticky .menu li.toggle div.toggle-anchor:focus::after {
+      top: 10px;
+      right: 5px;
+    }
+  
+    .menu li.toggle div.toggle-anchor:focus::after {
+      top: 11px;
+      right: 5px;
+    }
+  
+    .toggle-anchor {
+      position: relative;
+      top: -12px;
+    }
+  
+    .header.is-sticky .toggle-anchor {
+      top: -1px;
+    }
+  }
+
+
+  /* Tablet menu */
+@media all and (min-width: 700px) {
+
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+}
+  
+  /* Desktop menu */
+@media all and (min-width: 960px) {
+
+  
+  .menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+   
+  .item {
+    position: relative;
+    display: block;
+    width: auto;
+    top: 27px;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+  }
+  
+  .item:after {
+        content: " ";
+        position: absolute;
+        width: 78%;
+        height: 3px;
+        bottom: 9px;
+        left: 12px;
+        background-color: #1493f3;
+        transform: scaleX(0);
+        transform-origin: bottom left;
+        transition: transform 0.3s;
+    }
+  
+    .item:hover:after {
+            transform-origin: bottom left;
+            transform: scaleX(1);
+        }
+      
+    .toggle {
+      display: none;
+    }
+  
+    .sidenav.active {
+      display: none;
+    }
+  
+    .mission h1 {
+      font-size: 2rem;
+    }
+  
+  }
+  

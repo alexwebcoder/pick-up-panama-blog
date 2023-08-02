@@ -1,0 +1,33 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    height: 100vh;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .caps {
+    text-transform: uppercase;
+  }
+  
+  .centered {
+    text-align: center;
+  }
