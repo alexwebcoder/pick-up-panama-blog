@@ -1,4 +1,4 @@
-/* Basic styling */
+Basic styling
 * {
     box-sizing: border-box;
     padding: 0;
@@ -16,7 +16,6 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-
   }
 
   a {

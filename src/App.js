@@ -16,8 +16,6 @@ function App() {
        <div className="App">
         {/* navbar shows on all pages (routes) because it is not inside the Routes component */}
           <Navbar />
-          <SearchBar setResults={setResults} />
-          <SearchResults results={results} />
           <div className="content">
               <Routes>
                  <Route path='/' element={ <Home/> } />
@@ -26,7 +24,7 @@ function App() {
                  <Route path='/*' element={ <NotFound /> } />
               </Routes>
           </div>
-          <Footer />
+          {/* <Footer /> */}
        </div>
     </Router>
   );
