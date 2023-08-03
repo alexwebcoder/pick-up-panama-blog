@@ -3,6 +3,7 @@ import useFetch from "../../useFetch";
 import "./Home.css"
 import Mission from "../../components/Mission/Mission";
 import Hero from "../../components/Hero/Hero";
+import Featured from "../../components/Featured/Featured";
 
 const Home = () => {
     const {data, isPending, error} = useFetch('http://localhost:8000/blogs');
@@ -11,6 +12,7 @@ const Home = () => {
         <main className="home-content">
           <Mission />
           <Hero />
+          <Featured />
           {/* This get rendered only if we have a value for error(conditionally) */}
           { error && <div>{ error }</div>}
           { isPending && <div>Loading...</div> }

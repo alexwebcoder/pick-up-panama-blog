@@ -1,10 +1,10 @@
-import panamaSignImage from '../../assets/images/panama-sign.JPG'
+import PanamaSignImage from '../../assets/images/panama-sign.JPG'
 
 const Hero = () => {
     return (
         <div className="hero-image">
             <figure>
-                <img src={panamaSignImage} alt="Alex DeLeon in front of the Panama sign"/>
+                <img src={PanamaSignImage} alt="Alex DeLeon in front of the Panama sign"/>
             </figure>
         </div>
     )

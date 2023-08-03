@@ -1,3 +1,5 @@
+import PanamaCanalShip from '../../assets/images/panama-canal-ship.JPG'
+
 const Featured = () => {
    return (
     <section className="featured-content-container">
@@ -12,7 +14,7 @@ const Featured = () => {
           <div className="feature-wrapper">
               <div className="feature-photo-container">
                   <figure>
-                      <img src="https://static.euronews.com/articles/stories/07/56/14/16/1000x563_cmsv2_4377a059-ee3d-53d5-8e7e-6689b151f275-7561416.jpg" alt="the Panama Canal in 2018"/>
+                      <img src={PanamaCanalShip} alt="the Panama Canal in 2018"/>
                   </figure>
               </div>
               <article className="blog-article-content">
