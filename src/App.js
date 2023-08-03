@@ -14,9 +14,8 @@ function App() {
   return (
     <Router>
        <div className="App">
-        {/* navbar shows on all pages (routes) because it is not inside the Routes component */}
           <Navbar />
-          <div className="content">
+          <div>
               <Routes>
                  <Route path='/' element={ <Home/> } />
                  <Route path='/create' element={ <Create/> } />
