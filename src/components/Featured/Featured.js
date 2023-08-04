@@ -1,4 +1,4 @@
-import PanamaCanalShip from '../../assets/images/panama-canal-ship.JPG'
+// import PanamaCanalShip from '/images/panama-canal-ship.JPG'
 
 const Featured = () => {
    return (
@@ -15,7 +15,7 @@ const Featured = () => {
                 <div className="feature-wrapper">
                 <div className="feature-photo-container">
                     <figure>
-                        <img src={PanamaCanalShip} alt="the Panama Canal in 2018"/>
+                        <img src={process.env.PUBLIC_URL + '/images/panama-canal-ship.JPG'} alt="the Panama Canal in 2018"/>
                     </figure>
                 </div>
                     <article className="blog-article-content">
