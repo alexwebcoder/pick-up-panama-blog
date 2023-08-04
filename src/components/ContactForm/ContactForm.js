@@ -28,37 +28,24 @@ const USER_ID = "RpfI2tiLJvbu5BKwH";
         e.target.reset()
         };
  return (
-    <Form onSubmit={handleOnSubmit}>
-        <Form.Field
-          id='form-input-control-email'
-          control={Input}
-          label='Email'
-          name='user_email'
-          placeholder='Email…'
-          required
-          icon='mail'
-          iconPosition='left'
-        />
-        <Form.Field
-          id='form-input-control-last-name'
-          control={Input}
-          label='Name'
-          name='user_name'
-          placeholder='Name…'
-          required
-          icon='user circle'
-          iconPosition='left'
-        />
-        <Form.Field
-          id='form-textarea-control-opinion'
-          control={TextArea}
-          label='Message'
-          name='user_message'
-          placeholder='Message…'
-          required
-        />
-        <Button type='submit' color='green'>Submit</Button>
-      </Form>
+    <>
+      <div>Subscribe to receive latest info</div>
+    <div className='form-container'>
+        <Form onSubmit={handleOnSubmit}>
+            <Form.Field
+            id='form-input-control-email'
+            control={Input}
+            //   label='Email'
+            name='user_email'
+            placeholder='Email…'
+            required
+            icon='mail'
+            iconPosition='left'
+            />
+            <Button type='submit'>Subscribe</Button>
+        </Form>
+    </div>
+    </>
  )
 
 }
