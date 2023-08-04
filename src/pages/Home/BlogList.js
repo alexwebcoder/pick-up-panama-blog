@@ -5,18 +5,33 @@ const BlogList = ({ blogs, title }) => {
     // const title = props.title;
 
     return(
-      <div className="blog-list">
-        <h2>{ title }</h2>
+      <div className="card-container">
         {blogs.map((blog) => (
-            <div className="blog-preview" key={blog.id}>
+            <article key={blog.id}>
               <Link to={`/blogs/${blog.id}`}>
-                <h2>{ blog.title }</h2>
-                <p>Written by: { blog.author }</p>
+              <figure className="card-img">
+                        <img src={blog.image} alt="Panamanian motorcycle club riding through Panama City"/>
+                    </figure>
+                <div className="blog-article-content">
+                  <h3>{ blog.title }</h3>
+                </div>
               </Link>
-            </div>
+            </article>
           ))}
       </div>
     );
 }
 
 export default BlogList;
+
+
+            // <article>
+            //     <a href="/">
+            //         <figure class="card-img">
+            //             <img src="./images/P1010518.JPG" alt="Panamanian motorcycle club riding through Panama City">
+            //         </figure>
+            //         <div class="blog-article-content">
+            //             <h3>Is Panama Safe?</h3>
+            //         </div>
+            //     </a>
+            // </article>
