@@ -3,6 +3,30 @@ import { Form, Input, Button } from 'semantic-ui-react';
 import Swal from 'sweetalert2';
 
 
+
+const validateEmail = (input) => {
+  
+  let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if (input.value.match(validRegex)) {
+
+    console.log("Valid email address!");
+    
+    document.form.user_email.focus();
+
+    return true;
+
+  } else {
+    console.log(input.value)
+    console.log("Invalid email address!");
+
+    document.form.user_email.focus();
+
+    return false;
+
+  }
+}
+
 const ContactForm = () => {
     const SERVICE_ID = "service_q7jfaw4";
     const TEMPLATE_ID = "template_220q62k";
@@ -32,7 +56,7 @@ const ContactForm = () => {
        <hr/>
       <div className='cta'>Subscribe to be the first to learn more about Panama</div>
     <div className='form-container'>
-        <Form onSubmit={handleOnSubmit}>
+        <Form name='form' onSubmit={handleOnSubmit}>
             <Form.Field
             id='form-input-control-email'
             control={Input}
@@ -49,5 +73,7 @@ const ContactForm = () => {
  )
 
 }
+
+
 
 export default ContactForm
