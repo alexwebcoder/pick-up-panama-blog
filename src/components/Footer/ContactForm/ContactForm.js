@@ -2,31 +2,6 @@ import emailjs from 'emailjs-com';
 import { Form, Input, Button } from 'semantic-ui-react';
 import Swal from 'sweetalert2';
 
-
-
-const validateEmail = (input) => {
-  
-  let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-  if (input.value.match(validRegex)) {
-
-    console.log("Valid email address!");
-    
-    document.form.user_email.focus();
-
-    return true;
-
-  } else {
-    console.log(input.value)
-    console.log("Invalid email address!");
-
-    document.form.user_email.focus();
-
-    return false;
-
-  }
-}
-
 const ContactForm = () => {
     const SERVICE_ID = "service_q7jfaw4";
     const TEMPLATE_ID = "template_220q62k";
@@ -66,7 +41,7 @@ const ContactForm = () => {
             icon='mail'
             iconPosition='left'
             />
-            <Button className='optin-button' type='submit'>Subscribe</Button>
+            <Button id='sendForm' className='optin-button' type='submit'>Subscribe</Button>
         </Form>
     </div>
     </>

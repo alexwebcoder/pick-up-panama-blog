@@ -67,6 +67,7 @@
     background-color: #a91319;
     color: #fff;
     border: none;
+    cursor: pointer;
   }
 
   .optin-button:focus {
@@ -80,3 +81,13 @@
     letter-spacing: .02rem;
     font-size: 1.2rem;
   }
+
+  #sendForm {
+    opacity: .4;
+    cursor: pointer;
+}
+
+#sendForm.activated {
+    opacity: 1;
+    cursor: pointer;
+}
