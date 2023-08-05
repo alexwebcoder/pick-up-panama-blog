@@ -29,20 +29,20 @@ const USER_ID = "RpfI2tiLJvbu5BKwH";
         };
  return (
     <>
-      <div>Subscribe to receive latest info</div>
+       <hr/>
+      <div className='cta'>Subscribe to be the first to learn more about Panama</div>
     <div className='form-container'>
         <Form onSubmit={handleOnSubmit}>
             <Form.Field
             id='form-input-control-email'
             control={Input}
-            //   label='Email'
             name='user_email'
             placeholder='Email…'
             required
             icon='mail'
             iconPosition='left'
             />
-            <Button type='submit'>Subscribe</Button>
+            <Button className='optin-button' type='submit'>Subscribe</Button>
         </Form>
     </div>
     </>

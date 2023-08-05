@@ -7,14 +7,11 @@
     background-color: #fff;
   }
   
-  .footer .icons {
-    padding-top: 45px
-  }
-  
   .footer hr {
     color: #a1a1a1;
     width: 80%;
     align-self: center;
+    margin-bottom: 45px;
   }
   
   .icons, .footer .copyright, .footer .credits {
@@ -30,12 +27,47 @@
 
   Form {
     /* border: 1px solid lightgray; */
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: center;
+    background-color: #000;
   }
 
-  button, Form input {
-    padding: 20px;
+  .optin-button, Form input {
+    padding: 15px;
     width: 225px;
+    font-size: 1rem;
+    border-radius: 10px;
+
+  }
+
+  Form input {
+    margin-right: 10px;
+    background: none;
+  border: none;
+  border: 2px solid #fff;
+  font-size: 17px;
+  outline: none;
+  color: white;
+  }
+
+  Form input:focus {
+    border: 2px solid #1fa5ff;
+  }
+
+  .optin-button {
+    width: 160px;
+  }
+
+  .optin-button {
+    background-color: #a91319;
+    color: #fff;
+  }
+
+  .cta {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    letter-spacing: .02rem;
+    font-size: 1.2rem;
   }
