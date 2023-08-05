@@ -37,7 +37,7 @@ const USER_ID = "RpfI2tiLJvbu5BKwH";
             id='form-input-control-email'
             control={Input}
             name='user_email'
-            placeholder='Email…'
+            placeholder='Email'
             required
             icon='mail'
             iconPosition='left'

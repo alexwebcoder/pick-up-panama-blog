@@ -27,7 +27,7 @@
 
   Form {
     /* border: 1px solid lightgray; */
-    padding: 30px;
+    padding: 0 32px 32px 32px;
     display: flex;
     justify-content: center;
     background-color: #000;
@@ -46,28 +46,37 @@
     background: none;
   border: none;
   border: 2px solid #fff;
-  font-size: 17px;
+  font-size: 1rem;
   outline: none;
   color: white;
   }
 
+  Form input::placeholder {
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: .03rem;
+  }
+
   Form input:focus {
-    border: 2px solid #1fa5ff;
+    border: 2px solid #1493f3;
   }
 
-  .optin-button {
-    width: 160px;
-  }
 
-  .optin-button {
+.optin-button {
+      width: 160px;
     background-color: #a91319;
     color: #fff;
+    border: none;
+  }
+
+  .optin-button:focus {
+    outline: 2px solid #1493f3;
   }
 
   .cta {
     background: #000;
     color: #fff;
-    padding: 20px;
+    padding: 32px;
     letter-spacing: .02rem;
     font-size: 1.2rem;
   }
