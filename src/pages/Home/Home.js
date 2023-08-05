@@ -1,9 +1,9 @@
 import BlogList from "./BlogList";
 import useFetch from "../../useFetch";
 import "./Home.css"
-import Mission from "../../components/Mission/Mission";
-import Hero from "../../components/Hero/Hero";
-import Featured from "../../components/Featured/Featured";
+import Mission from "./Mission";
+import Hero from "./Hero";
+import Featured from "./Featured";
 
 const Home = () => {
     const {data, isPending, error} = useFetch('http://localhost:8000/blogs');

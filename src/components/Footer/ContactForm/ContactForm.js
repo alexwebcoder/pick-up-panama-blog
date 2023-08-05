@@ -1,12 +1,12 @@
 import emailjs from 'emailjs-com';
-import { Form, Input, TextArea, Button } from 'semantic-ui-react';
+import { Form, Input, Button } from 'semantic-ui-react';
 import Swal from 'sweetalert2';
 
 
 const ContactForm = () => {
     const SERVICE_ID = "service_q7jfaw4";
-const TEMPLATE_ID = "template_220q62k";
-const USER_ID = "RpfI2tiLJvbu5BKwH";
+    const TEMPLATE_ID = "template_220q62k";
+    const USER_ID = "RpfI2tiLJvbu5BKwH";
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
