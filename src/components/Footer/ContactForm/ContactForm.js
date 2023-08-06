@@ -42,6 +42,7 @@ const ContactForm = () => {
             iconPosition='left'
             />
             <Button id='send-form' className='optin-button' type='submit'>Subscribe</Button>
+            <p id='alert-comment' className='alert-comment'>Email address must be valid</p>
         </Form>
     </div>
     </>

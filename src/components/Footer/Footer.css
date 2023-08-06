@@ -32,6 +32,7 @@
     background-color: #000;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
 
   .optin-button, .form input {
@@ -87,6 +88,15 @@
     font-weight: 500;
   }
 
+  .alert-comment {
+    color: red;
+    position: absolute;
+    top: 115px;
+    font-size: .825rem;
+    outline: 1px solid red;
+    padding: 3px;
+  }
+
   #send-form {
     opacity: .4;
     cursor: default;
@@ -102,11 +112,16 @@
 @media all and (min-width: 960px) {
    .form {
     flex-direction: row;
+    position: relative;
    }
 
    .form input {
     margin-right: 10px;
     margin-bottom: 0;
+   }
+
+   .alert-comment {
+    top: 58px;
    }
 
 }
