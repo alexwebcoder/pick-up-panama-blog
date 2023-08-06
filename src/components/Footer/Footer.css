@@ -14,8 +14,8 @@
     margin-bottom: 45px;
   }
   
-  .icons, .footer .copyright, .footer .credits {
-    padding-bottom: 45px;
+  .icons {
+    padding: 35px 0 35px 0;
   }
   
   .icons a {
@@ -25,15 +25,16 @@
     color: #000;
   }
 
-  Form {
-    /* border: 1px solid lightgray; */
-    padding: 0 32px 32px 32px;
+  .form {
+    padding: 0 0 32px 0;
     display: flex;
     justify-content: center;
     background-color: #000;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .optin-button, Form input {
+  .optin-button, .form input {
     padding: 15px;
     width: 225px;
     font-size: 1rem;
@@ -41,33 +42,33 @@
 
   }
 
-  Form input {
-    margin-right: 10px;
+  .form input {
+    margin-bottom: 10px;
     background: none;
   border: none;
   border: 2px solid #fff;
   font-size: 1rem;
   outline: none;
-  color: white;
+  color: #fff;
   }
 
-  Form input::placeholder {
+  .form input::placeholder {
     color: #fff;
     font-size: 1rem;
     letter-spacing: .03rem;
   }
 
-  Form input:focus {
+  .form input:focus {
     border: 2px solid #1493f3;
   }
 
 
 .optin-button {
-      width: 160px;
     background-color: #a91319;
+    border: 2px solid #a91319;
     color: #fff;
     border: none;
-    cursor: pointer;
+    cursor: default;
   }
 
   .optin-button:focus {
@@ -77,17 +78,35 @@
   .cta {
     background: #000;
     color: #fff;
-    padding: 32px;
-    letter-spacing: .02rem;
+    padding: 32px 0 25px 0;
+  }
+  
+  .cta h3 {
+    letter-spacing: .03rem;
     font-size: 1.2rem;
+    font-weight: 500;
   }
 
-  #sendForm {
+  #send-form {
     opacity: .4;
+    cursor: default;
+}
+
+#send-form.activated {
+    opacity: 1;
     cursor: pointer;
 }
 
-#sendForm.activated {
-    opacity: 1;
-    cursor: pointer;
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+   .form {
+    flex-direction: row;
+   }
+
+   .form input {
+    margin-right: 10px;
+    margin-bottom: 0;
+   }
+
 }

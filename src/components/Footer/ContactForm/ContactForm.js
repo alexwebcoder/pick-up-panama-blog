@@ -29,7 +29,7 @@ const ContactForm = () => {
  return (
     <>
        <hr/>
-      <div className='cta'>Subscribe to be the first to learn more about Panama</div>
+      <div className='cta'><h3>Subscribe to be the first to learn more about Panama</h3></div>
     <div className='form-container'>
         <Form name='form' onSubmit={handleOnSubmit}>
             <Form.Field
@@ -41,7 +41,7 @@ const ContactForm = () => {
             icon='mail'
             iconPosition='left'
             />
-            <Button id='sendForm' className='optin-button' type='submit'>Subscribe</Button>
+            <Button id='send-form' className='optin-button' type='submit'>Subscribe</Button>
         </Form>
     </div>
     </>

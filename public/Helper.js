@@ -2,7 +2,7 @@ const toggle = document.querySelector('.toggle-anchor');
 const sidenav = document.querySelector('.sidenav');
 const hamburger = document.querySelector('.toggle-anchor');
 const eJS_email = document.getElementById('form-input-control-email');
-const eJS_sendForm = document.getElementById('sendForm');
+const eJS_sendForm = document.getElementById('send-form');
 
 
 let canSubmit = false;
