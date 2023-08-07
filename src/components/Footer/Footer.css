@@ -83,6 +83,8 @@
     letter-spacing: .03rem;
     font-size: 1.2rem;
     font-weight: 500;
+    width: 250px;
+    margin: auto;
   }
 
   .alert-comment {
@@ -126,11 +128,23 @@
     top: 58px;
    }
 
+   .cta h3 {
+    width: auto;
+   }
+
 }
 
 @media all and (max-width: 268px) { 
     .optin-button, .form input {
       width: 200px;
   }
+
+}
+
+@media all and (max-width: 250px) { 
+  .cta h3 {
+    font-size: 1rem;
+    width: 150px;
+}
 
 }

@@ -49,10 +49,7 @@
   
   .card-container {
     width: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
     margin: 0 auto 45px auto;
   }
   
@@ -244,11 +241,13 @@
     }
     
     .card-container {
+      display: flex;
       flex-direction: row;
+      justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
       width: 80%;
       margin-bottom: 45px;
-      align-items: center;
     }
   
     .card-container article {
