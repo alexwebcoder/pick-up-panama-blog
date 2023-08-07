@@ -38,6 +38,7 @@ const ContactForm = () => {
             id='form-input-control-email'
             control={Input}
             name='user_email'
+            type='email'
             placeholder='Email'
             required
             icon='mail'
