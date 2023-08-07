@@ -4,7 +4,6 @@ const hamburger = document.querySelector('.toggle-anchor');
 const eJS_email = document.getElementById('form-input-control-email');
 const eJS_sendForm = document.getElementById('send-form');
 const alertComment = document.getElementById('alert-comment');
-const socialIcon = document.getElementById('social-icon');
 
 let canSubmit = false;
 let reaction = null;
@@ -56,12 +55,12 @@ function eJS_disabled_submit() {
 
 };
 
-
 const hideError = () => {
   alertComment.style.visibility = "hidden";
 }
 
 document.addEventListener('click', hideError);
+eJS_email.addEventListener('blur', hideError)
 
 
 //opens the sidenav
