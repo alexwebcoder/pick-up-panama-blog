@@ -23,15 +23,3 @@ const BlogList = ({ blogs, title }) => {
 }
 
 export default BlogList;
-
-
-            // <article>
-            //     <a href="/">
-            //         <figure class="card-img">
-            //             <img src="./images/P1010518.JPG" alt="Panamanian motorcycle club riding through Panama City">
-            //         </figure>
-            //         <div class="blog-article-content">
-            //             <h3>Is Panama Safe?</h3>
-            //         </div>
-            //     </a>
-            // </article>

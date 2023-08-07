@@ -7,11 +7,8 @@
     background-color: #fff;
   }
   
-  .footer hr {
-    color: #a1a1a1;
-    width: 80%;
-    align-self: center;
-    margin-bottom: 45px;
+  .footer .line-divider {
+    margin-top: 0;
   }
   
   .icons {
@@ -26,7 +23,7 @@
   }
 
   .form {
-    padding: 0 0 32px 0;
+    padding: 0 0 35px 0;
     display: flex;
     justify-content: center;
     background-color: #000;
@@ -79,7 +76,7 @@
   .cta {
     background: #000;
     color: #fff;
-    padding: 32px 0 25px 0;
+    padding: 35px 5px 25px 5px;
   }
   
   .cta h3 {
@@ -128,5 +125,12 @@
    .alert-comment {
     top: 58px;
    }
+
+}
+
+@media all and (max-width: 268px) { 
+    .optin-button, .form input {
+      width: 200px;
+  }
 
 }

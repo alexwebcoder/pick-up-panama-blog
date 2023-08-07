@@ -3,8 +3,8 @@ const sidenav = document.querySelector('.sidenav');
 const hamburger = document.querySelector('.toggle-anchor');
 const eJS_email = document.getElementById('form-input-control-email');
 const eJS_sendForm = document.getElementById('send-form');
-const alertComment = document.getElementById('alert-comment')
-
+const alertComment = document.getElementById('alert-comment');
+const socialIcon = document.getElementById('social-icon');
 
 let canSubmit = false;
 let reaction = null;
@@ -52,7 +52,16 @@ function eJS_disabled_submit() {
   eJS_sendForm.classList.remove('activated');
   eJS_sendForm.disabled = true;
   canSubmit = false;
+  alertComment.style.visibility = "visible";
+
 };
+
+
+const hideError = () => {
+  alertComment.style.visibility = "hidden";
+}
+
+document.addEventListener('click', hideError);
 
 
 //opens the sidenav
