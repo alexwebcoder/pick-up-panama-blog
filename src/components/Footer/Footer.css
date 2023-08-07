@@ -97,6 +97,11 @@
     padding: 3px;
   }
 
+  #alert-comment {
+    visibility: hidden;
+  }
+
+
   #send-form {
     opacity: .4;
     cursor: default;

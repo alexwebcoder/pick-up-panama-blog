@@ -3,6 +3,7 @@ const sidenav = document.querySelector('.sidenav');
 const hamburger = document.querySelector('.toggle-anchor');
 const eJS_email = document.getElementById('form-input-control-email');
 const eJS_sendForm = document.getElementById('send-form');
+const alertComment = document.getElementById('alert-comment')
 
 
 let canSubmit = false;
@@ -31,17 +32,17 @@ function eJS_can_submit() {
   let email = eJS_email.value.trim();
 
   if (email.length > 4) {
-      // alertComment.style.visibility = "hidden";
-      if (eJS_validateEmail(email)) {
-          eJS_sendForm.classList.add('activated');
-          eJS_sendForm.disabled = false;
-          canSubmit = true;
+    if (eJS_validateEmail(email)) {
+      eJS_sendForm.classList.add('activated');
+      eJS_sendForm.disabled = false;
+      canSubmit = true;
+      alertComment.style.visibility = "hidden";
 
       }else {
           eJS_disabled_submit();
       }
   } else {
-      // alertComment.style.visibility = "visible";
+      alertComment.style.visibility = "visible";
       eJS_disabled_submit();
   }
 };
