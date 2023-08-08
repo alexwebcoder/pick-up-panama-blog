@@ -12,9 +12,8 @@ const Footer = () => {
            <a href="/"><i className="fab fa-instagram"></i></a>
            <a href="/"><i className="fab fa-twitter"></i></a>     
         </nav>
-        <p className="copyright">
-            &copy; Pick Up Panama 2023, All rights reserved. <br/>Content on PickUpPanama.com may not be reproduced without written permission.
-        </p>
+        <p className="copyright">&copy; Pick Up Panama 2023, All rights reserved.</p> 
+        <p>Content on PickUpPanama.com may not be reproduced without written permission.</p>
         <p className="credits">Articles and Photography by Alex DeLeon</p>
     </footer>
         </>

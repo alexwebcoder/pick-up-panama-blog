@@ -22,6 +22,10 @@
     color: #000;
   }
 
+  .credits, .copyright {
+    margin-bottom: 35px;
+  }
+
   .form {
     padding: 0 0 35px 0;
     display: flex;
