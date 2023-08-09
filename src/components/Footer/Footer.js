@@ -14,10 +14,10 @@ const Footer = () => {
                 <a href="/"><i className="fab fa-twitter"></i></a>     
             </nav>
             <ul className="menu">
-                <li className="item"><Link to ="/">Home</Link></li>
-                <li className="item"><Link to="#">Newsfeed</Link></li>
-                <li className="item"><Link to="#">About</Link></li>
-                <li className="item"><Link to="#">Contact</Link></li>
+                <li className="item caps home"><Link to ="/">Home</Link></li>
+                <li className="item caps news"><Link to="#">Newsfeed</Link></li>
+                <li className="item caps about"><Link to="#">About</Link></li>
+                <li className="item caps"><Link to="#">Contact</Link></li>
             </ul>
             <p className="copyright">&copy; Pick Up Panama 2023, All rights reserved.</p> 
             <p className="no-reproduction">Content on PickUpPanama.com may not<br/>be reproduced without written permission.</p>
