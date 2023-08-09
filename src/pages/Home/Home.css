@@ -1,5 +1,9 @@
 /* mobile menu */
 
+.no-right-click {
+  pointer-events: none;
+}
+
 .home-content {
     margin-top: 193px;
     margin-bottom: auto;

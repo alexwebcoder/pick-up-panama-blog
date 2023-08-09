@@ -5,6 +5,7 @@ const eJS_email = document.getElementById('form-input-control-email');
 const eJS_sendForm = document.getElementById('send-form');
 const alertComment = document.getElementById('alert-comment');
 
+
 let canSubmit = false;
 let reaction = null;
 
@@ -148,3 +149,22 @@ window.addEventListener('scroll', ()=> {
      }
 
 });
+
+
+let images = document.getElementsByClassName('no-right-click');
+
+//prevents right click of image
+
+for (const image of images) {
+
+  image.addEventListener('contextmenu', (e)=>{
+
+    e.preventDefault(); 
+    image.draggable = false;
+  });
+  
+}
+
+
+// for (const i of images) {
+// }
