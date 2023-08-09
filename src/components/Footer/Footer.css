@@ -9,10 +9,39 @@
   
   .footer .line-divider {
     margin-top: 0;
+    flex-wrap: nowrap;
+  }
+
+ .footer .item:after {
+    content: " ";
+    position: absolute;
+    width: 73%;
+    height: 3px;
+    bottom: 2px;
+    left: 15px;
+    background-color: #1493f3;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s;
+}
+
+.footer .item:hover:after {
+        transform-origin: bottom left;
+        transform: scaleX(1);
+    }
+
+  .footer .item {
+    display: block;
+    position: relative;
   }
   
   .icons {
-    padding: 35px 0 35px 0;
+    padding: 35px 0 25px 0;
+  }
+
+  .footer .menu {
+    margin-bottom: 15px;
+    flex-wrap: nowrap;
   }
   
   .icons a {
@@ -22,8 +51,9 @@
     color: #000;
   }
 
-  .credits, .copyright {
-    margin-bottom: 35px;
+  .credits, .copyright, .no-reproduction {
+    margin-bottom: 15px;
+    font-size: .875rem;
   }
 
   .form {
@@ -148,6 +178,14 @@
   .cta h3 {
     font-size: 1rem;
     width: 150px;
+}
+
+}
+
+@media all and (max-width: 332px) { 
+  .footer .menu  {
+    flex-wrap: wrap;
+    margin: 0 auto 25px auto;
 }
 
 }
