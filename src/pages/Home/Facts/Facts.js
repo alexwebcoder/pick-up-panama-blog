@@ -40,7 +40,7 @@ const Quotes = () => {
       <section className="facts">
          <div className="fact-parent"><p>{quote}</p></div>
       </section>
-      <button className="fact-button" onClick={handleClick} id="new-quote">New Quote</button>
+      <button className="fact-button" onClick={handleClick} id="new-quote">Learn a new Fact</button>
     </>
   )
 }
