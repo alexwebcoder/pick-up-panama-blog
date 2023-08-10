@@ -4,6 +4,7 @@ import "./Home.css"
 import Mission from "./Mission";
 import Hero from "./Hero";
 import Featured from "./Featured";
+import Quotes from "./Facts/Facts";
 
 const Home = () => {
     const {data, isPending, error} = useFetch('http://localhost:8000/blogs');
@@ -17,6 +18,7 @@ const Home = () => {
           { error && <div>{ error }</div>}
           { isPending && <div>Loading...</div> }
           {data && <BlogList blogs={data} title="All Blogs!" />}
+          <Quotes />
         </main>
      );
 }
