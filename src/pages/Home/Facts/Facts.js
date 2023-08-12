@@ -37,7 +37,7 @@ const Quotes = () => {
             <span className="right"></span>
             </h2>
         </div>
-      <section className="facts">
+      <section className="facts background-4">
          <div className="fact-parent"><p>{quote}</p></div>
       </section>
       <button className="fact-button" onClick={handleClick} id="new-quote">Learn a new Fact</button>
