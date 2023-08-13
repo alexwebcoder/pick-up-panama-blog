@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound/NotFound';
 import SearchBar from './components/SearchBar/SearchBar';
 import SearchResults from './components/SearchResults/SearchResult';
 import Footer from "./components/Footer/Footer";
+import About from "./pages/About/About";
 
 function App() {
   const [results, setResults] = useState([]);
@@ -18,6 +19,7 @@ function App() {
               <Routes>
                  <Route path='/' element={ <Home/> } />
                  <Route path='/create' element={ <Create/> } />
+                 <Route path='/about' element={ <About/> } />
                  <Route path='/blogs/:id' element={ <BlogDetails/> } />
                  <Route path='/*' element={ <NotFound /> } />
               </Routes>

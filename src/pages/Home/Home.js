@@ -5,6 +5,7 @@ import Mission from "./Mission";
 import Hero from "./Hero";
 import Featured from "./Featured";
 import Quotes from "./Facts/Facts";
+import Carousel from "./Carousel/Carousel";
 
 const Home = () => {
     const {data, isPending, error} = useFetch('http://localhost:8000/blogs');

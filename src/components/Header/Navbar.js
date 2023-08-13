@@ -15,13 +15,13 @@ const Navbar = () => {
                   </div></div></li>
                 <li className="item"><Link to ="/">Home</Link></li>
                 <li className="item"><Link to="#">Newsfeed</Link></li>
-                <li className="item"><Link to="#">About</Link></li>
+                <li className="item"><Link to="/about">About</Link></li>
                 <li className="item"><Link to="#">Contact</Link></li>
             </ul>
             <ul className="sidenav centered" tabIndex={-1}>
                 <li><Link to="#">Home</Link></li>
                 <li><Link to="#">Newsfeed</Link></li>
-                <li><Link to="#">About</Link></li>
+                <li><Link to="/about">About</Link></li>
                 <li><Link to="#">Contact</Link></li>
             </ul>
             <div className="flag panama">

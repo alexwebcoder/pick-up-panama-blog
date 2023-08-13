@@ -1,0 +1,12 @@
+.about-us {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us p {
+    width: 400px;
+    padding: 10px;
+}
