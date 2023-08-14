@@ -1,8 +1,59 @@
-.about-us {
-    height: 100vh;
+.margin {
+    margin-top: 193px;
+}
+
+.comic {
+    width: 60%;
+    margin: 0 auto 45px auto;
+    position: relative;
+    background-color: #000;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.comic figure {
+    border-radius: 0;
+    margin-bottom: 25px;
+    width: 75%;
+}
+
+.comic img {
+    height: auto;
+    max-width: 100%;
+}
+
+.panel-1 {
+    align-self: flex-start;
+}
+
+.comic .panel-2, .comic .panel-5 {
+    width: 40%;
+    position: absolute;
+    right: 20px;
+    top: 8%;
+}
+
+.panel-3 {
+    align-self: flex-end;
+}
+
+.comic .panel-5 {
+    top: 61%;
+    right: 20px;
+}
+
+
+.comic figcaption {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -10,3 +61,5 @@
     width: 400px;
     padding: 10px;
 }
+
+
