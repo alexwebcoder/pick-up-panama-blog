@@ -16,7 +16,7 @@
 
 .comic figure {
     border-radius: 0;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     width: 75%;
 }
 
@@ -25,23 +25,34 @@
     max-width: 100%;
 }
 
-.panel-1 {
+.panel-1, .panel-4 {
     align-self: flex-start;
 }
 
-.comic .panel-2, .comic .panel-5 {
+.comic .panel-2, .comic .panel-5, .comic .panel-3a {
     width: 40%;
     position: absolute;
     right: 20px;
     top: 8%;
 }
 
-.panel-3 {
+.panel-2 img, .panel-5 img {
+    border: 10px solid #000;
+    border-right: none;
+}
+
+.comic .panel-3a {
+    top: 25.54%;
+    left: 20px;
+    width: 20%;
+}
+
+.panel-3, .panel-6 {
     align-self: flex-end;
 }
 
 .comic .panel-5 {
-    top: 61%;
+    top: 58%;
     right: 20px;
 }
 
@@ -49,6 +60,10 @@
 .comic figcaption {
     padding: 10px;
     background-color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    position: relative;
+    top: -4px;
 }
 
 .about-us {

@@ -22,15 +22,18 @@ const About = () => {
                     <img src={process.env.PUBLIC_URL + '/images/P1000438.JPG'} alt=''/>
                     <figcaption>When we travel out of the country, we have the opportunity to learn from other cultures.</figcaption>
                 </figure>
+                <figure className="panel-3a">
+                    <img src={process.env.PUBLIC_URL + '/images/P1000617.JPG'} alt=''/>
+                </figure>
                 <figure className="panel-4">
-                    <img src={process.env.PUBLIC_URL + '/images/P1010055.JPG'} alt=''/>
+                    <img src={process.env.PUBLIC_URL + '/images/P1000363.JPG'} alt=''/>
                     <figcaption>What we learn from traveling becomes clear when we return home.</figcaption>
                 </figure>
                 <figure className="panel-5">
-                    <img src={process.env.PUBLIC_URL + '/images/P1000770.JPG'} alt=''/>
+                    <img src={process.env.PUBLIC_URL + '/images/P1000632.JPG'} alt=''/>
                 </figure>
                 <figure className="panel-6">
-                    <img src={process.env.PUBLIC_URL + '/images/P1010055.JPG'} alt=''/>
+                    <img src={process.env.PUBLIC_URL + '/images/P1010133.JPG'} alt=''/>
                     <figcaption>Based on my trips to Panama, I created Pick Up Panama to answer questions about Panama.</figcaption>
                 </figure>
             </div>
