@@ -16,13 +16,21 @@
 
 .comic figure {
     border-radius: 0;
-    margin-bottom: 20px;
     width: 75%;
+    position: relative;
+    padding-top: calc(2752 / 4896 * 76%);
 }
 
 .comic img {
     height: auto;
     max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.comic .panel-2 {
+    padding-top: calc(2160 / 3840 * 76%);
 }
 
 .panel-1, .panel-4 {
@@ -42,7 +50,7 @@
 }
 
 .comic .panel-3a {
-    top: 25.4%;
+    top: 25.3%;
     left: 20px;
 }
 
@@ -72,13 +80,15 @@
 }
 
 
-.comic figcaption {
+.comic p {
     padding: 10px;
     background-color: #fff;
     font-size: 1rem;
     font-weight: 700;
     position: relative;
     top: -4px;
+    margin-bottom: 10px;
+    align-self: flex-start;
 }
 
 .about-us {
@@ -99,20 +109,18 @@
     width: 60%;
    }
 
-   .comic .panel-5 {
-    top: 58%;
-   }
-
-   .comic .panel-7 {
-    top: 82%;
-   }
-
-   .comic figcaption {
+   .comic p {
     font-size: 1.125rem;
+    margin-bottom: 20px;
+    top: -7px;
    }
 
    .comic .panel {
     top: 8%;
+   }
+
+   .comic .panel-3a {
+    top: 25.7%;
    }
 
    .comic .panel-5 {
@@ -139,5 +147,29 @@
 .panel-7 img {
     border: 10px solid #000;
 }
+
+}
+
+
+@media all and (min-width: 1350px) {
+   .comic .panel-3a {
+    top: 25.35%;
+   }
+
+}
+
+@media all and (max-width: 300px) {
+  .comic figure {
+    width: 100%;
+  }
+
+  .comic .panel-2, .comic .panel-5, .comic .panel-3a, .comic .panel-7 {
+    display: none;
+  }
+
+  .comic p {
+    font-size: .875rem;
+    top: 1px;
+  }
 
 }
