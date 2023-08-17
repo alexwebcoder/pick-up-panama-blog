@@ -165,6 +165,3 @@ for (const image of images) {
   
 }
 
-
-// for (const i of images) {
-// }

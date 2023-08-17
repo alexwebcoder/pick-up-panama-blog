@@ -105,39 +105,51 @@
 
 /* Tablet menu */
 @media all and (min-width: 960px) {
+
     .comic {
         width: 60%;
    }
+
     .comic p {
         font-size: 1.125rem;
         margin-bottom: 20px;
         top: 0;
         padding: 20px;
    }
+
     .comic .panel {
         top: 8%;
    }
+
     .comic .panel-3a {
         top: 25.7%;
    }
+
     .comic .panel-5 {
         top: 56%;
    }
+
     .comic .panel-7 {
         top: 80%;
    }
+
     .comic {
         padding: 20px;
    }
+
     .panel-2 img, .panel-5 img {
         border: 10px solid #000;
+        border-right: none;
    }
+
     .comic .panel-3a img {
         border-right: 10px solid #000;
         border-bottom: 10px solid #000;
    }
+
     .panel-7 img {
         border: 10px solid #000;
+        border-left: none;
    }
 }
 
@@ -148,14 +160,18 @@
 }
 
 @media all and (max-width: 300px) {
+
     .comic figure {
         width: 100%;
    }
+
     .comic .panel-2, .comic .panel-5, .comic .panel-3a, .comic .panel-7 {
         display: none;
    }
+
     .comic p {
         font-size: .875rem;
         top: 1px;
    }
+
 }
