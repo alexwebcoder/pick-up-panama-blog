@@ -1,3 +1,17 @@
 .newsfeed {
     height: 100vh;
 }
+
+.news-article-container {
+    width: 60%;
+    margin: 0 auto;
+    height: 963px;
+    overflow: scroll;
+}
+
+.news-article-container a {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 20px;
+    display: block;
+    padding: 5px;
+}

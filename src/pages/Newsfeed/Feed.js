@@ -4,9 +4,11 @@ const Feed = ({title, link, date, contentSnippet}) => {
     let articleDate = new Date(date).toLocaleDateString("en-US", formatted)
     return (
         <>
-          <h3>{title}</h3>
-          <p>{contentSnippet}</p>
-          <p>{articleDate}</p>
+         <a href={link} target="_blank" rel="noopener noreferrer">
+            <h3>{title}</h3>
+            <p>{contentSnippet}</p>
+            <p>{articleDate}</p>
+            </a>
         </>
     )
 }
