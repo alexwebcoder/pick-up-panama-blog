@@ -30,9 +30,9 @@ const Newsfeed = () => {
               <span className="right"></span>
             </h1>
         </div>
-        <div className="news-article-container">
+        <div className="news-article-container" id="style-5">
             {articles.map((item, i) => 
-              <Feed 
+              <Feed className="scrolling"
                 key={i}
                 title={item.item.title}
                 link={item.item.link}
