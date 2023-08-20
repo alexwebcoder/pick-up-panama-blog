@@ -7,7 +7,7 @@ const Feed = ({title, link, date, contentSnippet}) => {
     return (
         <>
          <a  href={link} target="_blank" rel="noopener noreferrer">
-            <h3>{title}</h3>
+            <h2>{title}</h2>
             <p>{contentSnippet}</p>
             <p className="article-date">{articleDate}</p>
         </a>
