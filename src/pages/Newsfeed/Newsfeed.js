@@ -30,7 +30,7 @@ const Newsfeed = () => {
               <span className="right"></span>
             </h1>
         </div>
-        <div className="news-article-container"  id="style-5">
+        <div className="news-article-container">
             {articles.map((item, i) => 
               <Feed
                 key={i}
