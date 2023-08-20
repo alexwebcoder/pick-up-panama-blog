@@ -3,18 +3,42 @@ import "./Slider.css"
 
 const Slider = () => {
     return(
-        <div className="slider">
-            <div className="slide" id="slide-1">1</div>
-            <div className="slide" id="slide-2">2</div>
-            <div className="slide" id="slide-3">3</div>
-            <div className="slide" id="slide-4">4</div>
-            <div className="slide" id="slide-5">5</div>
-            <div className="slide" id="slide-6">6</div>
-            <div className="slide" id="slide-7">7</div>
-            <div className="slide" id="slide-8">8</div>
-            <div className="slide" id="slide-9">9</div>
-            <div className="slide" id="slide-10">10</div>
-        </div>
+        <>
+        <div class="slider-container">
+  <div class="slider">
+    <div class="slides">
+      <div id="slides__1" class="slide">
+        <span class="slide__text">1</span>
+        <a class="slide__prev" href="#slides__4" title="Next"></a>
+        <a class="slide__next" href="#slides__2" title="Next"></a>
+      </div>
+      <div id="slides__2" class="slide">
+        <span class="slide__text">2</span>
+        <a class="slide__prev" href="#slides__1" title="Prev"></a>
+        <a class="slide__next" href="#slides__3" title="Next"></a>
+      </div>
+      <div id="slides__3" class="slide">
+        <span class="slide__text">3</span>
+        <a class="slide__prev" href="#slides__2" title="Prev"></a>
+        <a class="slide__next" href="#slides__4" title="Next"></a>
+      </div>
+      <div id="slides__4" class="slide">
+        <span class="slide__text">4</span>
+        <a class="slide__prev" href="#slides__3" title="Prev"></a>
+        <a class="slide__next" href="#slides__1" title="Prev"></a>
+      </div>
+    </div>
+    <div class="slider__nav">
+      <a class="slider__navlink" href="#slides__1"></a>
+      <a class="slider__navlink" href="#slides__2"></a>
+      <a class="slider__navlink" href="#slides__3"></a>
+      <a class="slider__navlink" href="#slides__4"></a>
+    </div>
+  </div>
+</div>
+
+        
+        </>
     )
 }
 
