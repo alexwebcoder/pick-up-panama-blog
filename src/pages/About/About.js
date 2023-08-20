@@ -4,11 +4,11 @@ const About = () => {
     return(
         <main className="margin">
             <div className="line-divider centered wide">
-                <h2 className="diamond-text-box">
+                <h1 className="diamond-text-box">
                 <span className="left"></span>
                 <span className="content caps centered">About</span>
                 <span className="right"></span>
-                </h2>
+                </h1>
             </div>
             <div className="comic">
                 <figure className="panel-1">
