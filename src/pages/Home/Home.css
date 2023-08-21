@@ -77,6 +77,35 @@
     top: 0;
     left: 0;
   }
+
+  .hero-image img {
+    -webkit-animation: zoomeffect 20s;
+   -moz-animation: zoomeffect 20s;
+   animation: zoomeffect 20s;
+  }
+
+  @-webkit-keyframes zoomeffect{
+	
+		0%{
+			background-position:center;
+		  transform:scale(4,2);
+		}
+		100%{
+			background-position:center;
+		  transform:scale(1,1);
+		}
+}
+@keyframes zoomeffect{
+	
+		0%{
+			background-position:center;
+		  transform:scale(4,2);
+		}
+		100%{
+			background-position:center;
+		  transform:scale(1,1);
+		}
+}
   
   .featured-content-container h3, .card-container h3 {
     font-size: 1.5rem;
