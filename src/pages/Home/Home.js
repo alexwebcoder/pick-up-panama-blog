@@ -7,6 +7,7 @@ import Featured from "./Featured";
 import Quotes from "./Facts/Facts";
 import Carousel from "./Carousel/Carousel";
 import Slider from "./Slider/Slider";
+import FactSlider from "./FactSlider/FactSlider";
 
 const Home = () => {
     const {data, isPending, error} = useFetch('http://localhost:8000/blogs');
@@ -20,7 +21,8 @@ const Home = () => {
           { error && <div>{ error }</div>}
           { isPending && <div>Loading...</div> }
           {data && <BlogList blogs={data} title="All Blogs!" />}
-          <Slider />
+          {/* <Slider /> */}
+          <FactSlider />
         </main>
      );
 }
