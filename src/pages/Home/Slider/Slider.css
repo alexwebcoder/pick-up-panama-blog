@@ -1,19 +1,19 @@
-html,
-body {
-  height: 100%;
-  margin: 0px;
-}
 
 .slider-container {
   background: linear-gradient(
     149deg,
-    rgb(247, 0, 255) 0%,
-    rgb(255, 145, 0) 100%
+    rgb(1,30, 86) 0%,
+    rgb(169, 19, 25) 100%
   );
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  margin: 0 auto;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  margin-bottom: 45px;
 }
 
 .slider {
@@ -36,7 +36,7 @@ body {
 }
 
 .slide:nth-of-type(even) {
-  background-color: rgb(250, 246, 212);
+  background-color: aliceblue;
 }
 
 .slide {
@@ -49,13 +49,13 @@ body {
   scroll-snap-align: center;
   margin-right: 0px;
   box-sizing: border-box;
-  background: white;
+  background: #fff;
   transform-origin: center center;
   transform: scale(1);
 }
 
 .slide__text {
-  font-size: 40px;
+  font-size: 1.688rem;
   font-weight: bold;
   font-family: sans-serif;
 }
@@ -84,7 +84,7 @@ a.slide__next,
 .slide__prev,
 .slide__next {
   position: absolute;
-  top: 48%;
+  top: 81%;
   width: 35px;
   height: 35px;
   border: solid black;
@@ -119,3 +119,4 @@ a.slide__next,
   background-color: black;
   margin: 0 10px 0 10px;
 }
+
