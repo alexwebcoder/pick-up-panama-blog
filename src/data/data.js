@@ -8,7 +8,7 @@
       id: 2
     },
     {
-      title: "The Capital is Panama City.",
+      title: "The Capital of Panama is Panama City.",
       id: 3
     },
     {

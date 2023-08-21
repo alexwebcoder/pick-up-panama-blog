@@ -51,15 +51,19 @@ Global Styles
 
 /* section */
 .facts {
-  width: 90vw;
+  width: 95%;
   margin: 0 auto 45px auto;
-  max-width: var(--max-width);
+  box-shadow: 0px 1px 2px 0px rgba(20,147,243,0.7),
+  1px 2px 4px 0px rgba(20,147,243,0.7),
+  2px 4px 8px 0px rgba(20,147,243,0.7),
+  2px 4px 16px 0px rgba(20,147,243,0.7);
+  border-radius: 10px;
+
 }
 
 @media screen and (min-width: 992px) {
   .facts {
-    outline: 2px solid red;
-    width: 95vw;
+    width: 80%;
   }
 }
 /*
@@ -67,9 +71,8 @@ Global Styles
 Slider
 ===============
 */
-.section-center {
+.facts-center {
   margin: 0 auto;
-  margin-top: 4rem;
   width: 80vw;
   /* have to have a height */
   height: 450px;
@@ -80,7 +83,7 @@ Slider
   overflow: hidden;
 }
 
-.section-center h3 {
+.facts-center h3 {
   text-transform: uppercase;
   font-size: 2rem;
 }
@@ -88,9 +91,9 @@ Slider
 .prev,
 .next {
   position: absolute;
-  top: 200px;
+  top: 370px;
   transform: translateY(-50%);
-  background: var(--clr-grey-5);
+  background: #1493f3;
   color: var(--clr-white);
   width: 1.25rem;
   height: 1.25rem;
@@ -112,10 +115,8 @@ Slider
 .next {
   right: 0;
 }
+
 @media (min-width: 800px) {
-  .text {
-    max-width: 45em;
-  }
   .prev,
   .next {
     width: 2rem;
@@ -124,7 +125,7 @@ Slider
   }
 }
 
-.section-center article {
+.facts-center article {
   position: absolute;
   top: 0;
   left: 0;
