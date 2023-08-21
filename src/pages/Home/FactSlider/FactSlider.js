@@ -1,53 +1,59 @@
-import "./FactSlider.css"
+import "./FactSlider.css";
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+import data from "../../../data/data.js";
+import { useState, useEffect } from "react";
 
 const FactSlider = () => {
+
+  const [facts, setFacts] = useState(data);
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const lastIndex = facts.length - 1;
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, facts]);
+
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 3000);
+    return () => clearInterval(slider);
+  }, [index]);
   
     return (
-      <>
-          <div className="line-divider centered wide">
-                    <h2 className="diamond-text-box">
-                    <span className="left"></span>
-                    <span className="content caps centered">Facts about Panama</span>
-                    <span className="right"></span>
-                    </h2>
-          </div>
-          <div id="carousel">
-          <div id="slide-container">
-            <div className="slide" data-slideindex="0">
-              <div className="slide-banner">Panama's official name is The Republic of Panama.</div>
-            </div>
-            <div className="slide" data-slideindex="1">
-              <div className="slide-banner">The population of Panama is 3,800,644.</div>
-            </div>
-            <div className="slide" data-slideindex="2">
-              <div className="slide-banner">The Capital is Panama City.</div>
-            </div>
-            <div className="slide" data-slideindex="3">
-              <div className="slide-banner">See penguins!</div>
-            </div>
-            <div className="slide" data-slideindex="4">
-              <div className="slide-banner">Panama has a rainy season and a dry season.</div>
-            </div>
-            <div className="slide" data-slideindex="5">
-              <div className="slide-banner">The Panamanian golden frog is Panama's national animal.</div>
-            </div>
-            <div className="slide" data-slideindex="6">
-              <div className="slide-banner">Panama's official language is Spanish.</div>
-            </div>
-          </div>
-          <div id="back-button" className="arrow back">←</div>
-          <div id="forward-button" className="arrow forward">→</div>
-          <div className="slide-indicators">
-            <div className="slide-indicator active"></div>
-            <div className="slide-indicator"></div>
-            <div className="slide-indicator"></div>
-            <div className="slide-indicator"></div>
-            <div className="slide-indicator"></div>
-            <div className="slide-indicator"></div>
-            <div className="slide-indicator"></div>
-          </div>
+      <section className="facts">
+        <div className="section-center">
+          {facts.map((fact, factIndex) => {
+            const { id, title } = fact;
+            let position = "nextSlide";
+            if (factIndex === index) {
+              position = "activeSlide";
+            }
+            if (
+              factIndex === index - 1 ||
+              (index === 0 && factIndex === facts.length - 1)
+            ) {
+              position = "lastSlide";
+            }
+            return (
+              <article key={id} className={position}>
+                <h3>{title}</h3>
+              </article>
+            );
+          })}
+          <button className="prev" onClick={() => setIndex(index - 1)}>
+            <FiChevronLeft />
+          </button>
+          <button className="next" onClick={() => setIndex(index + 1)}>
+            <FiChevronRight />
+          </button>
         </div>
-      </>
+    </section>
 
     )
 }

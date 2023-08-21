@@ -4,9 +4,6 @@ import "./Home.css"
 import Mission from "./Mission";
 import Hero from "./Hero";
 import Featured from "./Featured";
-import Quotes from "./Facts/Facts";
-import Carousel from "./Carousel/Carousel";
-import Slider from "./Slider/Slider";
 import FactSlider from "./FactSlider/FactSlider";
 
 const Home = () => {
@@ -21,7 +18,6 @@ const Home = () => {
           { error && <div>{ error }</div>}
           { isPending && <div>Loading...</div> }
           {data && <BlogList blogs={data} title="All Blogs!" />}
-          {/* <Slider /> */}
           <FactSlider />
         </main>
      );
