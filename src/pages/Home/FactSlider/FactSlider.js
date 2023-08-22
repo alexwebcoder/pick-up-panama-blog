@@ -21,7 +21,7 @@ const FactSlider = () => {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 3000);
+    }, 4500);
     return () => clearInterval(slider);
   }, [index]);
   
