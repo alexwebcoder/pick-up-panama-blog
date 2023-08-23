@@ -20,6 +20,7 @@ const Featured = () => {
                 </div>
                     <article className="blog-article-content">
                         <h3 className="feature-headline caps">How do I visit the Panama Canal?</h3>
+                        <div className="learn-more centered"><span>Learn More</span></div>
                     </article>
                 </div>  
             </a>

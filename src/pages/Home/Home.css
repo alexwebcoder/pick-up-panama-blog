@@ -66,6 +66,7 @@
   
   .blog-article-content {
     padding: 10px;
+    position: relative;
   }
   
   .card-img img, .feature-anchor img, .hero-image img {
@@ -83,6 +84,32 @@
    -moz-animation: zoomeffect 20s;
    animation: zoomeffect 20s;
   }
+
+
+  .learn-more {
+    position: absolute;
+    right: 0;
+    bottom: 49px;
+    background: rgba(0,0,0,.8);
+    color: transparent;
+    font-size: 2rem;
+    height: 0;
+    transition: 1s ease;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    border-radius: 10px 0 0 0;
+  }
+
+
+  .feature-anchor:hover .learn-more {
+    height: 100px;
+    padding-top: 30px;
+    color: #fff;
+  }
+
+
+  
 
   @-webkit-keyframes zoomeffect{
 	
