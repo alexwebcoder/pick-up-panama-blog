@@ -11,7 +11,7 @@ const Featured = () => {
                 <span className="right"></span>
                 </h2>
             </div>
-            <a className="feature-anchor" href="">
+            <a className="feature-anchor" href="/">
                 <div className="feature-wrapper">
                 <div className="feature-photo-container">
                     <figure>
@@ -20,7 +20,6 @@ const Featured = () => {
                 </div>
                     <article className="blog-article-content">
                         <h3 className="feature-headline caps">How do I visit the Panama Canal?</h3>
-                        <div className="learn-more centered"><span>Learn More</span></div>
                     </article>
                 </div>  
             </a>
