@@ -96,8 +96,12 @@
       id: 24
     },
     {
-      title: "Panama's current president is Laurentino Cortizo.",
+      title: "Panama elects a new president and vice president every 5 years.",
       id: 25
+    },
+    {
+      title: "Panama's current president is Laurentino Cortizo.",
+      id: 26
     },
   ];
 
