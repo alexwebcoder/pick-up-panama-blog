@@ -12,7 +12,7 @@
       id: 3
     },
     {
-      title: "Panama has a rainy season and a dry season.",
+      title: "Panama has a rainy season from May through November and a dry season from December through April.",
       id: 4
     },
     {
@@ -32,7 +32,7 @@
       id: 8
     },
     {
-      title: "Panama gained independence from Columbia on November 3, 1903.",
+      title: "Panama gained independence from Spain in 1821 and then from Columbia on November 3, 1903.",
       id: 9
     },
     {
@@ -48,12 +48,56 @@
       id: 12
     },
     {
-      title: "Panama's national unit of currency is the Balboa.",
+      title: "Panama's national unit of currency is the Balboa. United States currency is also accepted.",
       id: 13
     },
     {
       title: "The national bird of Panama is the harpy eagle and it is depicted on Panama's coat of arms.",
       id: 14
+    },
+    {
+      title: "'A Man, A Plan, A Canal, Panama' is a palindrome.",
+      id: 15
+    },
+    {
+      title: "The length of the Panama Canal from shoreline to shoreline is 40 miles.",
+      id: 16
+    },
+    {
+      title: "The Panama Canal locks are 110 feet wide.",
+      id: 17
+    },
+    {
+      title: "The average depth of the Panama Canal is 43 feet.",
+      id: 18
+    },
+    {
+      title: "The Panama Canal was completed in 1914 and opened on August 15th of that year.",
+      id: 19
+    },
+    {
+      title: "The Gatun Lake provides waters to operate the canal locks.",
+      id: 20
+    },
+    {
+      title: "The Panama Canal cuts distance, costs and time for cargo ships traveling between the Atlantic and Pacific Oceans.",
+      id: 21
+    },
+    {
+      title: "Before the Canal was built, ships had to go all the way around the continent of South America to get to the Pacific to the Atlantic Oceans.",
+      id: 22
+    },
+    {
+      title: "Panama geography is very diverse with mountains, rain forests, white sand beaches and over 1500 islands.",
+      id: 23
+    },
+    {
+      title: "Panama has three branches of government which are the executive, legislative and judicial branches.",
+      id: 24
+    },
+    {
+      title: "Panama's current president is Laurentino Cortizo.",
+      id: 25
     },
   ];
 
