@@ -32,10 +32,19 @@
 .contact-hero {
     width: 100%;
     border-radius: 0;
+    padding-top: calc(1920 / 7904 * 100%);
+    position: relative;
+}
+
+.contact-hero h1 {
+    
 }
 
 .contact-us-page img {
     display: block;
     max-width: 100%;
     height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

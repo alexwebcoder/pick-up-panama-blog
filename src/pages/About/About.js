@@ -2,7 +2,7 @@ import "./About.css"
 
 const About = () => {
     return(
-        <main className="margin">
+        <main className="margin about">
             <div className="line-divider centered wide">
                 <h1 className="diamond-text-box">
                 <span className="left"></span>
@@ -35,7 +35,7 @@ const About = () => {
                 <figure className="panel-6">
                     <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/young-lady-walking.JPG'} alt='A young lady walking in front of street vendors'/>
                 </figure>
-                <p>Based on my trips to Panama, I created Pick Up Panama to answer questions about Panama.</p>
+                <p className="based-on">Based on my trips to Panama, I created Pick Up Panama to answer questions about Panama.</p>
                 <figure className="panel-7">
                     <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/sea-food-meal.JPG'} alt='A seafood meal from the fish market'/>
                 </figure>

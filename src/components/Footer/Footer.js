@@ -1,4 +1,4 @@
-import ContactForm from "./ContactForm/ContactForm";
+import ContactForm from "./OptInForm/OptInForm";
 import { Link } from 'react-router-dom';
 import "./Footer.css"
 

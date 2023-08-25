@@ -30,7 +30,7 @@ const ContactUsForm = () => {
  return (
     <main className="margin contact-us-page">
       <figure className="contact-hero">
-          <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/P1000633.JPG'} alt="ocean view from Portebelo"/>
+          <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/ocean-view-portobelo-panama.JPG'} alt="ocean view from Portebelo Panama"/>
       </figure>
       <section className="contact-us-form-container">
         <h1 className="centered">If you have any questions, I'd like to hear from you.</h1>
