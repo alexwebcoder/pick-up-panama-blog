@@ -10,7 +10,7 @@ import NotFound from './pages/NotFound/NotFound';
 import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About";
 import Newsfeed from "./pages/Newsfeed/Newsfeed";
-import ContactUs from './pages/ContactUsForm/ContactUs';
+import ContactUs from './pages/ContactUs/ContactUs';
 
 function App() {
 //   const [results, setResults] = useState([]);

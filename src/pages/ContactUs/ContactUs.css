@@ -1,0 +1,41 @@
+.contact-us-form-container {
+    /* height: 100vh; */
+    margin: 45px auto 0 auto;
+    display:flex;
+    flex-direction: column;
+}
+
+.contact-us-form-container .form {
+   display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background: none;
+}
+
+.contact-us-form-container input {
+    color: #000;
+    border: 3px solid #000;
+}
+
+.contact-us-form-container textarea {
+    resize: vertical;
+    border: 3px solid #000;
+    font-size: 1rem;
+    outline: none;
+    color: #fff;
+    background: none;
+}
+
+.contact-hero {
+    width: 100%;
+    border-radius: 0;
+}
+
+.contact-us-page img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
