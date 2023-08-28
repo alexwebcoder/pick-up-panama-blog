@@ -1,5 +1,6 @@
 .newsfeed {
    margin-bottom: 45px;
+   margin-top: 92px;
 }
 
 .newsfeed h1 {
@@ -7,16 +8,37 @@
 }
 
 .news-article-container {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
-    height: 1150px;
+    height: 100vh;
     overflow-y: scroll;
-    /* background: #000; */
-    /* padding: 20px; */
+    border-radius: 18px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 20px solid #000;
+    scrollbar-color:#1493f3 darkgray;
+    scrollbar-width: auto;
+  }
+  
+  .news-hero {
+    width: 100%;
+    border-radius: 0;
+    padding-top: calc(1920 / 7904 * 100%);
+    position: relative;
+  }
+  
+  .news-hero img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .feed-container {
+    padding: 20px;
+    border-radius: 18px;
+  
 }
-
 
 .news-article-container a {
     display: block;
@@ -24,7 +46,26 @@
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 20px auto;
-    width: 95%;
+    transition: 0.6s;
+  position: relative;
+}
+
+.feed-container a::after{
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #1493f3;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.6s;
+}
+
+.feed-container a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .article-date {
@@ -32,7 +73,7 @@
 }
 
 .news-article-container::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
   }
 
   .news-article-container::-webkit-scrollbar-track {

@@ -22,7 +22,10 @@ const Newsfeed = () => {
   }, []);
 
     return (
-      <main className="margin newsfeed">
+      <main className="margin newsfeed"> 
+        <figure className="news-hero">
+          <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/ocean-view-portobelo-panama.JPG'} alt="ocean view from Portebelo Panama"/>
+       </figure>
         <div className="line-divider centered wide">
             <h1 className="diamond-text-box">
               <span className="left"></span>
@@ -31,6 +34,7 @@ const Newsfeed = () => {
             </h1>
         </div>
         <div className="news-article-container">
+          <div className="feed-container">
             {articles.map((item, i) => 
               <Feed
                 key={i}
@@ -40,6 +44,7 @@ const Newsfeed = () => {
                 date={item.item.pubDate}
               />
               )}
+          </div>
         </div>
       </main>
     )
