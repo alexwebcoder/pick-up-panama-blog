@@ -16,6 +16,7 @@ Basic styling
     height: 100vh;
     display: flex;
     flex-direction: column;
+    line-height: 1.6rem;
   }
 
   a {

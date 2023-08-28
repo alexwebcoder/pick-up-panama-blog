@@ -10,7 +10,7 @@
   }
   
   .home-content .mission {
-    line-height: 27.2px;
+    line-height: 1.7rem;
     letter-spacing: .04rem;
     display: flex;
     flex-direction: column;
@@ -236,7 +236,7 @@
 @media all and (max-width: 336px) {
     .home-content .mission {
       height: 167px;
-      line-height: 18.2px;
+      line-height: 1.138rem;
     }
   
     .mission p {
