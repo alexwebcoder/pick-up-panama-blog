@@ -34,7 +34,7 @@ const FactSlider = () => {
               <span className="right"></span>
               </h2>
           </div>
-          <section className="facts">
+          <div className="facts">
             <div className="facts-center">
               {facts.map((fact, factIndex) => {
                 const { id, title } = fact;
@@ -61,7 +61,7 @@ const FactSlider = () => {
                 <FiChevronRight />
               </button>
             </div>
-          </section>
+          </div>
         </>
 
 

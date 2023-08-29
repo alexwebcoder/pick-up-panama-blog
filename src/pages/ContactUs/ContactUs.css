@@ -18,16 +18,40 @@
     flex-direction: column;
     align-items: center;
     height: 500px;
-    width: 500px;
+    width: 100%;
     margin: auto;
     background: none;
+    padding-bottom: 0;
+    padding: 20px;
+}
+
+.contact-us-form-container h2 {
+    margin-bottom: 35px;
+}
+
+.contact-button {
+    border: 3px solid #000;
+    background-color: rgb(4, 95, 4);
+    color: #fff;
+}
+
+.contact-us-form .required {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us-form .input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-us-form-container input, .contact-us-form textarea {
     color: #000;
     border: 3px solid #000;
+    margin-bottom: 35px;
     width: 500px;
-    margin-bottom: 25px;
 }
 
 .contact-us-form input::placeholder, .contact-us-form textarea {
@@ -63,10 +87,6 @@
 .contact-hero figcaption {
     padding-left: 5px;
     font-size: .875rem;
-}
-
-.contact-hero h1 {
-    
 }
 
 .contact-us-page img {

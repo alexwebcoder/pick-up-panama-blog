@@ -125,7 +125,7 @@ Slider
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 2.9rem;
+  line-height: 1.7rem;
 }
 
 article.activeSlide {
@@ -147,6 +147,10 @@ article.nextSlide {
     font-size: 2rem;
   }
 
+  .facts-center article {
+    line-height: 2.9rem;
+  }
+
  }
 
 
@@ -163,5 +167,11 @@ article.nextSlide {
 @media screen and (min-width: 992px) {
   .facts {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 1687px) {
+  .facts {
+    width: 50%;
   }
 }

@@ -78,7 +78,7 @@
   position: relative;
 }
 
-.optin-button, .form input {
+.optin-button, .form input, .contact-button {
   padding: 15px;
   width: 225px;
   font-size: 1rem;
@@ -120,6 +120,7 @@
   background: #000;
   color: #fff;
   padding: 35px 5px 25px 5px;
+  line-height: 1.6rem;
 }
 
 .cta h3 {

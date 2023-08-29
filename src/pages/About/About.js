@@ -2,7 +2,7 @@ import "./About.css"
 
 const About = () => {
     return(
-        <main className="margin about-page">
+        <main className="about-page">
             <figure className="about-hero">
                 <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/coronado-panama.JPG'} alt="Villa Mayte Coronado Panama"/>
                 <figcaption>Villa Mayte Vacation property in Coronado Panama</figcaption>

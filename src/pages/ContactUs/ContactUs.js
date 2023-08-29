@@ -41,12 +41,11 @@ const ContactUsForm = () => {
             </h1>
       </div>
       <section className="contact-us-form-container">
-        <h2 className="centered">I'd like to hear from you.</h2>
+        <h2 className="centered">Always happy to hear from you.</h2>
         <Form className="contact-us-form" onSubmit={handleOnSubmit}>
           <Form.Field
-            id='form-input-control-email'
+            id='form-input-control-email-address'
             control={Input}
-            label='Email'
             name='user_email'
             placeholder='Email'
             required
@@ -56,7 +55,6 @@ const ContactUsForm = () => {
           <Form.Field
             id='form-input-control-last-name'
             control={Input}
-            label='Name'
             name='user_name'
             placeholder='Name'
             required
@@ -66,14 +64,13 @@ const ContactUsForm = () => {
           <Form.Field
             id='form-textarea-control-opinion'
             control={TextArea}
-            label='Message'
             name='user_message'
-            placeholder='Send in your questions, comments or just say hello.'
+            placeholder='Send in your questions, and comments, or just say hello.'
             rows='10'
             cols='30'
             required
           />
-          <Button type='submit' color='green'>Submit</Button>
+          <Button type='submit' className='contact-button'>Submit</Button>
         </Form>
       </section>
     </main>
