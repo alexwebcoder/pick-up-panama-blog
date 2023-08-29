@@ -23,12 +23,7 @@
     position: relative;
 }
 
-.about-hero figcaption {
-    padding-left: 5px;
-    font-size: .875rem;
-}
-
-.about-hero img{
+.about-hero img {
     display: block;
     max-width: 100%;
     height: auto;

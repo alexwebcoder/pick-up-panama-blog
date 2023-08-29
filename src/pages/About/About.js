@@ -5,7 +5,7 @@ const About = () => {
         <main className="about-page">
             <figure className="about-hero">
                 <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/coronado-panama.JPG'} alt="Villa Mayte Coronado Panama"/>
-                <figcaption>Villa Mayte Vacation property in Coronado Panama</figcaption>
+                <figcaption className="fig-caption">Villa Mayte Vacation property in Coronado Panama</figcaption>
             </figure>
             <div className="line-divider centered wide">
                 <h1 className="diamond-text-box">
