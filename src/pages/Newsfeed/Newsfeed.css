@@ -27,7 +27,7 @@
 
 .news-hero figcaption {
   padding-left: 5px;
-  font-size: .875rem;
+  font-size: .75rem;
 }
 
 .news-hero img {
@@ -42,6 +42,10 @@
 .feed-container {
   padding: 20px 10px 20px 10px;
   border-radius: 18px;
+}
+
+.feed-container h2 {
+  margin-bottom: 4px;
 }
 
 .news-article-container a {

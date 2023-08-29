@@ -1,9 +1,9 @@
-.margin {
-    margin-top: 144px;
+.about-page {
+    margin-top: 91px;
 }
 
 .comic {
-    width: 95%;
+    width: 100%;
     margin: 0 auto 45px auto;
     position: relative;
     background-color: #000;
@@ -16,7 +16,28 @@
     border-radius: 18px;
 }
 
-.about h1 {
+.about-hero {
+    width: 100%;
+    border-radius: 0;
+    padding-top: calc(1641 / 5456 * 100%);
+    position: relative;
+}
+
+.about-hero figcaption {
+    padding-left: 5px;
+    font-size: .875rem;
+}
+
+.about-hero img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-page h1 {
     font-size: 1.3125rem;
 }
 
@@ -78,8 +99,6 @@
     align-self: flex-end;
 }
 
-
-
 .comic .panel-7 {
     width: 40%;
     left: 10px;
@@ -116,7 +135,6 @@
 
 /* Tablet menu */
 @media all and (min-width: 960px) {
-
     .comic {
         width: 60%;
    }
@@ -151,8 +169,8 @@
         padding-bottom: 10px;
    }
 
-   .comic .panel-2, .comic .panel-5 {
-    right: 20px;
+    .comic .panel-2, .comic .panel-5 {
+        right: 20px;
    }
 
     .panel-2 img, .panel-5 img {
@@ -171,6 +189,13 @@
    }
 }
 
+/* Wider screens */
+@media all and (min-width: 1450px) { 
+    .comic {
+      width: 47%;
+    }
+  }
+
 @media all and (min-width: 1350px) {
     .comic .panel-3a {
         top: 25.35%;
@@ -178,7 +203,6 @@
 }
 
 @media all and (max-width: 300px) {
-
     .comic figure {
         width: 100%;
    }
@@ -191,5 +215,4 @@
         font-size: .875rem;
         top: 1px;
    }
-
 }

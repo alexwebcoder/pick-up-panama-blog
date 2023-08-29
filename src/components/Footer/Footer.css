@@ -60,8 +60,8 @@
 }
 
 .credits, .copyright, .no-reproduction {
-  margin-bottom: 15px;
   font-size: .875rem;
+  line-height: 1.6rem;
 }
 
 .credits {
@@ -158,11 +158,12 @@
 
   .footer .menu {
       flex-direction: row;
-      margin-bottom: 0;
+      margin-bottom: -1px;
   }
 
   .footer .item {
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .form {

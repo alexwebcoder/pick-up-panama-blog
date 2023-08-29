@@ -56,7 +56,7 @@
       id: 14
     },
     {
-      title: "'A Man, A Plan, A Canal, Panama' is a palindrome.",
+      title: `"A Man, A Plan, A Canal, Panama" is a palindrome.`,
       id: 15
     },
     {

@@ -30,17 +30,25 @@ const ContactUsForm = () => {
  return (
     <main className="margin contact-us-page">
       <figure className="contact-hero">
-          <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/coronado-beach-panama.JPG'} alt="ocean view from Portebelo Panama"/>
+          <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/coronado-beach-panama.JPG'} alt="Playa Coronado Panama"/>
+          <figcaption>Playa Coronado Panama</figcaption>
       </figure>
+      <div className="line-divider centered wide">
+            <h1 className="diamond-text-box">
+            <span className="left"></span>
+            <span className="content caps centered">Contact</span>
+            <span className="right"></span>
+            </h1>
+      </div>
       <section className="contact-us-form-container">
-        <h1 className="centered">If you have any questions, I'd like to hear from you.</h1>
+        <h2 className="centered">I'd like to hear from you.</h2>
         <Form className="contact-us-form" onSubmit={handleOnSubmit}>
           <Form.Field
             id='form-input-control-email'
             control={Input}
             label='Email'
             name='user_email'
-            placeholder='Email…'
+            placeholder='Email'
             required
             icon='mail'
             iconPosition='left'
@@ -50,7 +58,7 @@ const ContactUsForm = () => {
             control={Input}
             label='Name'
             name='user_name'
-            placeholder='Name…'
+            placeholder='Name'
             required
             icon='user circle'
             iconPosition='left'
@@ -60,7 +68,7 @@ const ContactUsForm = () => {
             control={TextArea}
             label='Message'
             name='user_message'
-            placeholder='Message…'
+            placeholder='Send in your questions, comments or just say hello.'
             rows='10'
             cols='30'
             required

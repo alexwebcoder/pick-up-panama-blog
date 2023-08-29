@@ -22,10 +22,10 @@ const Newsfeed = () => {
   }, []);
 
     return (
-      <main className="margin newsfeed"> 
+      <main className="newsfeed"> 
         <figure className="news-hero">
-          <figcaption>View of the Atlantic Ocean from Portobelo Panama</figcaption>
           <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/ocean-view-portobelo-panama.JPG'} alt="ocean view from Portobelo Panama"/>
+          <figcaption>View of the Atlantic Ocean from Portobelo Panama</figcaption>
        </figure>
         <div className="line-divider centered wide">
             <h1 className="diamond-text-box">
