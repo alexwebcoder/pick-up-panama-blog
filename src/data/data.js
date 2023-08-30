@@ -1,6 +1,6 @@
  const facts = [
     {
-      title : "Panama's official name is The Republic of Panama.",
+      title : "Panama's official name is the Republic of Panama.",
       id: 1
     },
     {
@@ -8,7 +8,7 @@
       id: 2
     },
     {
-      title: "The Capital of Panama is Panama City.",
+      title: "The capital of Panama is Panama City.",
       id: 3
     },
     {
@@ -24,11 +24,11 @@
       id: 6
     },
     {
-      title: "Panama is bordered by the Atlantic and the Pacific oceans and is between Columbia and Costa Rica.",
+      title: "Panama is bordered by Columbia and Costa Rica and is located between the Atlantic and Pacific oceans.",
       id: 7
     },
     {
-      title: `The name Panama means "an abundance of fish."  It derives from a former fishing location that was near the present capital.`,
+      title: `Panama means "an abundance of fish". It derives from a former fishing location that was near the present capital.`,
       id: 8
     },
     {
@@ -36,11 +36,11 @@
       id: 9
     },
     {
-      title: "Baseball is considered Panama's national sport.",
+      title: "Baseball is Panama's national sport.",
       id: 10
     },
     {
-      title: "Sancocho is a tradional soup and is considered to be Panama's national dish.",
+      title: "Sancocho is a traditional soup and is Panama's national dish.",
       id: 11
     },
     {
@@ -48,15 +48,15 @@
       id: 12
     },
     {
-      title: "Panama's national unit of currency is the Balboa. United States currency is also accepted.",
+      title: "Panama's national unit of currency is the Balboa. Panama also accepts United States currency.",
       id: 13
     },
     {
-      title: "The national bird of Panama is the harpy eagle and it is depicted on Panama's coat of arms.",
+      title: "The national bird of Panama is the harpy eagle, which is depicted on the coat of arms.",
       id: 14
     },
     {
-      title: `"A Man, A Plan, A Canal, Panama" is a palindrome.`,
+      title: `"A Man, A Plan, A Canal, Panama," is a palindrome.`,
       id: 15
     },
     {
@@ -72,35 +72,35 @@
       id: 18
     },
     {
-      title: "The Panama Canal was completed in 1914 and opened on August 15th of that year.",
+      title: "The Panama Canal opened on August 15, 1914.",
       id: 19
     },
     {
-      title: "The Gatun Lake provides waters to operate the canal locks.",
+      title: "The Gatun Lake provides water to operate the canal locks.",
       id: 20
     },
     {
-      title: "The Panama Canal cuts distance, costs and time for cargo ships traveling between the Atlantic and Pacific Oceans.",
+      title: "The Panama Canal cuts distance, costs, and time for cargo ships traveling between the Atlantic and Pacific Oceans.",
       id: 21
     },
     {
-      title: "Before the Canal was built, ships had to go all the way around the continent of South America to get to the Pacific to the Atlantic Oceans.",
+      title: "Before the Panama Canal was built, ships had to travel all the way around South America to reach the Pacific and Atlantic Oceans.",
       id: 22
     },
     {
-      title: "Panama geography is very diverse with mountains, rain forests, white sand beaches and over 1500 islands.",
+      title: "The geography of Panama is very diverse with mountains, rain forests, white sandy beaches and more than 1500 islands.",
       id: 23
     },
     {
-      title: "Panama has three branches of government which are the executive, legislative and judicial branches.",
+      title: "Panama's government is made up of three branches: the executive, legislative, and judicial branches.",
       id: 24
     },
     {
-      title: "Panama elects a new president and vice president every 5 years.",
+      title: "Panama elects a new president and a new vice president every 5 years.",
       id: 25
     },
     {
-      title: "Panama's current president is Laurentino Cortizo.",
+      title: "Laurentino Cortizo is the current president of Panama.",
       id: 26
     },
   ];

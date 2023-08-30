@@ -10,7 +10,7 @@ const BlogList = ({ blogs, title }) => {
             <article key={blog.id}>
               <Link to={`/blogs/${blog.id}`}>
               <figure className="card-img">
-                        <img className="no-right-click" src={blog.image} alt="Panamanian motorcycle club riding through Panama City"/>
+                        <img className="no-right-click" src={blog.image} alt={blog.alt}/>
                     </figure>
                 <div className="blog-article-content">
                   <h3>{ blog.title }</h3>
