@@ -1,10 +1,37 @@
 .blog-details {
-    width: 60%;
+    width: 46%;
     margin: 193px auto 0 auto;
+    line-height: 1.6rem;
+}
+
+.blog-details h1 {
+    font-size: 2.813rem;
+    margin-bottom: 35px;
+    letter-spacing: .05em;
 }
 
 .blog-details img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+h2.body {
+    padding: 25px 0;
+    border-top: 1px solid #a1a1a1;
+    border-bottom: 1px solid #a1a1a1;
+    margin: 45px 0;
+    font-weight: 400;
+    line-height: 1.9rem;
+}
+
+.date {
+    font-size: .75rem;
+    position: relative;
+    top: -45px;
+}
+
+.blog-details .line-divider.wide::before {
+    width: 100%;
+    left: 0;
 }
