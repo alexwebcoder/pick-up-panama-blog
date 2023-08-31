@@ -1,6 +1,10 @@
-import "./About.css"
+import "./About.css";
+import { TabTitle } from '../../utils/GeneralFunctions';
+
 
 const About = () => {
+    TabTitle('About Pick Up Panama');
+
     return(
         <main className="about-page">
             <figure className="about-hero">

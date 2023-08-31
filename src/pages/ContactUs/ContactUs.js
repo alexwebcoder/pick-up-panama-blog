@@ -2,8 +2,10 @@ import emailjs from 'emailjs-com';
 import { Form, Input, TextArea,Button } from 'semantic-ui-react';
 import Swal from 'sweetalert2';
 import "./ContactUs.css"
+import { TabTitle } from '../../utils/GeneralFunctions';
 
 const ContactUsForm = () => {
+    TabTitle('Contact Pick Up Panama');
     const SERVICE_ID = "service_q7jfaw4";
     const TEMPLATE_ID = "template_220q62k";
     const USER_ID = "RpfI2tiLJvbu5BKwH";

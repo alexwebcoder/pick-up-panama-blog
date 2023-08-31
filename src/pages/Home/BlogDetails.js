@@ -1,11 +1,15 @@
 import { useParams } from "react-router-dom";
 import useFetch from '../../useFetch';
 import "./BlogDetails.css";
+import { TabTitle } from '../../utils/GeneralFunctions';
+
 
 const BlogDetails = () => {
  //using the useParams hook to grab values (route params) from current url (route)
     const { id } = useParams();
     const { data: blog, error, isPending } = useFetch('http://localhost:8000/blogs/' + id);
+    
+    TabTitle(id.charAt(0).toUpperCase()+id.slice(1).split('-').join(' '));
 
     return (
         <main className="blog-details margin">

@@ -5,9 +5,11 @@ import Mission from "./Mission";
 import Hero from "./Hero";
 import Featured from "./Featured";
 import FactSlider from "./FactSlider/FactSlider";
+import { TabTitle } from "../../utils/GeneralFunctions";
 
 const Home = () => {
     const {data, isPending, error} = useFetch('http://localhost:8000/blogs');
+    TabTitle('Learn about Panama');
 
     return ( 
         <main className="home-content">
