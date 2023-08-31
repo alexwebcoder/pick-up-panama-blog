@@ -102,6 +102,10 @@
   .feed-container {
     padding: 20px;
   }
+
+  .newsfeed {
+    margin-bottom: 65px;
+  }
 }
 
 /* Wider screens */

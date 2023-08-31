@@ -97,3 +97,10 @@
     top: 0;
     left: 0;
 }
+
+/* Desktop menu */
+@media all and (min-width: 960px) { 
+ .contact-us-form-container {
+    margin-bottom: 65px;
+ }  
+}

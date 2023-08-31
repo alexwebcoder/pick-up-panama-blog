@@ -163,6 +163,12 @@ article.nextSlide {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .facts {
+    margin-bottom: 65px;
+  }
+}
+
 
 @media screen and (min-width: 992px) {
   .facts {

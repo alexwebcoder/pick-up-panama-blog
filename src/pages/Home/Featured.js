@@ -4,7 +4,7 @@ const Featured = () => {
    return (
     <>
       <section className="featured-content-container">
-            <div className="line-divider centered wide">
+            <div className="line-divider feature centered wide">
                 <h2 className="diamond-text-box">
                 <span className="left"></span>
                 <span className="content caps centered">Featured Story</span>
