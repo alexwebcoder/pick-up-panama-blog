@@ -46,7 +46,7 @@
       "body": "Molas are works of art. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium vulputate sapien nec sagittis aliquam. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat. Tristique nulla aliquet enim tortor at auctor urna. Habitasse platea dictumst vestibulum rhoncus est. At quis risus sed vulputate odio ut enim. Quis varius quam quisque id diam. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Ipsum nunc aliquet bibendum enim facilisis gravida.",
       "author": "Alex DeLeon",
       "id": "what-are-molas",
-      "image": "images/panamanian-molas.JPG",
+      "image": "http://localhost:3000/images/panamanian-molas.JPG",
       "figcaption": "Souvenirs with Mola designs on them",
       "alt": "Souvenirs with Mola designs on them"
       
@@ -56,7 +56,7 @@
       "body": "Lorem ipsum lorem",
       "author": "Alex DeLeon",
       "id": "how-do-i-visit-the-panama-canal",
-      "image": "images/panama-canal-ship.JPG",
+      "image": "http://localhost:3000/images/panama-canal-ship.JPG",
       "figcaption": "The Panama Canal in 2018",
       "alt": "The Panama Canal in 2018"
       

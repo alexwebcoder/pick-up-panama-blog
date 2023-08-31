@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-// import useFetch from "../../useFetch";
 
-const Featured = ({ blogs, title }) => {
-//    const {data, isPending, error} = useFetch('http://localhost:8000/blogs');
+const Featured = () => {
+
    return (
     <>
       <section className="featured-content-container">
@@ -13,7 +12,7 @@ const Featured = ({ blogs, title }) => {
                 <span className="right"></span>
                 </h2>
             </div>
-            <Link to={`/blogs/how-do-i-visit-the-panama-canal`}className="feature-anchor">
+            <Link to={`/blogs/how-do-i-visit-the-panama-canal`} className="feature-anchor">
                 <div className="feature-wrapper">
                 <div className="feature-photo-container">
                     <figure>
