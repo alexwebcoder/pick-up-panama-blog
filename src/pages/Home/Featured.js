@@ -1,6 +1,8 @@
-// import PanamaCanalShip from '/images/panama-canal-ship.JPG'
+import { Link } from "react-router-dom";
+// import useFetch from "../../useFetch";
 
-const Featured = () => {
+const Featured = ({ blogs, title }) => {
+//    const {data, isPending, error} = useFetch('http://localhost:8000/blogs');
    return (
     <>
       <section className="featured-content-container">
@@ -11,7 +13,7 @@ const Featured = () => {
                 <span className="right"></span>
                 </h2>
             </div>
-            <a className="feature-anchor" href="/">
+            <Link to={`/blogs/how-do-i-visit-the-panama-canal`}className="feature-anchor">
                 <div className="feature-wrapper">
                 <div className="feature-photo-container">
                     <figure>
@@ -22,7 +24,7 @@ const Featured = () => {
                         <h3 className="feature-headline caps">How do I visit the Panama Canal?</h3>
                     </article>
                 </div>  
-            </a>
+            </Link>
         </section>
         <div className="line-divider centered wide">
             <h2 className="diamond-text-box">

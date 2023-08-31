@@ -16,38 +16,49 @@
       "imageThree": "/images/panamanian-policeman-outside-of-supermarket.JPG",
       "imageFour": "/images/panamanian-policeman-outside-of-bank.JPG",
       "imageFive": "/images/coronado-checkpoint-panama.JPG",
-      "figcaption": "A Panamanian motorcycle club in El Cangrejo, Panama City.",
-      "figcaptionTwo": "Panamanian Public Forces in Coronado.",
+      "figcaption": "A Panamanian motorcycle club in El Cangrejo, Panama City",
+      "figcaptionTwo": "Panamanian Public Forces in Coronado",
       "figcaptionThree": "A Panamanian policeman outside of the supermarket",
       "figcaptionFour": "A Panamanian policeman outside of a bank",
       "figcaptionFive": "Going through a checkpoint in Coronado Panama",
       "alt":"Panamanian motorcycle club riding through Panama City",
       "altTwo":"Panamanian Public Forces in Coronado",
       "altThree":"A Panamanian policeman outside of the supermarket",
-      "altFour":"A Panamanian policeman outside of a bank.",
-      "altFive":"A car goes through a checkpoint in Coronado Panama."
+      "altFour":"A Panamanian policeman outside of a bank",
+      "altFive":"A car goes through a checkpoint in Coronado Panama"
 
     },
     {
       "title": "How do I get around in Panama?",
-      "body": "Molas are works of art. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium vulputate sapien nec sagittis aliquam. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat. Tristique nulla aliquet enim tortor at auctor urna. Habitasse platea dictumst vestibulum rhoncus est. At quis risus sed vulputate odio ut enim. Quis varius quam quisque id diam. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Ipsum nunc aliquet bibendum enim facilisis gravida.",
+      "body": "Take the bus. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium vulputate sapien nec sagittis aliquam. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat. Tristique nulla aliquet enim tortor at auctor urna. Habitasse platea dictumst vestibulum rhoncus est. At quis risus sed vulputate odio ut enim. Quis varius quam quisque id diam. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Ipsum nunc aliquet bibendum enim facilisis gravida.",
       "author": "Alex DeLeon",
       "className": "transportation",
       "id": "how-do-i-get-around-in-panama",
       "image": "/images/panamanian-diablo-bus.JPG",
       "imageTwo": "/images/panamanian-in-back-of-truck.JPG",
       "figcaption": "A Panamanian diablo bus coming down a hill",
-      "figcaptionTwo": "Some guys riding in the back of a pick up truck.",
-      "alt": "A Panamanian diablo bus coming down a hill.",
-      "altTwo":"Some guys riding in the back of a pick up truck."
+      "figcaptionTwo": "Some guys riding in the back of a pick up truck",
+      "alt": "A Panamanian diablo bus coming down a hill",
+      "altTwo":"Some guys riding in the back of a pick up truck"
     },
     {
       "title": "What are Molas?",
-      "body": "what are the foods like?",
+      "body": "Molas are works of art. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium vulputate sapien nec sagittis aliquam. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat. Tristique nulla aliquet enim tortor at auctor urna. Habitasse platea dictumst vestibulum rhoncus est. At quis risus sed vulputate odio ut enim. Quis varius quam quisque id diam. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Ipsum nunc aliquet bibendum enim facilisis gravida.",
       "author": "Alex DeLeon",
       "id": "what-are-molas",
       "image": "images/panamanian-molas.JPG",
+      "figcaption": "Souvenirs with Mola designs on them",
       "alt": "Souvenirs with Mola designs on them"
+      
+    },
+    {
+      "title": "How do I visit the Panama Canal?",
+      "body": "Lorem ipsum lorem",
+      "author": "Alex DeLeon",
+      "id": "how-do-i-visit-the-panama-canal",
+      "image": "images/panama-canal-ship.JPG",
+      "figcaption": "The Panama Canal in 2018",
+      "alt": "The Panama Canal in 2018"
       
     }
   ]
