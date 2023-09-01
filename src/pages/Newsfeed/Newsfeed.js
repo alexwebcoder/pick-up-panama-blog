@@ -2,8 +2,12 @@ import { useEffect, useState } from "react";
 import "./Newsfeed.css";
 import axios from "axios";
 import Feed from "./Feed";
+import { TabTitle, Capitalize } from '../../utils/GeneralFunctions';
 
 const Newsfeed = () => {
+  TabTitle('Panama News Feed');
+  Capitalize()
+
   const [articles, setArticles] = useState([]);
  
   console.log(articles);

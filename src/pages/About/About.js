@@ -1,9 +1,10 @@
 import "./About.css";
-import { TabTitle } from '../../utils/GeneralFunctions';
+import { TabTitle, Capitalize } from '../../utils/GeneralFunctions';
 
 
 const About = () => {
     TabTitle('About Pick Up Panama');
+    Capitalize();
 
     return(
         <main className="about-page">

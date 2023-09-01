@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetch from '../../useFetch';
 import "./BlogDetails.css";
-import { TabTitle } from '../../utils/GeneralFunctions';
-import { Capitalize } from '../../utils/GeneralFunctions';
+import { TabTitle, Capitalize } from '../../utils/GeneralFunctions';
 
 
 const BlogDetails = () => {

@@ -5,11 +5,12 @@ import Mission from "./Mission";
 import Hero from "./Hero";
 import Featured from "./Featured";
 import FactSlider from "./FactSlider/FactSlider";
-import { TabTitle } from "../../utils/GeneralFunctions";
+import { TabTitle, Capitalize } from '../../utils/GeneralFunctions';
 
 const Home = () => {
     const {data, isPending, error} = useFetch('http://localhost:8000/blogs');
     TabTitle('Pick Up Panama | Learn About Panama');
+    Capitalize();
 
     return ( 
         <main className="home-content">
