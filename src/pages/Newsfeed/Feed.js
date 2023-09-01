@@ -3,7 +3,7 @@ import { TabTitle } from "../../utils/GeneralFunctions";
 
 
 const Feed = ({title, link, date, contentSnippet}) => {
-    TabTitle('Panama news feed');
+    TabTitle('Panama News Feed');
 
     let formatted = { day: "numeric", month: "long", year: "numeric"}
     let articleDate = new Date(date).toLocaleDateString("en-US", formatted)

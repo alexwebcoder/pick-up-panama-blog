@@ -9,7 +9,7 @@ import { TabTitle } from "../../utils/GeneralFunctions";
 
 const Home = () => {
     const {data, isPending, error} = useFetch('http://localhost:8000/blogs');
-    TabTitle('Learn about Panama');
+    TabTitle('Pick Up Panama | Learn About Panama');
 
     return ( 
         <main className="home-content">
