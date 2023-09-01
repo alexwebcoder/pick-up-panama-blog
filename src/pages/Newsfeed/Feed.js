@@ -1,10 +1,6 @@
 import "./Feed.css";
-// import { TabTitle, Capitalize } from '../../utils/GeneralFunctions';
-
 
 const Feed = ({title, link, date, contentSnippet}) => {
-    // TabTitle('Panama News Feed');
-    // Capitalize();
 
     let formatted = { day: "numeric", month: "long", year: "numeric"}
     let articleDate = new Date(date).toLocaleDateString("en-US", formatted)

@@ -8,7 +8,7 @@ export const Capitalize = () => {
   
     if (document.title == "Is panama safe") {
         document.title = "Is Panama Safe?";
-        document.getElementsByTagName('meta')["description"].content = "panama safety page";
+        document.getElementsByTagName('meta')["description"].content = "Do you want to stay safe in Panama? Learn what precautions you can take to enjoy your trip and avoid being a target for crime.";
       }
     
     if (document.title == "How do i visit the panama canal") {
