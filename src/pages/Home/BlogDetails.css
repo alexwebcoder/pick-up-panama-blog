@@ -1,3 +1,7 @@
+.safety {
+    font-size: 1.125rem;
+}
+
 .blog-details {
     width: 46%;
     margin: 193px auto 0 auto;
@@ -16,7 +20,7 @@
     display: block;
 }
 
-h2.body {
+p.body {
     padding: 25px 0;
     border-top: 1px solid #a1a1a1;
     border-bottom: 1px solid #a1a1a1;
