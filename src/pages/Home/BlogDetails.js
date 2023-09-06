@@ -32,9 +32,13 @@ const BlogDetails = () => {
                     <p className="body-two">
                         { blog.bodyTwo }
                     </p>
-                    <div className="body-two-a">
+                    <p className="body-two-a">
                         { blog.bodyTwoA }
-                    </div>
+                    </p>
+                    <figure>
+                        <img className="no-right-click" src={blog.imageTwo} alt={blog.altTwo}/>
+                        <figcaption>{blog.figcaptionTwo}</figcaption>
+                    </figure>
                     <section>
                         <h2>{ blog.h2 }</h2>
                         <p>{ blog.bodyThree }</p>
@@ -100,22 +104,6 @@ const BlogDetails = () => {
                         </ul>
                         <p>{ blog.bodyTwentyEight }</p>
                         <p>{ blog.bodyTwentyNine }</p>
-
-
-
-
-                        
-
-
-
-
-
-
-
-
-
-                        
-
                     </section>
                 </section>
             )}

@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About";
 import Newsfeed from "./pages/Newsfeed/Newsfeed";
 import ContactUs from './pages/ContactUs/ContactUs';
+import FeatureStory from './pages/FeatureStory/FeatureStory';
 
 function App() {
 //   const [results, setResults] = useState([]);
@@ -25,6 +26,7 @@ function App() {
                  <Route path='/about' element={ <About/> } />
                  <Route path='/contact' element={ <ContactUs/> } />
                  <Route path='/blogs/:id' element={ <BlogDetails/> } />
+                 <Route path='/featured/:id' element={ <FeatureStory/> } />
                  <Route path='/*' element={ <NotFound /> } />
               </Routes>
           <Footer />

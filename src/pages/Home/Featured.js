@@ -12,7 +12,7 @@ const Featured = () => {
                 <span className="right"></span>
                 </h2>
             </div>
-            <Link to={`/blogs/how-do-i-visit-the-panama-canal`} className="feature-anchor">
+            <Link to={`/featured/how-do-i-visit-the-panama-canal`} className="feature-anchor">
                 <div className="feature-wrapper">
                 <div className="feature-photo-container">
                     <figure>
