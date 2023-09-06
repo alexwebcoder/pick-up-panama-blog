@@ -4,8 +4,12 @@
 
 .blog-details {
     width: 46%;
-    margin: 193px auto 65px auto;
+    margin: 152px auto 65px auto;
     line-height: 1.6rem;
+}
+
+.date span.content {
+    font-size: .75rem;
 }
 
 .blog-details h1 {
@@ -20,24 +24,16 @@
     display: block;
 }
 
-p.body {
+p.intro {
     padding: 25px 0;
     border-top: 1px solid #a1a1a1;
     border-bottom: 1px solid #a1a1a1;
-    margin: 45px 0;
-    font-weight: 400;
-    line-height: 1.9rem;
-}
-
-.date {
-    font-size: .75rem;
-    position: relative;
-    top: -45px;
-}
-
-.blog-details .line-divider.wide::before {
-    width: 100%;
-    left: 0;
+    margin: 45px auto;
+    font-weight: 600;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    width: 80%;
+    
 }
 
 .card-container :nth-child(3) {
@@ -51,3 +47,12 @@ p.body {
         margin-right: 0;
     }
 } 
+
+
+@media all and (min-width: 1500px) {
+
+    .blog-details .line-divider.wide:before {
+        width: 50%;
+        left: 25%;
+    }
+}

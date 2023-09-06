@@ -18,9 +18,15 @@ const BlogDetails = () => {
             { error && <div>{ error }</div> }
             { blog && (
                 <section className={blog.className}>
-                    <p className="date centered">{ blog.date }</p>
-                    <h1 className="centered">{ blog.title }</h1>
-                    <p className="body">
+                     <div className="line-divider centered wide">
+                        <p className="diamond-text-box date">
+                        <span className="left"></span>
+                        <span className="content caps centered">{ blog.date }</span>
+                        <span className="right"></span>
+                        </p>
+                     </div>
+                    <h1 className="centered caps">{ blog.title }</h1>
+                    <p className="body intro">
                         { blog.body }
                     </p>
                     <p className="body-two">
