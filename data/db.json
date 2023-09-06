@@ -117,9 +117,11 @@
    
     {
       "title": "How do I visit the Panama Canal?",
-      "body": "Lorem ipsum lorem",
       "author": "Alex DeLeon",
+      "date": "September 6, 2023",
       "id": "how-do-i-visit-the-panama-canal",
+      "className": "panama-canal",
+      "body": "This is going to be great.",
       "image": "http://localhost:3000/images/panama-canal-ship.JPG",
       "figcaption": "The Panama Canal in 2018",
       "alt": "The Panama Canal in 2018"

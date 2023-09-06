@@ -5,6 +5,10 @@ export const TabTitle = (newTitle) => {
 
 
 export const Capitalize = () => {
+
+    if (document.title == "How Do I Visit the Panama Canal?") {
+        document.getElementsByTagName('meta')["description"].content = "Panama Canal Guide";
+    }
   
     if (document.title == "Is panama safe") {
         document.title = "Is Panama Safe?";
