@@ -11,7 +11,6 @@ const BlogDetails = () => {
     
     TabTitle(id.charAt(0).toUpperCase()+id.slice(1).split('-').join(' '));
     Capitalize();
-
     return (
         <main className={`blog-details margin `}>
             { isPending && <div>Loading...</div> } 
@@ -108,8 +107,7 @@ const BlogDetails = () => {
                 </section>
             )}
         </main>
-
-    );
+);
 }
 
 export default BlogDetails;

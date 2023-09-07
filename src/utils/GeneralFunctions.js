@@ -35,7 +35,6 @@ export const Capitalize = () => {
     }
 
     if (document.title == "About Pick Up Panama") {
-        console.log('about')
         document.getElementsByTagName('meta')["description"].content = "About page";
     }
 
