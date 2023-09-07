@@ -67,9 +67,12 @@ const BlogDetails = () => {
                                 <li>{ blog.listItemA}</li>
                                 <li>{ blog.listItemB}</li>
                                 <li>{ blog.listItemC}</li>
+                                <li>{ blog.listItemCC}</li>
+                                <li>{ blog.listItemCCC}</li>
                             </ul>
                             <p>{ blog.bodyEighteen }</p>
                             <p>{ blog.bodyNineteen }</p>
+                            <p>{ blog.bodyNineteenA }</p>
                             <p>{ blog.bodyTwenty }</p>
                             <h3>{ blog.h3Three }</h3>
                             <p>{ blog.bodyTwentyOne }</p>
@@ -102,6 +105,7 @@ const BlogDetails = () => {
                                 <li>{ blog.listItemS}</li>
                                 <li>{ blog.listItemT}</li>
                                 <li>{ blog.listItemU}</li>
+                                <li>{ blog.listItemV}</li>
                             </ul>
                             <p>{ blog.bodyTwentyEight }</p>
                             <p>{ blog.bodyTwentyNine }</p>
