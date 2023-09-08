@@ -78,6 +78,7 @@ const BlogDetails = () => {
                             <p>{ blog.bodyTwentyOne }</p>
                             <h3>{ blog.h3Four }</h3>
                             <p>{ blog.bodyTwentyTwo }</p>
+                            <p>{ blog.bodyTwentyTwoA }</p>
                             <p>{ blog.bodyTwentyThree }</p>
                             <h2>{ blog.h2Three }</h2>
                             <p>{ blog.bodyTwentyFour }</p>
