@@ -12,7 +12,7 @@ const BlogDetails = () => {
     TabTitle(id.charAt(0).toUpperCase()+id.slice(1).split('-').join(' '));
     Capitalize();
 
-    if (document.title == 'Is Panama Safe?') {
+    if (document.title === 'Is Panama Safe?') {
         return (
             <main className={`blog-details margin `}>
                 { isPending && <div>Loading...</div> } 
@@ -28,94 +28,95 @@ const BlogDetails = () => {
                          </div>
                         <h1 className="centered caps">{ blog.title }</h1>
                         <p className="body intro">
-                            { blog.body }
+                            { blog.intro }
                         </p>
                         <p className="body-two">
-                            { blog.bodyTwo }
+                            { blog.moderateCrime }
                         </p>
                         <p className="body-two-a">
-                            { blog.bodyTwoA }
+                            { blog.despiteThis }
                         </p>
-                        <figure>
-                            <img className="no-right-click" src={blog.imageTwo} alt={blog.altTwo}/>
-                            <figcaption>{blog.figcaptionTwo}</figcaption>
+                        <figure className="cops-at-fruitstand">
+                            <img className="no-right-click" src={blog.copsAtFruitStand} alt={blog.fruitStandCopAltText}/>
+                            <figcaption>{blog.fruitStandCopCaption}</figcaption>
                         </figure>
                         <section>
-                            <h2>{ blog.h2 }</h2>
-                            <p>{ blog.bodyThree }</p>
-                            <h3>{ blog.h3 }</h3>
-                            <p>{ blog.bodyFour }</p>
-                            <p>{ blog.bodyFourA }</p>
-                            <h3>{ blog.h3One }</h3>
-                            <p>{ blog.bodyFive }</p>
-                            <p>{ blog.bodySix }</p>
-                            <p>{ blog.bodySeven }</p>
-                            <p>{ blog.bodyEight }</p>
-                            <p>{ blog.bodyNine }</p>
-                            <p>{ blog.bodyTen }</p>
-                            <h3>{ blog.h3Two }</h3>
-                            <p>{ blog.bodyEleven }</p>
-                            <p>{ blog.bodyTwelve }</p>
-                            <p>{ blog.bodyThirteen }</p>
-                            <h2>{ blog.h2One }</h2>
-                            <p>{ blog.bodyFourteen }</p>
-                            <p>{ blog.bodyFifteen }</p>
-                            <p>{ blog.bodySixteen }</p>
-                            <h2>{ blog.h2Two }</h2>
-                            <p>{ blog.bodySeventeen }</p>
+                            <h2>{ blog.h2targets }</h2>
+                            <p>{ blog.criteria }</p>
+                            <h3>{ blog.h3alone }</h3>
+                            <p>{ blog.commonTarget }</p>
+                            <p>{ blog.Oftentimes }</p>
+                            <h3>{ blog.unsurePeople }</h3>
+                            <p>{ blog.bodyLanguage }</p>
+                            <p>{ blog.ifAble }</p>
+                            <p>{ blog.goingAroundCorners }</p>
+                            <p>{ blog.muggersMoveIn }</p>
+                            <p>{ blog.takeNote }</p>
+                            <p>{ blog.whenYouEnter }</p>
+                            <h3>{ blog.h3wealth }</h3>
+                            <p>{ blog.cuffLinks }</p>
+                            <p>{ blog.makeEffort }</p>
+                            <p>{ blog.ensureThat }</p>
+                            <h2>{ blog.h2whatToDo }</h2>
+                            <p>{ blog.ifMugged }</p>
+                            <p>{ blog.manyMuggers }</p>
+                            <p>{ blog.dummyWallet }</p>
+                            <h2>{ blog.h2HighCrime }</h2>
+                            <p>{ blog.accordingTo }</p>
                             <ul>
-                                <li>{ blog.listItemA}</li>
-                                <li>{ blog.listItemB}</li>
-                                <li>{ blog.listItemC}</li>
-                                <li>{ blog.listItemCC}</li>
-                                <li>{ blog.listItemCCC}</li>
+                                <li>{ blog.sanMiguelito}</li>
+                                <li>{ blog.rioAbajo}</li>
+                                <li>{ blog.elChorrillo}</li>
+                                <li>{ blog.santaAna}</li>
+                                <li>{ blog.panamaViejo}</li>
                             </ul>
-                            <p>{ blog.bodyEighteen }</p>
-                            <p>{ blog.bodyNineteen }</p>
-                            <p>{ blog.bodyNineteenA }</p>
-                            <p>{ blog.bodyTwenty }</p>
-                            <h3>{ blog.h3Three }</h3>
-                            <p>{ blog.bodyTwentyOne }</p>
-                            <h3>{ blog.h3Four }</h3>
-                            <p>{ blog.bodyTwentyTwo }</p>
-                            <p>{ blog.bodyTwentyTwoA }</p>
-                            <p>{ blog.bodyTwentyThree }</p>
-                            <h2>{ blog.h2Three }</h2>
-                            <p>{ blog.bodyTwentyFour }</p>
-                            <p>{ blog.bodyTwentyFive }</p>
-                            <p>{ blog.bodyTwentySix }</p>
-                            <h2>{ blog.h2Four }</h2>
-                            <p>{ blog.bodyTwentySeven }</p>
-                            <h2>{ blog.h2Five }</h2>
+                            <p>{ blog.mostCrimeReported }</p>
+                            <p>{ blog.duringDay }</p>
+                            <p>{ blog.cascoViejoBorders }</p>
+                            <p>{ blog.iAdviseAgainst }</p>
+                            <h3>{ blog.h3Colon }</h3>
+                            <p>{ blog.colonIsOn }</p>
+                            <h3>{ blog.darianGap }</h3>
+                            <p>{ blog.nearColumbianBorder }</p>
+                            <p>{ blog.difficultToNavigate }</p>
+                            <p>{ blog.adventureTourist }</p>
+                            <h2>{ blog.h2SafeWater }</h2>
+                            <p>{ blog.hygieneStandards }</p>
+                            <p>{ blog.hepatitisA }</p>
+                            <p>{ blog.playItSafe }</p>
+                            <h2>{ blog.h2Insects }</h2>
+                            <p>{ blog.panamaDoesHave }</p>
+                            <h2>{ blog.h2Tips }</h2>
                             <ul>
-                                <li>{ blog.listItemD}</li>
-                                <li>{ blog.listItemE}</li>
-                                <li>{ blog.listItemF}</li>
-                                <li>{ blog.listItemG}</li>
-                                <li>{ blog.listItemH}</li>
-                                <li>{ blog.listItemI}</li>
-                                <li>{ blog.listItemJ}</li>
-                                <li>{ blog.listItemK}</li>
-                                <li>{ blog.listItemL}</li>
-                                <li>{ blog.listItemM}</li>
-                                <li>{ blog.listItemN}</li>
-                                <li>{ blog.listItemO}</li>
-                                <li>{ blog.listItemP}</li>
-                                <li>{ blog.listItemQ}</li>
-                                <li>{ blog.listItemR}</li>
-                                <li>{ blog.listItemS}</li>
-                                <li>{ blog.listItemT}</li>
-                                <li>{ blog.listItemU}</li>
-                                <li>{ blog.listItemV}</li>
+                                <li>{ blog.shareItinerary }</li>
+                                <li>{ blog.beforeLeavingHotel }</li>
+                                <li>{ blog.smartTraveler }</li>
+                                <li>{ blog.moneyBelt }</li>
+                                <li>{ blog.differentPockets }</li>
+                                <li>{ blog.rubberBand }</li>
+                                <li>{ blog.mentalChecklist }</li>
+                                <li>{ blog.beGuarded }</li>
+                                <li>{ blog.neverLeave }</li>
+                                <li>{ blog.beMindful }</li>
+                                <li>{ blog.commotion }</li>
+                                <li>{ blog.takeLookBack }</li>
+                                <li>{ blog.checkIn }</li>
+                                <li>{ blog.emergencyNum }</li>
+                                <li>{ blog.insurance }</li>
+                                <li>{ blog.phrases }</li>
+                                <li>{ blog.copyPassport }</li>
+                                <li>{ blog.avoidWalking }</li>
+                                <li>{ blog.clubbing }</li>
+                                <li>{ blog.parkWellLit }</li>
                             </ul>
-                            <p>{ blog.bodyTwentyEight }</p>
-                            <p>{ blog.bodyTwentyNine }</p>
+                            <p>{ blog.overallPanamaIs }</p>
+                            <p>{ blog.mostTips }</p>
                         </section>
                     </section>
                 )}
             </main>
     );
-    } if (document.title == 'How do I get Around in Panama?') {
+    } if (document.title === 'How do I get Around in Panama?') {
         return(
             <main className={`blog-details margin `}>
                 { isPending && <div>Loading...</div> } 
@@ -147,7 +148,7 @@ const BlogDetails = () => {
                 )}
             </main>
         )
-    }  if (document.title == 'What are Molas?') {
+    }  if (document.title === 'What are Molas?') {
         return(
             <main className={`blog-details margin `}>
                 { isPending && <div>Loading...</div> } 

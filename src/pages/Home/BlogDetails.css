@@ -55,6 +55,17 @@ p.body-two-a {
     margin-bottom: 20px;
 }
 
+.safety .cops-at-fruitstand {
+    padding-top: calc(4032 / 3024 * 100%);
+    position: relative;
+}
+
+.safety .cops-at-fruitstand img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 @media all and (min-width: 960px) {
     .blog-details {
