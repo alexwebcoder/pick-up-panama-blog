@@ -71,7 +71,15 @@ const BlogDetails = () => {
                             </ul>
                             <p>{ blog.mostCrimeReported }</p>
                             <p>{ blog.duringDay }</p>
+                            <figure className="casco-police">
+                            <img className="no-right-click" src={blog.cascoViejoPolice} alt={blog.cascoViejoPolceAltText}/>
+                            <figcaption>{blog.cascoViejoPoliceCaption}</figcaption>
+                            </figure>
                             <p>{ blog.cascoViejoBorders }</p>
+                            <figure className="near-casco">
+                            <img className="no-right-click" src={blog.nearCascoViejo} alt={blog.nearCascoViejoAltText}/>
+                            <figcaption>{blog.nearCascoViejoCaption}</figcaption>
+                            </figure>
                             <p>{ blog.iAdviseAgainst }</p>
                             <h3>{ blog.h3Colon }</h3>
                             <p>{ blog.colonIsOn }</p>
@@ -116,7 +124,7 @@ const BlogDetails = () => {
             </main>
     );
 } if (document.title === 'How do I get Around in Panama?') {
-    
+
     return(
         <main className={`blog-details margin `}>
                 { isPending && <div>Loading...</div> } 
