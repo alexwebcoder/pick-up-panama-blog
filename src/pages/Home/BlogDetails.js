@@ -11,7 +11,6 @@ const BlogDetails = () => {
     
     TabTitle(id.charAt(0).toUpperCase()+id.slice(1).split('-').join(' '));
     Capitalize();
-
     if (document.title === 'Is Panama Safe?') {
         return (
             <main className={`blog-details margin `}>
@@ -116,9 +115,10 @@ const BlogDetails = () => {
                 )}
             </main>
     );
-    } if (document.title === 'How do I get Around in Panama?') {
-        return(
-            <main className={`blog-details margin `}>
+} if (document.title === 'How do I get Around in Panama?') {
+    
+    return(
+        <main className={`blog-details margin `}>
                 { isPending && <div>Loading...</div> } 
                 { error && <div>{ error }</div> }
                 { blog && (
@@ -181,7 +181,6 @@ const BlogDetails = () => {
             </main>
         )
     }
-    
 }
 
 export default BlogDetails;

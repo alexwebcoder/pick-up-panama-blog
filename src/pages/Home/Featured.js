@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 
-const Featured = () => {
+const handleFeatureChange = () => {
+  document.querySelector('.disabled')?.classList.remove('disabled');
+}
 
+const Featured = () => {
    return (
     <>
       <section className="featured-content-container">
@@ -12,7 +15,7 @@ const Featured = () => {
                 <span className="right"></span>
                 </h2>
             </div>
-            <Link to={`/featured/how-do-i-visit-the-panama-canal`} className="feature-anchor">
+            <Link to={`/featured/how-do-i-visit-the-panama-canal`} className="feature-anchor" onClick={handleFeatureChange}>
                 <div className="feature-wrapper">
                 <div className="feature-photo-container">
                     <figure>

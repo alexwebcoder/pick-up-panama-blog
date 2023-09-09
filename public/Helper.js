@@ -75,7 +75,7 @@ function toggleMenu() {
   
 }
 
-// changes menu into am x
+// changes menu into an x
 const toggleHamburgerEnter = (event) => {
    if (event.keycode === 13 || event.key === 'Enter' || event.keycode === 32 || event.code === 'Space')  {
     console.log('enter key was pressed')
@@ -107,10 +107,10 @@ toggle.addEventListener('click', toggleMenu, false);
 //when user scrolls page, this function executes
 
 window.onscroll = function() {
-  myFunction();
+  progressBar();
 }
 
-const myFunction = () => {
+const progressBar = () => {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   let scrolled = (winScroll / height) * 100;
