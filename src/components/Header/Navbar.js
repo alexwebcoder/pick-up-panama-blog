@@ -19,7 +19,7 @@ const Navbar = () => {
                 <li className="item"><Link to="/contact">Contact</Link></li>
             </ul>
             <ul className="sidenav centered" tabIndex={-1}>
-                <li><Link to="/">Home</Link></li>
+                <li className="disabled"><Link to="/">Home</Link></li>
                 <li><Link to="/newsfeed">Newsfeed</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>

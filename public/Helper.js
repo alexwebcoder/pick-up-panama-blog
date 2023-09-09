@@ -135,6 +135,15 @@ sideNavLinks.forEach(sideNavLink => {
   })
 })
 
+const footerNavLinks = document.querySelectorAll('.footer li');
+
+footerNavLinks.forEach(footerNavLink => {
+   footerNavLink.addEventListener('click', () => {
+    document.querySelector('.disabled')?.classList.remove('disabled');
+    footerNavLink.classList.add('disabled');
+  })
+})
+
 // for the sticky header animation
 
 const header = document.querySelector('.header');

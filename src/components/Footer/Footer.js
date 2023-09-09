@@ -14,7 +14,7 @@ const Footer = () => {
                 <a href="/"><i className="fab fa-twitter"></i></a>     
             </nav>
             <ul className="menu">
-                <li className="item caps home"><Link to ="/">Home</Link></li>
+                <li className="item caps home disabled"><Link to ="/">Home</Link></li>
                 <li className="item caps news"><Link to="/newsfeed">Newsfeed</Link></li>
                 <li className="item caps about"><Link to="/about">About</Link></li>
                 <li className="item caps"><Link to="/contact">Contact</Link></li>

@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 
 const handleArticleChange = () => {
   document.querySelector('.disabled')?.classList.remove('disabled');
+  document.querySelector('.sidenav .disabled')?.classList.remove('disabled');
+  document.querySelector('.footer .disabled')?.classList.remove('disabled');
 }
 
 const BlogList = ({ blogs, title }) => {
