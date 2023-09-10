@@ -75,6 +75,10 @@ const BlogDetails = () => {
                             <img className="no-right-click" src={blog.cascoViejoPolice} alt={blog.cascoViejoPolceAltText}/>
                             <figcaption>{blog.cascoViejoPoliceCaption}</figcaption>
                             </figure>
+                            <figure className="casco-tourist">
+                            <img className="no-right-click" src={blog.cascoTouristAuth} alt={blog.cascoTouristAuthAltText}/>
+                            <figcaption>{blog.cascoTouristAuthCaption}</figcaption>
+                            </figure>
                             <p>{ blog.cascoViejoBorders }</p>
                             <figure className="near-casco">
                             <img className="no-right-click" src={blog.nearCascoViejo} alt={blog.nearCascoViejoAltText}/>
@@ -118,6 +122,10 @@ const BlogDetails = () => {
                             </ul>
                             <p>{ blog.overallPanamaIs }</p>
                             <p>{ blog.mostTips }</p>
+                            <figure className="casco-petty-crime">
+                            <img className="no-right-click" src={blog.cascoPettyCrime} alt={blog.cascoPettyCrimeAltText}/>
+                            <figcaption>{blog.cascoPettyCrimeCaption}</figcaption>
+                            </figure>
                         </section>
                     </section>
                 )}
