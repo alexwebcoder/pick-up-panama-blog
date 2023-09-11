@@ -61,8 +61,8 @@ p.this-article {
     margin-bottom: 0;
 }
 
-.safety h2 {
-    font-size: 1.313rem;
+.safety h2, .safety h3 {
+    font-size: 1.375rem;
     line-height: 1.1;
 }
 
