@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import useFetch from '../../useFetch';
 import "./BlogDetails.css";
 import { TabTitle, Capitalize } from '../../utils/GeneralFunctions';
@@ -11,6 +11,15 @@ const BlogDetails = () => {
     
     TabTitle(id.charAt(0).toUpperCase()+id.slice(1).split('-').join(' '));
     Capitalize();
+
+    const navigate = useNavigate();
+    const goBack = () => {
+        navigate('/featured/how-do-i-visit-the-panama-canal');
+    }
+    const goForward = () => {
+        navigate('/blogs/how-do-i-get-around-in-panama');
+    }
+
     if (document.title === 'Is Panama Safe?') {
         return (
             <main className={`blog-details margin `}>
@@ -135,6 +144,10 @@ const BlogDetails = () => {
                             <figcaption>{ blog.cascoPettyCrimeCaption }</figcaption>
                             </figure>
                         </section>
+                <div className="button-parent">
+                    <button onClick={goBack}>&#8249; Previous Story</button>
+                    <button onClick={goForward}>Next Story &#8250;</button>
+                </div>
                     </section>
                 )}
             </main>

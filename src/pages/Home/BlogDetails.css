@@ -11,6 +11,30 @@
 
 .safety {
     flex: 1;
+    position: relative;
+}
+
+.button-parent {
+    position: absolute;
+    bottom: -45px;
+    display: flex;
+    width: 100%;
+}
+
+.button-parent button:first-child {
+    margin-right: auto;
+}
+
+
+.button-parent button {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #1493f3;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 .date span.content {
@@ -112,6 +136,7 @@ p.this-article {
     padding-top: calc(2752 / 4896 * 100%);
 
 }
+
 
 /* Tablet menu */
 @media all and (min-width: 700px) {
