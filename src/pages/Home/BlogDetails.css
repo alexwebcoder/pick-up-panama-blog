@@ -1,7 +1,7 @@
 
 .blog-details {
     width: 90%;
-    margin: 152px auto 65px auto;
+    margin: 152px auto 41px auto;
     line-height: 1.6;
     font-size: 1.125rem;
     display: flex;
@@ -31,6 +31,10 @@
     font-size: 1rem;
 }
 
+.blog-details .casco-petty-crime {
+    margin-bottom: 0;
+}
+
 .blog-details img {
     max-width: 100%;
     height: auto;
@@ -38,9 +42,15 @@
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 10px;
 }
 
 .blog-details p {margin-bottom: 20px;}
+
+.blog-details .line-divider {
+    margin-top: 0;
+    margin-bottom: 45px;
+}
 
 p.intro {
     padding: 25px 0;
@@ -61,12 +71,12 @@ p.this-article {
     margin-bottom: 0;
 }
 
-.safety h2, .safety h3 {
+.blog-details h2, .blog-details h3 {
     font-size: 1.375rem;
     line-height: 1.1;
 }
 
-.safety h3 {
+.blog-details h3 {
     font-size: 1.25rem;
 }
 
@@ -79,37 +89,45 @@ p.this-article {
     margin-bottom: 20px;
 }
 
-.safety .cops-at-fruitstand {
+.cops-at-fruitstand {
     padding-top: calc(4032 / 3024 * 100%);
 }
 
-.safety .bank-police {
+.bank-police {
     padding-top: calc(2265 / 3024 * 100%);
 
 }
 
-.safety .casco-tourist, .safety .casco-police {
+.casco-tourist, .casco-police {
     padding-top: calc(2752 / 4896 * 100%);
    
 }
 
-.safety .near-casco {
+.near-casco {
     padding-top: calc(720 / 1280 * 100%);
 
 }
 
-.safety .casco-petty-crime {
+.casco-petty-crime {
     padding-top: calc(2752 / 4896 * 100%);
 
 }
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+ 
+}
+
+/* Desktop menu */
 
 
 @media all and (min-width: 960px) {
     .blog-details {
         width: 46%;
+        margin-bottom: 61px;
     }
 
-    .blog-details h1 {
+    .blog-details .post-title {
         font-size: 2.813rem;
     }
 
