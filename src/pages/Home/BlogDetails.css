@@ -16,7 +16,7 @@
 
 .button-parent {
     position: absolute;
-    bottom: -45px;
+    bottom: -79px;
     display: flex;
     width: 100%;
 }
@@ -29,12 +29,20 @@
 .button-parent button {
     padding: 10px;
     font-size: 1rem;
-    font-weight: 400;
-    color: #fff;
-    background-color: #1493f3;
+    font-weight: 600;
+    color: #000;
+    background-color: #fff;
     border-radius: 10px;
-    border: none;
-    cursor: pointer;
+    border: 2px solid black;
+    cursor: pointer;  
+    letter-spacing: .03em;
+    transition: 0.3s;
+}
+
+.button-parent button:hover, .button-parent button:focus {
+    background-color: #1493f3;
+    color: #fff;
+    border: 2px solid #1493f3;
 }
 
 .date span.content {
@@ -74,6 +82,10 @@
 .blog-details .line-divider {
     margin-top: 0;
     margin-bottom: 45px;
+}
+
+.blog-details + footer .line-divider {
+    margin-top: 84px;
 }
 
 p.intro {
@@ -168,4 +180,24 @@ p.this-article {
         width: 50%;
         left: 25%;
     }
+}
+
+@media all and (max-width: 405px) {
+   .button-parent {
+    flex-direction: column;
+    bottom: -133px;
+   }
+
+   .button-parent button {
+    margin: 0 auto 10px auto;
+    width: 180px;
+   }
+
+   .button-parent button:last-child {
+    margin-bottom: 0;
+   }
+
+   .blog-details + footer .line-divider {
+    margin-top: 138px;
+}
 }

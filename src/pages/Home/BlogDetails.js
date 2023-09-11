@@ -145,8 +145,8 @@ const BlogDetails = () => {
                             </figure>
                         </section>
                 <div className="button-parent">
-                    <button onClick={goBack}>&#8249; Previous Story</button>
-                    <button onClick={goForward}>Next Story &#8250;</button>
+                    <button onClick={goBack}>&#60; Previous Story</button>
+                    <button onClick={goForward}>Next Story &#62;</button>
                 </div>
                     </section>
                 )}
