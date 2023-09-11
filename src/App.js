@@ -2,7 +2,6 @@
 import Navbar from './components/Header/Navbar';
 import Home from './pages/Home/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Create from './pages/Create/Create';
 import BlogDetails from './pages/Home/BlogDetails';
 import NotFound from './pages/NotFound/NotFound';
 // import SearchBar from './components/SearchBar/SearchBar';
@@ -21,7 +20,6 @@ function App() {
           <Navbar />
               <Routes>
                  <Route path='/' element={ <Home/> } />
-                 <Route path='/create' element={ <Create/> } />
                  <Route path='/newsfeed' element={ <Newsfeed/> } />
                  <Route path='/about' element={ <About/> } />
                  <Route path='/contact' element={ <ContactUs/> } />

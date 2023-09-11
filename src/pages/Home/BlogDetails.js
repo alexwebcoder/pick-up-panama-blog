@@ -103,6 +103,10 @@ const BlogDetails = () => {
                             <p>{ blog.iAdviseAgainst }</p>
                             <h3>{ blog.h3Colon }</h3>
                             <p>{ blog.colonIsOn }</p>
+                            <figure className="colon-plate">
+                            <img className="no-right-click" src={ blog.colonLicense } alt={ blog.colonLicenseAltText }/>
+                            <figcaption>{ blog.colonLicenseCaption }</figcaption>
+                            </figure>
                             <h3>{ blog.darianGap }</h3>
                             <p>{ blog.nearColumbianBorder }</p>
                             <p>{ blog.difficultToNavigate }</p>
