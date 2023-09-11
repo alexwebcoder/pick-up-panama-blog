@@ -25,20 +25,27 @@ const BlogDetails = () => {
                             <span className="right"></span>
                             </p>
                          </div>
-                        <h1 className="centered caps">{ blog.title }</h1>
+                        <h1 className="centered caps post-title">{ blog.title }</h1>
                         <p className="body intro">
                             { blog.intro }
                         </p>
-                        <p className="body-two">
+                        <p className="moderate-crime">
                             { blog.moderateCrime }
                         </p>
-                        <p className="body-two-a">
+                        <p className="despite-this">
                             { blog.despiteThis }
+                        </p>
+                        <p className="this-article">
+                            { blog.thisArticle }
                         </p>
                         <figure className="cops-at-fruitstand">
                             <img className="no-right-click" src={blog.copsAtFruitStand} alt={blog.fruitStandCopAltText}/>
                             <figcaption>{blog.fruitStandCopCaption}</figcaption>
                         </figure>
+                        <figure className="bank-police">
+                            <img className="no-right-click" src={blog.panamaCopBank} alt={blog.panamaCopBankAltText}/>
+                            <figcaption>{blog.panamaCopBankCaption}</figcaption>
+                            </figure>
                         <section>
                             <h2>{ blog.h2targets }</h2>
                             <p>{ blog.criteria }</p>
@@ -63,26 +70,26 @@ const BlogDetails = () => {
                             <h2>{ blog.h2HighCrime }</h2>
                             <p>{ blog.accordingTo }</p>
                             <ul>
-                                <li>{ blog.sanMiguelito}</li>
-                                <li>{ blog.rioAbajo}</li>
-                                <li>{ blog.elChorrillo}</li>
-                                <li>{ blog.santaAna}</li>
-                                <li>{ blog.panamaViejo}</li>
+                                <li>{ blog.sanMiguelito }</li>
+                                <li>{ blog.rioAbajo }</li>
+                                <li>{ blog.elChorrillo }</li>
+                                <li>{ blog.santaAna }</li>
+                                <li>{ blog.panamaViejo }</li>
                             </ul>
                             <p>{ blog.mostCrimeReported }</p>
                             <p>{ blog.duringDay }</p>
                             <figure className="casco-police">
-                            <img className="no-right-click" src={blog.cascoViejoPolice} alt={blog.cascoViejoPolceAltText}/>
-                            <figcaption>{blog.cascoViejoPoliceCaption}</figcaption>
+                            <img className="no-right-click" src={ blog.cascoViejoPolice } alt={ blog.cascoViejoPolceAltText }/>
+                            <figcaption>{ blog.cascoViejoPoliceCaption }</figcaption>
                             </figure>
                             <figure className="casco-tourist">
-                            <img className="no-right-click" src={blog.cascoTouristAuth} alt={blog.cascoTouristAuthAltText}/>
-                            <figcaption>{blog.cascoTouristAuthCaption}</figcaption>
+                            <img className="no-right-click" src={ blog.cascoTouristAuth } alt={ blog.cascoTouristAuthAltText }/>
+                            <figcaption>{ blog.cascoTouristAuthCaption }</figcaption>
                             </figure>
                             <p>{ blog.cascoViejoBorders }</p>
                             <figure className="near-casco">
-                            <img className="no-right-click" src={blog.nearCascoViejo} alt={blog.nearCascoViejoAltText}/>
-                            <figcaption>{blog.nearCascoViejoCaption}</figcaption>
+                            <img className="no-right-click" src={ blog.nearCascoViejo } alt={ blog.nearCascoViejoAltText }/>
+                            <figcaption>{ blog.nearCascoViejoCaption }</figcaption>
                             </figure>
                             <p>{ blog.iAdviseAgainst }</p>
                             <h3>{ blog.h3Colon }</h3>
@@ -90,6 +97,7 @@ const BlogDetails = () => {
                             <h3>{ blog.darianGap }</h3>
                             <p>{ blog.nearColumbianBorder }</p>
                             <p>{ blog.difficultToNavigate }</p>
+                            <p>{ blog.trafficking }</p>
                             <p>{ blog.adventureTourist }</p>
                             <h2>{ blog.h2SafeWater }</h2>
                             <p>{ blog.hygieneStandards }</p>
@@ -123,8 +131,8 @@ const BlogDetails = () => {
                             <p>{ blog.overallPanamaIs }</p>
                             <p>{ blog.mostTips }</p>
                             <figure className="casco-petty-crime">
-                            <img className="no-right-click" src={blog.cascoPettyCrime} alt={blog.cascoPettyCrimeAltText}/>
-                            <figcaption>{blog.cascoPettyCrimeCaption}</figcaption>
+                            <img className="no-right-click" src={ blog.cascoPettyCrime } alt={ blog.cascoPettyCrimeAltText }/>
+                            <figcaption>{ blog.cascoPettyCrimeCaption }</figcaption>
                             </figure>
                         </section>
                     </section>

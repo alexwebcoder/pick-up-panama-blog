@@ -2,7 +2,7 @@
 .blog-details {
     width: 90%;
     margin: 152px auto 65px auto;
-    line-height: 1.6rem;
+    line-height: 1.6;
     font-size: 1.125rem;
     display: flex;
     flex-direction: column;
@@ -17,19 +17,27 @@
     font-size: .75rem;
 }
 
-.blog-details h1 {
+.blog-details .post-title {
     letter-spacing: .05em;
-    font-size: 1.9rem;
+    font-size: 1.875rem;
+    line-height: 1.11;
 }
 
 .blog-details figure {
     margin-bottom: 25px;
 }
 
+.blog-details figcaption {
+    font-size: 1rem;
+}
+
 .blog-details img {
     max-width: 100%;
     height: auto;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .blog-details p {margin-bottom: 20px;}
@@ -40,17 +48,26 @@ p.intro {
     border-bottom: 1px solid #a1a1a1;
     margin: 45px auto;
     font-weight: 600;
-    line-height: 2rem;
+    line-height: 1.4;
     font-size: 1.5rem;
     width: 100%;
 }
 
-p.body-two-a {
+p.this-article {
     margin-bottom: 45px;
 }
 
 .diamond-text-box.date {
     margin-bottom: 0;
+}
+
+.safety h2 {
+    font-size: 1.313rem;
+    line-height: 1.1;
+}
+
+.safety h3 {
+    font-size: 1.25rem;
 }
 
 .blog-details section h2, .blog-details section h3 {
@@ -64,13 +81,26 @@ p.body-two-a {
 
 .safety .cops-at-fruitstand {
     padding-top: calc(4032 / 3024 * 100%);
-    position: relative;
 }
 
-.safety .cops-at-fruitstand img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.safety .bank-police {
+    padding-top: calc(2265 / 3024 * 100%);
+
+}
+
+.safety .casco-tourist, .safety .casco-police {
+    padding-top: calc(2752 / 4896 * 100%);
+   
+}
+
+.safety .near-casco {
+    padding-top: calc(720 / 1280 * 100%);
+
+}
+
+.safety .casco-petty-crime {
+    padding-top: calc(2752 / 4896 * 100%);
+
 }
 
 
