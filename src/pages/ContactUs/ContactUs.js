@@ -9,7 +9,7 @@ const ContactUsForm = () => {
     Capitalize();
     
     const SERVICE_ID = "service_q7jfaw4";
-    const TEMPLATE_ID = "template_220q62k";
+    const TEMPLATE_ID = "template_9e6l439";
     const USER_ID = "RpfI2tiLJvbu5BKwH";
 
     const handleOnSubmit = (e) => {
@@ -48,7 +48,7 @@ const ContactUsForm = () => {
         <h2 className="centered">Always happy to hear from you.</h2>
         <Form className="contact-us-form" onSubmit={handleOnSubmit}>
           <Form.Field
-            id='form-input-control-email-address'
+            id='form-input-control-email-address-2'
             control={Input}
             name='user_email'
             placeholder='Email'
@@ -74,7 +74,8 @@ const ContactUsForm = () => {
             cols='30'
             required
           />
-          <Button type='submit' className='contact-button'>Submit</Button>
+          <Button id='send-form-2' type='submit' className='contact-button'>Submit</Button>
+          <p id='alert-comment-2' className='alert-comment'>Email address must be valid</p>
         </Form>
       </section>
     </main>

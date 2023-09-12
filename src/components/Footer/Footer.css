@@ -140,16 +140,16 @@
   padding: 3px;
 }
 
-#alert-comment {
+#alert-comment, #alert-comment-2 {
   visibility: hidden;
 }
 
-#send-form {
+#send-form, #send-form-2 {
   opacity: .4;
   cursor: default;
 }
 
-#send-form.activated {
+#send-form.activated, #send-form-2.activated {
   opacity: 1;
   cursor: pointer;
 }
