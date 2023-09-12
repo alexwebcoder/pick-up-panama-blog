@@ -13,13 +13,13 @@ const Navbar = () => {
                     <div className="bar2"></div>
                     <div className="bar3"></div>
                   </div></div></li>
-                <li className="item home-link disabled"><Link to ="/">Home</Link></li>
+                <li className="item home-link"><Link to ="/">Home</Link></li>
                 <li className="item"><Link to="/newsfeed">Newsfeed</Link></li>
                 <li className="item"><Link to="/about">About</Link></li>
                 <li className="item"><Link to="/contact">Contact</Link></li>
             </ul>
             <ul className="sidenav centered" tabIndex={-1}>
-                <li className="disabled"><Link to="/">Home</Link></li>
+                <li><Link to="/">Home</Link></li>
                 <li><Link to="/newsfeed">Newsfeed</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>

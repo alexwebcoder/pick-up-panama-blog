@@ -98,6 +98,20 @@
     left: 0;
 }
 
+.alert-comment-3, .alert-comment-4 {
+    color: #df0d14;
+    position: absolute;
+    top: 151px;
+    font-size: .825rem;
+    outline: 2px solid #df0d14;
+    padding: 3px;
+    font-weight: 500;
+}
+
+.alert-comment-4 {
+    top: 412px;
+}
+
 /* Desktop menu */
 @media all and (min-width: 960px) { 
  .contact-us-form-container {
