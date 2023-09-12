@@ -65,7 +65,7 @@ const ContactUsForm = () => {
             icon='user circle'
             iconPosition='left'
           />
-            <span className='alert-comment-3'>Name field can not be empty</span>
+            <span id='alert-comment-3' className='alert-comment-3'>Name field can not be empty</span>
           <Form.Field
             id='form-textarea-control-opinion'
             control={TextArea}
@@ -75,7 +75,7 @@ const ContactUsForm = () => {
             cols='30'
             required
           />
-            <span className='alert-comment-4'>Message field can not be empty</span>
+            <span id='alert-comment-4' className='alert-comment-4'>Message field can not be empty</span>
           <Button id='send-form-2' type='submit' className='contact-button'>Submit</Button>
           <p id='alert-comment-2' className='alert-comment'>Email address must be valid</p>
         </Form>

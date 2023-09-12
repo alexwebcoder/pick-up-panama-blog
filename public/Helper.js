@@ -10,6 +10,8 @@ const alertComment = document.getElementById('alert-comment');
 const eJS_email2 = document.getElementById('form-input-control-email-address-2');
 const eJS_sendForm2 = document.getElementById('send-form-2');
 const alertComment2 = document.getElementById('alert-comment-2');
+const alertComment3 = document.getElementById('alert-comment-3');
+const alertComment4 = document.getElementById('alert-comment-4');
 const eJS_message = document.getElementById('form-textarea-control-opinion');
 const eJS_name = document.getElementById('form-input-control-last-name');
 
