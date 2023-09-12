@@ -12,6 +12,86 @@ const ContactUsForm = () => {
     const TEMPLATE_ID = "template_9e6l439";
     const USER_ID = "RpfI2tiLJvbu5BKwH";
 
+    const checkForm = (e) => {
+      let canSubmit2 = false;
+
+      const eJS_email2 = document.getElementById('form-input-control-email-address-2');
+      const eJS_sendForm2 = document.getElementById('send-form-2');
+      const alertComment2 = document.getElementById('alert-comment-2');
+      const alertComment3 = document.getElementById('alert-comment-3');
+      const alertComment4 = document.getElementById('alert-comment-4');
+      const eJS_message = document.getElementById('form-textarea-control-opinion');
+      const eJS_name = document.getElementById('form-input-control-last-name');
+      
+      function eJS_set_event_listenersContact() {
+        eJS_email2.addEventListener('keyup', eJS_can_submit2);
+        eJS_message.addEventListener('keyup', eJS_can_submit2);
+        eJS_name.addEventListener('keyup', eJS_can_submit2);
+     }
+     
+     eJS_set_event_listenersContact();
+
+  //validate email address
+
+   function eJS_validateEmail2(email2) {
+      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(email2).toLowerCase());
+   }
+
+   function eJS_can_submit2() {
+      //check the required field
+
+      let email2 = eJS_email2.value.trim();
+      console.log(email2)
+      let message = eJS_message.value.trim();
+      let name = eJS_name.value.trim();
+      if (eJS_validateEmail2(email2)) {
+         alertComment2.style.visibility = "hidden";
+         //maybe remove this email length condition
+         if (message.length > 4 && email2.length > 4 && name.length > 1) {
+           if (eJS_validateEmail2(email2)) {
+             eJS_sendForm2.classList.add('activated');
+             eJS_sendForm2.disabled = false;
+             alertComment3.style.visibility = "hidden";
+             alertComment4.style.visibility = "hidden";
+               canSubmit2 = true;
+
+            } else {
+               eJS_disabled_submit2();
+            }
+         }
+      } else {
+         alertComment2.style.visibility = "visible";
+         alertComment3.style.visibility = "visible";
+         alertComment4.style.visibility = "visible";
+         eJS_disabled_submit2();
+      }
+   };
+
+
+
+   function eJS_disabled_submit2() {
+      eJS_sendForm2.classList.remove('activated');
+      eJS_sendForm2.disabled = true;
+      canSubmit2 = false;
+      alertComment2.style.visibility = "visible";
+      alertComment3.style.visibility = "visible";
+      alertComment4.style.visibility = "visible";
+   };
+
+   const hideError2 = () => {
+      alertComment2.style.visibility = "hidden";
+      alertComment3.style.visibility = "hidden";
+      alertComment4.style.visibility = "hidden";
+   }
+   eJS_email2.addEventListener('blur', hideError2);
+   eJS_message.addEventListener('blur', hideError2);
+   eJS_name.addEventListener('blur', hideError2);
+   document.addEventListener('click', hideError2);
+   
+
+    }
+
     const handleOnSubmit = (e) => {
         e.preventDefault();
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
@@ -55,6 +135,7 @@ const ContactUsForm = () => {
             required
             icon='mail'
             iconPosition='left'
+            onFocus={checkForm}
           />
           <Form.Field
             id='form-input-control-last-name'
@@ -76,7 +157,7 @@ const ContactUsForm = () => {
             required
           />
             <span id='alert-comment-4' className='alert-comment-4'>Message field can not be empty</span>
-          <Button id='send-form-2' type='submit' className='contact-button'>Submit</Button>
+          <Button onClick={checkForm} id='send-form-2' type='submit' className='contact-button'>Submit</Button>
           <p id='alert-comment-2' className='alert-comment'>Email address must be valid</p>
         </Form>
       </section>
