@@ -77,6 +77,7 @@ function eJS_can_submit2() {
    let name = eJS_name.value.trim();
    if (eJS_validateEmail2(email2)) {
       alertComment2.style.visibility = "hidden";
+      //maybe remove this email length condition
       if (message.length > 4 && email2.length > 4 && name.length > 1) {
          if (eJS_validateEmail2(email2)) {
             eJS_sendForm2.classList.add('activated');
@@ -111,6 +112,9 @@ function eJS_disabled_submit2() {
 const hideError = () => {
    alertComment.style.visibility = "hidden";
    alertComment2.style.visibility = "hidden";
+   alertComment3.style.visibility = "hidden";
+   alertComment4.style.visibility = "hidden";
+
 }
 
 document.addEventListener('click', hideError);
