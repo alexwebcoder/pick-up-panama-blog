@@ -106,6 +106,7 @@
     outline: 2px solid #df0d14;
     padding: 3px;
     font-weight: 500;
+    visibility: hidden;
 }
 
 .alert-comment-4 {

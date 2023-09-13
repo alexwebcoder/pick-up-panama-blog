@@ -4,15 +4,24 @@ import Swal from 'sweetalert2';
 import "./ContactUs.css"
 import { TabTitle, Capitalize } from '../../utils/GeneralFunctions';
 
-const ContactUsForm = () => {
-    TabTitle('Contact Pick Up Panama');
-    Capitalize();
-    
-    const SERVICE_ID = "service_q7jfaw4";
-    const TEMPLATE_ID = "template_9e6l439";
-    const USER_ID = "RpfI2tiLJvbu5BKwH";
+import { useEffect } from 'react';
 
-    const checkForm = (e) => {
+
+
+const ContactUsForm = () => {
+
+  useEffect(()=>{
+    checkForm()
+  },[])
+  TabTitle('Contact Pick Up Panama');
+  Capitalize();
+  
+  const SERVICE_ID = "service_q7jfaw4";
+  const TEMPLATE_ID = "template_9e6l439";
+  const USER_ID = "RpfI2tiLJvbu5BKwH";
+  
+  const checkForm = (e) => {
+      console.log('eat up')
       let canSubmit2 = false;
 
       const eJS_email2 = document.getElementById('form-input-control-email-address-2');
@@ -91,6 +100,7 @@ const ContactUsForm = () => {
    
 
     }
+    
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
@@ -135,7 +145,6 @@ const ContactUsForm = () => {
             required
             icon='mail'
             iconPosition='left'
-            onFocus={checkForm}
           />
           <Form.Field
             id='form-input-control-last-name'
@@ -157,7 +166,7 @@ const ContactUsForm = () => {
             required
           />
             <span id='alert-comment-4' className='alert-comment-4'>Message field can not be empty</span>
-          <Button onClick={checkForm} id='send-form-2' type='submit' className='contact-button'>Submit</Button>
+          <Button id='send-form-2' type='submit' className='contact-button'>Submit</Button>
           <p id='alert-comment-2' className='alert-comment'>Email address must be valid</p>
         </Form>
       </section>
