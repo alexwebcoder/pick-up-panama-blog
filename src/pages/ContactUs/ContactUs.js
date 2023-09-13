@@ -151,7 +151,7 @@ const ContactUsForm = () => {
             Submit
           </Button>
           <p id="alert-comment-2" className="alert-comment">
-            email must be valid, Message must have at least 5 characters
+            Email must be valid,<br/>Name must have at least two characters,<br/> Message must have at least five characters
           </p>
         </Form>
       </section>

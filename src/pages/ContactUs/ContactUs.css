@@ -124,6 +124,12 @@
    }
 }
 
+@media all and (max-width: 273px) {
+    #alert-comment-2.alert-comment {
+        width: 151px;
+    }
+}
+
 
 @media all and (max-width: 257px) {
     .contact-us-form-container input, .contact-us-form textarea, .contact-button {
