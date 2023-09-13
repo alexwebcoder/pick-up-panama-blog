@@ -27,8 +27,9 @@
 
 .footer .menu {
   flex-direction: column;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
   width: auto;
+  border-bottom: 1px solid #a1a1a1;
 }
 
 .footer .item:hover:after {
@@ -161,6 +162,7 @@
   .footer .menu {
       flex-direction: row;
       margin-bottom: -1px;
+      border-bottom: none;
   }
 
   .footer .item {

@@ -32,6 +32,7 @@
 .contact-button {
     border: 3px solid #000;
     color: #000;
+    background-color: #fff;
 }
 
 .contact-button:focus {
@@ -121,4 +122,11 @@
     .contact-us-form-container h2 {
         font-size: 1.5rem;
    }
+}
+
+
+@media all and (max-width: 257px) {
+    .contact-us-form-container input, .contact-us-form textarea, .contact-button {
+        width: 200px;
+    }
 }
