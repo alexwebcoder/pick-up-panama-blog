@@ -19,16 +19,12 @@ const ContactUsForm = () => {
   const checkForm = (e) => {
     console.log("eat up");
     let canSubmit2 = false;
-    const eJS_email2 = document.getElementById(
-      "form-input-control-email-address-2"
-    );
+    const eJS_email2 = document.getElementById("form-input-control-email-address-2");
     const eJS_sendForm2 = document.getElementById("send-form-2");
     const alertComment2 = document.getElementById("alert-comment-2");
     const alertComment3 = document.getElementById("alert-comment-3");
     const alertComment4 = document.getElementById("alert-comment-4");
-    const eJS_message = document.getElementById(
-      "form-textarea-control-opinion"
-    );
+    const eJS_message = document.getElementById("form-textarea-control-opinion");
     const eJS_name = document.getElementById("form-input-control-last-name");
 
     function eJS_set_event_listenersContact() {
@@ -42,8 +38,7 @@ const ContactUsForm = () => {
     //validate email address
 
     function eJS_validateEmail2(email2) {
-      const re =
-        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(String(email2).toLowerCase());
     }
 
@@ -51,9 +46,9 @@ const ContactUsForm = () => {
       //check the required field
 
       let email2 = eJS_email2.value.trim();
-      console.log(email2);
       let message = eJS_message.value.trim();
       let name = eJS_name.value.trim();
+      
       if (eJS_validateEmail2(email2)) {
         alertComment2.style.visibility = "hidden";
         //maybe remove this email length condition
