@@ -39,7 +39,7 @@ export const Capitalize = () => {
     }
 
     if (document.title === "Contact Pick Up Panama") {
-        document.getElementsByTagName('meta')["description"].content = "Contact page";
+        document.getElementsByTagName('meta')["description"].content = "Contact Alex at Pick Up Panama. He would be happy to hear from you.";
     }
 
     if (document.title === "Panama News Feed") {

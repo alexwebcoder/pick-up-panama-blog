@@ -22,8 +22,6 @@ const ContactUsForm = () => {
     const eJS_email2 = document.getElementById("form-input-control-email-address-2");
     const eJS_sendForm2 = document.getElementById("send-form-2");
     const alertComment2 = document.getElementById("alert-comment-2");
-    const alertComment3 = document.getElementById("alert-comment-3");
-    const alertComment4 = document.getElementById("alert-comment-4");
     const eJS_message = document.getElementById("form-textarea-control-opinion");
     const eJS_name = document.getElementById("form-input-control-last-name");
 
@@ -56,8 +54,6 @@ const ContactUsForm = () => {
           if (eJS_validateEmail2(email2)) {
             eJS_sendForm2.classList.add("activated");
             eJS_sendForm2.disabled = false;
-            alertComment3.style.visibility = "hidden";
-            alertComment4.style.visibility = "hidden";
             canSubmit2 = true;
           } else {
             eJS_disabled_submit2();
@@ -65,8 +61,6 @@ const ContactUsForm = () => {
         }
       } else {
         alertComment2.style.visibility = "visible";
-        alertComment3.style.visibility = "visible";
-        alertComment4.style.visibility = "visible";
         eJS_disabled_submit2();
       }
     }
@@ -76,14 +70,10 @@ const ContactUsForm = () => {
       eJS_sendForm2.disabled = true;
       canSubmit2 = false;
       alertComment2.style.visibility = "visible";
-      alertComment3.style.visibility = "visible";
-      alertComment4.style.visibility = "visible";
     }
 
     const hideError2 = () => {
       alertComment2.style.visibility = "hidden";
-      alertComment3.style.visibility = "hidden";
-      alertComment4.style.visibility = "hidden";
     };
     eJS_email2.addEventListener("blur", hideError2);
     eJS_message.addEventListener("blur", hideError2);
@@ -95,14 +85,12 @@ const ContactUsForm = () => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
       (result) => {
-        console.log(result.text);
         Swal.fire({
           icon: "success",
           title: "Message Sent Successfully",
         });
       },
       (error) => {
-        console.log(error.text);
         Swal.fire({
           icon: "error",
           title: "Ooops, something went wrong",
@@ -150,9 +138,6 @@ const ContactUsForm = () => {
             icon="user circle"
             iconPosition="left"
           />
-          <span id="alert-comment-3" className="alert-comment-3">
-            Name field can not be empty
-          </span>
           <Form.Field
             id="form-textarea-control-opinion"
             control={TextArea}
@@ -162,14 +147,11 @@ const ContactUsForm = () => {
             cols="30"
             required
           />
-          <span id="alert-comment-4" className="alert-comment-4">
-            Message field can not be empty
-          </span>
           <Button id="send-form-2" type="submit" className="contact-button">
             Submit
           </Button>
           <p id="alert-comment-2" className="alert-comment">
-            Email address must be valid
+            email must be valid, Message must have at least 5 characters
           </p>
         </Form>
       </section>
