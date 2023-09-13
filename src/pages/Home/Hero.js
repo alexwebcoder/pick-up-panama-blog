@@ -1,4 +1,3 @@
-// import PanamaSignImage from '/images/panama-sign.JPG'
 
 const Hero = () => {
     return (

@@ -82,37 +82,6 @@ figure {
   left: 0;
 }
 
-.hero-image img {
-  -webkit-animation: zoomeffect 12s;
-  -moz-animation: zoomeffect 12s;
-  animation: zoomeffect 12s;
-}
-
-@-webkit-keyframes zoomeffect{
-  0%{
-      background-position:center;
-      transform:scale(4);
- }
-
-  100%{
-      background-position:center;
-      transform:scale(1);
- }
-
-}
-@keyframes zoomeffect{
-  0%{
-      background-position:center;
-      transform:scale(4);
- }
-
-  100%{
-      background-position:center;
-      transform:scale(1);
- }
-
-}
-
 .featured-content-container h3, .card-container h3 {
   font-size: 1.5rem;
 }
