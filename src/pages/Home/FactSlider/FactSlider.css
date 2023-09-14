@@ -70,7 +70,7 @@ Slider
   margin: 0 auto;
   width: 80vw;
   /* have to have a height */
-  height: 450px;
+  height: 302px;
   max-width: 800px;
   text-align: left;
   position: relative;
@@ -86,7 +86,7 @@ Slider
 .prev,
 .next {
   position: absolute;
-  top: 370px;
+  top: 276px;
   transform: translateY(-50%);
   background: #011e56;
   color: var(--clr-white);
@@ -125,7 +125,7 @@ Slider
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 article.activeSlide {
