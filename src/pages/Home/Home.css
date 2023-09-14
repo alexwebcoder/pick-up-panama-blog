@@ -9,7 +9,7 @@
 }
 
 .home-content .mission {
-  line-height: 1.7rem;
+  line-height: 1.6;
   letter-spacing: .04rem;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,6 @@
 
 .mission p {
   width: 315px;
-  font-size: .875rem;
   text-align: left;
 }
 
@@ -214,7 +213,7 @@ figure {
 
   .mission p {
       width: 250px;
-      font-size: .813rem;
+      font-size: .875rem;
       padding: 0 12px;
  }
 
@@ -240,7 +239,7 @@ figure {
 @media all and (min-width: 700px) {
   .mission p {
       width: 488px;
-      font-size: 1rem;
+      font-size: 1.125rem;
  }
 }
 
@@ -284,9 +283,27 @@ figure {
   }
 }
 
-@media only screen and (min-width: 960px) and (max-width: 1460px) {
-  .card-container h3 {
-      font-size: 1rem;
+@media only screen and (min-width: 960px) and (max-width: 1050px) {
+  .card-container article {
+    height: 220px;
+}
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1460px) {
+  .card-container article {
+      height: 276px;
+ }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1755px) {
+  .card-container article {
+      height: 264px;
+ }
+}
+
+@media only screen and (min-width: 1755px) and (max-width: 1923px) {
+  .card-container article {
+      height: 285px;
  }
 }
 

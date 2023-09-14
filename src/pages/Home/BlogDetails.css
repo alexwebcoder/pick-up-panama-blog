@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    letter-spacing: .01em;
 }
 
 .safety {
@@ -97,6 +98,7 @@ p.intro {
     line-height: 1.4;
     font-size: 1.5rem;
     width: 100%;
+    letter-spacing: .025em;
 }
 
 p.this-article {
