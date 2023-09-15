@@ -307,13 +307,6 @@ figure {
  }
 }
 
-@media all and (min-width: 1460px) {
-  .card-container article:nth-of-type(2) {
-      position: relative;
-      top: 0px;
- }
-}
-
 @media all and (min-width: 1500px) {
 
   .line-divider.feature.wide:before {
@@ -324,6 +317,10 @@ figure {
   .line-divider.wide:before {
     width: 60%;
     left: 20%;
+  }
+
+  .line-divider {
+    margin: 75px 0 75px;
   }
 }
 

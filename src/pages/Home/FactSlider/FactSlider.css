@@ -176,6 +176,12 @@ article.nextSlide {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .facts {
+    margin-bottom: 75px;
+  }
+}
+
 @media screen and (min-width: 1687px) {
   .facts {
     width: 50%;

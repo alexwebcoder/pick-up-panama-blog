@@ -9,7 +9,7 @@
     letter-spacing: .01em;
 }
 
-.safety {
+.safety, .transportation {
     flex: 1;
     position: relative;
 }
@@ -151,6 +151,12 @@ p.this-article {
 
 .colon-plate {
     padding-top: calc(2752 / 4896 * 100%);
+}
+
+/* saftey page images */
+
+.guys-in-back-of-truck {
+    padding-top: calc(2268 / 3024 * 100%);
 }
 
 /* Tablet menu */
