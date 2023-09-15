@@ -9,7 +9,7 @@
     letter-spacing: .01em;
 }
 
-.safety, .transportation {
+.safety, .transportation, .molas, .panama-canal {
     flex: 1;
     position: relative;
 }

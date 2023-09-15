@@ -15,6 +15,7 @@ const BlogDetails = () => {
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
 
+  //safety page forward back
   const navigate = useNavigate();
   const goToCanalStory = () => {
     navigate("/featured/how-do-i-visit-the-panama-canal");
@@ -23,6 +24,7 @@ const BlogDetails = () => {
     navigate("/blogs/how-do-i-get-around-in-panama");
   };
 
+  //transportation page forward back
   const navigateA = useNavigate();
   const goToSafetyStory = () => {
     navigateA("/blogs/is-panama-safe");
@@ -30,14 +32,6 @@ const BlogDetails = () => {
   const goToMolaStory = () => {
     navigateA("/blogs/what-are-molas");
   };
-
-//   const navigateB = useNavigate();
-//   const goToSStory = () => {
-//     navigateA("/featured/is-panama-safe");
-//   };
-//   const goToMolaStory = () => {
-//     navigateA("/blogs/what-are-molas");
-//   };
 
   if (document.title === "Is Panama Safe?") {
     return (
@@ -261,6 +255,12 @@ const BlogDetails = () => {
               />
               <figcaption>{blog.figcaptionTwo}</figcaption>
             </figure>
+            <div className="button-parent">
+              <button onClick={goToTransportationStory}>&#60; Previous Story</button>
+              <button onClick={goToCanalStory}>
+                Next Story &#62;
+              </button>
+            </div>
           </section>
         )}
       </main>
