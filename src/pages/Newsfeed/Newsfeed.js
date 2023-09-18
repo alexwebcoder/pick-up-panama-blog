@@ -28,7 +28,7 @@ const Newsfeed = () => {
     return (
       <main className="newsfeed"> 
         <figure className="news-hero">
-          <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/ocean-view-portobelo-panama.JPG'} alt="ocean view from Portobelo Panama"/>
+          <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/newsfeed/ocean-view-portobelo-panama.JPG'} alt="ocean view from Portobelo Panama"/>
           <figcaption>View of the Atlantic Ocean from Portobelo Panama</figcaption>
        </figure>
         <div className="line-divider centered wide">
