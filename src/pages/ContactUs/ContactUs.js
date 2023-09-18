@@ -105,7 +105,7 @@ const ContactUsForm = () => {
       <figure className="contact-hero">
         <img
           className="no-right-click"
-          src={process.env.PUBLIC_URL + "/images/coronado-beach-panama.JPG"}
+          src={process.env.PUBLIC_URL + "/images/contact/coronado-beach-panama.JPG"}
           alt="Playa Coronado Panama"
         />
         <figcaption>Playa Coronado Panama</figcaption>
