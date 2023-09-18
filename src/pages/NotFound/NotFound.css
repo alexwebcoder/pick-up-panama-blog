@@ -37,11 +37,12 @@
 }
 
 .not-found a {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #1493f3;
     position: relative;
-    margin-bottom: 37px;
     display: block;
+    width: 181px;
+    margin: 0 auto 37px auto;
 }
 
 .not-found a::after {
@@ -72,6 +73,11 @@
     .not-found h1 {
         font-size: 14.75rem;
    }
+
+   .not-found a {
+    font-size: 2rem;
+    width: 352px;
+}
    
     .not-found-hero {
         width: 40%;
