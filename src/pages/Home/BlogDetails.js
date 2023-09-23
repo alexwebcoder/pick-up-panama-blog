@@ -206,18 +206,18 @@ const BlogDetails = () => {
                 <span className="right"></span>
               </p>
             </div>
-            <h1 className="centered caps">{blog.title}</h1>
-            <p className="body intro">{blog.body}</p>
-            <p className="body-two">{blog.bodyTwo}</p>
-            <p className="body-two-a">{blog.bodyTwoA}</p>
-            <figure className="guys-in-back-of-truck">
-              <img
-                className="no-right-click"
-                src={blog.imageTwo}
-                alt={blog.altTwo}
-              />
-              <figcaption>{blog.figcaptionTwo}</figcaption>
-            </figure>
+            <h1 className="centered caps post-title">{blog.title}</h1>
+            <p className="body intro">{blog.intro}</p>
+            <p>{blog.guide}</p>
+            <h2>{blog.h2Tocumen}</h2>
+            <p>{blog.iveUsed}</p>
+            <h3>{blog.h3Taxi}</h3>
+            <p>{blog.asSoon}</p>
+            <p>{blog.theyCharge}</p>
+            <h3>{blog.h3Uber}</h3>
+            <p>{blog.uberWorks}</p>
+            <p>{blog.cheapetPaid}</p>
+            <p>{blog.buyingData}</p>
             <div className="button-parent">
               <button onClick={goToSafetyStory}>&#60; Previous Story</button>
               <button onClick={goToMolaStory}>
