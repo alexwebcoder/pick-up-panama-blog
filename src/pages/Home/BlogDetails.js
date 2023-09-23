@@ -247,6 +247,14 @@ const BlogDetails = () => {
               <li>{blog.line2Li}</li>
               <li>{blog.fiveMinLi}</li>
             </ul>
+            <figure className="metro-map">
+                <img
+                  className="no-right-click"
+                  src={blog.metroMap}
+                  alt={blog.metroMapAltText}
+                />
+                <figcaption>{blog.metroMapCaption}<span>{blog.courtesyLobueno}</span></figcaption>
+            </figure>
             <h4>{blog.h4CorridorSur}</h4>
             <ul>
               <li>{blog.sanMigLi}</li>
@@ -267,8 +275,8 @@ const BlogDetails = () => {
             <p>{blog.carryingLuggage}</p>
             <h4>{blog.metroHoursh4}</h4>
             <p className="bold-text">{blog.metroStrong} <span>{blog.fiveAm}</span></p>
-            <p className="bold-text">{blog.saturdayStrong}<span>{blog.fivetoTen}</span></p>
-            <p className="bold-text">{blog.sundayStrong}<span>{blog.sevenAm}</span></p>
+            <p className="bold-text">{blog.saturdayStrong} <span>{blog.fivetoTen}</span></p>
+            <p className="bold-text">{blog.sundayStrong} <span>{blog.sevenAm}</span></p>
             <h2>{blog.h2Addresses}</h2>
             <p>{blog.noProperAddresses}</p>
             <p>{blog.goByLandmarks}</p>
@@ -277,7 +285,15 @@ const BlogDetails = () => {
             <p>{blog.alwaysGreet}</p>
             <h2>{blog.h2TransportationAround}</h2>
             <p>{blog.mainNeighborhoods}</p>
-            <p>{blog.thisIsKnown}</p>
+            <p><strong>{blog.thisIsKnown}</strong></p>
+            <figure className="city-center">
+                <img
+                  className="no-right-click"
+                  src={blog.cityCenter}
+                  alt={blog.cityCenterAltText}
+                />
+                <figcaption>{blog.cityCenterCaption}<span>{blog.courtesyGoogle}</span></figcaption>
+            </figure>
             <h3>{blog.h3YellowCab}</h3>
             <p>{blog.licensedYellow}</p>
             <p>{blog.sinceThey}</p>
