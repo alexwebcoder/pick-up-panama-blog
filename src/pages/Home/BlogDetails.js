@@ -303,28 +303,41 @@ const BlogDetails = () => {
             <p>{blog.someDrivers}</p>
             <p>{blog.documentEverything}</p>
             <p>{blog.ifAny}</p>
+            <h3>{blog.h3PanamaBuses}</h3>
+            <h4>{blog.h4RidingMetro}</h4>
+            <p>{blog.theMetroIs}</p>
+            <p>{blog.theCostIs}</p>
+            <p>{blog.thereAre}</p>
+            <p>{blog.whenYouGetOn}</p>
+            <p>{blog.whenReady}</p>
+            <h4>{blog.h4busRidesOut}</h4>
+            <p>{blog.granTerminal}</p>
+            <p>{blog.youCanTake}</p>
+            <h5>{blog.h5CoronadoBus}</h5>
+            <p>{blog.coronadoIs}</p>
+            <p>{blog.thereAreBusesTo}</p>
+            <p>{blog.youHaveTo}</p>
+            <p>{blog.ticketWindows}</p>
+            <p>{blog.theTicketPrice}</p>
+            <p>{blog.afterPurchasing}</p>
+            <p>{blog.youWillSee}</p>
+            <p>{blog.twoBusesChoose}</p>
+            <p>{blog.takeLarger}</p>
+            <p>{blog.whenYouGetOnThe}</p>
+            <p>{blog.coronadoIsAbout}</p>
+            <p>{blog.pedestrianBridge}</p>
+            <p>{blog.youCanTakeCab}</p>
+            <h4>{blog.h4DiablosRojos}</h4>
+            <p>{blog.theDiablosRojos}</p>
+            <p>{blog.theyAreIndepen}</p>
+            <p>{blog.panamaPhased}</p>
+            <p>{blog.becauseTheyWere}</p>
+            <p>{blog.youMayStill}</p>
+            <h4>{blog.h4Chiva}</h4>
+            <p>{blog.chivasAre}</p>
+            <p>{blog.nowadays}</p>
+            <p>{blog.summary}</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
 
 
 
