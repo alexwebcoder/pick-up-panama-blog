@@ -218,6 +218,116 @@ const BlogDetails = () => {
             <p>{blog.uberWorks}</p>
             <p>{blog.cheapetPaid}</p>
             <p>{blog.buyingData}</p>
+            <h4>{blog.h4Wifi}</h4>
+            <p>{blog.wifiAccess}</p>
+            <h3>{blog.h3TakeMetro}</h3>
+            <p>{blog.metroLeast}</p>
+            <p>{blog.hasOwn}</p>
+            <p>{blog.canTake}</p>
+            <h4>{blog.h4RapiCard}</h4>
+            <p>{blog.cashCredit}</p>
+            <p>{blog.cardIsFor}</p>
+            <ul>
+              <li>{blog.liMetro}</li>
+              <li>{blog.liTrains}</li>
+              <li>{blog.liTerminal}</li>
+            </ul>
+            <p>{blog.itCosts}</p>
+            <p>{blog.youCan}</p>
+            <p>{blog.ifTraveling}</p>
+            <h4>{blog.h4Shuttle}</h4>
+            <p>{blog.trainDoesNot}</p>
+            <p>{blog.exitAirport}</p>
+            <p>{blog.theseBuses}</p>
+            <p>{blog.theFree}</p>
+            <p>{blog.elevated}</p>
+            <p>{blog.itsPart}</p>
+            <h4>{blog.h4Aeropuerto}</h4>
+            <ul>
+              <li>{blog.line2Li}</li>
+              <li>{blog.fiveMinLi}</li>
+            </ul>
+            <h4>{blog.h4CorridorSur}</h4>
+            <ul>
+              <li>{blog.sanMigLi}</li>
+              <li>{blog.samePlatform}</li>
+              <li>{blog.line2Costs}</li>
+              <li>{blog.shouldTake}</li>
+            </ul>
+            <h4>{blog.h4SanMig}</h4>
+            <ul>
+              <li>{blog.whenYouGetOff}</li>
+              <li>{blog.theSigns}</li>
+              <li>{blog.takeLine1}</li>
+              <li>{blog.line1Li}</li>
+              <li>{blog.thisShouldLi}</li>
+            </ul>
+            <p>{blog.trainsModern}</p>
+            <p>{blog.thePlatforms}</p>
+            <p>{blog.carryingLuggage}</p>
+            <h4>{blog.metroHoursh4}</h4>
+            <p className="bold-text">{blog.metroStrong} <span>{blog.fiveAm}</span></p>
+            <p className="bold-text">{blog.saturdayStrong}<span>{blog.fivetoTen}</span></p>
+            <p className="bold-text">{blog.sundayStrong}<span>{blog.sevenAm}</span></p>
+            <h2>{blog.h2Addresses}</h2>
+            <p>{blog.noProperAddresses}</p>
+            <p>{blog.goByLandmarks}</p>
+            <p>{blog.whenAsking}</p>
+            <p>{blog.itsCommon}</p>
+            <p>{blog.alwaysGreet}</p>
+            <h2>{blog.h2TransportationAround}</h2>
+            <p>{blog.mainNeighborhoods}</p>
+            <p>{blog.thisIsKnown}</p>
+            <h3>{blog.h3YellowCab}</h3>
+            <p>{blog.licensedYellow}</p>
+            <p>{blog.sinceThey}</p>
+            <p>{blog.itsBest}</p>
+            <p>{blog.beforeBoarding}</p>
+            <p>{blog.aCabRide}</p>
+            <p>{blog.wheneveverITake}</p>
+            <p>{blog.iFind}</p>
+            <p>{blog.goingOut}</p>
+            <p>{blog.cascoWillRun}</p>
+            <p>{blog.makeSureto}</p>
+            <p>{blog.tipping}</p>
+            <p>{blog.avoidTheCabs}</p>
+            <p>{blog.iTookAlot}</p>
+            <p>{blog.onlyOnce}</p>
+            <h3>{blog.uberH3}</h3>
+            <p>{blog.uberHas}</p>
+            <p>{blog.youDontHave}</p>
+            <p>{blog.safer}</p>
+            <p>{blog.uberCanBe}</p>
+            <p>{blog.surgePrice}</p>
+            <p>{blog.itsAGoodIdea}</p>
+            <p>{blog.someDrivers}</p>
+            <p>{blog.documentEverything}</p>
+            <p>{blog.ifAny}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
             <div className="button-parent">
               <button onClick={goToSafetyStory}>&#60; Previous Story</button>
               <button onClick={goToMolaStory}>
