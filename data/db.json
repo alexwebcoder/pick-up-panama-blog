@@ -103,11 +103,7 @@
       "panamaCopBankCaption": "A Panamanian police officer outside of a bank",
       "imageFive": "/images/safety/coronado-checkpoint-panama.JPG",
       "figcaption": "A Panamanian motorcycle club in El Cangrejo, Panama City",
-      "figcaptionThree": "A Panamanian policeman outside of the supermarket",
-      "figcaptionFive": "Going through a checkpoint in Coronado Panama",
-      "alt": "Panamanian motorcycle club riding through Panama City",
-      "altThree": "A Panamanian policeman outside of the supermarket",
-      "altFive": "A car goes through a checkpoint in Coronado Panama"
+      "alt": "Panamanian motorcycle club riding through Panama City"
     },
     {
       "title": "How do I get around in Panama?",
@@ -247,9 +243,9 @@
       "cityCenterAltText": "Map of the Panama City Center",
       "cityCenterCaption": "Map of the Panama City Center",
       "courtesyGoogle": "Courtesy of Google Maps",
-
-
-
+      "chiva": "/images/transportation/panama-city-center.JPG",
+      "chivaAltText": "Map of the Panama City Center",
+      "chivaCaption": "Map of the Panama City Center",
 
 
 
