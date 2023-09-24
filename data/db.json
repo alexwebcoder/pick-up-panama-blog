@@ -270,7 +270,20 @@
       "coronadoMap": "/images/transportation/map-of-coronado.JPG",
       "coronadoMapAltText": "Map of Coronado Entrance",
       "coronadoMapCaption": "Roberto Eisenmann is the road you take to enter Coronado.",
-      "courtesyGoogleCoronado": "Courtesy of Google Maps"
+      "courtesyGoogleCoronado": "Courtesy of Google Maps",
+      "coasterBus": "/images/transportation/panama-coaster-bus.JPG",
+      "coasterBusAltText": "a panama coaster bus",
+      "coasterBusCaption": "A Panama coaster bus",
+      "busesCoronado": "/images/transportation/panama-buses-coronado.JPG",
+      "busesCoronadoAltText": "Buses in front of the Coronado entrance in Panama",
+      "busesCoronadoCaption": "Buses in front of the Coronado entrance in Panama",
+      "coronadoGates": "/images/transportation/coronado-panama-gates.JPG",
+      "coronadoGatesAltText": "coronado's gated entrance",
+      "coronadoGatesCaption": "Coronado's gated entrance",
+
+      "taxiPickUp": "/images/transportation/taxi-pick-up.JPG",
+      "taxiPickUpAltText": "a taxi pick up truck",
+      "taxiPickUpCaption": "A taxi pick up truck in Coronado",
 
 
 
