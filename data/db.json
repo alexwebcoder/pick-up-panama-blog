@@ -264,9 +264,9 @@
       "panamaChickenBus": "/images/transportation/panama-chicken-bus.JPG",
       "panamaChickenBusAltText": "A Panama Diablo bus",
       "panamaChickenBusCaption": "A Diablo Rojo Bus in Portebelo",
-      "allbrookEntr": "/images/transportation/allbrook-entrance.JPG",
-      "allbrookEntrAltText": "allbrook mall entrance",
-      "allbrookEntrBusCaption": "This is the Allbrook Mall Entrance. You can see the bus terminal in the background.",
+      "albrookEntr": "/images/transportation/albrook-terminal.JPG",
+      "albrookEntrAltText": "albrook mall entrance",
+      "albrookEntrBusCaption": "This is the Albrook Mall Entrance. You can see the bus terminal in the background.",
       "coronadoMap": "/images/transportation/map-of-coronado.JPG",
       "coronadoMapAltText": "Map of Coronado Entrance",
       "coronadoMapCaption": "Roberto Eisenmann is the road you take to enter Coronado.",
@@ -284,6 +284,11 @@
       "taxiPickUp": "/images/transportation/taxi-pick-up.JPG",
       "taxiPickUpAltText": "a taxi pick up truck",
       "taxiPickUpCaption": "A taxi pick up truck in Coronado",
+
+      "coronadoShuttle": "/images/transportation/coronado-shuttle-bus.JPG",
+      "coronadoShuttleAltText": "a shuttle bus in coronado",
+      "coronadoShuttleCaption": "A shuttle bus in Coronado",
+
 
 
 

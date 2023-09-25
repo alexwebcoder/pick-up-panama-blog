@@ -236,6 +236,14 @@ const BlogDetails = () => {
             <p>{blog.youCan}</p>
             <p>{blog.ifTraveling}</p>
             <h4>{blog.h4Shuttle}</h4>
+            <figure className="free-shuttle">
+                <img
+                  className="no-right-click"
+                  src={blog.freeShuttle}
+                  alt={blog.freeShuttleAltText}
+                />
+                <figcaption>{blog.freeShuttleCaption}</figcaption>
+            </figure>
             <p>{blog.trainDoesNot}</p>
             <p>{blog.exitAirport}</p>
             <p>{blog.theseBuses}</p>
@@ -253,7 +261,7 @@ const BlogDetails = () => {
                   src={blog.metroMap}
                   alt={blog.metroMapAltText}
                 />
-                <figcaption>{blog.metroMapCaption}<span>{blog.courtesyLobueno}</span></figcaption>
+                <figcaption>{blog.metroMapCaption}<br/><span>{blog.courtesyLobueno}</span></figcaption>
             </figure>
             <h4>{blog.h4CorridorSur}</h4>
             <ul>
@@ -292,9 +300,17 @@ const BlogDetails = () => {
                   src={blog.cityCenter}
                   alt={blog.cityCenterAltText}
                 />
-                <figcaption>{blog.cityCenterCaption}<span>{blog.courtesyGoogle}</span></figcaption>
+                <figcaption>{blog.cityCenterCaption}<br/><span>{blog.courtesyGoogle}</span></figcaption>
             </figure>
             <h3>{blog.h3YellowCab}</h3>
+            <figure className="yellow-cabs">
+                <img
+                  className="no-right-click"
+                  src={blog.panamaCabs}
+                  alt={blog.panamaCabsAltText}
+                />
+                <figcaption>{blog.panamaCabsCaption}</figcaption>
+            </figure>
             <p>{blog.licensedYellow}</p>
             <p>{blog.sinceThey}</p>
             <p>{blog.itsBest}</p>
@@ -321,12 +337,28 @@ const BlogDetails = () => {
             <p>{blog.ifAny}</p>
             <h3>{blog.h3PanamaBuses}</h3>
             <h4>{blog.h4RidingMetro}</h4>
+            <figure className="metro-bus">
+                <img
+                  className="no-right-click"
+                  src={blog.metroCab}
+                  alt={blog.metroCabAltText}
+                />
+                <figcaption>{blog.metroCabCaption}</figcaption>
+            </figure>
             <p>{blog.theMetroIs}</p>
             <p>{blog.theCostIs}</p>
             <p>{blog.thereAre}</p>
             <p>{blog.whenYouGetOn}</p>
             <p>{blog.whenReady}</p>
             <h4>{blog.h4busRidesOut}</h4>
+            <figure className="albrook-terminal">
+            <img
+                  className="no-right-click"
+                  src={blog.albrookEntr}
+                  alt={blog.albrookEntrAltText}
+                />
+                <figcaption>{blog.albrookEntrCaption}</figcaption>
+            </figure>
             <p>{blog.granTerminal}</p>
             <p>{blog.youCanTake}</p>
             <h5>{blog.h5CoronadoBus}</h5>
@@ -344,6 +376,14 @@ const BlogDetails = () => {
             <p>{blog.pedestrianBridge}</p>
             <p>{blog.youCanTakeCab}</p>
             <h4>{blog.h4DiablosRojos}</h4>
+            <figure className="diablos">
+                <img
+                  className="no-right-click"
+                  src={blog.diablo}
+                  alt={blog.diabloAltText}
+                />
+                <figcaption>{blog.diabloCaption}</figcaption>
+            </figure>
             <p>{blog.theDiablosRojos}</p>
             <p>{blog.theyAreIndepen}</p>
             <p>{blog.panamaPhased}</p>
