@@ -357,7 +357,7 @@ const BlogDetails = () => {
                   src={blog.albrookEntr}
                   alt={blog.albrookEntrAltText}
                 />
-                <figcaption>{blog.albrookEntrCaption}</figcaption>
+                <figcaption>{blog.albrookEntrBusCaption}</figcaption>
             </figure>
             <p>{blog.granTerminal}</p>
             <p>{blog.youCanTake}</p>
@@ -370,9 +370,33 @@ const BlogDetails = () => {
             <p>{blog.afterPurchasing}</p>
             <p>{blog.youWillSee}</p>
             <p>{blog.twoBusesChoose}</p>
+            <figure className="comfy-bus">
+                <img
+                  className="no-right-click"
+                  src={blog.comfyBus}
+                  alt={blog.comfyBusAltText}
+                />
+                <figcaption>{blog.comfyBusCaption}</figcaption>
+            </figure>
+            <figure className="coaster-bus">
+                <img
+                  className="no-right-click"
+                  src={blog.coasterBus}
+                  alt={blog.coasterBusAltText}
+                />
+                <figcaption>{blog.coasterBusCaption}</figcaption>
+            </figure>
             <p>{blog.takeLarger}</p>
             <p>{blog.whenYouGetOnThe}</p>
             <p>{blog.coronadoIsAbout}</p>
+            <figure className="coronado-stop">
+                <img
+                  className="no-right-click"
+                  src={blog.coronadoEntrance}
+                  alt={blog.coronadoEntranceAltText}
+                />
+                <figcaption>{blog.coronadoEntranceCaption}</figcaption>
+            </figure>
             <p>{blog.pedestrianBridge}</p>
             <p>{blog.youCanTakeCab}</p>
             <h4>{blog.h4DiablosRojos}</h4>
@@ -383,6 +407,14 @@ const BlogDetails = () => {
                   alt={blog.diabloAltText}
                 />
                 <figcaption>{blog.diabloCaption}</figcaption>
+            </figure>
+            <figure className="chicken-bus">
+                <img
+                  className="no-right-click"
+                  src={blog.panamaChickenBus}
+                  alt={blog.panamaChickenBusAltText}
+                />
+                <figcaption>{blog.panamaChickenBusCaption}</figcaption>
             </figure>
             <p>{blog.theDiablosRojos}</p>
             <p>{blog.theyAreIndepen}</p>

@@ -111,6 +111,7 @@
       "date": "September 7, 2023",
       "id": "how-do-i-get-around-in-panama",
       "className": "transportation",
+      "image": "/images/transportation/panamanian-diablo-bus.JPG",
       "intro": "Panama is a very modern country and has one of the best metro trains in the world. Google Maps works well here, and there are plenty of taxis, Ubers, and buses to get you around without the need to rent a car. This guide will go over the best ways to get around Panama.",
       "h2Tocumen": "How to get from Tocumen Airport to Albrook Mall",
       "iveUsed": "I've used taxis, Uber, and the metro train to get from the airport to Panama City.",
@@ -247,7 +248,7 @@
       "chivaAltText": "A modern day chiva in Panama",
       "chivaCaption": "A modern day chiva in Panama",
       "diablo": "/images/transportation/panamanian-diablo-bus.JPG",
-      "diabloAltText": "Panama Diablo Bus",
+      "diabloAltText": "Panama Diablo Rojo Bus",
       "diabloCaption": "A Diablo Rojo Bus in Portebelo",
       "freeShuttle": "/images/transportation/tocumen-airport-free-shuttle.JPG",
       "freeShuttleAltText": "The free shuttle bus at Tocumen Airport",
@@ -262,15 +263,18 @@
       "coronadoEntranceAltText": "Coronado Panama landmarks",
       "coronadoEntranceCaption": "Coronado Panama landmarks",
       "panamaChickenBus": "/images/transportation/panama-chicken-bus.JPG",
-      "panamaChickenBusAltText": "A Panama Diablo bus",
+      "panamaChickenBusAltText": "A Panama Diablo Rojos bus",
       "panamaChickenBusCaption": "A Diablo Rojo Bus in Portebelo",
       "albrookEntr": "/images/transportation/albrook-terminal.JPG",
-      "albrookEntrAltText": "albrook mall entrance",
-      "albrookEntrBusCaption": "This is the Albrook Mall Entrance. You can see the bus terminal in the background.",
+      "albrookEntrAltText": "albrook bus terminal",
+      "albrookEntrBusCaption": "This is the Albrook bus terminal.",
       "coronadoMap": "/images/transportation/map-of-coronado.JPG",
       "coronadoMapAltText": "Map of Coronado Entrance",
       "coronadoMapCaption": "Roberto Eisenmann is the road you take to enter Coronado.",
       "courtesyGoogleCoronado": "Courtesy of Google Maps",
+      "comfyBus": "/images/transportation/panama-comfy-bus.JPG",
+      "comfyBusAltText": "a panama comfy bus",
+      "comfyBusCaption": "A Panama comfy bus",
       "coasterBus": "/images/transportation/panama-coaster-bus.JPG",
       "coasterBusAltText": "a panama coaster bus",
       "coasterBusCaption": "A Panama coaster bus",
@@ -287,7 +291,7 @@
 
       "coronadoShuttle": "/images/transportation/coronado-shuttle-bus.JPG",
       "coronadoShuttleAltText": "a shuttle bus in coronado",
-      "coronadoShuttleCaption": "A shuttle bus in Coronado",
+      "coronadoShuttleCaption": "A shuttle bus in Coronado"
 
 
 
