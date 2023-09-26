@@ -155,7 +155,7 @@ p.this-article {
 
 /* transportaion page images */
 
-.guys-in-back-of-truck {
+.chiva {
     padding-top: calc(2268 / 3024 * 100%);
 }
 
@@ -201,6 +201,27 @@ p.this-article {
 
 .coronado-stop {
     padding-top: calc(3024 / 4032 * 100%);
+}
+
+.coronado-map {
+    padding-top: calc(472 / 820 * 100%);
+}
+
+.taxi-truck {
+    padding-top: calc(3024 / 4032 * 100%);
+}
+
+.mini-van {
+    padding-top: calc(3024 / 4032 * 100%);
+}
+
+.inside-van {
+    padding-top: calc(3024 / 4032 * 100%);
+}
+
+
+.gates {
+    padding-top: calc(1287 / 3999 * 100%);
 }
 
 

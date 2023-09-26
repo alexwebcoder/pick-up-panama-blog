@@ -398,7 +398,50 @@ const BlogDetails = () => {
                 <figcaption>{blog.coronadoEntranceCaption}</figcaption>
             </figure>
             <p>{blog.pedestrianBridge}</p>
+            <figure className="coronado-map">
+                <img
+                  className="no-right-click"
+                  src={blog.coronadoMap}
+                  alt={blog.coronadoMapAltText}
+                />
+                <figcaption>{blog.coronadoMapCaption}<br/><span>{blog.courtesyGoogle}</span></figcaption>
+            </figure>
             <p>{blog.youCanTakeCab}</p>
+            <figure className="taxi-truck">
+                <img
+                  className="no-right-click"
+                  src={blog.taxiPickUp}
+                  alt={blog.taxiPickUpAltText}
+                />
+                <figcaption>{blog.taxiPickUpCaption}</figcaption>
+            </figure>
+            <p>{blog.smallWhite}</p>
+            <figure className="mini-van">
+                <img
+                  className="no-right-click"
+                  src={blog.coronadoShuttle}
+                  alt={blog.coronadoShuttleAltText}
+                />
+                <figcaption>{blog.coronadoShuttleCaption}</figcaption>
+            </figure>
+            <p>{blog.packIn}</p>
+            <figure className="inside-van">
+                <img
+                  className="no-right-click"
+                  src={blog.shuttleInterior}
+                  alt={blog.shuttleInteriorAltText}
+                />
+                <figcaption>{blog.shuttleInteriorCaption}</figcaption>
+            </figure>
+            <p>{blog.gates}</p>
+            <figure className="gates">
+                <img
+                  className="no-right-click"
+                  src={blog.coronadoGates}
+                  alt={blog.coronadoGatesAltText}
+                />
+                <figcaption>{blog.coronadoGatesCaption}</figcaption>
+            </figure>
             <h4>{blog.h4DiablosRojos}</h4>
             <figure className="diablos">
                 <img
@@ -424,6 +467,14 @@ const BlogDetails = () => {
             <h4>{blog.h4Chiva}</h4>
             <p>{blog.chivasAre}</p>
             <p>{blog.nowadays}</p>
+            <figure className="chiva">
+                <img
+                  className="no-right-click"
+                  src={blog.chiva}
+                  alt={blog.chivaAltText}
+                />
+                <figcaption>{blog.chivaCaption}</figcaption>
+            </figure>
             <p>{blog.summary}</p>
 
 

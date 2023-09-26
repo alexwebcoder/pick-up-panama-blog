@@ -133,7 +133,7 @@
       "cardIsFor": "The Rapi Pass card is a 3 in one card that you can use for:",
       "liMetro": "Metro Buses",
       "liTrains": "Metro Trains",
-      "liTerminal": "To enter the Albrook bus terminal.",
+      "liTerminal": "Entering the Albrook bus terminal.",
       "itCosts": "It costs $5 for the card and you add money to it.",
       "youCan": "You can buy a Rapi Pass Card from vending machines near the luggage claim area or from the airport staff.",
       "ifTraveling": "If you are traveling with more than one person, you can buy one card and share it. You would tap the card for each person that goes through the turnstile.",
@@ -225,7 +225,10 @@
       "whenYouGetOnThe": "When you get on the bus, confirm with the driver that it goes to Coronado. If you have a carry on, it should be able to fit under the seat. Otherwise, give it to the guy who works there and he will put it in the luggage compartment.",
       "coronadoIsAbout": "Coronado is about 60 miles down the Pan Am Highway. So it could take an hour or more depending on traffic. When you get to Coronado, you will see large signs for McDonalds, Super 99 and Rey's. This is where you get off.",
       "pedestrianBridge": "When you get off in Coronado, you will need to use the pedestrian bridge to cross to the other side of the Pan Am Highway. The entrance to Coronado is down Avenue Roberto Eisenmann which is on the same side of the street as Rey's market.",
-      "youCanTakeCab": "You can take a cab for around $1.25 to get into Coronado. The entrance gates are less than a mile from the highway. There are also small white buses that will take you for 25 or 30 cents.",
+      "youCanTakeCab": "You can take a cab for around $1.25 to get into Coronado.",
+      "smallWhite": "There are also small white buses that will take you for 25 or 30 cents.",
+      "packIn": "These buses pack in a lot of people.",
+      "gates": " The entrance gates are less than a mile from the highway.",
       "h4DiablosRojos": "What are the Diablos Rojos Buses?",
       "theDiablosRojos": "The diablos rojos buses (also known as chicken buses or red devils) are colorfully painted buses, with blaring music and flashing lights.",
       "theyAreIndepen": "They are independently owned and the owners decorate them to attract customers. These buses were originally used as school buses for children. So, the benches are smaller and there is less leg room.",
@@ -285,13 +288,17 @@
       "coronadoGatesAltText": "coronado's gated entrance",
       "coronadoGatesCaption": "Coronado's gated entrance",
 
-      "taxiPickUp": "/images/transportation/taxi-pick-up.JPG",
+      "taxiPickUp": "/images/transportation/taxi-pickup-truck.JPG",
       "taxiPickUpAltText": "a taxi pick up truck",
       "taxiPickUpCaption": "A taxi pick up truck in Coronado",
 
       "coronadoShuttle": "/images/transportation/coronado-shuttle-bus.JPG",
       "coronadoShuttleAltText": "a shuttle bus in coronado",
-      "coronadoShuttleCaption": "A shuttle bus in Coronado"
+      "coronadoShuttleCaption": "A shuttle bus in Coronado",
+      
+      "shuttleInterior": "/images/transportation/coronado-shuttle-bus-interior.JPG",
+      "shuttleInteriorAltText": "the inside of a shuttle bus in coronado",
+      "shuttleInteriorCaption": "The inside of a shuttle bus in Coronado"
 
 
 
