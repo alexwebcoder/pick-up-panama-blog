@@ -287,25 +287,18 @@
       "coronadoGates": "/images/transportation/coronado-panama-gates.JPG",
       "coronadoGatesAltText": "coronado's gated entrance",
       "coronadoGatesCaption": "Coronado's gated entrance",
-
       "taxiPickUp": "/images/transportation/taxi-pickup-truck.JPG",
       "taxiPickUpAltText": "a taxi pick up truck",
       "taxiPickUpCaption": "A taxi pick up truck in Coronado",
-
       "coronadoShuttle": "/images/transportation/coronado-shuttle-bus.JPG",
       "coronadoShuttleAltText": "a shuttle bus in coronado",
       "coronadoShuttleCaption": "A shuttle bus in Coronado",
-      
       "shuttleInterior": "/images/transportation/coronado-shuttle-bus-interior.JPG",
       "shuttleInteriorAltText": "the inside of a shuttle bus in coronado",
-      "shuttleInteriorCaption": "The inside of a shuttle bus in Coronado"
-
-
-
-
-
-
-
+      "shuttleInteriorCaption": "The inside of a shuttle bus in Coronado",
+      "alexBus": "/images/transportation/alex-deleon-panama-bus.JPG",
+      "alexBusAltText": "alex on a bus in panama",
+      "alexBusCaption": "Alex on a bus in Panama"
     },
     {
       "title": "What are Molas?",

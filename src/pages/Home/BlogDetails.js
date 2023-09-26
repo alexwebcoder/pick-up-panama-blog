@@ -476,6 +476,14 @@ const BlogDetails = () => {
                 <figcaption>{blog.chivaCaption}</figcaption>
             </figure>
             <p>{blog.summary}</p>
+            <figure className="alex-bus">
+                <img
+                  className="no-right-click"
+                  src={blog.alexBus}
+                  alt={blog.alexBusAltText}
+                />
+                <figcaption>{blog.alexBusCaption}</figcaption>
+            </figure>
 
 
 
