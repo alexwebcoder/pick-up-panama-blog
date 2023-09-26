@@ -109,16 +109,24 @@ p.this-article {
     margin-bottom: 0;
 }
 
+.blog-details h2 {
+    color: red;
+}
+
 .blog-details h2, .blog-details h3 {
-    font-size: 1.375rem;
+    font-size: 1.438rem;
     line-height: 1.1;
 }
 
 .blog-details h3 {
-    font-size: 1.25rem;
+    font-size: 1.313rem;
 }
 
-.blog-details section h2, .blog-details section h3 {
+.blog-details h4 {
+    font-size: 1.188rem;
+}
+
+.blog-details section h2, .blog-details section h3, .blog-details h4 {
     margin-bottom: 15px;
 }
 

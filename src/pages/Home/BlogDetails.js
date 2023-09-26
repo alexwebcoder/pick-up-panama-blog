@@ -218,7 +218,7 @@ const BlogDetails = () => {
             <p>{blog.uberWorks}</p>
             <p>{blog.cheapetPaid}</p>
             <p>{blog.buyingData}</p>
-            <h4>{blog.h4Wifi}</h4>
+            <h3>{blog.h3Wifi}</h3>
             <p>{blog.wifiAccess}</p>
             <h3>{blog.h3TakeMetro}</h3>
             <p>{blog.metroLeast}</p>

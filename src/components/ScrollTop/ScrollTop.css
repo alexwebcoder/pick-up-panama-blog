@@ -5,27 +5,27 @@
   .icon-position{
     position: fixed;
     bottom: 40px;
-    right: 25px;
+    right: 5px;
     z-index: 20;
   }
 
   .icon-style{
-    background-color: #551B54;
+    background-color: #1493f3;
     border: 2px solid #fff;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     color: #fff;
     cursor: pointer;
     /* animation: movebtn 3s ease-in-out infinite; */
     transition: all .5s ease-in-out;
   }
 
-  .icon-style:hover{
+  .icon-style:hover {
     animation: none;
     background: #fff;
-    color: #551B54;
-    border: 2px solid #551B54;
+    color: #1493f3;
+    border: 2px solid #1493f3;
   }
 
   .top-to-bottom:focus::after {
@@ -57,3 +57,15 @@
       transform: translateY(0px);
     }
   }
+
+  /* Desktop menu */
+@media all and (min-width: 960px) {
+  .icon-style {
+    height: 50px;
+    width: 50px;
+  }
+
+  .icon-position {
+    right: 25px;
+  }
+}
