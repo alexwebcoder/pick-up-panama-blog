@@ -95,8 +95,8 @@ document.addEventListener('keydown', evt => {
       hamburger.classList.toggle('change')
    }
 });
-hamburger.addEventListener('keydown', toggleHamburgerEnter, false)
-hamburger.addEventListener('click', toggleHamburgerClick, false)
+hamburger.addEventListener('keydown', toggleHamburgerEnter, false);
+hamburger.addEventListener('click', toggleHamburgerClick, false);
 toggle.addEventListener('click', toggleMenu, false);
 
 
@@ -169,3 +169,33 @@ for (const image of images) {
    });
 
 }
+
+ const pseudo = document.querySelector('.top-to-bottom');
+
+ const scrollUp = (event) => {
+   if (event.keycode === 13 || event.key === 'Enter' || event.keycode === 32 || event.code === 'Space') {
+      console.log('panama')
+
+      window.scrollTo({
+         top: 0,
+         behavior: 'smooth',
+     })
+      
+   }
+
+}
+
+pseudo.addEventListener('keydown', scrollUp, false);
+
+  
+            window.addEventListener('scroll', ()=>{
+
+               if (window.scrollY > 400) {
+                   pseudo.style.display = "block";
+                  console.log('yes')
+                  } else {
+                   pseudo.style.display = "none";
+                  console.log('no')
+      
+                  }
+            })

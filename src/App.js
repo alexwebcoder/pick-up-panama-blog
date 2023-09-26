@@ -11,6 +11,7 @@ import About from "./pages/About/About";
 import Newsfeed from "./pages/Newsfeed/Newsfeed";
 import ContactUs from './pages/ContactUs/ContactUs';
 import FeatureStory from './pages/FeatureStory/FeatureStory';
+import ScrollTop from './components/ScrollTop/ScrollTop';
 
 function App() {
 //   const [results, setResults] = useState([]);
@@ -28,6 +29,7 @@ function App() {
                  <Route path='/*' element={ <NotFound /> } />
               </Routes>
           <Footer />
+          <ScrollTop />
        </div>
     </Router>
   );
