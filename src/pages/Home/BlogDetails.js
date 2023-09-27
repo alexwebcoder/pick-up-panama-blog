@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import useFetch from "../../useFetch";
 import "./BlogDetails.css";
 import { TabTitle, Capitalize } from "../../utils/GeneralFunctions";
+import ReactPlayer from "react-player";
 
 const BlogDetails = () => {
   //using the useParams hook to grab values (route params) from current url (route)
@@ -281,6 +282,10 @@ const BlogDetails = () => {
             <p>{blog.trainsModern}</p>
             <p>{blog.thePlatforms}</p>
             <p>{blog.carryingLuggage}</p>
+            {/* <ReactPlayer url='<https://youtu.be/RzCuVYvejHs?si=CeEnx1ojinjML55s>' 
+              controls={true}
+            
+            /> */}
             <h4>{blog.metroHoursh4}</h4>
             <p className="bold-text">{blog.metroStrong} <span>{blog.fiveAm}</span></p>
             <p className="bold-text">{blog.saturdayStrong} <span>{blog.fivetoTen}</span></p>
