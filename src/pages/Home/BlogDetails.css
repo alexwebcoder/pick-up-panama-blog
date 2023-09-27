@@ -110,10 +110,12 @@ p.this-article {
 }
 
 .blog-details h2 {
-    color: red;
+    display: inline-block;
+    border-bottom: 1px solid #a1a1a1;
+    
 }
 
-.blog-details h2, .blog-details h3 {
+.blog-details h2, .blog-details h3, .blog-details h4 {
     font-size: 1.438rem;
     line-height: 1.1;
 }
@@ -239,6 +241,13 @@ p.this-article {
 
 /* Tablet menu */
 @media all and (min-width: 700px) {
+    .blog-details h2 {
+        font-size: 2rem;
+    }
+
+    .blog-details h3 {
+        font-size: 1.75rem;
+    }
 }
 
 /* Desktop menu */

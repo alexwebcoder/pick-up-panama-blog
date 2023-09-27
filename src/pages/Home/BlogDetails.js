@@ -361,7 +361,7 @@ const BlogDetails = () => {
             </figure>
             <p>{blog.granTerminal}</p>
             <p>{blog.youCanTake}</p>
-            <h5>{blog.h5CoronadoBus}</h5>
+            <h2>{blog.h2CoronadoBus}</h2>
             <p>{blog.coronadoIs}</p>
             <p>{blog.thereAreBusesTo}</p>
             <p>{blog.youHaveTo}</p>
@@ -442,7 +442,8 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.coronadoGatesCaption}</figcaption>
             </figure>
-            <h4>{blog.h4DiablosRojos}</h4>
+            <h2>{blog.h2DiablosRojos}</h2>
+              <p>{blog.theDiablosRojos}</p>
             <figure className="diablos">
                 <img
                   className="no-right-click"
@@ -451,6 +452,7 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.diabloCaption}</figcaption>
             </figure>
+              <p>{blog.theyAreIndepen}</p>
             <figure className="chicken-bus">
                 <img
                   className="no-right-click"
@@ -459,12 +461,10 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.panamaChickenBusCaption}</figcaption>
             </figure>
-            <p>{blog.theDiablosRojos}</p>
-            <p>{blog.theyAreIndepen}</p>
             <p>{blog.panamaPhased}</p>
             <p>{blog.becauseTheyWere}</p>
             <p>{blog.youMayStill}</p>
-            <h4>{blog.h4Chiva}</h4>
+            <h2>{blog.h2Chiva}</h2>
             <p>{blog.chivasAre}</p>
             <p>{blog.nowadays}</p>
             <figure className="chiva">
