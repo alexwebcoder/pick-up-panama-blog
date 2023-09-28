@@ -282,11 +282,13 @@ const BlogDetails = () => {
             <p>{blog.trainsModern}</p>
             <p>{blog.thePlatforms}</p>
             <p>{blog.carryingLuggage}</p>
-            <ReactPlayer className='youtube-video' url='<https://youtube.com/shorts/YVfmWeAgd1E?si=6Kj1U-RDfx5hiV3x?rel=0>' 
-             controls
-              width={null}
-              height={null}
-            />
+            <div className="video-container">
+              <ReactPlayer className='youtube-video' url='<https://youtube.com/shorts/YVfmWeAgd1E?si=6Kj1U-RDfx5hiV3x?rel=0>' 
+              controls
+                width={null}
+                height={null}
+              />
+            </div>
             <h4>{blog.metroHoursh4}</h4>
             <p className="bold-text">{blog.metroStrong} <span>{blog.fiveAm}</span></p>
             <p className="bold-text">{blog.saturdayStrong} <span>{blog.fivetoTen}</span></p>

@@ -38,12 +38,6 @@
     transition: 0.3s;
 }
 
-.youtube-video {
-    aspect-ratio: 16 / 9;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
 .button-parent button:hover, .button-parent button:focus {
     background-color: #1493f3;
     color: #fff;
@@ -141,6 +135,15 @@ p.this-article {
     margin-bottom: 20px;
 }
 
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 /* saftey page images */
 
 .cops-at-fruitstand {
@@ -167,6 +170,12 @@ p.this-article {
     padding-top: calc(2752 / 4896 * 100%);
 }
 
+.video-container {
+    padding-top: calc(226/ 402 * 100%);
+    position: relative;
+    margin-bottom: 20px;
+}
+
 /* transportaion page images */
 
 .chiva {
@@ -178,7 +187,7 @@ p.this-article {
 }
 
 .city-center {
-    padding-top: calc(756 / 772 * 100%);
+    padding-top: calc(762 / 772 * 100%);
 }
 
 .free-shuttle {
