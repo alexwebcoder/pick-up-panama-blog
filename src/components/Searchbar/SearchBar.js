@@ -14,7 +14,10 @@ const SearchBar = ({ setResults }) => {
        .then((json) => {
          const results = json.filter((blogs) => {
             return (
-                value && blogs && blogs.title && blogs.title.toLowerCase().includes(value)
+                value && 
+                blogs && 
+                blogs.title && 
+                blogs.title.toLowerCase().includes(value)
             );
          });
          setResults(results);
@@ -32,7 +35,7 @@ const SearchBar = ({ setResults }) => {
       <div className="search-bar-container">
          <div className="input-wrapper">
             <FaSearch id="search-icon"/>
-            <input placeholder="Search this site" value={input} onChange={(e) => handleChange(e.target.value)}/>
+            <input placeholder="Search" value={input} onChange={(e) => handleChange(e.target.value)}/>
          </div>
       </div>
     )
