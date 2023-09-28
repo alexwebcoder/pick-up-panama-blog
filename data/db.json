@@ -298,7 +298,10 @@
       "shuttleInteriorCaption": "The inside of a shuttle bus in Coronado",
       "alexBus": "/images/transportation/alex-deleon-panama-bus.JPG",
       "alexBusAltText": "alex on a bus in panama",
-      "alexBusCaption": "Alex on a bus in Panama"
+      "alexBusCaption": "Alex on a bus in Panama",
+      "rapiCard": "/images/transportation/rapipass.JPG",
+      "rapiCardAltText": "A Panama Rapi Pass Card",
+      "rapiCardCaption": "A Panama Rapi Pass Card"
     },
     {
       "title": "What are Molas?",

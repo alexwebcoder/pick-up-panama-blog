@@ -176,6 +176,12 @@ p.this-article {
     margin-bottom: 20px;
 }
 
+.rapi-card {
+    padding-top: calc(907/ 1447 * 100%);
+    position: relative;
+    margin-bottom: 20px;
+}
+
 /* transportaion page images */
 
 .chiva {

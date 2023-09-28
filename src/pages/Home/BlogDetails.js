@@ -227,6 +227,14 @@ const BlogDetails = () => {
             <p>{blog.canTake}</p>
             <h4>{blog.h4RapiCard}</h4>
             <p>{blog.cashCredit}</p>
+            <figure className="rapi-card">
+                <img
+                  className="no-right-click"
+                  src={blog.rapiCard}
+                  alt={blog.rapiCardAltText}
+                />
+                <figcaption>{blog.rapiCardCaption}</figcaption>
+            </figure>
             <p>{blog.cardIsFor}</p>
             <ul>
               <li>{blog.liMetro}</li>
