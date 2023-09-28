@@ -2,6 +2,7 @@ import { useState } from "react";
 // import useFetch from '../../../src/useFetch';
 import { FaSearch } from "react-icons/fa";
 import "./SearchBar.css"
+import { SearchResults } from "semantic-ui-react";
 
 
 const SearchBar = ({ setResults }) => {
@@ -9,15 +10,15 @@ const SearchBar = ({ setResults }) => {
     
 
     const fetchData = (value) => {
-      fetch('http://localhost:8000/blogs/')
+      fetch('http://localhost:8000/searchResults/')
        .then((response) => response.json())
        .then((json) => {
-         const results = json.filter((blogs) => {
+         const results = json.filter((searchResults) => {
             return (
                 value && 
-                blogs && 
-                blogs.title && 
-                blogs.title.toLowerCase().includes(value)
+                SearchResults && 
+                SearchResults.siteData && 
+                SearchResults.siteData.toLowerCase().includes(value)
             );
          });
          setResults(results);
