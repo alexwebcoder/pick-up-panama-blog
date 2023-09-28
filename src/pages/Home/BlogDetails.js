@@ -282,7 +282,7 @@ const BlogDetails = () => {
             <p>{blog.trainsModern}</p>
             <p>{blog.thePlatforms}</p>
             <p>{blog.carryingLuggage}</p>
-            <ReactPlayer className='youtube-video' url='<https://youtube.com/shorts/YVfmWeAgd1E?si=6Kj1U-RDfx5hiV3x?rel=0&modestbranding=1>' 
+            <ReactPlayer className='youtube-video' url='<https://youtube.com/shorts/YVfmWeAgd1E?si=6Kj1U-RDfx5hiV3x?rel=0>' 
              controls
               width={null}
               height={null}
