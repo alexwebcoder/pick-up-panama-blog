@@ -38,6 +38,12 @@
     transition: 0.3s;
 }
 
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .button-parent button:hover, .button-parent button:focus {
     background-color: #1493f3;
     color: #fff;
