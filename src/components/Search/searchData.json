@@ -2,166 +2,249 @@
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "how do i get around in panama?",
-      "id": 6
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "metro train",
-      "id": 7
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "taxis",
       "id": 1
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "buses",
+      "keywords": "metro train",
       "id": 2
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "taxis",
+      "id": 3
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "buses",
+      "id": 4
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama/#uber",
       "keywords": "uber",
-      "id": 8
+      "id": 5
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "airport",
-      "id": 4
+      "id": 6
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "google maps",
-      "id": 18
+      "id": 7
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "tocumen airport",
-      "id": 3
+      "id": 8
     },
     {
-      "link": "http://localhost:3000/blogs/how-do-i-gest-around-in-panama",
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "albrook mall",
       "id": 9
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "rapi pass card",
-      "id": 5
+      "id": 10
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "transportation",
-      "id": 10
+      "id": 11
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "wifi",
-      "id": 10
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "metro station",
-      "id": 13
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "corredor sur station",
-      "id": 14
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "san miguelito station",
-      "id": 15
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "aeropuerto metro station",
-      "id": 15
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "how much does it cost to take train?",
-      "id": 15
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "how much does it cost to take a taxi?",
-      "id": 15
-    }, {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "how much for a cab?",
-      "id": 15
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "addresses in panama city",
-      "id": 15
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "what is the city center?",
-      "id": 15
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "where do i catch the bus?",
-      "id": 15
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "how do i take the bus?",
-      "id": 15
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "how much the bus?",
-      "id": 15
-    },
-
-
-
-
-
-
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "free shuttle",
       "id": 12
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "free shuttle",
+      "id": 13
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "taxi drivers",
-      "id": 17
+      "id": 14
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "yellow cabs",
+      "id": 15
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "metro station",
       "id": 16
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "corredor sur station",
+      "id": 17
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "san miguelito station",
+      "id": 18
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "aeropuerto metro station",
+      "id": 19
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how much does it cost to take train?",
+      "id": 20
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how much does it cost to take a taxi?",
+      "id": 21
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how much does it cost to take a uber?",
+      "id": 22
+    },
+     {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how much for a cab?",
+      "id": 23
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "addresses in panama city",
+      "id": 24
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "what is the city center?",
+      "id": 25
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "where do i catch the bus?",
+      "id": 26
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how do i take the bus?",
+      "id": 27
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how much the bus?",
+      "id": 28
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how much is uber?",
+      "id": 29
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "metro bus",
+      "id": 30
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how much is the metro bus",
+      "id": 31
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how do i get to coronado?",
+      "id": 32
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama/#reys",
       "keywords": "reys",
-      "id": 19
+      "id": 33
     },
-
-
-
-
-
-
-
-
     {
-      "link": "http://localhost:3000/blogs/is-pananma-safe",
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "is coronado far from panama city?",
+      "id":34
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "bus to coronado?",
+      "id":34
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "comfy bus",
+      "id": 35
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "coaster bus",
+      "id": 36
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "chicken bus",
+      "id": 37
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "diablos rojos",
+      "id": 38
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "what are the diablos rojos buses?",
+      "id": 38
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama/#reys",
+      "keywords": "chivas",
+      "id": 39
+    },
+    {
+      "link": "http://localhost:3000/newsfeed",
+      "keywords": "news",
+      "id": 40
+    },
+    {
+      "link": "http://localhost:3000/blogs/is-panama-safe",
+      "keywords": "is panama safe?",
+      "id": 41
+    },
+    {
+      "link": "http://localhost:3000/blogs/is-panama-safe",
+      "keywords": "is it safe to drink the water?",
+      "id": 42
+    },
+    {
+      "link": "http://localhost:3000/blogs/is-panama-safe",
+      "keywords": "crime",
+      "id": 43
+    },
+    {
+      "link": "http://localhost:3000/blogs/is-panama-safe",
+      "keywords": "panamanian public forces",
+      "id": 44
+    },
+    {
+      "link": "http://localhost:3000/blogs/is-panama-safe",
+      "keywords": "muggers",
+      "id": 45
+    },
+    {
+      "link": "http://localhost:3000/blogs/is-panama-safe",
+      "keywords": "high crime areas",
+      "id": 46
+    },
+    {
+      "link": "http://localhost:3000/blogs/is-panama-safe",
       "keywords": "san miguelito crime",
-      "id": 19
-    },
-    {
-      "link": "http://localhost:3000/blogs/is-pananma-safe",
-      "keywords": "is it safe to drink the water",
-      "id": 20
+      "id": 47
     }
+
    
    
   ]
