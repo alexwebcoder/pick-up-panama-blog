@@ -2,6 +2,8 @@ import  { useState } from "react";
 import "./Search.css";
 import { FaSearch } from "react-icons/fa";
 import { VscChromeClose } from "react-icons/vsc";
+import { Link } from "react-router-dom";
+
 
 function Search({ placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
@@ -47,7 +49,7 @@ function Search({ placeholder, data }) {
         <div className="dataResult">
           {filteredData.slice(0, 15).map((value, key) => {
             return (
-              <a className="dataItem" href={value.link} target="_blank">
+              <a href={value.link} className="dataItem">
                 <p>{value.keywords} </p>
               </a>
             );

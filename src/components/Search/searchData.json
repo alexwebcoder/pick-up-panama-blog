@@ -1,58 +1,112 @@
 [
     {
-      "author": "Chinua Achebe",
-      "country": "Nigeria",
-      "imageLink": "images/things-fall-apart.jpg",
-      "language": "English",
-      "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
-      "pages": 209,
-      "title": "Things Fall Apart",
-      "year": 1958,
-      "keywords": "taxi, airplane, bus"
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "taxis",
+      "id": 1
     },
     {
-      "author": "Hans Christian Andersen",
-      "country": "Denmark",
-      "imageLink": "images/fairy-tales.jpg",
-      "language": "Danish",
-      "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
-      "pages": 784,
-      "title": "Fairy tales",
-      "year": 1836,
-      "keywords": "canal, car, hotel"
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "buses",
+      "id": 2
     },
     {
-      "author": "Dante Alighieri",
-      "country": "Italy",
-      "imageLink": "images/the-divine-comedy.jpg",
-      "language": "Italian",
-      "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
-      "pages": 928,
-      "title": "The Divine Comedy",
-      "year": 1315,
-      "keywords": "dodgers"
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "hotels",
+      "id": 3
     },
     {
-      "author": "Unknown",
-      "country": "Sumer and Akkadian Empire",
-      "imageLink": "images/the-epic-of-gilgamesh.jpg",
-      "language": "Akkadian",
-      "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n",
-      "pages": 160,
-      "title": "The Epic Of Gilgamesh",
-      "year": -1700,
-      "keywords": "angels"
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "airport",
+      "id": 4
     },
     {
-      "author": "Unknown",
-      "country": "Achaemenid Empire",
-      "imageLink": "images/the-book-of-job.jpg",
-      "language": "Hebrew",
-      "link": "https://en.wikipedia.org/wiki/Book_of_Job\n",
-      "pages": 176,
-      "title": "The Book Of Job",
-      "year": -600,
-      "keywords": "mets"
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "rapi pass",
+      "id": 5
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how do i get around in panama",
+      "id": 6
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "metro train",
+      "id": 7
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama/#uber",
+      "keywords": "uber",
+      "id": 8
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-gest-around-in-panama",
+      "keywords": "albrook mall",
+      "id": 9
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "transportation",
+      "id": 10
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "shuttle",
+      "id": 12
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "metro station",
+      "id": 13
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "corredor sur station",
+      "id": 14
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "san miguelito station",
+      "id": 15
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "yellow cabs",
+      "id": 16
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "taxi drivers",
+      "id": 17
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "google maps",
+      "id": 18
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama/#reys",
+      "keywords": "reys",
+      "id": 19
+    },
+
+
+
+
+
+
+
+
+    {
+      "link": "http://localhost:3000/blogs/is-pananma-safe",
+      "keywords": "san miguelito crime",
+      "id": 19
+    },
+    {
+      "link": "http://localhost:3000/blogs/is-pananma-safe",
+      "keywords": "is it safe to drink the water",
+      "id": 20
     }
+   
    
   ]

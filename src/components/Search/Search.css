@@ -1,6 +1,16 @@
+.search {
+  position: fixed;
+  top: 112px;
+  right: 0;
+  border: 1px solid;
+  z-index: 2;
+  background-color:#fff;
+}
+
 .searchInputs {
-    margin-top: 105px;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .search input {
@@ -24,7 +34,7 @@
   }
   
   input:focus {
-    outline: none;
+    outline: 2px solid #1493f3;
   }
   .searchIcon svg {
     font-size: 35px;

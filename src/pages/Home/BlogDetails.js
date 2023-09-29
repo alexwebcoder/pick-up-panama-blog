@@ -342,7 +342,7 @@ const BlogDetails = () => {
             <p>{blog.avoidTheCabs}</p>
             <p>{blog.iTookAlot}</p>
             <p>{blog.onlyOnce}</p>
-            <h3>{blog.uberH3}</h3>
+            <h3 id="uber">{blog.uberH3}</h3>
             <p>{blog.uberHas}</p>
             <p>{blog.youDontHave}</p>
             <p>{blog.safer}</p>
@@ -405,7 +405,7 @@ const BlogDetails = () => {
             </figure>
             <p>{blog.takeLarger}</p>
             <p>{blog.whenYouGetOnThe}</p>
-            <p>{blog.coronadoIsAbout}</p>
+            <p id="reys">{blog.coronadoIsAbout}</p>
             <figure className="coronado-stop">
                 <img
                   className="no-right-click"
