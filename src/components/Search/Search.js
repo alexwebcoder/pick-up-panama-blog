@@ -29,13 +29,14 @@ function Search({ placeholder, data }) {
   };
 
   return (
-    <div className="search">
-      <div className="searchInputs">
+    <div className="search-wrap">
+      <div className="search">
         <input
           type="text"
           placeholder={placeholder}
           value={wordEntered}
           onChange={handleFilter}
+          className="search-term"
         />
         <div className="searchIcon">
           {filteredData.length === 0 ? (
