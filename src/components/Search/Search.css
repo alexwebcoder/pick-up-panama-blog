@@ -65,14 +65,14 @@
   .dataItem p {
     margin-left: 10px;
   }
-  a {
+ .search a {
     text-decoration: none;
   }
   
-  a:hover {
+ .search a:hover {
     background-color: lightgrey;
   }
   
-  #clearBtn {
+ .search #clearBtn {
     cursor: pointer;
   }

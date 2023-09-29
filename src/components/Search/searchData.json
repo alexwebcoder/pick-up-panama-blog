@@ -1,6 +1,16 @@
 [
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how do i get around in panama?",
+      "id": 6
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "metro train",
+      "id": 7
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "taxis",
       "id": 1
     },
@@ -10,9 +20,9 @@
       "id": 2
     },
     {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "hotels",
-      "id": 3
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama/#uber",
+      "keywords": "uber",
+      "id": 8
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
@@ -21,23 +31,13 @@
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "rapi pass",
-      "id": 5
+      "keywords": "google maps",
+      "id": 18
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "how do i get around in panama",
-      "id": 6
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "metro train",
-      "id": 7
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama/#uber",
-      "keywords": "uber",
-      "id": 8
+      "keywords": "tocumen airport",
+      "id": 3
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-gest-around-in-panama",
@@ -46,13 +46,18 @@
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "rapi pass card",
+      "id": 5
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "transportation",
       "id": 10
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "shuttle",
-      "id": 12
+      "keywords": "wifi",
+      "id": 10
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
@@ -71,8 +76,58 @@
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "yellow cabs",
-      "id": 16
+      "keywords": "aeropuerto metro station",
+      "id": 15
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how much does it cost to take train?",
+      "id": 15
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how much does it cost to take a taxi?",
+      "id": 15
+    }, {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how much for a cab?",
+      "id": 15
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "addresses in panama city",
+      "id": 15
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "what is the city center?",
+      "id": 15
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "where do i catch the bus?",
+      "id": 15
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how do i take the bus?",
+      "id": 15
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "how much the bus?",
+      "id": 15
+    },
+
+
+
+
+
+
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "free shuttle",
+      "id": 12
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
@@ -81,8 +136,8 @@
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "google maps",
-      "id": 18
+      "keywords": "yellow cabs",
+      "id": 16
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama/#reys",
