@@ -9,15 +9,13 @@ import Newsfeed from "./pages/Newsfeed/Newsfeed";
 import ContactUs from './pages/ContactUs/ContactUs';
 import FeatureStory from './pages/FeatureStory/FeatureStory';
 import ScrollTop from './components/ScrollTop/ScrollTop';
-import Search from './components/Search/Search';
-import SearchData from './components/Search/searchData.json';
+
 
 function App() {
   return (
     <Router>
        <div className="App">
           <Navbar />
-          <Search placeholder='search' data={SearchData}/>
               <Routes>
                  <Route path='/' element={ <Home/> } />
                  <Route path='/newsfeed' element={ <Newsfeed/> } />

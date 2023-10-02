@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import "./Navbar.css"
+import "./Navbar.css";
+import Search from '../Search/Search';
+import SearchData from '../Search/searchData.json';
 
 const Navbar = () => {
 
@@ -34,6 +36,7 @@ const Navbar = () => {
                   <div className="panama-star red"></div>
                 </div>  
             </div>
+          <Search placeholder='search' data={SearchData}/>
         </nav>
         <div className="definition">
             <p>Where you <span>learn about Panama</span></p>

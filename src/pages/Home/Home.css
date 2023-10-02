@@ -4,7 +4,7 @@
 }
 
 .home-content {
-  margin-top: 193px;
+  margin-top: 216px;
   margin-bottom: auto;
 }
 
@@ -233,6 +233,12 @@ figure {
   .home-content {
       margin-top: 187px;
  }
+}
+
+@media all and (min-width: 500px) {
+  .home-content {
+    margin-top: 193px;
+  }
 }
 
 /* Tablet menu */
