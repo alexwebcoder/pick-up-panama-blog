@@ -4,7 +4,7 @@
 }
 
 .home-content {
-  margin-top: 216px;
+  margin-top: 241px;
   margin-bottom: auto;
 }
 
@@ -235,11 +235,11 @@ figure {
  }
 }
 
-@media all and (min-width: 500px) {
+/* @media all and (min-width: 500px) {
   .home-content {
     margin-top: 193px;
   }
-}
+} */
 
 /* Tablet menu */
 @media all and (min-width: 700px) {
@@ -286,6 +286,9 @@ figure {
   .line-divider.wide:before {
       width: 80%;
       left: 10%;
+  }
+  .home-content {
+    margin-top: 193px;
   }
 }
 

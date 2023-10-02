@@ -36,7 +36,7 @@ const Navbar = () => {
                   <div className="panama-star red"></div>
                 </div>  
             </div>
-          <Search placeholder='search' data={SearchData}/>
+            <Search placeholder='search' data={SearchData}/>
         </nav>
         <div className="definition">
             <p>Where you <span>learn about Panama</span></p>

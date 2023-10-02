@@ -1,6 +1,5 @@
 import  { useState } from "react";
 import "./Search.css";
-import { FaSearch } from "react-icons/fa";
 import { VscChromeClose } from "react-icons/vsc";
 
 
@@ -39,7 +38,6 @@ function Search({ placeholder, data }) {
         />
         <div className="searchIcon">
           {filteredData.length === 0 ? (
-            // <FaSearch id="search-icon"/>
             <button type="submit" id="search-icon">
         <i class="fa fa-search"></i>
       </button>

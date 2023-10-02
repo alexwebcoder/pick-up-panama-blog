@@ -34,6 +34,7 @@
   font-weight: 500;
   letter-spacing: .09rem;
   border-bottom: 1px solid #a1a1a1;
+  height: 72px;
 }
 
 .definition span {
@@ -134,7 +135,7 @@
 }
 
 .header.header.is-sticky .item {
-  top: 16px;
+  top: -4px;
 }
 
 .header.header.is-sticky .logo a {
@@ -252,7 +253,7 @@
   flex-direction: column;
   width: 0;
   z-index: 1;
-  top: 91px;
+  top: 142px;
   left: 0;
   background-color:  #132257;
   overflow-x: hidden;
@@ -329,7 +330,7 @@
 }
 
 .header.header.is-sticky .sidenav {
-  top: 74px;
+  top: 130px;
 }
 
 .header.header.is-sticky .definition {
@@ -396,6 +397,10 @@
     padding-top: 18px;
     top: -23px;
   }
+
+.header.header.is-sticky .definition {
+  height: 88px;
+}
 
   .toggle, .header.header.is-sticky .toggle {
     margin-top: -9px;
@@ -563,6 +568,10 @@
 /* Desktop menu */
 @media all and (min-width: 960px) {
 
+.definition {
+  height: unset;
+}
+
 .menu {
   align-items: flex-start;
   flex-wrap: nowrap;
@@ -573,7 +582,7 @@
   position: relative;
   display: block;
   width: auto;
-  top: 27px;
+  top: 7px;
   padding: 10px;
   border-bottom: 2px solid transparent;
   text-transform: uppercase;
