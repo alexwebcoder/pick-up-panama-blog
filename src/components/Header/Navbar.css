@@ -330,11 +330,12 @@
 }
 
 .header.header.is-sticky .sidenav {
-  top: 130px;
+  top: 118px;
 }
 
 .header.header.is-sticky .definition {
   border-bottom: 1px solid #a1a1a1;
+  height: 60px;
 }
 
 .menu li.toggle div:focus { 
@@ -616,6 +617,10 @@
 
   .mission h1 {
     font-size: 2rem;
+  }
+
+  .header.header.is-sticky .definition {
+    height: unset;
   }
 
 }

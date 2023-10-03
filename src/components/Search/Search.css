@@ -13,8 +13,18 @@
 
 
   .header.header.is-sticky .search-wrap {
-    top: 81px
+    top: 81px;
 }
+
+  .header.header.is-sticky .search-term {
+    padding: 3px;
+  }
+
+  .header.header.is-sticky .search-icon {
+     top: 2px;
+  }
+
+
 
  .search button {
     border: none;
@@ -46,14 +56,14 @@
     border: none;
   }
   
-  .searchIcon {
+  .search-icon {
     background-color: white;
     position: absolute;
     right: 5px;
     top: 5px;
   }
 
-  .searchIcon svg {
+  .search-icon svg {
     /* font-size: 35px; */
     font-size: 1.1rem;
 
@@ -114,7 +124,7 @@
       width: 314px;
    }
 
-   .searchIcon {
+   .search-icon {
     top: 2px;
    }
   }

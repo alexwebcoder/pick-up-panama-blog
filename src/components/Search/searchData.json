@@ -328,5 +328,20 @@
       "link": "http://localhost:3000/blogs/is-panama-safe",
       "keywords": "cops",
       "id": 64
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "where is the city center?",
+      "id": 65
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "metro hours?",
+      "id": 66
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "what time does the metro close?",
+      "id": 67
     }
   ]

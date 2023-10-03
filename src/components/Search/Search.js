@@ -36,7 +36,7 @@ function Search({ placeholder, data }) {
           onChange={handleFilter}
           className="search-term"
         />
-        <div className="searchIcon">
+        <div className="search-icon">
           {filteredData.length === 0 ? (
             <button type="submit" id="search-icon">
         <i class="fa fa-search"></i>
