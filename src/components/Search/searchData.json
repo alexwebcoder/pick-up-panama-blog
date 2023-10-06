@@ -171,11 +171,6 @@
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "bus to coronado?",
-      "id": 48
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "comfy bus",
       "id": 35
     },
@@ -343,5 +338,10 @@
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "what time does the metro close?",
       "id": 67
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "bus to coronado?",
+      "id": 68
     }
   ]

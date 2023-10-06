@@ -216,12 +216,11 @@ figure {
       font-size: .875rem;
       padding: 0 12px;
  }
-
 }
 
 @media all and (max-width: 230px) {
   .home-content {
-      margin-top: 181px;
+      margin-top: 239px;
  }
   .mission h1 {
       font-size: 1.4rem;
@@ -231,15 +230,9 @@ figure {
 
 @media all and (max-width: 195px) {
   .home-content {
-      margin-top: 187px;
+      margin-top: 197px;
  }
 }
-
-/* @media all and (min-width: 500px) {
-  .home-content {
-    margin-top: 193px;
-  }
-} */
 
 /* Tablet menu */
 @media all and (min-width: 700px) {
@@ -295,7 +288,7 @@ figure {
 @media only screen and (min-width: 960px) and (max-width: 1050px) {
   .card-container article {
     height: 220px;
-}
+ }
 }
 
 @media only screen and (min-width: 1050px) and (max-width: 1460px) {
@@ -334,7 +327,6 @@ figure {
 }
 
 @media all and (min-width: 1600px) {
-
   .card-container {
     width: 60%;
   }
