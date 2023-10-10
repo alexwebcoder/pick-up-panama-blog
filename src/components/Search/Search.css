@@ -15,7 +15,7 @@
 }
 
 .header.header.is-sticky .search-term {
-  padding: 3px;
+  height: 24px;
 }
 
 .header.header.is-sticky .search-icon {
@@ -75,10 +75,10 @@
 
 .dataResult .dataItem {
   width: 100%;
-  height: 50px;
   display: flex;
   align-items: center;
   color: black;
+  padding: 5px 0;
 }
 
 .dataItem p {
@@ -108,7 +108,7 @@
  }
 
   .search-term {
-      padding: 3px;
+      height: 24px;
  }
 
   .header.header.is-sticky .search-wrap {

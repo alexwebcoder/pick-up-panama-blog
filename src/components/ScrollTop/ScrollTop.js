@@ -31,5 +31,4 @@ const ScrollTop = () => {
     </div>
   );
 };
-console.log( document.querySelector('.top-to-bottom'))
 export default ScrollTop;

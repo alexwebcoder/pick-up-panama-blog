@@ -23,7 +23,7 @@ const About = () => {
                 <figure className="panel-1">
                     <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/about/alex-deleon-panama.JPG'} alt='Alex in Panama City'/>
                 </figure>
-                <p>My name is Alex and I am a Panamanian American who has been to Panama several times.</p>
+                <p>My name is Alex and I am a Panamanian American who has traveled throughout Panama.</p>
                 <figure className="panel-2">
                     <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/about/man-and-woman-on-boat.JPG'} alt='A man and a woman on a boat'/>
                 </figure>

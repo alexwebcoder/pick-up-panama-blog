@@ -195,7 +195,7 @@ window.addEventListener('scroll', () => {
 })
 
 
-
+//makes scroll bar go to top before reloading
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }

@@ -39,7 +39,7 @@ function Search({ placeholder, data }) {
         <div className="search-icon">
           {filteredData.length === 0 ? (
             <button type="submit" id="search-icon">
-        <i class="fa fa-search"></i>
+        <i className="fa fa-search"></i>
       </button>
           ) : (
             <VscChromeClose id="clearBtn" onClick={clearInput} />
