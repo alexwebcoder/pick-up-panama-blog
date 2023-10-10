@@ -183,8 +183,8 @@ const BlogDetails = () => {
               </figure>
             </section>
             <div className="button-parent">
-              <button onClick={goToCanalStory}>&#60; Previous Story</button>
-              <button onClick={goToTransportationStory}>
+              <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>&#60; Previous Story</button>
+              <button title="How do I get around in Panama?" onClick={goToTransportationStory}>
                 Next Story &#62;
               </button>
             </div>
@@ -501,13 +501,9 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.alexBusCaption}</figcaption>
             </figure>
-
-
-
-
             <div className="button-parent">
-              <button onClick={goToSafetyStory}>&#60; Previous Story</button>
-              <button onClick={goToMolaStory}>
+              <button title="Is Panama Safe?" onClick={goToSafetyStory}>&#60; Previous Story</button>
+              <button title="Things to do in El Cangrejo" onClick={goToMolaStory}>
                 Next Story &#62;
               </button>
             </div>
@@ -543,8 +539,8 @@ const BlogDetails = () => {
               <figcaption>{blog.figcaptionTwo}</figcaption>
             </figure>
             <div className="button-parent">
-              <button onClick={goToTransportationStory}>&#60; Previous Story</button>
-              <button onClick={goToCanalStory}>
+              <button title="How do I get around in Panama?" onClick={goToTransportationStory}>&#60; Previous Story</button>
+              <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>
                 Next Story &#62;
               </button>
             </div>

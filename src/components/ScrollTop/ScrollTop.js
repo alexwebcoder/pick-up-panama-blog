@@ -26,7 +26,7 @@ const ScrollTop = () => {
     <div tabIndex={0} className="top-to-bottom">
       {" "}
       {showTopBtn && (
-        <FaAngleUp className="icon-position icon-style" onClick={goToTop} />
+        <FaAngleUp className="icon-position icon-style" title="Scroll to top" onClick={goToTop} />
       )}{" "}
     </div>
   );

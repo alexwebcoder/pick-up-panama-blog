@@ -37,8 +37,8 @@ const FeatureStory = () => {
           <h1 className="centered caps">{blog.title}</h1>
           <p className="body intro">{blog.body}</p>
           <div className="button-parent">
-            <button onClick={goToMolaStoryA}>&#60; Previous Story</button>
-            <button onClick={goToSafetyStoryA}>Next Story &#62;</button>
+            <button title="Things to do in El Cangrejo" onClick={goToMolaStoryA}>&#60; Previous Story</button>
+            <button title="Is Panama safe?" onClick={goToSafetyStoryA}>Next Story &#62;</button>
           </div>
         </section>
       )}
