@@ -22,7 +22,7 @@ export const Capitalize = () => {
     
     if (document.title === "How do i get around in panama") {
         document.title = "How do I get Around in Panama?"
-        document.getElementsByTagName('meta')["description"].content = "Read this guide to learn all about Panama transportation.";
+        document.getElementsByTagName('meta')["description"].content = "This guide will inform you of Panama's transportation methods.";
     }
 
     if (document.title === "What are molas") {

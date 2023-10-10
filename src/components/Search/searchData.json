@@ -20,7 +20,7 @@
       "id": 4
     },
     {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama/#uber",
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "uber",
       "id": 5
     },
@@ -160,7 +160,7 @@
       "id": 32
     },
     {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama/#reys",
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "reys",
       "id": 33
     },

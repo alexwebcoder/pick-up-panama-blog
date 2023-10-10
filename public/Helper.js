@@ -199,14 +199,3 @@ window.addEventListener('scroll', () => {
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
-
-  
-//   document.addEventListener('DOMContentLoaded', function(event) {
-      
-      
-//       document.getElementById('reys').scrollIntoView({
-//         behavior: 'smooth'
-//       });
-
-
-//   });

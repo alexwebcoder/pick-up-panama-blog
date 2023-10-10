@@ -48,7 +48,7 @@ const BlogDetails = () => {
                 <span className="right"></span>
               </p>
             </div>
-            <h1 className="centered caps post-title">{blog.title}</h1>
+            <h1 className="centered post-title">{blog.title}</h1>
             <p className="body intro">{blog.intro}</p>
             <p className="moderate-crime">{blog.moderateCrime}</p>
             <p className="despite-this">{blog.despiteThis}</p>
@@ -207,7 +207,7 @@ const BlogDetails = () => {
                 <span className="right"></span>
               </p>
             </div>
-            <h1 className="centered caps post-title">{blog.title}</h1>
+            <h1 className="centered post-title">{blog.title}</h1>
             <p className="body intro">{blog.intro}</p>
             <p>{blog.guide}</p>
             <h2>{blog.h2Tocumen}</h2>
@@ -342,7 +342,7 @@ const BlogDetails = () => {
             <p>{blog.avoidTheCabs}</p>
             <p>{blog.iTookAlot}</p>
             <p>{blog.onlyOnce}</p>
-            <h3 id="uber">{blog.uberH3}</h3>
+            <h3>{blog.uberH3}</h3>
             <p>{blog.uberHas}</p>
             <p>{blog.youDontHave}</p>
             <p>{blog.safer}</p>
@@ -405,7 +405,7 @@ const BlogDetails = () => {
             </figure>
             <p>{blog.takeLarger}</p>
             <p>{blog.whenYouGetOnThe}</p>
-            <p id="reys">{blog.coronadoIsAbout}</p>
+            <p>{blog.coronadoIsAbout}</p>
             <figure className="coronado-stop">
                 <img
                   className="no-right-click"
@@ -530,7 +530,7 @@ const BlogDetails = () => {
                 <span className="right"></span>
               </p>
             </div>
-            <h1 className="centered caps">{blog.title}</h1>
+            <h1 className="centered">{blog.title}</h1>
             <p className="body intro">{blog.body}</p>
             <p className="body-two">{blog.bodyTwo}</p>
             <p className="body-two-a">{blog.bodyTwoA}</p>
