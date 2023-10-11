@@ -25,9 +25,9 @@ export const Capitalize = () => {
         document.getElementsByTagName('meta')["description"].content = "This guide will inform you of Panama's transportation methods.";
     }
 
-    if (document.title === "What are molas") {
-        document.title = "What are Molas?"
-        document.getElementsByTagName('meta')["description"].content = "panama mola page";
+    if (document.title === "Things to do in el cangrejo") {
+        document.title = "Things to do in El Cangrejo"
+        document.getElementsByTagName('meta')["description"].content = "El Cangrejo is a popular neighborhood in Panama. This guide will help you find the best it has to offer.";
     }
 
     if (document.title === "Pick Up Panama | Learn About Panama") {

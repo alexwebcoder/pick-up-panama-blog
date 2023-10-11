@@ -23,7 +23,7 @@ const Featured = () => {
                     </figure>
                 </div>
                     <article className="blog-article-content">
-                        <h3 className="feature-headline caps">How do I visit the Panama Canal?</h3>
+                        <h3 className="feature-headline">How do I visit the Panama Canal?</h3>
                     </article>
                 </div>  
             </Link>

@@ -86,7 +86,7 @@ Slider
 .prev,
 .next {
   position: absolute;
-  top: 276px;
+  top: 265px;
   transform: translateY(-50%);
   background: #011e56;
   color: var(--clr-white);
@@ -139,6 +139,13 @@ article.lastSlide {
 
 article.nextSlide {
   transform: translateX(100%);
+}
+
+@media screen and (max-width: 250px) {
+  .prev, .next {
+    top: 283px;
+  }
+
 }
 
 /* Tablet menu */

@@ -34,7 +34,7 @@ const FeatureStory = () => {
               <span className="right"></span>
             </p>
           </div>
-          <h1 className="centered caps">{blog.title}</h1>
+          <h1 className="centered">{blog.title}</h1>
           <p className="body intro">{blog.body}</p>
           <div className="button-parent">
             <button title="Things to do in El Cangrejo" onClick={goToMolaStoryA}>&#60; Previous Story</button>

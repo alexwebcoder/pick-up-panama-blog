@@ -78,7 +78,7 @@
       "takeUber": "Take an Uber at nigth instead of a cab",
       "overallPanamaIs": "Panama is a safe country and I haven't witnessed much crime there myself. I have walked around Panama City day and night and have seen a lot of friendly faces and locals who are willing to converse.",
       "mostTips": "Most of these tips can be applied anywhere you go. If you reduce risk, you are less likely to become a victim of the crimes that do occur.",
-      "image": "/images/safety/panamanian-motorcycle-club.JPG",
+      "image": "/images/safety/panamanian-police-at-fruitstand.JPG",
       "copsAtFruitStand": "/images/safety/panamanian-police-at-fruitstand.JPG",
       "fruitStandCopCaption": "Panamanian Public Forces in Coronado",
       "fruitStandCopAltText": "Panamanian Public Forces in Coronado",
@@ -305,11 +305,11 @@
       "metroVideoCaption": "The Metro Line 2 in Panama"
     },
     {
-      "title": "What are Molas?",
+      "title": "Things to do in El Cangrejo",
       "author": "Alex DeLeon",
       "date": "September 7, 2023",
-      "id": "what-are-molas",
-      "className": "molas",
+      "id": "things-to-do-in-el-cangrejo",
+      "className": "el-cangrejo",
       "body": "Molas are works of art. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium vulputate sapien nec sagittis aliquam. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat. Tristique nulla aliquet enim tortor at auctor urna. Habitasse platea dictumst vestibulum rhoncus est. At quis risus sed vulputate odio ut enim. Quis varius quam quisque id diam. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Ipsum nunc aliquet bibendum enim facilisis gravida.",
       "image": "http://localhost:3000/images/molas/panamanian-molas.JPG",
       "figcaption": "Souvenirs with Mola designs on them",

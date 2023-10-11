@@ -30,8 +30,8 @@ const BlogDetails = () => {
   const goToSafetyStory = () => {
     navigateA("/blogs/is-panama-safe");
   };
-  const goToMolaStory = () => {
-    navigateA("/blogs/what-are-molas");
+  const goToElCangrejoStory = () => {
+    navigateA("/blogs/things-to-do-in-el-cangrejo");
   };
 
   if (document.title === "Is Panama Safe?") {
@@ -503,7 +503,7 @@ const BlogDetails = () => {
             </figure>
             <div className="button-parent">
               <button title="Is Panama Safe?" onClick={goToSafetyStory}>&#60; Previous Story</button>
-              <button title="Things to do in El Cangrejo" onClick={goToMolaStory}>
+              <button title="Things to do in El Cangrejo" onClick={goToElCangrejoStory}>
                 Next Story &#62;
               </button>
             </div>
@@ -512,7 +512,7 @@ const BlogDetails = () => {
       </main>
     );
   }
-  if (document.title === "What are Molas?") {
+  if (document.title === "Things to do in El Cangrejo") {
     return (
       <main className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
