@@ -69,6 +69,7 @@
 .blog-details img {
     max-width: 100%;
     height: auto;
+    width: 100%;
     display: block;
     position: absolute;
     top: 0;
@@ -188,11 +189,11 @@ p.this-article {
 }
 
 .metro-map {
-    padding-top: calc(339 / 800 * 100%);
+    padding-top: calc(497 / 800 * 100%);
 }
 
 .city-center {
-    padding-top: calc(757 / 772 * 100%);
+    padding-top: calc(1147 / 772 * 100%);
 }
 
 .free-shuttle {
@@ -204,7 +205,7 @@ p.this-article {
 }
 
 .metro-bus {
-    padding-top: calc(336 / 966 * 100%);
+    padding-top: calc(407 / 966 * 100%);
 }
 
 .diablos {
@@ -232,7 +233,7 @@ p.this-article {
 }
 
 .coronado-map {
-    padding-top: calc(472 / 820 * 100%);
+    padding-top: calc(663 / 820 * 100%);
 }
 
 .taxi-truck {
