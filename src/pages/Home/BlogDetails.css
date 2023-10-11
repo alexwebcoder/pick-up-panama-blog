@@ -58,7 +58,7 @@
     margin-bottom: 25px;
 }
 
-.blog-details figcaption {
+.blog-details figcaption, .metro-caption {
     font-size: 1rem;
 }
 
@@ -310,3 +310,28 @@ p.this-article {
         margin-top: 138px;
    }
 }
+
+
+@media all and (max-width: 265px) {
+   .blog-details {
+    margin-top: 174px;
+   }
+
+}
+
+@media only screen and (min-width: 186px) and (max-width: 191px) {
+    .blog-details {
+        margin-top: 125px;
+       }
+  }
+
+@media all and (max-width: 185px) {
+    .search-wrap {
+     top: 89px;
+    }
+
+    .blog-details {
+        margin-top: 157px;
+       }
+    
+ }

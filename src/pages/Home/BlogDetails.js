@@ -297,7 +297,7 @@ const BlogDetails = () => {
                 height={null}
               />
             </div>
-            <p>{blog.metroVideoCaption}</p>
+            <p className="metro-caption">{blog.metroVideoCaption}</p>
             <h4>{blog.metroHoursh4}</h4>
             <p className="bold-text">{blog.metroStrong} <span>{blog.fiveAm}</span></p>
             <p className="bold-text">{blog.saturdayStrong} <span>{blog.fivetoTen}</span></p>
