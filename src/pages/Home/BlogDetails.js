@@ -552,7 +552,7 @@ const BlogDetails = () => {
               <li>{blog.liThree} <span>{blog.spanThree}</span></li>
               <li>{blog.liFour} <span>{blog.spanFour}</span></li>
               <li>{blog.liFive} <span>{blog.spanFive}</span></li>
-              <li>{blog.liSix}</li>
+              <li>{blog.liSix} <span>{blog.spanSix}</span></li>
               <li>{blog.liSeven} <span>{blog.spanSeven}</span></li>
               <li>{blog.liEight} <span>{blog.spanEight}</span></li>
               <li>{blog.liNine} <span>{blog.spanNine}</span></li>
@@ -562,6 +562,7 @@ const BlogDetails = () => {
               <li>{blog.liThirteen} <span>{blog.spanThirteen}</span></li>
               <li>{blog.liFourteen} <span>{blog.spanFourteen}</span></li>
               <li>{blog.liFifteen} <span>{blog.spanFifteen}</span></li>
+              <li>{blog.liThirtySix} <span>{blog.spanThirtySix}</span></li>
               <li>{blog.liSixteen} <span>{blog.spanSixteen}</span></li>
               <li>{blog.liSeventeen} <span>{blog.spanSeventeen}</span></li>
               <li>{blog.liEighteen} <span>{blog.spanEighteen}</span></li>
@@ -574,8 +575,8 @@ const BlogDetails = () => {
               <li>{blog.liTwentyFourA} <span>{blog.spanTwentyFourA}</span></li>
               <li>{blog.liTwentyFourB} <span>{blog.spanTwentyFourB}</span></li>
               <li>{blog.liTwentyFourC} <span>{blog.spanTwentyFourC}</span></li>
-              <li>{blog.liTwentyFive}</li>
-              <li>{blog.liTwentySix}</li>
+              <li>{blog.liTwentyFive} <span>{blog.spanTwentyFive}</span></li>
+              <li>{blog.liTwentySix} <span>{blog.spanTwentySix}</span></li>
               <li>{blog.liTwentySeven} <span>{blog.spanTwentySeven}</span></li>
               <li>{blog.liTwentyEight} <span>{blog.spanTwentyEight}</span></li>
               <li>{blog.liTwentyNine} <span>{blog.spanTwentyNine}</span></li>
@@ -585,14 +586,13 @@ const BlogDetails = () => {
               <li>{blog.liThirtyThree} <span>{blog.spanThirtyThree}</span></li>
               <li>{blog.liThirtyFour} <span>{blog.spanThirtyFour}</span></li>
               <li>{blog.liThirtyFive} <span>{blog.spanThirtyFive}</span></li>
-              <li>{blog.liThirtySix} <span>{blog.spanThirtySix}</span></li>
               <li>{blog.liThirtySeven} <span>{blog.spanThirtySeven}</span></li>
-              <li>{blog.liThirtyEight}</li>
+              <li>{blog.liThirtyEight} <span>{blog.spanThirtyEight}</span></li>
               <li>{blog.liThirtyNine} <span>{blog.spanThirtyNine}</span></li>
               <li>{blog.liForty} <span>{blog.spanForty}</span></li>
               <li>{blog.liFortyOne} <span>{blog.spanFortyOne}</span></li>
               <li>{blog.liFortyTwo} <span>{blog.spanFortyTwo}</span></li>
-              <li>{blog.liFortyThree}</li>
+              <li>{blog.liFortyThree} <span>{blog.spanFortyThree}</span></li>
            </ul>
            <h3>{blog.barsPubsH3}</h3>
            <ul>

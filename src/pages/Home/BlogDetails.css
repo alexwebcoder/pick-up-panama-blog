@@ -136,6 +136,15 @@ p.this-article {
     margin-bottom: 20px;
 }
 
+.el-cangrejo ul li {
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.el-cangrejo ul span, .el-cangrejo ul:nth-of-type(2) li {
+    font-weight: normal;
+}
+
 .youtube-video {
     aspect-ratio: 16 / 9;
     width: 100%;
@@ -278,6 +287,7 @@ p.this-article {
 
     .blog-details .post-title {
         font-size: 2.813rem;
+        white-space: nowrap;
    }
    
     p.intro {
