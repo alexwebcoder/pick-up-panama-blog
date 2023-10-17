@@ -6,6 +6,7 @@
       "date": "August 29, 2023",
       "id": "is-panama-safe",
       "className": "safety",
+      "image": "/images/safety/panamanian-police-at-fruitstand.JPG",
       "intro": "Panama is regarded as one of the safest countries in Central America. You will find that most Panamanians are friendly and welcoming people. ",
       "moderateCrime": "There is a moderate crime rate in Panama. The crime rate in Panama City is much lower than in some major US cities such as St. Louis, Missouri, and Chicago, Illinois. The past three years have seen a slight increase in Panama's crime rate.",
       "despiteThis": "Despite this, the likelihood of you being mugged is slim. Most establishments are patrolled by police and armed security. While this can give you a sense of safety, there are other precautionary measures you can take to maintain safety in Panama.",
@@ -78,7 +79,6 @@
       "takeUber": "Take an Uber at nigth instead of a cab",
       "overallPanamaIs": "Panama is a safe country and I haven't witnessed much crime there myself. I have walked around Panama City day and night and have seen a lot of friendly faces and locals who are willing to converse.",
       "mostTips": "Most of these tips can be applied anywhere you go. If you reduce risk, you are less likely to become a victim of the crimes that do occur.",
-      "image": "/images/safety/panamanian-police-at-fruitstand.JPG",
       "copsAtFruitStand": "/images/safety/panamanian-police-at-fruitstand.JPG",
       "fruitStandCopCaption": "Panamanian Public Forces in Coronado",
       "fruitStandCopAltText": "Panamanian Public Forces in Coronado",
@@ -307,13 +307,42 @@
     {
       "title": "Things to do in El Cangrejo",
       "author": "Alex DeLeon",
-      "date": "September 7, 2023",
+      "date": "October 16, 2023",
       "id": "things-to-do-in-el-cangrejo",
       "className": "el-cangrejo",
-      "body": "Molas are works of art. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium vulputate sapien nec sagittis aliquam. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat. Tristique nulla aliquet enim tortor at auctor urna. Habitasse platea dictumst vestibulum rhoncus est. At quis risus sed vulputate odio ut enim. Quis varius quam quisque id diam. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Ipsum nunc aliquet bibendum enim facilisis gravida.",
-      "image": "http://localhost:3000/images/molas/panamanian-molas.JPG",
-      "figcaption": "Souvenirs with Mola designs on them",
-      "alt": "Souvenirs with Mola designs on them"
+      "image": "http://localhost:3000/images/elCangrejo/el-cangrejo.JPG",
+      "intro": "El Cangrejo is a safe residential neighborhood with modern architecture, lots of expats, cultural diversity, green parks, open spaces and university campuses. There are mostly apartments, hotels, and some single-family residences in this middle to upper middle class area.",
+      "itIsOne": "It is one of the most desired neighborhoods to live in because It is centrally located with grocery stores, gyms, restaurants, bars, hotels, bakeries, outdoor cafes and casinos within walking distance.",
+      "elCangrejoHas": "El Cangrejo has an active nightlife and a trendy multicultural energy. You will find all types of international cuisine as well as art, festivals and concerts. It represents urban life in Panama.",
+      "howItGotH2": "How it got its name",
+      "theNameOf": "The name of El Cangrejo, which means 'The Crab', is derived from the layout of its streets. From an overhead view, the residential streets extend out on each side of the main section of the city and curve in. This creates a resemblance to the body and claws of a crab.",
+      "atmosphereH2": "Atmosphere and main street",
+      "atmoshphereIs": "The atmosphere is full of life and the friendly and welcoming nature of the locals will make you feel comfortable and relaxed.",
+      "natureAndUnique": "Nature and unique architecture surround the area. You will see toucans, parrots and hear other bird species from the trees.",
+      "viaArgIs": "Via Argentina is a main street lined with many shops, palm trees, and businesses. This street is modern and has all the necessities you would need for your time in Panama. The sidewalks have been renovated, making them accessible for walking and wheelchairs.",
+      "theStreetIs": "The street is approximately 5 blocks long and includes the University of Panama, hair salons, the General Bank (Banco General), the Metro Station, convenience stores, pubs, bars, and restaurants.",
+      "restaurantOptions": "Restaurant options are available from all corners of the world. In addition to Panamanian cuisine, you will find Greek, Lebanese, Chinese, Mexican, Caribbean, Italian, Peruvian, Venezuelan, Cuban, French, Swiss, Spanish, American, Japanese,  Mediterranean, Vietnamese, Thai, Columbian, Argentinian and more.",
+      "restaurantsInH2": "Restaurants in El Cangrejo",
+      "elTrapH3": "El Trapiche",
+      "offersAuth": "El Trapiche offers authentic Panamanian cuisine in a cozy atmosphere. Popular items on the menu include Yuca Patacones, Sancocho and Almojabanos. They  are open for breakfast, lunch and dinner, have vegan options and affordable prices. There is indoor and seating on the terrace and it is located on Via Argentina.",
+      "chrisRestH3": "Chris Restaurante and Grill",
+      "isAGood": "This is a good choice to eat in a family environment. They offer live music and a variety of dishes, including seafood, wood-fired pizzas, burgers, ceviches, and cocktails.",
+      "sieteMaresH3": "Restaurante Siete Mares",
+      "hasAnElegant": "Siete Mares (which means Seven Seas) has an elegant setting and is very nice. If you enjoy seafood, there are several unique seafood dishes on the menu. I had the lobster and it was fantastic.",
+      "additionalH2": "Additional restaurant suggestions",
+      "liOne": "Annie & Motts Eating House:",
+      "spanOne": "American & Latin cafe",
+      "liTwo": "Antojitos Peruanospty Cangrejo:",
+      "spanTwo": "Good crab appetizers",
+      "liThree": "Beirut Restaurant:",
+      "spanThree": "Lebanese food"
+
+
+
+
+
+
+
     }
   ],
   "featured": [

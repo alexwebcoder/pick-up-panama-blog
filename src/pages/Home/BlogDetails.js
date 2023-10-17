@@ -519,25 +519,51 @@ const BlogDetails = () => {
         {error && <div>{error}</div>}
         {blog && (
           <section className={blog.className}>
-            <div className="line-divider centered wide">
-              <p className="diamond-text-box date">
-                <span className="left"></span>
-                <span className="content caps centered">{blog.date}</span>
-                <span className="right"></span>
-              </p>
-            </div>
-            <h1 className="centered">{blog.title}</h1>
-            <p className="body intro">{blog.body}</p>
-            <p className="body-two">{blog.bodyTwo}</p>
-            <p className="body-two-a">{blog.bodyTwoA}</p>
-            <figure>
-              <img
-                className="no-right-click"
-                src={blog.imageTwo}
-                alt={blog.altTwo}
-              />
-              <figcaption>{blog.figcaptionTwo}</figcaption>
-            </figure>
+          <div className="line-divider centered wide">
+            <p className="diamond-text-box date">
+              <span className="left"></span>
+              <span className="content caps centered">{blog.date}</span>
+              <span className="right"></span>
+            </p>
+          </div>
+          <h1 className="centered post-title">{blog.title}</h1>
+          <p className="body intro">{blog.intro}</p>
+           <p>{blog.itIsOne}</p>
+           <p>{blog.elCangrejoHas}</p>
+           <h2>{blog.howItGotH2}</h2>
+           <p>{blog.theNameOf}</p>
+           <h2>{blog.atmosphereH2}</h2>
+           <p>{blog.atmoshphereIs}</p>
+           <p>{blog.natureAndUnique}</p>
+           <p>{blog.viaArgIs}</p>
+           <p>{blog.theStreetIs}</p>
+           <p>{blog.restaurantOptions}</p>
+           <h2>{blog.restaurantsInH2}</h2>
+           <h3>{blog.elTrapH3}</h3>
+           <p>{blog.offersAuth}</p>
+           <h3>{blog.chrisRestH3}</h3>
+           <p>{blog.isAGood}</p>
+           <h3>{blog.sieteMaresH3}</h3>
+           <p>{blog.hasAnElegant}</p>
+           <h2>{blog.additionalH2}</h2>
+           <ul>
+              <li>{blog.liOne} <span>{blog.spanOne}</span></li>
+           </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div className="button-parent">
               <button title="How do I get around in Panama?" onClick={goToTransportationStory}>&#60; Previous Story</button>
               <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>
