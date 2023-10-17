@@ -545,9 +545,74 @@ const BlogDetails = () => {
            <p>{blog.isAGood}</p>
            <h3>{blog.sieteMaresH3}</h3>
            <p>{blog.hasAnElegant}</p>
-           <h2>{blog.additionalH2}</h2>
+           <h3>{blog.additionalH3}</h3>
            <ul>
               <li>{blog.liOne} <span>{blog.spanOne}</span></li>
+              <li>{blog.liTwo} <span>{blog.spanTwo}</span></li>
+              <li>{blog.liThree} <span>{blog.spanThree}</span></li>
+              <li>{blog.liFour} <span>{blog.spanFour}</span></li>
+              <li>{blog.liFive} <span>{blog.spanFive}</span></li>
+              <li>{blog.liSix}</li>
+              <li>{blog.liSeven} <span>{blog.spanSeven}</span></li>
+              <li>{blog.liEight} <span>{blog.spanEight}</span></li>
+              <li>{blog.liNine} <span>{blog.spanNine}</span></li>
+              <li>{blog.liTen} <span>{blog.spanTen}</span></li>
+              <li>{blog.liEleven} <span>{blog.spanEleven}</span></li>
+              <li>{blog.liTwelve} <span>{blog.spanTwelve}</span></li>
+              <li>{blog.liThirteen} <span>{blog.spanThirteen}</span></li>
+              <li>{blog.liFourteen} <span>{blog.spanFourteen}</span></li>
+              <li>{blog.liFifteen} <span>{blog.spanFifteen}</span></li>
+              <li>{blog.liSixteen} <span>{blog.spanSixteen}</span></li>
+              <li>{blog.liSeventeen} <span>{blog.spanSeventeen}</span></li>
+              <li>{blog.liEighteen} <span>{blog.spanEighteen}</span></li>
+              <li>{blog.liNineteen} <span>{blog.spanNineteen}</span></li>
+              <li>{blog.liTwenty} <span>{blog.spanTwenty}</span></li>
+              <li>{blog.liTwentyOne} <span>{blog.spanTwentyOne}</span></li>
+              <li>{blog.liTwentyTwo} <span>{blog.spanTwentyTwo}</span></li>
+              <li>{blog.liTwentyThree} <span>{blog.spanTwentyThree}</span></li>
+              <li>{blog.liTwentyFour} <span>{blog.spanTwentyFour}</span></li>
+              <li>{blog.liTwentyFourA} <span>{blog.spanTwentyFourA}</span></li>
+              <li>{blog.liTwentyFourB} <span>{blog.spanTwentyFourB}</span></li>
+              <li>{blog.liTwentyFourC} <span>{blog.spanTwentyFourC}</span></li>
+              <li>{blog.liTwentyFive}</li>
+              <li>{blog.liTwentySix}</li>
+              <li>{blog.liTwentySeven} <span>{blog.spanTwentySeven}</span></li>
+              <li>{blog.liTwentyEight} <span>{blog.spanTwentyEight}</span></li>
+              <li>{blog.liTwentyNine} <span>{blog.spanTwentyNine}</span></li>
+              <li>{blog.liThirty} <span>{blog.spanThirty}</span></li>
+              <li>{blog.liThirtyOne} <span>{blog.spanThirtyOne}</span></li>
+              <li>{blog.liThirtyTwo} <span>{blog.spanThirtyTwo}</span></li>
+              <li>{blog.liThirtyThree} <span>{blog.spanThirtyThree}</span></li>
+              <li>{blog.liThirtyFour} <span>{blog.spanThirtyFour}</span></li>
+              <li>{blog.liThirtyFive} <span>{blog.spanThirtyFive}</span></li>
+              <li>{blog.liThirtySix} <span>{blog.spanThirtySix}</span></li>
+              <li>{blog.liThirtySeven} <span>{blog.spanThirtySeven}</span></li>
+              <li>{blog.liThirtyEight}</li>
+              <li>{blog.liThirtyNine} <span>{blog.spanThirtyNine}</span></li>
+              <li>{blog.liForty} <span>{blog.spanForty}</span></li>
+              <li>{blog.liFortyOne} <span>{blog.spanFortyOne}</span></li>
+              <li>{blog.liFortyTwo} <span>{blog.spanFortyTwo}</span></li>
+              <li>{blog.liFortyThree}</li>
+           </ul>
+           <h3>{blog.barsPubsH3}</h3>
+           <ul>
+              <li>{blog.bpOne}</li>
+              <li>{blog.bpOneA}</li>
+              <li>{blog.bpTwo}</li>
+              <li>{blog.bpThree}</li>
+              <li>{blog.bpFour}</li>
+              <li>{blog.bpFive}</li>
+              <li>{blog.bpSix}</li>
+              <li>{blog.bpSeven}</li>
+              <li>{blog.bpEight}</li>
+              <li>{blog.bpNine}</li>
+              <li>{blog.bpTen}</li>
+              <li>{blog.bpEleven}</li>
+              <li>{blog.bpTwelve}</li>
+              <li>{blog.bpThirteen}</li>
+              <li>{blog.bpFourteen}</li>
+              <li>{blog.bpFifteen}</li>
+              <li>{blog.bpSixteen}</li>
            </ul>
 
 
