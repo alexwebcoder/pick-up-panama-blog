@@ -530,6 +530,7 @@ const BlogDetails = () => {
           <p className="body intro">{blog.intro}</p>
            <p>{blog.itIsOne}</p>
            <p>{blog.elCangrejoHas}</p>
+           <p>{blog.itRep}</p>
            <h2>{blog.howItGotH2}</h2>
            <p>{blog.theNameOf}</p>
            <h2>{blog.atmosphereH2}</h2>
@@ -614,21 +615,24 @@ const BlogDetails = () => {
               <li>{blog.bpFifteen}</li>
               <li>{blog.bpSixteen}</li>
            </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+           <h2>{blog.parksH2}</h2>
+           <h3>{blog.andresBelH3}</h3>
+           <p>{blog.isLocated}</p>
+           <p>{blog.thereAre}</p>
+           <h3>{blog.parkOmarH3}</h3>
+           <p>{blog.isALarg}</p>
+           <p>{blog.bothOf}</p>
+           <h3>{blog.iglesiaH3}</h3>
+           <p>{blog.theChurch}</p>
+           <p>{blog.itHas}</p>
+           <p>{blog.itsConstruction}</p>
+           <h3>{blog.ffH3}</h3>
+           <p>{blog.theCork}</p>
+           <h3>{blog.womanKneeH3}</h3>
+           <p>{blog.thisIs}</p>
+           <h3>{blog.robertoH3}</h3>
+           <p>{blog.houseIn}</p>
+           <h3>{blog.otherSitesH3}</h3>
             <div className="button-parent">
               <button title="How do I get around in Panama?" onClick={goToTransportationStory}>&#60; Previous Story</button>
               <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>
