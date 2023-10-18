@@ -456,9 +456,32 @@
       "theCork": "'The Corkscrew' or 'Twisting Tower' is a highrise that is 53 floors tall and the ninth tallest building in Panama City.",
       "womanKneeH3": "'Woman on Her Knee' statue",
       "thisIs": "This is located in front of the Riande Granada Urban hotel. John Berry is the Sculptor.",
-      "robertoH3": "Roberto Duran’s house",
+      "robertoH3": "Roberto Duran's house",
       "houseIn": "Roberto Duran's house is in El Cangrejo. He was a champion professional boxer who held world titles in the lightweight, welterweight, light middleweight and middleweight divisions.",
-      "otherSitesH3": "Other sites of El Cangrejo"
+      "otherSitesH3": "Other sites of El Cangrejo",
+      "elTrap": "/images/elCangrejo/el-trapiche-panama.JPG",
+      "elTrapAltText": "el trapiche restaurant in el cangrejo",
+      "elTrapCaption": "El Trapiche Restaurant in El Cangrejo",
+      "elTrapMeal": "/images/elCangrejo/panamanian-meal-el-trapiche.JPG",
+      "elTrapMealAltText": "panamanian food at el cangrejo",
+      "elTrapMealCaption": "Panamanian food at El Cangrejo",
+      "elTrapMeal2": "/images/elCangrejo/meal-at-el-trapiche.JPG",
+      "elTrapMeal2AltText": "panamanian sandwich at el cangrejo",
+      "elTrapMeal2Caption": "Panamanian sandwich at El Cangrejo",
+      "chrisR": "/images/elCangrejo/chris-restaurante-grill.JPG",
+      "chrisRAltText": "chris restaurante in el cangrejo",
+      "chrisRCaption": "Chris Restaurante and Grill in El Cangrejo",
+      "chrisR2": "/images/elCangrejo/chris-restaurante-interior.JPG",
+      "chrisR2AltText": "inside of chris restaurante in el cangrejo",
+      "chrisR2Caption": "Inside of Chris Restaurante in El Cangrejo",
+
+      "sieteMares": "/images/elCangrejo/siete-mares-panama-city.JPG",
+      "sieteMaresAltText": "siete mares restaurant in el cangrejo",
+      "sieteMaresCaption": "Siete Mares in El Cangrejo",
+
+      "sieteMaresInt": "/images/elCangrejo/siete-mares-interior.JPG",
+      "sieteMaresIntAltText": "inside of siete mares restaurant in el cangrejo",
+      "sieteMaresIntCaption": "Inside of Siete Mares restaurant in El Cangrejo"
     }
   ],
   "featured": [

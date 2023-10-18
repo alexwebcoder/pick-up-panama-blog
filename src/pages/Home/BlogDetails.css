@@ -209,19 +209,11 @@ p.this-article {
     padding-top: calc(1506 / 3018 * 100%);
 }
 
-.yellow-cabs {
-    padding-top: calc(2752 / 4896 * 100%);
-}
-
 .metro-bus {
     padding-top: calc(407 / 966 * 100%);
 }
 
-.diablos {
-    padding-top: calc(2752 / 4896 * 100%);
-}
-
-.chicken-bus {
+.diablos, .chicken-bus, .yellow-cabs {
     padding-top: calc(2752 / 4896 * 100%);
 }
 
@@ -229,7 +221,7 @@ p.this-article {
     padding-top: calc(3306 / 4896 * 100%);
 }
 
-.comfy-bus {
+.comfy-bus, .coronado-stop, .taxi-truck, .mini-van, .inside-van  {
     padding-top: calc(3024 / 4032 * 100%);
 }
 
@@ -237,26 +229,9 @@ p.this-article {
     padding-top: calc(2276 / 3020 * 100%);
 }
 
-.coronado-stop {
-    padding-top: calc(3024 / 4032 * 100%);
-}
-
 .coronado-map {
     padding-top: calc(663 / 820 * 100%);
 }
-
-.taxi-truck {
-    padding-top: calc(3024 / 4032 * 100%);
-}
-
-.mini-van {
-    padding-top: calc(3024 / 4032 * 100%);
-}
-
-.inside-van {
-    padding-top: calc(3024 / 4032 * 100%);
-}
-
 
 .gates {
     padding-top: calc(1287 / 3999 * 100%);
@@ -265,6 +240,14 @@ p.this-article {
 .alex-bus {
     padding-top: calc(3264/ 2448 * 100%);
 }
+
+/* el cangrejo page images */
+
+.el-trap, .el-trap-food, .chris, .siete {
+    padding-top: calc(2752/ 4896 * 100%);
+}
+
+
 
 
 /* Tablet menu */

@@ -541,11 +541,67 @@ const BlogDetails = () => {
            <p>{blog.restaurantOptions}</p>
            <h2>{blog.restaurantsInH2}</h2>
            <h3>{blog.elTrapH3}</h3>
+           <figure className="el-trap">
+                <img
+                  className="no-right-click"
+                  src={blog.elTrap}
+                  alt={blog.elTrapAltText}
+                />
+                <figcaption>{blog.elTrapCaption}</figcaption>
+            </figure>
+            <figure className="el-trap-food">
+                <img
+                  className="no-right-click"
+                  src={blog.elTrapMeal}
+                  alt={blog.elTrapMealAltText}
+                />
+                <figcaption>{blog.elTrapMealCaption}</figcaption>
+            </figure>
+            <figure className="el-trap-food">
+                <img
+                  className="no-right-click"
+                  src={blog.elTrapMeal2}
+                  alt={blog.elTrapMeal2AltText}
+                />
+                <figcaption>{blog.elTrapMeal2Caption}</figcaption>
+            </figure>
            <p>{blog.offersAuth}</p>
-           <h3>{blog.chrisRestH3}</h3>
-           <p>{blog.isAGood}</p>
            <h3>{blog.sieteMaresH3}</h3>
+           <figure className="siete">
+                <img
+                  className="no-right-click"
+                  src={blog.sieteMares}
+                  alt={blog.sieteMaresAltText}
+                />
+                <figcaption>{blog.sieteMaresCaption}</figcaption>
+            </figure>
+            <figure className="siete">
+                <img
+                  className="no-right-click"
+                  src={blog.sieteMaresInt}
+                  alt={blog.sieteMaresIntAltText}
+                />
+                <figcaption>{blog.sieteMaresIntCaption}</figcaption>
+            </figure>
            <p>{blog.hasAnElegant}</p>
+           <h3>{blog.chrisRestH3}</h3>
+           <figure className="chris">
+                <img
+                  className="no-right-click"
+                  src={blog.chrisR}
+                  alt={blog.chrisRAltText}
+                />
+                <figcaption>{blog.chrisRCaption}</figcaption>
+            </figure>
+            <figure className="chris">
+                <img
+                  className="no-right-click"
+                  src={blog.chrisR2}
+                  alt={blog.chrisR2AltText}
+                />
+                <figcaption>{blog.chrisR2Caption}</figcaption>
+            </figure>
+           <p>{blog.isAGood}</p>
            <h3>{blog.additionalH3}</h3>
            <ul>
               <li>{blog.liOne} <span>{blog.spanOne}</span></li>
