@@ -478,50 +478,57 @@
       "chrisR2": "/images/elCangrejo/chris-restaurante-interior.JPG",
       "chrisR2AltText": "inside of chris restaurante in el cangrejo",
       "chrisR2Caption": "Inside of Chris Restaurante in El Cangrejo",
-
       "sieteMares": "/images/elCangrejo/siete-mares-panama-city.JPG",
       "sieteMaresAltText": "siete mares restaurant in el cangrejo",
       "sieteMaresCaption": "Siete Mares in El Cangrejo",
-
       "sieteMaresInt": "/images/elCangrejo/siete-mares-interior.JPG",
       "sieteMaresIntAltText": "inside of siete mares restaurant in el cangrejo",
       "sieteMaresIntCaption": "Inside of Siete Mares restaurant in El Cangrejo",
-
       "sieteMaresFood": "/images/elCangrejo/lobster-meal-siete-mares.JPG",
       "sieteMaresFoodAltText": "lobster meal at siete mares restaurant in el cangrejo",
       "sieteMaresFoodCaption": "Lobster meal at Siete Mares restaurant in El Cangrejo",
-
       "donLee": "/images/elCangrejo/don-lee-el-cangrejo.JPG",
       "donLeeAltText": "don lee restaurant in el cangrejo",
       "donLeeCaption": "Don Lee restaurant in El Cangrejo",
-
       "manolos": "/images/elCangrejo/manolos.JPG",
       "manolosAltText": "manolo's restaurant in el cangrejo",
       "manolosCaption": "Manolo's restaurant in El Cangrejo",
-
       "sen": "/images/elCangrejo/sen-vietnam.JPG",
       "senAltText": "sen vietnam restaurant in el cangrejo",
       "senCaption": "Sen Vietnam restaurant in El Cangrejo",
-
       "delCarmen": "/images/elCangrejo/iglesia-del-carmen-panama.JPG",
       "delCarmenAltText": "the iglesia del carmen church in el cangrejo",
       "delCarmenCaption": "The Iglesia Del Carmen church in El Cangrejo",
-
       "ff": "/images/elCangrejo/f-and-f-tower-panama.JPG",
       "ffAltText": "the f and f tower in el cangrejo",
       "ffCaption": "The F and F Tower in El Cangrejo",
-
       "onKnee": "/images/elCangrejo/woman-on-her-knee-statue.JPG",
       "onKneeAltText": "woman on her knee statue in el cangrejo",
       "onKneeCaption": "Woman on Her Knee statue in El Cangrejo",
-      
       "duran": "/images/elCangrejo/roberto-duran-house.JPG",
       "duranAltText": "alex in front of roberto duran's house in el cangrejo",
       "duranCaption": "Alex in front of Roberto Duran's house in El Cangrejo",
-
       "elCran": "/images/elCangrejo/el-cangrejo.JPG",
       "elCranAltText": "view from the car in el cangrejo",
-      "elCranCaption": "View from the car in El Cangrejo"
+      "elCranCaption": "View from the car in El Cangrejo",
+      "barber": "/images/elCangrejo/barberia-de-luis-el-cangrejo.JPG",
+      "barberAltText": "barberia de luis barber shop in el cangrejo",
+      "barberCaption": "Barberia De Luis barber shoop in El Cangrejo",
+      "tryp": "/images/elCangrejo/tryp-hotel-el-cangrejo.JPG",
+      "trypAltText": "tryp hotel in el cangrejo",
+      "trypCaption": "The Tryp Hotel in El Cangrejo",
+      "coffee": "/images/elCangrejo/el-coffee-shop-pty.JPG",
+      "coffeeAltText": "el coffee shop pty el cangrejo",
+      "coffeeCaption": "El Coffee Shop Pty in El Cangrejo",
+      "graff": "/images/elCangrejo/graffiti-wall-in-el-cangrejo.JPG",
+      "graffAltText": "graffiti wall in el cangrejo",
+      "graffCaption": "A graffiti wall in El Cangrejo",
+      "palm": "/images/elCangrejo/palm-trees-el-cangrejo.JPG",
+      "palmAltText": "street line with palm trees in el cangrejo",
+      "palmCaption": "A street lined with palm trees in El Cangrejo",
+      "moto": "/images/elCangrejo/panamanian-motorcycle-club.JPG",
+      "motoAltText": "a panamanian motorcycle club in el cangrejo",
+      "motoCaption": "A Panamanian motorcycle club in El Cangrejo"
       
     }
   ],

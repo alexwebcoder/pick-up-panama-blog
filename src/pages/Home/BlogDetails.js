@@ -763,6 +763,54 @@ const BlogDetails = () => {
             </figure>
            <p>{blog.houseIn}</p>
            <h3>{blog.otherSitesH3}</h3>
+           <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.barber}
+                  alt={blog.barberAltText}
+                />
+                <figcaption>{blog.barberCaption}</figcaption>
+            </figure>
+            <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.tryp}
+                  alt={blog.trypAltText}
+                />
+                <figcaption>{blog.trypCaption}</figcaption>
+            </figure>
+            <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.coffee}
+                  alt={blog.coffeeAltText}
+                />
+                <figcaption>{blog.coffeeCaption}</figcaption>
+            </figure>
+            <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.graff}
+                  alt={blog.graffAltText}
+                />
+                <figcaption>{blog.graffCaption}</figcaption>
+            </figure>
+            <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.palm}
+                  alt={blog.palmAltText}
+                />
+                <figcaption>{blog.palmCaption}</figcaption>
+            </figure>
+            <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.moto}
+                  alt={blog.motoAltText}
+                />
+                <figcaption>{blog.motoCaption}</figcaption>
+            </figure>
             <div className="button-parent">
               <button title="How do I get around in Panama?" onClick={goToTransportationStory}>&#60; Previous Story</button>
               <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>
