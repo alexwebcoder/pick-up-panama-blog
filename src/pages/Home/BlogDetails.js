@@ -528,6 +528,14 @@ const BlogDetails = () => {
           </div>
           <h1 className="centered post-title">{blog.title}</h1>
           <p className="body intro">{blog.intro}</p>
+          <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.elCran}
+                  alt={blog.elCranAltText}
+                />
+                <figcaption>{blog.elCranCaption}</figcaption>
+            </figure>
            <p>{blog.itIsOne}</p>
            <p>{blog.elCangrejoHas}</p>
            <p>{blog.itRep}</p>
@@ -645,6 +653,15 @@ const BlogDetails = () => {
               <li>{blog.liTwentyOne} <span>{blog.spanTwentyOne}</span></li>
               <li>{blog.liTwentyTwo} <span>{blog.spanTwentyTwo}</span></li>
               <li>{blog.liTwentyThree} <span>{blog.spanTwentyThree}</span></li>
+              <li>{blog.liTwentyThreeA} <span>{blog.spanTwentyThreeA}</span></li>
+              <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.manolos}
+                  alt={blog.manolosAltText}
+                />
+                <figcaption>{blog.manolosCaption}</figcaption>
+            </figure>
               <li>{blog.liTwentyFour} <span>{blog.spanTwentyFour}</span></li>
               <li>{blog.liTwentyFourA} <span>{blog.spanTwentyFourA}</span></li>
               <li>{blog.liTwentyFourB} <span>{blog.spanTwentyFourB}</span></li>
@@ -662,6 +679,14 @@ const BlogDetails = () => {
               <li>{blog.liThirtyFive} <span>{blog.spanThirtyFive}</span></li>
               <li>{blog.liThirtySeven} <span>{blog.spanThirtySeven}</span></li>
               <li>{blog.liThirtyEight} <span>{blog.spanThirtyEight}</span></li>
+              <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.sen}
+                  alt={blog.senAltText}
+                />
+                <figcaption>{blog.senCaption}</figcaption>
+            </figure>
               <li>{blog.liThirtyNine} <span>{blog.spanThirtyNine}</span></li>
               <li>{blog.liForty} <span>{blog.spanForty}</span></li>
               <li>{blog.liFortyOne} <span>{blog.spanFortyOne}</span></li>
@@ -696,14 +721,46 @@ const BlogDetails = () => {
            <p>{blog.isALarg}</p>
            <p>{blog.bothOf}</p>
            <h3>{blog.iglesiaH3}</h3>
+           <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.delCarmen}
+                  alt={blog.delCarmenAltText}
+                />
+                <figcaption>{blog.delCarmenCaption}</figcaption>
+            </figure>
            <p>{blog.theChurch}</p>
            <p>{blog.itHas}</p>
            <p>{blog.itsConstruction}</p>
            <h3>{blog.ffH3}</h3>
+           <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.ff}
+                  alt={blog.ffAltText}
+                />
+                <figcaption>{blog.ffCaption}</figcaption>
+            </figure>
            <p>{blog.theCork}</p>
            <h3>{blog.womanKneeH3}</h3>
+           <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.onKnee}
+                  alt={blog.onKneeAltText}
+                />
+                <figcaption>{blog.onKneeCaption}</figcaption>
+            </figure>
            <p>{blog.thisIs}</p>
            <h3>{blog.robertoH3}</h3>
+           <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.duran}
+                  alt={blog.duranAltText}
+                />
+                <figcaption>{blog.duranCaption}</figcaption>
+            </figure>
            <p>{blog.houseIn}</p>
            <h3>{blog.otherSitesH3}</h3>
             <div className="button-parent">
