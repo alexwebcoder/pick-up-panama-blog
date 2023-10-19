@@ -347,6 +347,8 @@
       "spanSeven": "Good grilled steaks",
       "liEight": "Cilantro Express Restaurant:",
       "spanEight": "South American",
+      "liEightA": "Don Lee",
+      "spanEightA": "Chinese, fast food",
       "liNine": "El Caribe Restaurant:",
       "spanNine": "Caribbean, seafood grill",
       "liTen": "El Pescao De La Fula:",
@@ -481,7 +483,15 @@
 
       "sieteMaresInt": "/images/elCangrejo/siete-mares-interior.JPG",
       "sieteMaresIntAltText": "inside of siete mares restaurant in el cangrejo",
-      "sieteMaresIntCaption": "Inside of Siete Mares restaurant in El Cangrejo"
+      "sieteMaresIntCaption": "Inside of Siete Mares restaurant in El Cangrejo",
+
+      "sieteMaresFood": "/images/elCangrejo/lobster-meal-siete-mares.JPG",
+      "sieteMaresFoodAltText": "lobster meal at siete mares restaurant in el cangrejo",
+      "sieteMaresFoodCaption": "Lobster meal at Siete Mares restaurant in El Cangrejo",
+
+      "donLee": "/images/elCangrejo/don-lee-el-cangrejo.JPG",
+      "donLeeAltText": "don lee restaurant in el cangrejo",
+      "donLeeCaption": "Don Lee restaurant in El Cangrejo"
     }
   ],
   "featured": [

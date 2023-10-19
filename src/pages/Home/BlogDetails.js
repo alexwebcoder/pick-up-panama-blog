@@ -541,7 +541,8 @@ const BlogDetails = () => {
            <p>{blog.restaurantOptions}</p>
            <h2>{blog.restaurantsInH2}</h2>
            <h3>{blog.elTrapH3}</h3>
-           <figure className="el-trap">
+            <p>{blog.offersAuth}</p>
+           <figure>
                 <img
                   className="no-right-click"
                   src={blog.elTrap}
@@ -549,7 +550,7 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.elTrapCaption}</figcaption>
             </figure>
-            <figure className="el-trap-food">
+            <figure>
                 <img
                   className="no-right-click"
                   src={blog.elTrapMeal}
@@ -562,12 +563,12 @@ const BlogDetails = () => {
                   className="no-right-click"
                   src={blog.elTrapMeal2}
                   alt={blog.elTrapMeal2AltText}
-                />
+                  />
                 <figcaption>{blog.elTrapMeal2Caption}</figcaption>
             </figure>
-           <p>{blog.offersAuth}</p>
            <h3>{blog.sieteMaresH3}</h3>
-           <figure className="siete">
+           <p>{blog.hasAnElegant}</p>
+           <figure>
                 <img
                   className="no-right-click"
                   src={blog.sieteMares}
@@ -575,7 +576,7 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.sieteMaresCaption}</figcaption>
             </figure>
-            <figure className="siete">
+            <figure>
                 <img
                   className="no-right-click"
                   src={blog.sieteMaresInt}
@@ -583,9 +584,17 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.sieteMaresIntCaption}</figcaption>
             </figure>
-           <p>{blog.hasAnElegant}</p>
+            <figure className="siete">
+                <img
+                  className="no-right-click"
+                  src={blog.sieteMaresFood}
+                  alt={blog.sieteMaresFoodAltText}
+                />
+                <figcaption>{blog.sieteMaresFoodCaption}</figcaption>
+            </figure>
            <h3>{blog.chrisRestH3}</h3>
-           <figure className="chris">
+            <p>{blog.isAGood}</p>
+           <figure>
                 <img
                   className="no-right-click"
                   src={blog.chrisR}
@@ -593,7 +602,7 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.chrisRCaption}</figcaption>
             </figure>
-            <figure className="chris">
+            <figure>
                 <img
                   className="no-right-click"
                   src={blog.chrisR2}
@@ -601,7 +610,6 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.chrisR2Caption}</figcaption>
             </figure>
-           <p>{blog.isAGood}</p>
            <h3>{blog.additionalH3}</h3>
            <ul>
               <li>{blog.liOne} <span>{blog.spanOne}</span></li>
@@ -612,6 +620,15 @@ const BlogDetails = () => {
               <li>{blog.liSix} <span>{blog.spanSix}</span></li>
               <li>{blog.liSeven} <span>{blog.spanSeven}</span></li>
               <li>{blog.liEight} <span>{blog.spanEight}</span></li>
+              <li>{blog.liEightA} <span>{blog.spanEightA}</span></li>
+              <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.donLee}
+                  alt={blog.donLeeAltText}
+                />
+                <figcaption>{blog.donLeeCaption}</figcaption>
+            </figure>
               <li>{blog.liNine} <span>{blog.spanNine}</span></li>
               <li>{blog.liTen} <span>{blog.spanTen}</span></li>
               <li>{blog.liEleven} <span>{blog.spanEleven}</span></li>
