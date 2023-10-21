@@ -15,11 +15,6 @@
 }
 
 .button-parent {
-    /* position: fixed;
-    display: flex;
-    width: 100%;
-    top: 50%;
-    left: 0; */
     position: absolute;
     bottom: -79px;
     display: flex;
@@ -61,6 +56,10 @@
 
 .blog-details figure {
     margin-bottom: 25px;
+}
+
+.blog-details figure:last-of-type {
+    margin-bottom: 0;
 }
 
 .blog-details figcaption, .metro-caption {
@@ -266,7 +265,7 @@ p.this-article {
 @media all and (min-width: 960px) {
     .blog-details {
         width: 46%;
-        margin-bottom: 61px;
+        margin-bottom: -22px;
    }
 
     .blog-details .post-title {

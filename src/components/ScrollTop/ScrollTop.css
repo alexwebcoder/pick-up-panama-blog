@@ -58,6 +58,16 @@
     }
   }
 
+  @media all and (max-width: 960px) {
+    .top-to-bottom:focus::after {
+      bottom: 38px;
+      right: 1px;
+      height: 36px;
+      width: 39px;
+    }
+  }
+  
+
   /* Desktop menu */
 @media all and (min-width: 960px) {
   .icon-style {
