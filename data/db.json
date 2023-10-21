@@ -101,9 +101,9 @@
       "panamaCopBank": "/images/safety/panamanian-policeman-outside-of-bank.JPG",
       "panamaCopBankAltText": "A Panamanian police officer outside of a bank",
       "panamaCopBankCaption": "A Panamanian police officer outside of a bank",
-      "imageFive": "/images/safety/coronado-checkpoint-panama.JPG",
-      "figcaption": "A Panamanian motorcycle club in El Cangrejo, Panama City",
-      "alt": "Panamanian motorcycle club riding through Panama City"
+      "panamaCopElCan": "/images/safety/panamanian-police-el-cangrejo.JPG",
+      "panamaCopElCanAltText": "Panamanian police officers talk to a man",
+      "panamaCopElCanCaption": "Panamanian police officers talk to a man"
     },
     {
       "title": "How do I get around in Panama?",
@@ -469,6 +469,9 @@
       "elTrapMeal": "/images/elCangrejo/panamanian-meal-el-trapiche.JPG",
       "elTrapMealAltText": "panamanian food at el cangrejo",
       "elTrapMealCaption": "Panamanian food at El Cangrejo",
+      "elTrapMealA": "/images/elCangrejo/el-trapiche-meal.JPG",
+      "elTrapMealAAltText": "panamanian shish kabob at el cangrejo",
+      "elTrapMealACaption": "Panamanian shish kabob at El Cangrejo",
       "elTrapMeal2": "/images/elCangrejo/meal-at-el-trapiche.JPG",
       "elTrapMeal2AltText": "panamanian sandwich at el cangrejo",
       "elTrapMeal2Caption": "Panamanian sandwich at El Cangrejo",
@@ -528,8 +531,16 @@
       "palmCaption": "A street lined with palm trees in El Cangrejo",
       "moto": "/images/elCangrejo/panamanian-motorcycle-club.JPG",
       "motoAltText": "a panamanian motorcycle club in el cangrejo",
-      "motoCaption": "A Panamanian motorcycle club in El Cangrejo"
-      
+      "motoCaption": "A Panamanian motorcycle club in El Cangrejo",
+      "crab": "/images/elCangrejo/map-of-el-cangrejo.JPG",
+      "crabAltText": "an overhead map of el cangrejo",
+      "crabCaption": "El Cangrejo is within the dotted red line, the streets that are higlighted with the solid red line, give El Cangrejo the appearance of a crab.",
+      "night": "/images/elCangrejo/el-cangrejo-night.JPG",
+      "nightAltText": "a school bus in el cangrejo",
+      "nightCaption": "A school bus in El Cangrejo",
+      "life": "/images/elCangrejo/el-cangrejo-life.JPG",
+      "lifeAltText": "el cangrejo at night",
+      "lifeCaption": "El Cangrejo at night"
     }
   ],
   "featured": [

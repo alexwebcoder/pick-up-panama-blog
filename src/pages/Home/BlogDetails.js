@@ -69,6 +69,14 @@ const BlogDetails = () => {
               />
               <figcaption>{blog.panamaCopBankCaption}</figcaption>
             </figure>
+            <figure className="market-police">
+              <img
+                className="no-right-click"
+                src={blog.panamaCopElCan}
+                alt={blog.panamaCopElCanAltText}
+              />
+              <figcaption>{blog.panamaCopElCanCaption}</figcaption>
+            </figure>
             <section>
               <h2>{blog.h2targets}</h2>
               <p>{blog.criteria}</p>
@@ -183,9 +191,8 @@ const BlogDetails = () => {
               </figure>
             </section>
             <div className="button-parent">
-              <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>&#60; Previous Story</button>
-              <button title="How do I get around in Panama?" onClick={goToTransportationStory}>
-                Next Story &#62;
+              <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>&#60;</button>
+              <button title="How do I get around in Panama?" onClick={goToTransportationStory}>&#62;
               </button>
             </div>
           </section>
@@ -502,9 +509,8 @@ const BlogDetails = () => {
                 <figcaption>{blog.alexBusCaption}</figcaption>
             </figure>
             <div className="button-parent">
-              <button title="Is Panama Safe?" onClick={goToSafetyStory}>&#60; Previous Story</button>
-              <button title="Things to do in El Cangrejo" onClick={goToElCangrejoStory}>
-                Next Story &#62;
+              <button title="Is Panama Safe?" onClick={goToSafetyStory}>&#60;</button>
+              <button title="Things to do in El Cangrejo" onClick={goToElCangrejoStory}>&#62;
               </button>
             </div>
           </section>
@@ -541,6 +547,14 @@ const BlogDetails = () => {
            <p>{blog.itRep}</p>
            <h2>{blog.howItGotH2}</h2>
            <p>{blog.theNameOf}</p>
+           <figure className="crab">
+                <img
+                  className="no-right-click"
+                  src={blog.crab}
+                  alt={blog.crabAltText}
+                />
+                <figcaption>{blog.crabCaption}</figcaption>
+            </figure>
            <h2>{blog.atmosphereH2}</h2>
            <p>{blog.atmoshphereIs}</p>
            <p>{blog.natureAndUnique}</p>
@@ -573,6 +587,14 @@ const BlogDetails = () => {
                   alt={blog.elTrapMeal2AltText}
                   />
                 <figcaption>{blog.elTrapMeal2Caption}</figcaption>
+            </figure>
+            <figure className="el-trap-food">
+                <img
+                  className="no-right-click"
+                  src={blog.elTrapMealA}
+                  alt={blog.elTrapMealAAltText}
+                  />
+                <figcaption>{blog.elTrapMealACaption}</figcaption>
             </figure>
            <h3>{blog.sieteMaresH3}</h3>
            <p>{blog.hasAnElegant}</p>
@@ -694,6 +716,14 @@ const BlogDetails = () => {
               <li>{blog.liFortyThree} <span>{blog.spanFortyThree}</span></li>
            </ul>
            <h3>{blog.barsPubsH3}</h3>
+           <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.night}
+                  alt={blog.nightAltText}
+                />
+                <figcaption>{blog.nightCaption}</figcaption>
+            </figure>
            <ul>
               <li>{blog.bpOne}</li>
               <li>{blog.bpOneA}</li>
@@ -811,10 +841,17 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.motoCaption}</figcaption>
             </figure>
-            <div className="button-parent">
-              <button title="How do I get around in Panama?" onClick={goToTransportationStory}>&#60; Previous Story</button>
-              <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>
-                Next Story &#62;
+            <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.life}
+                  alt={blog.lifeAltText}
+                />
+                <figcaption>{blog.lifeCaption}</figcaption>
+            </figure>
+           <div className="button-parent">
+              <button title="How do I get around in Panama?" onClick={goToTransportationStory}>&#60;</button>
+              <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>&#62;
               </button>
             </div>
           </section>

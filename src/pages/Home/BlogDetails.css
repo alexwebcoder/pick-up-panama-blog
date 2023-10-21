@@ -15,6 +15,11 @@
 }
 
 .button-parent {
+    /* position: fixed;
+    display: flex;
+    width: 100%;
+    top: 50%;
+    left: 0; */
     position: absolute;
     bottom: -79px;
     display: flex;
@@ -164,20 +169,12 @@ p.this-article {
     padding-top: calc(2265 / 3024 * 100%);
 }
 
-.casco-tourist, .casco-police {
+.casco-tourist, .casco-police, .colon-plate, .casco-petty-crime, .market-police  {
     padding-top: calc(2752 / 4896 * 100%);
 }
 
 .near-casco {
     padding-top: calc(720 / 1280 * 100%);
-}
-
-.casco-petty-crime {
-    padding-top: calc(2752 / 4896 * 100%);
-}
-
-.colon-plate {
-    padding-top: calc(2752 / 4896 * 100%);
 }
 
 .video-container {
@@ -247,6 +244,10 @@ p.this-article {
     padding-top: calc(2752/ 4896 * 100%);
 }
 
+.el-cangrejo .crab {
+    padding-top: calc(660/ 687 * 100%);
+}
+
 
 
 
@@ -276,6 +277,15 @@ p.this-article {
     p.intro {
         width: 80%;
    }
+
+   .button-parent {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    bottom: unset;
+}
 }
 
 @media all and (min-width: 1500px) {

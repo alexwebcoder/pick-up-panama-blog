@@ -14,8 +14,8 @@ const FeatureStory = () => {
   Capitalize();
 
   const featureNavigate = useNavigate();
-  const goToMolaStoryA = () => {
-    featureNavigate("/blogs/what-are-molas");
+  const goToElCangrejoStory = () => {
+    featureNavigate("/blogs/things-to-do-in-el-cangrejo");
   };
   const goToSafetyStoryA = () => {
     featureNavigate("/blogs/is-panama-safe");
@@ -37,8 +37,8 @@ const FeatureStory = () => {
           <h1 className="centered">{blog.title}</h1>
           <p className="body intro">{blog.body}</p>
           <div className="button-parent">
-            <button title="Things to do in El Cangrejo" onClick={goToMolaStoryA}>&#60; Previous Story</button>
-            <button title="Is Panama safe?" onClick={goToSafetyStoryA}>Next Story &#62;</button>
+            <button title="Things to do in El Cangrejo" onClick={goToElCangrejoStory}>&#60;</button>
+            <button title="Is Panama safe?" onClick={goToSafetyStoryA}>&#62;</button>
           </div>
         </section>
       )}
