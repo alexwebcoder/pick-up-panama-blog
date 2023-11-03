@@ -516,7 +516,7 @@
       "elCranCaption": "View from the car in El Cangrejo",
       "barber": "/images/elCangrejo/barberia-de-luis-el-cangrejo.JPG",
       "barberAltText": "barberia de luis barber shop in el cangrejo",
-      "barberCaption": "Barberia De Luis barber shoop in El Cangrejo",
+      "barberCaption": "Barberia De Luis barber shop in El Cangrejo",
       "tryp": "/images/elCangrejo/tryp-hotel-el-cangrejo.JPG",
       "trypAltText": "tryp hotel in el cangrejo",
       "trypCaption": "The Tryp Hotel in El Cangrejo",
@@ -535,12 +535,12 @@
       "crab": "/images/elCangrejo/map-of-el-cangrejo.JPG",
       "crabAltText": "an overhead map of el cangrejo",
       "crabCaption": "El Cangrejo is within the dotted red line, the streets that are higlighted with the solid red line, give El Cangrejo the appearance of a crab.",
-      "night": "/images/elCangrejo/el-cangrejo-night.JPG",
-      "nightAltText": "a school bus in el cangrejo",
-      "nightCaption": "A school bus in El Cangrejo",
       "life": "/images/elCangrejo/el-cangrejo-life.JPG",
-      "lifeAltText": "el cangrejo at night",
-      "lifeCaption": "El Cangrejo at night"
+      "lifeAltText": "a school bus in el cangrejo",
+      "lifeCaption": "A school bus in El Cangrejo",
+      "night": "/images/elCangrejo/el-cangrejo-night.JPG",
+      "nightAltText": "el cangrejo at night",
+      "nightCaption": "El Cangrejo at night"
     }
   ],
   "featured": [

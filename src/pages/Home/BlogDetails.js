@@ -849,6 +849,14 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.lifeCaption}</figcaption>
             </figure>
+            <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.night}
+                  alt={blog.nightAltText}
+                />
+                <figcaption>{blog.nightCaption}</figcaption>
+            </figure>
            <div className="button-parent">
               <button title="How do I get around in Panama?" onClick={goToTransportationStory}>&#60;</button>
               <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>&#62;
