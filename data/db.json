@@ -540,7 +540,20 @@
       "lifeCaption": "A school bus in El Cangrejo",
       "night": "/images/elCangrejo/el-cangrejo-night.JPG",
       "nightAltText": "el cangrejo at night",
-      "nightCaption": "El Cangrejo at night"
+      "nightCaption": "El Cangrejo at night",
+      "street": "/images/elCangrejo/street-performer-el-cangrejo.JPG",
+      "streetAltText": "a street performer in el cangrejo",
+      "streetCaption": "A street performer in El Cangrejo",
+      "view": "/images/elCangrejo/el-cangrejo-view.JPG",
+      "viewAltText": "view of el cangrejo from hampton by hilton hotel",
+      "viewCaption": "View of El Cangrejo from Hampton by Hilton hotel",
+      "bird": "/images/elCangrejo/bird-in-park.JPG",
+      "birdAltText": "a bird in a tree in el cangrejo",
+      "birdCaption": "A bird in a tree in El Cangrejo",
+      "arch": "/images/elCangrejo/el-cangrejo-panama.JPG",
+      "archAltText": "architecture in el cangrejo",
+      "archCaption": "Architecture in El Cangrejo"
+
     }
   ],
   "featured": [

@@ -544,7 +544,7 @@ const BlogDetails = () => {
             </figure>
            <p>{blog.itIsOne}</p>
            <p>{blog.elCangrejoHas}</p>
-           <p>{blog.itRep}</p>
+           <p><strong>{blog.itRep}</strong></p>
            <h2>{blog.howItGotH2}</h2>
            <p>{blog.theNameOf}</p>
            <figure className="crab">
@@ -558,6 +558,14 @@ const BlogDetails = () => {
            <h2>{blog.atmosphereH2}</h2>
            <p>{blog.atmoshphereIs}</p>
            <p>{blog.natureAndUnique}</p>
+           <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.bird}
+                  alt={blog.birdAltText}
+                />
+                <figcaption>{blog.birdCaption}</figcaption>
+            </figure>
            <p>{blog.viaArgIs}</p>
            <p>{blog.theStreetIs}</p>
            <p>{blog.restaurantOptions}</p>
@@ -852,10 +860,26 @@ const BlogDetails = () => {
             <figure>
                 <img
                   className="no-right-click"
-                  src={blog.night}
-                  alt={blog.nightAltText}
+                  src={blog.street}
+                  alt={blog.streetAltText}
                 />
-                <figcaption>{blog.nightCaption}</figcaption>
+                <figcaption>{blog.streetCaption}</figcaption>
+            </figure>
+            <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.view}
+                  alt={blog.viewAltText}
+                />
+                <figcaption>{blog.viewCaption}</figcaption>
+            </figure>
+            <figure>
+                <img
+                  className="no-right-click"
+                  src={blog.arch}
+                  alt={blog.archAltText}
+                />
+                <figcaption>{blog.archCaption}</figcaption>
             </figure>
            <div className="button-parent">
               <button title="How do I get around in Panama?" onClick={goToTransportationStory}>&#60;</button>
