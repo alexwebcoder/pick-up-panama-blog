@@ -769,6 +769,7 @@ const BlogDetails = () => {
             </figure>
            <p>{blog.theChurch}</p>
            <p>{blog.itHas}</p>
+           <p>{blog.towers}</p>
            <p>{blog.itsConstruction}</p>
            <h3>{blog.ffH3}</h3>
            <figure>
