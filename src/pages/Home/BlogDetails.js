@@ -547,6 +547,8 @@ const BlogDetails = () => {
            <p><strong>{blog.itRep}</strong></p>
            <h2>{blog.howItGotH2}</h2>
            <p>{blog.theNameOf}</p>
+           <p>{blog.overHead}</p>
+           <p>{blog.claws}</p>
            <figure className="crab">
                 <img
                   className="no-right-click"
