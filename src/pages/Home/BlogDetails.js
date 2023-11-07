@@ -181,7 +181,7 @@ const BlogDetails = () => {
               </ul>
               <p>{blog.overallPanamaIs}</p>
               <p>{blog.mostTips}</p>
-              <figure className="casco-petty-crime">
+              <figure className="casco-petty-crime last-figure">
                 <img
                   className="no-right-click"
                   src={blog.cascoPettyCrime}
@@ -500,7 +500,7 @@ const BlogDetails = () => {
                 <figcaption>{blog.chivaCaption}</figcaption>
             </figure>
             <p>{blog.summary}</p>
-            <figure className="alex-bus">
+            <figure className="alex-bus last-figure">
                 <img
                   className="no-right-click"
                   src={blog.alexBus}
@@ -661,14 +661,16 @@ const BlogDetails = () => {
               <li>{blog.liSeven} <span>{blog.spanSeven}</span></li>
               <li>{blog.liEight} <span>{blog.spanEight}</span></li>
               <li>{blog.liEightA} <span>{blog.spanEightA}</span></li>
-              <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.donLee}
-                  alt={blog.donLeeAltText}
-                />
+              <li> 
+                <figure>
+                  <img
+                    className="no-right-click"
+                    src={blog.donLee}
+                    alt={blog.donLeeAltText}
+                  />
                 <figcaption>{blog.donLeeCaption}</figcaption>
-            </figure>
+              </figure>
+              </li>
               <li>{blog.liNine} <span>{blog.spanNine}</span></li>
               <li>{blog.liTen} <span>{blog.spanTen}</span></li>
               <li>{blog.liEleven} <span>{blog.spanEleven}</span></li>
@@ -686,6 +688,7 @@ const BlogDetails = () => {
               <li>{blog.liTwentyTwo} <span>{blog.spanTwentyTwo}</span></li>
               <li>{blog.liTwentyThree} <span>{blog.spanTwentyThree}</span></li>
               <li>{blog.liTwentyThreeA} <span>{blog.spanTwentyThreeA}</span></li>
+              <li>
               <figure>
                 <img
                   className="no-right-click"
@@ -694,6 +697,7 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.manolosCaption}</figcaption>
             </figure>
+              </li>
               <li>{blog.liTwentyFour} <span>{blog.spanTwentyFour}</span></li>
               <li>{blog.liTwentyFourA} <span>{blog.spanTwentyFourA}</span></li>
               <li>{blog.liTwentyFourB} <span>{blog.spanTwentyFourB}</span></li>
@@ -711,6 +715,7 @@ const BlogDetails = () => {
               <li>{blog.liThirtyFive} <span>{blog.spanThirtyFive}</span></li>
               <li>{blog.liThirtySeven} <span>{blog.spanThirtySeven}</span></li>
               <li>{blog.liThirtyEight} <span>{blog.spanThirtyEight}</span></li>
+              <li>
               <figure>
                 <img
                   className="no-right-click"
@@ -718,7 +723,8 @@ const BlogDetails = () => {
                   alt={blog.senAltText}
                 />
                 <figcaption>{blog.senCaption}</figcaption>
-            </figure>
+             </figure>
+              </li>
               <li>{blog.liThirtyNine} <span>{blog.spanThirtyNine}</span></li>
               <li>{blog.liForty} <span>{blog.spanForty}</span></li>
               <li>{blog.liFortyOne} <span>{blog.spanFortyOne}</span></li>
@@ -876,7 +882,7 @@ const BlogDetails = () => {
                 />
                 <figcaption>{blog.viewCaption}</figcaption>
             </figure>
-            <figure>
+            <figure className="last-figure">
                 <img
                   className="no-right-click"
                   src={blog.arch}
