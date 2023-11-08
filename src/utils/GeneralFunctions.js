@@ -7,7 +7,7 @@ export const TabTitle = (newTitle) => {
 export const Capitalize = () => {
 
     if (document.title === "How Do I Visit the Panama Canal?") {
-        document.getElementsByTagName('meta')["description"].content = "Follow this guide to Learn everything you need to know to experience the Panama Canal.";
+        document.getElementsByTagName('meta')["description"].content = "Follow this guide to have a great visit to the Panama Canal.";
     }
   
     if (document.title === "Is panama safe") {
@@ -26,7 +26,7 @@ export const Capitalize = () => {
     }
 
     if (document.title === "Pick Up Panama | Learn About Panama") {
-        document.getElementsByTagName('meta')["description"].content = "Pick Up Panama answers questions that people have about Panama and provides a resource of Panamanian culture and lifestyle.";
+        document.getElementsByTagName('meta')["description"].content = "Pick Up Panama benefits you by answering your questions about Panama. It is a resource of visiting information, Panamanian culture and lifestyle.";
     }
 
     if (document.title === "About Pick Up Panama") {
@@ -34,7 +34,7 @@ export const Capitalize = () => {
     }
 
     if (document.title === "Contact Pick Up Panama") {
-        document.getElementsByTagName('meta')["description"].content = "Contact Alex at Pick Up Panama.";
+        document.getElementsByTagName('meta')["description"].content = "Alex will respond to any questions you have regarding Pick Up Panama.";
     }
 
     if (document.title === "Panama News Feed") {
