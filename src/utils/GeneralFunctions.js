@@ -7,17 +7,17 @@ export const TabTitle = (newTitle) => {
 export const Capitalize = () => {
 
     if (document.title === "How Do I Visit the Panama Canal?") {
-        document.getElementsByTagName('meta')["description"].content = "Follow this guide to have a great visit to the Panama Canal.";
+        document.getElementsByTagName('meta')["description"].content = "Follow this guide and have a great visit to the Panama Canal.";
     }
   
     if (document.title === "Is panama safe") {
         document.title = "Is Panama Safe?";
-        document.getElementsByTagName('meta')["description"].content = "Learn how to stay safe in Panama. Use the tips in this guide to prevent muggings, avoid bad areas, and more.";
+        document.getElementsByTagName('meta')["description"].content = "Use the tips in this guide to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more.";
       }
     
     if (document.title === "How do i get around in panama") {
         document.title = "How do I get Around in Panama?"
-        document.getElementsByTagName('meta')["description"].content = "Find out the best ways to get around Panama and not overpay for cabs.";
+        document.getElementsByTagName('meta')["description"].content = "Learn about Panama's metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
     }
 
     if (document.title === "Things to do in el cangrejo") {
@@ -38,6 +38,6 @@ export const Capitalize = () => {
     }
 
     if (document.title === "Panama News Feed") {
-        document.getElementsByTagName('meta')["description"].content = "Get the latest news from Panama";
+        document.getElementsByTagName('meta')["description"].content = "Read the newsfeed to stay up to date on the latest news from Panama";
     }
 }
