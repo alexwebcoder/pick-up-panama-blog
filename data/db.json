@@ -565,10 +565,40 @@
       "date": "September 6, 2023",
       "id": "how-do-i-visit-the-panama-canal",
       "className": "panama-canal",
-      "body": "This is going to be great.",
       "image": "http://localhost:3000/images/canal/panama-canal-ship.JPG",
-      "figcaption": "The Panama Canal in 2018",
-      "alt": "The Panama Canal in 2018"
+      "intro": "Going to Panama would not be complete without a trip to the Panama Canal. At the Miraflores Visitor Center, you will learn all about the Canal and have a birds eye view of ships passing through the locks.",
+      "whyImpH2": "Why is the Panama Canal important?",
+      "thePanaCanWasBuilt": "The Panama Canal was built to reduce the distance ships needed to travel to cross between the Atlantic and Pacific Oceans.",
+      "thisMakes": "This makes for safer travel, saves shippers millions of gallons of fuel, and cuts travel time by weeks.",
+      "resulted": "The Panama Canal resulted in more efficient global trade, increased revenue for Panama and cheaper consumer costs for you and me.",
+      "howWorkH2": "How does the Panama Canal work?",
+      "waterLevel": "The water level of the Canal is higher than that of the ocean. So, a major challenge in building the canal was solving the problem of how they would raise the water level to get the ship onto and off of the Canal.",
+      "beforeShip": "Before a ship can enter the Canal, it must be raised to the Canal's water level and when it exits the Canal, it must be lowered to sea level again.",
+      "locksRaise": "The Panama Canal locks raise and lower the water levels so that the ship can get safely across.",
+      "locksAreChambers": "The locks are chambers that rely on gravity and  water from the Gatun Lake to operate.",
+      "theGatunLake": "The Gatun Lake is a manmade lake that provides the necessary amount of water to operate the locks each time a ship goes through.",
+      "waterFlows": " Water flows into the chamber to raise the ship and releases water from the chamber to lower the ship.",
+      "whenAShip": "When a ship is ready to pass through, two tugboats assist it with one in the front and the other behind.",
+      "theTugboats": "The tugboats help align the ship with the canal gate. The ship is then tethered to locomotives called mules. The mules are on a track and guide the ship into the lock so that it does not hit the lock walls.",
+      "afterTheShip": "After the ship enters, a gate shuts behind it, making it watertight. Valves then open up to allow water to flow in from Gatun Lake.",
+      "itTakesAround": "It takes around 10 minutes for the lock to fill up and raise the water level.",
+      "shipIsThen": "The ship is then raised and then goes through a second lock chamber to repeat the process.",
+      "shipGoesThrough": "The ship goes through the Culebra cut and sails across the Gatun lake. When it reaches the other side, it goes through another set of lock mechanisms that will lower the ship back to sea level by draining the chambers.",
+      "droughH2": "Panama drought",
+      "lakeRelies": "The Gatun Lake relies on sufficient rainfall throughout the year to maintain its water levels. Right now there is a severe drought in Panama.",
+      "hasCaused": "This has caused a lack of water for the operation of the locks.",
+      "canalAuthor": "The Panama Canal Authority has reduced the number of daily ship crossings and will reduce the number more in upcoming months.",
+      "WhereSeeH3": "Where can I see the Panama Canal locks?",
+      "thereAreThree": "There are three sets of locks where you can watch ships pass through.",
+      "theGatunLocks": "The Gatun Locks are on the Atlantic side. There is no museum here, but there is an observation deck.",
+      "pedroMiguel": "The Pedro Miguel Locks are not far from the Miraflores locks. We pulled into a parking strip off of the highway on the way back from Gamboa and watched a ship go through.",
+      "theBestWay": "The best way, however, is to go to the Miraflores Visitors Center. It is about 20 minutes from the City Center and you can get there by taxi or bus.",
+      "directBus": "There is a direct bus from the Albrook Mall. You can also take a bus going to Paraiso or Gamboa from the terminal since they run more frequently. You would just need to get off at the Miraflores Locks sign alongside the highway.",
+      "hours": "The hours are 8 am to 5 pm and it costs $20 to get in.",
+      "itFeatures": "It features a four story interactive museum, an IMAX theater that shows a short film about the Panama Canal, a restaurant, and a viewing platform with panoramic views of the canal transits.",
+      "forBestExp": "For your best experience, Get there at 8 am and go straight to the 4th floor observation deck. If you go after 11 am, you may not see a ship go through."
+
     }
   ]
 }
+ 
