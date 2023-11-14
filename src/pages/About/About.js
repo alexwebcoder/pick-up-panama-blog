@@ -52,6 +52,6 @@ const About = () => {
         </main>
     )
 }
-
+//to help work out some of the challenges that come with visiting Panama (untangle, sort out)
 
 export default About;
