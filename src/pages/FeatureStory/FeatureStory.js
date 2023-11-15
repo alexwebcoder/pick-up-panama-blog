@@ -37,10 +37,26 @@ const FeatureStory = () => {
           </div>
           <h1 className="centered post-title">{blog.title}</h1>
           <p className="body intro">{blog.intro}</p>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.ship}
+                alt={blog.shipAltText}
+              />
+              <figcaption>{blog.shipCaption}</figcaption>
+          </figure>
           <h2>{blog.whyImpH2}</h2>
           <p>{blog.thePanaCanWasBuilt}</p>
           <p>{blog.thisMakes}</p>
           <p>{blog.resulted}</p>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.cargo}
+                alt={blog.cargoAltText}
+              />
+              <figcaption>{blog.cargoCaption}</figcaption>
+          </figure>
           <h2>{blog.howWorkH2}</h2>
           <p>{blog.throughLocks}</p>
           <p>{blog.waterLevel}</p>
@@ -50,9 +66,33 @@ const FeatureStory = () => {
           <p>{blog.theGatunLake}</p>
           <p>{blog.waterFlows}</p>
           <p>{blog.whenAShip}</p>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.tug}
+                alt={blog.tugAltText}
+              />
+              <figcaption>{blog.tugCaption}</figcaption>
+          </figure>
           <p>{blog.theTugboats}</p>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.mule}
+                alt={blog.muleAltText}
+              />
+              <figcaption>{blog.muleCaption}</figcaption>
+          </figure>
           <p>{blog.afterTheShip}</p>
           <p>{blog.onceInside}</p>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.operators}
+                alt={blog.operatorsAltText}
+              />
+              <figcaption>{blog.operatorsCaption}</figcaption>
+          </figure>
           <p>{blog.itTakesAround}</p>
           <p>{blog.shipIsThen}</p>
           <p>{blog.culebraCut}</p>
@@ -63,13 +103,63 @@ const FeatureStory = () => {
           <p>{blog.canalAuthor}</p>
           <h2>{blog.WhereSeeH2}</h2>
           <p>{blog.thereAreThree}</p>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.locks}
+                alt={blog.locksAltText}
+              />
+              <figcaption>{blog.locksCaption}</figcaption>
+          </figure>
           <p>{blog.theGatunLocks}</p>
           <p>{blog.pedroMiguel}</p>
+          <h2>{blog.miraFloresH2}</h2>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.miraflores}
+                alt={blog.mirafloresAltText}
+              />
+              <figcaption>{blog.mirafloresCaption}</figcaption>
+          </figure>
           <p>{blog.theBestWay}</p>
+          <figure className="map">
+              <img
+                className="no-right-click"
+                src={blog.map}
+                alt={blog.mapAltText}
+              />
+              <figcaption>{blog.mapCaption}</figcaption>
+          </figure>
           <p>{blog.directBus}</p>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.mirafloresLocks}
+                alt={blog.mirafloresLocksAltText}
+              />
+              <figcaption>{blog.mirafloresLocksCaption}</figcaption>
+          </figure>
           <p>{blog.hours}</p>
           <p>{blog.itFeatures}</p>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.viewDeck}
+                alt={blog.viewDeckAltText}
+              />
+              <figcaption>{blog.viewDeckCaption}</figcaption>
+          </figure>
+          <p>{blog.mostBusy}</p>
           <p>{blog.forBestExp}</p>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.deck}
+                alt={blog.deckAltText}
+              />
+              <figcaption>{blog.deckCaption}</figcaption>
+          </figure>
 
 
 

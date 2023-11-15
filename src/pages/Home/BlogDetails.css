@@ -248,6 +248,15 @@ p.this-article {
     padding-top: calc(660/ 687 * 100%);
 }
 
+/* canal page images */
+
+.panama-canal figure {
+    padding-top: calc(2752/ 4896 * 100%);
+}
+
+.panama-canal .map {
+    padding-top: calc(703/ 1108 * 100%);
+}
 
 
 
