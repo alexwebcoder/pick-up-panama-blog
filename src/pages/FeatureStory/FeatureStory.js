@@ -1,7 +1,9 @@
 import { useParams, useNavigate } from "react-router-dom";
 import useFetch from "../../useFetch";
 import { TabTitle, Capitalize } from "../../utils/GeneralFunctions";
-import "../Home/BlogDetails.css"
+import "../Home/BlogDetails.css";
+import ReactPlayer from "react-player";
+
 
 const FeatureStory = () => {
   const { id } = useParams();
@@ -113,6 +115,14 @@ const FeatureStory = () => {
           </figure>
           <p>{blog.theGatunLocks}</p>
           <p>{blog.pedroMiguel}</p>
+          <div className="video-container">
+              <ReactPlayer className='youtube-video' url='<https://youtu.be/SXVQt86F1A4?si=myIjvDci4Q89hv-f?rel=0>' 
+                controls
+                width={null}
+                height={null}
+              />
+            </div>
+            <p className="video-caption">{blog.pedroMiguelVideoCaption}</p>
           <h2>{blog.miraFloresH2}</h2>
           <figure>
               <img
@@ -160,9 +170,80 @@ const FeatureStory = () => {
               />
               <figcaption>{blog.deckCaption}</figcaption>
           </figure>
+          <h2>{blog.museumH2}</h2>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.howWorks}
+                alt={blog.howWorksAltText}
+              />
+              <figcaption>{blog.howWorksCaption}</figcaption>
+          </figure>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.dart}
+                alt={blog.dartAltText}
+              />
+              <figcaption>{blog.dartCaption}</figcaption>
+          </figure>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.cosco}
+                alt={blog.coscoAltText}
+              />
+              <figcaption>{blog.coscoCaption}</figcaption>
+          </figure>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.tugModels}
+                alt={blog.tugModelsAltText}
+              />
+              <figcaption>{blog.tugModelsCaption}</figcaption>
+          </figure>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.muleModel}
+                alt={blog.muleModelAltText}
+              />
+              <figcaption>{blog.muleModelCaption}</figcaption>
+          </figure>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.museumDisplay}
+                alt={blog.museumDisplayAltText}
+              />
+              <figcaption>{blog.museumDisplayCaption}</figcaption>
+          </figure>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.engineerDisplay}
+                alt={blog.engineerDisplayAltText}
+              />
+              <figcaption>{blog.engineerDisplayCaption}</figcaption>
+          </figure>
 
-
-
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.engineerDisplay2}
+                alt={blog.engineerDisplay2AltText}
+              />
+              <figcaption>{blog.engineerDisplay2Caption}</figcaption>
+          </figure>
+          <figure className="pov">
+              <img
+                className="no-right-click"
+                src={blog.captainsPov}
+                alt={blog.captainsPovAltText}
+              />
+              <figcaption>{blog.captainsPovCaption}</figcaption>
+          </figure>
 
 
 

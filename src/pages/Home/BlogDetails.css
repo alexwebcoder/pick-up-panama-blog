@@ -62,7 +62,7 @@
     margin-bottom: 0;
 }
 
-.blog-details figcaption, .metro-caption {
+.blog-details figcaption, .metro-caption, .video-caption {
     font-size: 1rem;
     font-weight: normal;
 }
@@ -256,6 +256,10 @@ p.this-article {
 
 .panama-canal .map {
     padding-top: calc(703/ 1108 * 100%);
+}
+
+.panama-canal .pov {
+    padding-top: calc(1920/ 7376 * 100%);
 }
 
 
