@@ -97,14 +97,6 @@ const FeatureStory = () => {
           </figure>
           <p>{blog.itTakesAround}</p>
           <p>{blog.shipIsThen}</p>
-          <div className="video-container">
-              <ReactPlayer className='youtube-video' url='<https://youtu.be/jzZgcLZgRYk?si=q0319PSQtFJSor59?rel=0>' 
-                controls
-                width={null}
-                height={null}
-              />
-            </div>
-            <p className="video-caption">{blog.mirafloresVideoCaption}</p>
           <p>{blog.culebraCut}</p>
           <p>{blog.shipGoesThrough}</p>
           <h2>{blog.droughH2}</h2>
@@ -123,14 +115,6 @@ const FeatureStory = () => {
           </figure>
           <p>{blog.theGatunLocks}</p>
           <p>{blog.pedroMiguel}</p>
-          <div className="video-container">
-              <ReactPlayer className='youtube-video' url='<https://youtu.be/SXVQt86F1A4?si=myIjvDci4Q89hv-f?rel=0>' 
-                controls
-                width={null}
-                height={null}
-              />
-            </div>
-            <p className="video-caption">{blog.pedroMiguelVideoCaption}</p>
           <h2>{blog.miraFloresH2}</h2>
           <figure>
               <img
@@ -230,6 +214,14 @@ const FeatureStory = () => {
           <figure>
               <img
                 className="no-right-click"
+                src={blog.museumDisplayShip}
+                alt={blog.museumDisplayShipAltText}
+              />
+              <figcaption>{blog.museumDisplayShipCaption}</figcaption>
+          </figure>
+          <figure>
+              <img
+                className="no-right-click"
                 src={blog.engineerDisplay}
                 alt={blog.engineerDisplayAltText}
               />
@@ -244,7 +236,7 @@ const FeatureStory = () => {
               />
               <figcaption>{blog.engineerDisplay2Caption}</figcaption>
           </figure>
-          <figure className="pov last-figure">
+          <figure className="pov">
               <img
                 className="no-right-click"
                 src={blog.captainsPov}
@@ -252,11 +244,42 @@ const FeatureStory = () => {
               />
               <figcaption>{blog.captainsPovCaption}</figcaption>
           </figure>
-
-
-
-
-
+          <h2>{blog.miraFloresVideoH2}</h2>
+          <div className="video-container">
+              <ReactPlayer className='youtube-video' url='<https://youtu.be/jzZgcLZgRYk?si=q0319PSQtFJSor59?rel=0>' 
+                controls
+                width={null}
+                height={null}
+              />
+            </div>
+            <p className="video-caption">{blog.mirafloresVideoCaption}</p>
+          <h2>{blog.bridgeAmerH2}</h2>
+          <div className="video-container">
+              <ReactPlayer className='youtube-video' url='<https://youtu.be/K-uD7izeIX8?si=HbcvJkFcI04EUVuV?rel=0>' 
+                controls
+                width={null}
+                height={null}
+              />
+            </div>
+            <p className="video-caption">{blog.bridgeAmericasCaption}</p>
+          <h2>{blog.pedroMiguelH2}</h2>
+          <div className="video-container">
+              <ReactPlayer className='youtube-video' url='<https://youtu.be/SXVQt86F1A4?si=myIjvDci4Q89hv-f?rel=0>' 
+                controls
+                width={null}
+                height={null}
+              />
+            </div>
+            <p className="video-caption">{blog.pedroMiguelVideoCaption}</p>
+           <h2>{blog.storyH2}</h2>
+            <div className="video-container">
+              <ReactPlayer className='youtube-video' url='<https://youtu.be/aXP88CTcfyg?si=NA5geAIYCs_iJeLU?rel=0>' 
+                controls
+                width={null}
+                height={null}
+              />
+            </div>
+            <p className="video-caption last-figure">{blog.storyVideoCaption}</p>
           <div className="button-parent">
             <button title="Things to do in El Cangrejo" onClick={goToElCangrejoStory}>&#60;</button>
             <button title="Is Panama safe?" onClick={goToSafetyStoryA}>&#62;</button>
