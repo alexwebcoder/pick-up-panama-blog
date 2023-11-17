@@ -647,7 +647,7 @@
       "coscoCaption": "A model of a Cosco ship",
       "tugModels": "/images/canal/panama-canal-tugboat-models.JPG",
       "tugModelsAltText": "tugboat models",
-      "tugModelsCaption": "tugboat models",
+      "tugModelsCaption": "Tugboat models",
       "muleModel": "/images/canal/panama-canal-mule-model.JPG",
       "muleModelAltText": "a model of a mule",
       "muleModelCaption": "A model of a mule",
@@ -666,7 +666,8 @@
       "captainsPov": "/images/canal/captains-pov-panama-canal.JPG",
       "captainsPovAltText": "the ship captain's point of view when going through the panama canal",
       "captainsPovCaption": "The ship captain's point of view when going through the Panama Canal",
-      "pedroMiguelVideoCaption": "A ship goes through the Pedro Miguel Locks at the Panama Canal"
+      "pedroMiguelVideoCaption": "A ship goes through the Pedro Miguel Locks at the Panama Canal",
+      "mirafloresVideoCaption": "A ship goes through the Miraflores Locks at the Panama Canal"
     }
   ]
 }

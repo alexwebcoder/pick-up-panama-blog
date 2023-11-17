@@ -97,6 +97,14 @@ const FeatureStory = () => {
           </figure>
           <p>{blog.itTakesAround}</p>
           <p>{blog.shipIsThen}</p>
+          <div className="video-container">
+              <ReactPlayer className='youtube-video' url='<https://youtu.be/jzZgcLZgRYk?si=q0319PSQtFJSor59?rel=0>' 
+                controls
+                width={null}
+                height={null}
+              />
+            </div>
+            <p className="video-caption">{blog.mirafloresVideoCaption}</p>
           <p>{blog.culebraCut}</p>
           <p>{blog.shipGoesThrough}</p>
           <h2>{blog.droughH2}</h2>
@@ -236,7 +244,7 @@ const FeatureStory = () => {
               />
               <figcaption>{blog.engineerDisplay2Caption}</figcaption>
           </figure>
-          <figure className="pov">
+          <figure className="pov last-figure">
               <img
                 className="no-right-click"
                 src={blog.captainsPov}
