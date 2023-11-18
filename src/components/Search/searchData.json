@@ -195,7 +195,7 @@
       "id": 38
     },
     {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama/#reys",
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "chivas",
       "id": 39
     },
@@ -428,5 +428,50 @@
       "link": "http://localhost:3000/blogs/things-to-do-in-el-cangrejo",
       "keywords": "parks in el cangrejo",
       "id": 85
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-visit-the-panama-canal",
+      "keywords": "how do i visit the panama canal?",
+      "id": 86
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-visit-the-panama-canal",
+      "keywords": "why is the panama canal important?",
+      "id": 87
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-visit-the-panama-canal",
+      "keywords": "how does the panama canal work?",
+      "id": 88
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-visit-the-panama-canal",
+      "keywords": "is there a drought in panama?",
+      "id": 89
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-visit-the-panama-canal",
+      "keywords": "Miraflores Visitor Center",
+      "id": 90
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-visit-the-panama-canal",
+      "keywords": "panama canal locks",
+      "id": 91
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-visit-the-panama-canal",
+      "keywords": "miraflores locks",
+      "id": 92
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-visit-the-panama-canal",
+      "keywords": "pedro miguel locks",
+      "id": 93
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-visit-the-panama-canal",
+      "keywords": "gatun locks",
+      "id": 94
     }
   ]

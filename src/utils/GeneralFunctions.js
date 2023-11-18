@@ -22,11 +22,11 @@ export const Capitalize = () => {
 
     if (document.title === "Things to do in el cangrejo") {
         document.title = "Things to do in El Cangrejo"
-        document.getElementsByTagName('meta')["description"].content = "Discover the best restaurants and activities in El Cangrejo and learn why you should visit.";
+        document.getElementsByTagName('meta')["description"].content = "Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting";
     }
 
     if (document.title === "Pick Up Panama | Learn About Panama") {
-        document.getElementsByTagName('meta')["description"].content = "Pick Up Panama benefits you by answering your questions about Panama. It is a resource of visiting information, Panamanian culture and lifestyle.";
+        document.getElementsByTagName('meta')["description"].content = "Pick Up Panama helps solve some of the challenges that come with visiting Panama. It is a resource of visiting information, Panamanian culture and lifestyle.";
     }
 
     if (document.title === "About Pick Up Panama") {
