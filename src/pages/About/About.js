@@ -37,7 +37,7 @@ const About = () => {
                 <figure className="panel-4">
                     <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/about/ship-in-the-harbor.JPG'} alt='A ship in the Panama harbor'/>
                 </figure>
-                <p>The lessons we learned while traveling become more clear when we return home.</p>
+                <p>Learning about foreign culture can prepare us to interact better with others.</p>
                 <figure className="panel-5">
                     <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/about/a-sea-anemone.JPG'} alt='A sea anemone'/>
                 </figure>

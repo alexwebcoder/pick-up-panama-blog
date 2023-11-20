@@ -190,11 +190,11 @@
 }
 
 /* Wider screens */
-@media all and (min-width: 1450px) { 
+@media all and (min-width: 1450px) {
     .comic {
-      width: 47%;
-    }
-  }
+        width: 47%;
+   }
+}
 
 @media all and (min-width: 1350px) {
     .comic .panel-3a {
@@ -213,11 +213,10 @@
 
     .comic p {
         font-size: .875rem;
-        top: 1px;
    }
-
-   .comic .panel-1 {
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
-}
+   
+    .comic .panel-1 {
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+   }
 }
