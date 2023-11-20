@@ -218,7 +218,7 @@ p.this-article {
     padding-top: calc(3306 / 4896 * 100%);
 }
 
-.comfy-bus, .coronado-stop, .taxi-truck, .mini-van, .inside-van  {
+.comfy-bus, .coronado-stop, .taxi-truck, .mini-van, .inside-van, .hwy  {
     padding-top: calc(3024 / 4032 * 100%);
 }
 

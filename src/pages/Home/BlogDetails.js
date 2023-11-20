@@ -217,6 +217,14 @@ const BlogDetails = () => {
             </div>
             <h1 className="centered post-title">{blog.title}</h1>
             <p className="body intro">{blog.intro}</p>
+            <figure className="hwy">
+                <img
+                  className="no-right-click"
+                  src={blog.panAm}
+                  alt={blog.panAmAltText}
+                />
+                <figcaption>{blog.panAmCaption}</figcaption>
+            </figure>
             <p>{blog.guide}</p>
             <h2>{blog.h2Tocumen}</h2>
             <p>{blog.iveUsed}</p>
@@ -356,8 +364,8 @@ const BlogDetails = () => {
             <p>{blog.safer}</p>
             <p>{blog.uberCanBe}</p>
             <p>{blog.surgePrice}</p>
-            <p>{blog.itsAGoodIdea}</p>
             <p>{blog.someDrivers}</p>
+            <p>{blog.itsAGoodIdea}</p>
             <p>{blog.documentEverything}</p>
             <p>{blog.ifAny}</p>
             <h3>{blog.h3PanamaBuses}</h3>
