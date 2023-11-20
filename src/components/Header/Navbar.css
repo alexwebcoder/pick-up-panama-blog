@@ -242,7 +242,7 @@
   z-index: 1;
   top: 142px;
   left: 0;
-  background-color: #132257;
+  background-color: #000000;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -272,7 +272,7 @@
   display: flex;
   border-right: 1px solid #a1a1a1;
   border-bottom: 1px solid #a1a1a1;
-  width: 189px;
+  width: 100%;
 }
 
 .sidenav.active a {
@@ -317,7 +317,7 @@
 }
 
 .header.header.is-sticky .sidenav {
-  top: 118px;
+  top: 114px;
 }
 
 .header.header.is-sticky .definition {

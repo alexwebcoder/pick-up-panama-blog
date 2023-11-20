@@ -86,8 +86,8 @@ const BlogDetails = () => {
               <h3>{blog.unsurePeople}</h3>
               <p>{blog.bodyLanguage}</p>
               <p>{blog.ifAble}</p>
-              <p>{blog.goingAroundCorners}</p>
               <p>{blog.muggersMoveIn}</p>
+              <p>{blog.goingAroundCorners}</p>
               <p>{blog.takeNote}</p>
               <p>{blog.whenYouEnter}</p>
               <h3>{blog.h3wealth}</h3>
@@ -178,6 +178,7 @@ const BlogDetails = () => {
                 <li>{blog.avoidWalking}</li>
                 <li>{blog.clubbing}</li>
                 <li>{blog.parkWellLit}</li>
+                <li>{blog.takeUber}</li>
               </ul>
               <p>{blog.overallPanamaIs}</p>
               <p>{blog.mostTips}</p>

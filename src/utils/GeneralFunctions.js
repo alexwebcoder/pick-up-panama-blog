@@ -7,12 +7,12 @@ export const TabTitle = (newTitle) => {
 export const Capitalize = () => {
 
     if (document.title === "How Do I Visit the Panama Canal?") {
-        document.getElementsByTagName('meta')["description"].content = "Follow this guide and have a great visit to the Panama Canal.";
+        document.getElementsByTagName('meta')["description"].content = "Understand the importance of the Panama Canal and the best ways to observe it.";
     }
   
     if (document.title === "Is panama safe") {
         document.title = "Is Panama Safe?";
-        document.getElementsByTagName('meta')["description"].content = "Use the tips in this guide to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more.";
+        document.getElementsByTagName('meta')["description"].content = "Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more.";
       }
     
     if (document.title === "How do i get around in panama") {
@@ -38,6 +38,6 @@ export const Capitalize = () => {
     }
 
     if (document.title === "Panama News Feed") {
-        document.getElementsByTagName('meta')["description"].content = "Read the newsfeed to stay up to date on the latest news from Panama";
+        document.getElementsByTagName('meta')["description"].content = "Read the newsfeed to stay up to date on the latest news from Panama.";
     }
 }

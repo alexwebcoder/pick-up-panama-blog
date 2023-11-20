@@ -293,9 +293,9 @@ p.this-article {
    .button-parent {
     position: fixed;
     display: flex;
-    width: 100%;
+    width: 99.5%;
     top: 50%;
-    left: 0;
+    left: .5%;
     bottom: unset;
 }
 }
