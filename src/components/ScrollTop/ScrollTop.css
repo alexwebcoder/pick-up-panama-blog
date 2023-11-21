@@ -1,15 +1,15 @@
-.top-to-bottom{
+.top-to-bottom {
     position: relative;
   }
 
-  .icon-position{
+  .icon-position {
     position: fixed;
     bottom: 40px;
     right: 5px;
     z-index: 20;
   }
 
-  .icon-style{
+  .icon-style {
     background-color: #1493f3;
     border: 2px solid #fff;
     border-radius: 50%;

@@ -26,6 +26,13 @@ function Search({ placeholder, data }) {
     setWordEntered("");
   };
 
+  document.addEventListener('keydown', evt => {
+    if (evt.key === 'Escape' && filteredData.length > 0) {
+      clearInput();
+    }
+});
+
+
   return (
     <div className="search-wrap">
       <div className="search">
@@ -36,7 +43,7 @@ function Search({ placeholder, data }) {
           onChange={handleFilter}
           className="search-term"
         />
-        <div className="search-icon">
+        <div className="search-icon" tabIndex={0}>
           {filteredData.length === 0 ? (
             <button type="submit" id="search-icon">
         <i className="fa fa-search"></i>

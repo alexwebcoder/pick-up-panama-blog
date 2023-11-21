@@ -227,7 +227,6 @@ const FeatureStory = () => {
               />
               <figcaption>{blog.engineerDisplayCaption}</figcaption>
           </figure>
-
           <figure>
               <img
                 className="no-right-click"
@@ -243,6 +242,14 @@ const FeatureStory = () => {
                 alt={blog.captainsPovAltText}
               />
               <figcaption>{blog.captainsPovCaption}</figcaption>
+          </figure>
+          <figure>
+              <img
+                className="no-right-click"
+                src={blog.overheadCanal}
+                alt={blog.overheadCanalAltText}
+              />
+              <figcaption>{blog.overheadCanalCaption}</figcaption>
           </figure>
           <h2>{blog.miraFloresVideoH2}</h2>
           <div className="video-container">

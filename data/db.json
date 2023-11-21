@@ -669,6 +669,9 @@
       "captainsPov": "/images/canal/captains-pov-panama-canal.JPG",
       "captainsPovAltText": "the ship captain's point of view when going through the panama canal",
       "captainsPovCaption": "The ship captain's point of view when going through the Panama Canal",
+      "overheadCanal": "/images/canal/overhead-view-panama-canal.JPG",
+      "overheadCanalAltText": "a display showing an overhead view of the panama canal",
+      "overheadCanalCaption": "A display showing an overhead view of the Panama Canal",
       "pedroMiguelVideoCaption": "A ship goes through the Pedro Miguel Locks at the Panama Canal",
       "mirafloresVideoCaption": "A ship goes through the Miraflores Locks at the Panama Canal",
       "bridgeAmericasCaption": "A view of the Panama Canal from the Bridge of the Americas",
@@ -676,8 +679,7 @@
       "miraFloresVideoH2": "Video of a ship passing through the Miraflores Locks",
       "bridgeAmerH2": "Video of the Panama Canal from the Bridge of the Americas",
       "pedroMiguelH2": "Video of a ship going through the Pedro Miguel Locks",
-      "storyH2": "Video played in the museum theater"
-
+      "storyH2": "Video that was played in the museum theater (used with permission)"
     }
   ]
 }
