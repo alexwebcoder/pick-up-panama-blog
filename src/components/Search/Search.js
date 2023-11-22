@@ -23,7 +23,14 @@ function Search({ placeholder, data }) {
   const clearInput = () => {
     setFilteredData([]);
     setWordEntered("");
+    console.log('fired')
   };
+
+  const handleKeyPress = (event) => {
+    if (event.keyCode === 13 || event.key === 'Enter' || event.keycode === 32 || event.code === 'Space' || event.key === 'Escape'){
+      clearInput();
+    }
+  }
 
 
   return (
@@ -42,7 +49,7 @@ function Search({ placeholder, data }) {
         <i className="fa fa-search"></i>
       </button>
           ) : (
-            <VscChromeClose id="clearBtn" tabIndex={0} onClick={clearInput} />
+            <VscChromeClose id="clearBtn" tabIndex={0} onClick={clearInput} onKeyDown={handleKeyPress}/>
           )}
         </div>
       </div>
