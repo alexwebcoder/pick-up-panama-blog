@@ -17,7 +17,6 @@ const ContactUsForm = () => {
   const USER_ID = "RpfI2tiLJvbu5BKwH";
 
   const checkForm = (e) => {
-    console.log("eat up");
     let canSubmit2 = false;
     const eJS_email2 = document.getElementById("form-input-control-email-address-2");
     const eJS_sendForm2 = document.getElementById("send-form-2");

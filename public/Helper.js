@@ -77,7 +77,6 @@ const toggleHamburgerEnter = (event) => {
         toggleMenu()
         hamburger.classList.toggle('change')
     }
-
 }
 
 const toggleHamburgerClick = () => {

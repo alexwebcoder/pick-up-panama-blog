@@ -2,7 +2,6 @@ import  { useState } from "react";
 import "./Search.css";
 import { VscChromeClose } from "react-icons/vsc";
 
-
 function Search({ placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
@@ -26,12 +25,6 @@ function Search({ placeholder, data }) {
     setWordEntered("");
   };
 
-  document.addEventListener('keydown', evt => {
-    if (evt.key === 'Escape' && filteredData.length > 0) {
-      clearInput();
-    }
-});
-
 
   return (
     <div className="search-wrap">
@@ -43,13 +36,13 @@ function Search({ placeholder, data }) {
           onChange={handleFilter}
           className="search-term"
         />
-        <div className="search-icon" tabIndex={0}>
+        <div className="search-icon" >
           {filteredData.length === 0 ? (
             <button type="submit" id="search-icon">
         <i className="fa fa-search"></i>
       </button>
           ) : (
-            <VscChromeClose id="clearBtn" onClick={clearInput} />
+            <VscChromeClose id="clearBtn" tabIndex={0} onClick={clearInput} />
           )}
         </div>
       </div>
