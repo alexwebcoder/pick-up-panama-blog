@@ -1,8 +1,23 @@
-import  { useState } from "react";
+import  { useState, useEffect, useRef } from "react";
 import "./Search.css";
 import { VscChromeClose } from "react-icons/vsc";
 
 function Search({ placeholder, data }) {
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if(outerRef.current && !outerRef.current.contains(e.target)) {
+        clearInput()
+      }
+    }
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+
+    }
+  }, [])
+
+const outerRef = useRef();
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
 
@@ -23,7 +38,7 @@ function Search({ placeholder, data }) {
   const clearInput = () => {
     setFilteredData([]);
     setWordEntered("");
-    console.log('fired')
+    console.log('clearInput fired')
   };
 
   const handleKeyPress = (event) => {
@@ -31,8 +46,7 @@ function Search({ placeholder, data }) {
       clearInput();
     }
   }
-
-
+  
   return (
     <div className="search-wrap">
       <div className="search">
@@ -42,7 +56,7 @@ function Search({ placeholder, data }) {
           value={wordEntered}
           onChange={handleFilter}
           className="search-term"
-        />
+          />
         <div className="search-icon" >
           {filteredData.length === 0 ? (
             <button type="submit" id="search-icon">
@@ -50,11 +64,11 @@ function Search({ placeholder, data }) {
       </button>
           ) : (
             <VscChromeClose id="clearBtn" tabIndex={0} onClick={clearInput} onKeyDown={handleKeyPress}/>
-          )}
+            )}
         </div>
       </div>
       {filteredData.length != 0 && (
-        <div className="dataResult">
+        <div className="dataResult"   ref={outerRef}>
           {filteredData.slice(0, 15).map((value, key) => {
             return (
               <a href={value.link} className="dataItem">
@@ -67,5 +81,6 @@ function Search({ placeholder, data }) {
     </div>
   );
 }
+
 
 export default Search;
