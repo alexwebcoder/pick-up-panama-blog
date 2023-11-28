@@ -68,7 +68,6 @@ function toggleMenu() {
     } else {
         sidenav.classList.add(`active`);
     }
-
 }
 
 // changes menu into an x
@@ -148,7 +147,6 @@ window.addEventListener('scroll', () => {
     } else {
         header.classList.remove(toggleClass);
     }
-
 });
 
 
@@ -157,39 +155,31 @@ let images = document.getElementsByClassName('no-right-click');
 //prevents right click of image
 
 for (const image of images) {
-
     image.addEventListener('contextmenu', (e) => {
-
         e.preventDefault();
         image.draggable = false;
     });
-
 }
 
 const pseudo = document.querySelector('.top-to-bottom');
 
 const scrollUp = (event) => {
     if (event.keycode === 13 || event.key === 'Enter' || event.keycode === 32 || event.code === 'Space') {
-
         window.scrollTo({
             top: 0,
             behavior: 'smooth',
         })
-
     }
-
 }
 
 pseudo.addEventListener('keydown', scrollUp, false);
 
 
 window.addEventListener('scroll', () => {
-
     if (window.scrollY > 400) {
         pseudo.style.display = "block";
     } else {
         pseudo.style.display = "none";
-
     }
 })
 

@@ -25,7 +25,6 @@ app.get('/', (req, res) => {
 })
 
 const server = app.listen("4000", () => {
-    console.log('App is Listenting');
 });
 
 export default server;

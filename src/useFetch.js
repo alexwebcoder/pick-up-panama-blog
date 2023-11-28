@@ -18,7 +18,7 @@ const useFetch = (url) => {
         fetch(url, {signal: abortControl.signal })
         //if there is an error, server will send an error back
           .then(res => {
-            console.log(res); // this is the response object
+            // console.log(res); // this is the response object
             if(!res.ok) {
               //then we throw a user defined error, execution stops in the function and control goes to the first catch block
               throw Error('could not fetch data for that resource');
