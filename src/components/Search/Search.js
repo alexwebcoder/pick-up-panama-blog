@@ -11,13 +11,13 @@ function Search({ placeholder, data }) {
         clearInput()
       }
     }
-
+    
     document.addEventListener('click', handleClickOutside);
     return () => {
       document.removeEventListener('click', handleClickOutside);
     }
   }, [])
-
+  
   useEffect(() => {
     const handleEscKey = e => {
       if (e.key === 'Escape' && outerRef.current && !outerRef.current.contains(e.target)) {
@@ -29,29 +29,28 @@ function Search({ placeholder, data }) {
       document.removeEventListener('keydown', handleEscKey)
     }
   }, [])
-
-const outerRef = useRef();
+  
+  const outerRef = useRef();
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
-
+  
   const handleFilter = (event) => {
     const searchWord = event.target.value;
     setWordEntered(searchWord);
     const newFilter = data.filter((value) => {
       return value.keywords.toLowerCase().includes(searchWord.toLowerCase());
     });
-
+    
     if (searchWord === "") {
       setFilteredData([]);
     } else {
       setFilteredData(newFilter);
     }
   };
-
+  
   const clearInput = () => {
     setFilteredData([]);
     setWordEntered("");
-    console.log('clearInput fired');
   };
 
   const handleKeyPress = (event) => {
