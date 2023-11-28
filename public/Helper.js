@@ -26,7 +26,7 @@ function eJS_validateEmail(email) {
 
 function eJS_can_submit() {
     //check the required field
-
+    
     let email = eJS_email.value.trim();
     if (email.length > 4) {
         if (eJS_validateEmail(email)) {
@@ -34,7 +34,7 @@ function eJS_can_submit() {
             eJS_sendForm.disabled = false;
             canSubmit = true;
             alertComment.style.visibility = "hidden";
-
+            
         } else {
             eJS_disabled_submit();
         }
@@ -53,10 +53,10 @@ function eJS_disabled_submit() {
 
 const hideError = () => {
     alertComment.style.visibility = "hidden";
-
 }
 
 document.addEventListener('click', hideError);
+document.removeEventListener('click', hideError);
 eJS_email.addEventListener('blur', hideError);
 
 

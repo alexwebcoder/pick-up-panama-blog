@@ -74,10 +74,12 @@ const ContactUsForm = () => {
     const hideError2 = () => {
       alertComment2.style.visibility = "hidden";
     };
+
     eJS_email2.addEventListener("blur", hideError2);
     eJS_message.addEventListener("blur", hideError2);
     eJS_name.addEventListener("blur", hideError2);
     document.addEventListener("click", hideError2);
+    document.removeEventListener("click", hideError2);
   };
 
   const handleOnSubmit = (e) => {
