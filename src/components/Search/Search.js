@@ -8,7 +8,7 @@ function Search({ placeholder, data }) {
   useEffect(() => {
     const handleClickOutside = (e) => {
       if(outerRef.current && !outerRef.current.contains(e.target)) {
-        clearInput()
+        clearInput();
       }
     }
     
@@ -16,19 +16,19 @@ function Search({ placeholder, data }) {
     return () => {
       document.removeEventListener('click', handleClickOutside);
     }
-  }, [])
+  }, []);
   
   useEffect(() => {
     const handleEscKey = e => {
       if (e.key === 'Escape' && outerRef.current && !outerRef.current.contains(e.target)) {
-        clearInput()
+        clearInput();
       }
     }
-    document.addEventListener('keydown', handleEscKey)
+    document.addEventListener('keydown', handleEscKey);
     return () => {
-      document.removeEventListener('keydown', handleEscKey)
+      document.removeEventListener('keydown', handleEscKey);
     }
-  }, [])
+  }, []);
   
   const outerRef = useRef();
   const [filteredData, setFilteredData] = useState([]);
