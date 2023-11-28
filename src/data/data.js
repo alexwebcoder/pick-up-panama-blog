@@ -103,6 +103,10 @@
       title: "Laurentino Cortizo is the current president of Panama.",
       id: 26
     },
+    {
+      title: "Over 2 million people visit Panama every year.",
+      id: 27
+    },
   ];
 
   export default facts;
