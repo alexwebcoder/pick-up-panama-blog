@@ -3,6 +3,7 @@ import "./Search.css";
 import { VscChromeClose } from "react-icons/vsc";
 
 function Search({ placeholder, data }) {
+ //detects the user clicking outside of the search results
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -10,10 +11,22 @@ function Search({ placeholder, data }) {
         clearInput()
       }
     }
+
     document.addEventListener('click', handleClickOutside);
     return () => {
       document.removeEventListener('click', handleClickOutside);
+    }
+  }, [])
 
+  useEffect(() => {
+    const handleEscKey = e => {
+      if (e.key === 'Escape' && outerRef.current && !outerRef.current.contains(e.target)) {
+        clearInput()
+      }
+    }
+    document.addEventListener('keydown', handleEscKey)
+    return () => {
+      document.removeEventListener('keydown', handleEscKey)
     }
   }, [])
 
@@ -38,7 +51,7 @@ const outerRef = useRef();
   const clearInput = () => {
     setFilteredData([]);
     setWordEntered("");
-    console.log('clearInput fired')
+    console.log('clearInput fired');
   };
 
   const handleKeyPress = (event) => {
@@ -68,11 +81,11 @@ const outerRef = useRef();
         </div>
       </div>
       {filteredData.length != 0 && (
-        <div className="dataResult"   ref={outerRef}>
-          {filteredData.slice(0, 15).map((value, key) => {
+        <div className="dataResult" ref={outerRef}>
+          {filteredData.slice(0, 15).map((value) => {
             return (
-              <a href={value.link} className="dataItem">
-                <p>{value.keywords} </p>
+              <a href={value.link}  key={value.id} className="dataItem">
+                <p>{value.keywords}</p>
               </a>
             );
           })}

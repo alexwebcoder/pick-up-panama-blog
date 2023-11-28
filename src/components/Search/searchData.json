@@ -191,11 +191,6 @@
     },
     {
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
-      "keywords": "what are the diablos rojos buses?",
-      "id": 38
-    },
-    {
-      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "chivas",
       "id": 39
     },
@@ -478,5 +473,10 @@
       "link": "http://localhost:3000/blogs/is-panama-safe",
       "keywords": "safety",
       "id": 95
+    },
+    {
+      "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
+      "keywords": "what are the diablos rojos buses?",
+      "id": 96
     }
   ]
