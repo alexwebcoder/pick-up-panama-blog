@@ -106,10 +106,10 @@ const ContactUsForm = () => {
       <figure className="contact-hero">
         <img
           className="no-right-click"
-          src={process.env.PUBLIC_URL + "/images/contact/coronado-beach-panama.JPG"}
-          alt="Playa Coronado Panama"
+          src={process.env.PUBLIC_URL + "/images/contact/parque-natural-metropolitano.JPG"}
+          alt="the metropolitan natural park in panama"
         />
-        <figcaption>Playa Coronado Panama</figcaption>
+        <figcaption>The Metropolitan Natural Park in Panama</figcaption>
       </figure>
       <div className="line-divider centered wide">
         <h1 className="diamond-text-box">

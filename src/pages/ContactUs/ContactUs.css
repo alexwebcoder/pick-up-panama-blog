@@ -1,5 +1,5 @@
 .contact-us-page {
-    margin-top: 92px;
+    margin-top: 142px;
 }
 
 .contact-us-page h1 {
@@ -88,7 +88,7 @@
 .contact-hero {
     width: 100%;
     border-radius: 0;
-    padding-top: calc(1625 / 6414 * 100%);
+    padding-top: calc(1920 / 6784 * 100%);
     position: relative;
 }
 
@@ -116,6 +116,9 @@
 
 /* Desktop menu */
 @media all and (min-width: 960px) {
+    .contact-us-page {
+        margin-top: 92px
+    }
     .contact-us-form-container {
         margin-bottom: 63px;
    }
