@@ -107,9 +107,9 @@ const ContactUsForm = () => {
         <img
           className="no-right-click"
           src={process.env.PUBLIC_URL + "/images/contact/parque-natural-metropolitano.JPG"}
-          alt="the metropolitan natural park in panama"
+          alt="view of panama city from the metropolitan natural park in panama"
         />
-        <figcaption>The Metropolitan Natural Park in Panama</figcaption>
+        <figcaption>View of Panama City from the Metropolitan Natural Park in Panama</figcaption>
       </figure>
       <div className="line-divider centered wide">
         <h1 className="diamond-text-box">
