@@ -15,7 +15,7 @@ const BlogList = ({ blogs, title }) => {
           <article key={blog.id}>
               <Link to={`/blogs/${blog.id}`} onClick={handleArticleChange}>
               <figure className="card-img">
-                        <img className="no-right-click" src={blog.image} alt={blog.alt}/>
+                        <img className="no-right-click" src={blog.thumbnail} alt={blog.alt}/>
               </figure>
                 <div className="blog-article-content">
                   <h3>{ blog.title }</h3>
