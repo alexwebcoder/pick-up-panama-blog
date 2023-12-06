@@ -3,7 +3,6 @@ import "./Search.css";
 import { VscChromeClose } from "react-icons/vsc";
 
 function Search({ placeholder, data }) {
- //detects the user clicking outside of the search results
 
   useEffect(() => {
     const handleClickOutside = (e) => {

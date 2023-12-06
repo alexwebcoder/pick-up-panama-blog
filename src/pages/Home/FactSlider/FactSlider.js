@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const FactSlider = () => {
 
-  const [facts, setFacts] = useState(data);
+  const [facts] = useState(data);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

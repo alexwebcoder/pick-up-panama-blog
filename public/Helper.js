@@ -1,8 +1,6 @@
-//variable for hamburger toggle, x and sidenav
 const toggle = document.querySelector('.toggle-anchor');
 const sidenav = document.querySelector('.sidenav');
 const hamburger = document.querySelector('.toggle-anchor');
-//variables for opt in form
 const eJS_email = document.getElementById('form-input-control-email');
 const eJS_sendForm = document.getElementById('send-form');
 const alertComment = document.getElementById('alert-comment');
@@ -17,7 +15,6 @@ function eJS_set_event_listeners() {
 
 eJS_set_event_listeners();
 
-// validate Email Address
 
 function eJS_validateEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -25,7 +22,6 @@ function eJS_validateEmail(email) {
 }
 
 function eJS_can_submit() {
-    //check the required field
     
     let email = eJS_email.value.trim();
     if (email.length > 4) {
@@ -60,7 +56,6 @@ document.removeEventListener('click', hideError);
 eJS_email.addEventListener('blur', hideError);
 
 
-//opens the sidenav
 function toggleMenu() {
     if (sidenav.classList.contains('active')) {
         sidenav.classList.remove('active');
@@ -70,7 +65,6 @@ function toggleMenu() {
     }
 }
 
-// changes menu into an x
 const toggleHamburgerEnter = (event) => {
     if (event.keycode === 13 || event.key === 'Enter' || event.keycode === 32 || event.code === 'Space') {
         toggleMenu()
@@ -82,7 +76,6 @@ const toggleHamburgerClick = () => {
     hamburger.classList.toggle('change')
 }
 
-//Event Listeners
 
 document.addEventListener('keydown', evt => {
     if (evt.key === 'Escape' && sidenav.classList.contains('active')) {
@@ -95,7 +88,6 @@ hamburger.addEventListener('click', toggleHamburgerClick, false);
 toggle.addEventListener('click', toggleMenu, false);
 
 
-//when user scrolls page, this function executes
 
 window.onscroll = function() {
     progressBar();
@@ -135,7 +127,6 @@ footerNavLinks.forEach(footerNavLink => {
     })
 })
 
-// for the sticky header animation
 
 const header = document.querySelector('.header');
 const toggleClass = 'is-sticky';
@@ -152,7 +143,6 @@ window.addEventListener('scroll', () => {
 
 let images = document.getElementsByClassName('no-right-click');
 
-//prevents right click of image
 
 for (const image of images) {
     image.addEventListener('contextmenu', (e) => {
@@ -184,7 +174,6 @@ window.addEventListener('scroll', () => {
 })
 
 
-//makes scroll bar go to top before reloading
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }

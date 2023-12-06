@@ -17,7 +17,6 @@ const Home = () => {
           <Mission />
           <Hero />
           <Featured />
-          {/* This get rendered only if we have a value for error(conditionally) */}
           { error && <div>{ error }</div>}
           { isPending && <div>Loading...</div> }
           {data && <BlogList blogs={data} title="All Blogs!" />}

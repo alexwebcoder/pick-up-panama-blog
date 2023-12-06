@@ -19,7 +19,7 @@ const Featured = () => {
                 <div className="feature-wrapper">
                 <div className="feature-photo-container">
                     <figure>
-                        <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/home/panama-canal-ship.JPG'} alt="the Panama Canal in 2018"/>
+                        <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/home/th-panama-canal-ship.JPG'} alt="the Panama Canal in 2018"/>
                     </figure>
                 </div>
                     <article className="blog-article-content">
