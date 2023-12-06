@@ -8,10 +8,10 @@ const Footer = () => {
         <footer  id="footer-nav" className="footer centered">
             <ContactForm />
             <nav className="icons">
-                <a href="/"><i className="fab fa-facebook"></i></a>
-                <a href="/"><i className="fab fa-linkedin"></i></a>
-                <a href="/"><i className="fab fa-instagram"></i></a>
-                <a href="/"><i className="fab fa-twitter"></i></a>     
+                <a href="/" aria-label="facebook"><i className="fab fa-facebook"></i></a>
+                <a href="/" aria-label="linkedin"><i className="fab fa-linkedin"></i></a>
+                <a href="/" aria-label="instagram"><i className="fab fa-instagram"></i></a>
+                <a href="/" aria-label="twitter"><i className="fab fa-twitter"></i></a>
             </nav>
             <ul className="menu">
                 <li className="item caps home"><Link to ="/">Home</Link></li>

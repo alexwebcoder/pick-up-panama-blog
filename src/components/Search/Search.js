@@ -71,9 +71,9 @@ function Search({ placeholder, data }) {
           />
         <div className="search-icon" >
           {filteredData.length === 0 ? (
-            <button type="submit" id="search-icon">
-        <i className="fa fa-search"></i>
-      </button>
+          <button type="submit" id="search-icon" aria-label="search-icon">
+           <i className="fa fa-search"></i>
+        </button>
           ) : (
             <VscChromeClose id="clearBtn" tabIndex={0} onClick={clearInput} onKeyDown={handleKeyPress}/>
             )}

@@ -32,6 +32,10 @@
   border-bottom: 1px solid #a1a1a1;
 }
 
+.footer li a {
+  padding: 13px 5px;
+}
+
 .footer .item:hover:after {
   transform-origin: bottom left;
   transform: scaleX(1);

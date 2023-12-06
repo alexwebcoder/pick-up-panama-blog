@@ -54,10 +54,10 @@ const FactSlider = () => {
                   </article>
                 );
               })}
-              <button className="prev" onClick={() => setIndex(index - 1)}>
+              <button className="prev" onClick={() => setIndex(index - 1)} aria-label="prev">
                 <FiChevronLeft />
               </button>
-              <button className="next" onClick={() => setIndex(index + 1)}>
+              <button className="next" onClick={() => setIndex(index + 1)} aria-label="next">
                 <FiChevronRight />
               </button>
             </div>
