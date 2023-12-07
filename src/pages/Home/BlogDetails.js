@@ -55,6 +55,7 @@ const BlogDetails = () => {
             <p className="this-article">{blog.thisArticle}</p>
             <figure className="cops-at-fruitstand">
               <img
+                fetchpriority="high"
                 className="no-right-click"
                 src={blog.copsAtFruitStand}
                 alt={blog.fruitStandCopAltText}

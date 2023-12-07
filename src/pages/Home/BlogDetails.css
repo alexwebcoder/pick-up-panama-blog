@@ -162,19 +162,15 @@ p.this-article {
 /* saftey page images */
 
 .cops-at-fruitstand {
-    padding-top: calc(3050 / 3024 * 100%);
+    padding-top: calc(1180 / 1170 * 100%);
 }
 
 .bank-police {
-    padding-top: calc(2265 / 3024 * 100%);
+    padding-top: calc(878 / 1170 * 100%);
 }
 
-.casco-tourist, .casco-police, .colon-plate, .casco-petty-crime, .market-police  {
-    padding-top: calc(2752 / 4896 * 100%);
-}
-
-.near-casco {
-    padding-top: calc(720 / 1280 * 100%);
+.casco-tourist, .casco-police, .colon-plate, .casco-petty-crime, .market-police, .near-casco  {
+    padding-top: calc(658 / 1170 * 100%);
 }
 
 .video-container {
