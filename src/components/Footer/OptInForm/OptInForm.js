@@ -28,7 +28,7 @@ const ContactForm = () => {
     <>
        <div className="line-divider centered wide"> 
         </div>
-      <div className='cta'><h3>Subscribe to be the first to learn more about Panama.</h3></div>
+      <div className='cta'><p>Subscribe to be the first to learn more about Panama.</p></div>
       <div className='form-container'>
           <Form name='form' onSubmit={handleOnSubmit}>
               <Form.Field

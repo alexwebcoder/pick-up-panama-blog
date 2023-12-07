@@ -128,7 +128,7 @@
   line-height: 1.6;
 }
 
-.cta h3 {
+.cta p {
   letter-spacing: .03rem;
   font-size: 1.2rem;
   font-weight: 500;
@@ -188,7 +188,7 @@
       top: 62px;
  }
 
-  .cta h3 {
+  .cta p {
       width: auto;
  }
 
