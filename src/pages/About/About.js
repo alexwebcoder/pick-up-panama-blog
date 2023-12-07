@@ -9,7 +9,7 @@ const About = () => {
     return(
         <main className="about-page">
             <figure className="about-hero">
-                <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/about/coronado-panama.JPG'} alt="villa mayte"/>
+                <img className="no-right-click" fetchpriority="high" src={process.env.PUBLIC_URL + '/images/about/coronado-panama.JPG'} alt="villa mayte"/>
                 <figcaption className="fig-caption">Villa Mayte Vacation property in Coronado Panama</figcaption>
             </figure>
             <div className="line-divider centered wide">

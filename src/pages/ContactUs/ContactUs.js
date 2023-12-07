@@ -105,6 +105,7 @@ const ContactUsForm = () => {
     <main className="margin contact-us-page">
       <figure className="contact-hero">
         <img
+          fetchpriority="high"
           className="no-right-click"
           src={process.env.PUBLIC_URL + "/images/contact/parque-natural-metropolitano.JPG"}
           alt="metropolitan natural park"
