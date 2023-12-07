@@ -40,13 +40,17 @@ figure {
   border-radius: 10px 10px 0 0;
 }
 
-.feature-photo-container figure, .card-container figure {
+.feature-photo-container figure {
+  padding-top: calc(858 / 1526 * 100%);
+}
+
+.card-container figure {
   padding-top: calc(277 / 492 * 100%);
 }
 
 .hero-image figure {
   border-radius: 0;
-  padding-top: calc(1920 / 6352 * 100%);
+  padding-top: calc(769 / 2543 * 100%);
 }
 
 .card-container {

@@ -19,7 +19,7 @@
 .about-hero {
     width: 100%;
     border-radius: 0;
-    padding-top: calc(1641 / 5456 * 100%);
+    padding-top: calc(765 / 2543 * 100%);
     position: relative;
 }
 
@@ -40,7 +40,7 @@
     border-radius: 0;
     width: 75%;
     position: relative;
-    padding-top: calc(2752 / 4896 * 75%);
+    padding-top: calc(487 / 866 * 75%);
 }
 
 .comic img {
@@ -61,7 +61,7 @@
 }
 
 .comic .panel-2 {
-    padding-top: calc(2160 / 3840 * 75%);
+    padding-top: calc(263 / 468 * 40%);
 }
 
 .panel-1, .panel-4 {
