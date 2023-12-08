@@ -178,16 +178,16 @@ p.this-article {
     position: relative;
 }
 
+/* transportaion page images */
+
 .rapi-card {
-    padding-top: calc(912/ 1447 * 100%);
+    padding-top: calc(739/ 1170 * 100%);
     position: relative;
     margin-bottom: 20px;
 }
 
-/* transportaion page images */
-
 .chiva {
-    padding-top: calc(2268 / 3024 * 100%);
+    padding-top: calc(878 / 1170 * 100%);
 }
 
 .metro-map {
@@ -199,7 +199,7 @@ p.this-article {
 }
 
 .free-shuttle {
-    padding-top: calc(1506 / 3018 * 100%);
+    padding-top: calc(584 / 1170 * 100%);
 }
 
 .metro-bus {
@@ -207,19 +207,19 @@ p.this-article {
 }
 
 .diablos, .chicken-bus, .yellow-cabs {
-    padding-top: calc(2752 / 4896 * 100%);
+    padding-top: calc(658 / 1170 * 100%);
 }
 
 .albrook-terminal {
-    padding-top: calc(3306 / 4896 * 100%);
+    padding-top: calc(791 / 1170 * 100%);
 }
 
 .comfy-bus, .coronado-stop, .taxi-truck, .mini-van, .inside-van, .hwy  {
-    padding-top: calc(3024 / 4032 * 100%);
+    padding-top: calc(877 / 1169 * 100%);
 }
 
 .coaster-bus {
-    padding-top: calc(2276 / 3020 * 100%);
+    padding-top: calc(882 / 1170 * 100%);
 }
 
 .coronado-map {
@@ -227,11 +227,11 @@ p.this-article {
 }
 
 .gates {
-    padding-top: calc(1287 / 3999 * 100%);
+    padding-top: calc(377 / 1170 * 100%);
 }
 
 .alex-bus {
-    padding-top: calc(3264/ 2448 * 100%);
+    padding-top: calc(1560/ 1170 * 100%);
 }
 
 /* el cangrejo page images */
