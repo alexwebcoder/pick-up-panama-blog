@@ -220,6 +220,7 @@ const BlogDetails = () => {
             <p className="body intro">{blog.intro}</p>
             <figure className="hwy">
                 <img
+                  fetchpriority="high"
                   className="no-right-click"
                   src={blog.panAm}
                   alt={blog.panAmAltText}
