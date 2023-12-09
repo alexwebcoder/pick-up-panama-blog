@@ -8,23 +8,19 @@
     min-height: 100vh;
     letter-spacing: .01em;
 }
-
 .safety, .transportation, .el-cangrejo, .panama-canal {
     flex: 1;
     position: relative;
 }
-
 .button-parent {
     position: absolute;
     bottom: -79px;
     display: flex;
     width: 100%;
 }
-
 .button-parent button:first-child {
     margin-right: auto;
 }
-
 .button-parent button {
     padding: 10px;
     font-size: 1rem;
@@ -37,40 +33,32 @@
     letter-spacing: .03em;
     transition: 0.3s;
 }
-
 .button-parent button:hover, .button-parent button:focus {
     background-color: #1493f3;
     color: #fff;
     border: 2px solid #1493f3;
 }
-
 .date span.content {
     font-size: .75rem;
 }
-
 .blog-details .post-title {
     letter-spacing: .05em;
     font-size: 1.875rem;
     line-height: 1.11;
 }
-
 .blog-details figure {
     margin-bottom: 25px;
 }
-
 .blog-details .last-figure {
     margin-bottom: 0;
 }
-
 .blog-details figcaption, .metro-caption, .video-caption {
     font-size: 1rem;
     font-weight: normal;
 }
-
 .blog-details .casco-petty-crime {
     margin-bottom: 0;
 }
-
 .blog-details img {
     max-width: 100%;
     height: auto;
@@ -81,20 +69,16 @@
     left: 0;
     border-radius: 10px;
 }
-
 .blog-details p {
-   margin-bottom: 20px;
+    margin-bottom: 20px;
 }
-
 .blog-details .line-divider {
     margin-top: 0;
     margin-bottom: 45px;
 }
-
 .blog-details + footer .line-divider {
     margin-top: 84px;
 }
-
 p.intro {
     padding: 25px 0;
     border-top: 1px solid #a1a1a1;
@@ -106,50 +90,39 @@ p.intro {
     width: 100%;
     letter-spacing: .025em;
 }
-
 p.this-article {
     margin-bottom: 45px;
 }
-
 .diamond-text-box.date {
     margin-bottom: 0;
 }
-
 .blog-details h2 {
     display: inline-block;
 }
-
 .blog-details h2, .blog-details h3, .blog-details h4 {
     font-size: 1.438rem;
     line-height: 1.1;
 }
-
 .blog-details h3 {
     font-size: 1.313rem;
 }
-
 .blog-details h4 {
     font-size: 1.188rem;
 }
-
 .blog-details section h2, .blog-details section h3, .blog-details h4 {
     margin-bottom: 15px;
 }
-
 .blog-details ul li {
     margin-left: 45px;
     margin-bottom: 20px;
 }
-
 .el-cangrejo ul li {
     font-weight: bold;
     list-style-type: none;
 }
-
 .el-cangrejo ul span, .el-cangrejo ul:nth-of-type(2) li {
     font-weight: normal;
 }
-
 .youtube-video {
     aspect-ratio: 16 / 9;
     width: 100%;
@@ -157,193 +130,146 @@ p.this-article {
     top: 0;
     left: 0;
 }
-
-
 /* saftey page images */
-
 .cops-at-fruitstand {
     padding-top: calc(1180 / 1170 * 100%);
 }
-
 .bank-police {
     padding-top: calc(878 / 1170 * 100%);
 }
-
-.casco-tourist, .casco-police, .colon-plate, .casco-petty-crime, .market-police, .near-casco  {
+.casco-tourist, .casco-police, .colon-plate, .casco-petty-crime, .market-police, .near-casco {
     padding-top: calc(658 / 1170 * 100%);
 }
-
 .video-container {
     padding-top: calc(226/ 402 * 100%);
     position: relative;
 }
-
 /* transportaion page images */
-
 .rapi-card {
     padding-top: calc(739/ 1170 * 100%);
     position: relative;
     margin-bottom: 20px;
 }
-
 .chiva {
     padding-top: calc(878 / 1170 * 100%);
 }
-
 .metro-map {
     padding-top: calc(497 / 800 * 100%);
 }
-
 .city-center {
     padding-top: calc(1147 / 772 * 100%);
 }
-
 .free-shuttle {
     padding-top: calc(584 / 1170 * 100%);
 }
-
 .metro-bus {
     padding-top: calc(407 / 966 * 100%);
 }
-
 .diablos, .chicken-bus, .yellow-cabs {
     padding-top: calc(658 / 1170 * 100%);
 }
-
 .albrook-terminal {
     padding-top: calc(791 / 1170 * 100%);
 }
-
-.comfy-bus, .coronado-stop, .taxi-truck, .mini-van, .inside-van, .hwy  {
+.comfy-bus, .coronado-stop, .taxi-truck, .mini-van, .inside-van, .hwy {
     padding-top: calc(877 / 1169 * 100%);
 }
-
 .coaster-bus {
     padding-top: calc(882 / 1170 * 100%);
 }
-
 .coronado-map {
     padding-top: calc(663 / 820 * 100%);
 }
-
 .gates {
     padding-top: calc(377 / 1170 * 100%);
 }
-
 .alex-bus {
     padding-top: calc(1560/ 1170 * 100%);
 }
-
 /* el cangrejo page images */
-
 .el-cangrejo figure {
     padding-top: calc(2752/ 4896 * 100%);
 }
-
 .el-cangrejo .crab {
     padding-top: calc(660/ 687 * 100%);
 }
-
 /* canal page images */
-
 .panama-canal figure {
     padding-top: calc(2752/ 4896 * 100%);
 }
-
 .panama-canal .map {
     padding-top: calc(703/ 1108 * 100%);
 }
-
 .panama-canal .pov {
     padding-top: calc(1920/ 7376 * 100%);
 }
-
-
-
 /* Tablet menu */
 @media all and (min-width: 700px) {
     .blog-details h2 {
         font-size: 2rem;
-    }
-
+   }
     .blog-details h3 {
         font-size: 1.75rem;
-    }
+   }
 }
-
 /* Desktop menu */
 @media all and (min-width: 960px) {
     .blog-details {
         width: 46%;
         margin-bottom: -22px;
    }
-
     .blog-details .post-title {
         font-size: 2.813rem;
    }
-   
     p.intro {
         width: 80%;
    }
-
-   .button-parent {
-    position: fixed;
-    display: flex;
-    width: 99.5%;
-    top: 50%;
-    left: .5%;
-    bottom: unset;
+    .button-parent {
+        position: fixed;
+        display: flex;
+        width: 99.5%;
+        top: 50%;
+        left: .5%;
+        bottom: unset;
+   }
 }
-}
-
 @media all and (min-width: 1500px) {
     .blog-details .line-divider.wide:before {
         width: 50%;
         left: 25%;
    }
 }
-
 @media all and (max-width: 405px) {
     .button-parent {
         flex-direction: column;
         bottom: -133px;
    }
-
     .button-parent button {
         margin: 0 auto 10px auto;
         width: 180px;
    }
-
     .button-parent button:last-child {
         margin-bottom: 0;
    }
-
     .blog-details + footer .line-divider {
         margin-top: 138px;
    }
 }
-
-
 @media all and (max-width: 265px) {
-   .blog-details {
-    margin-top: 174px;
+    .blog-details {
+        margin-top: 174px;
    }
-
 }
-
 @media only screen and (min-width: 186px) and (max-width: 191px) {
     .blog-details {
         margin-top: 125px;
-       }
-  }
-
+   }
+}
 @media all and (max-width: 185px) {
     .search-wrap {
-     top: 89px;
-    }
-
+        top: 89px;
+   }
     .blog-details {
         margin-top: 157px;
-       }
-    
- }
+   }
+}
