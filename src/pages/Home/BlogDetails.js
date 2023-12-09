@@ -547,6 +547,7 @@ const BlogDetails = () => {
           <p className="body intro">{blog.intro}</p>
           <figure>
                 <img
+                  fetchpriority="high"
                   className="no-right-click"
                   src={blog.elCran}
                   alt={blog.elCranAltText}
@@ -673,7 +674,7 @@ const BlogDetails = () => {
               <li>{blog.liEight} <span>{blog.spanEight}</span></li>
               <li>{blog.liEightA} <span>{blog.spanEightA}</span></li>
               <li> 
-                <figure>
+                <figure className="lee">
                   <img
                     className="no-right-click"
                     src={blog.donLee}
@@ -700,7 +701,7 @@ const BlogDetails = () => {
               <li>{blog.liTwentyThree} <span>{blog.spanTwentyThree}</span></li>
               <li>{blog.liTwentyThreeA} <span>{blog.spanTwentyThreeA}</span></li>
               <li>
-              <figure>
+              <figure className="manlos">
                 <img
                   className="no-right-click"
                   src={blog.manolos}
@@ -727,7 +728,7 @@ const BlogDetails = () => {
               <li>{blog.liThirtySeven} <span>{blog.spanThirtySeven}</span></li>
               <li>{blog.liThirtyEight} <span>{blog.spanThirtyEight}</span></li>
               <li>
-              <figure>
+              <figure className="sen">
                 <img
                   className="no-right-click"
                   src={blog.sen}

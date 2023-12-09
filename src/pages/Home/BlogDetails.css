@@ -188,10 +188,13 @@ p.this-article {
 }
 /* el cangrejo page images */
 .el-cangrejo figure {
-    padding-top: calc(2752/ 4896 * 100%);
+    padding-top: calc(658/ 1171 * 100%);
 }
 .el-cangrejo .crab {
-    padding-top: calc(660/ 687 * 100%);
+    padding-top: calc(687/ 715 * 100%);
+}
+.el-cangrejo .lee, .el-cangrejo .manlos, .el-cangrejo .sen {
+    padding-top: calc(632/ 1124 * 100%);
 }
 /* canal page images */
 .panama-canal figure {
