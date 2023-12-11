@@ -1,1 +1,179 @@
-const toggle=document.querySelector(".toggle-anchor"),sidenav=document.querySelector(".sidenav"),hamburger=document.querySelector(".toggle-anchor"),eJS_email=document.getElementById("form-input-control-email"),eJS_sendForm=document.getElementById("send-form"),alertComment=document.getElementById("alert-comment");let canSubmit=!1,reaction=null;function eJS_set_event_listeners(){eJS_email.addEventListener("keyup",eJS_can_submit)}function eJS_validateEmail(e){return/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(e).toLowerCase())}function eJS_can_submit(){let e=eJS_email.value.trim();e.length>4?eJS_validateEmail(e)?(eJS_sendForm.classList.add("activated"),eJS_sendForm.disabled=!1,canSubmit=!0,alertComment.style.visibility="hidden"):eJS_disabled_submit():(alertComment.style.visibility="visible",eJS_disabled_submit())}function eJS_disabled_submit(){eJS_sendForm.classList.remove("activated"),eJS_sendForm.disabled=!0,canSubmit=!1,alertComment.style.visibility="visible"}eJS_set_event_listeners();const hideError=()=>{alertComment.style.visibility="hidden"};function toggleMenu(){sidenav.classList.contains("active")?sidenav.classList.remove("active"):sidenav.classList.add("active")}document.addEventListener("click",hideError),document.removeEventListener("click",hideError),eJS_email.addEventListener("blur",hideError);const toggleHamburgerEnter=e=>{(13===e.keycode||"Enter"===e.key||32===e.keycode||"Space"===e.code)&&(toggleMenu(),hamburger.classList.toggle("change"))},toggleHamburgerClick=()=>{hamburger.classList.toggle("change")};document.addEventListener("keydown",e=>{"Escape"===e.key&&sidenav.classList.contains("active")&&(sidenav.classList.remove("active"),hamburger.classList.toggle("change"))}),hamburger.addEventListener("keydown",toggleHamburgerEnter,!1),hamburger.addEventListener("click",toggleHamburgerClick,!1),toggle.addEventListener("click",toggleMenu,!1),window.onscroll=function(){progressBar()};const progressBar=()=>{let e,t=(document.body.scrollTop||document.documentElement.scrollTop)/(document.documentElement.scrollHeight-document.documentElement.clientHeight)*100;document.getElementById("myBar").style.width=t+"%"},navLinks=document.querySelectorAll(".item");navLinks.forEach(e=>{e.addEventListener("click",()=>{document.querySelector(".disabled")?.classList.remove("disabled"),e.classList.add("disabled")})});const sideNavLinks=document.querySelectorAll(".sidenav li");sideNavLinks.forEach(e=>{e.addEventListener("click",()=>{document.querySelector(".disabled")?.classList.remove("disabled"),e.classList.add("disabled")})});const footerNavLinks=document.querySelectorAll(".footer li");footerNavLinks.forEach(e=>{e.addEventListener("click",()=>{document.querySelector(".disabled")?.classList.remove("disabled"),e.classList.add("disabled")})});const header=document.querySelector(".header"),toggleClass="is-sticky";window.addEventListener("scroll",()=>{let e=window.pageYOffset;e>150?header.classList.add(toggleClass):header.classList.remove(toggleClass)});let images=document.getElementsByClassName("no-right-click");for(const image of images)image.addEventListener("contextmenu",e=>{e.preventDefault(),image.draggable=!1});const pseudo=document.querySelector(".top-to-bottom"),scrollUp=e=>{(13===e.keycode||"Enter"===e.key||32===e.keycode||"Space"===e.code)&&window.scrollTo({top:0,behavior:"smooth"})};pseudo.addEventListener("keydown",scrollUp,!1),window.addEventListener("scroll",()=>{window.scrollY>400?pseudo.style.display="block":pseudo.style.display="none"}),window.onbeforeunload=function(){window.scrollTo(0,0)};
+const toggle = document.querySelector('.toggle-anchor');
+const sidenav = document.querySelector('.sidenav');
+const hamburger = document.querySelector('.toggle-anchor');
+const eJS_email = document.getElementById('form-input-control-email');
+const eJS_sendForm = document.getElementById('send-form');
+const alertComment = document.getElementById('alert-comment');
+
+
+let canSubmit = false;
+let reaction = null;
+
+function eJS_set_event_listeners() {
+    eJS_email.addEventListener('keyup', eJS_can_submit);
+}
+
+eJS_set_event_listeners();
+
+
+function eJS_validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+function eJS_can_submit() {
+    
+    let email = eJS_email.value.trim();
+    if (email.length > 4) {
+        if (eJS_validateEmail(email)) {
+            eJS_sendForm.classList.add('activated');
+            eJS_sendForm.disabled = false;
+            canSubmit = true;
+            alertComment.style.visibility = "hidden";
+            
+        } else {
+            eJS_disabled_submit();
+        }
+    } else {
+        alertComment.style.visibility = "visible";
+        eJS_disabled_submit();
+    }
+};
+
+function eJS_disabled_submit() {
+    eJS_sendForm.classList.remove('activated');
+    eJS_sendForm.disabled = true;
+    canSubmit = false;
+    alertComment.style.visibility = "visible";
+};
+
+const hideError = () => {
+    alertComment.style.visibility = "hidden";
+}
+
+document.addEventListener('click', hideError);
+document.removeEventListener('click', hideError);
+eJS_email.addEventListener('blur', hideError);
+
+
+function toggleMenu() {
+    if (sidenav.classList.contains('active')) {
+        sidenav.classList.remove('active');
+
+    } else {
+        sidenav.classList.add(`active`);
+    }
+}
+
+const toggleHamburgerEnter = (event) => {
+    if (event.keycode === 13 || event.key === 'Enter' || event.keycode === 32 || event.code === 'Space') {
+        toggleMenu()
+        hamburger.classList.toggle('change')
+    }
+}
+
+const toggleHamburgerClick = () => {
+    hamburger.classList.toggle('change')
+}
+
+
+document.addEventListener('keydown', evt => {
+    if (evt.key === 'Escape' && sidenav.classList.contains('active')) {
+        sidenav.classList.remove('active');
+        hamburger.classList.toggle('change')
+    }
+});
+hamburger.addEventListener('keydown', toggleHamburgerEnter, false);
+hamburger.addEventListener('click', toggleHamburgerClick, false);
+toggle.addEventListener('click', toggleMenu, false);
+
+
+
+window.onscroll = function() {
+    progressBar();
+}
+
+const progressBar = () => {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById('myBar').style.width = scrolled + '%';
+}
+
+const navLinks = document.querySelectorAll('.item');
+
+navLinks.forEach(navLink => {
+    navLink.addEventListener('click', () => {
+        document.querySelector('.disabled')?.classList.remove('disabled');
+        navLink.classList.add('disabled');
+    })
+})
+
+const sideNavLinks = document.querySelectorAll('.sidenav li');
+
+sideNavLinks.forEach(sideNavLink => {
+    sideNavLink.addEventListener('click', () => {
+        document.querySelector('.disabled')?.classList.remove('disabled');
+        sideNavLink.classList.add('disabled');
+    })
+})
+
+const footerNavLinks = document.querySelectorAll('.footer li');
+
+footerNavLinks.forEach(footerNavLink => {
+    footerNavLink.addEventListener('click', () => {
+        document.querySelector('.disabled')?.classList.remove('disabled');
+        footerNavLink.classList.add('disabled');
+    })
+})
+
+
+const header = document.querySelector('.header');
+const toggleClass = 'is-sticky';
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 150) {
+        header.classList.add(toggleClass);
+    } else {
+        header.classList.remove(toggleClass);
+    }
+});
+
+
+let images = document.getElementsByClassName('no-right-click');
+
+
+for (const image of images) {
+    image.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        image.draggable = false;
+    });
+}
+
+const pseudo = document.querySelector('.top-to-bottom');
+
+const scrollUp = (event) => {
+    if (event.keycode === 13 || event.key === 'Enter' || event.keycode === 32 || event.code === 'Space') {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    }
+}
+
+pseudo.addEventListener('keydown', scrollUp, false);
+
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+        pseudo.style.display = "block";
+    } else {
+        pseudo.style.display = "none";
+    }
+})
+
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
