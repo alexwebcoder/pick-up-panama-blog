@@ -107,7 +107,7 @@ const ContactUsForm = () => {
         <img
           fetchpriority="high"
           className="no-right-click"
-          src={process.env.PUBLIC_URL + "/images/contact/parque-natural-metropolitano.JPG"}
+          src={process.env.PUBLIC_URL + "/images/contact/parque-natural-metropolitano.webp"}
           alt="metropolitan natural park"
         />
         <figcaption>View of Panama City from the Metropolitan Natural Park in Panama</figcaption>

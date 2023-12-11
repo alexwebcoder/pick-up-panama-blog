@@ -6,7 +6,7 @@ const NotFound = () => {
         
             <main className="not-found">
                 <figure className="not-found-hero">
-                    <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/notFound/missing-meal.JPG'} alt="Villa Mayte Coronado Panama"/>
+                    <img className="no-right-click" src={process.env.PUBLIC_URL + '/images/notFound/missing-meal.webp'} alt="Villa Mayte Coronado Panama"/>
                     <figcaption className="fig-caption">Taken at Delicias Margot in Coronado Panama.</figcaption>
                 </figure>
                 <section className="centered">

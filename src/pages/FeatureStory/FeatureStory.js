@@ -41,6 +41,7 @@ const FeatureStory = () => {
           <p className="body intro">{blog.intro}</p>
           <figure>
               <img
+                fetchpriority="high"
                 className="no-right-click"
                 src={blog.ship}
                 alt={blog.shipAltText}
