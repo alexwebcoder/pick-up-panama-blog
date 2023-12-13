@@ -478,5 +478,10 @@
       "link": "http://localhost:3000/blogs/how-do-i-get-around-in-panama",
       "keywords": "what are the diablos rojos buses?",
       "id": 96
+    },
+    {
+      "link": "http://localhost:3000/about",
+      "keywords": "Villa Mayte vacation property",
+      "id": 97
     }
   ]
