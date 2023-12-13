@@ -28,7 +28,7 @@ const About = () => {
           <img
             className="no-right-click"
             fetchpriority="high"
-            src={process.env.PUBLIC_URL + "/images/about/coronado-panama.webp"}
+            src={process.env.PUBLIC_URL + "/images/about/coronado-panama.jpg"}
             alt="villa mayte"
           />
         </picture>

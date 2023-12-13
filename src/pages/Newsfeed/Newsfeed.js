@@ -46,7 +46,7 @@ const Newsfeed = () => {
             fetchpriority="high"
             src={
               process.env.PUBLIC_URL +
-              "/images/newsfeed/ocean-view-portobelo-panama.webp"
+              "/images/newsfeed/ocean-view-portobelo-panama.jpg"
             }
             alt="portobelo panama"
           />

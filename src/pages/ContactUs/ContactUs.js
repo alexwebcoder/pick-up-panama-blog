@@ -18,10 +18,14 @@ const ContactUsForm = () => {
 
   const checkForm = (e) => {
     let canSubmit2 = false;
-    const eJS_email2 = document.getElementById("form-input-control-email-address-2");
+    const eJS_email2 = document.getElementById(
+      "form-input-control-email-address-2"
+    );
     const eJS_sendForm2 = document.getElementById("send-form-2");
     const alertComment2 = document.getElementById("alert-comment-2");
-    const eJS_message = document.getElementById("form-textarea-control-opinion");
+    const eJS_message = document.getElementById(
+      "form-textarea-control-opinion"
+    );
     const eJS_name = document.getElementById("form-input-control-last-name");
 
     function eJS_set_event_listenersContact() {
@@ -35,7 +39,8 @@ const ContactUsForm = () => {
     //validate email address
 
     function eJS_validateEmail2(email2) {
-      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      const re =
+        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(String(email2).toLowerCase());
     }
 
@@ -45,7 +50,7 @@ const ContactUsForm = () => {
       let email2 = eJS_email2.value.trim();
       let message = eJS_message.value.trim();
       let name = eJS_name.value.trim();
-      
+
       if (eJS_validateEmail2(email2)) {
         alertComment2.style.visibility = "hidden";
         //maybe remove this email length condition
@@ -104,13 +109,36 @@ const ContactUsForm = () => {
   return (
     <main className="margin contact-us-page">
       <figure className="contact-hero">
-        <img
-          fetchpriority="high"
-          className="no-right-click"
-          src={process.env.PUBLIC_URL + "/images/contact/parque-natural-metropolitano.webp"}
-          alt="metropolitan natural park"
-        />
-        <figcaption>View of Panama City from the Metropolitan Natural Park in Panama</figcaption>
+        <picture>
+          <source
+            type="image/webp"
+            srcSet={
+              process.env.PUBLIC_URL +
+              "/images/contact/parque-natural-metropolitano-320.webp 320w, /images/contact/parque-natural-metropolitano-480.webp 480w, /images/contact/parque-natural-metropolitano-640.webp 640w, /images/contact/parque-natural-metropolitano-768.webp 768w, /images/contact/parque-natural-metropolitano-1024.webp 1024w, /images/contact/parque-natural-metropolitano-1280.webp 1280w, /images/contact/parque-natural-metropolitano-1920.webp 1920w, /images/contact/parque-natural-metropolitano.webp 2543w"
+            }
+            sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, (max-width: 1920px) 1920px, 2543px"
+          />
+          <source
+            type="image/jpg"
+            srcSet={
+              process.env.PUBLIC_URL +
+              "/images/contact/parque-natural-metropolitano-320.jpg 320w, /images/contact/parque-natural-metropolitano-480.jpg 480w, /images/contact/parque-natural-metropolitano-640.jpg 640w, /images/contact/parque-natural-metropolitano-768.jpg 768w, /images/contact/parque-natural-metropolitano-1024.jpg 1024w, /images/contact/parque-natural-metropolitano-1280.jpg 1280w, /images/contact/parque-natural-metropolitano-1920.jpg 1920w, /images/contact/parque-natural-metropolitano.jpg 2543w"
+            }
+            sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, (max-width: 1920px) 1920px, 2543px"
+          />
+          <img
+            fetchpriority="high"
+            className="no-right-click"
+            src={
+              process.env.PUBLIC_URL +
+              "/images/contact/parque-natural-metropolitano.jpg"
+            }
+            alt="metropolitan natural park"
+          />
+        </picture>
+        <figcaption>
+          View of Panama City from the Metropolitan Natural Park in Panama
+        </figcaption>
       </figure>
       <div className="line-divider centered wide">
         <h1 className="diamond-text-box">
@@ -153,7 +181,10 @@ const ContactUsForm = () => {
             Submit
           </Button>
           <p id="alert-comment-2" className="alert-comment">
-            Email must be valid,<br/>Name must have at least two characters,<br/> Message must have at least five characters
+            Email must be valid,
+            <br />
+            Name must have at least two characters,
+            <br /> Message must have at least five characters
           </p>
         </Form>
       </section>
