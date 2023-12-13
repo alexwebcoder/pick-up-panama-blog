@@ -26,7 +26,25 @@ const Newsfeed = () => {
     return (
       <main className="newsfeed"> 
         <figure className="news-hero">
+        <picture>
+          <source
+            type="image/webp"
+            srcSet={
+              process.env.PUBLIC_URL +
+              "/images/newsfeed/ocean-view-portobelo-panama-320.webp 320w, /images/newsfeed/ocean-view-portobelo-panama-480.webp 480w, /images/newsfeed/ocean-view-portobelo-panama-640.webp 640w, /images/newsfeed/ocean-view-portobelo-panama-768.webp 768w, /images/newsfeed/ocean-view-portobelo-panama-1024.webp 1024w, /images/newsfeed/ocean-view-portobelo-panama-1280.webp 1280w, /images/newsfeed/ocean-view-portobelo-panama-1920.webp 1920w, /images/newsfeed/ocean-view-portobelo-panama.webp 2543w"
+            }
+            sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, (max-width: 1920px) 1920px, 2543px"
+          />
+          <source
+            type="image/jpg"
+            srcSet={
+              process.env.PUBLIC_URL +
+              "/images/newsfeed/ocean-view-portobelo-panama-320.jpg 320w, /images/newsfeed/ocean-view-portobelo-panama-480.jpg 480w, /images/newsfeed/ocean-view-portobelo-panama-640.jpg 640w, /images/newsfeed/ocean-view-portobelo-panama.jpg-768 768w, /images/newsfeed/ocean-view-portobelo-panama-1024.jpg 1024w, /images/newsfeed/ocean-view-portobelo-panama-1280.jpg 1280w, /images/newsfeed/ocean-view-portobelo-panama-1920.jpg 1920w, /images/newsfeed/ocean-view-portobelo-panama.jpg 2543w"
+            }
+            sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, (max-width: 1920px) 1920px, 2543px"
+          />
           <img className="no-right-click" fetchpriority="high" src={process.env.PUBLIC_URL + '/images/newsfeed/ocean-view-portobelo-panama.webp'} alt="portobelo panama"/>
+        </picture>
           <figcaption>View of the Atlantic Ocean from Portobelo Panama</figcaption>
        </figure>
         <div className="line-divider centered wide">
