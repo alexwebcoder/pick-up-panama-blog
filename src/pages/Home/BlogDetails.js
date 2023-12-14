@@ -54,12 +54,30 @@ const BlogDetails = () => {
             <p className="despite-this">{blog.despiteThis}</p>
             <p className="this-article">{blog.thisArticle}</p>
             <figure className="cops-at-fruitstand">
-              <img
-                fetchpriority="high"
-                className="no-right-click"
-                src={blog.copsAtFruitStand}
-                alt={blog.fruitStandCopAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/panamanian-police-at-fruitstand-320.webp 320w, /images/safety/panamanian-police-at-fruitstand-480.webp 480w, /images/safety/panamanian-police-at-fruitstand-640.webp 640w, /images/safety/panamanian-police-at-fruitstand-768.webp 768w, /images/safety/panamanian-police-at-fruitstand.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/panamanian-police-at-fruitstand-320.jpg 320w, /images/safety/panamanian-police-at-fruitstand-480.jpg 480w, /images/safety/panamanian-police-at-fruitstand-640.jpg 640w, /images/safety/panamanian-police-at-fruitstand-768.jpg 768w, /images/safety/panamanian-police-at-fruitstand.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  fetchpriority="high"
+                  className="no-right-click"
+                  src={blog.copsAtFruitStand}
+                  alt={blog.fruitStandCopAltText}
+                />
+              </picture>
               <figcaption>{blog.fruitStandCopCaption}</figcaption>
             </figure>
             <figure className="bank-police">
@@ -193,8 +211,17 @@ const BlogDetails = () => {
               </figure>
             </section>
             <div className="button-parent">
-              <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>&#60;</button>
-              <button title="How do I get around in Panama?" onClick={goToTransportationStory}>&#62;
+              <button
+                title="How do I visit the Panama Canal?"
+                onClick={goToCanalStory}
+              >
+                &#60;
+              </button>
+              <button
+                title="How do I get around in Panama?"
+                onClick={goToTransportationStory}
+              >
+                &#62;
               </button>
             </div>
           </section>
@@ -219,13 +246,13 @@ const BlogDetails = () => {
             <h1 className="centered post-title">{blog.title}</h1>
             <p className="body intro">{blog.intro}</p>
             <figure className="hwy">
-                <img
-                  fetchpriority="high"
-                  className="no-right-click"
-                  src={blog.panAm}
-                  alt={blog.panAmAltText}
-                />
-                <figcaption>{blog.panAmCaption}</figcaption>
+              <img
+                fetchpriority="high"
+                className="no-right-click"
+                src={blog.panAm}
+                alt={blog.panAmAltText}
+              />
+              <figcaption>{blog.panAmCaption}</figcaption>
             </figure>
             <p>{blog.guide}</p>
             <h2>{blog.h2Tocumen}</h2>
@@ -246,12 +273,12 @@ const BlogDetails = () => {
             <h4>{blog.h4RapiCard}</h4>
             <p>{blog.cashCredit}</p>
             <figure className="rapi-card">
-                <img
-                  className="no-right-click"
-                  src={blog.rapiCard}
-                  alt={blog.rapiCardAltText}
-                />
-                <figcaption>{blog.rapiCardCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.rapiCard}
+                alt={blog.rapiCardAltText}
+              />
+              <figcaption>{blog.rapiCardCaption}</figcaption>
             </figure>
             <p>{blog.cardIsFor}</p>
             <ul>
@@ -264,12 +291,12 @@ const BlogDetails = () => {
             <p>{blog.ifTraveling}</p>
             <h4>{blog.h4Shuttle}</h4>
             <figure className="free-shuttle">
-                <img
-                  className="no-right-click"
-                  src={blog.freeShuttle}
-                  alt={blog.freeShuttleAltText}
-                />
-                <figcaption>{blog.freeShuttleCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.freeShuttle}
+                alt={blog.freeShuttleAltText}
+              />
+              <figcaption>{blog.freeShuttleCaption}</figcaption>
             </figure>
             <p>{blog.trainDoesNot}</p>
             <p>{blog.exitAirport}</p>
@@ -283,12 +310,16 @@ const BlogDetails = () => {
               <li>{blog.fiveMinLi}</li>
             </ul>
             <figure className="metro-map">
-                <img
-                  className="no-right-click"
-                  src={blog.metroMap}
-                  alt={blog.metroMapAltText}
-                />
-                <figcaption>{blog.metroMapCaption}<br/><span>{blog.courtesyLobueno}</span></figcaption>
+              <img
+                className="no-right-click"
+                src={blog.metroMap}
+                alt={blog.metroMapAltText}
+              />
+              <figcaption>
+                {blog.metroMapCaption}
+                <br />
+                <span>{blog.courtesyLobueno}</span>
+              </figcaption>
             </figure>
             <h4>{blog.h4CorridorSur}</h4>
             <ul>
@@ -309,7 +340,9 @@ const BlogDetails = () => {
             <p>{blog.thePlatforms}</p>
             <p>{blog.carryingLuggage}</p>
             <div className="video-container">
-              <ReactPlayer className='youtube-video' url='<https://youtube.com/shorts/buKyVdS-8cE?si=cmwDySeycx-e_lLr?rel=0>' 
+              <ReactPlayer
+                className="youtube-video"
+                url="<https://youtube.com/shorts/buKyVdS-8cE?si=cmwDySeycx-e_lLr?rel=0>"
                 controls
                 width={null}
                 height={null}
@@ -317,9 +350,15 @@ const BlogDetails = () => {
             </div>
             <p className="metro-caption">{blog.metroVideoCaption}</p>
             <h4>{blog.metroHoursh4}</h4>
-            <p className="bold-text">{blog.metroStrong} <span>{blog.fiveAm}</span></p>
-            <p className="bold-text">{blog.saturdayStrong} <span>{blog.fivetoTen}</span></p>
-            <p className="bold-text">{blog.sundayStrong} <span>{blog.sevenAm}</span></p>
+            <p className="bold-text">
+              {blog.metroStrong} <span>{blog.fiveAm}</span>
+            </p>
+            <p className="bold-text">
+              {blog.saturdayStrong} <span>{blog.fivetoTen}</span>
+            </p>
+            <p className="bold-text">
+              {blog.sundayStrong} <span>{blog.sevenAm}</span>
+            </p>
             <h2>{blog.h2Addresses}</h2>
             <p>{blog.noProperAddresses}</p>
             <p>{blog.goByLandmarks}</p>
@@ -328,23 +367,29 @@ const BlogDetails = () => {
             <p>{blog.alwaysGreet}</p>
             <h2>{blog.h2TransportationAround}</h2>
             <p>{blog.mainNeighborhoods}</p>
-            <p><strong>{blog.thisIsKnown}</strong></p>
+            <p>
+              <strong>{blog.thisIsKnown}</strong>
+            </p>
             <figure className="city-center">
-                <img
-                  className="no-right-click"
-                  src={blog.cityCenter}
-                  alt={blog.cityCenterAltText}
-                />
-                <figcaption>{blog.cityCenterCaption}<br/><span>{blog.courtesyGoogle}</span></figcaption>
+              <img
+                className="no-right-click"
+                src={blog.cityCenter}
+                alt={blog.cityCenterAltText}
+              />
+              <figcaption>
+                {blog.cityCenterCaption}
+                <br />
+                <span>{blog.courtesyGoogle}</span>
+              </figcaption>
             </figure>
             <h3>{blog.h3YellowCab}</h3>
             <figure className="yellow-cabs">
-                <img
-                  className="no-right-click"
-                  src={blog.panamaCabs}
-                  alt={blog.panamaCabsAltText}
-                />
-                <figcaption>{blog.panamaCabsCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.panamaCabs}
+                alt={blog.panamaCabsAltText}
+              />
+              <figcaption>{blog.panamaCabsCaption}</figcaption>
             </figure>
             <p>{blog.licensedYellow}</p>
             <p>{blog.sinceThey}</p>
@@ -373,12 +418,12 @@ const BlogDetails = () => {
             <h3>{blog.h3PanamaBuses}</h3>
             <h4>{blog.h4RidingMetro}</h4>
             <figure className="metro-bus">
-                <img
-                  className="no-right-click"
-                  src={blog.metroCab}
-                  alt={blog.metroCabAltText}
-                />
-                <figcaption>{blog.metroCabCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.metroCab}
+                alt={blog.metroCabAltText}
+              />
+              <figcaption>{blog.metroCabCaption}</figcaption>
             </figure>
             <p>{blog.theMetroIs}</p>
             <p>{blog.theCostIs}</p>
@@ -387,12 +432,12 @@ const BlogDetails = () => {
             <p>{blog.whenReady}</p>
             <h4>{blog.h4busRidesOut}</h4>
             <figure className="albrook-terminal">
-            <img
-                  className="no-right-click"
-                  src={blog.albrookEntr}
-                  alt={blog.albrookEntrAltText}
-                />
-                <figcaption>{blog.albrookEntrBusCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.albrookEntr}
+                alt={blog.albrookEntrAltText}
+              />
+              <figcaption>{blog.albrookEntrBusCaption}</figcaption>
             </figure>
             <p>{blog.granTerminal}</p>
             <p>{blog.youCanTake}</p>
@@ -406,95 +451,99 @@ const BlogDetails = () => {
             <p>{blog.youWillSee}</p>
             <p>{blog.twoBusesChoose}</p>
             <figure className="comfy-bus">
-                <img
-                  className="no-right-click"
-                  src={blog.comfyBus}
-                  alt={blog.comfyBusAltText}
-                />
-                <figcaption>{blog.comfyBusCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.comfyBus}
+                alt={blog.comfyBusAltText}
+              />
+              <figcaption>{blog.comfyBusCaption}</figcaption>
             </figure>
             <figure className="coaster-bus">
-                <img
-                  className="no-right-click"
-                  src={blog.coasterBus}
-                  alt={blog.coasterBusAltText}
-                />
-                <figcaption>{blog.coasterBusCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.coasterBus}
+                alt={blog.coasterBusAltText}
+              />
+              <figcaption>{blog.coasterBusCaption}</figcaption>
             </figure>
             <p>{blog.takeLarger}</p>
             <p>{blog.whenYouGetOnThe}</p>
             <p>{blog.coronadoIsAbout}</p>
             <figure className="coronado-stop">
-                <img
-                  className="no-right-click"
-                  src={blog.coronadoEntrance}
-                  alt={blog.coronadoEntranceAltText}
-                />
-                <figcaption>{blog.coronadoEntranceCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.coronadoEntrance}
+                alt={blog.coronadoEntranceAltText}
+              />
+              <figcaption>{blog.coronadoEntranceCaption}</figcaption>
             </figure>
             <p>{blog.pedestrianBridge}</p>
             <figure className="coronado-map">
-                <img
-                  className="no-right-click"
-                  src={blog.coronadoMap}
-                  alt={blog.coronadoMapAltText}
-                />
-                <figcaption>{blog.coronadoMapCaption}<br/><span>{blog.courtesyGoogle}</span></figcaption>
+              <img
+                className="no-right-click"
+                src={blog.coronadoMap}
+                alt={blog.coronadoMapAltText}
+              />
+              <figcaption>
+                {blog.coronadoMapCaption}
+                <br />
+                <span>{blog.courtesyGoogle}</span>
+              </figcaption>
             </figure>
             <p>{blog.youCanTakeCab}</p>
             <figure className="taxi-truck">
-                <img
-                  className="no-right-click"
-                  src={blog.taxiPickUp}
-                  alt={blog.taxiPickUpAltText}
-                />
-                <figcaption>{blog.taxiPickUpCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.taxiPickUp}
+                alt={blog.taxiPickUpAltText}
+              />
+              <figcaption>{blog.taxiPickUpCaption}</figcaption>
             </figure>
             <p>{blog.smallWhite}</p>
             <figure className="mini-van">
-                <img
-                  className="no-right-click"
-                  src={blog.coronadoShuttle}
-                  alt={blog.coronadoShuttleAltText}
-                />
-                <figcaption>{blog.coronadoShuttleCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.coronadoShuttle}
+                alt={blog.coronadoShuttleAltText}
+              />
+              <figcaption>{blog.coronadoShuttleCaption}</figcaption>
             </figure>
             <p>{blog.packIn}</p>
             <figure className="inside-van">
-                <img
-                  className="no-right-click"
-                  src={blog.shuttleInterior}
-                  alt={blog.shuttleInteriorAltText}
-                />
-                <figcaption>{blog.shuttleInteriorCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.shuttleInterior}
+                alt={blog.shuttleInteriorAltText}
+              />
+              <figcaption>{blog.shuttleInteriorCaption}</figcaption>
             </figure>
             <p>{blog.gates}</p>
             <figure className="gates">
-                <img
-                  className="no-right-click"
-                  src={blog.coronadoGates}
-                  alt={blog.coronadoGatesAltText}
-                />
-                <figcaption>{blog.coronadoGatesCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.coronadoGates}
+                alt={blog.coronadoGatesAltText}
+              />
+              <figcaption>{blog.coronadoGatesCaption}</figcaption>
             </figure>
             <h2>{blog.h2DiablosRojos}</h2>
-              <p>{blog.theDiablosRojos}</p>
+            <p>{blog.theDiablosRojos}</p>
             <figure className="diablos">
-                <img
-                  className="no-right-click"
-                  src={blog.diablo}
-                  alt={blog.diabloAltText}
-                />
-                <figcaption>{blog.diabloCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.diablo}
+                alt={blog.diabloAltText}
+              />
+              <figcaption>{blog.diabloCaption}</figcaption>
             </figure>
-              <p>{blog.theyAreIndepen}</p>
+            <p>{blog.theyAreIndepen}</p>
             <figure className="chicken-bus">
-                <img
-                  className="no-right-click"
-                  src={blog.panamaChickenBus}
-                  alt={blog.panamaChickenBusAltText}
-                />
-                <figcaption>{blog.panamaChickenBusCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.panamaChickenBus}
+                alt={blog.panamaChickenBusAltText}
+              />
+              <figcaption>{blog.panamaChickenBusCaption}</figcaption>
             </figure>
             <p>{blog.panamaPhased}</p>
             <p>{blog.becauseTheyWere}</p>
@@ -503,25 +552,31 @@ const BlogDetails = () => {
             <p>{blog.chivasAre}</p>
             <p>{blog.nowadays}</p>
             <figure className="chiva">
-                <img
-                  className="no-right-click"
-                  src={blog.chiva}
-                  alt={blog.chivaAltText}
-                />
-                <figcaption>{blog.chivaCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.chiva}
+                alt={blog.chivaAltText}
+              />
+              <figcaption>{blog.chivaCaption}</figcaption>
             </figure>
             <p>{blog.summary}</p>
             <figure className="alex-bus last-figure">
-                <img
-                  className="no-right-click"
-                  src={blog.alexBus}
-                  alt={blog.alexBusAltText}
-                />
-                <figcaption>{blog.alexBusCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.alexBus}
+                alt={blog.alexBusAltText}
+              />
+              <figcaption>{blog.alexBusCaption}</figcaption>
             </figure>
             <div className="button-parent">
-              <button title="Is Panama Safe?" onClick={goToSafetyStory}>&#60;</button>
-              <button title="Things to do in El Cangrejo" onClick={goToElCangrejoStory}>&#62;
+              <button title="Is Panama Safe?" onClick={goToSafetyStory}>
+                &#60;
+              </button>
+              <button
+                title="Things to do in El Cangrejo"
+                onClick={goToElCangrejoStory}
+              >
+                &#62;
               </button>
             </div>
           </section>
@@ -536,223 +591,321 @@ const BlogDetails = () => {
         {error && <div>{error}</div>}
         {blog && (
           <section className={blog.className}>
-          <div className="line-divider centered wide">
-            <p className="diamond-text-box date">
-              <span className="left"></span>
-              <span className="content caps centered">{blog.date}</span>
-              <span className="right"></span>
+            <div className="line-divider centered wide">
+              <p className="diamond-text-box date">
+                <span className="left"></span>
+                <span className="content caps centered">{blog.date}</span>
+                <span className="right"></span>
+              </p>
+            </div>
+            <h1 className="centered post-title">{blog.title}</h1>
+            <p className="body intro">{blog.intro}</p>
+            <figure>
+              <img
+                fetchpriority="high"
+                className="no-right-click"
+                src={blog.elCran}
+                alt={blog.elCranAltText}
+              />
+              <figcaption>{blog.elCranCaption}</figcaption>
+            </figure>
+            <p>{blog.itIsOne}</p>
+            <p>{blog.elCangrejoHas}</p>
+            <p>
+              <strong>{blog.itRep}</strong>
             </p>
-          </div>
-          <h1 className="centered post-title">{blog.title}</h1>
-          <p className="body intro">{blog.intro}</p>
-          <figure>
-                <img
-                  fetchpriority="high"
-                  className="no-right-click"
-                  src={blog.elCran}
-                  alt={blog.elCranAltText}
-                />
-                <figcaption>{blog.elCranCaption}</figcaption>
+            <h2>{blog.howItGotH2}</h2>
+            <p>{blog.theNameOf}</p>
+            <p>{blog.overHead}</p>
+            <p>{blog.claws}</p>
+            <figure className="crab">
+              <img
+                className="no-right-click"
+                src={blog.crab}
+                alt={blog.crabAltText}
+              />
+              <figcaption>{blog.crabCaption}</figcaption>
             </figure>
-           <p>{blog.itIsOne}</p>
-           <p>{blog.elCangrejoHas}</p>
-           <p><strong>{blog.itRep}</strong></p>
-           <h2>{blog.howItGotH2}</h2>
-           <p>{blog.theNameOf}</p>
-           <p>{blog.overHead}</p>
-           <p>{blog.claws}</p>
-           <figure className="crab">
-                <img
-                  className="no-right-click"
-                  src={blog.crab}
-                  alt={blog.crabAltText}
-                />
-                <figcaption>{blog.crabCaption}</figcaption>
+            <h2>{blog.atmosphereH2}</h2>
+            <p>{blog.atmoshphereIs}</p>
+            <p>{blog.natureAndUnique}</p>
+            <figure>
+              <img
+                className="no-right-click"
+                src={blog.bird}
+                alt={blog.birdAltText}
+              />
+              <figcaption>{blog.birdCaption}</figcaption>
             </figure>
-           <h2>{blog.atmosphereH2}</h2>
-           <p>{blog.atmoshphereIs}</p>
-           <p>{blog.natureAndUnique}</p>
-           <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.bird}
-                  alt={blog.birdAltText}
-                />
-                <figcaption>{blog.birdCaption}</figcaption>
-            </figure>
-           <p>{blog.viaArgIs}</p>
-           <p>{blog.theStreetIs}</p>
-           <p>{blog.restaurantOptions}</p>
-           <h2>{blog.restaurantsInH2}</h2>
-           <h3>{blog.elTrapH3}</h3>
+            <p>{blog.viaArgIs}</p>
+            <p>{blog.theStreetIs}</p>
+            <p>{blog.restaurantOptions}</p>
+            <h2>{blog.restaurantsInH2}</h2>
+            <h3>{blog.elTrapH3}</h3>
             <p>{blog.offersAuth}</p>
-           <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.elTrap}
-                  alt={blog.elTrapAltText}
-                />
-                <figcaption>{blog.elTrapCaption}</figcaption>
+            <figure>
+              <img
+                className="no-right-click"
+                src={blog.elTrap}
+                alt={blog.elTrapAltText}
+              />
+              <figcaption>{blog.elTrapCaption}</figcaption>
             </figure>
             <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.elTrapMeal}
-                  alt={blog.elTrapMealAltText}
-                />
-                <figcaption>{blog.elTrapMealCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.elTrapMeal}
+                alt={blog.elTrapMealAltText}
+              />
+              <figcaption>{blog.elTrapMealCaption}</figcaption>
             </figure>
             <figure className="el-trap-food">
-                <img
-                  className="no-right-click"
-                  src={blog.elTrapMeal2}
-                  alt={blog.elTrapMeal2AltText}
-                  />
-                <figcaption>{blog.elTrapMeal2Caption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.elTrapMeal2}
+                alt={blog.elTrapMeal2AltText}
+              />
+              <figcaption>{blog.elTrapMeal2Caption}</figcaption>
             </figure>
             <figure className="el-trap-food">
-                <img
-                  className="no-right-click"
-                  src={blog.elTrapMealA}
-                  alt={blog.elTrapMealAAltText}
-                  />
-                <figcaption>{blog.elTrapMealACaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.elTrapMealA}
+                alt={blog.elTrapMealAAltText}
+              />
+              <figcaption>{blog.elTrapMealACaption}</figcaption>
             </figure>
-           <h3>{blog.sieteMaresH3}</h3>
-           <p>{blog.hasAnElegant}</p>
-           <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.sieteMares}
-                  alt={blog.sieteMaresAltText}
-                />
-                <figcaption>{blog.sieteMaresCaption}</figcaption>
+            <h3>{blog.sieteMaresH3}</h3>
+            <p>{blog.hasAnElegant}</p>
+            <figure>
+              <img
+                className="no-right-click"
+                src={blog.sieteMares}
+                alt={blog.sieteMaresAltText}
+              />
+              <figcaption>{blog.sieteMaresCaption}</figcaption>
             </figure>
             <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.sieteMaresInt}
-                  alt={blog.sieteMaresIntAltText}
-                />
-                <figcaption>{blog.sieteMaresIntCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.sieteMaresInt}
+                alt={blog.sieteMaresIntAltText}
+              />
+              <figcaption>{blog.sieteMaresIntCaption}</figcaption>
             </figure>
             <figure className="siete">
-                <img
-                  className="no-right-click"
-                  src={blog.sieteMaresFood}
-                  alt={blog.sieteMaresFoodAltText}
-                />
-                <figcaption>{blog.sieteMaresFoodCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.sieteMaresFood}
+                alt={blog.sieteMaresFoodAltText}
+              />
+              <figcaption>{blog.sieteMaresFoodCaption}</figcaption>
             </figure>
-           <h3>{blog.chrisRestH3}</h3>
+            <h3>{blog.chrisRestH3}</h3>
             <p>{blog.isAGood}</p>
-           <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.chrisR}
-                  alt={blog.chrisRAltText}
-                />
-                <figcaption>{blog.chrisRCaption}</figcaption>
+            <figure>
+              <img
+                className="no-right-click"
+                src={blog.chrisR}
+                alt={blog.chrisRAltText}
+              />
+              <figcaption>{blog.chrisRCaption}</figcaption>
             </figure>
             <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.chrisR2}
-                  alt={blog.chrisR2AltText}
-                />
-                <figcaption>{blog.chrisR2Caption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.chrisR2}
+                alt={blog.chrisR2AltText}
+              />
+              <figcaption>{blog.chrisR2Caption}</figcaption>
             </figure>
-           <h3>{blog.additionalH3}</h3>
-           <ul>
-              <li>{blog.liOne} <span>{blog.spanOne}</span></li>
-              <li>{blog.liTwo} <span>{blog.spanTwo}</span></li>
-              <li>{blog.liThree} <span>{blog.spanThree}</span></li>
-              <li>{blog.liFour} <span>{blog.spanFour}</span></li>
-              <li>{blog.liFive} <span>{blog.spanFive}</span></li>
-              <li>{blog.liSix} <span>{blog.spanSix}</span></li>
-              <li>{blog.liSeven} <span>{blog.spanSeven}</span></li>
-              <li>{blog.liEight} <span>{blog.spanEight}</span></li>
-              <li>{blog.liEightA} <span>{blog.spanEightA}</span></li>
-              <li> 
+            <h3>{blog.additionalH3}</h3>
+            <ul>
+              <li>
+                {blog.liOne} <span>{blog.spanOne}</span>
+              </li>
+              <li>
+                {blog.liTwo} <span>{blog.spanTwo}</span>
+              </li>
+              <li>
+                {blog.liThree} <span>{blog.spanThree}</span>
+              </li>
+              <li>
+                {blog.liFour} <span>{blog.spanFour}</span>
+              </li>
+              <li>
+                {blog.liFive} <span>{blog.spanFive}</span>
+              </li>
+              <li>
+                {blog.liSix} <span>{blog.spanSix}</span>
+              </li>
+              <li>
+                {blog.liSeven} <span>{blog.spanSeven}</span>
+              </li>
+              <li>
+                {blog.liEight} <span>{blog.spanEight}</span>
+              </li>
+              <li>
+                {blog.liEightA} <span>{blog.spanEightA}</span>
+              </li>
+              <li>
                 <figure className="lee">
                   <img
                     className="no-right-click"
                     src={blog.donLee}
                     alt={blog.donLeeAltText}
                   />
-                <figcaption>{blog.donLeeCaption}</figcaption>
-              </figure>
+                  <figcaption>{blog.donLeeCaption}</figcaption>
+                </figure>
               </li>
-              <li>{blog.liNine} <span>{blog.spanNine}</span></li>
-              <li>{blog.liTen} <span>{blog.spanTen}</span></li>
-              <li>{blog.liEleven} <span>{blog.spanEleven}</span></li>
-              <li>{blog.liTwelve} <span>{blog.spanTwelve}</span></li>
-              <li>{blog.liThirteen} <span>{blog.spanThirteen}</span></li>
-              <li>{blog.liFourteen} <span>{blog.spanFourteen}</span></li>
-              <li>{blog.liFifteen} <span>{blog.spanFifteen}</span></li>
-              <li>{blog.liThirtySix} <span>{blog.spanThirtySix}</span></li>
-              <li>{blog.liSixteen} <span>{blog.spanSixteen}</span></li>
-              <li>{blog.liSeventeen} <span>{blog.spanSeventeen}</span></li>
-              <li>{blog.liEighteen} <span>{blog.spanEighteen}</span></li>
-              <li>{blog.liNineteen} <span>{blog.spanNineteen}</span></li>
-              <li>{blog.liTwenty} <span>{blog.spanTwenty}</span></li>
-              <li>{blog.liTwentyOne} <span>{blog.spanTwentyOne}</span></li>
-              <li>{blog.liTwentyTwo} <span>{blog.spanTwentyTwo}</span></li>
-              <li>{blog.liTwentyThree} <span>{blog.spanTwentyThree}</span></li>
-              <li>{blog.liTwentyThreeA} <span>{blog.spanTwentyThreeA}</span></li>
               <li>
-              <figure className="manlos">
-                <img
-                  className="no-right-click"
-                  src={blog.manolos}
-                  alt={blog.manolosAltText}
-                />
-                <figcaption>{blog.manolosCaption}</figcaption>
-            </figure>
+                {blog.liNine} <span>{blog.spanNine}</span>
               </li>
-              <li>{blog.liTwentyFour} <span>{blog.spanTwentyFour}</span></li>
-              <li>{blog.liTwentyFourA} <span>{blog.spanTwentyFourA}</span></li>
-              <li>{blog.liTwentyFourB} <span>{blog.spanTwentyFourB}</span></li>
-              <li>{blog.liTwentyFourC} <span>{blog.spanTwentyFourC}</span></li>
-              <li>{blog.liTwentyFive} <span>{blog.spanTwentyFive}</span></li>
-              <li>{blog.liTwentySix} <span>{blog.spanTwentySix}</span></li>
-              <li>{blog.liTwentySeven} <span>{blog.spanTwentySeven}</span></li>
-              <li>{blog.liTwentyEight} <span>{blog.spanTwentyEight}</span></li>
-              <li>{blog.liTwentyNine} <span>{blog.spanTwentyNine}</span></li>
-              <li>{blog.liThirty} <span>{blog.spanThirty}</span></li>
-              <li>{blog.liThirtyOne} <span>{blog.spanThirtyOne}</span></li>
-              <li>{blog.liThirtyTwo} <span>{blog.spanThirtyTwo}</span></li>
-              <li>{blog.liThirtyThree} <span>{blog.spanThirtyThree}</span></li>
-              <li>{blog.liThirtyFour} <span>{blog.spanThirtyFour}</span></li>
-              <li>{blog.liThirtyFive} <span>{blog.spanThirtyFive}</span></li>
-              <li>{blog.liThirtySeven} <span>{blog.spanThirtySeven}</span></li>
-              <li>{blog.liThirtyEight} <span>{blog.spanThirtyEight}</span></li>
               <li>
-              <figure className="sen">
-                <img
-                  className="no-right-click"
-                  src={blog.sen}
-                  alt={blog.senAltText}
-                />
-                <figcaption>{blog.senCaption}</figcaption>
-             </figure>
+                {blog.liTen} <span>{blog.spanTen}</span>
               </li>
-              <li>{blog.liThirtyNine} <span>{blog.spanThirtyNine}</span></li>
-              <li>{blog.liForty} <span>{blog.spanForty}</span></li>
-              <li>{blog.liFortyOne} <span>{blog.spanFortyOne}</span></li>
-              <li>{blog.liFortyTwo} <span>{blog.spanFortyTwo}</span></li>
-              <li>{blog.liFortyThree} <span>{blog.spanFortyThree}</span></li>
-           </ul>
-           <h3>{blog.barsPubsH3}</h3>
-           <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.night}
-                  alt={blog.nightAltText}
-                />
-                <figcaption>{blog.nightCaption}</figcaption>
+              <li>
+                {blog.liEleven} <span>{blog.spanEleven}</span>
+              </li>
+              <li>
+                {blog.liTwelve} <span>{blog.spanTwelve}</span>
+              </li>
+              <li>
+                {blog.liThirteen} <span>{blog.spanThirteen}</span>
+              </li>
+              <li>
+                {blog.liFourteen} <span>{blog.spanFourteen}</span>
+              </li>
+              <li>
+                {blog.liFifteen} <span>{blog.spanFifteen}</span>
+              </li>
+              <li>
+                {blog.liThirtySix} <span>{blog.spanThirtySix}</span>
+              </li>
+              <li>
+                {blog.liSixteen} <span>{blog.spanSixteen}</span>
+              </li>
+              <li>
+                {blog.liSeventeen} <span>{blog.spanSeventeen}</span>
+              </li>
+              <li>
+                {blog.liEighteen} <span>{blog.spanEighteen}</span>
+              </li>
+              <li>
+                {blog.liNineteen} <span>{blog.spanNineteen}</span>
+              </li>
+              <li>
+                {blog.liTwenty} <span>{blog.spanTwenty}</span>
+              </li>
+              <li>
+                {blog.liTwentyOne} <span>{blog.spanTwentyOne}</span>
+              </li>
+              <li>
+                {blog.liTwentyTwo} <span>{blog.spanTwentyTwo}</span>
+              </li>
+              <li>
+                {blog.liTwentyThree} <span>{blog.spanTwentyThree}</span>
+              </li>
+              <li>
+                {blog.liTwentyThreeA} <span>{blog.spanTwentyThreeA}</span>
+              </li>
+              <li>
+                <figure className="manlos">
+                  <img
+                    className="no-right-click"
+                    src={blog.manolos}
+                    alt={blog.manolosAltText}
+                  />
+                  <figcaption>{blog.manolosCaption}</figcaption>
+                </figure>
+              </li>
+              <li>
+                {blog.liTwentyFour} <span>{blog.spanTwentyFour}</span>
+              </li>
+              <li>
+                {blog.liTwentyFourA} <span>{blog.spanTwentyFourA}</span>
+              </li>
+              <li>
+                {blog.liTwentyFourB} <span>{blog.spanTwentyFourB}</span>
+              </li>
+              <li>
+                {blog.liTwentyFourC} <span>{blog.spanTwentyFourC}</span>
+              </li>
+              <li>
+                {blog.liTwentyFive} <span>{blog.spanTwentyFive}</span>
+              </li>
+              <li>
+                {blog.liTwentySix} <span>{blog.spanTwentySix}</span>
+              </li>
+              <li>
+                {blog.liTwentySeven} <span>{blog.spanTwentySeven}</span>
+              </li>
+              <li>
+                {blog.liTwentyEight} <span>{blog.spanTwentyEight}</span>
+              </li>
+              <li>
+                {blog.liTwentyNine} <span>{blog.spanTwentyNine}</span>
+              </li>
+              <li>
+                {blog.liThirty} <span>{blog.spanThirty}</span>
+              </li>
+              <li>
+                {blog.liThirtyOne} <span>{blog.spanThirtyOne}</span>
+              </li>
+              <li>
+                {blog.liThirtyTwo} <span>{blog.spanThirtyTwo}</span>
+              </li>
+              <li>
+                {blog.liThirtyThree} <span>{blog.spanThirtyThree}</span>
+              </li>
+              <li>
+                {blog.liThirtyFour} <span>{blog.spanThirtyFour}</span>
+              </li>
+              <li>
+                {blog.liThirtyFive} <span>{blog.spanThirtyFive}</span>
+              </li>
+              <li>
+                {blog.liThirtySeven} <span>{blog.spanThirtySeven}</span>
+              </li>
+              <li>
+                {blog.liThirtyEight} <span>{blog.spanThirtyEight}</span>
+              </li>
+              <li>
+                <figure className="sen">
+                  <img
+                    className="no-right-click"
+                    src={blog.sen}
+                    alt={blog.senAltText}
+                  />
+                  <figcaption>{blog.senCaption}</figcaption>
+                </figure>
+              </li>
+              <li>
+                {blog.liThirtyNine} <span>{blog.spanThirtyNine}</span>
+              </li>
+              <li>
+                {blog.liForty} <span>{blog.spanForty}</span>
+              </li>
+              <li>
+                {blog.liFortyOne} <span>{blog.spanFortyOne}</span>
+              </li>
+              <li>
+                {blog.liFortyTwo} <span>{blog.spanFortyTwo}</span>
+              </li>
+              <li>
+                {blog.liFortyThree} <span>{blog.spanFortyThree}</span>
+              </li>
+            </ul>
+            <h3>{blog.barsPubsH3}</h3>
+            <figure>
+              <img
+                className="no-right-click"
+                src={blog.night}
+                alt={blog.nightAltText}
+              />
+              <figcaption>{blog.nightCaption}</figcaption>
             </figure>
-           <ul>
+            <ul>
               <li>{blog.bpOne}</li>
               <li>{blog.bpOneA}</li>
               <li>{blog.bpTwo}</li>
@@ -770,141 +923,150 @@ const BlogDetails = () => {
               <li>{blog.bpFourteen}</li>
               <li>{blog.bpFifteen}</li>
               <li>{blog.bpSixteen}</li>
-           </ul>
-           <h2>{blog.parksH2}</h2>
-           <h3>{blog.andresBelH3}</h3>
-           <p>{blog.isLocated}</p>
-           <p>{blog.thereAre}</p>
-           <h3>{blog.parkOmarH3}</h3>
-           <p>{blog.isALarg}</p>
-           <p>{blog.bothOf}</p>
-           <h3>{blog.iglesiaH3}</h3>
-           <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.delCarmen}
-                  alt={blog.delCarmenAltText}
-                />
-                <figcaption>{blog.delCarmenCaption}</figcaption>
+            </ul>
+            <h2>{blog.parksH2}</h2>
+            <h3>{blog.andresBelH3}</h3>
+            <p>{blog.isLocated}</p>
+            <p>{blog.thereAre}</p>
+            <h3>{blog.parkOmarH3}</h3>
+            <p>{blog.isALarg}</p>
+            <p>{blog.bothOf}</p>
+            <h3>{blog.iglesiaH3}</h3>
+            <figure>
+              <img
+                className="no-right-click"
+                src={blog.delCarmen}
+                alt={blog.delCarmenAltText}
+              />
+              <figcaption>{blog.delCarmenCaption}</figcaption>
             </figure>
-           <p>{blog.theChurch}</p>
-           <p>{blog.itHas}</p>
-           <p>{blog.towers}</p>
-           <p>{blog.itsConstruction}</p>
-           <h3>{blog.ffH3}</h3>
-           <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.ff}
-                  alt={blog.ffAltText}
-                />
-                <figcaption>{blog.ffCaption}</figcaption>
+            <p>{blog.theChurch}</p>
+            <p>{blog.itHas}</p>
+            <p>{blog.towers}</p>
+            <p>{blog.itsConstruction}</p>
+            <h3>{blog.ffH3}</h3>
+            <figure>
+              <img
+                className="no-right-click"
+                src={blog.ff}
+                alt={blog.ffAltText}
+              />
+              <figcaption>{blog.ffCaption}</figcaption>
             </figure>
-           <p>{blog.theCork}</p>
-           <h3>{blog.womanKneeH3}</h3>
-           <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.onKnee}
-                  alt={blog.onKneeAltText}
-                />
-                <figcaption>{blog.onKneeCaption}</figcaption>
+            <p>{blog.theCork}</p>
+            <h3>{blog.womanKneeH3}</h3>
+            <figure>
+              <img
+                className="no-right-click"
+                src={blog.onKnee}
+                alt={blog.onKneeAltText}
+              />
+              <figcaption>{blog.onKneeCaption}</figcaption>
             </figure>
-           <p>{blog.thisIs}</p>
-           <h3>{blog.robertoH3}</h3>
-           <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.duran}
-                  alt={blog.duranAltText}
-                />
-                <figcaption>{blog.duranCaption}</figcaption>
+            <p>{blog.thisIs}</p>
+            <h3>{blog.robertoH3}</h3>
+            <figure>
+              <img
+                className="no-right-click"
+                src={blog.duran}
+                alt={blog.duranAltText}
+              />
+              <figcaption>{blog.duranCaption}</figcaption>
             </figure>
-           <p>{blog.houseIn}</p>
-           <h3>{blog.otherSitesH3}</h3>
-           <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.barber}
-                  alt={blog.barberAltText}
-                />
-                <figcaption>{blog.barberCaption}</figcaption>
+            <p>{blog.houseIn}</p>
+            <h3>{blog.otherSitesH3}</h3>
+            <figure>
+              <img
+                className="no-right-click"
+                src={blog.barber}
+                alt={blog.barberAltText}
+              />
+              <figcaption>{blog.barberCaption}</figcaption>
             </figure>
             <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.tryp}
-                  alt={blog.trypAltText}
-                />
-                <figcaption>{blog.trypCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.tryp}
+                alt={blog.trypAltText}
+              />
+              <figcaption>{blog.trypCaption}</figcaption>
             </figure>
             <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.coffee}
-                  alt={blog.coffeeAltText}
-                />
-                <figcaption>{blog.coffeeCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.coffee}
+                alt={blog.coffeeAltText}
+              />
+              <figcaption>{blog.coffeeCaption}</figcaption>
             </figure>
             <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.graff}
-                  alt={blog.graffAltText}
-                />
-                <figcaption>{blog.graffCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.graff}
+                alt={blog.graffAltText}
+              />
+              <figcaption>{blog.graffCaption}</figcaption>
             </figure>
             <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.palm}
-                  alt={blog.palmAltText}
-                />
-                <figcaption>{blog.palmCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.palm}
+                alt={blog.palmAltText}
+              />
+              <figcaption>{blog.palmCaption}</figcaption>
             </figure>
             <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.moto}
-                  alt={blog.motoAltText}
-                />
-                <figcaption>{blog.motoCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.moto}
+                alt={blog.motoAltText}
+              />
+              <figcaption>{blog.motoCaption}</figcaption>
             </figure>
             <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.life}
-                  alt={blog.lifeAltText}
-                />
-                <figcaption>{blog.lifeCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.life}
+                alt={blog.lifeAltText}
+              />
+              <figcaption>{blog.lifeCaption}</figcaption>
             </figure>
             <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.street}
-                  alt={blog.streetAltText}
-                />
-                <figcaption>{blog.streetCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.street}
+                alt={blog.streetAltText}
+              />
+              <figcaption>{blog.streetCaption}</figcaption>
             </figure>
             <figure>
-                <img
-                  className="no-right-click"
-                  src={blog.view}
-                  alt={blog.viewAltText}
-                />
-                <figcaption>{blog.viewCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.view}
+                alt={blog.viewAltText}
+              />
+              <figcaption>{blog.viewCaption}</figcaption>
             </figure>
             <figure className="last-figure">
-                <img
-                  className="no-right-click"
-                  src={blog.arch}
-                  alt={blog.archAltText}
-                />
-                <figcaption>{blog.archCaption}</figcaption>
+              <img
+                className="no-right-click"
+                src={blog.arch}
+                alt={blog.archAltText}
+              />
+              <figcaption>{blog.archCaption}</figcaption>
             </figure>
-           <div className="button-parent">
-              <button title="How do I get around in Panama?" onClick={goToTransportationStory}>&#60;</button>
-              <button title="How do I visit the Panama Canal?" onClick={goToCanalStory}>&#62;
+            <div className="button-parent">
+              <button
+                title="How do I get around in Panama?"
+                onClick={goToTransportationStory}
+              >
+                &#60;
+              </button>
+              <button
+                title="How do I visit the Panama Canal?"
+                onClick={goToCanalStory}
+              >
+                &#62;
               </button>
             </div>
           </section>

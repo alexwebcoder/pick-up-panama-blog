@@ -23,6 +23,7 @@ const NotFound = () => {
             sizes="(max-width: 320px) 320px, (max-width: 640px) 640px, 1017px"
           />
           <img
+            fetchpriority="high"
             className="no-right-click"
             src={process.env.PUBLIC_URL + "/images/notFound/missing-meal.jpg"}
             alt="Villa Mayte Coronado Panama"
