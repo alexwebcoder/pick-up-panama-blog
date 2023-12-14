@@ -86,7 +86,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    "/images/panamanian-policeman-outside-of-bank-320.webp 320w, /images/safety/panamanian-policeman-outside-of-bank-480.webp 480w, /images/safety/panamanian-policeman-outside-of-bank-640.webp 640w, /images/safety/panamanian-policeman-outside-of-bank-768.webp 768w, /images/safety/panamanian-policeman-outside-of-bank.webp 1170w"
+                    "/images/safety/panamanian-policeman-outside-of-bank-320.webp 320w, /images/safety/panamanian-policeman-outside-of-bank-480.webp 480w, /images/safety/panamanian-policeman-outside-of-bank-640.webp 640w, /images/safety/panamanian-policeman-outside-of-bank-768.webp 768w, /images/safety/panamanian-policeman-outside-of-bank.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -170,7 +170,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    "/images/casco-viejo-police-320.webp 320w, /images/safety/casco-viejo-police-480.webp 480w, /images/safety/casco-viejo-police-640.webp 640w, /images/safety/casco-viejo-police-768.webp 768w, /images/safety/casco-viejo-police.webp 1170w"
+                    "/images/safety/casco-viejo-police-320.webp 320w, /images/safety/casco-viejo-police-480.webp 480w, /images/safety/casco-viejo-police-640.webp 640w, /images/safety/casco-viejo-police-768.webp 768w, /images/safety/casco-viejo-police.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -195,7 +195,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    "/images/autoridad-de-turismo-320.webp 320w, /images/safety/autoridad-de-turismo-480.webp 480w, /images/safety/autoridad-de-turismo-640.webp 640w, /images/safety/autoridad-de-turismo-768.webp 768w, /images/safety/autoridad-de-turismo.webp 1170w"
+                    "/images/safety/autoridad-de-turismo-320.webp 320w, /images/safety/autoridad-de-turismo-480.webp 480w, /images/safety/autoridad-de-turismo-640.webp 640w, /images/safety/autoridad-de-turismo-768.webp 768w, /images/safety/autoridad-de-turismo.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -250,7 +250,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    "/images/colon-panama-license-plate-320.webp 320w, /images/safety/colon-panama-license-plate-480.webp 480w, /images/safety/colon-panama-license-plate-640.webp 640w, /images/safety/colon-panama-license-plate-768.webp 768w, /images/safety/colon-panama-license-plate.webp 1170w"
+                    "/images/safety/colon-panama-license-plate-320.webp 320w, /images/safety/colon-panama-license-plate-480.webp 480w, /images/safety/colon-panama-license-plate-640.webp 640w, /images/safety/colon-panama-license-plate-768.webp 768w, /images/safety/colon-panama-license-plate.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
