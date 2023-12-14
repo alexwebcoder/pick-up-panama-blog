@@ -81,19 +81,55 @@ const BlogDetails = () => {
               <figcaption>{blog.fruitStandCopCaption}</figcaption>
             </figure>
             <figure className="bank-police">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/panamanian-policeman-outside-of-bank-320.webp 320w, /images/safety/panamanian-policeman-outside-of-bank-480.webp 480w, /images/safety/panamanian-policeman-outside-of-bank-640.webp 640w, /images/safety/panamanian-policeman-outside-of-bank-768.webp 768w, /images/safety/panamanian-policeman-outside-of-bank.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/panamanian-policeman-outside-of-bank-320.jpg 320w, /images/safety/panamanian-policeman-outside-of-bank-480.jpg 480w, /images/safety/panamanian-policeman-outside-of-bank-640.jpg 640w, /images/safety/panamanian-policeman-outside-of-bank-768.jpg 768w, /images/safety/panamanian-policeman-outside-of-bank.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.panamaCopBank}
                 alt={blog.panamaCopBankAltText}
               />
+              </picture>
               <figcaption>{blog.panamaCopBankCaption}</figcaption>
             </figure>
             <figure className="market-police">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/panamanian-police-el-cangrejo-320.webp 320w, /images/safety/panamanian-police-el-cangrejo-480.webp 480w, /images/safety/panamanian-police-el-cangrejo-640.webp 640w, /images/safety/panamanian-police-el-cangrejo-768.webp 768w, /images/safety/panamanian-police-el-cangrejo.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/panamanian-police-el-cangrejo-320.jpg 320w, /images/safety/panamanian-police-el-cangrejo-480.jpg 480w, /images/safety/panamanian-police-el-cangrejo-640.jpg 640w, /images/safety/panamanian-police-el-cangrejo-768.jpg 768w, /images/safety/panamanian-police-el-cangrejo.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.panamaCopElCan}
                 alt={blog.panamaCopElCanAltText}
               />
+              </picture>
               <figcaption>{blog.panamaCopElCanCaption}</figcaption>
             </figure>
             <section>
@@ -129,39 +165,109 @@ const BlogDetails = () => {
               <p>{blog.mostCrimeReported}</p>
               <p>{blog.duringDay}</p>
               <figure className="casco-police">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/casco-viejo-police-320.webp 320w, /images/safety/casco-viejo-police-480.webp 480w, /images/safety/casco-viejo-police-640.webp 640w, /images/safety/casco-viejo-police-768.webp 768w, /images/safety/casco-viejo-police.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/casco-viejo-police-320.jpg 320w, /images/safety/casco-viejo-police-480.jpg 480w, /images/safety/casco-viejo-police-640.jpg 640w, /images/safety/casco-viejo-police-768.jpg 768w, /images/safety/casco-viejo-police.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
                 <img
                   className="no-right-click"
                   src={blog.cascoViejoPolice}
                   alt={blog.cascoViejoPolceAltText}
                 />
+                </picture>
                 <figcaption>{blog.cascoViejoPoliceCaption}</figcaption>
               </figure>
-              <figure className="casco-tourist">
+              <figure className="casco-tourist"> <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/autoridad-de-turismo-320.webp 320w, /images/safety/autoridad-de-turismo-480.webp 480w, /images/safety/autoridad-de-turismo-640.webp 640w, /images/safety/autoridad-de-turismo-768.webp 768w, /images/safety/autoridad-de-turismo.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/autoridad-de-turismo-320.jpg 320w, /images/safety/autoridad-de-turismo-480.jpg 480w, /images/safety/autoridad-de-turismo-640.jpg 640w, /images/safety/autoridad-de-turismo-768.jpg 768w, /images/safety/autoridad-de-turismo.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
                 <img
                   className="no-right-click"
                   src={blog.cascoTouristAuth}
                   alt={blog.cascoTouristAuthAltText}
                 />
+                </picture>
                 <figcaption>{blog.cascoTouristAuthCaption}</figcaption>
               </figure>
               <p>{blog.cascoViejoBorders}</p>
-              <figure className="near-casco">
+              <figure className="near-casco"> <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/cinco-de-mayo-panama-320.webp 320w, /images/safety/cinco-de-mayo-panama-480.webp 480w, /images/safety/cinco-de-mayo-panama-640.webp 640w, /images/safety/cinco-de-mayo-panama-768.webp 768w, /images/safety/cinco-de-mayo-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/cinco-de-mayo-panama-320.jpg 320w, /images/safety/cinco-de-mayo-panama-480.jpg 480w, /images/safety/cinco-de-mayo-panama-640.jpg 640w, /images/safety/cinco-de-mayo-panama-768.jpg 768w, /images/safety/cinco-de-mayo-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
                 <img
                   className="no-right-click"
                   src={blog.nearCascoViejo}
                   alt={blog.nearCascoViejoAltText}
                 />
+                </picture>
                 <figcaption>{blog.nearCascoViejoCaption}</figcaption>
               </figure>
               <p>{blog.iAdviseAgainst}</p>
               <h3>{blog.h3Colon}</h3>
               <p>{blog.colonIsOn}</p>
               <figure className="colon-plate">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/colon-panama-license-plate-320.webp 320w, /images/safety/colon-panama-license-plate-480.webp 480w, /images/safety/colon-panama-license-plate-640.webp 640w, /images/safety/colon-panama-license-plate-768.webp 768w, /images/safety/colon-panama-license-plate.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/colon-panama-license-plate-320.jpg 320w, /images/safety/colon-panama-license-plate-480.jpg 480w, /images/safety/colon-panama-license-plate-640.jpg 640w, /images/safety/colon-panama-license-plate-768.jpg 768w, /images/safety/colon-panama-license-plate.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
                 <img
                   className="no-right-click"
                   src={blog.colonLicense}
                   alt={blog.colonLicenseAltText}
                 />
+                </picture>
                 <figcaption>{blog.colonLicenseCaption}</figcaption>
               </figure>
               <h3>{blog.darianGap}</h3>
@@ -202,11 +308,29 @@ const BlogDetails = () => {
               <p>{blog.overallPanamaIs}</p>
               <p>{blog.mostTips}</p>
               <figure className="casco-petty-crime last-figure">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/casco-viejo-petty-crime-320.webp 320w, /images/safety/casco-viejo-petty-crime-480.webp 480w, /images/safety/casco-viejo-petty-crime-640.webp 640w, /images/safety/casco-viejo-petty-crime-768.webp 768w, /images/safety/casco-viejo-petty-crime.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/safety/casco-viejo-petty-crime-320.jpg 320w, /images/safety/casco-viejo-petty-crime-480.jpg 480w, /images/safety/casco-viejo-petty-crime-640.jpg 640w, /images/safety/casco-viejo-petty-crime-768.jpg 768w, /images/safety/casco-viejo-petty-crime.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
                 <img
                   className="no-right-click"
                   src={blog.cascoPettyCrime}
                   alt={blog.cascoPettyCrimeAltText}
                 />
+                </picture>
                 <figcaption>{blog.cascoPettyCrimeCaption}</figcaption>
               </figure>
             </section>
