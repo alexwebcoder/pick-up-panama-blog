@@ -370,12 +370,30 @@ const BlogDetails = () => {
             <h1 className="centered post-title">{blog.title}</h1>
             <p className="body intro">{blog.intro}</p>
             <figure className="hwy">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-panamerican-highway-320.webp 320w, /images/transportation/panama-panamerican-highway-480.webp 480w, /images/transportation/panama-panamerican-highway-640.webp 640w, /images/transportation/panama-panamerican-highway-768.webp 768w, /images/transportation/panama-panamerican-highway.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-panamerican-highway-320.jpg 320w, /images/transportation/panama-panamerican-highway-480.jpg 480w, /images/transportation/panama-panamerican-highway-640.jpg 640w, /images/transportation/panama-panamerican-highway-768.jpg 768w, /images/transportation/panama-panamerican-highway.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 fetchpriority="high"
                 className="no-right-click"
                 src={blog.panAm}
                 alt={blog.panAmAltText}
               />
+              </picture>
               <figcaption>{blog.panAmCaption}</figcaption>
             </figure>
             <p>{blog.guide}</p>
@@ -397,11 +415,29 @@ const BlogDetails = () => {
             <h4>{blog.h4RapiCard}</h4>
             <p>{blog.cashCredit}</p>
             <figure className="rapi-card">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/rapi-pass-320.webp 320w, /images/transportation/rapi-pass-480.webp 480w, /images/transportation/rapi-pass-640.webp 640w, /images/transportation/rapi-pass-768.webp 768w, /images/transportation/rapi-pass.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/rapi-pass-320.jpg 320w, /images/transportation/rapi-pass-480.jpg 480w, /images/transportation/rapi-pass-640.jpg 640w, /images/transportation/rapi-pass-768.jpg 768w, /images/transportation/rapi-pass.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.rapiCard}
                 alt={blog.rapiCardAltText}
               />
+              </picture>
               <figcaption>{blog.rapiCardCaption}</figcaption>
             </figure>
             <p>{blog.cardIsFor}</p>
@@ -415,11 +451,29 @@ const BlogDetails = () => {
             <p>{blog.ifTraveling}</p>
             <h4>{blog.h4Shuttle}</h4>
             <figure className="free-shuttle">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/tocumen-airport-free-shuttle-320.webp 320w, /images/transportation/tocumen-airport-free-shuttle-480.webp 480w, /images/transportation/tocumen-airport-free-shuttle-640.webp 640w, /images/transportation/tocumen-airport-free-shuttle-768.webp 768w, /images/transportation/tocumen-airport-free-shuttle.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/tocumen-airport-free-shuttle-320.jpg 320w, /images/transportation/tocumen-airport-free-shuttle-480.jpg 480w, /images/transportation/tocumen-airport-free-shuttle-640.jpg 640w, /images/transportation/tocumen-airport-free-shuttle-768.jpg 768w, /images/transportation/tocumen-airport-free-shuttle.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.freeShuttle}
                 alt={blog.freeShuttleAltText}
               />
+              </picture>
               <figcaption>{blog.freeShuttleCaption}</figcaption>
             </figure>
             <p>{blog.trainDoesNot}</p>
@@ -434,11 +488,29 @@ const BlogDetails = () => {
               <li>{blog.fiveMinLi}</li>
             </ul>
             <figure className="metro-map">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/metro-map-aeropuerto-station-320.webp 320w, /images/transportation/metro-map-aeropuerto-station-480.webp 480w, /images/transportation/metro-map-aeropuerto-station-640.webp 640w, /images/transportation/metro-map-aeropuerto-station-768.webp 768w, /images/transportation/metro-map-aeropuerto-station.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/metro-map-aeropuerto-station-320.jpg 320w, /images/transportation/metro-map-aeropuerto-station-480.jpg 480w, /images/transportation/metro-map-aeropuerto-station-640.jpg 640w, /images/transportation/metro-map-aeropuerto-station-768.jpg 768w, /images/transportation/metro-map-aeropuerto-station.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.metroMap}
                 alt={blog.metroMapAltText}
               />
+              </picture>
               <figcaption>
                 {blog.metroMapCaption}
                 <br />
@@ -495,11 +567,29 @@ const BlogDetails = () => {
               <strong>{blog.thisIsKnown}</strong>
             </p>
             <figure className="city-center">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-city-center-320.webp 320w, /images/transportation/panama-city-center-480.webp 480w, /images/transportation/panama-city-center-640.webp 640w, /images/transportation/panama-city-center-768.webp 768w, /images/transportation/panama-city-center.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-city-center-320.jpg 320w, /images/transportation/panama-city-center-480.jpg 480w, /images/transportation/panama-city-center-640.jpg 640w, /images/transportation/panama-city-center-768.jpg 768w, /images/transportation/panama-city-center.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.cityCenter}
                 alt={blog.cityCenterAltText}
               />
+              </picture>
               <figcaption>
                 {blog.cityCenterCaption}
                 <br />
@@ -508,11 +598,29 @@ const BlogDetails = () => {
             </figure>
             <h3>{blog.h3YellowCab}</h3>
             <figure className="yellow-cabs">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/cabs-panama-city-320.webp 320w, /images/transportation/cabs-panama-city-480.webp 480w, /images/transportation/cabs-panama-city-640.webp 640w, /images/transportation/cabs-panama-city-768.webp 768w, /images/transportation/cabs-panama-city.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/cabs-panama-city-320.jpg 320w, /images/transportation/cabs-panama-city-480.jpg 480w, /images/transportation/cabs-panama-city-640.jpg 640w, /images/transportation/cabs-panama-city-768.jpg 768w, /images/transportation/cabs-panama-city.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.panamaCabs}
                 alt={blog.panamaCabsAltText}
               />
+              </picture>
               <figcaption>{blog.panamaCabsCaption}</figcaption>
             </figure>
             <p>{blog.licensedYellow}</p>
@@ -542,11 +650,29 @@ const BlogDetails = () => {
             <h3>{blog.h3PanamaBuses}</h3>
             <h4>{blog.h4RidingMetro}</h4>
             <figure className="metro-bus">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-metro-bus-and-cab-320.webp 320w, /images/transportation/panama-metro-bus-and-cab-480.webp 480w, /images/transportation/panama-metro-bus-and-cab-640.webp 640w, /images/transportation/panama-metro-bus-and-cab-768.webp 768w, /images/transportation/panama-metro-bus-and-cab.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-metro-bus-and-cab-320.jpg 320w, /images/transportation/panama-metro-bus-and-cab-480.jpg 480w, /images/transportation/panama-metro-bus-and-cab-640.jpg 640w, /images/transportation/panama-metro-bus-and-cab-768.jpg 768w, /images/transportation/panama-metro-bus-and-cab.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.metroCab}
                 alt={blog.metroCabAltText}
               />
+              </picture>
               <figcaption>{blog.metroCabCaption}</figcaption>
             </figure>
             <p>{blog.theMetroIs}</p>
@@ -556,11 +682,29 @@ const BlogDetails = () => {
             <p>{blog.whenReady}</p>
             <h4>{blog.h4busRidesOut}</h4>
             <figure className="albrook-terminal">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/albrook-terminal-320.webp 320w, /images/transportation/albrook-terminal-480.webp 480w, /images/transportation/albrook-terminal-640.webp 640w, /images/transportation/albrook-terminal-768.webp 768w, /images/transportation/albrook-terminal.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/albrook-terminal-320.jpg 320w, /images/transportation/albrook-terminal-480.jpg 480w, /images/transportation/albrook-terminal-640.jpg 640w, /images/transportation/albrook-terminal-768.jpg 768w, /images/transportation/albrook-terminal.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.albrookEntr}
                 alt={blog.albrookEntrAltText}
               />
+              </picture>
               <figcaption>{blog.albrookEntrBusCaption}</figcaption>
             </figure>
             <p>{blog.granTerminal}</p>
@@ -575,39 +719,111 @@ const BlogDetails = () => {
             <p>{blog.youWillSee}</p>
             <p>{blog.twoBusesChoose}</p>
             <figure className="comfy-bus">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-comfy-bus-320.webp 320w, /images/transportation/panama-comfy-bus-480.webp 480w, /images/transportation/panama-comfy-bus-640.webp 640w, /images/transportation/panama-comfy-bus-768.webp 768w, /images/transportation/panama-comfy-bus.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-comfy-bus-320.jpg 320w, /images/transportation/panama-comfy-bus-480.jpg 480w, /images/transportation/panama-comfy-bus-640.jpg 640w, /images/transportation/panama-comfy-bus-768.jpg 768w, /images/transportation/panama-comfy-bus.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.comfyBus}
                 alt={blog.comfyBusAltText}
               />
+              </picture>
               <figcaption>{blog.comfyBusCaption}</figcaption>
             </figure>
             <figure className="coaster-bus">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-coaster-bus-320.webp 320w, /images/transportation/panama-coaster-bus-480.webp 480w, /images/transportation/panama-coaster-bus-640.webp 640w, /images/transportation/panama-coaster-bus-768.webp 768w, /images/transportation/panama-coaster-bus.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-coaster-bus-320.jpg 320w, /images/transportation/panama-coaster-bus-480.jpg 480w, /images/transportation/panama-coaster-bus-640.jpg 640w, /images/transportation/panama-coaster-bus-768.jpg 768w, /images/transportation/panama-coaster-bus.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.coasterBus}
                 alt={blog.coasterBusAltText}
               />
+              </picture>
               <figcaption>{blog.coasterBusCaption}</figcaption>
             </figure>
             <p>{blog.takeLarger}</p>
             <p>{blog.whenYouGetOnThe}</p>
             <p>{blog.coronadoIsAbout}</p>
             <figure className="coronado-stop">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/coronado-panama-entrance-320.webp 320w, /images/transportation/coronado-panama-entrance-480.webp 480w, /images/transportation/coronado-panama-entrance-640.webp 640w, /images/transportation/coronado-panama-entrance-768.webp 768w, /images/transportation/coronado-panama-entrance.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/coronado-panama-entrance-320.jpg 320w, /images/transportation/coronado-panama-entrance-480.jpg 480w, /images/transportation/coronado-panama-entrance-640.jpg 640w, /images/transportation/coronado-panama-entrance-768.jpg 768w, /images/transportation/coronado-panama-entrance.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.coronadoEntrance}
                 alt={blog.coronadoEntranceAltText}
               />
+              </picture>
               <figcaption>{blog.coronadoEntranceCaption}</figcaption>
             </figure>
             <p>{blog.pedestrianBridge}</p>
             <figure className="coronado-map">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/map-of-coronado-320.webp 320w, /images/transportation/map-of-coronado-480.webp 480w, /images/transportation/map-of-coronado-640.webp 640w, /images/transportation/map-of-coronado-768.webp 768w, /images/transportation/map-of-coronado.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/map-of-coronado-320.jpg 320w, /images/transportation/map-of-coronado-480.jpg 480w, /images/transportation/map-of-coronado-640.jpg 640w, /images/transportation/map-of-coronado-768.jpg 768w, /images/transportation/map-of-coronado.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.coronadoMap}
                 alt={blog.coronadoMapAltText}
               />
+              </picture>
               <figcaption>
                 {blog.coronadoMapCaption}
                 <br />
@@ -616,57 +832,165 @@ const BlogDetails = () => {
             </figure>
             <p>{blog.youCanTakeCab}</p>
             <figure className="taxi-truck">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-taxi-pickup-truck-320.webp 320w, /images/transportation/panama-taxi-pickup-truck-480.webp 480w, /images/transportation/panama-taxi-pickup-truck-640.webp 640w, /images/transportation/panama-taxi-pickup-truck-768.webp 768w, /images/transportation/panama-taxi-pickup-truck.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-taxi-pickup-truck-320.jpg 320w, /images/transportation/panama-taxi-pickup-truck-480.jpg 480w, /images/transportation/panama-taxi-pickup-truck-640.jpg 640w, /images/transportation/panama-taxi-pickup-truck-768.jpg 768w, /images/transportation/panama-taxi-pickup-truck.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.taxiPickUp}
                 alt={blog.taxiPickUpAltText}
               />
+              </picture>
               <figcaption>{blog.taxiPickUpCaption}</figcaption>
             </figure>
             <p>{blog.smallWhite}</p>
             <figure className="mini-van">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/coronado-shuttle-bus-320.webp 320w, /images/transportation/coronado-shuttle-bus-480.webp 480w, /images/transportation/coronado-shuttle-bus-640.webp 640w, /images/transportation/coronado-shuttle-bus-768.webp 768w, /images/transportation/coronado-shuttle-bus.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/coronado-shuttle-bus-320.jpg 320w, /images/transportation/coronado-shuttle-bus-480.jpg 480w, /images/transportation/coronado-shuttle-bus-640.jpg 640w, /images/transportation/coronado-shuttle-bus-768.jpg 768w, /images/transportation/coronado-shuttle-bus.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.coronadoShuttle}
                 alt={blog.coronadoShuttleAltText}
               />
+              </picture>
               <figcaption>{blog.coronadoShuttleCaption}</figcaption>
             </figure>
             <p>{blog.packIn}</p>
             <figure className="inside-van">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/coronado-shuttle-bus-interior-320.webp 320w, /images/transportation/coronado-shuttle-bus-interior-480.webp 480w, /images/transportation/coronado-shuttle-bus-interior-640.webp 640w, /images/transportation/coronado-shuttle-bus-interior-768.webp 768w, /images/transportation/coronado-shuttle-bus-interior.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/coronado-shuttle-bus-interior-320.jpg 320w, /images/transportation/coronado-shuttle-bus-interior-480.jpg 480w, /images/transportation/coronado-shuttle-bus-interior-640.jpg 640w, /images/transportation/coronado-shuttle-bus-interior-768.jpg 768w, /images/transportation/coronado-shuttle-bus-interior.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.shuttleInterior}
                 alt={blog.shuttleInteriorAltText}
               />
+              </picture>
               <figcaption>{blog.shuttleInteriorCaption}</figcaption>
             </figure>
             <p>{blog.gates}</p>
             <figure className="gates">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/coronado-panama-gates-320.webp 320w, /images/transportation/coronado-panama-gates-480.webp 480w, /images/transportation/coronado-panama-gates-640.webp 640w, /images/transportation/coronado-panama-gates-768.webp 768w, /images/transportation/coronado-panama-gates.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/coronado-panama-gates-320.jpg 320w, /images/transportation/coronado-panama-gates-480.jpg 480w, /images/transportation/coronado-panama-gates-640.jpg 640w, /images/transportation/coronado-panama-gates-768.jpg 768w, /images/transportation/coronado-panama-gates.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.coronadoGates}
                 alt={blog.coronadoGatesAltText}
               />
+              </picture>
               <figcaption>{blog.coronadoGatesCaption}</figcaption>
             </figure>
             <h2>{blog.h2DiablosRojos}</h2>
             <p>{blog.theDiablosRojos}</p>
             <figure className="diablos">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panamanian-diablo-bus-320.webp 320w, /images/transportation/panamanian-diablo-bus-480.webp 480w, /images/transportation/panamanian-diablo-bus-640.webp 640w, /images/transportation/panamanian-diablo-bus-768.webp 768w, /images/transportation/panamanian-diablo-bus.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panamanian-diablo-bus-320.jpg 320w, /images/transportation/panamanian-diablo-bus-480.jpg 480w, /images/transportation/panamanian-diablo-bus-640.jpg 640w, /images/transportation/panamanian-diablo-bus-768.jpg 768w, /images/transportation/panamanian-diablo-bus.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.diablo}
                 alt={blog.diabloAltText}
               />
+              </picture>
               <figcaption>{blog.diabloCaption}</figcaption>
             </figure>
             <p>{blog.theyAreIndepen}</p>
             <figure className="chicken-bus">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-chicken-bus-320.webp 320w, /images/transportation/panama-chicken-bus-480.webp 480w, /images/transportation/panama-chicken-bus-640.webp 640w, /images/transportation/panama-chicken-bus-768.webp 768w, /images/transportation/panama-chicken-bus.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-chicken-bus-320.jpg 320w, /images/transportation/panama-chicken-bus-480.jpg 480w, /images/transportation/panama-chicken-bus-640.jpg 640w, /images/transportation/panama-chicken-bus-768.jpg 768w, /images/transportation/panama-chicken-bus.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.panamaChickenBus}
                 alt={blog.panamaChickenBusAltText}
               />
+              </picture>
               <figcaption>{blog.panamaChickenBusCaption}</figcaption>
             </figure>
             <p>{blog.panamaPhased}</p>
@@ -676,20 +1000,56 @@ const BlogDetails = () => {
             <p>{blog.chivasAre}</p>
             <p>{blog.nowadays}</p>
             <figure className="chiva">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-chiva-320.webp 320w, /images/transportation/panama-chiva-480.webp 480w, /images/transportation/panama-chiva-640.webp 640w, /images/transportation/panama-chiva-768.webp 768w, /images/transportation/panama-chiva.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-chiva-320.jpg 320w, /images/transportation/panama-chiva-480.jpg 480w, /images/transportation/panama-chiva-640.jpg 640w, /images/transportation/panama-chiva-768.jpg 768w, /images/transportation/panama-chiva.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.chiva}
                 alt={blog.chivaAltText}
               />
+              </picture>
               <figcaption>{blog.chivaCaption}</figcaption>
             </figure>
             <p>{blog.summary}</p>
             <figure className="alex-bus last-figure">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/alex-deleon-panama-bus-320.webp 320w, /images/transportation/alex-deleon-panama-bus-480.webp 480w, /images/transportation/alex-deleon-panama-bus-640.webp 640w, /images/transportation/alex-deleon-panama-bus-768.webp 768w, /images/transportation/alex-deleon-panama-bus.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/alex-deleon-panama-bus-320.jpg 320w, /images/transportation/alex-deleon-panama-bus-480.jpg 480w, /images/transportation/alex-deleon-panama-bus-640.jpg 640w, /images/transportation/alex-deleon-panama-bus-768.jpg 768w, /images/transportation/alex-deleon-panama-bus.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
               <img
                 className="no-right-click"
                 src={blog.alexBus}
                 alt={blog.alexBusAltText}
               />
+              </picture>
               <figcaption>{blog.alexBusCaption}</figcaption>
             </figure>
             <div className="button-parent">
