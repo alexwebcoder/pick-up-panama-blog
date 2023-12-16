@@ -81,7 +81,7 @@ const BlogDetails = () => {
               <figcaption>{blog.fruitStandCopCaption}</figcaption>
             </figure>
             <figure className="bank-police">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -98,16 +98,16 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.panamaCopBank}
-                alt={blog.panamaCopBankAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.panamaCopBank}
+                  alt={blog.panamaCopBankAltText}
+                />
               </picture>
               <figcaption>{blog.panamaCopBankCaption}</figcaption>
             </figure>
             <figure className="market-police">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -124,11 +124,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.panamaCopElCan}
-                alt={blog.panamaCopElCanAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.panamaCopElCan}
+                  alt={blog.panamaCopElCanAltText}
+                />
               </picture>
               <figcaption>{blog.panamaCopElCanCaption}</figcaption>
             </figure>
@@ -165,79 +165,83 @@ const BlogDetails = () => {
               <p>{blog.mostCrimeReported}</p>
               <p>{blog.duringDay}</p>
               <figure className="casco-police">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/safety/casco-viejo-police-320.webp 320w, /images/safety/casco-viejo-police-480.webp 480w, /images/safety/casco-viejo-police-640.webp 640w, /images/safety/casco-viejo-police-768.webp 768w, /images/safety/casco-viejo-police.webp 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <source
-                  type="image/jpg"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/safety/casco-viejo-police-320.jpg 320w, /images/safety/casco-viejo-police-480.jpg 480w, /images/safety/casco-viejo-police-640.jpg 640w, /images/safety/casco-viejo-police-768.jpg 768w, /images/safety/casco-viejo-police.jpg 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <img
-                  className="no-right-click"
-                  src={blog.cascoViejoPolice}
-                  alt={blog.cascoViejoPolceAltText}
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={
+                      process.env.PUBLIC_URL +
+                      "/images/safety/casco-viejo-police-320.webp 320w, /images/safety/casco-viejo-police-480.webp 480w, /images/safety/casco-viejo-police-640.webp 640w, /images/safety/casco-viejo-police-768.webp 768w, /images/safety/casco-viejo-police.webp 1170w"
+                    }
+                    sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                  <source
+                    type="image/jpg"
+                    srcSet={
+                      process.env.PUBLIC_URL +
+                      "/images/safety/casco-viejo-police-320.jpg 320w, /images/safety/casco-viejo-police-480.jpg 480w, /images/safety/casco-viejo-police-640.jpg 640w, /images/safety/casco-viejo-police-768.jpg 768w, /images/safety/casco-viejo-police.jpg 1170w"
+                    }
+                    sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                  <img
+                    className="no-right-click"
+                    src={blog.cascoViejoPolice}
+                    alt={blog.cascoViejoPolceAltText}
+                  />
                 </picture>
                 <figcaption>{blog.cascoViejoPoliceCaption}</figcaption>
               </figure>
-              <figure className="casco-tourist"> <picture>
-                <source
-                  type="image/webp"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/safety/autoridad-de-turismo-320.webp 320w, /images/safety/autoridad-de-turismo-480.webp 480w, /images/safety/autoridad-de-turismo-640.webp 640w, /images/safety/autoridad-de-turismo-768.webp 768w, /images/safety/autoridad-de-turismo.webp 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <source
-                  type="image/jpg"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/safety/autoridad-de-turismo-320.jpg 320w, /images/safety/autoridad-de-turismo-480.jpg 480w, /images/safety/autoridad-de-turismo-640.jpg 640w, /images/safety/autoridad-de-turismo-768.jpg 768w, /images/safety/autoridad-de-turismo.jpg 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <img
-                  className="no-right-click"
-                  src={blog.cascoTouristAuth}
-                  alt={blog.cascoTouristAuthAltText}
-                />
+              <figure className="casco-tourist">
+                {" "}
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={
+                      process.env.PUBLIC_URL +
+                      "/images/safety/autoridad-de-turismo-320.webp 320w, /images/safety/autoridad-de-turismo-480.webp 480w, /images/safety/autoridad-de-turismo-640.webp 640w, /images/safety/autoridad-de-turismo-768.webp 768w, /images/safety/autoridad-de-turismo.webp 1170w"
+                    }
+                    sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                  <source
+                    type="image/jpg"
+                    srcSet={
+                      process.env.PUBLIC_URL +
+                      "/images/safety/autoridad-de-turismo-320.jpg 320w, /images/safety/autoridad-de-turismo-480.jpg 480w, /images/safety/autoridad-de-turismo-640.jpg 640w, /images/safety/autoridad-de-turismo-768.jpg 768w, /images/safety/autoridad-de-turismo.jpg 1170w"
+                    }
+                    sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                  <img
+                    className="no-right-click"
+                    src={blog.cascoTouristAuth}
+                    alt={blog.cascoTouristAuthAltText}
+                  />
                 </picture>
                 <figcaption>{blog.cascoTouristAuthCaption}</figcaption>
               </figure>
               <p>{blog.cascoViejoBorders}</p>
-              <figure className="near-casco"> <picture>
-                <source
-                  type="image/webp"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/safety/cinco-de-mayo-panama-320.webp 320w, /images/safety/cinco-de-mayo-panama-480.webp 480w, /images/safety/cinco-de-mayo-panama-640.webp 640w, /images/safety/cinco-de-mayo-panama-768.webp 768w, /images/safety/cinco-de-mayo-panama.webp 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <source
-                  type="image/jpg"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/safety/cinco-de-mayo-panama-320.jpg 320w, /images/safety/cinco-de-mayo-panama-480.jpg 480w, /images/safety/cinco-de-mayo-panama-640.jpg 640w, /images/safety/cinco-de-mayo-panama-768.jpg 768w, /images/safety/cinco-de-mayo-panama.jpg 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <img
-                  className="no-right-click"
-                  src={blog.nearCascoViejo}
-                  alt={blog.nearCascoViejoAltText}
-                />
+              <figure className="near-casco">
+                {" "}
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={
+                      process.env.PUBLIC_URL +
+                      "/images/safety/cinco-de-mayo-panama-320.webp 320w, /images/safety/cinco-de-mayo-panama-480.webp 480w, /images/safety/cinco-de-mayo-panama-640.webp 640w, /images/safety/cinco-de-mayo-panama-768.webp 768w, /images/safety/cinco-de-mayo-panama.webp 1170w"
+                    }
+                    sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                  <source
+                    type="image/jpg"
+                    srcSet={
+                      process.env.PUBLIC_URL +
+                      "/images/safety/cinco-de-mayo-panama-320.jpg 320w, /images/safety/cinco-de-mayo-panama-480.jpg 480w, /images/safety/cinco-de-mayo-panama-640.jpg 640w, /images/safety/cinco-de-mayo-panama-768.jpg 768w, /images/safety/cinco-de-mayo-panama.jpg 1170w"
+                    }
+                    sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                  <img
+                    className="no-right-click"
+                    src={blog.nearCascoViejo}
+                    alt={blog.nearCascoViejoAltText}
+                  />
                 </picture>
                 <figcaption>{blog.nearCascoViejoCaption}</figcaption>
               </figure>
@@ -245,28 +249,28 @@ const BlogDetails = () => {
               <h3>{blog.h3Colon}</h3>
               <p>{blog.colonIsOn}</p>
               <figure className="colon-plate">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/safety/colon-panama-license-plate-320.webp 320w, /images/safety/colon-panama-license-plate-480.webp 480w, /images/safety/colon-panama-license-plate-640.webp 640w, /images/safety/colon-panama-license-plate-768.webp 768w, /images/safety/colon-panama-license-plate.webp 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <source
-                  type="image/jpg"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/safety/colon-panama-license-plate-320.jpg 320w, /images/safety/colon-panama-license-plate-480.jpg 480w, /images/safety/colon-panama-license-plate-640.jpg 640w, /images/safety/colon-panama-license-plate-768.jpg 768w, /images/safety/colon-panama-license-plate.jpg 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <img
-                  className="no-right-click"
-                  src={blog.colonLicense}
-                  alt={blog.colonLicenseAltText}
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={
+                      process.env.PUBLIC_URL +
+                      "/images/safety/colon-panama-license-plate-320.webp 320w, /images/safety/colon-panama-license-plate-480.webp 480w, /images/safety/colon-panama-license-plate-640.webp 640w, /images/safety/colon-panama-license-plate-768.webp 768w, /images/safety/colon-panama-license-plate.webp 1170w"
+                    }
+                    sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                  <source
+                    type="image/jpg"
+                    srcSet={
+                      process.env.PUBLIC_URL +
+                      "/images/safety/colon-panama-license-plate-320.jpg 320w, /images/safety/colon-panama-license-plate-480.jpg 480w, /images/safety/colon-panama-license-plate-640.jpg 640w, /images/safety/colon-panama-license-plate-768.jpg 768w, /images/safety/colon-panama-license-plate.jpg 1170w"
+                    }
+                    sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                  <img
+                    className="no-right-click"
+                    src={blog.colonLicense}
+                    alt={blog.colonLicenseAltText}
+                  />
                 </picture>
                 <figcaption>{blog.colonLicenseCaption}</figcaption>
               </figure>
@@ -308,28 +312,28 @@ const BlogDetails = () => {
               <p>{blog.overallPanamaIs}</p>
               <p>{blog.mostTips}</p>
               <figure className="casco-petty-crime last-figure">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/safety/casco-viejo-petty-crime-320.webp 320w, /images/safety/casco-viejo-petty-crime-480.webp 480w, /images/safety/casco-viejo-petty-crime-640.webp 640w, /images/safety/casco-viejo-petty-crime-768.webp 768w, /images/safety/casco-viejo-petty-crime.webp 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <source
-                  type="image/jpg"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/safety/casco-viejo-petty-crime-320.jpg 320w, /images/safety/casco-viejo-petty-crime-480.jpg 480w, /images/safety/casco-viejo-petty-crime-640.jpg 640w, /images/safety/casco-viejo-petty-crime-768.jpg 768w, /images/safety/casco-viejo-petty-crime.jpg 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <img
-                  className="no-right-click"
-                  src={blog.cascoPettyCrime}
-                  alt={blog.cascoPettyCrimeAltText}
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={
+                      process.env.PUBLIC_URL +
+                      "/images/safety/casco-viejo-petty-crime-320.webp 320w, /images/safety/casco-viejo-petty-crime-480.webp 480w, /images/safety/casco-viejo-petty-crime-640.webp 640w, /images/safety/casco-viejo-petty-crime-768.webp 768w, /images/safety/casco-viejo-petty-crime.webp 1170w"
+                    }
+                    sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                  <source
+                    type="image/jpg"
+                    srcSet={
+                      process.env.PUBLIC_URL +
+                      "/images/safety/casco-viejo-petty-crime-320.jpg 320w, /images/safety/casco-viejo-petty-crime-480.jpg 480w, /images/safety/casco-viejo-petty-crime-640.jpg 640w, /images/safety/casco-viejo-petty-crime-768.jpg 768w, /images/safety/casco-viejo-petty-crime.jpg 1170w"
+                    }
+                    sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                  <img
+                    className="no-right-click"
+                    src={blog.cascoPettyCrime}
+                    alt={blog.cascoPettyCrimeAltText}
+                  />
                 </picture>
                 <figcaption>{blog.cascoPettyCrimeCaption}</figcaption>
               </figure>
@@ -370,7 +374,7 @@ const BlogDetails = () => {
             <h1 className="centered post-title">{blog.title}</h1>
             <p className="body intro">{blog.intro}</p>
             <figure className="hwy">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -387,12 +391,12 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                fetchpriority="high"
-                className="no-right-click"
-                src={blog.panAm}
-                alt={blog.panAmAltText}
-              />
+                <img
+                  fetchpriority="high"
+                  className="no-right-click"
+                  src={blog.panAm}
+                  alt={blog.panAmAltText}
+                />
               </picture>
               <figcaption>{blog.panAmCaption}</figcaption>
             </figure>
@@ -415,7 +419,7 @@ const BlogDetails = () => {
             <h4>{blog.h4RapiCard}</h4>
             <p>{blog.cashCredit}</p>
             <figure className="rapi-card">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -432,11 +436,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.rapiCard}
-                alt={blog.rapiCardAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.rapiCard}
+                  alt={blog.rapiCardAltText}
+                />
               </picture>
               <figcaption>{blog.rapiCardCaption}</figcaption>
             </figure>
@@ -451,7 +455,7 @@ const BlogDetails = () => {
             <p>{blog.ifTraveling}</p>
             <h4>{blog.h4Shuttle}</h4>
             <figure className="free-shuttle">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -468,11 +472,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.freeShuttle}
-                alt={blog.freeShuttleAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.freeShuttle}
+                  alt={blog.freeShuttleAltText}
+                />
               </picture>
               <figcaption>{blog.freeShuttleCaption}</figcaption>
             </figure>
@@ -488,7 +492,7 @@ const BlogDetails = () => {
               <li>{blog.fiveMinLi}</li>
             </ul>
             <figure className="metro-map">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -505,11 +509,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.metroMap}
-                alt={blog.metroMapAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.metroMap}
+                  alt={blog.metroMapAltText}
+                />
               </picture>
               <figcaption>
                 {blog.metroMapCaption}
@@ -567,7 +571,7 @@ const BlogDetails = () => {
               <strong>{blog.thisIsKnown}</strong>
             </p>
             <figure className="city-center">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -584,11 +588,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.cityCenter}
-                alt={blog.cityCenterAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.cityCenter}
+                  alt={blog.cityCenterAltText}
+                />
               </picture>
               <figcaption>
                 {blog.cityCenterCaption}
@@ -598,7 +602,7 @@ const BlogDetails = () => {
             </figure>
             <h3>{blog.h3YellowCab}</h3>
             <figure className="yellow-cabs">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -615,11 +619,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.panamaCabs}
-                alt={blog.panamaCabsAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.panamaCabs}
+                  alt={blog.panamaCabsAltText}
+                />
               </picture>
               <figcaption>{blog.panamaCabsCaption}</figcaption>
             </figure>
@@ -650,7 +654,7 @@ const BlogDetails = () => {
             <h3>{blog.h3PanamaBuses}</h3>
             <h4>{blog.h4RidingMetro}</h4>
             <figure className="metro-bus">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -667,11 +671,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.metroCab}
-                alt={blog.metroCabAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.metroCab}
+                  alt={blog.metroCabAltText}
+                />
               </picture>
               <figcaption>{blog.metroCabCaption}</figcaption>
             </figure>
@@ -682,7 +686,7 @@ const BlogDetails = () => {
             <p>{blog.whenReady}</p>
             <h4>{blog.h4busRidesOut}</h4>
             <figure className="albrook-terminal">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -699,11 +703,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.albrookEntr}
-                alt={blog.albrookEntrAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.albrookEntr}
+                  alt={blog.albrookEntrAltText}
+                />
               </picture>
               <figcaption>{blog.albrookEntrBusCaption}</figcaption>
             </figure>
@@ -719,7 +723,7 @@ const BlogDetails = () => {
             <p>{blog.youWillSee}</p>
             <p>{blog.twoBusesChoose}</p>
             <figure className="comfy-bus">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -736,16 +740,16 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.comfyBus}
-                alt={blog.comfyBusAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.comfyBus}
+                  alt={blog.comfyBusAltText}
+                />
               </picture>
               <figcaption>{blog.comfyBusCaption}</figcaption>
             </figure>
             <figure className="coaster-bus">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -762,11 +766,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.coasterBus}
-                alt={blog.coasterBusAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.coasterBus}
+                  alt={blog.coasterBusAltText}
+                />
               </picture>
               <figcaption>{blog.coasterBusCaption}</figcaption>
             </figure>
@@ -774,7 +778,7 @@ const BlogDetails = () => {
             <p>{blog.whenYouGetOnThe}</p>
             <p>{blog.coronadoIsAbout}</p>
             <figure className="coronado-stop">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -791,17 +795,17 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.coronadoEntrance}
-                alt={blog.coronadoEntranceAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.coronadoEntrance}
+                  alt={blog.coronadoEntranceAltText}
+                />
               </picture>
               <figcaption>{blog.coronadoEntranceCaption}</figcaption>
             </figure>
             <p>{blog.pedestrianBridge}</p>
             <figure className="coronado-map">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -818,11 +822,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.coronadoMap}
-                alt={blog.coronadoMapAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.coronadoMap}
+                  alt={blog.coronadoMapAltText}
+                />
               </picture>
               <figcaption>
                 {blog.coronadoMapCaption}
@@ -832,7 +836,7 @@ const BlogDetails = () => {
             </figure>
             <p>{blog.youCanTakeCab}</p>
             <figure className="taxi-truck">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -849,17 +853,17 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.taxiPickUp}
-                alt={blog.taxiPickUpAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.taxiPickUp}
+                  alt={blog.taxiPickUpAltText}
+                />
               </picture>
               <figcaption>{blog.taxiPickUpCaption}</figcaption>
             </figure>
             <p>{blog.smallWhite}</p>
             <figure className="mini-van">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -876,17 +880,17 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.coronadoShuttle}
-                alt={blog.coronadoShuttleAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.coronadoShuttle}
+                  alt={blog.coronadoShuttleAltText}
+                />
               </picture>
               <figcaption>{blog.coronadoShuttleCaption}</figcaption>
             </figure>
             <p>{blog.packIn}</p>
             <figure className="inside-van">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -903,17 +907,17 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.shuttleInterior}
-                alt={blog.shuttleInteriorAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.shuttleInterior}
+                  alt={blog.shuttleInteriorAltText}
+                />
               </picture>
               <figcaption>{blog.shuttleInteriorCaption}</figcaption>
             </figure>
             <p>{blog.gates}</p>
             <figure className="gates">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -930,18 +934,18 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.coronadoGates}
-                alt={blog.coronadoGatesAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.coronadoGates}
+                  alt={blog.coronadoGatesAltText}
+                />
               </picture>
               <figcaption>{blog.coronadoGatesCaption}</figcaption>
             </figure>
             <h2>{blog.h2DiablosRojos}</h2>
             <p>{blog.theDiablosRojos}</p>
             <figure className="diablos">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -958,17 +962,17 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.diablo}
-                alt={blog.diabloAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.diablo}
+                  alt={blog.diabloAltText}
+                />
               </picture>
               <figcaption>{blog.diabloCaption}</figcaption>
             </figure>
             <p>{blog.theyAreIndepen}</p>
             <figure className="chicken-bus">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -985,11 +989,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.panamaChickenBus}
-                alt={blog.panamaChickenBusAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.panamaChickenBus}
+                  alt={blog.panamaChickenBusAltText}
+                />
               </picture>
               <figcaption>{blog.panamaChickenBusCaption}</figcaption>
             </figure>
@@ -1000,7 +1004,7 @@ const BlogDetails = () => {
             <p>{blog.chivasAre}</p>
             <p>{blog.nowadays}</p>
             <figure className="chiva">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -1017,17 +1021,17 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.chiva}
-                alt={blog.chivaAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.chiva}
+                  alt={blog.chivaAltText}
+                />
               </picture>
               <figcaption>{blog.chivaCaption}</figcaption>
             </figure>
             <p>{blog.summary}</p>
             <figure className="alex-bus last-figure">
-            <picture>
+              <picture>
                 <source
                   type="image/webp"
                   srcSet={
@@ -1044,11 +1048,11 @@ const BlogDetails = () => {
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
-              <img
-                className="no-right-click"
-                src={blog.alexBus}
-                alt={blog.alexBusAltText}
-              />
+                <img
+                  className="no-right-click"
+                  src={blog.alexBus}
+                  alt={blog.alexBusAltText}
+                />
               </picture>
               <figcaption>{blog.alexBusCaption}</figcaption>
             </figure>
@@ -1085,12 +1089,30 @@ const BlogDetails = () => {
             <h1 className="centered post-title">{blog.title}</h1>
             <p className="body intro">{blog.intro}</p>
             <figure>
-              <img
-                fetchpriority="high"
-                className="no-right-click"
-                src={blog.elCran}
-                alt={blog.elCranAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-cangrejo-320.webp 320w, /images/elCangrejo/el-cangrejo-480.webp 480w, /images/elCangrejo/el-cangrejo-640.webp 640w, /images/elCangrejo/el-cangrejo-768.webp 768w, /images/elCangrejo/el-cangrejo.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-cangrejo-320.jpg 320w, /images/elCangrejo/el-cangrejo-480.jpg 480w, /images/elCangrejo/el-cangrejo-640.jpg 640w, /images/elCangrejo/el-cangrejo-768.jpg 768w, /images/elCangrejo/el-cangrejo.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  fetchpriority="high"
+                  className="no-right-click"
+                  src={blog.elCran}
+                  alt={blog.elCranAltText}
+                />
+              </picture>
               <figcaption>{blog.elCranCaption}</figcaption>
             </figure>
             <p>{blog.itIsOne}</p>
@@ -1103,22 +1125,58 @@ const BlogDetails = () => {
             <p>{blog.overHead}</p>
             <p>{blog.claws}</p>
             <figure className="crab">
-              <img
-                className="no-right-click"
-                src={blog.crab}
-                alt={blog.crabAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/map-of-el-cangrejo-320.webp 320w, /images/elCangrejo/map-of-el-cangrejo-480.webp 480w, /images/elCangrejo/map-of-el-cangrejo-640.webp 640w, /images/elCangrejo/map-of-el-cangrejo-768.webp 768w, /images/elCangrejo/map-of-el-cangrejo.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/map-of-el-cangrejo-320.jpg 320w, /images/elCangrejo/map-of-el-cangrejo-480.jpg 480w, /images/elCangrejo/map-of-el-cangrejo-640.jpg 640w, /images/elCangrejo/map-of-el-cangrejo-768.jpg 768w, /images/elCangrejo/map-of-el-cangrejo.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.crab}
+                  alt={blog.crabAltText}
+                />
+              </picture>
               <figcaption>{blog.crabCaption}</figcaption>
             </figure>
             <h2>{blog.atmosphereH2}</h2>
             <p>{blog.atmoshphereIs}</p>
             <p>{blog.natureAndUnique}</p>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.bird}
-                alt={blog.birdAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/bird-in-park-320.webp 320w, /images/elCangrejo/bird-in-park-480.webp 480w, /images/elCangrejo/bird-in-park-640.webp 640w, /images/elCangrejo/bird-in-park-768.webp 768w, /images/elCangrejo/bird-in-park.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/bird-in-park-320.jpg 320w, /images/elCangrejo/bird-in-park-480.jpg 480w, /images/elCangrejo/bird-in-park-640.jpg 640w, /images/elCangrejo/bird-in-park-768.jpg 768w, /images/elCangrejo/bird-in-park.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.bird}
+                  alt={blog.birdAltText}
+                />
+              </picture>
               <figcaption>{blog.birdCaption}</figcaption>
             </figure>
             <p>{blog.viaArgIs}</p>
@@ -1128,79 +1186,243 @@ const BlogDetails = () => {
             <h3>{blog.elTrapH3}</h3>
             <p>{blog.offersAuth}</p>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.elTrap}
-                alt={blog.elTrapAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-trapiche-panama-320.webp 320w, /images/elCangrejo/el-trapiche-panama-480.webp 480w, /images/elCangrejo/el-trapiche-panama-640.webp 640w, /images/elCangrejo/el-trapiche-panama-768.webp 768w, /images/elCangrejo/el-trapiche-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-trapiche-panama-320.jpg 320w, /images/elCangrejo/el-trapiche-panama-480.jpg 480w, /images/elCangrejo/el-trapiche-panama-640.jpg 640w, /images/elCangrejo/el-trapiche-panama-768.jpg 768w, /images/elCangrejo/el-trapiche-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.elTrap}
+                  alt={blog.elTrapAltText}
+                />
+              </picture>
               <figcaption>{blog.elTrapCaption}</figcaption>
             </figure>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.elTrapMeal}
-                alt={blog.elTrapMealAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/panamanian-meal-el-trapiche-320.webp 320w, /images/elCangrejo/panamanian-meal-el-trapiche-480.webp 480w, /images/elCangrejo/panamanian-meal-el-trapiche-640.webp 640w, /images/elCangrejo/panamanian-meal-el-trapiche-768.webp 768w, /images/elCangrejo/panamanian-meal-el-trapiche.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/panamanian-meal-el-trapiche-320.jpg 320w, /images/elCangrejo/panamanian-meal-el-trapiche-480.jpg 480w, /images/elCangrejo/panamanian-meal-el-trapiche-640.jpg 640w, /images/elCangrejo/panamanian-meal-el-trapiche-768.jpg 768w, /images/elCangrejo/panamanian-meal-el-trapiche.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.elTrapMeal}
+                  alt={blog.elTrapMealAltText}
+                />
+              </picture>
               <figcaption>{blog.elTrapMealCaption}</figcaption>
             </figure>
             <figure className="el-trap-food">
-              <img
-                className="no-right-click"
-                src={blog.elTrapMeal2}
-                alt={blog.elTrapMeal2AltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/meal-at-el-trapiche-320.webp 320w, /images/elCangrejo/meal-at-el-trapiche-480.webp 480w, /images/elCangrejo/meal-at-el-trapiche-640.webp 640w, /images/elCangrejo/meal-at-el-trapiche-768.webp 768w, /images/elCangrejo/meal-at-el-trapiche.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/meal-at-el-trapiche-320.jpg 320w, /images/elCangrejo/meal-at-el-trapiche-480.jpg 480w, /images/elCangrejo/meal-at-el-trapiche-640.jpg 640w, /images/elCangrejo/meal-at-el-trapiche-768.jpg 768w, /images/elCangrejo/meal-at-el-trapiche.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.elTrapMeal2}
+                  alt={blog.elTrapMeal2AltText}
+                />
+              </picture>
               <figcaption>{blog.elTrapMeal2Caption}</figcaption>
             </figure>
             <figure className="el-trap-food">
-              <img
-                className="no-right-click"
-                src={blog.elTrapMealA}
-                alt={blog.elTrapMealAAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-trapiche-meal-320.webp 320w, /images/elCangrejo/el-trapiche-meal-480.webp 480w, /images/elCangrejo/el-trapiche-meal-640.webp 640w, /images/elCangrejo/el-trapiche-meal-768.webp 768w, /images/elCangrejo/el-trapiche-meal.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-trapiche-meal-320.jpg 320w, /images/elCangrejo/el-trapiche-meal-480.jpg 480w, /images/elCangrejo/el-trapiche-meal-640.jpg 640w, /images/elCangrejo/el-trapiche-meal-768.jpg 768w, /images/elCangrejo/el-trapiche-meal.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.elTrapMealA}
+                  alt={blog.elTrapMealAAltText}
+                />
+              </picture>
               <figcaption>{blog.elTrapMealACaption}</figcaption>
             </figure>
             <h3>{blog.sieteMaresH3}</h3>
             <p>{blog.hasAnElegant}</p>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.sieteMares}
-                alt={blog.sieteMaresAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/siete-mares-panama-city-320.webp 320w, /images/elCangrejo/siete-mares-panama-city-480.webp 480w, /images/elCangrejo/siete-mares-panama-city-640.webp 640w, /images/elCangrejo/siete-mares-panama-city-768.webp 768w, /images/elCangrejo/siete-mares-panama-city.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/siete-mares-panama-city-320.jpg 320w, /images/elCangrejo/siete-mares-panama-city-480.jpg 480w, /images/elCangrejo/siete-mares-panama-city-640.jpg 640w, /images/elCangrejo/siete-mares-panama-city-768.jpg 768w, /images/elCangrejo/siete-mares-panama-city.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.sieteMares}
+                  alt={blog.sieteMaresAltText}
+                />
+              </picture>
               <figcaption>{blog.sieteMaresCaption}</figcaption>
             </figure>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.sieteMaresInt}
-                alt={blog.sieteMaresIntAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/siete-mares-interior-320.webp 320w, /images/elCangrejo/siete-mares-interior-480.webp 480w, /images/elCangrejo/siete-mares-interior-640.webp 640w, /images/elCangrejo/siete-mares-interior-768.webp 768w, /images/elCangrejo/siete-mares-interior.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/siete-mares-interior-320.jpg 320w, /images/elCangrejo/siete-mares-interior-480.jpg 480w, /images/elCangrejo/siete-mares-interior-640.jpg 640w, /images/elCangrejo/siete-mares-interior-768.jpg 768w, /images/elCangrejo/siete-mares-interior.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.sieteMaresInt}
+                  alt={blog.sieteMaresIntAltText}
+                />
+              </picture>
               <figcaption>{blog.sieteMaresIntCaption}</figcaption>
             </figure>
             <figure className="siete">
-              <img
-                className="no-right-click"
-                src={blog.sieteMaresFood}
-                alt={blog.sieteMaresFoodAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/lobster-meal-siete-mares-320.webp 320w, /images/elCangrejo/lobster-meal-siete-mares-480.webp 480w, /images/elCangrejo/lobster-meal-siete-mares-640.webp 640w, /images/elCangrejo/lobster-meal-siete-mares-768.webp 768w, /images/elCangrejo/lobster-meal-siete-mares.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/lobster-meal-siete-mares-320.jpg 320w, /images/elCangrejo/lobster-meal-siete-mares-480.jpg 480w, /images/elCangrejo/lobster-meal-siete-mares-640.jpg 640w, /images/elCangrejo/lobster-meal-siete-mares-768.jpg 768w, /images/elCangrejo/lobster-meal-siete-mares.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+
+                <img
+                  className="no-right-click"
+                  src={blog.sieteMaresFood}
+                  alt={blog.sieteMaresFoodAltText}
+                />
+              </picture>
               <figcaption>{blog.sieteMaresFoodCaption}</figcaption>
             </figure>
             <h3>{blog.chrisRestH3}</h3>
             <p>{blog.isAGood}</p>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.chrisR}
-                alt={blog.chrisRAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/chris-restaurante-grill-320.webp 320w, /images/elCangrejo/chris-restaurante-grill-480.webp 480w, /images/elCangrejo/chris-restaurante-grill-640.webp 640w, /images/elCangrejo/chris-restaurante-grill-768.webp 768w, /images/elCangrejo/chris-restaurante-grill.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/chris-restaurante-grill-320.jpg 320w, /images/elCangrejo/chris-restaurante-grill-480.jpg 480w, /images/elCangrejo/chris-restaurante-grill-640.jpg 640w, /images/elCangrejo/chris-restaurante-grill-768.jpg 768w, /images/elCangrejo/chris-restaurante-grill.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+
+                <img
+                  className="no-right-click"
+                  src={blog.chrisR}
+                  alt={blog.chrisRAltText}
+                />
+              </picture>
               <figcaption>{blog.chrisRCaption}</figcaption>
             </figure>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.chrisR2}
-                alt={blog.chrisR2AltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/chris-restaurante-interior-320.webp 320w, /images/elCangrejo/chris-restaurante-interior-480.webp 480w, /images/elCangrejo/chris-restaurante-interior-640.webp 640w, /images/elCangrejo/chris-restaurante-interior-768.webp 768w, /images/elCangrejo/chris-restaurante-interior.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/chris-restaurante-interior-320.jpg 320w, /images/elCangrejo/chris-restaurante-interior-480.jpg 480w, /images/elCangrejo/chris-restaurante-interior-640.jpg 640w, /images/elCangrejo/chris-restaurante-interior-768.jpg 768w, /images/elCangrejo/chris-restaurante-interior.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.chrisR2}
+                  alt={blog.chrisR2AltText}
+                />
+              </picture>
               <figcaption>{blog.chrisR2Caption}</figcaption>
             </figure>
             <h3>{blog.additionalH3}</h3>
@@ -1234,11 +1456,29 @@ const BlogDetails = () => {
               </li>
               <li>
                 <figure className="lee">
-                  <img
-                    className="no-right-click"
-                    src={blog.donLee}
-                    alt={blog.donLeeAltText}
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcSet={
+                        process.env.PUBLIC_URL +
+                        "/images/elCangrejo/don-lee-el-cangrejo-320.webp 320w, /images/elCangrejo/don-lee-el-cangrejo-480.webp 480w, /images/elCangrejo/don-lee-el-cangrejo-640.webp 640w, /images/elCangrejo/don-lee-el-cangrejo-768.webp 768w, /images/elCangrejo/don-lee-el-cangrejo.webp 1170w"
+                      }
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcSet={
+                        process.env.PUBLIC_URL +
+                        "/images/elCangrejo/don-lee-el-cangrejo-320.jpg 320w, /images/elCangrejo/don-lee-el-cangrejo-480.jpg 480w, /images/elCangrejo/don-lee-el-cangrejo-640.jpg 640w, /images/elCangrejo/don-lee-el-cangrejo-768.jpg 768w, /images/elCangrejo/don-lee-el-cangrejo.jpg 1170w"
+                      }
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                    />
+                    <img
+                      className="no-right-click"
+                      src={blog.donLee}
+                      alt={blog.donLeeAltText}
+                    />
+                  </picture>
                   <figcaption>{blog.donLeeCaption}</figcaption>
                 </figure>
               </li>
@@ -1295,11 +1535,29 @@ const BlogDetails = () => {
               </li>
               <li>
                 <figure className="manlos">
-                  <img
-                    className="no-right-click"
-                    src={blog.manolos}
-                    alt={blog.manolosAltText}
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcSet={
+                        process.env.PUBLIC_URL +
+                        "/images/elCangrejo/manolos-320.webp 320w, /images/elCangrejo/manolos-480.webp 480w, /images/elCangrejo/manolos-640.webp 640w, /images/elCangrejo/manolos-768.webp 768w, /images/elCangrejo/manolos.webp 1170w"
+                      }
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcSet={
+                        process.env.PUBLIC_URL +
+                        "/images/elCangrejo/manolos-320.jpg 320w, /images/elCangrejo/manolos-480.jpg 480w, /images/elCangrejo/manolos-640.jpg 640w, /images/elCangrejo/manolos-768.jpg 768w, /images/elCangrejo/manolos.jpg 1170w"
+                      }
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                    />
+                    <img
+                      className="no-right-click"
+                      src={blog.manolos}
+                      alt={blog.manolosAltText}
+                    />
+                  </picture>
                   <figcaption>{blog.manolosCaption}</figcaption>
                 </figure>
               </li>
@@ -1356,11 +1614,29 @@ const BlogDetails = () => {
               </li>
               <li>
                 <figure className="sen">
-                  <img
-                    className="no-right-click"
-                    src={blog.sen}
-                    alt={blog.senAltText}
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcSet={
+                        process.env.PUBLIC_URL +
+                        "/images/elCangrejo/sen-vietnam-320.webp 320w, /images/elCangrejo/sen-vietnam-480.webp 480w, /images/elCangrejo/sen-vietnam-640.webp 640w, /images/elCangrejo/sen-vietnam-768.webp 768w, /images/elCangrejo/sen-vietnam.webp 1170w"
+                      }
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcSet={
+                        process.env.PUBLIC_URL +
+                        "/images/elCangrejo/sen-vietnam-320.jpg 320w, /images/elCangrejo/sen-vietnam-480.jpg 480w, /images/elCangrejo/sen-vietnam-640.jpg 640w, /images/elCangrejo/sen-vietnam-768.jpg 768w, /images/elCangrejo/sen-vietnam.jpg 1170w"
+                      }
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                    />
+                    <img
+                      className="no-right-click"
+                      src={blog.sen}
+                      alt={blog.senAltText}
+                    />
+                  </picture>
                   <figcaption>{blog.senCaption}</figcaption>
                 </figure>
               </li>
@@ -1382,11 +1658,29 @@ const BlogDetails = () => {
             </ul>
             <h3>{blog.barsPubsH3}</h3>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.night}
-                alt={blog.nightAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-cangrejo-night-320.webp 320w, /images/elCangrejo/el-cangrejo-night-480.webp 480w, /images/elCangrejo/el-cangrejo-night-640.webp 640w, /images/elCangrejo/el-cangrejo-night-768.webp 768w, /images/elCangrejo/el-cangrejo-night.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-cangrejo-night-320.jpg 320w, /images/elCangrejo/el-cangrejo-night-480.jpg 480w, /images/elCangrejo/el-cangrejo-night-640.jpg 640w, /images/elCangrejo/el-cangrejo-night-768.jpg 768w, /images/elCangrejo/el-cangrejo-night.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.night}
+                  alt={blog.nightAltText}
+                />
+              </picture>
               <figcaption>{blog.nightCaption}</figcaption>
             </figure>
             <ul>
@@ -1417,11 +1711,29 @@ const BlogDetails = () => {
             <p>{blog.bothOf}</p>
             <h3>{blog.iglesiaH3}</h3>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.delCarmen}
-                alt={blog.delCarmenAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/iglesia-del-carmen-panama-320.webp 320w, /images/elCangrejo/iglesia-del-carmen-panama-480.webp 480w, /images/elCangrejo/iglesia-del-carmen-panama-640.webp 640w, /images/elCangrejo/iglesia-del-carmen-panama-768.webp 768w, /images/elCangrejo/iglesia-del-carmen-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/iglesia-del-carmen-panama-320.jpg 320w, /images/elCangrejo/iglesia-del-carmen-panama-480.jpg 480w, /images/elCangrejo/iglesia-del-carmen-panama-640.jpg 640w, /images/elCangrejo/iglesia-del-carmen-panama-768.jpg 768w, /images/elCangrejo/iglesia-del-carmen-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.delCarmen}
+                  alt={blog.delCarmenAltText}
+                />
+              </picture>
               <figcaption>{blog.delCarmenCaption}</figcaption>
             </figure>
             <p>{blog.theChurch}</p>
@@ -1430,113 +1742,347 @@ const BlogDetails = () => {
             <p>{blog.itsConstruction}</p>
             <h3>{blog.ffH3}</h3>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.ff}
-                alt={blog.ffAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/f-and-f-tower-panama-320.webp 320w, /images/elCangrejo/f-and-f-tower-panama-480.webp 480w, /images/elCangrejo/f-and-f-tower-panama-640.webp 640w, /images/elCangrejo/f-and-f-tower-panama-768.webp 768w, /images/elCangrejo/f-and-f-tower-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/f-and-f-tower-panama-320.jpg 320w, /images/elCangrejo/f-and-f-tower-panama-480.jpg 480w, /images/elCangrejo/f-and-f-tower-panama-640.jpg 640w, /images/elCangrejo/f-and-f-tower-panama-768.jpg 768w, /images/elCangrejo/f-and-f-tower-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.ff}
+                  alt={blog.ffAltText}
+                />
+              </picture>
               <figcaption>{blog.ffCaption}</figcaption>
             </figure>
             <p>{blog.theCork}</p>
             <h3>{blog.womanKneeH3}</h3>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.onKnee}
-                alt={blog.onKneeAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/woman-on-her-knee-statue-320.webp 320w, /images/elCangrejo/woman-on-her-knee-statue-480.webp 480w, /images/elCangrejo/woman-on-her-knee-statue-640.webp 640w, /images/elCangrejo/woman-on-her-knee-statue-768.webp 768w, /images/elCangrejo/woman-on-her-knee-statue.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/woman-on-her-knee-statue-320.jpg 320w, /images/elCangrejo/woman-on-her-knee-statue-480.jpg 480w, /images/elCangrejo/woman-on-her-knee-statue-640.jpg 640w, /images/elCangrejo/woman-on-her-knee-statue-768.jpg 768w, /images/elCangrejo/woman-on-her-knee-statue.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.onKnee}
+                  alt={blog.onKneeAltText}
+                />
+              </picture>
               <figcaption>{blog.onKneeCaption}</figcaption>
             </figure>
             <p>{blog.thisIs}</p>
             <h3>{blog.robertoH3}</h3>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.duran}
-                alt={blog.duranAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/roberto-duran-house-320.webp 320w, /images/elCangrejo/roberto-duran-house-480.webp 480w, /images/elCangrejo/roberto-duran-house-640.webp 640w, /images/elCangrejo/roberto-duran-house-768.webp 768w, /images/elCangrejo/roberto-duran-house.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/roberto-duran-house-320.jpg 320w, /images/elCangrejo/roberto-duran-house-480.jpg 480w, /images/elCangrejo/roberto-duran-house-640.jpg 640w, /images/elCangrejo/roberto-duran-house-768.jpg 768w, /images/elCangrejo/roberto-duran-house.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.duran}
+                  alt={blog.duranAltText}
+                />
+              </picture>
               <figcaption>{blog.duranCaption}</figcaption>
             </figure>
             <p>{blog.houseIn}</p>
             <h3>{blog.otherSitesH3}</h3>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.barber}
-                alt={blog.barberAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/barberia-de-luis-el-cangrejo-320.webp 320w, /images/elCangrejo/barberia-de-luis-el-cangrejo-480.webp 480w, /images/elCangrejo/barberia-de-luis-el-cangrejo-640.webp 640w, /images/elCangrejo/barberia-de-luis-el-cangrejo-768.webp 768w, /images/elCangrejo/barberia-de-luis-el-cangrejo.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/barberia-de-luis-el-cangrejo-320.jpg 320w, /images/elCangrejo/barberia-de-luis-el-cangrejo-480.jpg 480w, /images/elCangrejo/barberia-de-luis-el-cangrejo-640.jpg 640w, /images/elCangrejo/barberia-de-luis-el-cangrejo-768.jpg 768w, /images/elCangrejo/barberia-de-luis-el-cangrejo.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.barber}
+                  alt={blog.barberAltText}
+                />
+              </picture>
               <figcaption>{blog.barberCaption}</figcaption>
             </figure>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.tryp}
-                alt={blog.trypAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/tryp-hotel-el-cangrejo-320.webp 320w, /images/elCangrejo/tryp-hotel-el-cangrejo-480.webp 480w, /images/elCangrejo/tryp-hotel-el-cangrejo-640.webp 640w, /images/elCangrejo/tryp-hotel-el-cangrejo-768.webp 768w, /images/elCangrejo/tryp-hotel-el-cangrejo.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/tryp-hotel-el-cangrejo-320.jpg 320w, /images/elCangrejo/tryp-hotel-el-cangrejo-480.jpg 480w, /images/elCangrejo/tryp-hotel-el-cangrejo-640.jpg 640w, /images/elCangrejo/tryp-hotel-el-cangrejo-768.jpg 768w, /images/elCangrejo/tryp-hotel-el-cangrejo.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.tryp}
+                  alt={blog.trypAltText}
+                />
+              </picture>
               <figcaption>{blog.trypCaption}</figcaption>
             </figure>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.coffee}
-                alt={blog.coffeeAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-coffee-shop-pty-320.webp 320w, /images/elCangrejo/el-coffee-shop-pty-480.webp 480w, /images/elCangrejo/el-coffee-shop-pty-640.webp 640w, /images/elCangrejo/el-coffee-shop-pty-768.webp 768w, /images/elCangrejo/el-coffee-shop-pty.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-coffee-shop-pty-320.jpg 320w, /images/elCangrejo/el-coffee-shop-pty-480.jpg 480w, /images/elCangrejo/el-coffee-shop-pty-640.jpg 640w, /images/elCangrejo/el-coffee-shop-pty-768.jpg 768w, /images/elCangrejo/el-coffee-shop-pty.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.coffee}
+                  alt={blog.coffeeAltText}
+                />
+              </picture>
               <figcaption>{blog.coffeeCaption}</figcaption>
             </figure>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.graff}
-                alt={blog.graffAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/graffiti-wall-in-el-cangrejo-320.webp 320w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-480.webp 480w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-640.webp 640w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-768.webp 768w, /images/elCangrejo/graffiti-wall-in-el-cangrejo.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/graffiti-wall-in-el-cangrejo-320.jpg 320w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-480.jpg 480w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-640.jpg 640w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-768.jpg 768w, /images/elCangrejo/graffiti-wall-in-el-cangrejo.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.graff}
+                  alt={blog.graffAltText}
+                />
+              </picture>
               <figcaption>{blog.graffCaption}</figcaption>
             </figure>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.palm}
-                alt={blog.palmAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/palm-trees-el-cangrejo-320.webp 320w, /images/elCangrejo/palm-trees-el-cangrejo-480.webp 480w, /images/elCangrejo/palm-trees-el-cangrejo-640.webp 640w, /images/elCangrejo/palm-trees-el-cangrejo-768.webp 768w, /images/elCangrejo/palm-trees-el-cangrejo.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/palm-trees-el-cangrejo-320.jpg 320w, /images/elCangrejo/palm-trees-el-cangrejo-480.jpg 480w, /images/elCangrejo/palm-trees-el-cangrejo-640.jpg 640w, /images/elCangrejo/palm-trees-el-cangrejo-768.jpg 768w, /images/elCangrejo/palm-trees-el-cangrejo.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.palm}
+                  alt={blog.palmAltText}
+                />
+              </picture>
               <figcaption>{blog.palmCaption}</figcaption>
             </figure>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.moto}
-                alt={blog.motoAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/panamanian-motorcycle-club-320.webp 320w, /images/elCangrejo/panamanian-motorcycle-club-480.webp 480w, /images/elCangrejo/panamanian-motorcycle-club-640.webp 640w, /images/elCangrejo/panamanian-motorcycle-club-768.webp 768w, /images/elCangrejo/panamanian-motorcycle-club.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/panamanian-motorcycle-club-320.jpg 320w, /images/elCangrejo/panamanian-motorcycle-club-480.jpg 480w, /images/elCangrejo/panamanian-motorcycle-club-640.jpg 640w, /images/elCangrejo/panamanian-motorcycle-club-768.jpg 768w, /images/elCangrejo/panamanian-motorcycle-club.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.moto}
+                  alt={blog.motoAltText}
+                />
+              </picture>
               <figcaption>{blog.motoCaption}</figcaption>
             </figure>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.life}
-                alt={blog.lifeAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-cangrejo-life-320.webp 320w, /images/elCangrejo/el-cangrejo-life-480.webp 480w, /images/elCangrejo/el-cangrejo-life-640.webp 640w, /images/elCangrejo/el-cangrejo-life-768.webp 768w, /images/elCangrejo/el-cangrejo-life.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-cangrejo-life-320.jpg 320w, /images/elCangrejo/el-cangrejo-life-480.jpg 480w, /images/elCangrejo/el-cangrejo-life-640.jpg 640w, /images/elCangrejo/el-cangrejo-life-768.jpg 768w, /images/elCangrejo/el-cangrejo-life.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.life}
+                  alt={blog.lifeAltText}
+                />
+              </picture>
               <figcaption>{blog.lifeCaption}</figcaption>
             </figure>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.street}
-                alt={blog.streetAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/street-performer-el-cangrejo-320.webp 320w, /images/elCangrejo/street-performer-el-cangrejo-480.webp 480w, /images/elCangrejo/street-performer-el-cangrejo-640.webp 640w, /images/elCangrejo/street-performer-el-cangrejo-768.webp 768w, /images/elCangrejo/street-performer-el-cangrejo.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/street-performer-el-cangrejo-320.jpg 320w, /images/elCangrejo/street-performer-el-cangrejo-480.jpg 480w, /images/elCangrejo/street-performer-el-cangrejo-640.jpg 640w, /images/elCangrejo/street-performer-el-cangrejo-768.jpg 768w, /images/elCangrejo/street-performer-el-cangrejo.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.street}
+                  alt={blog.streetAltText}
+                />
+              </picture>
               <figcaption>{blog.streetCaption}</figcaption>
             </figure>
             <figure>
-              <img
-                className="no-right-click"
-                src={blog.view}
-                alt={blog.viewAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-cangrejo-view-320.webp 320w, /images/elCangrejo/el-cangrejo-view-480.webp 480w, /images/elCangrejo/el-cangrejo-view-640.webp 640w, /images/elCangrejo/el-cangrejo-view-768.webp 768w, /images/elCangrejo/el-cangrejo-view.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-cangrejo-view-320.jpg 320w, /images/elCangrejo/el-cangrejo-view-480.jpg 480w, /images/elCangrejo/el-cangrejo-view-640.jpg 640w, /images/elCangrejo/el-cangrejo-view-768.jpg 768w, /images/elCangrejo/el-cangrejo-view.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.view}
+                  alt={blog.viewAltText}
+                />
+              </picture>
               <figcaption>{blog.viewCaption}</figcaption>
             </figure>
             <figure className="last-figure">
-              <img
-                className="no-right-click"
-                src={blog.arch}
-                alt={blog.archAltText}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-cangrejo-panama-320.webp 320w, /images/elCangrejo/el-cangrejo-panama-480.webp 480w, /images/elCangrejo/el-cangrejo-panama-640.webp 640w, /images/elCangrejo/el-cangrejo-panama-768.webp 768w, /images/elCangrejo/el-cangrejo-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-cangrejo-panama-320.jpg 320w, /images/elCangrejo/el-cangrejo-panama-480.jpg 480w, /images/elCangrejo/el-cangrejo-panama-640.jpg 640w, /images/elCangrejo/el-cangrejo-panama-768.jpg 768w, /images/elCangrejo/el-cangrejo-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.arch}
+                  alt={blog.archAltText}
+                />
+              </picture>
               <figcaption>{blog.archCaption}</figcaption>
             </figure>
             <div className="button-parent">
