@@ -1130,7 +1130,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    "/images/elCangrejo/map-of-el-cangrejo-320.webp 320w, /images/elCangrejo/map-of-el-cangrejo-480.webp 480w, /images/elCangrejo/map-of-el-cangrejo-640.webp 640w, /images/elCangrejo/map-of-el-cangrejo-768.webp 768w, /images/elCangrejo/map-of-el-cangrejo.webp 1170w"
+                    "/images/elCangrejo/map-of-el-cangrejo-320.webp 320w, /images/elCangrejo/map-of-el-cangrejo-480.webp 480w, /images/elCangrejo/map-of-el-cangrejo-640.webp 640w, /images/elCangrejo/map-of-el-cangrejo.webp 768w, /images/elCangrejo/map-of-el-cangrejo.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1138,7 +1138,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    "/images/elCangrejo/map-of-el-cangrejo-320.jpg 320w, /images/elCangrejo/map-of-el-cangrejo-480.jpg 480w, /images/elCangrejo/map-of-el-cangrejo-640.jpg 640w, /images/elCangrejo/map-of-el-cangrejo-768.jpg 768w, /images/elCangrejo/map-of-el-cangrejo.jpg 1170w"
+                    "/images/elCangrejo/map-of-el-cangrejo-320.jpg 320w, /images/elCangrejo/map-of-el-cangrejo-480.jpg 480w, /images/elCangrejo/map-of-el-cangrejo-640.jpg 640w, /images/elCangrejo/map-of-el-cangrejo.jpg 768w, /images/elCangrejo/map-of-el-cangrejo.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
