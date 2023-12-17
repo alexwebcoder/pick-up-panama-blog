@@ -191,7 +191,6 @@ const BlogDetails = () => {
                 <figcaption>{blog.cascoViejoPoliceCaption}</figcaption>
               </figure>
               <figure className="casco-tourist">
-                {" "}
                 <picture>
                   <source
                     type="image/webp"
@@ -219,7 +218,6 @@ const BlogDetails = () => {
               </figure>
               <p>{blog.cascoViejoBorders}</p>
               <figure className="near-casco">
-                {" "}
                 <picture>
                   <source
                     type="image/webp"
@@ -1461,17 +1459,17 @@ const BlogDetails = () => {
                       type="image/webp"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        "/images/elCangrejo/don-lee-el-cangrejo-320.webp 320w, /images/elCangrejo/don-lee-el-cangrejo-480.webp 480w, /images/elCangrejo/don-lee-el-cangrejo-640.webp 640w, /images/elCangrejo/don-lee-el-cangrejo-768.webp 768w, /images/elCangrejo/don-lee-el-cangrejo.webp 1170w"
+                        "/images/elCangrejo/don-lee-el-cangrejo-320.webp 320w, /images/elCangrejo/don-lee-el-cangrejo-480.webp 480w, /images/elCangrejo/don-lee-el-cangrejo-640.webp 640w, /images/elCangrejo/don-lee-el-cangrejo-768.webp 768w, /images/elCangrejo/don-lee-el-cangrejo.webp 1124w"
                       }
-                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
                     <source
                       type="image/jpg"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        "/images/elCangrejo/don-lee-el-cangrejo-320.jpg 320w, /images/elCangrejo/don-lee-el-cangrejo-480.jpg 480w, /images/elCangrejo/don-lee-el-cangrejo-640.jpg 640w, /images/elCangrejo/don-lee-el-cangrejo-768.jpg 768w, /images/elCangrejo/don-lee-el-cangrejo.jpg 1170w"
+                        "/images/elCangrejo/don-lee-el-cangrejo-320.jpg 320w, /images/elCangrejo/don-lee-el-cangrejo-480.jpg 480w, /images/elCangrejo/don-lee-el-cangrejo-640.jpg 640w, /images/elCangrejo/don-lee-el-cangrejo-768.jpg 768w, /images/elCangrejo/don-lee-el-cangrejo.jpg 1124w"
                       }
-                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
                     <img
                       className="no-right-click"
@@ -1540,17 +1538,17 @@ const BlogDetails = () => {
                       type="image/webp"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        "/images/elCangrejo/manolos-320.webp 320w, /images/elCangrejo/manolos-480.webp 480w, /images/elCangrejo/manolos-640.webp 640w, /images/elCangrejo/manolos-768.webp 768w, /images/elCangrejo/manolos.webp 1170w"
+                        "/images/elCangrejo/manolos-320.webp 320w, /images/elCangrejo/manolos-480.webp 480w, /images/elCangrejo/manolos-640.webp 640w, /images/elCangrejo/manolos-768.webp 768w, /images/elCangrejo/manolos.webp 1124w"
                       }
-                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
                     <source
                       type="image/jpg"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        "/images/elCangrejo/manolos-320.jpg 320w, /images/elCangrejo/manolos-480.jpg 480w, /images/elCangrejo/manolos-640.jpg 640w, /images/elCangrejo/manolos-768.jpg 768w, /images/elCangrejo/manolos.jpg 1170w"
+                        "/images/elCangrejo/manolos-320.jpg 320w, /images/elCangrejo/manolos-480.jpg 480w, /images/elCangrejo/manolos-640.jpg 640w, /images/elCangrejo/manolos-768.jpg 768w, /images/elCangrejo/manolos.jpg 1124w"
                       }
-                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
                     <img
                       className="no-right-click"
@@ -1619,17 +1617,17 @@ const BlogDetails = () => {
                       type="image/webp"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        "/images/elCangrejo/sen-vietnam-320.webp 320w, /images/elCangrejo/sen-vietnam-480.webp 480w, /images/elCangrejo/sen-vietnam-640.webp 640w, /images/elCangrejo/sen-vietnam-768.webp 768w, /images/elCangrejo/sen-vietnam.webp 1170w"
+                        "/images/elCangrejo/sen-vietnam-320.webp 320w, /images/elCangrejo/sen-vietnam-480.webp 480w, /images/elCangrejo/sen-vietnam-640.webp 640w, /images/elCangrejo/sen-vietnam-768.webp 768w, /images/elCangrejo/sen-vietnam.webp 1124w"
                       }
-                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
                     <source
                       type="image/jpg"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        "/images/elCangrejo/sen-vietnam-320.jpg 320w, /images/elCangrejo/sen-vietnam-480.jpg 480w, /images/elCangrejo/sen-vietnam-640.jpg 640w, /images/elCangrejo/sen-vietnam-768.jpg 768w, /images/elCangrejo/sen-vietnam.jpg 1170w"
+                        "/images/elCangrejo/sen-vietnam-320.jpg 320w, /images/elCangrejo/sen-vietnam-480.jpg 480w, /images/elCangrejo/sen-vietnam-640.jpg 640w, /images/elCangrejo/sen-vietnam-768.jpg 768w, /images/elCangrejo/sen-vietnam.jpg 1124w"
                       }
-                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
                     <img
                       className="no-right-click"
