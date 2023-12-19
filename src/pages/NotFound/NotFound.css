@@ -1,7 +1,6 @@
 .not-found {
     margin-top: 115px;
 }
-
 .not-found-hero {
     width: 33%;
     width: 100%;
@@ -11,7 +10,6 @@
     position: relative;
     margin: 0 auto;
 }
-
 .not-found-hero img {
     display: block;
     max-width: 100%;
@@ -20,22 +18,18 @@
     top: 0;
     left: 0;
 }
-
 .not-found section {
     margin: 0 auto;
     width: 80%;
 }
-
 .not-found h1 {
     font-size: 14.75rem;
     font-size: 8.75rem;
 }
-
 .not-found p {
     font-size: 3rem;
     margin-bottom: 25px;
 }
-
 .not-found a {
     font-size: 1rem;
     color: #1493f3;
@@ -44,7 +38,6 @@
     width: 181px;
     margin: 0 auto 37px auto;
 }
-
 .not-found a::after {
     content: " ";
     position: absolute;
@@ -57,28 +50,23 @@
     transform-origin: bottom left;
     transition: transform 0.3s;
 }
-
 .not-found a:hover::after {
     transform-origin: bottom left;
     transform: scaleX(1);
 }
-
 @media all and (max-width: 295px) {
     .not-found h1 {
         font-size: 6.5rem;
    }
 }
-
 @media all and (min-width: 960px) {
     .not-found h1 {
         font-size: 14.75rem;
    }
-
-   .not-found a {
-    font-size: 2rem;
-    width: 352px;
-}
-   
+    .not-found a {
+        font-size: 2rem;
+        width: 352px;
+   }
     .not-found-hero {
         width: 40%;
         padding-top: calc(1211 / 4032 * 100%);

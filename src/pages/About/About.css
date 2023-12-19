@@ -1,7 +1,6 @@
 .about-page {
     margin-top: 142px;
 }
-
 .comic {
     width: 100%;
     margin: 0 auto 45px auto;
@@ -15,14 +14,12 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border-radius: 18px;
 }
-
 .about-hero {
     width: 100%;
     border-radius: 0;
     padding-top: calc(765 / 2543 * 100%);
     position: relative;
 }
-
 .about-hero img {
     display: block;
     max-width: 100%;
@@ -31,18 +28,15 @@
     top: 0;
     left: 0;
 }
-
 .about-page h1 {
     font-size: 1.3125rem;
 }
-
 .comic figure {
     border-radius: 0;
     width: 75%;
     position: relative;
     padding-top: calc(487 / 866 * 75%);
 }
-
 .comic img {
     height: auto;
     max-width: 100%;
@@ -50,65 +44,52 @@
     top: 0;
     left: 0;
 }
-
 .comic .panel-1 {
     border-top-left-radius: 18px;
 }
-
 .based-on {
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
 }
-
 .comic .panel-2 {
     padding-top: calc(263 / 468 * 42%);
 }
-
 .panel-1, .panel-4 {
     align-self: flex-start;
 }
-
 .comic .panel-2, .comic .panel-5, .comic .panel-3a, .comic .panel-7 {
     width: 40%;
     position: absolute;
     right: 10px;
     top: 4%;
 }
-
 .comic .panel-5 {
     top: 55%;
 }
-
 .panel-2 img, .panel-5 img {
     border: 7px solid #000;
     border-right: none;
 }
-
 .comic .panel-3a {
     top: 25.3%;
     left: 10px;
 }
-
 .comic .panel-3a img {
     border-right: 7px solid #000;
     border-bottom: 7px solid #000;
 }
-
 .panel-3, .panel-6 {
     align-self: flex-end;
 }
-
 .comic .panel-7 {
     width: 40%;
     left: 10px;
     top: 78%;
 }
-
 .panel-7 img {
     border: 7px solid #000;
     border-left: none;
 }
-
 .comic p {
     padding: 10px;
     background-color: #fff;
@@ -119,110 +100,89 @@
     align-self: flex-start;
     width: 100%;
 }
-
 .about-us {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .about-us p {
     width: 400px;
     padding: 10px;
 }
-
 /* Tablet menu */
 @media all and (min-width: 960px) {
-
     .about-page {
         margin-top: 92px;
-    }
-
+   }
     .comic {
         width: 60%;
         margin-bottom: 65px;
    }
-
     .comic p {
         font-size: 1.25rem;
         margin-bottom: 20px;
         top: 0;
         padding: 20px;
    }
-
     .comic .panel {
         top: 8%;
    }
-
     .comic .panel-3a {
         top: 25.7%;
         left: 20px;
         padding-top: calc(263 / 468 * 40%);
    }
-
     .comic .panel-5 {
         top: 53.2%;
         padding-top: calc(263 / 468 * 42%);
    }
-
     .comic .panel-7 {
         top: 74%;
         left: 20px;
         padding-top: calc(263 / 468 * 43%);
    }
-
     .comic {
         padding: 20px;
         padding-bottom: 10px;
    }
-
     .comic .panel-2, .comic .panel-5 {
         right: 20px;
         padding-top: calc(263 / 468 * 44%);
    }
-
     .panel-2 img, .panel-5 img {
         border: 10px solid #000;
         border-right: none;
    }
-
     .comic .panel-3a img {
         border-right: 10px solid #000;
         border-bottom: 10px solid #000;
    }
-
     .panel-7 img {
         border: 10px solid #000;
         border-left: none;
    }
 }
-
 /* Wider screens */
 @media all and (min-width: 1450px) {
     .comic {
         width: 47%;
    }
 }
-
 @media all and (min-width: 1350px) {
     .comic .panel-3a {
         top: 25.35%;
    }
 }
-
 @media all and (max-width: 591px) {
     .comic figure {
         width: 100%;
    }
-
     .comic .panel-2, .comic .panel-5, .comic .panel-3a, .comic .panel-7 {
         display: none;
    }
-
     .comic p {
         font-size: .875rem;
    }
-   
     .comic .panel-1 {
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;

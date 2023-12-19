@@ -1,19 +1,16 @@
 .contact-us-page {
     margin-top: 142px;
 }
-
 .contact-us-page h1 {
     font-size: 1.3125rem;
 }
-
 .contact-us-form-container {
     margin: 45px auto 45px auto;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
-
 .contact-us-form-container .form {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 500px;
@@ -23,35 +20,29 @@
     padding-bottom: 0;
     padding: 20px;
 }
-
 .contact-us-form-container h2 {
     margin-bottom: 35px;
     font-size: 1.313rem;
 }
-
 .contact-button {
     border: 3px solid #000;
     color: #000;
     background-color: #fff;
 }
-
 .contact-button:focus {
     outline: 3px solid #1493f3;
     border: 3px solid transparent;
 }
-
 .contact-us-form .required {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
 .contact-us-form .input {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
 .contact-us-form-container input, .contact-us-form textarea {
     color: #000;
     border: 3px solid #000;
@@ -60,13 +51,11 @@
     font-size: 1rem;
     letter-spacing: .03rem;
 }
-
 .contact-us-form input::placeholder, .contact-us-form textarea::placeholder {
     color: #000;
     font-size: 1rem;
     letter-spacing: .03rem;
 }
-
 .contact-us-form-container textarea {
     resize: vertical;
     outline: none;
@@ -76,27 +65,22 @@
     padding: 15px;
     font-family: 'Roboto', sans-serif;
 }
-
 .contact-us-form label {
     color: transparent;
 }
-
 .contact-us-form textarea:focus {
     border: 3px solid #1493f3;
 }
-
 .contact-hero {
     width: 100%;
     border-radius: 0;
     padding-top: calc(720 / 2543 * 100%);
     position: relative;
 }
-
 .contact-hero figcaption {
     padding-left: 5px;
     font-size: .875rem;
 }
-
 .contact-us-page img {
     display: block;
     max-width: 100%;
@@ -105,7 +89,6 @@
     top: 0;
     left: 0;
 }
-
 #alert-comment-2.alert-comment {
     top: unset;
     width: 205px;
@@ -113,12 +96,11 @@
     font-size: .75rem;
     outline: 1px solid #df0d14;
 }
-
 /* Desktop menu */
 @media all and (min-width: 960px) {
     .contact-us-page {
-        margin-top: 92px
-    }
+        margin-top: 92px 
+   }
     .contact-us-form-container {
         margin-bottom: 63px;
    }
@@ -126,16 +108,13 @@
         font-size: 1.5rem;
    }
 }
-
 @media all and (max-width: 273px) {
     #alert-comment-2.alert-comment {
         width: 151px;
-    }
+   }
 }
-
-
 @media all and (max-width: 257px) {
     .contact-us-form-container input, .contact-us-form textarea, .contact-button {
         width: 200px;
-    }
+   }
 }

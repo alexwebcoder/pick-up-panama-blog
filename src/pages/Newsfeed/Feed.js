@@ -1,4 +1,3 @@
-import "./Feed.css";
 
 const Feed = ({title, link, date, contentSnippet}) => {
 
