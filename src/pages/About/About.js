@@ -81,17 +81,17 @@ const About = () => {
               type="image/webp"
               srcSet={
                 process.env.PUBLIC_URL +
-                "/images/about/man-and-woman-on-boat-in-panama-320.webp 320w, /images/about/man-and-woman-on-boat-in-panama.webp 468w"
+                "/images/about/man-and-woman-on-boat-in-panama.webp 468w"
               }
-              sizes="(max-width: 320px) 320px, 468px"
+              sizes="(max-width: 468px) 468px"
             />
             <source
               type="image/jpg"
               srcSet={
                 process.env.PUBLIC_URL +
-                "/images/about/man-and-woman-on-boat-in-panama-320.jpg 320w, /images/about/man-and-woman-on-boat-in-panama.jpg 468w"
+                "/images/about/man-and-woman-on-boat-in-panama.jpg 468w"
               }
-              sizes="(max-width: 320px) 320px, 468px"
+              sizes="(max-width: 468px) 468px"
             />
             <img
               className="no-right-click"
@@ -140,18 +140,16 @@ const About = () => {
             <source
               type="image/webp"
               srcSet={
-                process.env.PUBLIC_URL +
-                "/images/about/sea-turtle-320.webp 320w, /images/about/sea-turtle.webp 468w"
+                process.env.PUBLIC_URL + "/images/about/sea-turtle.webp 468w"
               }
-              sizes="(max-width: 320px) 320px, 468px"
+              sizes="(max-width: 468px) 468px"
             />
             <source
               type="image/jpg"
               srcSet={
-                process.env.PUBLIC_URL +
-                "/images/about/sea-turtle-320.jpg 320w, /images/about/sea-turtle.jpg 468w"
+                process.env.PUBLIC_URL + "/images/about/sea-turtle.jpg 468w"
               }
-              sizes="(max-width: 320px) 320px, 468px"
+              sizes="(max-width: 468px) 468px"
             />
             <img
               className="no-right-click"
@@ -197,16 +195,14 @@ const About = () => {
             <source
               type="image/webp"
               srcSet={
-                process.env.PUBLIC_URL +
-                "/images/about/a-sea-anemone-320.webp 320w, /images/about/a-sea-anemone.webp 468w"
+                process.env.PUBLIC_URL + "/images/about/a-sea-anemone.webp 468w"
               }
-              sizes="(max-width: 320px) 320px, 468px"
+              sizes="(max-width: 468px) 468px"
             />
             <source
               type="image/jpg"
               srcSet={
-                process.env.PUBLIC_URL +
-                "/images/about/a-sea-anemone-320.jpg 320w, /images/about/a-sea-anemone.jpg 468w"
+                process.env.PUBLIC_URL + "/images/about/a-sea-anemone.jpg 468w"
               }
               sizes="(max-width: 320px) 320px, 468px"
             />
@@ -260,17 +256,17 @@ const About = () => {
               type="image/webp"
               srcSet={
                 process.env.PUBLIC_URL +
-                "/images/about/panama-fish-market-320.webp 320w, /images/about/panama-fish-market.webp 468w"
+                "/images/about/panama-fish-market.webp 468w"
               }
-              sizes="(max-width: 320px) 320px, 468px"
+              sizes="(max-width: 468px) 468px"
             />
             <source
               type="image/jpg"
               srcSet={
                 process.env.PUBLIC_URL +
-                "/images/about/panama-fish-market-320.jpg 320w, /images/about/panama-fish-market.jpg 468w"
+                "/images/about/panama-fish-market.jpg 468w"
               }
-              sizes="(max-width: 320px) 320px, 468px"
+              sizes="(max-width: 468px) 468px"
             />
             <img
               className="no-right-click"
