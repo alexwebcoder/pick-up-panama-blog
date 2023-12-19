@@ -45,79 +45,205 @@ const About = () => {
       </div>
       <div className="comic">
         <figure className="panel-1">
-          <img
-            className="no-right-click"
-            src={
-              process.env.PUBLIC_URL + "/images/about/alex-deleon-panama.webp"
-            }
-            alt="Alex in Panama City"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/alex-deleon-panama-320.webp 320w, /images/about/alex-deleon-panama-480.webp 480w, /images/about/alex-deleon-panama-640.webp 640w, /images/about/alex-deleon-panama-768.webp 768w,  /images/about/alex-deleon-panama.webp 866w"
+              }
+              sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 866px"
+            />
+            <source
+              type="image/jpg"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/alex-deleon-panama-320.jpg 320w, /images/about/alex-deleon-panama-480.jpg 480w, /images/about/alex-deleon-panama-640.jpg 640w, /images/about/alex-deleon-panama-768.jpg 768w, /images/about/alex-deleon-panama.jpg 866w"
+              }
+              sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 866px"
+            />
+            <img
+              className="no-right-click"
+              src={
+                process.env.PUBLIC_URL + "/images/about/alex-deleon-panama.jpg"
+              }
+              alt="Alex in Panama City"
+            />
+          </picture>
         </figure>
         <p>
           My name is Alex. I am a Panamanian American who has traveled
           throughout Panama.
         </p>
         <figure className="panel-2">
-          <img
-            className="no-right-click"
-            src={
-              process.env.PUBLIC_URL +
-              "/images/about/man-and-woman-on-boat-in-panama.webp"
-            }
-            alt="A man and a woman on a boat in panama"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/man-and-woman-on-boat-in-panama-320.webp 320w, /images/about/man-and-woman-on-boat-in-panama.webp 480w"
+              }
+              sizes="(max-width: 320px) 320px, 480px"
+            />
+            <source
+              type="image/jpg"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/man-and-woman-on-boat-in-panama-320.jpg 320w, /images/about/man-and-woman-on-boat-in-panama.jpg 480w"
+              }
+              sizes="(max-width: 320px) 320px, 480px"
+            />
+            <img
+              className="no-right-click"
+              src={
+                process.env.PUBLIC_URL +
+                "/images/about/man-and-woman-on-boat-in-panama.jpg"
+              }
+              alt="A man and a woman on a boat in panama"
+            />
+          </picture>
         </figure>
         <figure className="panel-3">
-          <img
-            className="no-right-click"
-            src={
-              process.env.PUBLIC_URL +
-              "/images/about/san-blas-indians-in-panama.webp"
-            }
-            alt="San Blas Indians selling items in panama"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/san-blas-indians-in-panama-320.webp 320w, /images/about/san-blas-indians-in-panama-480.webp 480w, /images/about/san-blas-indians-in-panama-640.webp 640w, /images/about/san-blas-indians-in-panama-768.webp 768w,  /images/about/san-blas-indians-in-panama.webp 866w"
+              }
+              sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 866px"
+            />
+            <source
+              type="image/jpg"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/san-blas-indians-in-panama-320.jpg 320w, /images/about/san-blas-indians-in-panama-480.jpg 480w, /images/about/san-blas-indians-in-panama-640.jpg 640w, /images/about/san-blas-indians-in-panama-768.jpg 768w, /images/about/san-blas-indians-in-panama.jpg 866w"
+              }
+              sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 866px"
+            />
+            <img
+              className="no-right-click"
+              src={
+                process.env.PUBLIC_URL +
+                "/images/about/san-blas-indians-in-panama.jpg"
+              }
+              alt="San Blas Indians selling items in panama"
+            />
+          </picture>
         </figure>
         <p>
           The first step in learning about a foreign culture is to recognize
           cultural differences.
         </p>
         <figure className="panel-3a">
-          <img
-            className="no-right-click"
-            src={process.env.PUBLIC_URL + "/images/about/sea-turtle.webp"}
-            alt="A sea turtle swimming"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/sea-turtle-320.webp 320w, /images/about/sea-turtle.webp 480w"
+              }
+              sizes="(max-width: 320px) 320px, 480px"
+            />
+            <source
+              type="image/jpg"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/sea-turtle-320.jpg 320w, /images/about/sea-turtle.jpg 480w"
+              }
+              sizes="(max-width: 320px) 320px, 480px"
+            />
+            <img
+              className="no-right-click"
+              src={process.env.PUBLIC_URL + "/images/about/sea-turtle.jpg"}
+              alt="A sea turtle swimming"
+            />
+          </picture>
         </figure>
         <figure className="panel-4">
-          <img
-            className="no-right-click"
-            src={
-              process.env.PUBLIC_URL +
-              "/images/about/ship-in-the-panama-harbor.webp"
-            }
-            alt="A ship in the Panama harbor"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/ship-in-the-panama-harbor-320.webp 320w, /images/about/ship-in-the-panama-harbor-480.webp 480w, /images/about/ship-in-the-panama-harbor-640.webp 640w, /images/about/ship-in-the-panama-harbor-768.webp 768w,  /images/about/ship-in-the-panama-harbor.webp 866w"
+              }
+              sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 866px"
+            />
+            <source
+              type="image/jpg"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/ship-in-the-panama-harbor-320.jpg 320w, /images/about/ship-in-the-panama-harbor-480.jpg 480w, /images/about/ship-in-the-panama-harbor-640.jpg 640w, /images/about/ship-in-the-panama-harbor-768.jpg 768w, /images/about/ship-in-the-panama-harbor.jpg 866w"
+              }
+              sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 866px"
+            />
+            <img
+              className="no-right-click"
+              src={
+                process.env.PUBLIC_URL +
+                "/images/about/ship-in-the-panama-harbor.jpg"
+              }
+              alt="A ship in the Panama harbor"
+            />
+          </picture>
         </figure>
         <p>
           Learning about foreign culture can prepare us to interact better with
           others.
         </p>
         <figure className="panel-5">
-          <img
-            className="no-right-click"
-            src={process.env.PUBLIC_URL + "/images/about/a-sea-anemone.webp"}
-            alt="A sea anemone"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/a-sea-anemone-320.webp 320w, /images/about/a-sea-anemone.webp 480w"
+              }
+              sizes="(max-width: 320px) 320px, 480px"
+            />
+            <source
+              type="image/jpg"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/a-sea-anemone-320.jpg 320w, /images/about/a-sea-anemone.jpg 480w"
+              }
+              sizes="(max-width: 320px) 320px, 480px"
+            />
+            <img
+              className="no-right-click"
+              src={process.env.PUBLIC_URL + "/images/about/a-sea-anemone.webp"}
+              alt="A sea anemone"
+            />
+          </picture>
         </figure>
         <figure className="panel-6">
-          <img
-            className="no-right-click"
-            src={
-              process.env.PUBLIC_URL +
-              "/images/about/young-lady-walking-in-panama-city.webp"
-            }
-            alt="A young lady walking in front of street vendors in panama city"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/young-lady-walking-in-panama-city-320.webp 320w, /images/about/young-lady-walking-in-panama-city-480.webp 480w, /images/about/young-lady-walking-in-panama-city-640.webp 640w, /images/about/young-lady-walking-in-panama-city-768.webp 768w,  /images/about/young-lady-walking-in-panama-city.webp 866w"
+              }
+              sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 866px"
+            />
+            <source
+              type="image/jpg"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/young-lady-walking-in-panama-city-320.jpg 320w, /images/about/young-lady-walking-in-panama-city-480.jpg 480w, /images/about/young-lady-walking-in-panama-city-640.jpg 640w, /images/about/young-lady-walking-in-panama-city-768.jpg 768w, /images/about/young-lady-walking-in-panama-city.jpg 866w"
+              }
+              sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 866px"
+            />
+            <img
+              className="no-right-click"
+              src={
+                process.env.PUBLIC_URL +
+                "/images/about/young-lady-walking-in-panama-city.jpg"
+              }
+              alt="A young lady walking in front of street vendors in panama city"
+            />
+          </picture>
         </figure>
         <p className="created">
           I created Pick Up Panama to help travelers solve some of the
@@ -129,13 +255,31 @@ const About = () => {
           Panama.
         </p>
         <figure className="panel-7">
-          <img
-            className="no-right-click"
-            src={
-              process.env.PUBLIC_URL + "/images/about/panama-fish-market.webp"
-            }
-            alt="A seafood meal from the fish market in panama city"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/panama-fish-market-320.webp 320w, /images/about/panama-fish-market.webp 480w"
+              }
+              sizes="(max-width: 320px) 320px, 480px"
+            />
+            <source
+              type="image/jpg"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/panama-fish-market-320.jpg 320w, /images/about/panama-fish-market.jpg 480w"
+              }
+              sizes="(max-width: 320px) 320px, 480px"
+            />
+            <img
+              className="no-right-click"
+              src={
+                process.env.PUBLIC_URL + "/images/about/panama-fish-market.jpg"
+              }
+              alt="A seafood meal from the fish market in panama city"
+            />
+          </picture>
         </figure>
       </div>
     </main>
