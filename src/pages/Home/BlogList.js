@@ -16,12 +16,12 @@ const BlogList = ({ blogs, title }) => {
               <picture>
                 <source
                   type="image/webp"
-                  srcSet={`${blog.Thum320w} 320w, ${blog.Thum492w} 492w, ${blog.Thum960w} 960w`} 
+                  srcSet={`${blog.Thum320w} 320w, ${blog.Thum960w} 960w, ${blog.Thum492w} 492w`} 
                   sizes="(max-width: 320px) 320px, (max-width: 960px) 960px, 492px"
                 />
                 <source
                   type="image/jpg"
-                  srcSet={`${blog.Thum320j} 320w, ${blog.Thum492j} 492w, ${blog.Thum960j} 960w`}
+                  srcSet={`${blog.Thum320j} 320w, ${blog.Thum960j} 960w, ${blog.Thum960j} 492w`}
                   sizes="(max-width: 320px) 320px, (max-width: 960px) 960px, 492px"
                 />
                 <img
