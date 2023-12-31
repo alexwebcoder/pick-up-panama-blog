@@ -16,13 +16,13 @@ const BlogList = ({ blogs, title }) => {
               <picture>
                 <source
                   type="image/webp"
-                  srcSet={`${blog.Thum320w} 320w, ${blog.Thum640w} 640w, ${blog.Thum960w} 959w, ${blog.Thum492w} 492w`}
-                  sizes="(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 959px) 959px, 492px"
+                  srcSet={`${blog.Thum320w} 320w, ${blog.Thum480w} 480w, ${blog.Thum640w} 640w, ${blog.Thum768w} 768w, ${blog.Thum960w} 959w, ${blog.Thum492w} 492w`}
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 959px) 959px, 492px"
                 />
                 <source
                   type="image/jpg"
-                  srcSet={`${blog.Thum320j} 320w, ${blog.Thum640j} 640w, ${blog.Thum960j} 959w, ${blog.Thum492j} 492w`}
-                  sizes="(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 959px) 959px, 492px"
+                  srcSet={`${blog.Thum320j} 320w, ${blog.Thum480j} 480w, ${blog.Thum640j} 640w, ${blog.Thum768j} 768w, ${blog.Thum960j} 959w, ${blog.Thum492j} 492w`}
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 959px) 959px, 492px"
                 />
                 <img
                   className="no-right-click"
