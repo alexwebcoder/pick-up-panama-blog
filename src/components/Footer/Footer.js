@@ -8,10 +8,10 @@ const Footer = () => {
         <footer  id="footer-nav" className="footer centered">
             <ContactForm />
             <nav className="icons">
-                <a href="/" aria-label="facebook"><i className="fab fa-facebook"></i></a>
-                <a href="/" aria-label="linkedin"><i className="fab fa-linkedin"></i></a>
-                <a href="/" aria-label="instagram"><i className="fab fa-instagram"></i></a>
-                <a href="/" aria-label="twitter"><i className="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/pickuppanamadotcom/" aria-label="instagram"><i className="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://twitter.com/PickUpPanama" aria-label="twitter"><i className="fab fa-x-twitter"></i></a>
+                <a target="_blank" href="https://www.facebook.com/PickUpPanama/" aria-label="facebook"><i className="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.pinterest.com/pickuppanama/" aria-label="pinterest"><i className="fab fa-pinterest"></i></a>
             </nav>
             <ul className="menu">
                 <li className="item caps home"><Link to ="/">Home</Link></li>

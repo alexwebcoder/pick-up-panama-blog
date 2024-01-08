@@ -26,7 +26,7 @@ export const Capitalize = () => {
     }
 
     if (document.title === "Pick Up Panama | Learn About Panama") {
-        document.getElementsByTagName('meta')["description"].content = "Pick Up Panama is a resource of visiting information, Panamanian culture and lifestyle.";
+        document.getElementsByTagName('meta')["description"].content = "Pick Up Panama is a blog that provides information, culture, and lifestyle about Panama.";
     }
 
     if (document.title === "About Pick Up Panama") {

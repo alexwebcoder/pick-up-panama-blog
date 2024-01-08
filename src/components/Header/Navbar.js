@@ -39,7 +39,7 @@ const Navbar = () => {
             <Search placeholder='search' data={SearchData}/>
         </nav>
         <div className="definition">
-            <p>Learn about Panama</p>
+            <p>A blog about Panama</p>
         </div>
         <div className="progress-container">
             <div className="progress-bar" id="myBar"></div>
