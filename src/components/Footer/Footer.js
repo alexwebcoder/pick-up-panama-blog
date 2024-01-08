@@ -8,10 +8,10 @@ const Footer = () => {
         <footer  id="footer-nav" className="footer centered">
             <ContactForm />
             <nav className="icons">
-                <a target="_blank" href="https://www.instagram.com/pickuppanamadotcom/" aria-label="instagram"><i className="fab fa-instagram"></i></a>
-                <a target="_blank" href="https://twitter.com/PickUpPanama" aria-label="twitter"><i className="fab fa-x-twitter"></i></a>
-                <a target="_blank" href="https://www.facebook.com/PickUpPanama/" aria-label="facebook"><i className="fab fa-facebook"></i></a>
-                <a target="_blank" href="https://www.pinterest.com/pickuppanama/" aria-label="pinterest"><i className="fab fa-pinterest"></i></a>
+                <a target="_blank" href="https://www.instagram.com/pickuppanamadotcom/" rel="noopener noreferrer" aria-label="instagram"><i className="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://twitter.com/PickUpPanama" rel="noopener noreferrer" aria-label="twitter"><i className="fab fa-x-twitter"></i></a>
+                <a target="_blank" href="https://www.facebook.com/PickUpPanama/" rel="noopener noreferrer" aria-label="facebook"><i className="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.pinterest.com/pickuppanama/" rel="noopener noreferrer" aria-label="pinterest"><i className="fab fa-pinterest"></i></a>
             </nav>
             <ul className="menu">
                 <li className="item caps home"><Link to ="/">Home</Link></li>
