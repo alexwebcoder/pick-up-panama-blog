@@ -8,8 +8,6 @@ import {
   FacebookIcon,
   TwitterShareButton,
   TwitterIcon,
-  PinterestShareButton,
-  PinterestIcon,
   LinkedinShareButton,
   LinkedinIcon,
   EmailShareButton,
@@ -67,14 +65,16 @@ const BlogDetails = () => {
             <div className="share-parent">
               <FacebookShareButton
                 url={currentPageUrl}
-                hashtag="#pickuppanama"
+                hashtag="#panama"
+                aria-label="facebook"
               >
                 <FacebookIcon size={35} />
               </FacebookShareButton>
               <TwitterShareButton
                 url={currentPageUrl}
                 hashtags={["pickuppanama","safety", "panama"]}
-                title={"Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more."}
+                title={"Is Panama Safe?"}
+                aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
@@ -82,15 +82,18 @@ const BlogDetails = () => {
                 url={currentPageUrl}
                 title={"Is Panama Safe?"}
                 summary={"Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more."}
+                aria-label="linkedin"
               >
                 <LinkedinIcon size={35} />
               </LinkedinShareButton>
-              <EmailShareButton 
+              <EmailShareButton
                 url={currentPageUrl}
                 subject={"Is Panama Safe?"}
                 body={"Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more."}
+                aria-label="email"
+                separator={" "}
               >
-                 <EmailIcon size={35} /> 
+                 <EmailIcon size={35} />
               </EmailShareButton>
             </div>
             <p className="moderate-crime">{blog.moderateCrime}</p>
@@ -414,6 +417,40 @@ const BlogDetails = () => {
             </div>
             <h1 className="centered post-title">{blog.title}</h1>
             <p className="body intro">{blog.intro}</p>
+            <div className="share-parent">
+              <FacebookShareButton
+                url={currentPageUrl}
+                hashtag="#panama"
+                aria-label="facebook"
+              >
+                <FacebookIcon size={35} />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url={currentPageUrl}
+                hashtags={["pickuppanama","transportation", "panama"]}
+                title={"How do I get around in Panama?"}
+                aria-label="twitter"
+              >
+                <TwitterIcon size={35} />
+              </TwitterShareButton>
+              <LinkedinShareButton
+                url={currentPageUrl}
+                title={"How do I get around in Panama?"}
+                summary={"Learn about Panama's metro train, buses, and taxi system to efficiently get around without overpaying for cabs."}
+                aria-label="linkedin"
+              >
+                <LinkedinIcon size={35} />
+              </LinkedinShareButton>
+              <EmailShareButton
+                url={currentPageUrl}
+                subject={"How do I get around in Panama?"}
+                body={"Learn about Panama's metro train, buses, and taxi system to efficiently get around without overpaying for cabs."}
+                aria-label="email"
+                separator={" "}
+              >
+                 <EmailIcon size={35} />
+              </EmailShareButton>
+            </div>
             <figure className="hwy">
               <picture>
                 <source
@@ -1129,6 +1166,40 @@ const BlogDetails = () => {
             </div>
             <h1 className="centered post-title">{blog.title}</h1>
             <p className="body intro">{blog.intro}</p>
+            <div className="share-parent">
+              <FacebookShareButton
+                url={currentPageUrl}
+                hashtag="#panama"
+                aria-label="facebook"
+              >
+                <FacebookIcon size={35} />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url={currentPageUrl}
+                hashtags={["pickuppanama","el cangrejo", "panama"]}
+                title={"Things to do in El Cangrejo"}
+                aria-label="twitter"
+              >
+                <TwitterIcon size={35} />
+              </TwitterShareButton>
+              <LinkedinShareButton
+                url={currentPageUrl}
+                title={"Things to do in El Cangrejo"}
+                summary={"Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting."}
+                aria-label="linkedin"
+              >
+                <LinkedinIcon size={35} />
+              </LinkedinShareButton>
+              <EmailShareButton
+                url={currentPageUrl}
+                subject={"Things to do in El Cangrejo"}
+                body={"Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting."}
+                aria-label="email"
+                separator={" "}
+              >
+                 <EmailIcon size={35} />
+              </EmailShareButton>
+            </div>
             <figure>
               <picture>
                 <source

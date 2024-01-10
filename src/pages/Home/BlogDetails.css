@@ -35,7 +35,14 @@
 }
 .share-parent {
     display: flex;
-    z-index: 2;
+    position: relative;
+    top: -3px;
+}
+.share-parent button {
+    margin-right: 4px;
+}
+.share-parent button:last-of-type {
+    margin-right: 0;
 }
 .button-parent button:hover, .button-parent button:focus {
     background-color: #1493f3;
@@ -227,6 +234,9 @@ p.this-article {
         left: 8px;
         top: 55%;
         flex-direction: column;
+    }
+    .share-parent button {
+        margin-right: 0;
     }
     .blog-details {
         width: 46%;

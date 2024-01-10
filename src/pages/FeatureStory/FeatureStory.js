@@ -3,10 +3,22 @@ import useFetch from "../../useFetch";
 import { TabTitle, Capitalize } from "../../utils/GeneralFunctions";
 import "../Home/BlogDetails.css";
 import ReactPlayer from "react-player";
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  EmailShareButton,
+  EmailIcon,
+} from "react-share";
 
 
 const FeatureStory = () => {
   const { id } = useParams();
+  const currentPageUrl = "http://www.sockgoodies.com";
+  // const currentPageUrl = window.location.href;
   const {
     data: blog,
     error,
@@ -39,6 +51,40 @@ const FeatureStory = () => {
           </div>
           <h1 className="centered post-title">{blog.title}</h1>
           <p className="body intro">{blog.intro}</p>
+          <div className="share-parent">
+              <FacebookShareButton
+                url={currentPageUrl}
+                hashtag="#panama"
+                aria-label="facebook"
+              >
+                <FacebookIcon size={35} />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url={currentPageUrl}
+                hashtags={["pickuppanama","panama canal", "panama"]}
+                title={"How do I visit the Panama Canal?"}
+                aria-label="twitter"
+              >
+                <TwitterIcon size={35} />
+              </TwitterShareButton>
+              <LinkedinShareButton
+                url={currentPageUrl}
+                title={"How do I visit the Panama Canal?"}
+                summary={"Read this to understand the importance of the Panama Canal and the best ways to observe it."}
+                aria-label="linkedin"
+              >
+                <LinkedinIcon size={35} />
+              </LinkedinShareButton>
+              <EmailShareButton
+                url={currentPageUrl}
+                subject={"How do I visit the Panama Canal?"}
+                body={"Read this to understand the importance of the Panama Canal and the best ways to observe it."}
+                aria-label="email"
+                separator={" "}
+              >
+                 <EmailIcon size={35} />
+              </EmailShareButton>
+            </div>
           <figure>
           <picture>
                 <source
