@@ -33,6 +33,10 @@
     letter-spacing: .03em;
     transition: 0.3s;
 }
+.share-parent {
+    display: flex;
+    z-index: 2;
+}
 .button-parent button:hover, .button-parent button:focus {
     background-color: #1493f3;
     color: #fff;
@@ -83,7 +87,7 @@ p.intro {
     padding: 25px 0;
     border-top: 1px solid #a1a1a1;
     border-bottom: 1px solid #a1a1a1;
-    margin: 45px auto;
+    margin: 45px auto 22px auto;
     font-weight: 600;
     line-height: 1.4;
     font-size: 1.5rem;
@@ -217,6 +221,13 @@ p.this-article {
 }
 /* Desktop menu */
 @media all and (min-width: 960px) {
+    .share-parent {
+        flex-direction: row;
+        position: fixed;
+        left: 8px;
+        top: 55%;
+        flex-direction: column;
+    }
     .blog-details {
         width: 46%;
         margin-bottom: -22px;
@@ -226,6 +237,7 @@ p.this-article {
    }
     p.intro {
         width: 80%;
+        margin: 45px auto;
    }
     .button-parent {
         position: fixed;

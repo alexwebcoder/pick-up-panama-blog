@@ -79,22 +79,17 @@ const BlogDetails = () => {
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
-                url={"http://localhost:3000/blogs/is-panama-safe"}
-                quote={"Dummy text!"}
-                hashtag="#muo"
+                url={currentPageUrl}
+                title={"Is Panama Safe?"}
+                summary={"Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more."}
               >
                 <LinkedinIcon size={35} />
               </LinkedinShareButton>
-              <PinterestShareButton
-                url={"http://localhost:3000/blogs/is-panama-safe"}
-                quote={"Dummy text!"}
-                hashtag="#muo"
-                media={"http://localhost:3000/blogs/is-panama-safe"}
-                description={"this is a test"}
+              <EmailShareButton 
+                url={currentPageUrl}
+                subject={"Is Panama Safe?"}
+                body={"Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more."}
               >
-                <PinterestIcon size={35} />
-              </PinterestShareButton>
-              <EmailShareButton url={currentPageUrl}>
                  <EmailIcon size={35} /> 
               </EmailShareButton>
             </div>
