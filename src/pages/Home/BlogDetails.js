@@ -3,6 +3,18 @@ import useFetch from "../../useFetch";
 import "./BlogDetails.css";
 import { TabTitle, Capitalize } from "../../utils/GeneralFunctions";
 import ReactPlayer from "react-player";
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  PinterestShareButton,
+  PinterestIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  EmailShareButton,
+  EmailIcon,
+} from "react-share";
 
 const BlogDetails = () => {
   //using the useParams hook to grab values (route params) from current url (route)
@@ -33,6 +45,8 @@ const BlogDetails = () => {
   const goToElCangrejoStory = () => {
     navigateA("/blogs/things-to-do-in-el-cangrejo");
   };
+  const currentPageUrl = "http://www.sockgoodies.com";
+  // const currentPageUrl = window.location.href;
 
   if (document.title === "Is Panama Safe?") {
     return (
@@ -50,6 +64,40 @@ const BlogDetails = () => {
             </div>
             <h1 className="centered post-title">{blog.title}</h1>
             <p className="body intro">{blog.intro}</p>
+            <div className="share-parent">
+              <FacebookShareButton
+                url={currentPageUrl}
+                hashtag="#pickuppanama"
+              >
+                <FacebookIcon size={35} />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url={currentPageUrl}
+                hashtags={["pickuppanama","safety", "panama"]}
+                title={"Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more."}
+              >
+                <TwitterIcon size={35} />
+              </TwitterShareButton>
+              <LinkedinShareButton
+                url={"http://localhost:3000/blogs/is-panama-safe"}
+                quote={"Dummy text!"}
+                hashtag="#muo"
+              >
+                <LinkedinIcon size={35} />
+              </LinkedinShareButton>
+              <PinterestShareButton
+                url={"http://localhost:3000/blogs/is-panama-safe"}
+                quote={"Dummy text!"}
+                hashtag="#muo"
+                media={"http://localhost:3000/blogs/is-panama-safe"}
+                description={"this is a test"}
+              >
+                <PinterestIcon size={35} />
+              </PinterestShareButton>
+              <EmailShareButton url={currentPageUrl}>
+                 <EmailIcon size={35} /> 
+              </EmailShareButton>
+            </div>
             <p className="moderate-crime">{blog.moderateCrime}</p>
             <p className="despite-this">{blog.despiteThis}</p>
             <p className="this-article">{blog.thisArticle}</p>
