@@ -37,7 +37,7 @@ const FeatureStory = () => {
   };
 
   return (
-    <main className={`blog-details margin `}>
+    <main id="main-element" className={`blog-details margin `}>
       {isPending && <div>Loading...</div>}
       {error && <div>{error}</div>}
       {blog && (

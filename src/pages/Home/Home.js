@@ -13,7 +13,7 @@ const Home = () => {
     Capitalize();
 
     return ( 
-        <main className="home-content">
+        <main id="main-element" className="home-content">
           <Mission />
           <Hero />
           <Featured />

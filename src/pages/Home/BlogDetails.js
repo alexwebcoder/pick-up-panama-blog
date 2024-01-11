@@ -48,7 +48,7 @@ const BlogDetails = () => {
 
   if (document.title === "Is Panama Safe?") {
     return (
-      <main className={`blog-details margin `}>
+      <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
         {error && <div>{error}</div>}
         {blog && (
@@ -403,7 +403,7 @@ const BlogDetails = () => {
   }
   if (document.title === "How do I get Around in Panama?") {
     return (
-      <main className={`blog-details margin `}>
+      <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
         {error && <div>{error}</div>}
         {blog && (
@@ -1152,7 +1152,7 @@ const BlogDetails = () => {
   }
   if (document.title === "Things to do in El Cangrejo") {
     return (
-      <main className={`blog-details margin `}>
+      <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
         {error && <div>{error}</div>}
         {blog && (

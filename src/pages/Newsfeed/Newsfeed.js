@@ -22,7 +22,7 @@ const Newsfeed = () => {
   }, []);
 
   return (
-    <main className="newsfeed">
+    <main id="main-element" className="newsfeed">
       <figure className="news-hero">
         <picture>
           <source

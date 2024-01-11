@@ -6,7 +6,7 @@ const About = () => {
   Capitalize();
 
   return (
-    <main className="about-page">
+    <main id="main-element" className="about-page">
       <figure className="about-hero">
         <picture>
           <source

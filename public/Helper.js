@@ -177,3 +177,8 @@ window.addEventListener('scroll', () => {
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
+
+  let main = document.querySelector('#main-element')
+  if(!document.body.contains(main)) {
+    window.location.href = 'http://www.localhost:3000/*'
+  }

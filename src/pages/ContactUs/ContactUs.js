@@ -107,7 +107,7 @@ const ContactUsForm = () => {
     e.target.reset();
   };
   return (
-    <main className="margin contact-us-page">
+    <main id="main-element" className="margin contact-us-page">
       <figure className="contact-hero">
         <picture>
           <source
