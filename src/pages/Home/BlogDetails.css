@@ -257,6 +257,9 @@ p.this-article {
         left: .5%;
         bottom: unset;
    }
+   .button-parent button:last-child {
+    margin-right: 6px;
+   }
 }
 @media all and (min-width: 1500px) {
     .blog-details .line-divider.wide:before {
