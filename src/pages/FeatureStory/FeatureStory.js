@@ -39,7 +39,7 @@ const FeatureStory = () => {
   return (
     <main id="main-element" className={`blog-details margin `}>
       {isPending && <div>Loading...</div>}
-      {error && <div>{error}</div>}
+      {error && <div className="load-error">{error}<span>{ window.location.href = 'http://www.localhost:3000/*'}</span></div>}
       {blog && (
         <section className={blog.className}>
           <div className="line-divider centered wide">
