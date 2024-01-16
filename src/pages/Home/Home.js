@@ -1,5 +1,5 @@
 import BlogList from "./BlogList";
-import useFetch from "../../useFetch";
+import useFetch from "../../hooks/useFetch";
 import "./Home.css"
 import Mission from "./Mission";
 import Hero from "./Hero";

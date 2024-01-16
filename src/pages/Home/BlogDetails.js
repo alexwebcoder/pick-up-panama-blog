@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import useFetch from "../../useFetch";
+import useFetch from "../../hooks/useFetch";
 import "./BlogDetails.css";
 import { Link } from "react-router-dom";
 import { TabTitle, Capitalize } from "../../utils/GeneralFunctions";

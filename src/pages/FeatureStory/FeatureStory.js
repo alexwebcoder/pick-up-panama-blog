@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import useFetch from "../../useFetch";
+import useFetch from "../../hooks/useFetch";
 import { TabTitle, Capitalize } from "../../utils/GeneralFunctions";
 import "../Home/BlogDetails.css";
 import ReactPlayer from "react-player";
