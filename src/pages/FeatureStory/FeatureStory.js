@@ -17,8 +17,7 @@ import {
 
 const FeatureStory = () => {
   const { id } = useParams();
-  const currentPageUrl = "http://www.sockgoodies.com";
-  // const currentPageUrl = window.location.href;
+  const currentPageUrl = window.location.href;
   const {
     data: blog,
     error,

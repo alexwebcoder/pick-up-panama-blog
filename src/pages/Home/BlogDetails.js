@@ -44,8 +44,7 @@ const BlogDetails = () => {
   const goToElCangrejoStory = () => {
     navigateA("/blogs/things-to-do-in-el-cangrejo");
   };
-  const currentPageUrl = "http://www.sockgoodies.com";
-  // const currentPageUrl = window.location.href;
+  const currentPageUrl = window.location.href;
 
   if (document.title === "Is Panama Safe?") {
     return (
