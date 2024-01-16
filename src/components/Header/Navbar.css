@@ -126,6 +126,7 @@
   position: relative;
   top: -5px;
   font-size: 0.8125rem;
+  letter-spacing: .06rem;
 }
 
 .header.header.is-sticky .logo {
@@ -218,8 +219,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
- /* transition: 0.5s;
-  */
 }
 
 /* pseudo-element for logo to focus over flag */
