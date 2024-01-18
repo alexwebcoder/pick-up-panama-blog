@@ -17,6 +17,7 @@ const ContactUsForm = () => {
   const USER_ID = "RpfI2tiLJvbu5BKwH";
 
   const checkForm = (e) => {
+    // eslint-disable-next-line
     let canSubmit2 = false;
     const eJS_email2 = document.getElementById(
       "form-input-control-email-address-2"
@@ -40,6 +41,7 @@ const ContactUsForm = () => {
 
     function eJS_validateEmail2(email2) {
       const re =
+      // eslint-disable-next-line
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(String(email2).toLowerCase());
     }
@@ -187,6 +189,7 @@ const ContactUsForm = () => {
             <br /> Message must have at least five characters
           </p>
         </Form>
+        <p className="email-address">You can also email me at <strong>alex@pickuppanama.com</strong></p>
       </section>
     </main>
   );
