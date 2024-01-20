@@ -22,7 +22,7 @@ const FeatureStory = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch("http://localhost:8000/featured/" + id);
+  } = useFetch("https://www.pickuppanama.com/featured/" + id);
 
   TabTitle("How Do I Visit the Panama Canal?");
   Capitalize();

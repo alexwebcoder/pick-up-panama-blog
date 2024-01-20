@@ -22,7 +22,7 @@ const BlogDetails = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch("http://localhost:8000/blogs/" + id);
+  } = useFetch("https://www.pickuppanama.com/blogs/" + id);
 
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
@@ -405,7 +405,7 @@ const BlogDetails = () => {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
-        {error && <div className="load-error">{error}<span>{ window.location.href = 'http://www.localhost:3000/*'}</span></div>}
+        {error && <div className="load-error">{error}<span>{ window.location.href = 'https://www.pickuppanama.com/*'}</span></div>}
         {blog && (
           <section className={blog.className}>
             <div className="line-divider centered wide">
@@ -1154,7 +1154,7 @@ const BlogDetails = () => {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
-        {error && <div className="load-error">{error}<span>{ window.location.href = 'http://www.localhost:3000/*'}</span></div>}
+        {error && <div className="load-error">{error}<span>{ window.location.href = 'https://www.pickuppanama.com/*'}</span></div>}
         {blog && (
           <section className={blog.className}>
             <div className="line-divider centered wide">
