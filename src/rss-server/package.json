@@ -1,5 +1,6 @@
 {
   "name": "rss-server",
+  "homepage": "https://pickuppanama.com/newsfeed",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
