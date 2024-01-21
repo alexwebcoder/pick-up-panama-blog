@@ -1,7 +1,6 @@
 {
   "name": "pick-up-panama-blog",
   "homepage": "https://pickuppanama.com",
-  "proxy": "https://pickuppanama.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
