@@ -22,7 +22,7 @@ const BlogDetails = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch("https://www.pickuppanama.com/blogs/" + id);
+  } = useFetch("https://pickuppanama.com/blogs/" + id);
 
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
