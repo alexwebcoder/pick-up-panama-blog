@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
     res.send(articles);
 })
 
-const server = app.listen("https://www.pickuppanama.com", () => {
+const server = app.listen("https://pickuppanama.com", () => {
 });
 
 export default server;
