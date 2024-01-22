@@ -18,11 +18,12 @@ import {
 const BlogDetails = () => {
   //using the useParams hook to grab values (route params) from current url (route)
   const { id } = useParams();
+  console.log(id)
   const {
     data: blog,
     error,
     isPending,
-  } = useFetch("http://localhost:8000/blogs/" + id);
+  } = useFetch(`https://pick-705a9-default-rtdb.firebaseio.com/blogs.json/${[id]}/`);
 
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
@@ -50,7 +51,7 @@ const BlogDetails = () => {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
-        {error && <div className="load-error">{error}<span>{ window.location.href = 'https://www.pickuppanama.com/*'}</span></div>}
+        {error && <div className="load-error">{error}<span></span></div>}
         {blog && (
           <section className={blog.className}>
             <div className="line-divider centered wide">
@@ -405,7 +406,7 @@ const BlogDetails = () => {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
-        {error && <div className="load-error">{error}<span>{ window.location.href = 'http://www.localhost:3000/*'}</span></div>}
+        {error && <div className="load-error">{error}<span></span></div>}
         {blog && (
           <section className={blog.className}>
             <div className="line-divider centered wide">
@@ -1154,7 +1155,7 @@ const BlogDetails = () => {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
-        {error && <div className="load-error">{error}<span>{ window.location.href = 'http://www.localhost:3000/*'}</span></div>}
+        {error && <div className="load-error">{error}<span></span></div>}
         {blog && (
           <section className={blog.className}>
             <div className="line-divider centered wide">

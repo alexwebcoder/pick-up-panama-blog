@@ -1,6 +1,7 @@
 {
   "name": "pick-up-panama-blog",
   "homepage": "https://www.pickuppanama.com/",
+  "proxy": "https://pick-705a9-default-rtdb.firebaseio.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
