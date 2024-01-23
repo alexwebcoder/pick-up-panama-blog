@@ -15,10 +15,16 @@ import {
   EmailIcon,
 } from "react-share";
 
-const BlogDetails = ({data: blog, isPending, error}) => {
+const findObjectById = (idToFind, arrayOfObjects) => {
+  return arrayOfObjects.find(obj => obj.id === idToFind);
+};
+const BlogDetails = ({data: blogPosts, isPending, error}) => {
   //using the useParams hook to grab values (route params) from current url (route)
   const { id } = useParams();
-  console.log('blog details', blog)
+  console.log('blog details', blogPosts)
+  const blog1 = blogPosts
+  const blog = findObjectById(id, blogPosts);
+  console.log('blog', blog)
   // const {
   //   data: blog,
   //   error,
