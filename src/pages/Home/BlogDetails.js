@@ -15,15 +15,15 @@ import {
   EmailIcon,
 } from "react-share";
 
-const BlogDetails = () => {
+const BlogDetails = ({data: blog, isPending, error}) => {
   //using the useParams hook to grab values (route params) from current url (route)
   const { id } = useParams();
-  console.log(id)
-  const {
-    data: blog,
-    error,
-    isPending,
-  } = useFetch(`https://pick-705a9-default-rtdb.firebaseio.com/blogs.json/${[id]}/`);
+  console.log('blog details', blog)
+  // const {
+  //   data: blog,
+  //   error,
+  //   isPending,
+  // } = useFetch(`https://pick-705a9-default-rtdb.firebaseio.com/blogs.json/${[id]}/`);
 
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();

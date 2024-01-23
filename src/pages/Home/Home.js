@@ -7,8 +7,9 @@ import Featured from "./Featured";
 import FactSlider from "./FactSlider/FactSlider";
 import { TabTitle, Capitalize } from '../../utils/GeneralFunctions';
 
-const Home = () => {
-    const {data, isPending, error} = useFetch('https://pick-705a9-default-rtdb.firebaseio.com/blogs.json/');
+const Home = ({data}) => {
+    // const {data, isPending, error} = useFetch('https://pick-705a9-default-rtdb.firebaseio.com/blogs.json/');
+    console.log(data)
     TabTitle('Pick Up Panama | Learn About Panama');
     Capitalize();
 
@@ -17,8 +18,8 @@ const Home = () => {
           <Mission />
           <Hero />
           <Featured />
-          { error && <div>{ error }</div>}
-          { isPending && <div>Loading...</div> }
+          {/* { error && <div>{ error }</div>}
+          { isPending && <div>Loading...</div> } */}
           {data && <BlogList blogs={data} title="All Blogs!" />}
           <FactSlider />
         </main>

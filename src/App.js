@@ -9,19 +9,22 @@ import Newsfeed from "./pages/Newsfeed/Newsfeed";
 import ContactUs from './pages/ContactUs/ContactUs';
 import FeatureStory from './pages/FeatureStory/FeatureStory';
 import ScrollTop from './components/ScrollTop/ScrollTop';
+import useFetch from "../src/hooks/useFetch";
 
 
 function App() {
+
+   const {data, isPending, error} = useFetch('https://pick-705a9-default-rtdb.firebaseio.com/blogs.json/');
   return (
     <Router>
        <div className="App">
           <Navbar />
               <Routes>
-                 <Route path='/' element={ <Home/> } />
+                 <Route path='/' element={ <Home data={data}/> } />
                  <Route path='/newsfeed' element={ <Newsfeed/> } />
                  <Route path='/about' element={ <About/> } />
                  <Route path='/contact' element={ <ContactUs/> } />
-                 <Route path='/blogs/:id' element={ <BlogDetails/> } />
+                 <Route path='/blogs/:id' element={ <BlogDetails data={data} isPending={isPending} error={error}/> } />
                  <Route path='/featured/:id' element={ <FeatureStory/> } />
                  <Route path='/*' element={ <NotFound /> } />
               </Routes>
