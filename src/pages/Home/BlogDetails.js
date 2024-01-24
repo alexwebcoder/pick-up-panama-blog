@@ -22,7 +22,7 @@ const BlogDetails = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch("https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/" + id);
+  } = useFetch('https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/' + id);
 
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
@@ -50,7 +50,7 @@ const BlogDetails = () => {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
-        {error && <div className="load-error">{error}<span></span></div>}
+        {error && <div className="load-error">{error}</div>}
         {blog && (
           <section className={blog.className}>
             <div className="line-divider centered wide">
@@ -405,7 +405,7 @@ const BlogDetails = () => {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
-        {error && <div className="load-error">{error}<span>{ window.location.href = 'https://www.pickuppanama.com/*'}</span></div>}
+        {error && <div className="load-error">{error}</div>}
         {blog && (
           <section className={blog.className}>
             <div className="line-divider centered wide">
@@ -1154,7 +1154,7 @@ const BlogDetails = () => {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
-        {error && <div className="load-error">{error}<span>{ window.location.href = 'https://www.pickuppanama.com/*'}</span></div>}
+        {error && <div className="load-error">{error}</div>}
         {blog && (
           <section className={blog.className}>
             <div className="line-divider centered wide">
