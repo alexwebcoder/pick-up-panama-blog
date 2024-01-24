@@ -3,7 +3,7 @@
   "homepage": "https://pickuppanama.com",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://pick-705a9-default-rtdb.firebaseio.com",
+  "proxy": "https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
