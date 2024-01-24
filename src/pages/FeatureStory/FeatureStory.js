@@ -22,7 +22,7 @@ const FeatureStory = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch("https://www.pickuppanama.com/featured/" + id);
+  } = useFetch("https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json" + id);
 
   TabTitle("How Do I Visit the Panama Canal?");
   Capitalize();
@@ -38,7 +38,7 @@ const FeatureStory = () => {
   return (
     <main id="main-element" className={`blog-details margin `}>
       {isPending && <div>Loading...</div>}
-      {error && <div className="load-error">{error}<span>{ window.location.href = 'https://www.pickuppanama.com/*'}</span></div>}
+      {error && <div className="load-error">{error}<span></span></div>}
       {blog && (
         <section className={blog.className}>
           <div className="line-divider centered wide">
