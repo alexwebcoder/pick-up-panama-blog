@@ -22,7 +22,7 @@ const BlogDetails = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch("https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json" + id);
+  } = useFetch("https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/" + id);
 
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
