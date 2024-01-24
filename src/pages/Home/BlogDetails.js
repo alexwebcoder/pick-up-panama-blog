@@ -15,15 +15,21 @@ import {
   EmailIcon,
 } from "react-share";
 
-const BlogDetails = () => {
+const findObjectById = (idToFind, arrayOfObjects) => {
+  console.log('idfind', idToFind)
+  console.log('arryO', arrayOfObjects)
+  return arrayOfObjects.find(obj => obj.id === idToFind);
+};
+const BlogDetails = async() => {
   //using the useParams hook to grab values (route params) from current url (route)
   const { id } = useParams();
   const {
     data: blog,
     error,
     isPending,
-  } = useFetch('https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/' + id);
-
+  } = useFetch('https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/');
+  const blog1 = await findObjectById(id, blog)
+  console.log('blog1', blog1)
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
 
