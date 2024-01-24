@@ -8,7 +8,7 @@ import FactSlider from "./FactSlider/FactSlider";
 import { TabTitle, Capitalize } from '../../utils/GeneralFunctions';
 
 const Home = () => {
-    const {data, isPending, error} = useFetch('https://pickuppanama.com/blogs');
+    const {data, isPending, error} = useFetch('https://pick-705a9-default-rtdb.firebaseio.com/.json');
     TabTitle('Pick Up Panama | Learn About Panama');
     Capitalize();
 

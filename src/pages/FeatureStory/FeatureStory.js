@@ -22,7 +22,7 @@ const FeatureStory = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch("https://pickuppanama.com/featured/" + id);
+  } = useFetch("https://pick-705a9-default-rtdb.firebaseio.com/.json" + id);
 
   TabTitle("How Do I Visit the Panama Canal?");
   Capitalize();

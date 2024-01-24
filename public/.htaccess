@@ -11,5 +11,5 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-  Header set Access-Control-Allow-Origin 'https://pickuppanama.com'
+  Header set Access-Control-Allow-Origin 'https://pick-705a9-default-rtdb.firebaseio.com/.json'
 </IfModule>
