@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
     res.send(articles);
 })
 
-const server = app.listen(4000, () => {
+const server = app.listen('https://pickuppanama.com', () => {
 });
 
 export default server;
