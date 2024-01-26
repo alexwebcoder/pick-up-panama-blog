@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
     res.send(articles);
 })
 
-const server = app.listen('https://pickuppanama.com', () => {
+const server = app.listen('https://www.einnews.com/rss/NCx-iF5DlIFJE0fC', () => {
 });
 
 export default server;
