@@ -14,15 +14,17 @@ import {
   EmailIcon,
 } from "react-share";
 
+const findObjectById = (idToFind, arrayOfObjects) => {
+  return arrayOfObjects.find((obj) => obj.id === idToFind);
+};
 
 const FeatureStory = () => {
   const { id } = useParams();
   const currentPageUrl = window.location.href;
-  const {
-    data: blog,
-    error,
-    isPending,
-  } = useFetch('https://pick-705a9-default-rtdb.firebaseio.com/featured/.json/' + id);
+  const {data, error, isPending,
+  } = useFetch('https://pick-705a9-default-rtdb.firebaseio.com/featured/.json/');
+
+  const blog = data ? findObjectById(id, data) : null;
 
   TabTitle("How Do I Visit the Panama Canal?");
   Capitalize();
