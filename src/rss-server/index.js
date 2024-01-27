@@ -1,6 +1,5 @@
 import cors from "cors";
 import express from "express";
-import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 import RSSParser from "rss-parser";
 
 const feedURL = "https://www.einnews.com/rss/NCx-iF5DlIFJE0fC";
@@ -18,13 +17,13 @@ const parse = async url => {
 parse(feedURL);
 
 let app = express();
-app.use(cors());
+app.use(cors({ origin: 'https://pickuppanama.com' }));
 
 app.get('/', (req, res) => {
     res.send(articles);
 })
 
-const server = app.listen('https://www.einnews.com/rss/NCx-iF5DlIFJE0fC', () => {
+const server = app.listen(21, 'https://pickuppanama.com/', () => {
 });
 
 export default server;
