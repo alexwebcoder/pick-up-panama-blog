@@ -21,7 +21,7 @@ const Footer = () => {
             </ul>
             <p className="copyright">&copy; Pick Up Panama 2023-2024. All rights reserved.</p>
             <p className="no-reproduction">Content on PickUpPanama.com may not<br/>be reproduced without written permission.</p>
-            <p className="credits">Articles and Photography by Alex DeLeon</p>
+            <p className="credits">Articles and Photography by Alex DeLeón</p>
       </footer>
         </>
      );

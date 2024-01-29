@@ -44,13 +44,44 @@ const About = () => {
         </h1>
       </div>
       <div className="comic">
-        <figure className="panel-1">
-          <picture>
+      <figure className="alex">
+        <picture>
             <source
               type="image/webp"
               srcSet={
                 process.env.PUBLIC_URL +
-                "/images/about/alex-deleon-panama-320.webp 320w, /images/about/alex-deleon-panama-480.webp 480w, /images/about/alex-deleon-panama-640.webp 640w, /images/about/alex-deleon-panama-768.webp 768w,  /images/about/alex-deleon-panama.webp 866w"
+                "/images/about/alex-deleon-panama-viejo-227.webp 468w"
+              }
+              sizes="(max-width: 468px) 468px"
+            />
+            <source
+              type="image/jpg"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/alex-deleon-panama-viejo-227.jpg 468w"
+              }
+              sizes="(max-width: 468px) 468px"
+            />
+            <img
+              className="no-right-click"
+              src={
+                process.env.PUBLIC_URL +
+                "/images/about/alex-deleon-panama-viejo-227.jpg"
+              }
+              alt="Panama Alex DeLeon"
+            />
+          </picture>
+        </figure>
+
+      </div>
+      <div className="comic">
+        <figure className="panel-1">
+        <picture>
+            <source
+              type="image/webp"
+              srcSet={
+                process.env.PUBLIC_URL +
+                "/images/about/casco-viejo-320.webp 320w, /images/about/casco-viejo-480.webp 480w, /images/about/casco-viejo-640.webp 640w, /images/about/casco-viejo-768.webp 768w,  /images/about/casco-viejo.jpg 866w"
               }
               sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 866px"
             />
@@ -58,16 +89,16 @@ const About = () => {
               type="image/jpg"
               srcSet={
                 process.env.PUBLIC_URL +
-                "/images/about/alex-deleon-panama-320.jpg 320w, /images/about/alex-deleon-panama-480.jpg 480w, /images/about/alex-deleon-panama-640.jpg 640w, /images/about/alex-deleon-panama-768.jpg 768w, /images/about/alex-deleon-panama.jpg 866w"
+                "/images/about/casco-viejo-320.jpg 320w, /images/about/casco-viejo-480.jpg 480w, /images/about/casco-viejo-640.jpg 640w, /images/about/casco-viejo-768.jpg 768w, /images/about/casco-viejo.jpg 866w"
               }
               sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 866px"
             />
             <img
               className="no-right-click"
               src={
-                process.env.PUBLIC_URL + "/images/about/alex-deleon-panama.jpg"
+                process.env.PUBLIC_URL + "/images/about/casco-viejo-viejo.jpg"
               }
-              alt="Alex in Panama City"
+              alt="Casco Viejo in Panama City"
             />
           </picture>
         </figure>

@@ -31,11 +31,16 @@
 .about-page h1 {
     font-size: 1.3125rem;
 }
-.comic figure {
+.comic figure, .comic .alex {
     border-radius: 0;
     width: 75%;
     position: relative;
     padding-top: calc(487 / 866 * 75%);
+}
+
+.comic .alex {
+    width: 50%;
+    padding-top: calc(244 / 227 * 100%);
 }
 .comic img {
     height: auto;
