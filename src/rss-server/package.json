@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "proxy": "https://www.einnews.com/rss/NCx-iF5DlIFJE0fC",
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +14,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "nodemon": "^3.0.1"
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.0.1",
+    "rss-parser": "^3.13.0"
   }
 }
