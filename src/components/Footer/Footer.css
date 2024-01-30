@@ -12,7 +12,7 @@
   flex-wrap: nowrap;
 }
 
-.footer .item:after {
+.footer .item a:after {
   content: " ";
   position: absolute;
   width: 98%;
@@ -36,12 +36,12 @@
   padding: 13px 5px;
 }
 
-.footer .item:hover:after {
+.footer .item a:hover:after {
   transform-origin: bottom left;
   transform: scaleX(1);
 }
 
-.footer .item.disabled:hover:after {
+.footer .item a.disabled:hover:after {
   transform-origin: bottom left;
   transform: scaleX(0);
 }

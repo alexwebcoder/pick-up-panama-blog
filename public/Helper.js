@@ -118,7 +118,7 @@ sideNavLinks.forEach(sideNavLink => {
     })
 })
 
-const footerNavLinks = document.querySelectorAll('.footer li');
+const footerNavLinks = document.querySelectorAll('.footer li a');
 
 footerNavLinks.forEach(footerNavLink => {
     footerNavLink.addEventListener('click', () => {
