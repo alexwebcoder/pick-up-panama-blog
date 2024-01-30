@@ -12,7 +12,7 @@ const Newsfeed = () => {
 
   const getArticles = async () => {
     try {
-      const res = await axios.get('https://pickuppanama.com');
+      const res = await axios.get('https://www.einnews.com/rss/NCx-iF5DlIFJE0fC');
       setArticles(res.data);
     } catch (error) {}
   };
