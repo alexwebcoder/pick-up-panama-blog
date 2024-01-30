@@ -50,7 +50,7 @@ const About = () => {
               type="image/webp"
               srcSet={
                 process.env.PUBLIC_URL +
-                "/images/about/alex-deleon-panama-viejo-178.webp 178w, /images/about/alex-deleon-panama-viejo-268.webp 268w, /images/about/alex-deleon-panama-viejo-383.webp 383w,   /images/about/alex-deleon-panama-viejo.jpg 578w"
+                "/images/about/alex-deleon-panama-viejo-178.webp 178w, /images/about/alex-deleon-panama-viejo-268.webp 268w, /images/about/alex-deleon-panama-viejo-383.webp 383w,   /images/about/alex-deleon-panama-viejo.webp 578w"
               }
               sizes="(max-width: 178px) 178px, (max-width: 268px) 268px, (max-width: 383px) 383px, 578px"
             />
@@ -80,7 +80,7 @@ const About = () => {
               type="image/webp"
               srcSet={
                 process.env.PUBLIC_URL +
-                "/images/about/casco-viejo-320.webp 320w, /images/about/casco-viejo-480.webp 480w, /images/about/casco-viejo-640.webp 640w, /images/about/casco-viejo-768.webp 768w,  /images/about/casco-viejo.jpg 866w"
+                "/images/about/casco-viejo-320.webp 320w, /images/about/casco-viejo-480.webp 480w, /images/about/casco-viejo-640.webp 640w, /images/about/casco-viejo-768.webp 768w,  /images/about/casco-viejo.webp 866w"
               }
               sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 866px"
             />
