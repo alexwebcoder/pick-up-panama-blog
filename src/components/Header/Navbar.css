@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-.disabled a {
+a.disabled {
   pointer-events: none;
   cursor: pointer;
   color:#888;
@@ -15,7 +15,7 @@
   background-color: #ccc;
 }
 
-.item.disabled:hover:after {
+.item-anchor.disabled:hover:after {
   transform-origin: bottom left;
   transform: scaleX(0);
 }
@@ -565,7 +565,7 @@
       text-transform: uppercase;
  }
 
-  .item:after {
+  .item-anchor:after {
       content: " ";
       position: absolute;
       width: 78%;
@@ -578,7 +578,7 @@
       transition: transform 0.3s;
  }
 
-  .item:hover:after {
+  .item-anchor:hover:after {
       transform-origin: bottom left;
       transform: scaleX(1);
  }

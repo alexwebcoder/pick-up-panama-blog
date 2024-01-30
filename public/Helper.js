@@ -100,7 +100,7 @@ const progressBar = () => {
     document.getElementById('myBar').style.width = scrolled + '%';
 }
 
-const navLinks = document.querySelectorAll('.item');
+const navLinks = document.querySelectorAll('.item-anchor');
 
 navLinks.forEach(navLink => {
     navLink.addEventListener('click', () => {
