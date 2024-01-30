@@ -44,39 +44,38 @@ const About = () => {
         </h1>
       </div>
       <div className="comic">
-      <figure className="alex">
-        <picture>
+        <figure className="alex">
+          <picture>
             <source
               type="image/webp"
               srcSet={
                 process.env.PUBLIC_URL +
-                "/images/about/alex-deleon-panama-viejo-227.webp 468w"
+                "/images/about/alex-deleon-panama-viejo-178.webp 178w, /images/about/alex-deleon-panama-viejo-268.webp 268w, /images/about/alex-deleon-panama-viejo-383.webp 383w,   /images/about/alex-deleon-panama-viejo.jpg 578w"
               }
-              sizes="(max-width: 468px) 468px"
+              sizes="(max-width: 178px) 178px, (max-width: 268px) 268px, (max-width: 383px) 383px, 578px"
             />
             <source
               type="image/jpg"
               srcSet={
                 process.env.PUBLIC_URL +
-                "/images/about/alex-deleon-panama-viejo-227.jpg 468w"
+                "/images/about/alex-deleon-panama-viejo-178.jpg 178w, /images/about/alex-deleon-panama-viejo-268.jpg 268w, /images/about/alex-deleon-panama-viejo-383.jpg 383w, /images/about/alex-deleon-panama-viejo.jpg 578w"
               }
-              sizes="(max-width: 468px) 468px"
+              sizes="(max-width: 178px) 178px, (max-width: 268px) 268px, (max-width: 383px) 383px, 578px"
             />
             <img
               className="no-right-click"
               src={
                 process.env.PUBLIC_URL +
-                "/images/about/alex-deleon-panama-viejo-227.jpg"
+                "/images/about/alex-deleon-panama-viejo.jpg"
               }
-              alt="Panama Alex DeLeon"
+              alt="Alex Panama Viejo"
             />
           </picture>
         </figure>
-
       </div>
       <div className="comic">
         <figure className="panel-1">
-        <picture>
+          <picture>
             <source
               type="image/webp"
               srcSet={
