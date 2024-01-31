@@ -1,0 +1,95 @@
+[debug] [2024-01-31T07:15:50.533Z] ----------------------------------------------------------------------
+[debug] [2024-01-31T07:15:50.535Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\WB\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions:api
+[debug] [2024-01-31T07:15:50.535Z] CLI Version:   11.29.1
+[debug] [2024-01-31T07:15:50.536Z] Platform:      win32
+[debug] [2024-01-31T07:15:50.536Z] Node Version:  v21.6.1
+[debug] [2024-01-31T07:15:50.536Z] Time:          Wed Jan 31 2024 12:15:50 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-01-31T07:15:50.536Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-31T07:15:50.599Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-31T07:15:50.599Z] > authorizing via signed-in user (b.naqvi99@gmail.com)
+[debug] [2024-01-31T07:15:50.600Z] [iam] checking project pick-705a9 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-01-31T07:15:50.601Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pick-705a9:testIamPermissions [none]
+[debug] [2024-01-31T07:15:50.601Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pick-705a9:testIamPermissions x-goog-quota-user=projects/pick-705a9
+[debug] [2024-01-31T07:15:50.602Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pick-705a9:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-01-31T07:15:52.404Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pick-705a9:testIamPermissions 200
+[debug] [2024-01-31T07:15:52.405Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pick-705a9:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-01-31T07:15:52.405Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/pick-705a9/serviceAccounts/pick-705a9@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-01-31T07:15:52.405Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/pick-705a9/serviceAccounts/pick-705a9@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-01-31T07:15:54.157Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/pick-705a9/serviceAccounts/pick-705a9@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-01-31T07:15:54.158Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/pick-705a9/serviceAccounts/pick-705a9@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'pick-705a9'...
+[info] 
+[info] i  deploying functions 
+[debug] [2024-01-31T07:15:54.163Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pick-705a9 [none]
+[debug] [2024-01-31T07:15:54.974Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pick-705a9 200
+[debug] [2024-01-31T07:15:54.975Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pick-705a9 {"projectId":"pick-705a9","projectNumber":"33952161811","displayName":"pick","name":"projects/pick-705a9","resources":{"hostingSite":"pick-705a9","realtimeDatabaseInstance":"pick-705a9-default-rtdb"},"state":"ACTIVE","etag":"1_5655eb56-763f-4ae0-9180-bf4e467b1e29"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-01-31T07:15:54.979Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-01-31T07:15:54.979Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/pick-705a9
+[debug] [2024-01-31T07:15:54.980Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-01-31T07:15:54.980Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/pick-705a9
+[debug] [2024-01-31T07:15:54.981Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/cloudbuild.googleapis.com [none]
+[debug] [2024-01-31T07:15:54.981Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/cloudbuild.googleapis.com x-goog-quota-user=projects/pick-705a9
+[debug] [2024-01-31T07:15:54.982Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/artifactregistry.googleapis.com [none]
+[debug] [2024-01-31T07:15:54.982Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/artifactregistry.googleapis.com x-goog-quota-user=projects/pick-705a9
+[debug] [2024-01-31T07:15:56.902Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/cloudfunctions.googleapis.com 200
+[debug] [2024-01-31T07:15:56.902Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-01-31T07:15:56.920Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/runtimeconfig.googleapis.com 200
+[debug] [2024-01-31T07:15:56.921Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-01-31T07:15:56.922Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/cloudbuild.googleapis.com 200
+[debug] [2024-01-31T07:15:56.922Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-01-31T07:15:56.931Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/artifactregistry.googleapis.com 200
+[debug] [2024-01-31T07:15:56.932Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pick-705a9/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-01-31T07:15:56.933Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pick-705a9/adminSdkConfig [none]
+[debug] [2024-01-31T07:15:57.352Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pick-705a9/adminSdkConfig 200
+[debug] [2024-01-31T07:15:57.352Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pick-705a9/adminSdkConfig {"projectId":"pick-705a9","databaseURL":"https://pick-705a9-default-rtdb.firebaseio.com","storageBucket":"pick-705a9.appspot.com"}
+[debug] [2024-01-31T07:15:57.353Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/pick-705a9/configs [none]
+[debug] [2024-01-31T07:15:58.120Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/pick-705a9/configs 200
+[debug] [2024-01-31T07:15:58.120Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/pick-705a9/configs {}
+[debug] [2024-01-31T07:15:58.121Z] Validating nodejs source
+[debug] [2024-01-31T07:16:00.121Z] > [functions] package.json contents: {
+  "name": "rss-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "proxy": "https://www.einnews.com/rss/NCx-iF5DlIFJE0fC",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.0.1",
+    "rss-parser": "^3.13.0"
+  }
+}
+[debug] [2024-01-31T07:16:00.121Z] Building nodejs source
+[debug] [2024-01-31T07:16:00.123Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-31T07:16:00.134Z] Found firebase-functions binary at 'D:\pick-up-panama-blog\node_modules\.bin\firebase-functions'
+[debug] [2024-01-31T07:16:00.324Z] Serving at port 8181
+
+[debug] [2024-01-31T07:16:01.391Z] FetchError: request to http://localhost:8181/__/quitquitquit failed, reason: 
+    at ClientRequest.<anonymous> (C:\Users\WB\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1491:11)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at Socket.socketErrorListener (node:_http_client:492:9)
+    at Socket.emit (node:events:519:28)
+    at Socket.emit (node:domain:488:12)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
