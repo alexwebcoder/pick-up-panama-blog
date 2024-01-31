@@ -12,7 +12,7 @@ const Newsfeed = () => {
 
   const getArticles = async () => {
     try {
-      const res = await axios.get('https://us-central1-pick-705a9.cloudfunctions.net/api');
+      const res = await axios.get('https://rss-demo-hazel.vercel.app/');
       setArticles(res.data);
     } catch (error) {}
   };
