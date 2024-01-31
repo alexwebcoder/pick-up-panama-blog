@@ -12,7 +12,7 @@ const Newsfeed = () => {
 
   const getArticles = async () => {
     try {
-      const res = await axios.get('https://www.einnews.com/rss/NCx-iF5DlIFJE0fC');
+      const res = await axios.get('http://localhost:4000/');
       setArticles(res.data);
     } catch (error) {}
   };
@@ -64,13 +64,13 @@ const Newsfeed = () => {
       </div>
       <div className="news-article-container">
         <div className="feed-container">
-          {articles.map((item, i) => (
+        {articles?.items?.map((item, i) => (
             <Feed
               key={i}
-              title={item.item.title}
-              link={item.item.link}
-              contentSnippet={item.item.contentSnippet}
-              date={item.item.pubDate}
+              title={item.title}
+              link={item.link}
+              contentSnippet={item.contentSnippet}
+              date={item.pubDate}
             />
           ))}
         </div>
