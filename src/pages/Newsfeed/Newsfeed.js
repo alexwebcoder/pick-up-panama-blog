@@ -12,7 +12,7 @@ const Newsfeed = () => {
 
   const getArticles = async () => {
     try {
-      const res = await axios.get('http://localhost:4000/');
+      const res = await axios.get('https://us-central1-pick-705a9.cloudfunctions.net/api');
       setArticles(res.data);
     } catch (error) {}
   };
