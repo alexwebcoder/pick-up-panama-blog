@@ -20,11 +20,13 @@ const findObjectById = (idToFind, arrayOfObjects) => {
 };
 
 const BlogDetails = () => {
+  //using the useParams hook to grab values (route params) from current url (route)
   const { id } = useParams();
-  const { data, error, isPending } = useFetch(
-    'https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/'
-  );
-  const blog = data ? findObjectById(id, data) : null;
+  const {
+    data: blog,
+    error,
+    isPending,
+  } = useFetch("http://localhost:8000/blogs/" + id);
 
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split('-').join(' '));
   Capitalize();
@@ -2290,6 +2292,148 @@ const BlogDetails = () => {
                 <EmailIcon size={35} />
               </EmailShareButton>
             </div>
+           
+            <p>{blog.about15}</p>
+            <p>{blog.althoughFlu}</p>
+            <h2>{blog.whatRoleh2}</h2>
+            <p><span className='six-hundred'>{blog.busEconSpan}</span> {blog.busEcon}</p>
+            <p><span className='six-hundred'>{blog.tourismSpan}</span> {blog.tourism}</p>
+            <p><span className='six-hundred'>{blog.eduSpan}</span> {blog.educat}</p>
+            <p><span className='six-hundred'>{blog.irSpan}</span> {blog.internRelations}</p>
+            <p><span className='six-hundred'>{blog.techSciSpan}</span> {blog.techSci}</p>
+            <p><span className='six-hundred'>{blog.expatSpan}</span> {blog.expatComm}</p>
+            <p><span className='six-hundred'>{blog.mediaSpan}</span> {blog.mediaEnt}</p>
+            <h2>{blog.whyImpH2}</h2>
+            <p>{blog.inRemote}</p>
+            <p>{blog.learningSpanish}</p>
+            <p>{blog.makingEffort}</p>
+            <p>{blog.evenIf}</p>
+            <p>{blog.nativeSpeakers}</p>
+            <h2>{blog.whatAreSomeH2}</h2>
+            <p>{blog.learnBasic}</p>
+            <h3>{blog.greetingsH3}</h3>
+            <ul>
+              <li>{blog.liBD}</li>
+              <li>{blog.liBT}</li>
+              <li>{blog.liBN}</li>
+              <li>{blog.liCE}</li>
+              <li>{blog.liQT}</li>
+              <li>{blog.liCV}</li>
+              <li>{blog.MG}</li>
+              <li>{blog.hastaL}</li>
+              <li>{blog.hastP}</li>
+              <li>{blog.nV}</li>
+            </ul>
+            <h3>{blog.courtesiesH3}</h3>
+            <ul>
+              <li>{blog.porFli}</li>
+              <li>{blog.gracias}</li>
+              <li>{blog.muchasG}</li>
+              <li>{blog.deNada}</li>
+              <li>{blog.conPer}</li>
+              <li>{blog.disCulpa}</li>
+              <li>{blog.loSiento}</li>
+            </ul>
+            <h3>{blog.politeReq}</h3>
+            <ul>
+              <li>{blog.podAy}</li>
+              <li>{blog.podDec}</li>
+              <li>{blog.meGusSab}</li>
+              <li>{blog.serPos}</li>
+              <li>{blog.meGusPed}</li>
+              <li>{blog.podTraer}</li>
+              <li>{blog.podAssist}</li>
+              <li>{blog.necisAy}</li>
+              <li>{blog.leImp}</li>
+              <li>{blog.meGusPre}</li>
+            </ul>
+            <h3>{blog.basicQuesH3}</h3>
+            <ul>
+              <li>{blog.cuantoCue}</li>
+              <li>{blog.estasFila}</li>
+              <li>{blog.nosPuedeDar}</li>
+              <li>{blog.tomareAg}</li>
+              <li>{blog.deliciosa}</li>
+              <li>{blog.laCarna}</li>
+              <li>{blog.sinCeb}</li>
+              <li>{blog.puedoCambi}</li>
+              <li>{blog.sinSal}</li>
+              <li>{blog.estoPlato}</li>
+              <li>{blog.soyAler}</li>
+            </ul>
+            <h3>{blog.askingH3}</h3>
+            <ul>
+              <li>{blog.dondeEst}</li>
+              <li>{blog.comoLlego}</li>
+              <li>{blog.puedeInd}</li>
+              <li>{blog.estoyYendo}</li>
+              <li>{blog.hayAlgun}</li>
+              <li>{blog.dondeQue}</li>
+              <li>{blog.podriaDec}</li>
+            </ul>
+            <h3>{blog.givingDirectH3}</h3>
+            <ul>
+              <li>{blog.giraD}</li>
+              <li>{blog.giraL}</li>
+              <li>{blog.goStraight}</li>
+              <li>{blog.estaEsqu}</li>
+              <li>{blog.tomaLa}</li>
+              <li>{blog.sigaDerecho}</li>
+            </ul>
+            <h3>{blog.erPhrasesH3}</h3>
+            <ul>
+              <li>{blog.ayudaLi}</li>
+              <li>{blog.llamaAmb}</li>
+              <li>{blog.llamaPol}</li>
+              <li>{blog.aux}</li>
+              <li>{blog.perdido}</li>
+              <li>{blog.fuego}</li>
+              <li>{blog.necInt}</li>
+            </ul>
+            <h2>{blog.panamaSpanishH2}</h2>
+            <p>{blog.panamaSpanishIs}</p>
+            <p>{blog.hasAVariety}</p>
+            <p>{blog.dependingOn}</p>
+            <p>{blog.whenCoronado}</p>
+            <h3>{blog.slangDielects}</h3>
+            <p>{blog.hereAreSome}</p>
+            <ul>
+              <li>{blog.laChiva}</li>
+              <li>{blog.chuzo}</li>
+              <li>{blog.patacon}</li>
+              <li>{blog.chamba}</li>
+              <li>{blog.jama}</li>
+              <li>{blog.plena}</li>
+              <li>{blog.cubetazo}</li>
+              <li>{blog.chevere}</li>
+              <li>{blog.queXop}</li>
+              <li>{blog.AquiTran}</li>
+            </ul>
+            <p>{blog.inAddition}</p>
+            <h2>{blog.howCanLearnH2}</h2>
+            <ul>
+              <li>{blog.watchMov}</li>
+              <li>{blog.useApps}</li>
+              <li>{blog.findExchange}</li>
+              <li>{blog.createFlash}</li>
+              <li>{blog.readSpanish}</li>
+              <li>{blog.pracitceDaily}</li>
+            </ul>
+            <h3>{blog.languageTransferH3}</h3>
+            <p>{blog.languageTransfer}<span> <a className='link' target='_blank' href='https://www.languagetransfer.org' rel='noopener noreferrer' aria-label='language trnasfer'>{blog.langTrSpan}</a>{blog.period}</span></p>
+            <p>{blog.someonePanama}</p>
+            <p>{blog.willBenefit}</p>
+            <p>{blog.noMem}</p>
+            <p>{blog.theLearner}</p>
+            <p>{blog.itsAbout}</p>
+            <p>{blog.moreImp}</p>
+            <p>{blog.ifYouAre}</p>
+
+
+
+            
+
+
             <div className="button-parent">
               <button
                 title="Things to do in El Cangrejo"
@@ -2304,9 +2448,6 @@ const BlogDetails = () => {
                 &#62;
               </button>
             </div>
-            <p>{blog.about15}</p>
-            <p>{blog.althoughFlu}</p>
-            <h2>{blog.whatRoleh2}</h2>
           </section>
         )}
       </main>

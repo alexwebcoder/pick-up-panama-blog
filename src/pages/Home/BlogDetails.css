@@ -8,6 +8,15 @@
     min-height: 100vh;
     letter-spacing: .01em;
 }
+.six-hundred {
+    font-weight: 600;
+}
+.link {
+    color: #4169E1;
+}
+.link:hover {
+    text-decoration: underline;
+}
 .safety, .transportation, .el-cangrejo, .panama-canal, .spanish {
     flex: 1;
     position: relative;
