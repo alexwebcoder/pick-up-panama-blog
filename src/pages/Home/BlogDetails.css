@@ -8,7 +8,7 @@
     min-height: 100vh;
     letter-spacing: .01em;
 }
-.safety, .transportation, .el-cangrejo, .panama-canal {
+.safety, .transportation, .el-cangrejo, .panama-canal, .spanish {
     flex: 1;
     position: relative;
 }

@@ -2304,6 +2304,9 @@ const BlogDetails = () => {
                 &#62;
               </button>
             </div>
+            <p>{blog.about15}</p>
+            <p>{blog.althoughFlu}</p>
+            <h2>{blog.whatRoleh2}</h2>
           </section>
         )}
       </main>
