@@ -46,6 +46,13 @@ const BlogDetails = () => {
   const goToElCangrejoStory = () => {
     navigateA('/blogs/things-to-do-in-el-cangrejo');
   };
+
+  //el cangrejo page forward
+  const navigateSpanish = useNavigate();
+  const goToSpanishStory = () => {
+    navigateSpanish('/blogs/how-much-spanish-do-i-need-to-know-in-panama')
+  }
+  
   const currentPageUrl = window.location.href;
 
   if (document.title === 'Is Panama Safe?') {
@@ -2219,6 +2226,78 @@ const BlogDetails = () => {
                 &#60;
               </button>
               <button
+                title="How Much Spanish do I Need to Know in Panama??"
+                onClick={goToSpanishStory}
+              >
+                &#62;
+              </button>
+            </div>
+          </section>
+        )}
+      </main>
+    );
+  }if (document.title === 'How much Spanish do I need to know in Panama?') {
+    return (
+      <main id="main-element" className={`blog-details margin `}>
+        {isPending && <div>Loading...</div>}
+        {error && <div className="load-error">{error}</div>}
+        {blog && (
+          <section className={blog.className}>
+            <div className="line-divider centered wide">
+              <p className="diamond-text-box date">
+                <span className="left"></span>
+                <span className="content caps centered">{blog.date}</span>
+                <span className="right"></span>
+              </p>
+            </div>
+            <h1 className="centered post-title">{blog.title}</h1>
+            <p className="body intro">{blog.intro}</p>
+            <div className="share-parent">
+              <FacebookShareButton
+                url={currentPageUrl}
+                hashtag="#panama"
+                aria-label="facebook"
+              >
+                <FacebookIcon size={35} />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url={currentPageUrl}
+                hashtags={['pickuppanama', 'el cangrejo', 'panama']}
+                title={'Things to do in El Cangrejo'}
+                aria-label="twitter"
+              >
+                <TwitterIcon size={35} />
+              </TwitterShareButton>
+              <LinkedinShareButton
+                url={currentPageUrl}
+                title={'Things to do in El Cangrejo'}
+                summary={
+                  'Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting.'
+                }
+                aria-label="linkedin"
+              >
+                <LinkedinIcon size={35} />
+              </LinkedinShareButton>
+              <EmailShareButton
+                url={currentPageUrl}
+                subject={'Things to do in El Cangrejo'}
+                body={
+                  'Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting.'
+                }
+                aria-label="email"
+                separator={' '}
+              >
+                <EmailIcon size={35} />
+              </EmailShareButton>
+            </div>
+            <div className="button-parent">
+              <button
+                title="Things to do in El Cangrejo"
+                onClick={goToElCangrejoStory}
+              >
+                &#60;
+              </button>
+              <button
                 title="How do I visit the Panama Canal?"
                 onClick={goToCanalStory}
               >
@@ -2229,7 +2308,8 @@ const BlogDetails = () => {
         )}
       </main>
     );
-  } else {
+       }
+  else {
     return (
       <main id="main-element" className="not-found">
         <figure className="not-found-hero">

@@ -24,6 +24,10 @@ export const Capitalize = () => {
         document.title = "Things to do in El Cangrejo"
         document.getElementsByTagName('meta')["description"].content = "Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting.";
     }
+    if (document.title === "How much spanish do i need to know in panama") {
+        document.title = "How much Spanish do I need to know in Panama?"
+        document.getElementsByTagName('meta')["description"].content = "Learn about the spoken Spanish of Panama.";
+    }
 
     if (document.title === "Pick Up Panama | Learn About Panama") {
         document.getElementsByTagName('meta')["description"].content = "Pick Up Panama is a blog that provides information, culture, and lifestyle about Panama.";
