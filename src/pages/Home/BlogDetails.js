@@ -1,9 +1,9 @@
-import { useParams, useNavigate } from 'react-router-dom';
-import useFetch from '../../hooks/useFetch';
-import './BlogDetails.css';
-import { Link } from 'react-router-dom';
-import { TabTitle, Capitalize } from '../../utils/GeneralFunctions';
-import ReactPlayer from 'react-player';
+import { useParams, useNavigate } from "react-router-dom";
+import useFetch from "../../hooks/useFetch";
+import "./BlogDetails.css";
+import { Link } from "react-router-dom";
+import { TabTitle, Capitalize } from "../../utils/GeneralFunctions";
+import ReactPlayer from "react-player";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -13,7 +13,7 @@ import {
   LinkedinIcon,
   EmailShareButton,
   EmailIcon,
-} from 'react-share';
+} from "react-share";
 
 const findObjectById = (idToFind, arrayOfObjects) => {
   return arrayOfObjects.find((obj) => obj.id === idToFind);
@@ -28,36 +28,36 @@ const BlogDetails = () => {
     isPending,
   } = useFetch("http://localhost:8000/blogs/" + id);
 
-  TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split('-').join(' '));
+  TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
 
   //safety page forward back
   const navigate = useNavigate();
   const goToCanalStory = () => {
-    navigate('/featured/how-do-i-visit-the-panama-canal');
+    navigate("/featured/how-do-i-visit-the-panama-canal");
   };
   const goToTransportationStory = () => {
-    navigate('/blogs/how-do-i-get-around-in-panama');
+    navigate("/blogs/how-do-i-get-around-in-panama");
   };
 
   //transportation page forward back
   const navigateA = useNavigate();
   const goToSafetyStory = () => {
-    navigateA('/blogs/is-panama-safe');
+    navigateA("/blogs/is-panama-safe");
   };
   const goToElCangrejoStory = () => {
-    navigateA('/blogs/things-to-do-in-el-cangrejo');
+    navigateA("/blogs/things-to-do-in-el-cangrejo");
   };
 
   //el cangrejo page forward
   const navigateSpanish = useNavigate();
   const goToSpanishStory = () => {
-    navigateSpanish('/blogs/how-much-spanish-do-i-need-to-know-in-panama')
-  }
-  
+    navigateSpanish("/blogs/how-much-spanish-do-i-need-to-know-in-panama");
+  };
+
   const currentPageUrl = window.location.href;
 
-  if (document.title === 'Is Panama Safe?') {
+  if (document.title === "Is Panama Safe?") {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
@@ -83,17 +83,17 @@ const BlogDetails = () => {
               </FacebookShareButton>
               <TwitterShareButton
                 url={currentPageUrl}
-                hashtags={['pickuppanama', 'safety', 'panama']}
-                title={'Is Panama Safe?'}
+                hashtags={["pickuppanama", "safety", "panama"]}
+                title={"Is Panama Safe?"}
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={'Is Panama Safe?'}
+                title={"Is Panama Safe?"}
                 summary={
-                  'Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more.'
+                  "Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more."
                 }
                 aria-label="linkedin"
               >
@@ -101,12 +101,12 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={'Is Panama Safe?'}
+                subject={"Is Panama Safe?"}
                 body={
-                  'Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more.'
+                  "Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more."
                 }
                 aria-label="email"
-                separator={' '}
+                separator={" "}
               >
                 <EmailIcon size={35} />
               </EmailShareButton>
@@ -120,7 +120,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/safety/panamanian-police-at-fruitstand-320.webp 320w, /images/safety/panamanian-police-at-fruitstand-480.webp 480w, /images/safety/panamanian-police-at-fruitstand-640.webp 640w, /images/safety/panamanian-police-at-fruitstand-768.webp 768w, /images/safety/panamanian-police-at-fruitstand.webp 1170w'
+                    "/images/safety/panamanian-police-at-fruitstand-320.webp 320w, /images/safety/panamanian-police-at-fruitstand-480.webp 480w, /images/safety/panamanian-police-at-fruitstand-640.webp 640w, /images/safety/panamanian-police-at-fruitstand-768.webp 768w, /images/safety/panamanian-police-at-fruitstand.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -128,7 +128,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/safety/panamanian-police-at-fruitstand-320.jpg 320w, /images/safety/panamanian-police-at-fruitstand-480.jpg 480w, /images/safety/panamanian-police-at-fruitstand-640.jpg 640w, /images/safety/panamanian-police-at-fruitstand-768.jpg 768w, /images/safety/panamanian-police-at-fruitstand.jpg 1170w'
+                    "/images/safety/panamanian-police-at-fruitstand-320.jpg 320w, /images/safety/panamanian-police-at-fruitstand-480.jpg 480w, /images/safety/panamanian-police-at-fruitstand-640.jpg 640w, /images/safety/panamanian-police-at-fruitstand-768.jpg 768w, /images/safety/panamanian-police-at-fruitstand.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -147,7 +147,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/safety/panamanian-policeman-outside-of-bank-320.webp 320w, /images/safety/panamanian-policeman-outside-of-bank-480.webp 480w, /images/safety/panamanian-policeman-outside-of-bank-640.webp 640w, /images/safety/panamanian-policeman-outside-of-bank-768.webp 768w, /images/safety/panamanian-policeman-outside-of-bank.webp 1170w'
+                    "/images/safety/panamanian-policeman-outside-of-bank-320.webp 320w, /images/safety/panamanian-policeman-outside-of-bank-480.webp 480w, /images/safety/panamanian-policeman-outside-of-bank-640.webp 640w, /images/safety/panamanian-policeman-outside-of-bank-768.webp 768w, /images/safety/panamanian-policeman-outside-of-bank.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -155,7 +155,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/safety/panamanian-policeman-outside-of-bank-320.jpg 320w, /images/safety/panamanian-policeman-outside-of-bank-480.jpg 480w, /images/safety/panamanian-policeman-outside-of-bank-640.jpg 640w, /images/safety/panamanian-policeman-outside-of-bank-768.jpg 768w, /images/safety/panamanian-policeman-outside-of-bank.jpg 1170w'
+                    "/images/safety/panamanian-policeman-outside-of-bank-320.jpg 320w, /images/safety/panamanian-policeman-outside-of-bank-480.jpg 480w, /images/safety/panamanian-policeman-outside-of-bank-640.jpg 640w, /images/safety/panamanian-policeman-outside-of-bank-768.jpg 768w, /images/safety/panamanian-policeman-outside-of-bank.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -173,7 +173,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/safety/panamanian-police-el-cangrejo-320.webp 320w, /images/safety/panamanian-police-el-cangrejo-480.webp 480w, /images/safety/panamanian-police-el-cangrejo-640.webp 640w, /images/safety/panamanian-police-el-cangrejo-768.webp 768w, /images/safety/panamanian-police-el-cangrejo.webp 1170w'
+                    "/images/safety/panamanian-police-el-cangrejo-320.webp 320w, /images/safety/panamanian-police-el-cangrejo-480.webp 480w, /images/safety/panamanian-police-el-cangrejo-640.webp 640w, /images/safety/panamanian-police-el-cangrejo-768.webp 768w, /images/safety/panamanian-police-el-cangrejo.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -181,7 +181,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/safety/panamanian-police-el-cangrejo-320.jpg 320w, /images/safety/panamanian-police-el-cangrejo-480.jpg 480w, /images/safety/panamanian-police-el-cangrejo-640.jpg 640w, /images/safety/panamanian-police-el-cangrejo-768.jpg 768w, /images/safety/panamanian-police-el-cangrejo.jpg 1170w'
+                    "/images/safety/panamanian-police-el-cangrejo-320.jpg 320w, /images/safety/panamanian-police-el-cangrejo-480.jpg 480w, /images/safety/panamanian-police-el-cangrejo-640.jpg 640w, /images/safety/panamanian-police-el-cangrejo-768.jpg 768w, /images/safety/panamanian-police-el-cangrejo.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -231,7 +231,7 @@ const BlogDetails = () => {
                     type="image/webp"
                     srcSet={
                       process.env.PUBLIC_URL +
-                      '/images/safety/casco-viejo-police-320.webp 320w, /images/safety/casco-viejo-police-480.webp 480w, /images/safety/casco-viejo-police-640.webp 640w, /images/safety/casco-viejo-police-768.webp 768w, /images/safety/casco-viejo-police.webp 1170w'
+                      "/images/safety/casco-viejo-police-320.webp 320w, /images/safety/casco-viejo-police-480.webp 480w, /images/safety/casco-viejo-police-640.webp 640w, /images/safety/casco-viejo-police-768.webp 768w, /images/safety/casco-viejo-police.webp 1170w"
                     }
                     sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                   />
@@ -239,7 +239,7 @@ const BlogDetails = () => {
                     type="image/jpg"
                     srcSet={
                       process.env.PUBLIC_URL +
-                      '/images/safety/casco-viejo-police-320.jpg 320w, /images/safety/casco-viejo-police-480.jpg 480w, /images/safety/casco-viejo-police-640.jpg 640w, /images/safety/casco-viejo-police-768.jpg 768w, /images/safety/casco-viejo-police.jpg 1170w'
+                      "/images/safety/casco-viejo-police-320.jpg 320w, /images/safety/casco-viejo-police-480.jpg 480w, /images/safety/casco-viejo-police-640.jpg 640w, /images/safety/casco-viejo-police-768.jpg 768w, /images/safety/casco-viejo-police.jpg 1170w"
                     }
                     sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                   />
@@ -257,7 +257,7 @@ const BlogDetails = () => {
                     type="image/webp"
                     srcSet={
                       process.env.PUBLIC_URL +
-                      '/images/safety/autoridad-de-turismo-320.webp 320w, /images/safety/autoridad-de-turismo-480.webp 480w, /images/safety/autoridad-de-turismo-640.webp 640w, /images/safety/autoridad-de-turismo-768.webp 768w, /images/safety/autoridad-de-turismo.webp 1170w'
+                      "/images/safety/autoridad-de-turismo-320.webp 320w, /images/safety/autoridad-de-turismo-480.webp 480w, /images/safety/autoridad-de-turismo-640.webp 640w, /images/safety/autoridad-de-turismo-768.webp 768w, /images/safety/autoridad-de-turismo.webp 1170w"
                     }
                     sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                   />
@@ -265,7 +265,7 @@ const BlogDetails = () => {
                     type="image/jpg"
                     srcSet={
                       process.env.PUBLIC_URL +
-                      '/images/safety/autoridad-de-turismo-320.jpg 320w, /images/safety/autoridad-de-turismo-480.jpg 480w, /images/safety/autoridad-de-turismo-640.jpg 640w, /images/safety/autoridad-de-turismo-768.jpg 768w, /images/safety/autoridad-de-turismo.jpg 1170w'
+                      "/images/safety/autoridad-de-turismo-320.jpg 320w, /images/safety/autoridad-de-turismo-480.jpg 480w, /images/safety/autoridad-de-turismo-640.jpg 640w, /images/safety/autoridad-de-turismo-768.jpg 768w, /images/safety/autoridad-de-turismo.jpg 1170w"
                     }
                     sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                   />
@@ -284,7 +284,7 @@ const BlogDetails = () => {
                     type="image/webp"
                     srcSet={
                       process.env.PUBLIC_URL +
-                      '/images/safety/cinco-de-mayo-panama-320.webp 320w, /images/safety/cinco-de-mayo-panama-480.webp 480w, /images/safety/cinco-de-mayo-panama-640.webp 640w, /images/safety/cinco-de-mayo-panama-768.webp 768w, /images/safety/cinco-de-mayo-panama.webp 1170w'
+                      "/images/safety/cinco-de-mayo-panama-320.webp 320w, /images/safety/cinco-de-mayo-panama-480.webp 480w, /images/safety/cinco-de-mayo-panama-640.webp 640w, /images/safety/cinco-de-mayo-panama-768.webp 768w, /images/safety/cinco-de-mayo-panama.webp 1170w"
                     }
                     sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                   />
@@ -292,7 +292,7 @@ const BlogDetails = () => {
                     type="image/jpg"
                     srcSet={
                       process.env.PUBLIC_URL +
-                      '/images/safety/cinco-de-mayo-panama-320.jpg 320w, /images/safety/cinco-de-mayo-panama-480.jpg 480w, /images/safety/cinco-de-mayo-panama-640.jpg 640w, /images/safety/cinco-de-mayo-panama-768.jpg 768w, /images/safety/cinco-de-mayo-panama.jpg 1170w'
+                      "/images/safety/cinco-de-mayo-panama-320.jpg 320w, /images/safety/cinco-de-mayo-panama-480.jpg 480w, /images/safety/cinco-de-mayo-panama-640.jpg 640w, /images/safety/cinco-de-mayo-panama-768.jpg 768w, /images/safety/cinco-de-mayo-panama.jpg 1170w"
                     }
                     sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                   />
@@ -313,7 +313,7 @@ const BlogDetails = () => {
                     type="image/webp"
                     srcSet={
                       process.env.PUBLIC_URL +
-                      '/images/safety/colon-panama-license-plate-320.webp 320w, /images/safety/colon-panama-license-plate-480.webp 480w, /images/safety/colon-panama-license-plate-640.webp 640w, /images/safety/colon-panama-license-plate-768.webp 768w, /images/safety/colon-panama-license-plate.webp 1170w'
+                      "/images/safety/colon-panama-license-plate-320.webp 320w, /images/safety/colon-panama-license-plate-480.webp 480w, /images/safety/colon-panama-license-plate-640.webp 640w, /images/safety/colon-panama-license-plate-768.webp 768w, /images/safety/colon-panama-license-plate.webp 1170w"
                     }
                     sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                   />
@@ -321,7 +321,7 @@ const BlogDetails = () => {
                     type="image/jpg"
                     srcSet={
                       process.env.PUBLIC_URL +
-                      '/images/safety/colon-panama-license-plate-320.jpg 320w, /images/safety/colon-panama-license-plate-480.jpg 480w, /images/safety/colon-panama-license-plate-640.jpg 640w, /images/safety/colon-panama-license-plate-768.jpg 768w, /images/safety/colon-panama-license-plate.jpg 1170w'
+                      "/images/safety/colon-panama-license-plate-320.jpg 320w, /images/safety/colon-panama-license-plate-480.jpg 480w, /images/safety/colon-panama-license-plate-640.jpg 640w, /images/safety/colon-panama-license-plate-768.jpg 768w, /images/safety/colon-panama-license-plate.jpg 1170w"
                     }
                     sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                   />
@@ -376,7 +376,7 @@ const BlogDetails = () => {
                     type="image/webp"
                     srcSet={
                       process.env.PUBLIC_URL +
-                      '/images/safety/casco-viejo-petty-crime-320.webp 320w, /images/safety/casco-viejo-petty-crime-480.webp 480w, /images/safety/casco-viejo-petty-crime-640.webp 640w, /images/safety/casco-viejo-petty-crime-768.webp 768w, /images/safety/casco-viejo-petty-crime.webp 1170w'
+                      "/images/safety/casco-viejo-petty-crime-320.webp 320w, /images/safety/casco-viejo-petty-crime-480.webp 480w, /images/safety/casco-viejo-petty-crime-640.webp 640w, /images/safety/casco-viejo-petty-crime-768.webp 768w, /images/safety/casco-viejo-petty-crime.webp 1170w"
                     }
                     sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                   />
@@ -384,7 +384,7 @@ const BlogDetails = () => {
                     type="image/jpg"
                     srcSet={
                       process.env.PUBLIC_URL +
-                      '/images/safety/casco-viejo-petty-crime-320.jpg 320w, /images/safety/casco-viejo-petty-crime-480.jpg 480w, /images/safety/casco-viejo-petty-crime-640.jpg 640w, /images/safety/casco-viejo-petty-crime-768.jpg 768w, /images/safety/casco-viejo-petty-crime.jpg 1170w'
+                      "/images/safety/casco-viejo-petty-crime-320.jpg 320w, /images/safety/casco-viejo-petty-crime-480.jpg 480w, /images/safety/casco-viejo-petty-crime-640.jpg 640w, /images/safety/casco-viejo-petty-crime-768.jpg 768w, /images/safety/casco-viejo-petty-crime.jpg 1170w"
                     }
                     sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                   />
@@ -416,7 +416,7 @@ const BlogDetails = () => {
       </main>
     );
   }
-  if (document.title === 'How do I get Around in Panama?') {
+  if (document.title === "How do I get Around in Panama?") {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
@@ -442,15 +442,15 @@ const BlogDetails = () => {
               </FacebookShareButton>
               <TwitterShareButton
                 url={currentPageUrl}
-                hashtags={['pickuppanama', 'transportation', 'panama']}
-                title={'How do I get around in Panama?'}
+                hashtags={["pickuppanama", "transportation", "panama"]}
+                title={"How do I get around in Panama?"}
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={'How do I get around in Panama?'}
+                title={"How do I get around in Panama?"}
                 summary={
                   "Learn about Panama's metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
                 }
@@ -460,12 +460,12 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={'How do I get around in Panama?'}
+                subject={"How do I get around in Panama?"}
                 body={
                   "Learn about Panama's metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
                 }
                 aria-label="email"
-                separator={' '}
+                separator={" "}
               >
                 <EmailIcon size={35} />
               </EmailShareButton>
@@ -476,7 +476,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-panamerican-highway-320.webp 320w, /images/transportation/panama-panamerican-highway-480.webp 480w, /images/transportation/panama-panamerican-highway-640.webp 640w, /images/transportation/panama-panamerican-highway-768.webp 768w, /images/transportation/panama-panamerican-highway.webp 1170w'
+                    "/images/transportation/panama-panamerican-highway-320.webp 320w, /images/transportation/panama-panamerican-highway-480.webp 480w, /images/transportation/panama-panamerican-highway-640.webp 640w, /images/transportation/panama-panamerican-highway-768.webp 768w, /images/transportation/panama-panamerican-highway.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -484,7 +484,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-panamerican-highway-320.jpg 320w, /images/transportation/panama-panamerican-highway-480.jpg 480w, /images/transportation/panama-panamerican-highway-640.jpg 640w, /images/transportation/panama-panamerican-highway-768.jpg 768w, /images/transportation/panama-panamerican-highway.jpg 1170w'
+                    "/images/transportation/panama-panamerican-highway-320.jpg 320w, /images/transportation/panama-panamerican-highway-480.jpg 480w, /images/transportation/panama-panamerican-highway-640.jpg 640w, /images/transportation/panama-panamerican-highway-768.jpg 768w, /images/transportation/panama-panamerican-highway.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -521,7 +521,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/rapi-pass-320.webp 320w, /images/transportation/rapi-pass-480.webp 480w, /images/transportation/rapi-pass-640.webp 640w, /images/transportation/rapi-pass-768.webp 768w, /images/transportation/rapi-pass.webp 1170w'
+                    "/images/transportation/rapi-pass-320.webp 320w, /images/transportation/rapi-pass-480.webp 480w, /images/transportation/rapi-pass-640.webp 640w, /images/transportation/rapi-pass-768.webp 768w, /images/transportation/rapi-pass.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -529,7 +529,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/rapi-pass-320.jpg 320w, /images/transportation/rapi-pass-480.jpg 480w, /images/transportation/rapi-pass-640.jpg 640w, /images/transportation/rapi-pass-768.jpg 768w, /images/transportation/rapi-pass.jpg 1170w'
+                    "/images/transportation/rapi-pass-320.jpg 320w, /images/transportation/rapi-pass-480.jpg 480w, /images/transportation/rapi-pass-640.jpg 640w, /images/transportation/rapi-pass-768.jpg 768w, /images/transportation/rapi-pass.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -557,7 +557,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/tocumen-airport-free-shuttle-320.webp 320w, /images/transportation/tocumen-airport-free-shuttle-480.webp 480w, /images/transportation/tocumen-airport-free-shuttle-640.webp 640w, /images/transportation/tocumen-airport-free-shuttle-768.webp 768w, /images/transportation/tocumen-airport-free-shuttle.webp 1170w'
+                    "/images/transportation/tocumen-airport-free-shuttle-320.webp 320w, /images/transportation/tocumen-airport-free-shuttle-480.webp 480w, /images/transportation/tocumen-airport-free-shuttle-640.webp 640w, /images/transportation/tocumen-airport-free-shuttle-768.webp 768w, /images/transportation/tocumen-airport-free-shuttle.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -565,7 +565,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/tocumen-airport-free-shuttle-320.jpg 320w, /images/transportation/tocumen-airport-free-shuttle-480.jpg 480w, /images/transportation/tocumen-airport-free-shuttle-640.jpg 640w, /images/transportation/tocumen-airport-free-shuttle-768.jpg 768w, /images/transportation/tocumen-airport-free-shuttle.jpg 1170w'
+                    "/images/transportation/tocumen-airport-free-shuttle-320.jpg 320w, /images/transportation/tocumen-airport-free-shuttle-480.jpg 480w, /images/transportation/tocumen-airport-free-shuttle-640.jpg 640w, /images/transportation/tocumen-airport-free-shuttle-768.jpg 768w, /images/transportation/tocumen-airport-free-shuttle.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -594,7 +594,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/metro-map-aeropuerto-station-320.webp 320w, /images/transportation/metro-map-aeropuerto-station-480.webp 480w, /images/transportation/metro-map-aeropuerto-station-640.webp 640w, /images/transportation/metro-map-aeropuerto-station-768.webp 768w, /images/transportation/metro-map-aeropuerto-station.webp 1170w'
+                    "/images/transportation/metro-map-aeropuerto-station-320.webp 320w, /images/transportation/metro-map-aeropuerto-station-480.webp 480w, /images/transportation/metro-map-aeropuerto-station-640.webp 640w, /images/transportation/metro-map-aeropuerto-station-768.webp 768w, /images/transportation/metro-map-aeropuerto-station.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -602,7 +602,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/metro-map-aeropuerto-station-320.jpg 320w, /images/transportation/metro-map-aeropuerto-station-480.jpg 480w, /images/transportation/metro-map-aeropuerto-station-640.jpg 640w, /images/transportation/metro-map-aeropuerto-station-768.jpg 768w, /images/transportation/metro-map-aeropuerto-station.jpg 1170w'
+                    "/images/transportation/metro-map-aeropuerto-station-320.jpg 320w, /images/transportation/metro-map-aeropuerto-station-480.jpg 480w, /images/transportation/metro-map-aeropuerto-station-640.jpg 640w, /images/transportation/metro-map-aeropuerto-station-768.jpg 768w, /images/transportation/metro-map-aeropuerto-station.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -673,7 +673,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-city-center-320.webp 320w, /images/transportation/panama-city-center-480.webp 480w, /images/transportation/panama-city-center-640.webp 640w, /images/transportation/panama-city-center-768.webp 768w, /images/transportation/panama-city-center.webp 1170w'
+                    "/images/transportation/panama-city-center-320.webp 320w, /images/transportation/panama-city-center-480.webp 480w, /images/transportation/panama-city-center-640.webp 640w, /images/transportation/panama-city-center-768.webp 768w, /images/transportation/panama-city-center.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -681,7 +681,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-city-center-320.jpg 320w, /images/transportation/panama-city-center-480.jpg 480w, /images/transportation/panama-city-center-640.jpg 640w, /images/transportation/panama-city-center-768.jpg 768w, /images/transportation/panama-city-center.jpg 1170w'
+                    "/images/transportation/panama-city-center-320.jpg 320w, /images/transportation/panama-city-center-480.jpg 480w, /images/transportation/panama-city-center-640.jpg 640w, /images/transportation/panama-city-center-768.jpg 768w, /images/transportation/panama-city-center.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -704,7 +704,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/cabs-panama-city-320.webp 320w, /images/transportation/cabs-panama-city-480.webp 480w, /images/transportation/cabs-panama-city-640.webp 640w, /images/transportation/cabs-panama-city-768.webp 768w, /images/transportation/cabs-panama-city.webp 1170w'
+                    "/images/transportation/cabs-panama-city-320.webp 320w, /images/transportation/cabs-panama-city-480.webp 480w, /images/transportation/cabs-panama-city-640.webp 640w, /images/transportation/cabs-panama-city-768.webp 768w, /images/transportation/cabs-panama-city.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -712,7 +712,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/cabs-panama-city-320.jpg 320w, /images/transportation/cabs-panama-city-480.jpg 480w, /images/transportation/cabs-panama-city-640.jpg 640w, /images/transportation/cabs-panama-city-768.jpg 768w, /images/transportation/cabs-panama-city.jpg 1170w'
+                    "/images/transportation/cabs-panama-city-320.jpg 320w, /images/transportation/cabs-panama-city-480.jpg 480w, /images/transportation/cabs-panama-city-640.jpg 640w, /images/transportation/cabs-panama-city-768.jpg 768w, /images/transportation/cabs-panama-city.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -756,7 +756,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-metro-bus-and-cab-320.webp 320w, /images/transportation/panama-metro-bus-and-cab-480.webp 480w, /images/transportation/panama-metro-bus-and-cab-640.webp 640w, /images/transportation/panama-metro-bus-and-cab-768.webp 768w, /images/transportation/panama-metro-bus-and-cab.webp 1170w'
+                    "/images/transportation/panama-metro-bus-and-cab-320.webp 320w, /images/transportation/panama-metro-bus-and-cab-480.webp 480w, /images/transportation/panama-metro-bus-and-cab-640.webp 640w, /images/transportation/panama-metro-bus-and-cab-768.webp 768w, /images/transportation/panama-metro-bus-and-cab.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -764,7 +764,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-metro-bus-and-cab-320.jpg 320w, /images/transportation/panama-metro-bus-and-cab-480.jpg 480w, /images/transportation/panama-metro-bus-and-cab-640.jpg 640w, /images/transportation/panama-metro-bus-and-cab-768.jpg 768w, /images/transportation/panama-metro-bus-and-cab.jpg 1170w'
+                    "/images/transportation/panama-metro-bus-and-cab-320.jpg 320w, /images/transportation/panama-metro-bus-and-cab-480.jpg 480w, /images/transportation/panama-metro-bus-and-cab-640.jpg 640w, /images/transportation/panama-metro-bus-and-cab-768.jpg 768w, /images/transportation/panama-metro-bus-and-cab.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -788,7 +788,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/albrook-terminal-320.webp 320w, /images/transportation/albrook-terminal-480.webp 480w, /images/transportation/albrook-terminal-640.webp 640w, /images/transportation/albrook-terminal-768.webp 768w, /images/transportation/albrook-terminal.webp 1170w'
+                    "/images/transportation/albrook-terminal-320.webp 320w, /images/transportation/albrook-terminal-480.webp 480w, /images/transportation/albrook-terminal-640.webp 640w, /images/transportation/albrook-terminal-768.webp 768w, /images/transportation/albrook-terminal.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -796,7 +796,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/albrook-terminal-320.jpg 320w, /images/transportation/albrook-terminal-480.jpg 480w, /images/transportation/albrook-terminal-640.jpg 640w, /images/transportation/albrook-terminal-768.jpg 768w, /images/transportation/albrook-terminal.jpg 1170w'
+                    "/images/transportation/albrook-terminal-320.jpg 320w, /images/transportation/albrook-terminal-480.jpg 480w, /images/transportation/albrook-terminal-640.jpg 640w, /images/transportation/albrook-terminal-768.jpg 768w, /images/transportation/albrook-terminal.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -825,7 +825,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-comfy-bus-320.webp 320w, /images/transportation/panama-comfy-bus-480.webp 480w, /images/transportation/panama-comfy-bus-640.webp 640w, /images/transportation/panama-comfy-bus-768.webp 768w, /images/transportation/panama-comfy-bus.webp 1170w'
+                    "/images/transportation/panama-comfy-bus-320.webp 320w, /images/transportation/panama-comfy-bus-480.webp 480w, /images/transportation/panama-comfy-bus-640.webp 640w, /images/transportation/panama-comfy-bus-768.webp 768w, /images/transportation/panama-comfy-bus.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -833,7 +833,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-comfy-bus-320.jpg 320w, /images/transportation/panama-comfy-bus-480.jpg 480w, /images/transportation/panama-comfy-bus-640.jpg 640w, /images/transportation/panama-comfy-bus-768.jpg 768w, /images/transportation/panama-comfy-bus.jpg 1170w'
+                    "/images/transportation/panama-comfy-bus-320.jpg 320w, /images/transportation/panama-comfy-bus-480.jpg 480w, /images/transportation/panama-comfy-bus-640.jpg 640w, /images/transportation/panama-comfy-bus-768.jpg 768w, /images/transportation/panama-comfy-bus.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -851,7 +851,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-coaster-bus-320.webp 320w, /images/transportation/panama-coaster-bus-480.webp 480w, /images/transportation/panama-coaster-bus-640.webp 640w, /images/transportation/panama-coaster-bus-768.webp 768w, /images/transportation/panama-coaster-bus.webp 1170w'
+                    "/images/transportation/panama-coaster-bus-320.webp 320w, /images/transportation/panama-coaster-bus-480.webp 480w, /images/transportation/panama-coaster-bus-640.webp 640w, /images/transportation/panama-coaster-bus-768.webp 768w, /images/transportation/panama-coaster-bus.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -859,7 +859,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-coaster-bus-320.jpg 320w, /images/transportation/panama-coaster-bus-480.jpg 480w, /images/transportation/panama-coaster-bus-640.jpg 640w, /images/transportation/panama-coaster-bus-768.jpg 768w, /images/transportation/panama-coaster-bus.jpg 1170w'
+                    "/images/transportation/panama-coaster-bus-320.jpg 320w, /images/transportation/panama-coaster-bus-480.jpg 480w, /images/transportation/panama-coaster-bus-640.jpg 640w, /images/transportation/panama-coaster-bus-768.jpg 768w, /images/transportation/panama-coaster-bus.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -880,7 +880,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/coronado-panama-entrance-320.webp 320w, /images/transportation/coronado-panama-entrance-480.webp 480w, /images/transportation/coronado-panama-entrance-640.webp 640w, /images/transportation/coronado-panama-entrance-768.webp 768w, /images/transportation/coronado-panama-entrance.webp 1170w'
+                    "/images/transportation/coronado-panama-entrance-320.webp 320w, /images/transportation/coronado-panama-entrance-480.webp 480w, /images/transportation/coronado-panama-entrance-640.webp 640w, /images/transportation/coronado-panama-entrance-768.webp 768w, /images/transportation/coronado-panama-entrance.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -888,7 +888,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/coronado-panama-entrance-320.jpg 320w, /images/transportation/coronado-panama-entrance-480.jpg 480w, /images/transportation/coronado-panama-entrance-640.jpg 640w, /images/transportation/coronado-panama-entrance-768.jpg 768w, /images/transportation/coronado-panama-entrance.jpg 1170w'
+                    "/images/transportation/coronado-panama-entrance-320.jpg 320w, /images/transportation/coronado-panama-entrance-480.jpg 480w, /images/transportation/coronado-panama-entrance-640.jpg 640w, /images/transportation/coronado-panama-entrance-768.jpg 768w, /images/transportation/coronado-panama-entrance.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -907,7 +907,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/map-of-coronado-320.webp 320w, /images/transportation/map-of-coronado-480.webp 480w, /images/transportation/map-of-coronado-640.webp 640w, /images/transportation/map-of-coronado-768.webp 768w, /images/transportation/map-of-coronado.webp 1170w'
+                    "/images/transportation/map-of-coronado-320.webp 320w, /images/transportation/map-of-coronado-480.webp 480w, /images/transportation/map-of-coronado-640.webp 640w, /images/transportation/map-of-coronado-768.webp 768w, /images/transportation/map-of-coronado.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -915,7 +915,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/map-of-coronado-320.jpg 320w, /images/transportation/map-of-coronado-480.jpg 480w, /images/transportation/map-of-coronado-640.jpg 640w, /images/transportation/map-of-coronado-768.jpg 768w, /images/transportation/map-of-coronado.jpg 1170w'
+                    "/images/transportation/map-of-coronado-320.jpg 320w, /images/transportation/map-of-coronado-480.jpg 480w, /images/transportation/map-of-coronado-640.jpg 640w, /images/transportation/map-of-coronado-768.jpg 768w, /images/transportation/map-of-coronado.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -938,7 +938,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-taxi-pickup-truck-320.webp 320w, /images/transportation/panama-taxi-pickup-truck-480.webp 480w, /images/transportation/panama-taxi-pickup-truck-640.webp 640w, /images/transportation/panama-taxi-pickup-truck-768.webp 768w, /images/transportation/panama-taxi-pickup-truck.webp 1170w'
+                    "/images/transportation/panama-taxi-pickup-truck-320.webp 320w, /images/transportation/panama-taxi-pickup-truck-480.webp 480w, /images/transportation/panama-taxi-pickup-truck-640.webp 640w, /images/transportation/panama-taxi-pickup-truck-768.webp 768w, /images/transportation/panama-taxi-pickup-truck.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -946,7 +946,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-taxi-pickup-truck-320.jpg 320w, /images/transportation/panama-taxi-pickup-truck-480.jpg 480w, /images/transportation/panama-taxi-pickup-truck-640.jpg 640w, /images/transportation/panama-taxi-pickup-truck-768.jpg 768w, /images/transportation/panama-taxi-pickup-truck.jpg 1170w'
+                    "/images/transportation/panama-taxi-pickup-truck-320.jpg 320w, /images/transportation/panama-taxi-pickup-truck-480.jpg 480w, /images/transportation/panama-taxi-pickup-truck-640.jpg 640w, /images/transportation/panama-taxi-pickup-truck-768.jpg 768w, /images/transportation/panama-taxi-pickup-truck.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -965,7 +965,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/coronado-shuttle-bus-320.webp 320w, /images/transportation/coronado-shuttle-bus-480.webp 480w, /images/transportation/coronado-shuttle-bus-640.webp 640w, /images/transportation/coronado-shuttle-bus-768.webp 768w, /images/transportation/coronado-shuttle-bus.webp 1170w'
+                    "/images/transportation/coronado-shuttle-bus-320.webp 320w, /images/transportation/coronado-shuttle-bus-480.webp 480w, /images/transportation/coronado-shuttle-bus-640.webp 640w, /images/transportation/coronado-shuttle-bus-768.webp 768w, /images/transportation/coronado-shuttle-bus.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -973,7 +973,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/coronado-shuttle-bus-320.jpg 320w, /images/transportation/coronado-shuttle-bus-480.jpg 480w, /images/transportation/coronado-shuttle-bus-640.jpg 640w, /images/transportation/coronado-shuttle-bus-768.jpg 768w, /images/transportation/coronado-shuttle-bus.jpg 1170w'
+                    "/images/transportation/coronado-shuttle-bus-320.jpg 320w, /images/transportation/coronado-shuttle-bus-480.jpg 480w, /images/transportation/coronado-shuttle-bus-640.jpg 640w, /images/transportation/coronado-shuttle-bus-768.jpg 768w, /images/transportation/coronado-shuttle-bus.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -992,7 +992,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/coronado-shuttle-bus-interior-320.webp 320w, /images/transportation/coronado-shuttle-bus-interior-480.webp 480w, /images/transportation/coronado-shuttle-bus-interior-640.webp 640w, /images/transportation/coronado-shuttle-bus-interior-768.webp 768w, /images/transportation/coronado-shuttle-bus-interior.webp 1170w'
+                    "/images/transportation/coronado-shuttle-bus-interior-320.webp 320w, /images/transportation/coronado-shuttle-bus-interior-480.webp 480w, /images/transportation/coronado-shuttle-bus-interior-640.webp 640w, /images/transportation/coronado-shuttle-bus-interior-768.webp 768w, /images/transportation/coronado-shuttle-bus-interior.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1000,7 +1000,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/coronado-shuttle-bus-interior-320.jpg 320w, /images/transportation/coronado-shuttle-bus-interior-480.jpg 480w, /images/transportation/coronado-shuttle-bus-interior-640.jpg 640w, /images/transportation/coronado-shuttle-bus-interior-768.jpg 768w, /images/transportation/coronado-shuttle-bus-interior.jpg 1170w'
+                    "/images/transportation/coronado-shuttle-bus-interior-320.jpg 320w, /images/transportation/coronado-shuttle-bus-interior-480.jpg 480w, /images/transportation/coronado-shuttle-bus-interior-640.jpg 640w, /images/transportation/coronado-shuttle-bus-interior-768.jpg 768w, /images/transportation/coronado-shuttle-bus-interior.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1019,7 +1019,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/coronado-panama-gates-320.webp 320w, /images/transportation/coronado-panama-gates-480.webp 480w, /images/transportation/coronado-panama-gates-640.webp 640w, /images/transportation/coronado-panama-gates-768.webp 768w, /images/transportation/coronado-panama-gates.webp 1170w'
+                    "/images/transportation/coronado-panama-gates-320.webp 320w, /images/transportation/coronado-panama-gates-480.webp 480w, /images/transportation/coronado-panama-gates-640.webp 640w, /images/transportation/coronado-panama-gates-768.webp 768w, /images/transportation/coronado-panama-gates.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1027,7 +1027,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/coronado-panama-gates-320.jpg 320w, /images/transportation/coronado-panama-gates-480.jpg 480w, /images/transportation/coronado-panama-gates-640.jpg 640w, /images/transportation/coronado-panama-gates-768.jpg 768w, /images/transportation/coronado-panama-gates.jpg 1170w'
+                    "/images/transportation/coronado-panama-gates-320.jpg 320w, /images/transportation/coronado-panama-gates-480.jpg 480w, /images/transportation/coronado-panama-gates-640.jpg 640w, /images/transportation/coronado-panama-gates-768.jpg 768w, /images/transportation/coronado-panama-gates.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1047,7 +1047,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panamanian-diablo-bus-320.webp 320w, /images/transportation/panamanian-diablo-bus-480.webp 480w, /images/transportation/panamanian-diablo-bus-640.webp 640w, /images/transportation/panamanian-diablo-bus-768.webp 768w, /images/transportation/panamanian-diablo-bus.webp 1170w'
+                    "/images/transportation/panamanian-diablo-bus-320.webp 320w, /images/transportation/panamanian-diablo-bus-480.webp 480w, /images/transportation/panamanian-diablo-bus-640.webp 640w, /images/transportation/panamanian-diablo-bus-768.webp 768w, /images/transportation/panamanian-diablo-bus.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1055,7 +1055,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panamanian-diablo-bus-320.jpg 320w, /images/transportation/panamanian-diablo-bus-480.jpg 480w, /images/transportation/panamanian-diablo-bus-640.jpg 640w, /images/transportation/panamanian-diablo-bus-768.jpg 768w, /images/transportation/panamanian-diablo-bus.jpg 1170w'
+                    "/images/transportation/panamanian-diablo-bus-320.jpg 320w, /images/transportation/panamanian-diablo-bus-480.jpg 480w, /images/transportation/panamanian-diablo-bus-640.jpg 640w, /images/transportation/panamanian-diablo-bus-768.jpg 768w, /images/transportation/panamanian-diablo-bus.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1074,7 +1074,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-chicken-bus-320.webp 320w, /images/transportation/panama-chicken-bus-480.webp 480w, /images/transportation/panama-chicken-bus-640.webp 640w, /images/transportation/panama-chicken-bus-768.webp 768w, /images/transportation/panama-chicken-bus.webp 1170w'
+                    "/images/transportation/panama-chicken-bus-320.webp 320w, /images/transportation/panama-chicken-bus-480.webp 480w, /images/transportation/panama-chicken-bus-640.webp 640w, /images/transportation/panama-chicken-bus-768.webp 768w, /images/transportation/panama-chicken-bus.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1082,7 +1082,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-chicken-bus-320.jpg 320w, /images/transportation/panama-chicken-bus-480.jpg 480w, /images/transportation/panama-chicken-bus-640.jpg 640w, /images/transportation/panama-chicken-bus-768.jpg 768w, /images/transportation/panama-chicken-bus.jpg 1170w'
+                    "/images/transportation/panama-chicken-bus-320.jpg 320w, /images/transportation/panama-chicken-bus-480.jpg 480w, /images/transportation/panama-chicken-bus-640.jpg 640w, /images/transportation/panama-chicken-bus-768.jpg 768w, /images/transportation/panama-chicken-bus.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1106,7 +1106,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-chiva-320.webp 320w, /images/transportation/panama-chiva-480.webp 480w, /images/transportation/panama-chiva-640.webp 640w, /images/transportation/panama-chiva-768.webp 768w, /images/transportation/panama-chiva.webp 1170w'
+                    "/images/transportation/panama-chiva-320.webp 320w, /images/transportation/panama-chiva-480.webp 480w, /images/transportation/panama-chiva-640.webp 640w, /images/transportation/panama-chiva-768.webp 768w, /images/transportation/panama-chiva.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1114,7 +1114,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/panama-chiva-320.jpg 320w, /images/transportation/panama-chiva-480.jpg 480w, /images/transportation/panama-chiva-640.jpg 640w, /images/transportation/panama-chiva-768.jpg 768w, /images/transportation/panama-chiva.jpg 1170w'
+                    "/images/transportation/panama-chiva-320.jpg 320w, /images/transportation/panama-chiva-480.jpg 480w, /images/transportation/panama-chiva-640.jpg 640w, /images/transportation/panama-chiva-768.jpg 768w, /images/transportation/panama-chiva.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1133,7 +1133,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/alex-deleon-panama-bus-320.webp 320w, /images/transportation/alex-deleon-panama-bus-480.webp 480w, /images/transportation/alex-deleon-panama-bus-640.webp 640w, /images/transportation/alex-deleon-panama-bus-768.webp 768w, /images/transportation/alex-deleon-panama-bus.webp 1170w'
+                    "/images/transportation/alex-deleon-panama-bus-320.webp 320w, /images/transportation/alex-deleon-panama-bus-480.webp 480w, /images/transportation/alex-deleon-panama-bus-640.webp 640w, /images/transportation/alex-deleon-panama-bus-768.webp 768w, /images/transportation/alex-deleon-panama-bus.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1141,7 +1141,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/transportation/alex-deleon-panama-bus-320.jpg 320w, /images/transportation/alex-deleon-panama-bus-480.jpg 480w, /images/transportation/alex-deleon-panama-bus-640.jpg 640w, /images/transportation/alex-deleon-panama-bus-768.jpg 768w, /images/transportation/alex-deleon-panama-bus.jpg 1170w'
+                    "/images/transportation/alex-deleon-panama-bus-320.jpg 320w, /images/transportation/alex-deleon-panama-bus-480.jpg 480w, /images/transportation/alex-deleon-panama-bus-640.jpg 640w, /images/transportation/alex-deleon-panama-bus-768.jpg 768w, /images/transportation/alex-deleon-panama-bus.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1169,7 +1169,7 @@ const BlogDetails = () => {
       </main>
     );
   }
-  if (document.title === 'Things to do in El Cangrejo') {
+  if (document.title === "Things to do in El Cangrejo") {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
@@ -1195,17 +1195,17 @@ const BlogDetails = () => {
               </FacebookShareButton>
               <TwitterShareButton
                 url={currentPageUrl}
-                hashtags={['pickuppanama', 'el cangrejo', 'panama']}
-                title={'Things to do in El Cangrejo'}
+                hashtags={["pickuppanama", "el cangrejo", "panama"]}
+                title={"Things to do in El Cangrejo"}
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={'Things to do in El Cangrejo'}
+                title={"Things to do in El Cangrejo"}
                 summary={
-                  'Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting.'
+                  "Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting."
                 }
                 aria-label="linkedin"
               >
@@ -1213,12 +1213,12 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={'Things to do in El Cangrejo'}
+                subject={"Things to do in El Cangrejo"}
                 body={
-                  'Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting.'
+                  "Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting."
                 }
                 aria-label="email"
-                separator={' '}
+                separator={" "}
               >
                 <EmailIcon size={35} />
               </EmailShareButton>
@@ -1229,7 +1229,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-cangrejo-320.webp 320w, /images/elCangrejo/el-cangrejo-480.webp 480w, /images/elCangrejo/el-cangrejo-640.webp 640w, /images/elCangrejo/el-cangrejo-768.webp 768w, /images/elCangrejo/el-cangrejo.webp 1170w'
+                    "/images/elCangrejo/el-cangrejo-320.webp 320w, /images/elCangrejo/el-cangrejo-480.webp 480w, /images/elCangrejo/el-cangrejo-640.webp 640w, /images/elCangrejo/el-cangrejo-768.webp 768w, /images/elCangrejo/el-cangrejo.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1237,7 +1237,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-cangrejo-320.jpg 320w, /images/elCangrejo/el-cangrejo-480.jpg 480w, /images/elCangrejo/el-cangrejo-640.jpg 640w, /images/elCangrejo/el-cangrejo-768.jpg 768w, /images/elCangrejo/el-cangrejo.jpg 1170w'
+                    "/images/elCangrejo/el-cangrejo-320.jpg 320w, /images/elCangrejo/el-cangrejo-480.jpg 480w, /images/elCangrejo/el-cangrejo-640.jpg 640w, /images/elCangrejo/el-cangrejo-768.jpg 768w, /images/elCangrejo/el-cangrejo.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1265,7 +1265,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/map-of-el-cangrejo-320.webp 320w, /images/elCangrejo/map-of-el-cangrejo-480.webp 480w, /images/elCangrejo/map-of-el-cangrejo-640.webp 640w, /images/elCangrejo/map-of-el-cangrejo.webp 768w, /images/elCangrejo/map-of-el-cangrejo.webp 1170w'
+                    "/images/elCangrejo/map-of-el-cangrejo-320.webp 320w, /images/elCangrejo/map-of-el-cangrejo-480.webp 480w, /images/elCangrejo/map-of-el-cangrejo-640.webp 640w, /images/elCangrejo/map-of-el-cangrejo.webp 768w, /images/elCangrejo/map-of-el-cangrejo.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1273,7 +1273,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/map-of-el-cangrejo-320.jpg 320w, /images/elCangrejo/map-of-el-cangrejo-480.jpg 480w, /images/elCangrejo/map-of-el-cangrejo-640.jpg 640w, /images/elCangrejo/map-of-el-cangrejo.jpg 768w, /images/elCangrejo/map-of-el-cangrejo.jpg 1170w'
+                    "/images/elCangrejo/map-of-el-cangrejo-320.jpg 320w, /images/elCangrejo/map-of-el-cangrejo-480.jpg 480w, /images/elCangrejo/map-of-el-cangrejo-640.jpg 640w, /images/elCangrejo/map-of-el-cangrejo.jpg 768w, /images/elCangrejo/map-of-el-cangrejo.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1294,7 +1294,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/bird-in-park-320.webp 320w, /images/elCangrejo/bird-in-park-480.webp 480w, /images/elCangrejo/bird-in-park-640.webp 640w, /images/elCangrejo/bird-in-park-768.webp 768w, /images/elCangrejo/bird-in-park.webp 1170w'
+                    "/images/elCangrejo/bird-in-park-320.webp 320w, /images/elCangrejo/bird-in-park-480.webp 480w, /images/elCangrejo/bird-in-park-640.webp 640w, /images/elCangrejo/bird-in-park-768.webp 768w, /images/elCangrejo/bird-in-park.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1302,7 +1302,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/bird-in-park-320.jpg 320w, /images/elCangrejo/bird-in-park-480.jpg 480w, /images/elCangrejo/bird-in-park-640.jpg 640w, /images/elCangrejo/bird-in-park-768.jpg 768w, /images/elCangrejo/bird-in-park.jpg 1170w'
+                    "/images/elCangrejo/bird-in-park-320.jpg 320w, /images/elCangrejo/bird-in-park-480.jpg 480w, /images/elCangrejo/bird-in-park-640.jpg 640w, /images/elCangrejo/bird-in-park-768.jpg 768w, /images/elCangrejo/bird-in-park.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1326,7 +1326,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-trapiche-panama-320.webp 320w, /images/elCangrejo/el-trapiche-panama-480.webp 480w, /images/elCangrejo/el-trapiche-panama-640.webp 640w, /images/elCangrejo/el-trapiche-panama-768.webp 768w, /images/elCangrejo/el-trapiche-panama.webp 1170w'
+                    "/images/elCangrejo/el-trapiche-panama-320.webp 320w, /images/elCangrejo/el-trapiche-panama-480.webp 480w, /images/elCangrejo/el-trapiche-panama-640.webp 640w, /images/elCangrejo/el-trapiche-panama-768.webp 768w, /images/elCangrejo/el-trapiche-panama.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1334,7 +1334,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-trapiche-panama-320.jpg 320w, /images/elCangrejo/el-trapiche-panama-480.jpg 480w, /images/elCangrejo/el-trapiche-panama-640.jpg 640w, /images/elCangrejo/el-trapiche-panama-768.jpg 768w, /images/elCangrejo/el-trapiche-panama.jpg 1170w'
+                    "/images/elCangrejo/el-trapiche-panama-320.jpg 320w, /images/elCangrejo/el-trapiche-panama-480.jpg 480w, /images/elCangrejo/el-trapiche-panama-640.jpg 640w, /images/elCangrejo/el-trapiche-panama-768.jpg 768w, /images/elCangrejo/el-trapiche-panama.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1352,7 +1352,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/panamanian-meal-el-trapiche-320.webp 320w, /images/elCangrejo/panamanian-meal-el-trapiche-480.webp 480w, /images/elCangrejo/panamanian-meal-el-trapiche-640.webp 640w, /images/elCangrejo/panamanian-meal-el-trapiche-768.webp 768w, /images/elCangrejo/panamanian-meal-el-trapiche.webp 1170w'
+                    "/images/elCangrejo/panamanian-meal-el-trapiche-320.webp 320w, /images/elCangrejo/panamanian-meal-el-trapiche-480.webp 480w, /images/elCangrejo/panamanian-meal-el-trapiche-640.webp 640w, /images/elCangrejo/panamanian-meal-el-trapiche-768.webp 768w, /images/elCangrejo/panamanian-meal-el-trapiche.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1360,7 +1360,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/panamanian-meal-el-trapiche-320.jpg 320w, /images/elCangrejo/panamanian-meal-el-trapiche-480.jpg 480w, /images/elCangrejo/panamanian-meal-el-trapiche-640.jpg 640w, /images/elCangrejo/panamanian-meal-el-trapiche-768.jpg 768w, /images/elCangrejo/panamanian-meal-el-trapiche.jpg 1170w'
+                    "/images/elCangrejo/panamanian-meal-el-trapiche-320.jpg 320w, /images/elCangrejo/panamanian-meal-el-trapiche-480.jpg 480w, /images/elCangrejo/panamanian-meal-el-trapiche-640.jpg 640w, /images/elCangrejo/panamanian-meal-el-trapiche-768.jpg 768w, /images/elCangrejo/panamanian-meal-el-trapiche.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1378,7 +1378,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/meal-at-el-trapiche-320.webp 320w, /images/elCangrejo/meal-at-el-trapiche-480.webp 480w, /images/elCangrejo/meal-at-el-trapiche-640.webp 640w, /images/elCangrejo/meal-at-el-trapiche-768.webp 768w, /images/elCangrejo/meal-at-el-trapiche.webp 1170w'
+                    "/images/elCangrejo/meal-at-el-trapiche-320.webp 320w, /images/elCangrejo/meal-at-el-trapiche-480.webp 480w, /images/elCangrejo/meal-at-el-trapiche-640.webp 640w, /images/elCangrejo/meal-at-el-trapiche-768.webp 768w, /images/elCangrejo/meal-at-el-trapiche.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1386,7 +1386,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/meal-at-el-trapiche-320.jpg 320w, /images/elCangrejo/meal-at-el-trapiche-480.jpg 480w, /images/elCangrejo/meal-at-el-trapiche-640.jpg 640w, /images/elCangrejo/meal-at-el-trapiche-768.jpg 768w, /images/elCangrejo/meal-at-el-trapiche.jpg 1170w'
+                    "/images/elCangrejo/meal-at-el-trapiche-320.jpg 320w, /images/elCangrejo/meal-at-el-trapiche-480.jpg 480w, /images/elCangrejo/meal-at-el-trapiche-640.jpg 640w, /images/elCangrejo/meal-at-el-trapiche-768.jpg 768w, /images/elCangrejo/meal-at-el-trapiche.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1404,7 +1404,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-trapiche-meal-320.webp 320w, /images/elCangrejo/el-trapiche-meal-480.webp 480w, /images/elCangrejo/el-trapiche-meal-640.webp 640w, /images/elCangrejo/el-trapiche-meal-768.webp 768w, /images/elCangrejo/el-trapiche-meal.webp 1170w'
+                    "/images/elCangrejo/el-trapiche-meal-320.webp 320w, /images/elCangrejo/el-trapiche-meal-480.webp 480w, /images/elCangrejo/el-trapiche-meal-640.webp 640w, /images/elCangrejo/el-trapiche-meal-768.webp 768w, /images/elCangrejo/el-trapiche-meal.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1412,7 +1412,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-trapiche-meal-320.jpg 320w, /images/elCangrejo/el-trapiche-meal-480.jpg 480w, /images/elCangrejo/el-trapiche-meal-640.jpg 640w, /images/elCangrejo/el-trapiche-meal-768.jpg 768w, /images/elCangrejo/el-trapiche-meal.jpg 1170w'
+                    "/images/elCangrejo/el-trapiche-meal-320.jpg 320w, /images/elCangrejo/el-trapiche-meal-480.jpg 480w, /images/elCangrejo/el-trapiche-meal-640.jpg 640w, /images/elCangrejo/el-trapiche-meal-768.jpg 768w, /images/elCangrejo/el-trapiche-meal.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1432,7 +1432,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/siete-mares-panama-city-320.webp 320w, /images/elCangrejo/siete-mares-panama-city-480.webp 480w, /images/elCangrejo/siete-mares-panama-city-640.webp 640w, /images/elCangrejo/siete-mares-panama-city-768.webp 768w, /images/elCangrejo/siete-mares-panama-city.webp 1170w'
+                    "/images/elCangrejo/siete-mares-panama-city-320.webp 320w, /images/elCangrejo/siete-mares-panama-city-480.webp 480w, /images/elCangrejo/siete-mares-panama-city-640.webp 640w, /images/elCangrejo/siete-mares-panama-city-768.webp 768w, /images/elCangrejo/siete-mares-panama-city.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1440,7 +1440,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/siete-mares-panama-city-320.jpg 320w, /images/elCangrejo/siete-mares-panama-city-480.jpg 480w, /images/elCangrejo/siete-mares-panama-city-640.jpg 640w, /images/elCangrejo/siete-mares-panama-city-768.jpg 768w, /images/elCangrejo/siete-mares-panama-city.jpg 1170w'
+                    "/images/elCangrejo/siete-mares-panama-city-320.jpg 320w, /images/elCangrejo/siete-mares-panama-city-480.jpg 480w, /images/elCangrejo/siete-mares-panama-city-640.jpg 640w, /images/elCangrejo/siete-mares-panama-city-768.jpg 768w, /images/elCangrejo/siete-mares-panama-city.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1458,7 +1458,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/siete-mares-interior-320.webp 320w, /images/elCangrejo/siete-mares-interior-480.webp 480w, /images/elCangrejo/siete-mares-interior-640.webp 640w, /images/elCangrejo/siete-mares-interior-768.webp 768w, /images/elCangrejo/siete-mares-interior.webp 1170w'
+                    "/images/elCangrejo/siete-mares-interior-320.webp 320w, /images/elCangrejo/siete-mares-interior-480.webp 480w, /images/elCangrejo/siete-mares-interior-640.webp 640w, /images/elCangrejo/siete-mares-interior-768.webp 768w, /images/elCangrejo/siete-mares-interior.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1466,7 +1466,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/siete-mares-interior-320.jpg 320w, /images/elCangrejo/siete-mares-interior-480.jpg 480w, /images/elCangrejo/siete-mares-interior-640.jpg 640w, /images/elCangrejo/siete-mares-interior-768.jpg 768w, /images/elCangrejo/siete-mares-interior.jpg 1170w'
+                    "/images/elCangrejo/siete-mares-interior-320.jpg 320w, /images/elCangrejo/siete-mares-interior-480.jpg 480w, /images/elCangrejo/siete-mares-interior-640.jpg 640w, /images/elCangrejo/siete-mares-interior-768.jpg 768w, /images/elCangrejo/siete-mares-interior.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1484,7 +1484,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/lobster-meal-siete-mares-320.webp 320w, /images/elCangrejo/lobster-meal-siete-mares-480.webp 480w, /images/elCangrejo/lobster-meal-siete-mares-640.webp 640w, /images/elCangrejo/lobster-meal-siete-mares-768.webp 768w, /images/elCangrejo/lobster-meal-siete-mares.webp 1170w'
+                    "/images/elCangrejo/lobster-meal-siete-mares-320.webp 320w, /images/elCangrejo/lobster-meal-siete-mares-480.webp 480w, /images/elCangrejo/lobster-meal-siete-mares-640.webp 640w, /images/elCangrejo/lobster-meal-siete-mares-768.webp 768w, /images/elCangrejo/lobster-meal-siete-mares.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1492,7 +1492,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/lobster-meal-siete-mares-320.jpg 320w, /images/elCangrejo/lobster-meal-siete-mares-480.jpg 480w, /images/elCangrejo/lobster-meal-siete-mares-640.jpg 640w, /images/elCangrejo/lobster-meal-siete-mares-768.jpg 768w, /images/elCangrejo/lobster-meal-siete-mares.jpg 1170w'
+                    "/images/elCangrejo/lobster-meal-siete-mares-320.jpg 320w, /images/elCangrejo/lobster-meal-siete-mares-480.jpg 480w, /images/elCangrejo/lobster-meal-siete-mares-640.jpg 640w, /images/elCangrejo/lobster-meal-siete-mares-768.jpg 768w, /images/elCangrejo/lobster-meal-siete-mares.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1513,7 +1513,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/chris-restaurante-grill-320.webp 320w, /images/elCangrejo/chris-restaurante-grill-480.webp 480w, /images/elCangrejo/chris-restaurante-grill-640.webp 640w, /images/elCangrejo/chris-restaurante-grill-768.webp 768w, /images/elCangrejo/chris-restaurante-grill.webp 1170w'
+                    "/images/elCangrejo/chris-restaurante-grill-320.webp 320w, /images/elCangrejo/chris-restaurante-grill-480.webp 480w, /images/elCangrejo/chris-restaurante-grill-640.webp 640w, /images/elCangrejo/chris-restaurante-grill-768.webp 768w, /images/elCangrejo/chris-restaurante-grill.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1521,7 +1521,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/chris-restaurante-grill-320.jpg 320w, /images/elCangrejo/chris-restaurante-grill-480.jpg 480w, /images/elCangrejo/chris-restaurante-grill-640.jpg 640w, /images/elCangrejo/chris-restaurante-grill-768.jpg 768w, /images/elCangrejo/chris-restaurante-grill.jpg 1170w'
+                    "/images/elCangrejo/chris-restaurante-grill-320.jpg 320w, /images/elCangrejo/chris-restaurante-grill-480.jpg 480w, /images/elCangrejo/chris-restaurante-grill-640.jpg 640w, /images/elCangrejo/chris-restaurante-grill-768.jpg 768w, /images/elCangrejo/chris-restaurante-grill.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1540,7 +1540,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/chris-restaurante-interior-320.webp 320w, /images/elCangrejo/chris-restaurante-interior-480.webp 480w, /images/elCangrejo/chris-restaurante-interior-640.webp 640w, /images/elCangrejo/chris-restaurante-interior-768.webp 768w, /images/elCangrejo/chris-restaurante-interior.webp 1170w'
+                    "/images/elCangrejo/chris-restaurante-interior-320.webp 320w, /images/elCangrejo/chris-restaurante-interior-480.webp 480w, /images/elCangrejo/chris-restaurante-interior-640.webp 640w, /images/elCangrejo/chris-restaurante-interior-768.webp 768w, /images/elCangrejo/chris-restaurante-interior.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1548,7 +1548,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/chris-restaurante-interior-320.jpg 320w, /images/elCangrejo/chris-restaurante-interior-480.jpg 480w, /images/elCangrejo/chris-restaurante-interior-640.jpg 640w, /images/elCangrejo/chris-restaurante-interior-768.jpg 768w, /images/elCangrejo/chris-restaurante-interior.jpg 1170w'
+                    "/images/elCangrejo/chris-restaurante-interior-320.jpg 320w, /images/elCangrejo/chris-restaurante-interior-480.jpg 480w, /images/elCangrejo/chris-restaurante-interior-640.jpg 640w, /images/elCangrejo/chris-restaurante-interior-768.jpg 768w, /images/elCangrejo/chris-restaurante-interior.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1596,7 +1596,7 @@ const BlogDetails = () => {
                       type="image/webp"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        '/images/elCangrejo/don-lee-el-cangrejo-320.webp 320w, /images/elCangrejo/don-lee-el-cangrejo-480.webp 480w, /images/elCangrejo/don-lee-el-cangrejo-640.webp 640w, /images/elCangrejo/don-lee-el-cangrejo-768.webp 768w, /images/elCangrejo/don-lee-el-cangrejo.webp 1124w'
+                        "/images/elCangrejo/don-lee-el-cangrejo-320.webp 320w, /images/elCangrejo/don-lee-el-cangrejo-480.webp 480w, /images/elCangrejo/don-lee-el-cangrejo-640.webp 640w, /images/elCangrejo/don-lee-el-cangrejo-768.webp 768w, /images/elCangrejo/don-lee-el-cangrejo.webp 1124w"
                       }
                       sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
@@ -1604,7 +1604,7 @@ const BlogDetails = () => {
                       type="image/jpg"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        '/images/elCangrejo/don-lee-el-cangrejo-320.jpg 320w, /images/elCangrejo/don-lee-el-cangrejo-480.jpg 480w, /images/elCangrejo/don-lee-el-cangrejo-640.jpg 640w, /images/elCangrejo/don-lee-el-cangrejo-768.jpg 768w, /images/elCangrejo/don-lee-el-cangrejo.jpg 1124w'
+                        "/images/elCangrejo/don-lee-el-cangrejo-320.jpg 320w, /images/elCangrejo/don-lee-el-cangrejo-480.jpg 480w, /images/elCangrejo/don-lee-el-cangrejo-640.jpg 640w, /images/elCangrejo/don-lee-el-cangrejo-768.jpg 768w, /images/elCangrejo/don-lee-el-cangrejo.jpg 1124w"
                       }
                       sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
@@ -1675,7 +1675,7 @@ const BlogDetails = () => {
                       type="image/webp"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        '/images/elCangrejo/manolos-320.webp 320w, /images/elCangrejo/manolos-480.webp 480w, /images/elCangrejo/manolos-640.webp 640w, /images/elCangrejo/manolos-768.webp 768w, /images/elCangrejo/manolos.webp 1124w'
+                        "/images/elCangrejo/manolos-320.webp 320w, /images/elCangrejo/manolos-480.webp 480w, /images/elCangrejo/manolos-640.webp 640w, /images/elCangrejo/manolos-768.webp 768w, /images/elCangrejo/manolos.webp 1124w"
                       }
                       sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
@@ -1683,7 +1683,7 @@ const BlogDetails = () => {
                       type="image/jpg"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        '/images/elCangrejo/manolos-320.jpg 320w, /images/elCangrejo/manolos-480.jpg 480w, /images/elCangrejo/manolos-640.jpg 640w, /images/elCangrejo/manolos-768.jpg 768w, /images/elCangrejo/manolos.jpg 1124w'
+                        "/images/elCangrejo/manolos-320.jpg 320w, /images/elCangrejo/manolos-480.jpg 480w, /images/elCangrejo/manolos-640.jpg 640w, /images/elCangrejo/manolos-768.jpg 768w, /images/elCangrejo/manolos.jpg 1124w"
                       }
                       sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
@@ -1754,7 +1754,7 @@ const BlogDetails = () => {
                       type="image/webp"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        '/images/elCangrejo/sen-vietnam-320.webp 320w, /images/elCangrejo/sen-vietnam-480.webp 480w, /images/elCangrejo/sen-vietnam-640.webp 640w, /images/elCangrejo/sen-vietnam-768.webp 768w, /images/elCangrejo/sen-vietnam.webp 1124w'
+                        "/images/elCangrejo/sen-vietnam-320.webp 320w, /images/elCangrejo/sen-vietnam-480.webp 480w, /images/elCangrejo/sen-vietnam-640.webp 640w, /images/elCangrejo/sen-vietnam-768.webp 768w, /images/elCangrejo/sen-vietnam.webp 1124w"
                       }
                       sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
@@ -1762,7 +1762,7 @@ const BlogDetails = () => {
                       type="image/jpg"
                       srcSet={
                         process.env.PUBLIC_URL +
-                        '/images/elCangrejo/sen-vietnam-320.jpg 320w, /images/elCangrejo/sen-vietnam-480.jpg 480w, /images/elCangrejo/sen-vietnam-640.jpg 640w, /images/elCangrejo/sen-vietnam-768.jpg 768w, /images/elCangrejo/sen-vietnam.jpg 1124w'
+                        "/images/elCangrejo/sen-vietnam-320.jpg 320w, /images/elCangrejo/sen-vietnam-480.jpg 480w, /images/elCangrejo/sen-vietnam-640.jpg 640w, /images/elCangrejo/sen-vietnam-768.jpg 768w, /images/elCangrejo/sen-vietnam.jpg 1124w"
                       }
                       sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1124px"
                     />
@@ -1798,7 +1798,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-cangrejo-night-320.webp 320w, /images/elCangrejo/el-cangrejo-night-480.webp 480w, /images/elCangrejo/el-cangrejo-night-640.webp 640w, /images/elCangrejo/el-cangrejo-night-768.webp 768w, /images/elCangrejo/el-cangrejo-night.webp 1170w'
+                    "/images/elCangrejo/el-cangrejo-night-320.webp 320w, /images/elCangrejo/el-cangrejo-night-480.webp 480w, /images/elCangrejo/el-cangrejo-night-640.webp 640w, /images/elCangrejo/el-cangrejo-night-768.webp 768w, /images/elCangrejo/el-cangrejo-night.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1806,7 +1806,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-cangrejo-night-320.jpg 320w, /images/elCangrejo/el-cangrejo-night-480.jpg 480w, /images/elCangrejo/el-cangrejo-night-640.jpg 640w, /images/elCangrejo/el-cangrejo-night-768.jpg 768w, /images/elCangrejo/el-cangrejo-night.jpg 1170w'
+                    "/images/elCangrejo/el-cangrejo-night-320.jpg 320w, /images/elCangrejo/el-cangrejo-night-480.jpg 480w, /images/elCangrejo/el-cangrejo-night-640.jpg 640w, /images/elCangrejo/el-cangrejo-night-768.jpg 768w, /images/elCangrejo/el-cangrejo-night.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1851,7 +1851,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/iglesia-del-carmen-panama-320.webp 320w, /images/elCangrejo/iglesia-del-carmen-panama-480.webp 480w, /images/elCangrejo/iglesia-del-carmen-panama-640.webp 640w, /images/elCangrejo/iglesia-del-carmen-panama-768.webp 768w, /images/elCangrejo/iglesia-del-carmen-panama.webp 1170w'
+                    "/images/elCangrejo/iglesia-del-carmen-panama-320.webp 320w, /images/elCangrejo/iglesia-del-carmen-panama-480.webp 480w, /images/elCangrejo/iglesia-del-carmen-panama-640.webp 640w, /images/elCangrejo/iglesia-del-carmen-panama-768.webp 768w, /images/elCangrejo/iglesia-del-carmen-panama.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1859,7 +1859,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/iglesia-del-carmen-panama-320.jpg 320w, /images/elCangrejo/iglesia-del-carmen-panama-480.jpg 480w, /images/elCangrejo/iglesia-del-carmen-panama-640.jpg 640w, /images/elCangrejo/iglesia-del-carmen-panama-768.jpg 768w, /images/elCangrejo/iglesia-del-carmen-panama.jpg 1170w'
+                    "/images/elCangrejo/iglesia-del-carmen-panama-320.jpg 320w, /images/elCangrejo/iglesia-del-carmen-panama-480.jpg 480w, /images/elCangrejo/iglesia-del-carmen-panama-640.jpg 640w, /images/elCangrejo/iglesia-del-carmen-panama-768.jpg 768w, /images/elCangrejo/iglesia-del-carmen-panama.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1882,7 +1882,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/f-and-f-tower-panama-320.webp 320w, /images/elCangrejo/f-and-f-tower-panama-480.webp 480w, /images/elCangrejo/f-and-f-tower-panama-640.webp 640w, /images/elCangrejo/f-and-f-tower-panama-768.webp 768w, /images/elCangrejo/f-and-f-tower-panama.webp 1170w'
+                    "/images/elCangrejo/f-and-f-tower-panama-320.webp 320w, /images/elCangrejo/f-and-f-tower-panama-480.webp 480w, /images/elCangrejo/f-and-f-tower-panama-640.webp 640w, /images/elCangrejo/f-and-f-tower-panama-768.webp 768w, /images/elCangrejo/f-and-f-tower-panama.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1890,7 +1890,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/f-and-f-tower-panama-320.jpg 320w, /images/elCangrejo/f-and-f-tower-panama-480.jpg 480w, /images/elCangrejo/f-and-f-tower-panama-640.jpg 640w, /images/elCangrejo/f-and-f-tower-panama-768.jpg 768w, /images/elCangrejo/f-and-f-tower-panama.jpg 1170w'
+                    "/images/elCangrejo/f-and-f-tower-panama-320.jpg 320w, /images/elCangrejo/f-and-f-tower-panama-480.jpg 480w, /images/elCangrejo/f-and-f-tower-panama-640.jpg 640w, /images/elCangrejo/f-and-f-tower-panama-768.jpg 768w, /images/elCangrejo/f-and-f-tower-panama.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1910,7 +1910,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/woman-on-her-knee-statue-320.webp 320w, /images/elCangrejo/woman-on-her-knee-statue-480.webp 480w, /images/elCangrejo/woman-on-her-knee-statue-640.webp 640w, /images/elCangrejo/woman-on-her-knee-statue-768.webp 768w, /images/elCangrejo/woman-on-her-knee-statue.webp 1170w'
+                    "/images/elCangrejo/woman-on-her-knee-statue-320.webp 320w, /images/elCangrejo/woman-on-her-knee-statue-480.webp 480w, /images/elCangrejo/woman-on-her-knee-statue-640.webp 640w, /images/elCangrejo/woman-on-her-knee-statue-768.webp 768w, /images/elCangrejo/woman-on-her-knee-statue.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1918,7 +1918,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/woman-on-her-knee-statue-320.jpg 320w, /images/elCangrejo/woman-on-her-knee-statue-480.jpg 480w, /images/elCangrejo/woman-on-her-knee-statue-640.jpg 640w, /images/elCangrejo/woman-on-her-knee-statue-768.jpg 768w, /images/elCangrejo/woman-on-her-knee-statue.jpg 1170w'
+                    "/images/elCangrejo/woman-on-her-knee-statue-320.jpg 320w, /images/elCangrejo/woman-on-her-knee-statue-480.jpg 480w, /images/elCangrejo/woman-on-her-knee-statue-640.jpg 640w, /images/elCangrejo/woman-on-her-knee-statue-768.jpg 768w, /images/elCangrejo/woman-on-her-knee-statue.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1938,7 +1938,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/roberto-duran-house-320.webp 320w, /images/elCangrejo/roberto-duran-house-480.webp 480w, /images/elCangrejo/roberto-duran-house-640.webp 640w, /images/elCangrejo/roberto-duran-house-768.webp 768w, /images/elCangrejo/roberto-duran-house.webp 1170w'
+                    "/images/elCangrejo/roberto-duran-house-320.webp 320w, /images/elCangrejo/roberto-duran-house-480.webp 480w, /images/elCangrejo/roberto-duran-house-640.webp 640w, /images/elCangrejo/roberto-duran-house-768.webp 768w, /images/elCangrejo/roberto-duran-house.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1946,7 +1946,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/roberto-duran-house-320.jpg 320w, /images/elCangrejo/roberto-duran-house-480.jpg 480w, /images/elCangrejo/roberto-duran-house-640.jpg 640w, /images/elCangrejo/roberto-duran-house-768.jpg 768w, /images/elCangrejo/roberto-duran-house.jpg 1170w'
+                    "/images/elCangrejo/roberto-duran-house-320.jpg 320w, /images/elCangrejo/roberto-duran-house-480.jpg 480w, /images/elCangrejo/roberto-duran-house-640.jpg 640w, /images/elCangrejo/roberto-duran-house-768.jpg 768w, /images/elCangrejo/roberto-duran-house.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1966,7 +1966,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/barberia-de-luis-el-cangrejo-320.webp 320w, /images/elCangrejo/barberia-de-luis-el-cangrejo-480.webp 480w, /images/elCangrejo/barberia-de-luis-el-cangrejo-640.webp 640w, /images/elCangrejo/barberia-de-luis-el-cangrejo-768.webp 768w, /images/elCangrejo/barberia-de-luis-el-cangrejo.webp 1170w'
+                    "/images/elCangrejo/barberia-de-luis-el-cangrejo-320.webp 320w, /images/elCangrejo/barberia-de-luis-el-cangrejo-480.webp 480w, /images/elCangrejo/barberia-de-luis-el-cangrejo-640.webp 640w, /images/elCangrejo/barberia-de-luis-el-cangrejo-768.webp 768w, /images/elCangrejo/barberia-de-luis-el-cangrejo.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1974,7 +1974,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/barberia-de-luis-el-cangrejo-320.jpg 320w, /images/elCangrejo/barberia-de-luis-el-cangrejo-480.jpg 480w, /images/elCangrejo/barberia-de-luis-el-cangrejo-640.jpg 640w, /images/elCangrejo/barberia-de-luis-el-cangrejo-768.jpg 768w, /images/elCangrejo/barberia-de-luis-el-cangrejo.jpg 1170w'
+                    "/images/elCangrejo/barberia-de-luis-el-cangrejo-320.jpg 320w, /images/elCangrejo/barberia-de-luis-el-cangrejo-480.jpg 480w, /images/elCangrejo/barberia-de-luis-el-cangrejo-640.jpg 640w, /images/elCangrejo/barberia-de-luis-el-cangrejo-768.jpg 768w, /images/elCangrejo/barberia-de-luis-el-cangrejo.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -1992,7 +1992,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/tryp-hotel-el-cangrejo-320.webp 320w, /images/elCangrejo/tryp-hotel-el-cangrejo-480.webp 480w, /images/elCangrejo/tryp-hotel-el-cangrejo-640.webp 640w, /images/elCangrejo/tryp-hotel-el-cangrejo-768.webp 768w, /images/elCangrejo/tryp-hotel-el-cangrejo.webp 1170w'
+                    "/images/elCangrejo/tryp-hotel-el-cangrejo-320.webp 320w, /images/elCangrejo/tryp-hotel-el-cangrejo-480.webp 480w, /images/elCangrejo/tryp-hotel-el-cangrejo-640.webp 640w, /images/elCangrejo/tryp-hotel-el-cangrejo-768.webp 768w, /images/elCangrejo/tryp-hotel-el-cangrejo.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2000,7 +2000,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/tryp-hotel-el-cangrejo-320.jpg 320w, /images/elCangrejo/tryp-hotel-el-cangrejo-480.jpg 480w, /images/elCangrejo/tryp-hotel-el-cangrejo-640.jpg 640w, /images/elCangrejo/tryp-hotel-el-cangrejo-768.jpg 768w, /images/elCangrejo/tryp-hotel-el-cangrejo.jpg 1170w'
+                    "/images/elCangrejo/tryp-hotel-el-cangrejo-320.jpg 320w, /images/elCangrejo/tryp-hotel-el-cangrejo-480.jpg 480w, /images/elCangrejo/tryp-hotel-el-cangrejo-640.jpg 640w, /images/elCangrejo/tryp-hotel-el-cangrejo-768.jpg 768w, /images/elCangrejo/tryp-hotel-el-cangrejo.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2018,7 +2018,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-coffee-shop-pty-320.webp 320w, /images/elCangrejo/el-coffee-shop-pty-480.webp 480w, /images/elCangrejo/el-coffee-shop-pty-640.webp 640w, /images/elCangrejo/el-coffee-shop-pty-768.webp 768w, /images/elCangrejo/el-coffee-shop-pty.webp 1170w'
+                    "/images/elCangrejo/el-coffee-shop-pty-320.webp 320w, /images/elCangrejo/el-coffee-shop-pty-480.webp 480w, /images/elCangrejo/el-coffee-shop-pty-640.webp 640w, /images/elCangrejo/el-coffee-shop-pty-768.webp 768w, /images/elCangrejo/el-coffee-shop-pty.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2026,7 +2026,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-coffee-shop-pty-320.jpg 320w, /images/elCangrejo/el-coffee-shop-pty-480.jpg 480w, /images/elCangrejo/el-coffee-shop-pty-640.jpg 640w, /images/elCangrejo/el-coffee-shop-pty-768.jpg 768w, /images/elCangrejo/el-coffee-shop-pty.jpg 1170w'
+                    "/images/elCangrejo/el-coffee-shop-pty-320.jpg 320w, /images/elCangrejo/el-coffee-shop-pty-480.jpg 480w, /images/elCangrejo/el-coffee-shop-pty-640.jpg 640w, /images/elCangrejo/el-coffee-shop-pty-768.jpg 768w, /images/elCangrejo/el-coffee-shop-pty.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2044,7 +2044,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/graffiti-wall-in-el-cangrejo-320.webp 320w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-480.webp 480w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-640.webp 640w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-768.webp 768w, /images/elCangrejo/graffiti-wall-in-el-cangrejo.webp 1170w'
+                    "/images/elCangrejo/graffiti-wall-in-el-cangrejo-320.webp 320w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-480.webp 480w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-640.webp 640w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-768.webp 768w, /images/elCangrejo/graffiti-wall-in-el-cangrejo.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2052,7 +2052,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/graffiti-wall-in-el-cangrejo-320.jpg 320w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-480.jpg 480w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-640.jpg 640w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-768.jpg 768w, /images/elCangrejo/graffiti-wall-in-el-cangrejo.jpg 1170w'
+                    "/images/elCangrejo/graffiti-wall-in-el-cangrejo-320.jpg 320w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-480.jpg 480w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-640.jpg 640w, /images/elCangrejo/graffiti-wall-in-el-cangrejo-768.jpg 768w, /images/elCangrejo/graffiti-wall-in-el-cangrejo.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2070,7 +2070,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/palm-trees-el-cangrejo-320.webp 320w, /images/elCangrejo/palm-trees-el-cangrejo-480.webp 480w, /images/elCangrejo/palm-trees-el-cangrejo-640.webp 640w, /images/elCangrejo/palm-trees-el-cangrejo-768.webp 768w, /images/elCangrejo/palm-trees-el-cangrejo.webp 1170w'
+                    "/images/elCangrejo/palm-trees-el-cangrejo-320.webp 320w, /images/elCangrejo/palm-trees-el-cangrejo-480.webp 480w, /images/elCangrejo/palm-trees-el-cangrejo-640.webp 640w, /images/elCangrejo/palm-trees-el-cangrejo-768.webp 768w, /images/elCangrejo/palm-trees-el-cangrejo.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2078,7 +2078,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/palm-trees-el-cangrejo-320.jpg 320w, /images/elCangrejo/palm-trees-el-cangrejo-480.jpg 480w, /images/elCangrejo/palm-trees-el-cangrejo-640.jpg 640w, /images/elCangrejo/palm-trees-el-cangrejo-768.jpg 768w, /images/elCangrejo/palm-trees-el-cangrejo.jpg 1170w'
+                    "/images/elCangrejo/palm-trees-el-cangrejo-320.jpg 320w, /images/elCangrejo/palm-trees-el-cangrejo-480.jpg 480w, /images/elCangrejo/palm-trees-el-cangrejo-640.jpg 640w, /images/elCangrejo/palm-trees-el-cangrejo-768.jpg 768w, /images/elCangrejo/palm-trees-el-cangrejo.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2096,7 +2096,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/panamanian-motorcycle-club-320.webp 320w, /images/elCangrejo/panamanian-motorcycle-club-480.webp 480w, /images/elCangrejo/panamanian-motorcycle-club-640.webp 640w, /images/elCangrejo/panamanian-motorcycle-club-768.webp 768w, /images/elCangrejo/panamanian-motorcycle-club.webp 1170w'
+                    "/images/elCangrejo/panamanian-motorcycle-club-320.webp 320w, /images/elCangrejo/panamanian-motorcycle-club-480.webp 480w, /images/elCangrejo/panamanian-motorcycle-club-640.webp 640w, /images/elCangrejo/panamanian-motorcycle-club-768.webp 768w, /images/elCangrejo/panamanian-motorcycle-club.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2104,7 +2104,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/panamanian-motorcycle-club-320.jpg 320w, /images/elCangrejo/panamanian-motorcycle-club-480.jpg 480w, /images/elCangrejo/panamanian-motorcycle-club-640.jpg 640w, /images/elCangrejo/panamanian-motorcycle-club-768.jpg 768w, /images/elCangrejo/panamanian-motorcycle-club.jpg 1170w'
+                    "/images/elCangrejo/panamanian-motorcycle-club-320.jpg 320w, /images/elCangrejo/panamanian-motorcycle-club-480.jpg 480w, /images/elCangrejo/panamanian-motorcycle-club-640.jpg 640w, /images/elCangrejo/panamanian-motorcycle-club-768.jpg 768w, /images/elCangrejo/panamanian-motorcycle-club.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2122,7 +2122,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-cangrejo-life-320.webp 320w, /images/elCangrejo/el-cangrejo-life-480.webp 480w, /images/elCangrejo/el-cangrejo-life-640.webp 640w, /images/elCangrejo/el-cangrejo-life-768.webp 768w, /images/elCangrejo/el-cangrejo-life.webp 1170w'
+                    "/images/elCangrejo/el-cangrejo-life-320.webp 320w, /images/elCangrejo/el-cangrejo-life-480.webp 480w, /images/elCangrejo/el-cangrejo-life-640.webp 640w, /images/elCangrejo/el-cangrejo-life-768.webp 768w, /images/elCangrejo/el-cangrejo-life.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2130,7 +2130,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-cangrejo-life-320.jpg 320w, /images/elCangrejo/el-cangrejo-life-480.jpg 480w, /images/elCangrejo/el-cangrejo-life-640.jpg 640w, /images/elCangrejo/el-cangrejo-life-768.jpg 768w, /images/elCangrejo/el-cangrejo-life.jpg 1170w'
+                    "/images/elCangrejo/el-cangrejo-life-320.jpg 320w, /images/elCangrejo/el-cangrejo-life-480.jpg 480w, /images/elCangrejo/el-cangrejo-life-640.jpg 640w, /images/elCangrejo/el-cangrejo-life-768.jpg 768w, /images/elCangrejo/el-cangrejo-life.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2148,7 +2148,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/street-performer-el-cangrejo-320.webp 320w, /images/elCangrejo/street-performer-el-cangrejo-480.webp 480w, /images/elCangrejo/street-performer-el-cangrejo-640.webp 640w, /images/elCangrejo/street-performer-el-cangrejo-768.webp 768w, /images/elCangrejo/street-performer-el-cangrejo.webp 1170w'
+                    "/images/elCangrejo/street-performer-el-cangrejo-320.webp 320w, /images/elCangrejo/street-performer-el-cangrejo-480.webp 480w, /images/elCangrejo/street-performer-el-cangrejo-640.webp 640w, /images/elCangrejo/street-performer-el-cangrejo-768.webp 768w, /images/elCangrejo/street-performer-el-cangrejo.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2156,7 +2156,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/street-performer-el-cangrejo-320.jpg 320w, /images/elCangrejo/street-performer-el-cangrejo-480.jpg 480w, /images/elCangrejo/street-performer-el-cangrejo-640.jpg 640w, /images/elCangrejo/street-performer-el-cangrejo-768.jpg 768w, /images/elCangrejo/street-performer-el-cangrejo.jpg 1170w'
+                    "/images/elCangrejo/street-performer-el-cangrejo-320.jpg 320w, /images/elCangrejo/street-performer-el-cangrejo-480.jpg 480w, /images/elCangrejo/street-performer-el-cangrejo-640.jpg 640w, /images/elCangrejo/street-performer-el-cangrejo-768.jpg 768w, /images/elCangrejo/street-performer-el-cangrejo.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2174,7 +2174,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-cangrejo-view-320.webp 320w, /images/elCangrejo/el-cangrejo-view-480.webp 480w, /images/elCangrejo/el-cangrejo-view-640.webp 640w, /images/elCangrejo/el-cangrejo-view-768.webp 768w, /images/elCangrejo/el-cangrejo-view.webp 1170w'
+                    "/images/elCangrejo/el-cangrejo-view-320.webp 320w, /images/elCangrejo/el-cangrejo-view-480.webp 480w, /images/elCangrejo/el-cangrejo-view-640.webp 640w, /images/elCangrejo/el-cangrejo-view-768.webp 768w, /images/elCangrejo/el-cangrejo-view.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2182,7 +2182,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-cangrejo-view-320.jpg 320w, /images/elCangrejo/el-cangrejo-view-480.jpg 480w, /images/elCangrejo/el-cangrejo-view-640.jpg 640w, /images/elCangrejo/el-cangrejo-view-768.jpg 768w, /images/elCangrejo/el-cangrejo-view.jpg 1170w'
+                    "/images/elCangrejo/el-cangrejo-view-320.jpg 320w, /images/elCangrejo/el-cangrejo-view-480.jpg 480w, /images/elCangrejo/el-cangrejo-view-640.jpg 640w, /images/elCangrejo/el-cangrejo-view-768.jpg 768w, /images/elCangrejo/el-cangrejo-view.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2200,7 +2200,7 @@ const BlogDetails = () => {
                   type="image/webp"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-cangrejo-panama-320.webp 320w, /images/elCangrejo/el-cangrejo-panama-480.webp 480w, /images/elCangrejo/el-cangrejo-panama-640.webp 640w, /images/elCangrejo/el-cangrejo-panama-768.webp 768w, /images/elCangrejo/el-cangrejo-panama.webp 1170w'
+                    "/images/elCangrejo/el-cangrejo-panama-320.webp 320w, /images/elCangrejo/el-cangrejo-panama-480.webp 480w, /images/elCangrejo/el-cangrejo-panama-640.webp 640w, /images/elCangrejo/el-cangrejo-panama-768.webp 768w, /images/elCangrejo/el-cangrejo-panama.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2208,7 +2208,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    '/images/elCangrejo/el-cangrejo-panama-320.jpg 320w, /images/elCangrejo/el-cangrejo-panama-480.jpg 480w, /images/elCangrejo/el-cangrejo-panama-640.jpg 640w, /images/elCangrejo/el-cangrejo-panama-768.jpg 768w, /images/elCangrejo/el-cangrejo-panama.jpg 1170w'
+                    "/images/elCangrejo/el-cangrejo-panama-320.jpg 320w, /images/elCangrejo/el-cangrejo-panama-480.jpg 480w, /images/elCangrejo/el-cangrejo-panama-640.jpg 640w, /images/elCangrejo/el-cangrejo-panama-768.jpg 768w, /images/elCangrejo/el-cangrejo-panama.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2238,7 +2238,8 @@ const BlogDetails = () => {
         )}
       </main>
     );
-  }if (document.title === 'How much Spanish do I need to know in Panama?') {
+  }
+  if (document.title === "How much Spanish do I need to know in Panama?") {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
@@ -2264,17 +2265,17 @@ const BlogDetails = () => {
               </FacebookShareButton>
               <TwitterShareButton
                 url={currentPageUrl}
-                hashtags={['pickuppanama', 'el cangrejo', 'panama']}
-                title={'Things to do in El Cangrejo'}
+                hashtags={["pickuppanama", "spanish", "language", "panama"]}
+                title={"What language is spoken in Panama?"}
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={'Things to do in El Cangrejo'}
+                title={"What language is spoken in Panama?"}
                 summary={
-                  'Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting.'
+                  "Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting."
                 }
                 aria-label="linkedin"
               >
@@ -2282,27 +2283,45 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={'Things to do in El Cangrejo'}
-                body={
-                  'Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting.'
-                }
+                subject={"What language is spoken in Panama?"}
+                body={`Learn about the spoken Spanish of Panama and why Spanish is important to learn.`}
                 aria-label="email"
-                separator={' '}
+                separator={" "}
               >
                 <EmailIcon size={35} />
               </EmailShareButton>
             </div>
-           
+
             <p>{blog.about15}</p>
             <p>{blog.althoughFlu}</p>
             <h2>{blog.whatRoleh2}</h2>
-            <p><span className='six-hundred'>{blog.busEconSpan}</span> {blog.busEcon}</p>
-            <p><span className='six-hundred'>{blog.tourismSpan}</span> {blog.tourism}</p>
-            <p><span className='six-hundred'>{blog.eduSpan}</span> {blog.educat}</p>
-            <p><span className='six-hundred'>{blog.irSpan}</span> {blog.internRelations}</p>
-            <p><span className='six-hundred'>{blog.techSciSpan}</span> {blog.techSci}</p>
-            <p><span className='six-hundred'>{blog.expatSpan}</span> {blog.expatComm}</p>
-            <p><span className='six-hundred'>{blog.mediaSpan}</span> {blog.mediaEnt}</p>
+            <p>
+              <span className="six-hundred">{blog.busEconSpan}</span>{" "}
+              {blog.busEcon}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.tourismSpan}</span>{" "}
+              {blog.tourism}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.eduSpan}</span> {blog.educat}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.irSpan}</span>{" "}
+              {blog.internRelations}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.techSciSpan}</span>{" "}
+              {blog.techSci}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.expatSpan}</span>{" "}
+              {blog.expatComm}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.mediaSpan}</span>{" "}
+              {blog.mediaEnt}
+            </p>
             <h2>{blog.whyImpH2}</h2>
             <p>{blog.inRemote}</p>
             <p>{blog.learningSpanish}</p>
@@ -2369,7 +2388,6 @@ const BlogDetails = () => {
               <li>{blog.estoyYendo}</li>
               <li>{blog.hayAlgun}</li>
               <li>{blog.dondeQue}</li>
-              <li>{blog.podriaDec}</li>
             </ul>
             <h3>{blog.givingDirectH3}</h3>
             <ul>
@@ -2395,6 +2413,8 @@ const BlogDetails = () => {
             <p>{blog.hasAVariety}</p>
             <p>{blog.dependingOn}</p>
             <p>{blog.whenCoronado}</p>
+            <p>{blog.thisIsKnown}</p>
+            <p>{blog.buenaBuena}</p>
             <h3>{blog.slangDielects}</h3>
             <p>{blog.hereAreSome}</p>
             <ul>
@@ -2420,7 +2440,22 @@ const BlogDetails = () => {
               <li>{blog.pracitceDaily}</li>
             </ul>
             <h3>{blog.languageTransferH3}</h3>
-            <p>{blog.languageTransfer}<span> <a className='link' target='_blank' href='https://www.languagetransfer.org' rel='noopener noreferrer' aria-label='language trnasfer'>{blog.langTrSpan}</a>{blog.period}</span></p>
+            <p>
+              {blog.languageTransfer}
+              <span>
+                {" "}
+                <a
+                  className="link"
+                  target="_blank"
+                  href="https://www.languagetransfer.org"
+                  rel="noopener noreferrer"
+                  aria-label="language trnasfer"
+                >
+                  {blog.langTrSpan}
+                </a>
+                {blog.period}
+              </span>
+            </p>
             <p>{blog.someonePanama}</p>
             <p>{blog.willBenefit}</p>
             <p>{blog.noMem}</p>
@@ -2428,11 +2463,6 @@ const BlogDetails = () => {
             <p>{blog.itsAbout}</p>
             <p>{blog.moreImp}</p>
             <p>{blog.ifYouAre}</p>
-
-
-
-            
-
 
             <div className="button-parent">
               <button
@@ -2452,8 +2482,85 @@ const BlogDetails = () => {
         )}
       </main>
     );
-       }
-  else {
+  } 
+  if (document.title === "What are the cultural norms of Panama?") {
+    return (
+      <main id="main-element" className={`blog-details margin `}>
+        {isPending && <div>Loading...</div>}
+        {error && <div className="load-error">{error}</div>}
+        {blog && (
+          <section className={blog.className}>
+            <div className="line-divider centered wide">
+              <p className="diamond-text-box date">
+                <span className="left"></span>
+                <span className="content caps centered">{blog.date}</span>
+                <span className="right"></span>
+              </p>
+            </div>
+            <h1 className="centered post-title">{blog.title}</h1>
+            <p className="body intro">{blog.intro}</p>
+            <div className="share-parent">
+              <FacebookShareButton
+                url={currentPageUrl}
+                hashtag="#panama"
+                aria-label="facebook"
+              >
+                <FacebookIcon size={35} />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url={currentPageUrl}
+                hashtags={["pickuppanama", "spanish", "language", "panama"]}
+                title={"What language is spoken in Panama?"}
+                aria-label="twitter"
+              >
+                <TwitterIcon size={35} />
+              </TwitterShareButton>
+              <LinkedinShareButton
+                url={currentPageUrl}
+                title={"What language is spoken in Panama?"}
+                summary={
+                  "Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting."
+                }
+                aria-label="linkedin"
+              >
+                <LinkedinIcon size={35} />
+              </LinkedinShareButton>
+              <EmailShareButton
+                url={currentPageUrl}
+                subject={"What language is spoken in Panama?"}
+                body={`Learn about the spoken Spanish of Panama and why Spanish is important to learn.`}
+                aria-label="email"
+                separator={" "}
+              >
+                <EmailIcon size={35} />
+              </EmailShareButton>
+            </div>
+
+
+
+
+           
+            <div className="button-parent">
+              <button
+                title="Things to do in El Cangrejo"
+                onClick={goToElCangrejoStory}
+              >
+                &#60;
+              </button>
+              <button
+                title="How do I visit the Panama Canal?"
+                onClick={goToCanalStory}
+              >
+                &#62;
+              </button>
+            </div>
+          </section>
+        )}
+      </main>
+    );
+  }
+
+else {
     return (
       <main id="main-element" className="not-found">
         <figure className="not-found-hero">
@@ -2462,7 +2569,7 @@ const BlogDetails = () => {
               type="image/webp"
               srcSet={
                 process.env.PUBLIC_URL +
-                '/images/notFound/missing-meal-320.webp 320w, /images/notFound/missing-meal-640.webp 640w, /images/notFound/missing-meal.webp 1017w'
+                "/images/notFound/missing-meal-320.webp 320w, /images/notFound/missing-meal-640.webp 640w, /images/notFound/missing-meal.webp 1017w"
               }
               sizes="(max-width: 320px) 320px, (max-width: 640px) 640px, 1017px"
             />
@@ -2470,14 +2577,14 @@ const BlogDetails = () => {
               type="image/jpg"
               srcSet={
                 process.env.PUBLIC_URL +
-                '/images/notFound/missing-meal-320.jpg 320w, /images/notFound/missing-meal-640.jpg 640w, /images/notFound/missing-meal.jpg 1017w'
+                "/images/notFound/missing-meal-320.jpg 320w, /images/notFound/missing-meal-640.jpg 640w, /images/notFound/missing-meal.jpg 1017w"
               }
               sizes="(max-width: 320px) 320px, (max-width: 640px) 640px, 1017px"
             />
             <img
               fetchpriority="high"
               className="no-right-click"
-              src={process.env.PUBLIC_URL + '/images/notFound/missing-meal.jpg'}
+              src={process.env.PUBLIC_URL + "/images/notFound/missing-meal.jpg"}
               alt="Villa Mayte Coronado Panama"
             />
           </picture>

@@ -26,7 +26,7 @@ export const Capitalize = () => {
     }
     if (document.title === "How much spanish do i need to know in panama") {
         document.title = "How much Spanish do I need to know in Panama?"
-        document.getElementsByTagName('meta')["description"].content = "Learn about the spoken Spanish of Panama.";
+        document.getElementsByTagName('meta')["description"].content = "Learn about the spoken Spanish of Panama and why Spanish is important to learn.";
     }
 
     if (document.title === "Pick Up Panama | Learn About Panama") {
