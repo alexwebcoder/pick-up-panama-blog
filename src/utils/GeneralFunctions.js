@@ -28,7 +28,10 @@ export const Capitalize = () => {
         document.title = "How much Spanish do I need to know in Panama?"
         document.getElementsByTagName('meta')["description"].content = "Learn about the spoken Spanish of Panama and why Spanish is important to learn.";
     }
-
+    if (document.title === "What are the cultural norms of panama") {
+        document.title = "What are the cultural norms of Panama?"
+        document.getElementsByTagName('meta')["description"].content = "Learn the cultural norms of Panama and navigate social interactions successfully.";
+    }
     if (document.title === "Pick Up Panama | Learn About Panama") {
         document.getElementsByTagName('meta')["description"].content = "Pick Up Panama is a blog that provides information, culture, and lifestyle about Panama.";
     }
