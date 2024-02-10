@@ -2498,7 +2498,10 @@ const BlogDetails = () => {
               </p>
             </div>
             <h1 className="centered post-title">{blog.title}</h1>
-            <p className="body intro">{blog.intro}</p>
+            <div className="body intro">
+              <p>{blog.intro}</p>
+              <p>{blog.byFamiliz}</p>
+              </div>
             <div className="share-parent">
               <FacebookShareButton
                 url={currentPageUrl}
@@ -2535,6 +2538,40 @@ const BlogDetails = () => {
                 <EmailIcon size={35} />
               </EmailShareButton>
             </div>
+            <h2>{blog.hereAre}</h2>
+            <p><span className="six-hundred">{blog.repectSpan}</span> {blog.panCult}</p>
+            <p><span className="six-hundred">{blog.frienSpan}</span> {blog.panamAre}</p>
+            <p><span className="six-hundred">{blog.greet}</span> {blog.itIsCusto}</p>
+            <p>{blog.whenMeeting}</p>
+            <p><span className="six-hundred">{blog.famBondsSpan}</span> {blog.panSoc}</p>
+            <p><span className="six-hundred">{blog.relInfluSpan}</span> {blog.mostPan}</p>
+            <p><span className="six-hundred">{blog.paceSpan}</span> {blog.punctual}</p>
+            <p>{blog.panamaOperates}</p>
+            <p><span className="six-hundred">{blog.personSpaceSpan}</span> {blog.panaVal}</p>
+            <p><span className="six-hundred">{blog.etiquetteSpan}</span> {blog.tableManners}</p>
+            <p><span className="six-hundred">{blog.useTitles}</span> {blog.usingFormal}</p>
+            <p><span className="six-hundred">{blog.communicationSpan}</span> {blog.inOrder}</p>
+            <p><span className="six-hundred">{blog.casConvSpan}</span> {blog.casConv}</p>
+            <p><span className="six-hundred">{blog.foodSharingSp}</span> {blog.sharingFood}</p>
+            <p><span className="six-hundred">{blog.celebrFestSP}</span> {blog.boasts}</p>
+            <h2>{blog.fauxPasH2}</h2>
+            <p><span className="six-hundred">{blog.discusSpan}</span> {blog.avoid}</p>
+            <p><span className="six-hundred">{blog.usnsolicitedSpan}</span> {blog.givingUnsol}</p>
+            <p><span className="six-hundred">{blog.wastingFoodSpan}</span> {blog.theCultur}</p>
+            <p><span className="six-hundred">{blog.speakingLoudSpan}</span> {blog.panaPlace}</p>
+            <p><span className="six-hundred">{blog.notOffeing}</span> {blog.givingHelp}</p>
+            <p><span className="six-hundred">{blog.ignoringGreetings}</span> {blog.greetingsAre}</p>
+            <h2>{blog.doTipH2}</h2>
+            <p>{blog.whileTipp}</p>
+            <p><span className="six-hundred">{blog.restSpan}</span> {blog.itNormal}</p>
+            <p><span className="six-hundred">{blog.barsSpan}</span> {blog.tipAtBars}</p>
+            <p><span className="six-hundred">{blog.hotels}</span> {blog.tippingHotel}</p>
+            <p><span className="six-hundred">{blog.taxisSpan}</span> {blog.tippingTaxi}</p>
+
+
+
+
+
 
 
 
