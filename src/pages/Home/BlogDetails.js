@@ -2567,6 +2567,42 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.barsSpan}</span> {blog.tipAtBars}</p>
             <p><span className="six-hundred">{blog.hotels}</span> {blog.tippingHotel}</p>
             <p><span className="six-hundred">{blog.taxisSpan}</span> {blog.tippingTaxi}</p>
+            <p><span className="six-hundred">{blog.tourGuidesSpan}</span> {blog.ifYouGo}</p>
+            <p><span className="six-hundred">{blog.otherServicesSpan}</span> {blog.inGeneral}</p>
+            <h2>{blog.dressCodeH2}</h2>
+            <p>{blog.dressCodeVary}</p>
+            <p><span className="six-hundred">{blog.casualSpan}</span> {blog.menDress}</p>
+            <p>{blog.duringFormal}</p>
+            <p>{blog.forWomen}</p>
+            <p><span className="six-hundred">{blog.beachWearSpan}</span> {blog.ifVisiting}</p>
+            <p>{blog.womenWear}</p>
+            <p>{blog.sunscreen}</p>
+            <h3>{blog.dressCodeH3}</h3>
+            <p>{blog.disregarding}</p>
+            <ul>
+              <li>{blog.menMustLi}</li>
+              <li>{blog.womenShould}</li>
+              <li>{blog.noBare}</li>
+              <li>{blog.noT}</li>
+              <li>{blog.shoesMust}</li>
+            </ul>
+            <h2>{blog.miscilLawsH3}</h2>
+            <ul>
+              <li>{blog.drinkingLi}</li>
+              <li>{blog.beachAttire}</li>
+              <li>{blog.shirts}</li>
+            </ul>
+            <p>{blog.understanding}</p>
+
+
+
+
+
+
+
+
+
+
 
 
 
