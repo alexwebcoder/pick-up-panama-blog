@@ -24,17 +24,17 @@ export const Capitalize = () => {
         document.title = "Things to do in El Cangrejo"
         document.getElementsByTagName('meta')["description"].content = "Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting.";
     }
-    if (document.title === "How much spanish do i need to know in panama") {
-        document.title = "How much Spanish do I need to know in Panama?"
+    if (document.title === "What languages are spoken in panama") {
+        document.title = "What languages are spoken in Panama?"
         document.getElementsByTagName('meta')["description"].content = "Learn about the spoken Spanish of Panama and why Spanish is important to learn.";
     }
     if (document.title === "What are the cultural norms of panama") {
         document.title = "What are the cultural norms of Panama?"
         document.getElementsByTagName('meta')["description"].content = "Learn the cultural norms of Panama and successfully navigate social interactions.";
     }
-    if (document.title === "What is the food like in panama") {
-        document.title = "What is the food like in Panama?"
-        document.getElementsByTagName('meta')["description"].content = "Inform yourself on Panamanian cuisine, popular dishes and how to eat inexpensively while in Panama,";
+    if (document.title === "Traditional food in panama") {
+        document.title = "Traditional food in Panama"
+        document.getElementsByTagName('meta')["description"].content = "Find out about Panamanian food dishes, the best food in Panama City and how to eat on a budget.";
     }
     if (document.title === "Pick Up Panama | Learn About Panama") {
         document.getElementsByTagName('meta')["description"].content = "Pick Up Panama is a blog that provides information, culture, and lifestyle about Panama.";

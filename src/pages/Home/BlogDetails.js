@@ -2239,7 +2239,7 @@ const BlogDetails = () => {
       </main>
     );
   }
-  if (document.title === "How much Spanish do I need to know in Panama?") {
+  if (document.title === "What languages are spoken in Panama?") {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
@@ -2612,7 +2612,7 @@ const BlogDetails = () => {
       </main>
     );
   }
-  if (document.title === "What is the food like in Panama?") {
+  if (document.title === "Traditional food in Panama") {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}

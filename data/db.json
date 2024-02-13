@@ -597,10 +597,10 @@
       "archCaption": "Architecture in El Cangrejo"
     },
     {
-      "title": "How much Spanish do I need to know in Panama?",
+      "title": "What languages are spoken in Panama?",
       "author": "Alex DeLeon",
       "date": "February 5, 2024",
-      "id": "how-much-spanish-do-i-need-to-know-in-panama",
+      "id": "what-languages-are-spoken-in-panama",
       "className": "spanish",
       "intro": "Panama's official language is Spanish and it is spoken by nearly 90% of its population. English is the second most commonly used language in Panama.",
       "about15": "About 15% of Panamanians, particularly those living in urban areas and popular tourist destinations like Panama City, may have a basic understanding and ability to speak English.",
@@ -825,12 +825,46 @@
       "understanding": "Understanding and respecting these cultural nuances will help you handle social situations and establish positive relationships in Panama."
     },
     {
-      "title": "What is the food like in Panama?",
+      "title": "Traditional food in Panama",
       "author": "Alex DeLeon",
       "date": "February 12, 2024",
-      "id": "what-is-the-food-like-in-panama",
+      "id": "traditional-food-in-panama",
       "className": "food",
-      "intro": "Panamanian cuisine is a mix of African, Spanish, and indigenous influences, resulting in a diverse and flavorful culinary tradition."
+      "intro": "Panamanian cuisine is a blend of African, Spanish, and indigenous influences, creating a rich and flavorful culinary heritage.",
+      "thisArticle": "This article will cover key ingredients used in Panamanian cooking, food safety and hygiene, provide information on dietary restrictions and preference and recommend restaurants.",
+      "popDisH2": "Popular dishes and food items in Panama.",
+      "sanocSpan": "Sancocho:",
+      "thisPanNational": "This is Panama's national dish and is usually served with rice. It is a hearty soup made with chicken, yams, plantains, corn on the cob, and other vegetables.",
+      "arrozConSpan": "Arroz con Pollo:",
+      "aTradition": "A traditional dish made with rice and tender chicken. It is often seasoned with spices and vegetables.",
+      "cevSpan": "Ceviche:",
+      "panaVers": "Panama's version of ceviche typically includes fish or seafood marinated in lime juice, onions, peppers, and cilantro.",
+      "pataSpan": "Patacones:",
+      "friedGreen": "Fried green plantains that have been flattened and then fried again. They can be served as a side dish or as the base for other toppings, such as ceviche or shredded meat.",
+      "carimSpan": "Carimañolas:",
+      "theseAre": "These are similar to empanadas, but the dough is made from mashed yucca or yam. Ground beef or chicken is usually used to fill them, then they are deep fried.",
+      "ropaViSpan": "Ropa Vieja:",
+      "aDish": "A dish made with shredded beef cooked in a tomato-based sauce with bell peppers, onions, and other seasonings.",
+      "tamalesH2": "Tamales:",
+      "panTam": ":Panamanian tamales are made from corn dough, filled with meat, vegetables, and sometimes olives, and then steamed.",
+      "bollosSpan": "Bollos:",
+      "cornDough": "Corn dough wrapped in banana leaves and steamed. They can be filled with a variety of ingredients, such as fish, chicken or vegetables.",
+      "yucaSpan": "Yuca con Mojo:",
+      "yuca": "Yuca (cassava) is boiled and served with a garlic and citrus sauce called mojo.",
+      "chichemeSpan": "Chicheme:",
+      "aSweet": "A sweet, non-alcoholic beverage made from corn, milk, cinnamon, and vanilla.",
+      "secoSpan": "Seco de Pollo:",
+      "aChicken": " A chicken stew made with cilantro, onions, bell peppers, and other spices. It is usually served with rice and beans.",
+      "ensaladSpan": "Ensalada de Feria:",
+      "aFestive": "A festive salad made with a variety of ingredients such as beets, apples, potatoes, and mayonnaise.",
+      "tropFruitsH2": "Tropical fruits",
+      "panamaClimate": "Panama's  favorable climate allows for a variety of delicious tropical fruits to be grown. Some of the local tropical fruits include:",
+      "guavaSpan": "Guava (Guayaba):",
+      "thisFruit": "This fruit is common throughout Panama and comes in different varieties, including white and pink. Guavas are often eaten fresh or used to make juices, jams, and desserts.",
+      "pinaSpan": "Pineapple (Piña):",
+      "PanamaProd": "Panama produces sweet and juicy pineapples that are eaten fresh or used to make fruit salads, smoothies, and desserts."
+
+
     }
   ],
   "featured": [
