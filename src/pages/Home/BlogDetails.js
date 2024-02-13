@@ -2541,7 +2541,7 @@ const BlogDetails = () => {
             <h2>{blog.hereAre}</h2>
             <p><span className="six-hundred">{blog.repectSpan}</span> {blog.panCult}</p>
             <p><span className="six-hundred">{blog.frienSpan}</span> {blog.panamAre}</p>
-            <p><span className="six-hundred">{blog.greet}</span> {blog.itIsCusto}</p>
+            <p><span className="six-hundred">{blog.greet}</span> {blog.itIsCusto}<strong>{blog.strongGreet}</strong>{blog.ifYouAre}</p>
             <p>{blog.whenMeeting}</p>
             <p><span className="six-hundred">{blog.famBondsSpan}</span> {blog.panSoc}</p>
             <p><span className="six-hundred">{blog.relInfluSpan}</span> {blog.mostPan}</p>
@@ -2593,21 +2593,77 @@ const BlogDetails = () => {
               <li>{blog.shirts}</li>
             </ul>
             <p>{blog.understanding}</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <div className="button-parent">
+              <button
+                title="Things to do in El Cangrejo"
+                onClick={goToElCangrejoStory}
+              >
+                &#60;
+              </button>
+              <button
+                title="How do I visit the Panama Canal?"
+                onClick={goToCanalStory}
+              >
+                &#62;
+              </button>
+            </div>
+          </section>
+        )}
+      </main>
+    );
+  }
+  if (document.title === "What is the food like in Panama?") {
+    return (
+      <main id="main-element" className={`blog-details margin `}>
+        {isPending && <div>Loading...</div>}
+        {error && <div className="load-error">{error}</div>}
+        {blog && (
+          <section className={blog.className}>
+            <div className="line-divider centered wide">
+              <p className="diamond-text-box date">
+                <span className="left"></span>
+                <span className="content caps centered">{blog.date}</span>
+                <span className="right"></span>
+              </p>
+            </div>
+            <h1 className="centered post-title">{blog.title}</h1>
+            <p className="body intro">{blog.intro}</p>
+            <div className="share-parent">
+              <FacebookShareButton
+                url={currentPageUrl}
+                hashtag="#panama"
+                aria-label="facebook"
+              >
+                <FacebookIcon size={35} />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url={currentPageUrl}
+                hashtags={["pickuppanama", "food", "cuisine", "panama"]}
+                title={"What is the food like in Panama?"}
+                aria-label="twitter"
+              >
+                <TwitterIcon size={35} />
+              </TwitterShareButton>
+              <LinkedinShareButton
+                url={currentPageUrl}
+                title={"What is the food like in Panama?"}
+                summary={
+                  "Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting."
+                }
+                aria-label="linkedin"
+              >
+                <LinkedinIcon size={35} />
+              </LinkedinShareButton>
+              <EmailShareButton
+                url={currentPageUrl}
+                subject={"What is the food like in Panama?"}
+                body={`Learn about the spoken Spanish of Panama and why Spanish is important to learn.`}
+                aria-label="email"
+                separator={" "}
+              >
+                <EmailIcon size={35} />
+              </EmailShareButton>
+            </div>
 
 
 
@@ -2632,6 +2688,7 @@ const BlogDetails = () => {
       </main>
     );
   }
+
 
 else {
     return (

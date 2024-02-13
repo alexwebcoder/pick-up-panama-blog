@@ -30,7 +30,11 @@ export const Capitalize = () => {
     }
     if (document.title === "What are the cultural norms of panama") {
         document.title = "What are the cultural norms of Panama?"
-        document.getElementsByTagName('meta')["description"].content = "Learn the cultural norms of Panama and navigate social interactions successfully.";
+        document.getElementsByTagName('meta')["description"].content = "Learn the cultural norms of Panama and successfully navigate social interactions.";
+    }
+    if (document.title === "What is the food like in panama") {
+        document.title = "What is the food like in Panama?"
+        document.getElementsByTagName('meta')["description"].content = "Inform yourself on Panamanian cuisine, popular dishes and how to eat inexpensively while in Panama,";
     }
     if (document.title === "Pick Up Panama | Learn About Panama") {
         document.getElementsByTagName('meta')["description"].content = "Pick Up Panama is a blog that provides information, culture, and lifestyle about Panama.";
