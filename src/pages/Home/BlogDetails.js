@@ -2627,7 +2627,10 @@ const BlogDetails = () => {
               </p>
             </div>
             <h1 className="centered post-title">{blog.title}</h1>
-            <p className="body intro">{blog.intro}</p>
+            <div className="body intro">
+              <p>{blog.intro}</p>
+              <p>{blog.thisArticle}</p>
+              </div>
             <div className="share-parent">
               <FacebookShareButton
                 url={currentPageUrl}
@@ -2664,6 +2667,49 @@ const BlogDetails = () => {
                 <EmailIcon size={35} />
               </EmailShareButton>
             </div>
+
+            <h2>{blog.panFoodH2}</h2>
+            <p><span className="six-hundred">{blog.sanocSpan}</span> {blog.thisPanNational}</p>
+            <p><span className="six-hundred">{blog.arrozConSpan}</span> {blog.aTradition}</p>
+            <p><span className="six-hundred">{blog.cevSpan}</span> {blog.panaVers}</p>
+            <p><span className="six-hundred">{blog.pataSpan}</span> {blog.friedGreen}</p>
+            <p><span className="six-hundred">{blog.carimSpan}</span> {blog.theseAre}</p>
+            <p><span className="six-hundred">{blog.ropaViSpan}</span> {blog.aDish}</p>
+            <p><span className="six-hundred">{blog.tamalesSp}</span> {blog.panTam}</p>
+            <p><span className="six-hundred">{blog.bollosSpan}</span> {blog.cornDough}</p>
+            <p><span className="six-hundred">{blog.yucaSpan}</span> {blog.yuca}</p>
+            <p><span className="six-hundred">{blog.chichemeSpan}</span> {blog.aSweet}</p>
+            <p><span className="six-hundred">{blog.secoSpan}</span> {blog.aChicken}</p>
+            <p><span className="six-hundred">{blog.ensaladSpan}</span> {blog.aFestive}</p>
+            <h2>{blog.tropFruitsH2}</h2>
+
+            <p>{blog.panamaClimate}</p>
+            <p><span className="six-hundred">{blog.guavaSpan}</span> {blog.thisFruit}</p>
+            <p><span className="six-hundred">{blog.pinaSpan}</span> {blog.PanamaProd}</p>
+            <p><span className="six-hundred">{blog.papaySpan}</span> {blog.papThrive}</p>
+            <p><span className="six-hundred">{blog.mangoSpan}</span> {blog.panamOffers}</p>
+            <p><span className="six-hundred">{blog.bananSp}</span> {blog.banPlan}</p>
+            <p><span className="six-hundred">{blog.cocoSp}</span> {blog.cocoGrow}</p>
+            <p><span className="six-hundred">{blog.starSpan}</span> {blog.starFr}</p>
+            <p><span className="six-hundred">{blog.passionSpan}</span> {blog.thisTang}</p>
+            <p><span className="six-hundred">{blog.sourSopSp}</span> {blog.sourSop}</p>
+            <p><span className="six-hundred">{blog.cashfrSp}</span> {blog.cashNuts}</p>
+            <h2>{blog.streeVenH2}</h2>
+            <p>{blog.streeFood}</p>
+            <p>{blog.theseVen}</p>
+            <p>{blog.popularInc}</p>
+            <p><span className="six-hundred">{blog.empSpan}</span> {blog.theseAreSav}</p>
+            <p><span className="six-hundred">{blog.carimanSpan}</span> {blog.similarTo}</p>
+            <p><span className="six-hundred">{blog.tamalesSpan}</span> {blog.tamalesAre}</p>
+            <p><span className="six-hundred">{blog.cevSpanV}</span> {blog.cev}</p>
+            <p><span className="six-hundred">{blog.fruitCupSpan}</span> {blog.freshTropical}</p>
+            <p><span className="six-hundred">{blog.chichSpan}</span> {blog.theseAreCrisp}</p>
+            <p><span className="six-hundred">{blog.raspeoSpan}</span> {blog.raspOr}</p>
+            <p><span className="six-hundred">{blog.plantSp}</span> {blog.plantAre}</p>
+
+
+
+
 
 
 
