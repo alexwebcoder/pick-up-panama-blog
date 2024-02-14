@@ -832,7 +832,7 @@
       "className": "food",
       "intro": "Panamanian cuisine is a blend of African, Spanish, and indigenous influences, creating a rich and flavorful culinary heritage.",
       "thisArticle": "This article will cover key ingredients used in Panamanian cooking, food safety and hygiene, provide information on dietary restrictions and preference and recommend restaurants.",
-      "popDisH2": "Popular dishes and food items in Panama.",
+      "panFoodH2": "Panama food dishes",
       "sanocSpan": "Sancocho:",
       "thisPanNational": "This is Panama's national dish and is usually served with rice. It is a hearty soup made with chicken, yams, plantains, corn on the cob, and other vegetables.",
       "arrozConSpan": "Arroz con Pollo:",
@@ -862,7 +862,17 @@
       "guavaSpan": "Guava (Guayaba):",
       "thisFruit": "This fruit is common throughout Panama and comes in different varieties, including white and pink. Guavas are often eaten fresh or used to make juices, jams, and desserts.",
       "pinaSpan": "Pineapple (Piña):",
-      "PanamaProd": "Panama produces sweet and juicy pineapples that are eaten fresh or used to make fruit salads, smoothies, and desserts."
+      "PanamaProd": "Panama produces sweet and juicy pineapples that are eaten fresh or used to make fruit salads, smoothies, and desserts.",
+      "papaySpan": "Papaya (Fruta Bomba):",
+      "papThrive": "Papayas thrive in the tropical climate and are available everywhere. They are often eaten fresh, either on their own or added to fruit salads and smoothies.",
+      "mangoSpan": "Mango",
+      "panamOffers": ":Panama offers a range of mango varieties, all with their own distinct flavor and texture. You can eat mangoes fresh, sliced, or blended into refreshing drinks and desserts.",
+      "bananH2": "Banana and plantain (Plátano):",
+      "banPlan": "Bananas and plantains are staples in Panamanian cuisine. They are used in a number of dishes, from fried plantains served as a side dish to bananas added to desserts and smoothies.",
+      "cocoSp": "Coconut (Coco):",
+      "cocoGrow": " Coconuts grow all over Panama and are used in lots of different ways, including fresh coconut water, coconut milk, and grated for desserts and other dishes.",
+      "starSpan": "Starfruit (Carambola):"
+
 
 
     }
