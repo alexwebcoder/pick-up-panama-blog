@@ -52,7 +52,7 @@ const BlogDetails = () => {
   //el cangrejo page forward
   const navigateSpanish = useNavigate();
   const goToSpanishStory = () => {
-    navigateSpanish("/blogs/how-much-spanish-do-i-need-to-know-in-panama");
+    navigateSpanish("/blogs/what-languages-are-spoken-in-panama");
   };
 
   const currentPageUrl = window.location.href;
@@ -2228,7 +2228,7 @@ const BlogDetails = () => {
                 &#60;
               </button>
               <button
-                title="How Much Spanish do I Need to Know in Panama??"
+                title="What languages are spoken in Panama?"
                 onClick={goToSpanishStory}
               >
                 &#62;
