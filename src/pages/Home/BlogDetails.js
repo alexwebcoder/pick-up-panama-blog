@@ -31,7 +31,7 @@ const BlogDetails = () => {
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
 
-  //safety page forward back
+  //canal navigation
   const navigate = useNavigate();
   const goToCanalStory = () => {
     navigate("/featured/how-do-i-visit-the-panama-canal");
@@ -49,11 +49,23 @@ const BlogDetails = () => {
     navigateA("/blogs/things-to-do-in-el-cangrejo");
   };
 
-  //el cangrejo page forward
+  //spanish page navigation
   const navigateSpanish = useNavigate();
   const goToSpanishStory = () => {
     navigateSpanish("/blogs/what-languages-are-spoken-in-panama");
   };
+
+  //cultural norms navigation
+  const navigateCultural = useNavigate();
+  const goToCulturalNorms = () => {
+    navigateCultural("/blogs/what-are-the-cultural-norms-of-panama");
+  };
+
+   //food navigation
+   const navigateFood = useNavigate();
+ const goToFood = () => {
+    navigateFood('/blogs/traditional-food-in-panama')
+  }
 
   const currentPageUrl = window.location.href;
 
@@ -2472,8 +2484,8 @@ const BlogDetails = () => {
                 &#60;
               </button>
               <button
-                title="How do I visit the Panama Canal?"
-                onClick={goToCanalStory}
+                title="What are the cultural norms of Panama?"
+                onClick={goToCulturalNorms}
               >
                 &#62;
               </button>
@@ -2595,14 +2607,14 @@ const BlogDetails = () => {
             <p>{blog.understanding}</p>
             <div className="button-parent">
               <button
-                title="Things to do in El Cangrejo"
-                onClick={goToElCangrejoStory}
+                title="What languages are spoken in Panama?"
+                onClick={goToSpanishStory}
               >
                 &#60;
               </button>
               <button
-                title="How do I visit the Panama Canal?"
-                onClick={goToCanalStory}
+                title="Traditional food in Panama"
+                onClick={goToFood}
               >
                 &#62;
               </button>
@@ -2717,13 +2729,13 @@ const BlogDetails = () => {
            
             <div className="button-parent">
               <button
-                title="Things to do in El Cangrejo"
-                onClick={goToElCangrejoStory}
+                title="What are the cultural norms of Panama?"
+                onClick={goToCulturalNorms}
               >
                 &#60;
               </button>
               <button
-                title="How do I visit the Panama Canal?"
+                title="How Do I Visit the Panama Canal?"
                 onClick={goToCanalStory}
               >
                 &#62;

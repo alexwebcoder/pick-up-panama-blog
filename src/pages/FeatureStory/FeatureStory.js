@@ -29,10 +29,9 @@ const FeatureStory = () => {
   TabTitle("How Do I Visit the Panama Canal?");
   Capitalize();
 
-  const navigateSpanish = useNavigate();
-
- const goToSpanishStory = () => {
-    navigateSpanish('/blogs/how-much-spanish-do-i-need-to-know-in-panama')
+const navigateFood = useNavigate();
+ const goToFood = () => {
+    navigateFood('/blogs/traditional-food-in-panama')
   }
 
   const featureNavigate = useNavigate();
@@ -735,7 +734,7 @@ const FeatureStory = () => {
             </div>
             <p className="video-caption last-figure">{blog.storyVideoCaption}</p>
           <div className="button-parent">
-            <button title="How Much Spanish do I Need to Know in Panama?" onClick={goToSpanishStory}>&#60;</button>
+            <button title="Traditional food in Panama" onClick={goToFood}>&#60;</button>
             <button title="Is Panama Safe?" onClick={goToSafetyStoryA}>&#62;</button>
           </div>
         </section>
