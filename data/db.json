@@ -830,7 +830,7 @@
       "date": "February 12, 2024",
       "id": "traditional-food-in-panama",
       "className": "food",
-      "intro": "Panamanian cuisine is a blend of African, Spanish, and indigenous influences, creating a rich and flavorful culinary heritage.",
+      "intro": "Panamanian cuisine is a blend of African, Spanish, Caribbean, and indigenous influences, creating a rich and flavorful culinary heritage.",
       "thisArticle": "This article will cover key ingredients used in Panamanian cooking, food safety and hygiene, provide information on dietary restrictions and preference and recommend restaurants.",
       "panFoodH2": "Panama food dishes",
       "sanocSpan": "Sancocho:",
@@ -898,10 +898,35 @@
       "raspeoSpan": "Raspao",
       "raspOr": "Raspao, or shaved ice, is a refreshing treat sold by street vendors, especially in hot weather. It's flavored with fruit syrups and condensed milk.",
       "plantSp": "Plantain Chips (Patacones):",
-      "plantAre": "Plantains are cut into thin slices, fried until crisp, and served as chips. They can be seasoned with salt or other spices and eaten as a snack."
-
-
-
+      "plantAre": "Plantains are cut into thin slices, fried until crisp, and served as chips. They can be seasoned with salt or other spices and eaten as a snack.",
+      "desertsH2": "Traditional Panamanian desserts",
+      "tresLechSp": "Tres Leches Cake (Pastel de Tres Leches):",
+      "thisIs": " This is one of the most popular desserts in Panama and also across Latin America. It's a sponge cake soaked in a mixture of evaporated milk, condensed milk, and heavy cream. It's topped with whipped cream and sometimes fruit and is moist and rich.",
+      "dulceTamSp": "Tres Leches Cake (Pastel de Tres Leches):",
+      "tamarindCan": "Tamarind candy is made by boiling tamarind pulp with sugar until it thickens into a sticky, sweet paste. The mixture is then poured into molds to set. Sometimes it's rolled in sugar or shredded coconut for added sweetness and texture.",
+      "hojaSp": "Hojaldres:",
+      "theseArePan": "These are Panamanian-style fried dough pastries. They are similar to puff pastries, but are slightly sweet. They're often served with a light coating of powdered sugar or drizzled with honey or syrup. Sometimes they're filled with sweet ingredients like fruit preserves or caramel.",
+      "arrozConSp": "Arroz con Leche:",
+      "thisIsA": "This is a traditional rice pudding made by simmering rice with milk, sugar, cinnamon, and sometimes raisins until it thickens into a creamy consistency. It's often served cold and topped with cinnamon.",
+      "cocadesSp": "Cocadas:",
+      "theseAreCo": "These are coconut-based candies made from shredded coconut, sugar, and sometimes condensed milk or egg whites. The mixture is shaped into small balls or patties and baked until golden brown. They're sweet, chewy, and often flavored with vanilla.",
+      "chichSp": "Chicheme:",
+      "chichIs": "Chicheme is a traditional Panamanian drink that can also be served as a dessert. It's made from sweet corn, milk, cinnamon, cloves, and sugar. It's then blended together and served cold. It has a creamy texture and a sweet flavor.",
+      "panamaDrinksH2": "Panama drinks:",
+      "secoHerranoSp": "Seco Herrerano:",
+      "thisIsPan": "This is Panama's national alcoholic drink. Seco Herrerano is distilled from sugarcane and is usually consumed straight or on the rocks. It is sometimes mixed with soda water, fruit juices (such as pineapple or orange), or coconut water. It's an all-around beverage and is enjoyed in many social settings.",
+      "chichaSpan": "Chicha de Arroz con Piña:",
+      "riceBased": "This is a traditional homemade, rice-based, drink that is flavored with pineapple, cinnamon, and sometimes cloves. It's sweet, creamy, and served cold.",
+      "ronPSpan": "Ron Ponche:",
+      "ronPonche": "Ron Ponche is a traditional Panamanian rum punch that is often served during festive occasions like Christmas and New Year's Eve. It's made by mixing dark rum with evaporated milk, condensed milk, vanilla extract, and spices like cinnamon and nutmeg. It boasts a luxuriously smooth and creamy texture.",
+      "refrescNat": "Refrescos Naturales:",
+      "panamaIs": "Panama is abundant in tropical fruits. Many households and restaurants serve freshly squeezed fruit juices or 'refrescos naturales.' Some popular fruit options include passion fruit (maracuyá), mango (mango), pineapple (piña), and guava (guayaba). These refreshing beverages are often served over ice and sweetened to taste.",
+      "cafeConSpan": "Café con Leche:",
+      "coffeeIs": "Coffee is an important part of Panamanian culture, and café con leche (coffee with milk) is a popular way to enjoy it. Panamanian coffee is known for its rich flavor and smooth texture. Café con leche is usually made by mixing equal parts of brewed coffee and steamed milk. It is sometimes sweetened with sugar.",
+      "pipaFriSp": "Pipa Fría:",
+      "pipa": "Pipa Fría is made from coconut water, and usually served straight from a coconut. It's naturally hydrating and popular on hot days. It provides a sweet and refreshing taste of the tropics",
+      "foodHealthH2": "What are the food health standards like in Panama?",
+      "foodHeealthPara": "In Panama, food health standards are overseen by governmental agencies and regulatory bodies to make sure the quality of the food supply is safe. Some of the key regulators of  food safety and health standards are:"
 
 
 

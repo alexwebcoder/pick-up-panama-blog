@@ -2718,6 +2718,26 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.chichSpan}</span> {blog.theseAreCrisp}</p>
             <p><span className="six-hundred">{blog.raspeoSpan}</span> {blog.raspOr}</p>
             <p><span className="six-hundred">{blog.plantSp}</span> {blog.plantAre}</p>
+            <h2>{blog.desertsH2}</h2>
+            <p><span className="six-hundred">{blog.tresLechSp}</span> {blog.thisIs}</p>
+            <p><span className="six-hundred">{blog.dulceTamSp}</span> {blog.tamarindCan}</p>
+            <p><span className="six-hundred">{blog.hojaSp}</span> {blog.theseArePan}</p>
+            <p><span className="six-hundred">{blog.arrozConSp}</span> {blog.thisIsA}</p>
+            <p><span className="six-hundred">{blog.cocadesSp}</span> {blog.theseAreCo}</p>
+            <p><span className="six-hundred">{blog.chichSp}</span> {blog.chichIs}</p>
+            <h2>{blog.panamaDrinksH2}</h2>
+            <p><span className="six-hundred">{blog.secoHerranoSp}</span> {blog.thisIsPan}</p>
+            <p><span className="six-hundred">{blog.chichaSpan}</span> {blog.riceBased}</p>
+            <p><span className="six-hundred">{blog.ronPSpan}</span> {blog.ronPonche}</p>
+            <p><span className="six-hundred">{blog.refrescNat}</span> {blog.panamaIs}</p>
+            <p><span className="six-hundred">{blog.cafeConSpan}</span> {blog.coffeeIs}</p>
+            <p><span className="six-hundred">{blog.pipaFriSp}</span> {blog.pipa}</p>
+            <h2>{blog.foodHealthH2}</h2>
+            <p>{blog.foodHeealthPara}</p> 
+
+
+ 
+
 
 
 
