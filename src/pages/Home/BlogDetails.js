@@ -2726,6 +2726,7 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.cocadesSp}</span> {blog.theseAreCo}</p>
             <p><span className="six-hundred">{blog.chichSp}</span> {blog.chichIs}</p>
             <h2>{blog.panamaDrinksH2}</h2>
+            <p>{blog.theseDrinks}</p>
             <p><span className="six-hundred">{blog.secoHerranoSp}</span> {blog.thisIsPan}</p>
             <p><span className="six-hundred">{blog.chichaSpan}</span> {blog.riceBased}</p>
             <p><span className="six-hundred">{blog.ronPSpan}</span> {blog.ronPonche}</p>
@@ -2733,7 +2734,20 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.cafeConSpan}</span> {blog.coffeeIs}</p>
             <p><span className="six-hundred">{blog.pipaFriSp}</span> {blog.pipa}</p>
             <h2>{blog.foodHealthH2}</h2>
-            <p>{blog.foodHeealthPara}</p> 
+            <p>{blog.foodHeealthPara}</p>
+            <p>{blog.foodEstabl}</p>
+            <p>{blog.someAre}</p>
+            <p><span className="six-hundred">{blog.ministrySpan}</span> {blog.theMin}</p>
+            <p><span className="six-hundred">{blog.panFoodSafeSp}</span> {blog.aupsa}</p>
+            <p><span className="six-hundred">{blog.nationalFoodSp}</span> {blog.senIs}</p>
+            <p><span className="six-hundred">{blog.panInSp}</span> {blog.idiap}</p>
+            <p><span className="six-hundred">{blog.foodAn}</span> {blog.panaFood}</p>
+            <h2>{blog.americanFood}</h2>
+            <p>{blog.yes}</p>
+
+
+
+
 
 
  

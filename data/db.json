@@ -895,7 +895,7 @@
       "freshTropical": "Fresh tropical fruits, like pineapple, mango, watermelon, and papaya, are sold in cups or on skewers. They are seasoned with lime juice, salt, and chili powder.",
       "chichSpan": "Chicharrones:",
       "theseAreCrisp": "These are crispy fried pork rinds or pork belly served as a snack or accompaniment to meals. They are popular street food items in Panama and are  seasoned with salt and lime.",
-      "raspeoSpan": "Raspao",
+      "raspeoSpan": "Raspao:",
       "raspOr": "Raspao, or shaved ice, is a refreshing treat sold by street vendors, especially in hot weather. It's flavored with fruit syrups and condensed milk.",
       "plantSp": "Plantain Chips (Patacones):",
       "plantAre": "Plantains are cut into thin slices, fried until crisp, and served as chips. They can be seasoned with salt or other spices and eaten as a snack.",
@@ -913,6 +913,7 @@
       "chichSp": "Chicheme:",
       "chichIs": "Chicheme is a traditional Panamanian drink that can also be served as a dessert. It's made from sweet corn, milk, cinnamon, cloves, and sugar. It's then blended together and served cold. It has a creamy texture and a sweet flavor.",
       "panamaDrinksH2": "Panama drinks:",
+      "theseDrinks": "These drinks offer a peek into Panama's vibrant beverage culture, where traditional recipes and local ingredients come together to create delicious and diverse options for locals and visitors alike.",
       "secoHerranoSp": "Seco Herrerano:",
       "thisIsPan": "This is Panama's national alcoholic drink. Seco Herrerano is distilled from sugarcane and is usually consumed straight or on the rocks. It is sometimes mixed with soda water, fruit juices (such as pineapple or orange), or coconut water. It's an all-around beverage and is enjoyed in many social settings.",
       "chichaSpan": "Chicha de Arroz con Piña:",
@@ -926,7 +927,24 @@
       "pipaFriSp": "Pipa Fría:",
       "pipa": "Pipa Fría is made from coconut water, and usually served straight from a coconut. It's naturally hydrating and popular on hot days. It provides a sweet and refreshing taste of the tropics",
       "foodHealthH2": "What are the food health standards like in Panama?",
-      "foodHeealthPara": "In Panama, food health standards are overseen by governmental agencies and regulatory bodies to make sure the quality of the food supply is safe. Some of the key regulators of  food safety and health standards are:"
+      "foodHeealthPara": "In Panama, food health standards are overseen by government agencies and health authorities to make sure the quality of the food supply is safe.",
+      "someAre": "Some of the key regulators of  food safety and health standards are:",
+      "ministrySpan": "Ministry of Health (Ministerio de Salud, MINSA):",
+      "theMin": "The Ministry of Health is responsible for overseeing public health initiatives and regulations, including those related to food safety. MINSA conducts inspections of food establishments, enforces health regulations, and monitors foodborne illnesses.",
+      "panFoodSafeSp": "Panamanian Food Safety Authority (Autoridad Panameña de Seguridad de Alimentos, AUPSA):",
+      "aupsa": "AUPSA is the government agency tasked with regulating and overseeing food safety standards in Panama. They establish and enforce regulations related to food production, processing, labeling, and distribution to ensure compliance with national and international standards.",
+      "nationalFoodSp": "National Food Safety and Quality Service (Servicio Nacional de Calidad y Seguridad Alimentaria, SENACYT):",
+      "senIs": "SENACYT is responsible for promoting food safety and quality standards, conducting research, and providing technical assistance and training to food industry professionals.",
+      "panInSp": "Panamanian Institute of Agricultural Research (Instituto de Investigación Agropecuaria de Panamá, IDIAP):",
+      "idiap": "IDIAP conducts research and provides technical support to the agricultural sector, including initiatives related to crop production, food safety, and agricultural sustainability.",
+      "foodAn": "Food and Drug Administration (FDA) Equivalent:",
+      "panaFood": "Panama's food safety regulations often align with international standards, including those established by the Food and Drug Administration (FDA) in the United States. This alignment helps ensure that imported food products meet recognized safety and quality standards.",
+      "foodEstabl": "These agencies assess compliance with hygiene, sanitation, and food handling practices. Food businesses are required to maintain cleanliness, proper storage conditions, and adherence to temperature controls to prevent contamination and foodborne illnesses.",
+      "americanFood": "Can I get American food in Panama?",
+      "yes": "Yes. If you're craving a taste of home or want to eat familiar American dishes, you'll have lots of options to choose from, especially in Panama City.",
+      "someOf": "Some of the American food options you can expect to find in Panama include:",
+      
+
 
 
 
