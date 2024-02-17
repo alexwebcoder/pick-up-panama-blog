@@ -2603,6 +2603,7 @@ const BlogDetails = () => {
               <li>{blog.drinkingLi}</li>
               <li>{blog.beachAttire}</li>
               <li>{blog.shirts}</li>
+              <li>{blog.driving}</li>
             </ul>
             <p>{blog.understanding}</p>
             <div className="button-parent">
@@ -2694,7 +2695,6 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.secoSpan}</span> {blog.aChicken}</p>
             <p><span className="six-hundred">{blog.ensaladSpan}</span> {blog.aFestive}</p>
             <h2>{blog.tropFruitsH2}</h2>
-
             <p>{blog.panamaClimate}</p>
             <p><span className="six-hundred">{blog.guavaSpan}</span> {blog.thisFruit}</p>
             <p><span className="six-hundred">{blog.pinaSpan}</span> {blog.PanamaProd}</p>
@@ -2706,19 +2706,9 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.passionSpan}</span> {blog.thisTang}</p>
             <p><span className="six-hundred">{blog.sourSopSp}</span> {blog.sourSop}</p>
             <p><span className="six-hundred">{blog.cashfrSp}</span> {blog.cashNuts}</p>
-            <h2>{blog.streeVenH2}</h2>
-            <p>{blog.streeFood}</p>
-            <p>{blog.theseVen}</p>
-            <p>{blog.popularInc}</p>
-            <p><span className="six-hundred">{blog.empSpan}</span> {blog.theseAreSav}</p>
-            <p><span className="six-hundred">{blog.carimanSpan}</span> {blog.similarTo}</p>
-            <p><span className="six-hundred">{blog.tamalesSpan}</span> {blog.tamalesAre}</p>
-            <p><span className="six-hundred">{blog.cevSpanV}</span> {blog.cev}</p>
-            <p><span className="six-hundred">{blog.fruitCupSpan}</span> {blog.freshTropical}</p>
-            <p><span className="six-hundred">{blog.chichSpan}</span> {blog.theseAreCrisp}</p>
-            <p><span className="six-hundred">{blog.raspeoSpan}</span> {blog.raspOr}</p>
-            <p><span className="six-hundred">{blog.plantSp}</span> {blog.plantAre}</p>
             <h2>{blog.desertsH2}</h2>
+            <p>{blog.enjoySome}</p>
+
             <p><span className="six-hundred">{blog.tresLechSp}</span> {blog.thisIs}</p>
             <p><span className="six-hundred">{blog.dulceTamSp}</span> {blog.tamarindCan}</p>
             <p><span className="six-hundred">{blog.hojaSp}</span> {blog.theseArePan}</p>
@@ -2744,6 +2734,57 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.foodAn}</span> {blog.panaFood}</p>
             <h2>{blog.americanFood}</h2>
             <p>{blog.yes}</p>
+            <p>{blog.someOf}</p>
+            <p><span className="six-hundred">{blog.fastFoodSp}</span> {blog.majorFast}</p>
+            <p><span className="six-hundred">{blog.casualDining}</span> {blog.thereAreCas}</p>
+            <p><span className="six-hundred">{blog.steakHouse}</span> {blog.amerStyle}</p>
+            <p><span className="six-hundred">{blog.intChains}</span> {blog.panaCity}</p>
+            <p><span className="six-hundred">{blog.sportsBars}</span> {blog.sports}</p>
+            <h2>{blog.howEatH2}</h2>
+            <h3>{blog.fondaH3}</h3>
+            <p>{blog.fondaRefers}</p>
+            <p>{blog.theseEst}</p>
+            <p>{blog.theChoices}</p>
+            <p>{blog.thisIsAgreat}</p>
+            <p>{blog.theMenu}</p>
+            <p>{blog.atmosphere}</p>
+            <p>{blog.importRole}</p>
+            <h2>{blog.otherTips}</h2>
+            <h3>{blog.streeVenH2}</h3>
+            <p>{blog.streeFood}</p>
+            <p>{blog.theseVen}</p>
+            <p>{blog.popularInc}</p>
+            <p><span className="six-hundred">{blog.empSpan}</span> {blog.theseAreSav}</p>
+            <p><span className="six-hundred">{blog.carimanSpan}</span> {blog.similarTo}</p>
+            <p><span className="six-hundred">{blog.tamalesSpan}</span> {blog.tamalesAre}</p>
+            <p><span className="six-hundred">{blog.cevSpanV}</span> {blog.cev}</p>
+            <p><span className="six-hundred">{blog.fruitCupSpan}</span> {blog.freshTropical}</p>
+            <p><span className="six-hundred">{blog.chichSpan}</span> {blog.theseAreCrisp}</p>
+            <p><span className="six-hundred">{blog.raspeoSpan}</span> {blog.raspOr}</p>
+            <p><span className="six-hundred">{blog.plantSp}</span> {blog.plantAre}</p>
+            <h3>{blog.menuDel}</h3>
+            <p>{blog.manyRest}</p> 
+            <h3>{blog.localMarkets}</h3>
+            <p>{blog.visitLocal}</p>
+            <h3>{blog.cook}</h3>
+            <p>{blog.ifYouHave}</p>
+            <h3>{blog.shareH3}</h3>
+            <p>{blog.shareMeals}</p>
+            <h3>{blog.avoidH3}</h3>
+            <p>{blog.avoidTourist}</p>
+            <h3>{blog.byob}</h3>
+            <p>{blog.someAllow}</p> 
+
+            
+
+
+
+
+
+
+            <p>{blog.summary}</p>
+
+
 
 
 
