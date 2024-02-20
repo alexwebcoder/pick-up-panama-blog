@@ -2773,7 +2773,14 @@ const BlogDetails = () => {
             <h3>{blog.avoidH3}</h3>
             <p>{blog.avoidTourist}</p>
             <h3>{blog.byob}</h3>
-            <p>{blog.someAllow}</p> 
+            <p>{blog.someAllow}</p>
+            <h2>{blog.VeganOptions}</h2>
+            <p><span className="six-hundred">{blog.veganOSpan}</span> {blog.thisVegan}</p>
+            <p><span className="six-hundred">{blog.vegSuSpan}</span> {blog.allDishes}</p>
+            <p><span className="six-hundred">{blog.veganShackSpan}</span> {blog.fullyVeg}</p>
+            <p><span className="six-hundred">{blog.placeSpan}</span> {blog.veganCafe}</p>
+
+
 
             
 
@@ -2782,7 +2789,7 @@ const BlogDetails = () => {
 
 
 
-            <p>{blog.summary}</p>
+            {/* <p>{blog.summary}</p> */}
 
 
 

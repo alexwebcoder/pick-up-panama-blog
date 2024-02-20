@@ -895,9 +895,9 @@
       "fruitCupSpan": "Fruit cups:",
       "freshTropical": "Fresh tropical fruits, like pineapple, mango, watermelon, and papaya, are sold in cups or on skewers. They are seasoned with lime juice, salt, and chili powder.",
       "chichSpan": "Chicharrones:",
-      "theseAreCrisp": "These are crispy fried pork rinds or pork belly served as a snack or accompaniment to meals. They are popular street food items in Panama and are  seasoned with salt and lime.",
+      "theseAreCrisp": "These are crispy fried pork rinds or pork belly served as a snack or accompaniment to meals. They are seasoned with salt and lime.",
       "raspeoSpan": "Raspao:",
-      "raspOr": "Raspao, or shaved ice, is a refreshing treat sold by street vendors, especially in hot weather. It's flavored with fruit syrups and condensed milk.",
+      "raspOr": "Raspao, or shaved ice, is similar to a snow cone. It's great during hot weather and is flavored with fruit syrups and condensed milk.",
       "plantSp": "Plantain Chips (Patacones):",
       "plantAre": "Plantains are cut into thin slices, fried until crisp, and served as chips. They can be seasoned with salt or other spices and eaten as a snack.",
       "desertsH2": "Traditional Panamanian desserts",
@@ -977,7 +977,20 @@
       "avoidTourist": "Restaurants and cafes in touristy areas tend to have higher prices compared to those in local neighborhoods. Venture off the beaten path to find more budget-friendly dining options.",
       "byob": "BYOB",
       "someAllow": "Some restaurants in Panama allow customers to bring their own alcoholic beverages, which can help save money on drinks. Check if corkage fees apply before bringing your own wine or beer.",
-      "summary": " Panamanian cuisine reflects the country's cultural diversity and showcases the abundance of fresh, locally-sourced ingredients."
+      "summary": " Panamanian cuisine reflects the country's cultural diversity and showcases the abundance of fresh, locally-sourced ingredients.",
+      "VeganOptions": "Gluten free/vegan dining options",
+      "ElJardinSpan": "El Jardin Vegetariano:",
+      "locatedOn": " Located on Via Veneto street in El Cangrejo, El Jardin Vegetariano offers a variety of vegetarian and vegan dishes, including soups, salads, sandwiches, and main courses. The food is served buffet style and you pay for each item you choose. They also have a selection of natural juices and smoothies.",
+      "lovingHutSpan": "Loving Hut:",
+      "lovingHut": "Loving Hut is a global chain of vegan restaurants, and there is one located in Panama City. It's in El Cangrejo on Av. Manuel Espinosa Batista and they offer a wide range of vegan dishes, including burgers, wraps, rice bowls, noodles, and desserts.",
+      "veganOSpan": "Vegano-O-No",
+      "thisVegan": "This vegan spot offers gluten-free fast food options such as burgers, hot dogs, sides, and beverages. No reservations are needed, and the restaurant welcomes pets, and provides both indoor and outdoor seating areas. Everything is vegan and gluten free.",
+      "vegSuSpan": "VegSu Restaurante Vegetariano",
+      "allDishes": "All the dishes are vegan and classic Chinese . There is great selection and they are served on a conveyor belt to your table. Must have for vegetarians in Panama. Their food is very flavorful and reasonably priced. Items include chicken, duck, dim sum and rice.",
+      "veganShackSpan": "The Vegan Shack",
+      "fullyVeg": "Fully vegan restaurant in old town Panama City. Offers all day breakfast, smoothie bowls, main bowls, juices, and more.",
+      "placeSpan": "Planticería",
+      "veganCafe": "Vegan cafe and bakery offering brunch, lunch, sandwiches and baked goods like cookies, cakes,c, and dolly crush. Accepts custom orders. Previously named Hidemi Kocina at Nuevo Paitilla."
 
 
       
