@@ -2303,7 +2303,33 @@ const BlogDetails = () => {
                 <EmailIcon size={35} />
               </EmailShareButton>
             </div>
-
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/spanish/th-panama-products-320.webp 320w, /images/spanish/th-panama-products-480.webp 480w, /images/spanish/th-panama-products-640.webp 640w, /images/spanish/th-panama-products-768.webp 768w, /images/spanish/panama-products.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/spanish/th-panama-products-320.jpg 320w, /images/spanish/th-panama-products-480.jpg 480w, /images/spanish/th-panama-products-640.jpg 640w, /images/spanish/th-panama-products-768.jpg 768w, /images/spanish/panama-products.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  fetchpriority="high"
+                  className="no-right-click"
+                  src={blog.panProducts}
+                  alt={blog.prodAltText}
+                />
+              </picture>
+              <figcaption>{blog.prodCaption}</figcaption>
+            </figure>
             <p>{blog.about15}</p>
             <p>{blog.althoughFlu}</p>
             <h2>{blog.whatRoleh2}</h2>

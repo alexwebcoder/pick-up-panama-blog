@@ -206,8 +206,8 @@ p.this-article {
 .alex-bus {
     padding-top: calc(1560/ 1170 * 100%);
 }
-/* el cangrejo page images */
-.el-cangrejo figure {
+/* el cangrejo/spanish page images */
+.el-cangrejo figure, .spanish figure {
     padding-top: calc(658/ 1171 * 100%);
 }
 .el-cangrejo .crab {
