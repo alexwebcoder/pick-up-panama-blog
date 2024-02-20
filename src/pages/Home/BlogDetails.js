@@ -2278,16 +2278,16 @@ const BlogDetails = () => {
               <TwitterShareButton
                 url={currentPageUrl}
                 hashtags={["pickuppanama", "spanish", "language", "panama"]}
-                title={"What language is spoken in Panama?"}
+                title={"What languages are spoken in Panama?"}
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={"What language is spoken in Panama?"}
+                title={"What languages are spoken in Panama?"}
                 summary={
-                  "Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting."
+                  "Learn about the spoken Spanish of Panama and why Spanish is important to learn."
                 }
                 aria-label="linkedin"
               >
@@ -2524,17 +2524,17 @@ const BlogDetails = () => {
               </FacebookShareButton>
               <TwitterShareButton
                 url={currentPageUrl}
-                hashtags={["pickuppanama", "spanish", "language", "panama"]}
-                title={"What language is spoken in Panama?"}
+                hashtags={["pickuppanama", "cultural norms", "etiquette", "panama"]}
+                title={"What are the cultural norms of Panama?"}
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={"What language is spoken in Panama?"}
+                title={"What are the cultural norms of Panama?"}
                 summary={
-                  "Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting."
+                  "Learn the cultural norms of Panama and successfully navigate social interactions."
                 }
                 aria-label="linkedin"
               >
@@ -2542,8 +2542,8 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={"What language is spoken in Panama?"}
-                body={`Learn about the spoken Spanish of Panama and why Spanish is important to learn.`}
+                subject={"What are the cultural norms of Panama?"}
+                body={`Learn the cultural norms of Panama and successfully navigate social interactions.`}
                 aria-label="email"
                 separator={" "}
               >
@@ -2655,16 +2655,16 @@ const BlogDetails = () => {
               <TwitterShareButton
                 url={currentPageUrl}
                 hashtags={["pickuppanama", "food", "cuisine", "panama"]}
-                title={"What is the food like in Panama?"}
+                title={"Traditional food in Panama"}
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={"What is the food like in Panama?"}
+                title={"Traditional food in Panama"}
                 summary={
-                  "Discover the best restaurants and activities in El Cangrejo and learn why it is worth vistiting."
+                  "Find out about Panamanian food dishes, the best food in Panama City and how to eat on a budget."
                 }
                 aria-label="linkedin"
               >
@@ -2672,8 +2672,8 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={"What is the food like in Panama?"}
-                body={`Learn about the spoken Spanish of Panama and why Spanish is important to learn.`}
+                subject={"Traditional food in Panama"}
+                body={`Find out about Panamanian food dishes, the best food in Panama City and how to eat on a budget.`}
                 aria-label="email"
                 separator={" "}
               >
@@ -2775,6 +2775,7 @@ const BlogDetails = () => {
             <h3>{blog.byob}</h3>
             <p>{blog.someAllow}</p>
             <h2>{blog.VeganOptions}</h2>
+            <p>{blog.hereAre}</p>
             <p><span className="six-hundred">{blog.veganOSpan}</span> {blog.thisVegan}</p>
             <p><span className="six-hundred">{blog.vegSuSpan}</span> {blog.allDishes}</p>
             <p><span className="six-hundred">{blog.veganShackSpan}</span> {blog.fullyVeg}</p>
