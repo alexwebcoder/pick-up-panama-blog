@@ -2405,6 +2405,32 @@ const BlogDetails = () => {
               <li>{blog.meGusPre}</li>
             </ul>
             <h3>{blog.basicQuesH3}</h3>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/spanish/ordering-food-panama-320.webp 320w, /images/spanish/ordering-food-panama-480.webp 480w, /images/spanish/ordering-food-panama-640.webp 640w, /images/spanish/ordering-food-panama-768.webp 768w, /images/spanish/ordering-food-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/spanish/ordering-food-panama-320.jpg 320w, /images/spanish/ordering-food-panama-480.jpg 480w, /images/spanish/ordering-food-panama-640.jpg 640w, /images/spanish/ordering-food-panama-768.jpg 768w, /images/spanish/panama-products.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.orderFood}
+                  alt={blog.orderAltText}
+                />
+              </picture>
+              <figcaption>{blog.orderCaption}</figcaption>
+            </figure>
             <ul>
               <li>{blog.cuantoCue}</li>
               <li>{blog.estasFila}</li>
