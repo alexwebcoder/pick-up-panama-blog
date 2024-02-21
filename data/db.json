@@ -749,7 +749,13 @@
      "prodCaption": "Cereal products written in Spanish",
      "orderFood": "/images/spanish/ordering-food-panama.jpg",
      "orderAltText": "guys ordering food",
-     "orderCaption": "Two guys order food in Panama"
+     "orderCaption": "Two guys order food in Panama",
+     "alto": "/images/spanish/panama-stop-sign.jpg",
+     "altoAltText": "stop sign that says alto",
+     "altoCaption": "A stop sign in Coronado",
+     "school": "/images/spanish/roberto-eisenmann-bilingual-school.jpg",
+     "schoolAltText": "roberto eisenmann school",
+     "schoolCaption": "Roberto Eisenmann bilingual school in Coronado"
     },
     {
       "title": "What are the cultural norms of Panama?",

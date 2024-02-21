@@ -2344,6 +2344,32 @@ const BlogDetails = () => {
             <p>
               <span className="six-hundred">{blog.eduSpan}</span> {blog.educat}
             </p>
+            <figure className="school">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/spanish/roberto-eisenmann-bilingual-school-320.webp 320w, /images/spanish/roberto-eisenmann-bilingual-school-480.webp 480w, /images/spanish/roberto-eisenmann-bilingual-school-640.webp 640w, /images/spanish/roberto-eisenmann-bilingual-school-768.webp 768w, /images/spanish/roberto-eisenmann-bilingual-school.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/spanish/roberto-eisenmann-bilingual-school-320.jpg 320w, /images/spanish/roberto-eisenmann-bilingual-school-480.jpg 480w, /images/spanish/roberto-eisenmann-bilingual-school-640.jpg 640w, /images/spanish/roberto-eisenmann-bilingual-school-768.jpg 768w, /images/spanish/roberto-eisenmann-bilingual-school.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.school}
+                  alt={blog.schoolAltText}
+                />
+              </picture>
+              <figcaption>{blog.schoolCaption}</figcaption>
+            </figure>
             <p>
               <span className="six-hundred">{blog.irSpan}</span>{" "}
               {blog.internRelations}
@@ -2419,7 +2445,7 @@ const BlogDetails = () => {
                   type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
-                    "/images/spanish/ordering-food-panama-320.jpg 320w, /images/spanish/ordering-food-panama-480.jpg 480w, /images/spanish/ordering-food-panama-640.jpg 640w, /images/spanish/ordering-food-panama-768.jpg 768w, /images/spanish/panama-products.jpg 1170w"
+                    "/images/spanish/ordering-food-panama-320.jpg 320w, /images/spanish/ordering-food-panama-480.jpg 480w, /images/spanish/ordering-food-panama-640.jpg 640w, /images/spanish/ordering-food-panama-768.jpg 768w, /images/spanish/ordering-food-panama.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
@@ -2445,6 +2471,32 @@ const BlogDetails = () => {
               <li>{blog.soyAler}</li>
             </ul>
             <h3>{blog.askingH3}</h3>
+            <figure className="alto">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/spanish/panama-stop-sign-320.webp 320w, /images/spanish/panama-stop-sign-480.webp 480w, /images/spanish/panama-stop-sign-640.webp 640w, /images/spanish/panama-stop-sign-768.webp 768w, /images/spanish/panama-stop-sign.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/spanish/panama-stop-sign-320.jpg 320w, /images/spanish/panama-stop-sign-480.jpg 480w, /images/spanish/panama-stop-sign-640.jpg 640w, /images/spanish/panama-stop-sign-768.jpg 768w, /images/spanish/panama-stop-sign.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.alto}
+                  alt={blog.altoAltText}
+                />
+              </picture>
+              <figcaption>{blog.altoCaption}</figcaption>
+            </figure>
             <ul>
               <li>{blog.dondeEst}</li>
               <li>{blog.comoLlego}</li>

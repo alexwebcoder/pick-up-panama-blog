@@ -216,6 +216,13 @@ p.this-article {
 .el-cangrejo .lee, .el-cangrejo .manlos, .el-cangrejo .sen {
     padding-top: calc(632/ 1124 * 100%);
 }
+/* spanish page images */
+.spanish .alto {
+    padding-top: calc(1560/ 1171 * 100%);
+}
+.spanish .school {
+    padding-top: calc(878/ 1171 * 100%);
+}
 /* canal page images */
 .panama-canal figure {
     padding-top: calc(2752/ 4896 * 100%);
