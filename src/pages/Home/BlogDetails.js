@@ -2546,6 +2546,32 @@ const BlogDetails = () => {
               <li>{blog.AquiTran}</li>
             </ul>
             <p>{blog.inAddition}</p>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/spanish/indigenous-panamanians-320.webp 320w, /images/spanish/indigenous-panamanians-480.webp 480w, /images/spanish/indigenous-panamanians-640.webp 640w, /images/spanish/indigenous-panamanians-768.webp 768w, /images/spanish/indigenous-panamanians.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/spanish/indigenous-panamanians-320.jpg 320w, /images/spanish/indigenous-panamanians-480.jpg 480w, /images/spanish/indigenous-panamanians-640.jpg 640w, /images/spanish/indigenous-panamanians-768.jpg 768w, /images/spanish/indigenous-panamanians.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.indigenous}
+                  alt={blog.indigenousAltText}
+                />
+              </picture>
+              <figcaption>{blog.indigenousCaption}</figcaption>
+            </figure>
             <h2>{blog.howCanLearnH2}</h2>
             <ul>
               <li>{blog.watchMov}</li>
@@ -2579,6 +2605,7 @@ const BlogDetails = () => {
             <p>{blog.itsAbout}</p>
             <p>{blog.moreImp}</p>
             <p>{blog.ifYouAre}</p>
+            <p>{blog.overall}</p>
 
             <div className="button-parent">
               <button
