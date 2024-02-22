@@ -207,7 +207,7 @@ p.this-article {
     padding-top: calc(1560/ 1170 * 100%);
 }
 /* el cangrejo/spanish page images */
-.el-cangrejo figure, .spanish figure {
+.el-cangrejo figure, .spanish figure, .food figure {
     padding-top: calc(658/ 1171 * 100%);
 }
 .el-cangrejo .crab {
@@ -222,6 +222,22 @@ p.this-article {
 }
 .spanish .school {
     padding-top: calc(878/ 1171 * 100%);
+}
+/* food page images */
+.food .dessert {
+    padding-top: calc(856/ 1168 * 100%);
+} 
+.food .burger {
+    padding-top: calc(815/ 1170 * 100%); 
+}
+.food .ceviche {
+    padding-top: calc(1155/ 1170 * 100%); 
+}
+.food .coco {
+    padding-top: calc(1044/ 1170 * 100%); 
+}
+.food .pina {
+    padding-top: calc(1816/ 1170 * 100%); 
 }
 /* canal page images */
 .panama-canal figure {

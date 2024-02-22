@@ -2816,6 +2816,32 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.sanocSpan}</span> {blog.thisPanNational}</p>
             <p><span className="six-hundred">{blog.arrozConSpan}</span> {blog.aTradition}</p>
             <p><span className="six-hundred">{blog.cevSpan}</span> {blog.panaVers}</p>
+            <figure className="ceviche">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/ceviche-panama-320.webp 320w, /images/food/ceviche-panama-480.webp 480w, /images/food/ceviche-panama-640.webp 640w, /images/food/ceviche-panama-768.webp 768w, /images/food/ceviche-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/ceviche-panama-320.jpg 320w, /images/food/ceviche-panama-480.jpg 480w, /images/food/ceviche-panama-640.jpg 640w, /images/food/ceviche-panama-768.jpg 768w, /images/food/ceviche-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.ceviche}
+                  alt={blog.cevicheAltText}
+                />
+              </picture>
+              <figcaption>{blog.cevicheCaption}</figcaption>
+            </figure>
             <p><span className="six-hundred">{blog.pataSpan}</span> {blog.friedGreen}</p>
             <p><span className="six-hundred">{blog.carimSpan}</span> {blog.theseAre}</p>
             <p><span className="six-hundred">{blog.ropaViSpan}</span> {blog.aDish}</p>
@@ -2833,11 +2859,63 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.mangoSpan}</span> {blog.panamOffers}</p>
             <p><span className="six-hundred">{blog.bananSp}</span> {blog.banPlan}</p>
             <p><span className="six-hundred">{blog.cocoSp}</span> {blog.cocoGrow}</p>
+            <figure className="coco">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/coconut-panama-320.webp 320w, /images/food/coconut-panama-480.webp 480w, /images/food/coconut-panama-640.webp 640w, /images/food/coconut-panama-768.webp 768w, /images/food/coconut-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/coconut-panama-320.jpg 320w, /images/food/coconut-panama-480.jpg 480w, /images/food/coconut-panama-640.jpg 640w, /images/food/coconut-panama-768.jpg 768w, /images/food/coconut-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.coco}
+                  alt={blog.cocoAltText}
+                />
+              </picture>
+              <figcaption>{blog.cocoCaption}</figcaption>
+            </figure>
             <p><span className="six-hundred">{blog.starSpan}</span> {blog.starFr}</p>
             <p><span className="six-hundred">{blog.passionSpan}</span> {blog.thisTang}</p>
             <p><span className="six-hundred">{blog.sourSopSp}</span> {blog.sourSop}</p>
             <p><span className="six-hundred">{blog.cashfrSp}</span> {blog.cashNuts}</p>
             <h2>{blog.desertsH2}</h2>
+            <figure className="dessert">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/banana-split-panama-320.webp 320w, /images/food/banana-split-panama-480.webp 480w, /images/food/banana-split-panama-640.webp 640w, /images/food/banana-split-panama-768.webp 768w, /images/food/banana-split-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/banana-split-panama-320.jpg 320w, /images/food/banana-split-panama-480.jpg 480w, /images/food/banana-split-panama-640.jpg 640w, /images/food/banana-split-panama-768.jpg 768w, /images/food/banana-split-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.dessert}
+                  alt={blog.dessertAltText}
+                />
+              </picture>
+              <figcaption>{blog.dessertCaption}</figcaption>
+            </figure>
             <p>{blog.enjoySome}</p>
 
             <p><span className="six-hundred">{blog.tresLechSp}</span> {blog.thisIs}</p>
@@ -2847,6 +2925,32 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.cocadesSp}</span> {blog.theseAreCo}</p>
             <p><span className="six-hundred">{blog.chichSp}</span> {blog.chichIs}</p>
             <h2>{blog.panamaDrinksH2}</h2>
+            <figure className="pina">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/chicha-de-pina-320.webp 320w, /images/food/chicha-de-pina-480.webp 480w, /images/food/chicha-de-pina-640.webp 640w, /images/food/chicha-de-pina-768.webp 768w, /images/food/chicha-de-pina.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/chicha-de-pina-320.jpg 320w, /images/food/chicha-de-pina-480.jpg 480w, /images/food/chicha-de-pina-640.jpg 640w, /images/food/chicha-de-pina-768.jpg 768w, /images/food/chicha-de-pina.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.pina}
+                  alt={blog.pinaAltText}
+                />
+              </picture>
+              <figcaption>{blog.pinaCaption}</figcaption>
+            </figure>
             <p>{blog.theseDrinks}</p>
             <p><span className="six-hundred">{blog.secoHerranoSp}</span> {blog.thisIsPan}</p>
             <p><span className="six-hundred">{blog.chichaSpan}</span> {blog.riceBased}</p>
@@ -2864,6 +2968,32 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.panInSp}</span> {blog.idiap}</p>
             <p><span className="six-hundred">{blog.foodAn}</span> {blog.panaFood}</p>
             <h2>{blog.americanFood}</h2>
+            <figure className="burger">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-hamburger-320.webp 320w, /images/food/panama-hamburger-480.webp 480w, /images/food/panama-hamburger-640.webp 640w, /images/food/panama-hamburger-768.webp 768w, /images/food/panama-hamburger.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-hamburger-320.jpg 320w, /images/food/panama-hamburger-480.jpg 480w, /images/food/panama-hamburger-640.jpg 640w, /images/food/panama-hamburger-768.jpg 768w, /images/food/panama-hamburger.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.burger}
+                  alt={blog.burgerAltText}
+                />
+              </picture>
+              <figcaption>{blog.burgerCaption}</figcaption>
+            </figure>
             <p>{blog.yes}</p>
             <p>{blog.someOf}</p>
             <p><span className="six-hundred">{blog.fastFoodSp}</span> {blog.majorFast}</p>
@@ -2882,6 +3012,32 @@ const BlogDetails = () => {
             <p>{blog.importRole}</p>
             <h2>{blog.otherTips}</h2>
             <h3>{blog.streeVenH2}</h3>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-street-vendor-320.webp 320w, /images/food/panama-street-vendor-480.webp 480w, /images/food/panama-street-vendor-640.webp 640w, /images/food/panama-street-vendor-768.webp 768w, /images/food/panama-street-vendor.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-street-vendor-320.jpg 320w, /images/food/panama-street-vendor-480.jpg 480w, /images/food/panama-street-vendor-640.jpg 640w, /images/food/panama-street-vendor-768.jpg 768w, /images/food/panama-street-vendor.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.vendor}
+                  alt={blog.vendorAltText}
+                />
+              </picture>
+              <figcaption>{blog.vendorCaption}</figcaption>
+            </figure>
             <p>{blog.streeFood}</p>
             <p>{blog.theseVen}</p>
             <p>{blog.popularInc}</p>

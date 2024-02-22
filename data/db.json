@@ -1046,7 +1046,31 @@
       "veganShackSpan": "The Vegan Shack",
       "fullyVeg": "Fully vegan restaurant in old town Panama City. Offers all day breakfast, smoothie bowls, main bowls, juices, and more.",
       "placeSpan": "Planticería",
-      "veganCafe": "Vegan cafe and bakery offering brunch, lunch, sandwiches and baked goods like cookies, cakes,c, and dolly crush. Accepts custom orders. Previously named Hidemi Kocina at Nuevo Paitilla."
+      "veganCafe": "Vegan cafe and bakery offering brunch, lunch, sandwiches and baked goods like cookies, cakes, and dolly crush. Accepts custom orders. Previously named Hidemi Kocina at Nuevo Paitilla.",
+      "dessert": "/images/food/banana-split-panama.jpg",
+     "dessertAltText": "banana split",
+     "dessertCaption": "A banana split from a dessert shop",
+
+     "burger": "/images/food/panama-hamburger.jpg",
+     "burgerAltText": "a burger",
+     "burgerCaption": "A hamburger from Gold Coast Brewery in Coronado, Panama",
+
+     
+     "vendor": "/images/food/panama-street-vendor.jpg",
+     "vendorAltText": "a street vender",
+     "vendorCaption": "A street vendor in Panama",
+
+     "ceviche": "/images/food/ceviche-panama.jpg",
+     "cevicheAltText": "a ceviche stand",
+     "cevicheCaption": "A ceviche stand in Panama",
+
+     "coco": "/images/food/coconut-panama.jpg",
+     "cocoAltText": "a coconut",
+     "cocoCaption": "A coconut on the ground",
+
+     "pina": "/images/food/chicha-de-pina.jpg",
+     "pinaAltText": "a pineapple smoothie",
+     "pinaCaption": "A pineapple smoothie from Picasso's restaurant"
 
 
       
