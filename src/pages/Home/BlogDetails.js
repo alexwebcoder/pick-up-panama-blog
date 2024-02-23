@@ -2837,7 +2837,61 @@ const BlogDetails = () => {
                 <EmailIcon size={35} />
               </EmailShareButton>
             </div>
-
+            <h2>{blog.seafoodH2}</h2>
+            <p>{blog.seafoodPara}</p>
+            <p>{blog.fishAnd}</p>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/seafood-320.webp 320w, /images/food/seafood-480.webp 480w, /images/food/seafood-640.webp 640w, /images/food/seafood-768.webp 768w, /images/food/seafood.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/seafood-320.jpg 320w, /images/food/seafood-480.jpg 480w, /images/food/seafood-640.jpg 640w, /images/food/seafood-768.jpg 768w, /images/food/seafood.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.seafood}
+                  alt={blog.seafoodAltText}
+                />
+              </picture>
+              <figcaption>{blog.seafoodCaption}</figcaption>
+            </figure>
+            <figure className="lsalad">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/lobster-salad-panama-320.webp 320w, /images/food/lobster-salad-panama-480.webp 480w, /images/food/lobster-salad-panama-640.webp 640w, /images/food/lobster-salad-panama-768.webp 768w, /images/food/lobster-salad-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/lobster-salad-panama-320.jpg 320w, /images/food/lobster-salad-panama-480.jpg 480w, /images/food/lobster-salad-panama-640.jpg 640w, /images/food/lobster-salad-panama-768.jpg 768w, /images/food/lobster-salad-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                  />
+                <img
+                  className="no-right-click"
+                  src={blog.lSalads}
+                  alt={blog.lSaladsAltText}
+                  />
+              </picture>
+              <figcaption>{blog.lSaladsCaption}</figcaption>
+            </figure>
             <h2>{blog.panFoodH2}</h2>
             <p><span className="six-hundred">{blog.sanocSpan}</span> {blog.thisPanNational}</p>
             <p><span className="six-hundred">{blog.arrozConSpan}</span> {blog.aTradition}</p>
@@ -3082,6 +3136,32 @@ const BlogDetails = () => {
               <figcaption>{blog.hiwayCaption}</figcaption>
             </figure>
             <p>{blog.fondaRefers}</p>
+            <figure className="colon-fonda">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-roadside-fonda-320.webp 320w, /images/food/panama-roadside-fonda-480.webp 480w, /images/food/panama-roadside-fonda-640.webp 640w, /images/food/panama-roadside-fonda-768.webp 768w, /images/food/panama-roadside-fonda.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-roadside-fonda-320.jpg 320w, /images/food/panama-roadside-fonda-480.jpg 480w, /images/food/panama-roadside-fonda-640.jpg 640w, /images/food/panama-roadside-fonda-768.jpg 768w, /images/food/panama-roadside-fonda.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.roadSide}
+                  alt={blog.roadSideAltText}
+                />
+              </picture>
+              <figcaption>{blog.roadSideCaption}</figcaption>
+            </figure>
             <p>{blog.theseEst}</p>
             
             <p>{blog.theChoices}</p>
@@ -3115,6 +3195,34 @@ const BlogDetails = () => {
             <p>{blog.thisIsAgreat}</p>
             <p>{blog.theMenu}</p>
             <p>{blog.atmosphere}</p>
+            <figure className="jardin">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/jardin-panama-320.webp 320w, /images/food/jardin-panama-480.webp 480w, /images/food/jardin-panama-640.webp 640w, /images/food/jardin-panama-768.webp 768w, /images/food/jardin-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/jardin-panama-320.jpg 320w, /images/food/jardin-panama-480.jpg 480w, /images/food/jardin-panama-640.jpg 640w, /images/food/jardin-panama-768.jpg 768w, /images/food/jardin-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.jardin}
+                  alt={blog.jardinAltText} 
+                  
+                />
+              </picture>
+              <figcaption>{blog.jardinCaption}</figcaption>
+            </figure>
             <p>{blog.importRole}</p>
             <h2>{blog.otherTips}</h2>
             <h3>{blog.streeVenH2}</h3>
@@ -3146,19 +3254,6 @@ const BlogDetails = () => {
             </figure>
             <p>{blog.streeFood}</p>
             <p>{blog.theseVen}</p>
-            <p>{blog.popularInc}</p>
-            <p><span className="six-hundred">{blog.empSpan}</span> {blog.theseAreSav}</p>
-            <p><span className="six-hundred">{blog.carimanSpan}</span> {blog.similarTo}</p>
-            <p><span className="six-hundred">{blog.tamalesSpan}</span> {blog.tamalesAre}</p>
-            <p><span className="six-hundred">{blog.cevSpanV}</span> {blog.cev}</p>
-            <p><span className="six-hundred">{blog.fruitCupSpan}</span> {blog.freshTropical}</p>
-            <p><span className="six-hundred">{blog.chichSpan}</span> {blog.theseAreCrisp}</p>
-            <p><span className="six-hundred">{blog.raspeoSpan}</span> {blog.raspOr}</p>
-            <p><span className="six-hundred">{blog.plantSp}</span> {blog.plantAre}</p>
-            <h3>{blog.menuDel}</h3>
-            <p>{blog.manyRest}</p> 
-            <h3>{blog.localMarkets}</h3>
-            <p>{blog.visitLocal}</p>
             <figure>
               <picture>
                 <source
@@ -3186,6 +3281,46 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.foodStandCaption}</figcaption>
             </figure>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-fast-food-320.webp 320w, /images/food/panama-fast-food-480.webp 480w, /images/food/panama-fast-food-640.webp 640w, /images/food/panama-fast-food-768.webp 768w, /images/food/panama-fast-food.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-fast-food-320.jpg 320w, /images/food/panama-fast-food-480.jpg 480w, /images/food/panama-fast-food-640.jpg 640w, /images/food/panama-fast-food-768.jpg 768w, /images/food/panama-fast-food.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.fastFood}
+                  alt={blog.fastFoodAltText}
+                  
+                />
+              </picture>
+              <figcaption>{blog.fastFoodCaption}</figcaption>
+            </figure>
+            <h4>{blog.popularInc}</h4>
+            <p><span className="six-hundred">{blog.empSpan}</span> {blog.theseAreSav}</p>
+            <p><span className="six-hundred">{blog.carimanSpan}</span> {blog.similarTo}</p>
+            <p><span className="six-hundred">{blog.tamalesSpan}</span> {blog.tamalesAre}</p>
+            <p><span className="six-hundred">{blog.cevSpanV}</span> {blog.cev}</p>
+            <p><span className="six-hundred">{blog.fruitCupSpan}</span> {blog.freshTropical}</p>
+            <p><span className="six-hundred">{blog.chichSpan}</span> {blog.theseAreCrisp}</p>
+            <p><span className="six-hundred">{blog.raspeoSpan}</span> {blog.raspOr}</p>
+            <p><span className="six-hundred">{blog.plantSp}</span> {blog.plantAre}</p>
+            <h3>{blog.menuDel}</h3>
+            <p>{blog.manyRest}</p> 
+            <h3>{blog.localMarkets}</h3>
+            <p>{blog.visitLocal}</p>
             <h3>{blog.cook}</h3>
             <figure className="lobster">
               <picture>
@@ -3284,34 +3419,36 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.veganShackSpan}</span> {blog.fullyVeg}</p>
             <p><span className="six-hundred">{blog.placeSpan}</span> {blog.veganCafe}</p>
 
+            <p>{blog.summary}</p>
 
-
-            
-
-
-
-
-
-
-            {/* <p>{blog.summary}</p> */}
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
+            <figure className="margot-front">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/delicias-margot-front-320.webp 320w, /images/food/delicias-margot-front-480.webp 480w, /images/food/delicias-margot-front-640.webp 640w, /images/food/delicias-margot-front-768.webp 768w, /images/food/delicias-margot-front.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/delicias-margot-front-320.jpg 320w, /images/food/delicias-margot-front-480.jpg 480w, /images/food/delicias-margot-front-640.jpg 640w, /images/food/delicias-margot-front-768.jpg 768w, /images/food/delicias-margot-front.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.margF}
+                  alt={blog.margFAltText} 
+                  
+                />
+              </picture>
+              <figcaption>{blog.margFCaption}</figcaption>
+            </figure>
+           
            
             <div className="button-parent">
               <button

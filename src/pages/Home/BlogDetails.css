@@ -17,7 +17,7 @@
 .link:hover {
     text-decoration: underline;
 }
-.safety, .transportation, .el-cangrejo, .panama-canal, .spanish {
+.safety, .transportation, .el-cangrejo, .panama-canal, .spanish, .food, .culture {
     flex: 1;
     position: relative;
 }
@@ -154,7 +154,7 @@ p.this-article {
 .cops-at-fruitstand {
     padding-top: calc(1180 / 1170 * 100%);
 }
-.bank-police, .food .delicias {
+.bank-police, .food .delicias, .food .jardin, .food .lsalad, .food .margot-front{
     padding-top: calc(878 / 1170 * 100%);
 }
 .casco-tourist, .casco-police, .colon-plate, .casco-petty-crime, .market-police, .near-casco {
@@ -250,6 +250,9 @@ p.this-article {
 }
 .food .lobster {
     padding-top: calc(1449/ 1170 * 100%); 
+}
+.food .colon-fonda {
+    padding-top: calc(724/ 1170 * 100%); 
 }
 /* canal page images */
 .panama-canal figure {

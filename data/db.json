@@ -887,6 +887,9 @@
       "Thum960j": "/images/elCangrejo/th-seafood-dish-960.jpg",
       "alt": "a seafood dish",
       "intro": "Panamanian cuisine is a blend of African, Spanish, Caribbean, and indigenous influences, creating a rich and flavorful culinary heritage.",
+      "seafoodH2": "Seafood",
+      "seafoodPara": "Panama is situated between the Pacific Ocean and the Caribbean Sea and has access to all types of fish, lobster, crab, shrimp, mussels, clams, oysters, squid and octopus.",
+      "fishAnd": "Many coastal communities in Panama depend on fishing as a primary source of livelihood.",
       "thisArticle": "This article will cover key ingredients used in Panamanian cooking, food safety and hygiene, provide information on dietary restrictions and preference and recommend restaurants.",
       "panFoodH2": "Panama food dishes",
       "sanocSpan": "Sancocho:",
@@ -1051,11 +1054,11 @@
       "veganCafe": "Vegan cafe and bakery offering brunch, lunch, sandwiches and baked goods like cookies, cakes, and dolly crush. Accepts custom orders. Previously named Hidemi Kocina at Nuevo Paitilla.",
       "dessert": "/images/food/banana-split-panama.jpg",
      "dessertAltText": "banana split",
-     "dessertCaption": "A banana split from a dessert shop",
+     "dessertCaption": "The banana split is a classic dessert staple anywhere.",
 
      "burger": "/images/food/panama-hamburger.jpg",
      "burgerAltText": "a burger",
-     "burgerCaption": "A hamburger from Gold Coast Brewery in Coronado, Panama",
+     "burgerCaption": "Gold Coast Brewery in Coronado has great burgers and they brew their own beer.",
 
      
      "vendor": "/images/food/panama-street-vendor.jpg",
@@ -1067,8 +1070,8 @@
      "cevicheCaption": "You'll see ceviche stands like this all over Panama.",
 
      "coco": "/images/food/coconut-panama.jpg",
-     "cocoAltText": "a coconut",
-     "cocoCaption": "A coconut on the ground",
+     "cocoAltText": "a coconut on the ground",
+     "cocoCaption": "There is plenty of fruit to go around here and the fallen fruit is a sign of abundance.",
 
      "pina": "/images/food/chicha-de-pina.jpg",
      "pinaAltText": "a pineapple smoothie",
@@ -1096,7 +1099,7 @@
 
      "foodStand": "/images/food/food-stand-panama.jpg",
      "foodStandAltText": "a food stand in panama",
-     "foodStandCaption": "You can get a inexpensive quick meal at food stands like this one.",
+     "foodStandCaption": "You can get an inexpensive, quick, meal at food stands like this one.",
 
      "coronadoBreak": "/images/food/coronado-panama-breakfast.jpg",
      "coronadoBreakAltText": "a pancake breakfast",
@@ -1104,9 +1107,32 @@
 
      "cookYour": "/images/food/lobster-dinner-panama.jpg",
      "cookYourAltText": "a lobster dinner",
-     "cookYourCaption": "I stayed at the Villa Mayte vacation propety and used their kitchen to cook these lobsters and mariscos."
+     "cookYourCaption": "I stayed at the Villa Mayte vacation propety and used their kitchen to cook these lobsters and mariscos.",
 
+     "jardin": "/images/food/jardin-panama.jpg",
+     "jardinAltText": "a fonda on the highway",
+     "jardinCaption": "This is another fonda on the PanAmerican Highway.",
 
+     "seafood": "/images/food/seafood.jpg",
+     "seafoodAltText": "seafood dinner",
+     "seafoodCaption": "This is an assorted seafood dish from Sunly Restaurant in Panama City. The portions were very generous.",
+
+     "lSalads": "/images/food/lobster-salad-panama.jpg",
+     "lSaladsAltText": "lobster salad",
+     "lSaladsCaption": "This is the lobster salad at Big Lobster in Coronado.",
+
+     "roadSide": "/images/food/panama-roadside-fonda.jpg",
+     "roadSideAltText": "a fonda in panama",
+     "roadSideCaption": "This is a fonda near Colon.",
+
+     "fastFood": "/images/food/panama-fast-food.jpg",
+     "fastFoodAltText": "fast food stand in panama",
+     "fastFoodCaption": "These food stands serve all the popular street foods.",
+
+     "margF": "/images/food/delicias-margot-front.jpg",
+     "margFAltText": "delicas margot in panama",
+     "margFCaption": "Delicias Margot is a popular fonda in Coronado."
+     
       
 
 
