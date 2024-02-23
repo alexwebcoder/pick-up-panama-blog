@@ -203,7 +203,7 @@ p.this-article {
 .gates {
     padding-top: calc(377 / 1170 * 100%);
 }
-.alex-bus {
+.alex-bus, .food .coronado-breakfast {
     padding-top: calc(1560/ 1170 * 100%);
 }
 /* el cangrejo/spanish page images */
@@ -244,6 +244,12 @@ p.this-article {
 }
 .food .highway-fonda {
     padding-top: calc(726/ 1170 * 100%); 
+}
+.food .take-out {
+    padding-top: calc(993/ 1170 * 100%); 
+}
+.food .lobster {
+    padding-top: calc(1449/ 1170 * 100%); 
 }
 /* canal page images */
 .panama-canal figure {

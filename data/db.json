@@ -1030,6 +1030,8 @@
       "shareMeals": "When dining out, consider sharing dishes with friends or family members. Many restaurants in Panama serve generous portions, and splitting a meal can help reduce costs while still allowing you to sample a variety of dishes.",
       "avoidH3": "Avoid tourist areas",
       "avoidTourist": "Restaurants and cafes in touristy areas tend to have higher prices compared to those in local neighborhoods. Venture off the beaten path to find more budget-friendly dining options.",
+      "stayPlacesH3": "Stay at a place where food is included",
+      "someHotels": "Some hotels and vacation properties include a free breakfast. This is a convenient in that you won't have to find a restaurant and it will save you some money.",
       "byob": "BYOB",
       "someAllow": "Some restaurants in Panama allow customers to bring their own alcoholic beverages, which can help save money on drinks. Check if corkage fees apply before bringing your own wine or beer.",
       "summary": " Panamanian cuisine reflects the country's cultural diversity and showcases the abundance of fresh, locally-sourced ingredients.",
@@ -1082,7 +1084,27 @@
 
      "hiway": "/images/food/highway-fonda-panama.jpg",
      "hiwayAltText": "fonda along the highway",
-     "hiwayCaption": "A fonda along the PanAmerican Highway"
+     "hiwayCaption": "A fonda along the PanAmerican Highway",
+
+     "fish": "/images/food/panama-fish-market.jpg",
+     "fishAltText": "a seafood meal",
+     "fishCaption": "A seafood meal from Mercado de Mariscos",
+
+     "takeOut": "/images/food/panama-fonda-meal.jpg",
+     "takeOutAltText": "a take-out meal from a fonda",
+     "takeOutCaption": "You can also get your meal to go",
+
+     "foodStand": "/images/food/food-stand-panama.jpg",
+     "foodStandAltText": "a food stand in panama",
+     "foodStandCaption": "You can get a inexpensive quick meal at food stands like this one.",
+
+     "coronadoBreak": "/images/food/coronado-panama-breakfast.jpg",
+     "coronadoBreakAltText": "a pancake breakfast",
+     "coronadoBreakCaption": "Villa Mayte is a vacation property in Coronado that includes a free daily breakfast.",
+
+     "cookYour": "/images/food/lobster-dinner-panama.jpg",
+     "cookYourAltText": "a lobster dinner",
+     "cookYourCaption": "I stayed at the Villa Mayte vacation propety and used their kitchen to cook these lobsters and mariscos."
 
 
       

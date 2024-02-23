@@ -2775,6 +2775,32 @@ const BlogDetails = () => {
               <p>{blog.intro}</p>
               <p>{blog.thisArticle}</p>
               </div>
+              <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-fish-market-320.webp 320w, /images/food/panama-fish-market-480.webp 480w, /images/food/panama-fish-market-640.webp 640w, /images/food/panama-fish-market-768.webp 768w, /images/food/panama-fish-market.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-fish-market-320.jpg 320w, /images/food/panama-fish-market-480.jpg 480w, /images/food/panama-fish-market-640.jpg 640w, /images/food/panama-fish-market-768.jpg 768w, /images/food/panama-fish-market.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.fish}
+                  alt={blog.fishAltText}
+                />
+              </picture>
+              <figcaption>{blog.fishCaption}</figcaption>
+            </figure>
             <div className="share-parent">
               <FacebookShareButton
                 url={currentPageUrl}
@@ -3059,6 +3085,33 @@ const BlogDetails = () => {
             <p>{blog.theseEst}</p>
             
             <p>{blog.theChoices}</p>
+            <figure className="take-out">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-fonda-meal-320.webp 320w, /images/food/panama-fonda-meal-480.webp 480w, /images/food/panama-fonda-meal-640.webp 640w, /images/food/panama-fonda-meal-768.webp 768w, /images/food/panama-fonda-meal.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/panama-fonda-meal-320.jpg 320w, /images/food/panama-fonda-meal-480.jpg 480w, /images/food/panama-fonda-meal-640.jpg 640w, /images/food/panama-fonda-meal-768.jpg 768w, /images/food/panama-fonda-meal.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.takeOut}
+                  alt={blog.takeOutAltText} 
+                  
+                />
+              </picture>
+              <figcaption>{blog.takeOutCaption}</figcaption>
+            </figure>
             <p>{blog.thisIsAgreat}</p>
             <p>{blog.theMenu}</p>
             <p>{blog.atmosphere}</p>
@@ -3106,10 +3159,94 @@ const BlogDetails = () => {
             <p>{blog.manyRest}</p> 
             <h3>{blog.localMarkets}</h3>
             <p>{blog.visitLocal}</p>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/food-stand-panama-320.webp 320w, /images/food/food-stand-panama-480.webp 480w, /images/food/food-stand-panama-640.webp 640w, /images/food/food-stand-panama-768.webp 768w, /images/food/food-stand-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/food-stand-panama-320.jpg 320w, /images/food/food-stand-panama-480.jpg 480w, /images/food/food-stand-panama-640.jpg 640w, /images/food/food-stand-panama-768.jpg 768w, /images/food/food-stand-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.foodStand}
+                  alt={blog.foodStandAltText} 
+                  
+                />
+              </picture>
+              <figcaption>{blog.foodStandCaption}</figcaption>
+            </figure>
             <h3>{blog.cook}</h3>
+            <figure className="lobster">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/lobster-dinner-panama-320.webp 320w, /images/food/lobster-dinner-panama-480.webp 480w, /images/food/lobster-dinner-panama-640.webp 640w, /images/food/lobster-dinner-panama-768.webp 768w, /images/food/lobster-dinner-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/lobster-dinner-panama-320.jpg 320w, /images/food/lobster-dinner-panama-480.jpg 480w, /images/food/lobster-dinner-panama-640.jpg 640w, /images/food/lobster-dinner-panama-768.jpg 768w, /images/food/lobster-dinner-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.cookYour}
+                  alt={blog.cookYourAltText} 
+                  
+                />
+              </picture>
+              <figcaption>{blog.cookYourCaption}</figcaption>
+            </figure>
             <p>{blog.ifYouHave}</p>
             <h3>{blog.shareH3}</h3>
             <p>{blog.shareMeals}</p>
+            <h3>{blog.stayPlacesH3}</h3>
+            <p>{blog.someHotels}</p>
+            <figure className="coronado-breakfast">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/coronado-panama-breakfast-320.webp 320w, /images/food/coronado-panama-breakfast-480.webp 480w, /images/food/coronado-panama-breakfast-640.webp 640w, /images/food/coronado-panama-breakfast-768.webp 768w, /images/food/coronado-panama-breakfast.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/coronado-panama-breakfast-320.jpg 320w, /images/food/coronado-panama-breakfast-480.jpg 480w, /images/food/coronado-panama-breakfast-640.jpg 640w, /images/food/coronado-panama-breakfast-768.jpg 768w, /images/food/coronado-panama-breakfast.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.coronadoBreak}
+                  alt={blog.coronadoBreakAltText} 
+                  
+                />
+              </picture>
+              <figcaption>{blog.coronadoBreakCaption}</figcaption>
+            </figure>
+
             <h3>{blog.avoidH3}</h3>
             <p>{blog.avoidTourist}</p>
             <figure className="portobelo">
