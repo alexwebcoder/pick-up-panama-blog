@@ -1062,7 +1062,7 @@
 
      "ceviche": "/images/food/ceviche-panama.jpg",
      "cevicheAltText": "a ceviche stand",
-     "cevicheCaption": "A ceviche stand in Panama",
+     "cevicheCaption": "You'll see ceviche stands like this all over Panama.",
 
      "coco": "/images/food/coconut-panama.jpg",
      "cocoAltText": "a coconut",
@@ -1070,7 +1070,19 @@
 
      "pina": "/images/food/chicha-de-pina.jpg",
      "pinaAltText": "a pineapple smoothie",
-     "pinaCaption": "A pineapple smoothie from Picasso's restaurant"
+     "pinaCaption": "A pineapple smoothie from Picasso's restaurant",
+
+     "portobelo": "/images/food/portobelo-fonda.jpg",
+     "portobeloAltText": "a fonda in portobelo",
+     "portobeloCaption": "An inexpensive fonda in Portobelo",
+
+     "delMar": "/images/food/delicias-margot.jpg",
+     "delMarAltText": "arroz con pollo",
+     "delMarCaption": "Arroz con pollo at Delicas Margot fonda.",
+
+     "hiway": "/images/food/highway-fonda-panama.jpg",
+     "hiwayAltText": "fonda along the highway",
+     "hiwayCaption": "A fonda along the PanAmerican Highway"
 
 
       

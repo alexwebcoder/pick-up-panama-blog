@@ -2815,6 +2815,32 @@ const BlogDetails = () => {
             <h2>{blog.panFoodH2}</h2>
             <p><span className="six-hundred">{blog.sanocSpan}</span> {blog.thisPanNational}</p>
             <p><span className="six-hundred">{blog.arrozConSpan}</span> {blog.aTradition}</p>
+            <figure className="delicias">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/delicias-margot-320.webp 320w, /images/food/delicias-margot-480.webp 480w, /images/food/delicias-margot-640.webp 640w, /images/food/delicias-margot-768.webp 768w, /images/food/delicias-margot.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/delicias-margot-320.jpg 320w, /images/food/delicias-margot-480.jpg 480w, /images/food/delicias-margot-640.jpg 640w, /images/food/delicias-margot-768.jpg 768w, /images/food/delicias-margot.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.delMar}
+                  alt={blog.delMarAltText}
+                />
+              </picture>
+              <figcaption>{blog.delMarCaption}</figcaption>
+            </figure>
             <p><span className="six-hundred">{blog.cevSpan}</span> {blog.panaVers}</p>
             <figure className="ceviche">
               <picture>
@@ -3003,8 +3029,35 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.sportsBars}</span> {blog.sports}</p>
             <h2>{blog.howEatH2}</h2>
             <h3>{blog.fondaH3}</h3>
+            <figure className="highway-fonda">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/highway-fonda-panama-320.webp 320w, /images/food/highway-fonda-panama-480.webp 480w, /images/food/highway-fonda-panama-640.webp 640w, /images/food/highway-fonda-panama-768.webp 768w, /images/food/highway-fonda-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/highway-fonda-panama-320.jpg 320w, /images/food/highway-fonda-panama-480.jpg 480w, /images/food/highway-fonda-panama-640.jpg 640w, /images/food/highway-fonda-panama-768.jpg 768w, /images/food/highway-fonda-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.hiway}
+                  alt={blog.hiwayAltText}
+                />
+              </picture>
+              <figcaption>{blog.hiwayCaption}</figcaption>
+            </figure>
             <p>{blog.fondaRefers}</p>
             <p>{blog.theseEst}</p>
+            
             <p>{blog.theChoices}</p>
             <p>{blog.thisIsAgreat}</p>
             <p>{blog.theMenu}</p>
@@ -3059,6 +3112,32 @@ const BlogDetails = () => {
             <p>{blog.shareMeals}</p>
             <h3>{blog.avoidH3}</h3>
             <p>{blog.avoidTourist}</p>
+            <figure className="portobelo">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/portobelo-fonda-320.webp 320w, /images/food/portobelo-fonda-480.webp 480w, /images/food/portobelo-fonda-640.webp 640w, /images/food/portobelo-fonda-768.webp 768w, /images/food/portobelo-fonda.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/food/portobelo-fonda-320.jpg 320w, /images/food/portobelo-fonda-480.jpg 480w, /images/food/portobelo-fonda-640.jpg 640w, /images/food/portobelo-fonda-768.jpg 768w, /images/food/portobelo-fonda.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.portobelo}
+                  alt={blog.portobeloAltText}
+                />
+              </picture>
+              <figcaption>{blog.portobeloCaption}</figcaption>
+            </figure>
             <h3>{blog.byob}</h3>
             <p>{blog.someAllow}</p>
             <h2>{blog.VeganOptions}</h2>
