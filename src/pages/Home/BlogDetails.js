@@ -2942,7 +2942,7 @@ const BlogDetails = () => {
                 />
                 <img
                   className="no-right-click"
-                  src={blog.ceviche}
+                  src={blog.ceviche} 
                   alt={blog.cevicheAltText}
                 />
               </picture>
@@ -2988,7 +2988,7 @@ const BlogDetails = () => {
                   src={blog.coco}
                   alt={blog.cocoAltText}
                 />
-              </picture>
+              </picture> 
               <figcaption>{blog.cocoCaption}</figcaption>
             </figure>
             <p><span className="six-hundred">{blog.starSpan}</span> {blog.starFr}</p>
@@ -3301,18 +3301,16 @@ const BlogDetails = () => {
                 />
                 <img
                   className="no-right-click"
-                  src={blog.fastFood}
-                  alt={blog.fastFoodAltText}
+                  src={blog.fastFood} 
+                  alt={blog.fastFoodAltText} 
                   
                 />
-              </picture>
+              </picture> 
               <figcaption>{blog.fastFoodCaption}</figcaption>
             </figure>
             <h4>{blog.popularInc}</h4>
             <p><span className="six-hundred">{blog.empSpan}</span> {blog.theseAreSav}</p>
             <p><span className="six-hundred">{blog.carimanSpan}</span> {blog.similarTo}</p>
-            <p><span className="six-hundred">{blog.tamalesSpan}</span> {blog.tamalesAre}</p>
-            <p><span className="six-hundred">{blog.cevSpanV}</span> {blog.cev}</p>
             <p><span className="six-hundred">{blog.fruitCupSpan}</span> {blog.freshTropical}</p>
             <p><span className="six-hundred">{blog.chichSpan}</span> {blog.theseAreCrisp}</p>
             <p><span className="six-hundred">{blog.raspeoSpan}</span> {blog.raspOr}</p>

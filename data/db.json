@@ -247,8 +247,8 @@
       "twoBusesChoose": "There are two bus sizes to choose from. There are large comfortable buses with air conditioning and a large screen tv and smaller white mini buses called Coasters.",
       "takeLarger": "Take the larger of the two buses. They are the same price, but you will have more space and a much more comfortable ride.",
       "whenYouGetOnThe": "When you get on the bus, confirm with the driver that it goes to Coronado. If you have a carry on, it should be able to fit under the seat. Otherwise, give it to the guy who works there and he will put it in the luggage compartment.",
-      "coronadoIsAbout": "Coronado is about 60 miles down the Pan American Highway. So it could take an hour or more depending on traffic. When you get to Coronado, you will see large signs for McDonalds, Super 99 and Rey market. This is where you get off.",
-      "pedestrianBridge": "When you get off in Coronado, you will need to use the pedestrian bridge to cross to the other side of the Pan American Highway. The entrance to Coronado is down Avenue Roberto Eisenmann which is on the same side of the street as Rey market.",
+      "coronadoIsAbout": "Coronado is about 60 miles down the Pan-American Highway. So it could take an hour or more depending on traffic. When you get to Coronado, you will see large signs for McDonalds, Super 99 and Rey market. This is where you get off.",
+      "pedestrianBridge": "When you get off in Coronado, you will need to use the pedestrian bridge to cross to the other side of the Pan-American Highway. The entrance to Coronado is down Avenue Roberto Eisenmann which is on the same side of the street as Rey market.",
       "youCanTakeCab": "You can take a cab for around $1.25 to get into Coronado.",
       "smallWhite": "There are also small white buses that will take you for 25 or 30 cents.",
       "packIn": "These buses pack in a lot of people.",
@@ -258,7 +258,7 @@
       "theyAreIndepen": "They are independently owned and the owners decorate them to attract customers. These buses were originally used as school buses for children. So, the benches are smaller and there is less leg room.",
       "panamaPhased": "Panama City phased them out in 2013 because they were noisy, had disorganized routes, and ran on erratic schedules. They were also not very comfortable and were known for their reckless driving.",
       "becauseTheyWere": "Because they were independently owned, these buses did not have to undergo regular safety checks which all led to increases in traffic, pollution and accidents.",
-      "youMayStill": "You may still see the Diablos Rojos in operation in and around Portobelo on the Atlantic side or along the Panamerican Highway. If you want to ride one to see what it's like, just flag one down with your hand and yell “parada (stop)” to the driver when you want to get off.",
+      "youMayStill": "You may still see the Diablos Rojos in operation in and around Portobelo on the Atlantic side or along the Pan-American Highway. If you want to ride one to see what it's like, just flag one down with your hand and yell “parada (stop)” to the driver when you want to get off.",
       "h2Chiva": "Chivas",
       "chivasAre": "Chivas are also found in Panama. Chiva means little goat in Spanish. The name was given to these vehicles because they were originally used to transport livestock.",
       "nowadays": "Nowadays, if you do see one, it is basically a converted pickup truck with a hard bench and a tarp that goes over the top to protect the passengers from the rain.",
@@ -328,8 +328,8 @@
       "rapiCardCaption": "A Panama Rapi Pass card",
       "metroVideoCaption": "The Metro Line 2 in Panama",
       "panAm": "/images/transportation/panama-panamerican-highway.jpg",
-      "panAmAltText": "the panamerican highway",
-      "panAmCaption": "View of the PanAmerican Highway in Panama"
+      "panAmAltText": "the pan-american highway",
+      "panAmCaption": "View of the Pan-American Highway in Panama"
     },
     {
       "title": "Things to do in El Cangrejo",
@@ -897,7 +897,7 @@
       "arrozConSpan": "Arroz con Pollo:",
       "aTradition": "A traditional dish made with rice and tender chicken. It is often seasoned with spices and vegetables.",
       "cevSpan": "Ceviche:",
-      "panaVers": "Panama's version of ceviche includes fish or seafood marinated in lime juice, onions, peppers, and cilantro.",
+      "panaVers": "Ceviche is a dish made with marinated seafood such as fish or shrimp. It's mixed with lime juice, onions, peppers, and cilantro. As mentioned earlier, it is one of Panama's traditional foods and a popular and refreshing choice.",
       "pataSpan": "Patacones:",
       "friedGreen": "Fried green plantains that have been flattened and then fried again. They are served as a side dish or as the base for other toppings, such as ceviche or shredded meat.",
       "carimSpan": "Carimañolas:",
@@ -905,7 +905,7 @@
       "ropaViSpan": "Ropa Vieja:",
       "aDish": "A dish that combines shredded beef with a tomato-based sauce, bell peppers, onions, and other seasonings.",
       "tamalesSp": "Tamales:",
-      "panTam": "Panamanian tamales are made from corn dough, filled with meat, vegetables, and sometimes olives, and then steamed.",
+      "panTam": "Panamanian tamales are made from corn dough, filled with chicken, pork or vegetables and sometimes olives. They are wrapped in banana leaves and steamed.",
       "bollosSpan": "Bollos:",
       "cornDough": "This is a corn dough wrapped in banana leaves and steamed. They are filled with a variety of ingredients, such as fish, chicken or vegetables.",
       "yucaSpan": "Yuca con Mojo:",
@@ -946,10 +946,6 @@
       "theseAreSav": "These are appetizing  pastries that have meat, cheese, or vegetables inside and are fried until golden brown. They are a popular and portable snack.",
       "carimanSpan": "Carimañolas:",
       "similarTo": "Similar to empanadas, carimañolas are deep-fried snacks made with a yuca (cassava) dough and filled with ground meat. They go well with a side of salsa or hot sauce.",
-      "tamalesSpan": "Tamales:",
-      "tamalesAre": "Tamales in Panama are made with corn dough and filled with ingredients such as chicken, pork, or vegetables. They are wrapped in banana leaves and steamed.",
-      "cevSpanV": "Ceviche:",
-      "cev": "Ceviche is a dish made with marinated seafood such as fish or shrimp. It's mixed with lime juice, onions, peppers, and cilantro. As mentioned earlier, it is one of Panama's traditional foods and a popular and refreshing choice.",
       "fruitCupSpan": "Fruit cups:",
       "freshTropical": "Fresh tropical fruits, like pineapple, mango, watermelon, and papaya, are sold in cups or on skewers. They are seasoned with lime juice, salt, and chili powder.",
       "chichSpan": "Chicharrones:",
@@ -1010,7 +1006,7 @@
       "steakHouse": "Steakhouses:",
       "amerStyle": "American-style steakhouses are in Panama and they offer a selection of grilled meats, steaks, and hearty sides like mashed potatoes and steamed vegetables.",
       "intChains": "International Chains:",
-      "panaCity": "Panama City also hosts branches of international restaurant chains that specialize in American cuisine or have American-inspired menus.",
+      "panaCity": "Panama City also hosts branches of international restaurant chains that specialize in American cuisine or have American-inspired menus. Some of these are TGI Fridays, Hard Rock Cafe, Starbucks and Denny's.",
       "sportsBars": "Sports Bars and Pubs:",
       "sports": "Sports bars and pubs in Panama serve American-style bar food, including chicken wings, nachos, sliders, and other snacks, along with a selection of American beers and cocktails.",
       "howEatH2": "How to eat inexpensively in Panama",
@@ -1018,7 +1014,7 @@
       "fondaRefers": "A fonda is a small, informal eatery or restaurant that is found in local neighborhoods or along roadsides. They serve affordable, traditional Panamanian meals.",
       "theseEst": "Fondas cater to locals and therefore have lower prices compared to upscale restaurants that cater to tourists. You can usually get a full meal at a fonda for $3 to $6.",
       "theChoices": "The menu is diverse and offers a wide range of meats, seafoods, soups, vegetables and side dishes.",
-      "thisIsAgreat":"Eating at fondas is great way to dine on a budget and have a hearty, satisfying meal.",
+      "thisIsAgreat":"Eating at fondas is a great way to dine on a budget and have a hearty, satisfying meal.",
       "theMenu": "Fondas usually use chalkboard menus since they are flexible and make it easy to update the day's specials.",
       "atmosphere": "Fondas have a cozy and unpretentious atmosphere with simple décor and seating arrangements. Some fondas have outdoor seating areas or covered terraces so that customers can dine 'al fresco' (in the fresh air).",
       "importRole": "Even though you won't find the same level of amenities that you would at upscale restaurants, Fondas provide a relaxed and friendly environment to enjoy authentic Panamanian food and get a glimpse of everyday life in Panama.",
@@ -1037,21 +1033,21 @@
       "someHotels": "Some hotels and vacation properties include a free breakfast. This is a convenient in that you won't have to find a restaurant and it will save you some money.",
       "byob": "BYOB",
       "someAllow": "Some restaurants in Panama allow customers to bring their own alcoholic beverages, which can help save money on drinks. Check if corkage fees apply before bringing your own wine or beer.",
-      "summary": " Panamanian cuisine reflects the country's cultural diversity and showcases the abundance of fresh, locally-sourced ingredients.",
+      "summary": " Panamanian cuisine reflects the country's cultural diversity and showcases the abundance of fresh, locally-sourced ingredients. Sampling local cuisine allows you to fully immerse yourself in the destination and create lasting memories associated with the flavors of a particular place. Sharing a meal is a universal human experience that brings people together. Trying foreign cuisine can facilitate connections with people from different backgrounds and create opportunities for cross-cultural exchange and dialogue.  Exposure to foreign cuisine can inspire creativity in your own cooking. You may discover new ingredients, cooking techniques, or flavor combinations that you can incorporate into your home cooking repertoire.",
       "VeganOptions": "Gluten free/vegan dining options",
       "hereAre": "Here are some vegetarian restaurants in Panama City.",
       "ElJardinSpan": "El Jardin Vegetariano:",
       "locatedOn": " Located on Via Veneto street in El Cangrejo, El Jardin Vegetariano offers a variety of vegetarian and vegan dishes, including soups, salads, sandwiches, and main courses. The food is served buffet style and you pay for each item you choose. They also have a selection of natural juices and smoothies.",
       "lovingHutSpan": "Loving Hut:",
       "lovingHut": "Loving Hut is a global chain of vegan restaurants, and there is one located in Panama City. It's in El Cangrejo on Av. Manuel Espinosa Batista and they offer a wide range of vegan dishes, including burgers, wraps, rice bowls, noodles, and desserts.",
-      "veganOSpan": "Vegano-O-No",
-      "thisVegan": "This vegan spot offers gluten-free fast food options such as burgers, hot dogs, sides, and beverages. No reservations are needed, and the restaurant welcomes pets, and provides both indoor and outdoor seating areas. Everything is vegan and gluten free.",
-      "vegSuSpan": "VegSu Restaurante Vegetariano",
-      "allDishes": "All the dishes are vegan and classic Chinese . There is great selection and they are served on a conveyor belt to your table. Must have for vegetarians in Panama. Their food is very flavorful and reasonably priced. Items include chicken, duck, dim sum and rice.",
-      "veganShackSpan": "The Vegan Shack",
-      "fullyVeg": "Fully vegan restaurant in old town Panama City. Offers all day breakfast, smoothie bowls, main bowls, juices, and more.",
-      "placeSpan": "Planticería",
-      "veganCafe": "Vegan cafe and bakery offering brunch, lunch, sandwiches and baked goods like cookies, cakes, and dolly crush. Accepts custom orders. Previously named Hidemi Kocina at Nuevo Paitilla.",
+      "veganOSpan": "Vegano-O-No:",
+      "thisVegan": "Burgers, hot dogs, sides, and beverages are among the gluten-free fast food options available at this vegan spot. Pets are welcome and no reservations are needed. Everything is vegan and gluten free.",
+      "vegSuSpan": "VegSu Restaurante Vegetariano:",
+      "allDishes": "All the dishes are vegan and classic Chinese. There is a great selection and the food is served on a conveyor belt. Their food is very flavorful and reasonably priced. Items include chicken, duck, dim sum and rice.",
+      "veganShackSpan": "The Vegan Shack:",
+      "fullyVeg": "Fully vegan restaurant in old town Panama City. Offers an all day breakfast, smoothies, tofu, chickpea omelettes, juices, and more.",
+      "placeSpan": "Planticería:",
+      "veganCafe": "A vegan cafe and bakery offering brunch, lunch, sandwiches and baked goods like cookies, and cakes. They accept custom orders. Previously named Hidemi Kocina at Nuevo Paitilla.",
       "dessert": "/images/food/banana-split-panama.jpg",
      "dessertAltText": "banana split",
      "dessertCaption": "The banana split is a classic dessert staple anywhere.",
@@ -1063,7 +1059,7 @@
      
      "vendor": "/images/food/panama-street-vendor.jpg",
      "vendorAltText": "a street vender",
-     "vendorCaption": "A street vendor in Panama",
+     "vendorCaption": "A street vendor selling raspao",
 
      "ceviche": "/images/food/ceviche-panama.jpg",
      "cevicheAltText": "a ceviche stand",
@@ -1087,7 +1083,7 @@
 
      "hiway": "/images/food/highway-fonda-panama.jpg",
      "hiwayAltText": "fonda along the highway",
-     "hiwayCaption": "A fonda along the PanAmerican Highway",
+     "hiwayCaption": "A fonda along the Pan-American Highway",
 
      "fish": "/images/food/panama-fish-market.jpg",
      "fishAltText": "a seafood meal",
@@ -1095,7 +1091,7 @@
 
      "takeOut": "/images/food/panama-fonda-meal.jpg",
      "takeOutAltText": "a take-out meal from a fonda",
-     "takeOutCaption": "You can also get your meal to go",
+     "takeOutCaption": "Grilled chicken with rice and a couple sides",
 
      "foodStand": "/images/food/food-stand-panama.jpg",
      "foodStandAltText": "a food stand in panama",
@@ -1107,11 +1103,11 @@
 
      "cookYour": "/images/food/lobster-dinner-panama.jpg",
      "cookYourAltText": "a lobster dinner",
-     "cookYourCaption": "I stayed at the Villa Mayte vacation propety and used their kitchen to cook these lobsters and mariscos.",
+     "cookYourCaption": "I stayed at the Villa Mayte vacation property and used their kitchen to cook these lobsters and mariscos.",
 
      "jardin": "/images/food/jardin-panama.jpg",
      "jardinAltText": "a fonda on the highway",
-     "jardinCaption": "This is another fonda on the PanAmerican Highway.",
+     "jardinCaption": "This fonda has vegan dishes.",
 
      "seafood": "/images/food/seafood.jpg",
      "seafoodAltText": "seafood dinner",
@@ -1127,11 +1123,11 @@
 
      "fastFood": "/images/food/panama-fast-food.jpg",
      "fastFoodAltText": "fast food stand in panama",
-     "fastFoodCaption": "These food stands serve all the popular street foods.",
+     "fastFoodCaption": "Food stands like this serve all the popular street foods.",
 
      "margF": "/images/food/delicias-margot-front.jpg",
      "margFAltText": "delicas margot in panama",
-     "margFCaption": "Delicias Margot is a popular fonda in Coronado."
+     "margFCaption": "Alex at Delicias Margot"
      
       
 
