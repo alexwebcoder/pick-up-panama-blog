@@ -2948,7 +2948,7 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.cevicheCaption}</figcaption>
             </figure>
-            <p><span className="six-hundred">{blog.pataSpan}</span> {blog.friedGreen}</p>
+            <p><span className="six-hundred">{blog.pataSpan}</span> {blog.friedGreen}</p> 
             <p><span className="six-hundred">{blog.carimSpan}</span> {blog.theseAre}</p>
             <p><span className="six-hundred">{blog.ropaViSpan}</span> {blog.aDish}</p>
             <p><span className="six-hundred">{blog.tamalesSp}</span> {blog.panTam}</p>
@@ -2958,7 +2958,7 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.secoSpan}</span> {blog.aChicken}</p>
             <p><span className="six-hundred">{blog.ensaladSpan}</span> {blog.aFestive}</p>
             <h2>{blog.tropFruitsH2}</h2>
-            <p>{blog.panamaClimate}</p>
+            <p className="six-hundred">{blog.panamaClimate}</p>
             <p><span className="six-hundred">{blog.guavaSpan}</span> {blog.thisFruit}</p>
             <p><span className="six-hundred">{blog.pinaSpan}</span> {blog.PanamaProd}</p>
             <p><span className="six-hundred">{blog.papaySpan}</span> {blog.papThrive}</p>
@@ -3007,7 +3007,7 @@ const BlogDetails = () => {
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
                 <source
-                  type="image/jpg"
+                  type="image/jpg" 
                   srcSet={
                     process.env.PUBLIC_URL +
                     "/images/food/banana-split-panama-320.jpg 320w, /images/food/banana-split-panama-480.jpg 480w, /images/food/banana-split-panama-640.jpg 640w, /images/food/banana-split-panama-768.jpg 768w, /images/food/banana-split-panama.jpg 1170w"
@@ -3022,7 +3022,7 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.dessertCaption}</figcaption>
             </figure>
-            <p>{blog.enjoySome}</p>
+            <p className="six-hundred">{blog.enjoySome}</p>
 
             <p><span className="six-hundred">{blog.tresLechSp}</span> {blog.thisIs}</p>
             <p><span className="six-hundred">{blog.dulceTamSp}</span> {blog.tamarindCan}</p>
@@ -3057,7 +3057,7 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.pinaCaption}</figcaption>
             </figure>
-            <p>{blog.theseDrinks}</p>
+            <p className="six-hundred">{blog.theseDrinks}</p>
             <p><span className="six-hundred">{blog.secoHerranoSp}</span> {blog.thisIsPan}</p>
             <p><span className="six-hundred">{blog.chichaSpan}</span> {blog.riceBased}</p>
             <p><span className="six-hundred">{blog.ronPSpan}</span> {blog.ronPonche}</p>
@@ -3418,8 +3418,7 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.vegSuSpan}</span> {blog.allDishes}</p>
             <p><span className="six-hundred">{blog.veganShackSpan}</span> {blog.fullyVeg}</p>
             <p><span className="six-hundred">{blog.placeSpan}</span> {blog.veganCafe}</p>
-
-            <p>{blog.summary}</p>
+            <p>{blog.summary}</p>   
 
             <figure className="margot-front">
               <picture>
