@@ -3420,9 +3420,37 @@ const BlogDetails = () => {
             <p><span className="six-hundred">{blog.natSpiceSpan}</span> {blog.natSpice}</p>
             <p><span className="six-hundred">{blog.lovingSpan}</span> {blog.luv}</p>
             <h3>{blog.tradR}</h3>
+            <figure className="el-trap-food">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-trapiche-meal-320.webp 320w, /images/elCangrejo/el-trapiche-meal-480.webp 480w, /images/elCangrejo/el-trapiche-meal-640.webp 640w, /images/elCangrejo/el-trapiche-meal-768.webp 768w, /images/elCangrejo/el-trapiche-meal.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/elCangrejo/el-trapiche-meal-320.jpg 320w, /images/elCangrejo/el-trapiche-meal-480.jpg 480w, /images/elCangrejo/el-trapiche-meal-640.jpg 640w, /images/elCangrejo/el-trapiche-meal-768.jpg 768w, /images/elCangrejo/el-trapiche-meal.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.elTrapMealA}
+                  alt={blog.elTrapMealAAltText}
+                />
+              </picture>
+              <figcaption>{blog.elTrapMealACaption}</figcaption>
+            </figure>
             <p><span className="six-hundred">{blog.elTrapSp}</span> {blog.ElTr}</p>
             <p><span className="six-hundred">{blog.elMuSp}</span> {blog.elMundo}</p>
             <p><span className="six-hundred">{blog.restAngSp}</span> {blog.restAng}</p>
+            <p><span className="six-hundred">{blog.cafeCoSp}</span> {blog.cafeCoCa}</p>
+            <p><span className="six-hundred">{blog.fondaLoSp}</span> {blog.fondaLo}</p>
 
 
             <figure className="margot-front">
