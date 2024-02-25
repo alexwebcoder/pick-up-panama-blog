@@ -3300,7 +3300,7 @@ const BlogDetails = () => {
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
                 <img
-                  className="no-right-click"
+                  className="no-right-click" 
                   src={blog.fastFood} 
                   alt={blog.fastFoodAltText} 
                   
@@ -3410,13 +3410,20 @@ const BlogDetails = () => {
             </figure>
             <h3>{blog.byob}</h3>
             <p>{blog.someAllow}</p>
-            <h2>{blog.VeganOptions}</h2>
-            <p>{blog.hereAre}</p>
-            <p><span className="six-hundred">{blog.veganOSpan}</span> {blog.thisVegan}</p>
-            <p><span className="six-hundred">{blog.vegSuSpan}</span> {blog.allDishes}</p>
+            <h2>{blog.panamaRestOptions}</h2>
+            <h3>{blog.veganR}</h3>
+            <p><span className="six-hundred">{blog.veganOSpan}</span> {blog.veganO}</p>
+            <p><span className="six-hundred">{blog.vegSuSpan}</span> {blog.allDishes}</p> 
             <p><span className="six-hundred">{blog.veganShackSpan}</span> {blog.fullyVeg}</p>
             <p><span className="six-hundred">{blog.placeSpan}</span> {blog.veganCafe}</p>
-            <p>{blog.summary}</p>   
+            <p><span className="six-hundred">{blog.ElJardinSpan}</span> {blog.elJardin}</p>
+            <p><span className="six-hundred">{blog.natSpiceSpan}</span> {blog.natSpice}</p>
+            <p><span className="six-hundred">{blog.lovingSpan}</span> {blog.luv}</p>
+            <h3>{blog.tradR}</h3>
+            <p><span className="six-hundred">{blog.elTrapSp}</span> {blog.ElTr}</p>
+            <p><span className="six-hundred">{blog.elMuSp}</span> {blog.elMundo}</p>
+            <p><span className="six-hundred">{blog.restAngSp}</span> {blog.restAng}</p>
+
 
             <figure className="margot-front">
               <picture>
@@ -3427,7 +3434,7 @@ const BlogDetails = () => {
                     "/images/food/delicias-margot-front-320.webp 320w, /images/food/delicias-margot-front-480.webp 480w, /images/food/delicias-margot-front-640.webp 640w, /images/food/delicias-margot-front-768.webp 768w, /images/food/delicias-margot-front.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
+                  />
                 <source
                   type="image/jpg"
                   srcSet={
@@ -3435,16 +3442,17 @@ const BlogDetails = () => {
                     "/images/food/delicias-margot-front-320.jpg 320w, /images/food/delicias-margot-front-480.jpg 480w, /images/food/delicias-margot-front-640.jpg 640w, /images/food/delicias-margot-front-768.jpg 768w, /images/food/delicias-margot-front.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
+                  />
                 <img
                   className="no-right-click"
                   src={blog.margF}
                   alt={blog.margFAltText} 
                   
-                />
+                  />
               </picture>
-              <figcaption>{blog.margFCaption}</figcaption>
+              <figcaption>{blog.margFCaption}</figcaption>  
             </figure>
+            <p className="intro">{blog.final}</p>
            
            
             <div className="button-parent">
