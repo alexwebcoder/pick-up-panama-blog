@@ -3135,8 +3135,8 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.hiwayCaption}</figcaption>
             </figure>
-            <p>{blog.fondaRefers}</p>
-            <figure className="colon-fonda">
+            <p>{blog.fondaRefers}</p> 
+            <figure className="colon-fonda"> 
               <picture>
                 <source
                   type="image/webp"
