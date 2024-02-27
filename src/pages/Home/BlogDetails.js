@@ -43,7 +43,7 @@ const BlogDetails = () => {
   //transportation page forward back
   const navigateA = useNavigate();
   const goToSafetyStory = () => {
-    navigateA("/blogs/is-panama-safe");
+    navigateA("/blogs/is-panama-safe-to-travel-alone");
   };
   const goToElCangrejoStory = () => {
     navigateA("/blogs/things-to-do-in-el-cangrejo");
@@ -465,7 +465,7 @@ const BlogDetails = () => {
                 url={currentPageUrl}
                 title={"Transportation in Panama"}
                 summary={
-                  "Learn about Panama's metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
+                  "Learn about the Panama metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
                 }
                 aria-label="linkedin"
               >
@@ -475,7 +475,7 @@ const BlogDetails = () => {
                 url={currentPageUrl}
                 subject={"Transportation in Panama"}
                 body={
-                  "Learn about Panama's metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
+                  "Learn about the Panama metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
                 }
                 aria-label="email"
                 separator={" "}
@@ -1167,7 +1167,7 @@ const BlogDetails = () => {
               <figcaption>{blog.alexBusCaption}</figcaption>
             </figure>
             <div className="button-parent">
-              <button title="Is Panama Safe?" onClick={goToSafetyStory}>
+              <button title="Is Panama safe to travel alone?" onClick={goToSafetyStory}>
                 &#60;
               </button>
               <button
@@ -2288,7 +2288,7 @@ const BlogDetails = () => {
                 url={currentPageUrl}
                 title={"What languages are spoken in Panama?"}
                 summary={
-                  "Learn about the spoken Spanish of Panama and why Spanish is important to learn."
+                  "Find out what languages are spoken in Panama and understand why it's important to learn Spanish."
                 }
                 aria-label="linkedin"
               >
@@ -2297,7 +2297,7 @@ const BlogDetails = () => {
               <EmailShareButton
                 url={currentPageUrl}
                 subject={"What language is spoken in Panama?"}
-                body={`Learn about the spoken Spanish of Panama and why Spanish is important to learn.`}
+                body={`Find out what languages are spoken in Panama and understand why it's important to learn Spanish.`}
                 aria-label="email"
                 separator={" "}
               >
@@ -2671,7 +2671,7 @@ const BlogDetails = () => {
                 url={currentPageUrl}
                 title={"The culture of Panama"}
                 summary={
-                  "Learn the cultural norms of Panama and successfully navigate social interactions."
+                  "Learn the culture of Panama, dress codes, and how to successfully navigate social interactions."
                 }
                 aria-label="linkedin"
               >
@@ -2680,7 +2680,7 @@ const BlogDetails = () => {
               <EmailShareButton
                 url={currentPageUrl}
                 subject={"The culture of Panama"}
-                body={`Learn the cultural norms of Panama and successfully navigate social interactions.`}
+                body={`Learn the culture of Panama, dress codes, and how to successfully navigate social interactions.`}
                 aria-label="email"
                 separator={" "}
               >
@@ -2906,7 +2906,7 @@ const BlogDetails = () => {
                 url={currentPageUrl}
                 title={"Traditional food in Panama"}
                 summary={
-                  "Find out about Panamanian food dishes, the best food in Panama City and how to eat on a budget."
+                  "Discover traditional Panamanian food dishes, explore the best food in Panama City and find places to eat on a budget."
                 }
                 aria-label="linkedin"
               >
@@ -2915,7 +2915,7 @@ const BlogDetails = () => {
               <EmailShareButton
                 url={currentPageUrl}
                 subject={"Traditional food in Panama"}
-                body={`Find out about Panamanian food dishes, the best food in Panama City and how to eat on a budget.`}
+                body={`Discover traditional Panamanian food dishes, explore the best food in Panama City and find places to eat on a budget.`}
                 aria-label="email"
                 separator={" "}
               >

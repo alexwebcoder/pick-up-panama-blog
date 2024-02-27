@@ -17,7 +17,7 @@ export const Capitalize = () => {
     
     if (document.title === "Transportation in panama") {
         document.title = "Transportation in Panama"
-        document.getElementsByTagName('meta')["description"].content = "Learn about Panama's metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
+        document.getElementsByTagName('meta')["description"].content = "Learn about the Panama metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
     }
 
     if (document.title === "Things to do in el cangrejo") {

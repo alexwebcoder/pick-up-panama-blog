@@ -36,7 +36,7 @@ const navigateFood = useNavigate();
 
   const featureNavigate = useNavigate();
   const goToSafetyStoryA = () => {
-    featureNavigate("/blogs/is-panama-safe");
+    featureNavigate("/blogs/is-panama-safe-to-travel-alone");
   };
 
   return (
@@ -735,7 +735,7 @@ const navigateFood = useNavigate();
             <p className="video-caption last-figure">{blog.storyVideoCaption}</p>
           <div className="button-parent">
             <button title="Traditional food in Panama" onClick={goToFood}>&#60;</button>
-            <button title="Is Panama Safe?" onClick={goToSafetyStoryA}>&#62;</button>
+            <button title="Is Panama safe to travel alone?" onClick={goToSafetyStoryA}>&#62;</button>
           </div>
         </section>
       )}
