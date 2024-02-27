@@ -157,7 +157,7 @@ p.this-article {
 .bank-police, .food .delicias, .food .jardin, .food .lsalad, .food .margot-front{
     padding-top: calc(878 / 1170 * 100%);
 }
-.casco-tourist, .casco-police, .colon-plate, .casco-petty-crime, .market-police, .near-casco {
+.casco-tourist, .casco-police, .colon-plate, .casco-petty-crime, .market-police, .near-casco, .culture figure {
     padding-top: calc(658 / 1170 * 100%);
 }
 .video-container {

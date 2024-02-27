@@ -2646,6 +2646,33 @@ const BlogDetails = () => {
               <p>{blog.intro}</p>
               <p>{blog.byFamiliz}</p>
             </div>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/casco-viejo-panama-320.webp 320w, /images/culturalNorms/casco-viejo-panama-480.webp 480w, /images/culturalNorms/casco-viejo-panama-640.webp 640w, /images/culturalNorms/casco-viejo-panama-768.webp 768w, /images/culturalNorms/casco-viejo-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/casco-viejo-panama-320.jpg 320w, /images/culturalNorms/casco-viejo-panama-480.jpg 480w, /images/culturalNorms/casco-viejo-panama-640.jpg 640w, /images/culturalNorms/casco-viejo-panama-768.jpg 768w, /images/culturalNorms/casco-viejo-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  fetchpriority="high"
+                  className="no-right-click"
+                  src={blog.copsAtFruitStand}
+                  alt={blog.fruitStandCopAltText}
+                />
+              </picture>
+              <figcaption>{blog.fruitStandCopCaption}</figcaption>
+            </figure>
             <div className="share-parent">
               <FacebookShareButton
                 url={currentPageUrl}
@@ -2879,6 +2906,7 @@ const BlogDetails = () => {
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
                 <img
+                  fetchpriority="high"
                   className="no-right-click"
                   src={blog.fish}
                   alt={blog.fishAltText}
@@ -2896,7 +2924,7 @@ const BlogDetails = () => {
               </FacebookShareButton>
               <TwitterShareButton
                 url={currentPageUrl}
-                hashtags={["pickuppanama", "food", "cuisine", "panama"]}
+                hashtags={["pickuppanama", "food", "cuisine", "panama"]} 
                 title={"Traditional food in Panama"}
                 aria-label="twitter"
               >
@@ -3731,7 +3759,7 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.margFCaption}</figcaption>
             </figure>
-            <p className="intro">{blog.final}</p>
+            <p className="intro last-figure">{blog.final}</p>
 
             <div className="button-parent">
               <button
