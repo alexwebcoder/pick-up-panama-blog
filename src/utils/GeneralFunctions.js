@@ -26,7 +26,7 @@ export const Capitalize = () => {
     }
     if (document.title === "What languages are spoken in panama") {
         document.title = "What languages are spoken in Panama?"
-        document.getElementsByTagName('meta')["description"].content = "Learn about the spoken Spanish of Panama and why Spanish is important to learn.";
+        document.getElementsByTagName('meta')["description"].content = "Find out what languages are spoken in Panama and understand why it's important to learn.";
     }
     if (document.title === "What are the cultural norms of panama") {
         document.title = "What are the cultural norms of Panama?"
@@ -34,7 +34,7 @@ export const Capitalize = () => {
     }
     if (document.title === "Traditional food in panama") {
         document.title = "Traditional food in Panama"
-        document.getElementsByTagName('meta')["description"].content = "Find out about Panamanian food dishes, the best food in Panama City and how to eat on a budget.";
+        document.getElementsByTagName('meta')["description"].content = "Discover traditional Panamanian food dishes, explore the best food in Panama City and find places to eat on a budget.";
     }
     if (document.title === "Pick Up Panama | Learn About Panama") {
         document.getElementsByTagName('meta')["description"].content = "Pick Up Panama is a blog that provides information, culture, and lifestyle about Panama.";

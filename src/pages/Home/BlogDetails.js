@@ -61,11 +61,11 @@ const BlogDetails = () => {
     navigateCultural("/blogs/what-are-the-cultural-norms-of-panama");
   };
 
-   //food navigation
-   const navigateFood = useNavigate();
- const goToFood = () => {
-    navigateFood('/blogs/traditional-food-in-panama')
-  }
+  //food navigation
+  const navigateFood = useNavigate();
+  const goToFood = () => {
+    navigateFood("/blogs/traditional-food-in-panama");
+  };
 
   const currentPageUrl = window.location.href;
 
@@ -2512,7 +2512,6 @@ const BlogDetails = () => {
               <li>{blog.goStraight}</li>
               <li>{blog.estaEsqu}</li>
               <li>{blog.tomaLa}</li>
-              <li>{blog.sigaDerecho}</li>
             </ul>
             <h3>{blog.erPhrasesH3}</h3>
             <ul>
@@ -2545,6 +2544,7 @@ const BlogDetails = () => {
               <li>{blog.queXop}</li>
               <li>{blog.AquiTran}</li>
             </ul>
+            <h2>{blog.whatOtherH2}</h2>
             <p>{blog.inAddition}</p>
             <figure>
               <picture>
@@ -2605,7 +2605,7 @@ const BlogDetails = () => {
             <p>{blog.itsAbout}</p>
             <p>{blog.moreImp}</p>
             <p>{blog.ifYouAre}</p>
-            <p>{blog.overall}</p>
+            <p className="last-figure">{blog.overall}</p>
 
             <div className="button-parent">
               <button
@@ -2625,7 +2625,7 @@ const BlogDetails = () => {
         )}
       </main>
     );
-  } 
+  }
   if (document.title === "What are the cultural norms of Panama?") {
     return (
       <main id="main-element" className={`blog-details margin `}>
@@ -2644,7 +2644,7 @@ const BlogDetails = () => {
             <div className="body intro">
               <p>{blog.intro}</p>
               <p>{blog.byFamiliz}</p>
-              </div>
+            </div>
             <div className="share-parent">
               <FacebookShareButton
                 url={currentPageUrl}
@@ -2655,7 +2655,12 @@ const BlogDetails = () => {
               </FacebookShareButton>
               <TwitterShareButton
                 url={currentPageUrl}
-                hashtags={["pickuppanama", "cultural norms", "etiquette", "panama"]}
+                hashtags={[
+                  "pickuppanama",
+                  "cultural norms",
+                  "etiquette",
+                  "panama",
+                ]}
                 title={"What are the cultural norms of Panama?"}
                 aria-label="twitter"
               >
@@ -2682,42 +2687,124 @@ const BlogDetails = () => {
               </EmailShareButton>
             </div>
             <h2>{blog.hereAre}</h2>
-            <p><span className="six-hundred">{blog.repectSpan}</span> {blog.panCult}</p>
-            <p><span className="six-hundred">{blog.frienSpan}</span> {blog.panamAre}</p>
-            <p><span className="six-hundred">{blog.greet}</span> {blog.itIsCusto}<strong>{blog.strongGreet}</strong>{blog.ifYouAre}</p>
+            <p>
+              <span className="six-hundred">{blog.repectSpan}</span>{" "}
+              {blog.panCult}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.frienSpan}</span>{" "}
+              {blog.panamAre}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.greet}</span> {blog.itIsCusto}
+              <strong>{blog.strongGreet}</strong>
+              {blog.ifYouAre}
+            </p>
             <p>{blog.whenMeeting}</p>
-            <p><span className="six-hundred">{blog.famBondsSpan}</span> {blog.panSoc}</p>
-            <p><span className="six-hundred">{blog.relInfluSpan}</span> {blog.mostPan}</p>
-            <p><span className="six-hundred">{blog.paceSpan}</span> {blog.punctual}</p>
+            <p>
+              <span className="six-hundred">{blog.famBondsSpan}</span>{" "}
+              {blog.panSoc}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.relInfluSpan}</span>{" "}
+              {blog.mostPan}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.paceSpan}</span>{" "}
+              {blog.punctual}
+            </p>
             <p>{blog.panamaOperates}</p>
-            <p><span className="six-hundred">{blog.personSpaceSpan}</span> {blog.panaVal}</p>
-            <p><span className="six-hundred">{blog.etiquetteSpan}</span> {blog.tableManners}</p>
-            <p><span className="six-hundred">{blog.useTitles}</span> {blog.usingFormal}</p>
-            <p><span className="six-hundred">{blog.communicationSpan}</span> {blog.inOrder}</p>
-            <p><span className="six-hundred">{blog.casConvSpan}</span> {blog.casConv}</p>
-            <p><span className="six-hundred">{blog.foodSharingSp}</span> {blog.sharingFood}</p>
-            <p><span className="six-hundred">{blog.celebrFestSP}</span> {blog.boasts}</p>
+            <p>
+              <span className="six-hundred">{blog.personSpaceSpan}</span>{" "}
+              {blog.panaVal}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.etiquetteSpan}</span>{" "}
+              {blog.tableManners}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.useTitles}</span>{" "}
+              {blog.usingFormal}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.communicationSpan}</span>{" "}
+              {blog.inOrder}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.casConvSpan}</span>{" "}
+              {blog.casConv}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.foodSharingSp}</span>{" "}
+              {blog.sharingFood}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.celebrFestSP}</span>{" "}
+              {blog.boasts}
+            </p>
             <h2>{blog.fauxPasH2}</h2>
-            <p><span className="six-hundred">{blog.discusSpan}</span> {blog.avoid}</p>
-            <p><span className="six-hundred">{blog.usnsolicitedSpan}</span> {blog.givingUnsol}</p>
-            <p><span className="six-hundred">{blog.wastingFoodSpan}</span> {blog.theCultur}</p>
-            <p><span className="six-hundred">{blog.speakingLoudSpan}</span> {blog.panaPlace}</p>
-            <p><span className="six-hundred">{blog.notOffeing}</span> {blog.givingHelp}</p>
-            <p><span className="six-hundred">{blog.ignoringGreetings}</span> {blog.greetingsAre}</p>
+            <p>
+              <span className="six-hundred">{blog.discusSpan}</span>{" "}
+              {blog.avoid}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.usnsolicitedSpan}</span>{" "}
+              {blog.givingUnsol}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.wastingFoodSpan}</span>{" "}
+              {blog.theCultur}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.speakingLoudSpan}</span>{" "}
+              {blog.panaPlace}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.notOffeing}</span>{" "}
+              {blog.givingHelp}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.ignoringGreetings}</span>{" "}
+              {blog.greetingsAre}
+            </p>
             <h2>{blog.doTipH2}</h2>
             <p>{blog.whileTipp}</p>
-            <p><span className="six-hundred">{blog.restSpan}</span> {blog.itNormal}</p>
-            <p><span className="six-hundred">{blog.barsSpan}</span> {blog.tipAtBars}</p>
-            <p><span className="six-hundred">{blog.hotels}</span> {blog.tippingHotel}</p>
-            <p><span className="six-hundred">{blog.taxisSpan}</span> {blog.tippingTaxi}</p>
-            <p><span className="six-hundred">{blog.tourGuidesSpan}</span> {blog.ifYouGo}</p>
-            <p><span className="six-hundred">{blog.otherServicesSpan}</span> {blog.inGeneral}</p>
+            <p>
+              <span className="six-hundred">{blog.restSpan}</span>{" "}
+              {blog.itNormal}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.barsSpan}</span>{" "}
+              {blog.tipAtBars}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.hotels}</span>{" "}
+              {blog.tippingHotel}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.taxisSpan}</span>{" "}
+              {blog.tippingTaxi}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.tourGuidesSpan}</span>{" "}
+              {blog.ifYouGo}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.otherServicesSpan}</span>{" "}
+              {blog.inGeneral}
+            </p>
             <h2>{blog.dressCodeH2}</h2>
             <p>{blog.dressCodeVary}</p>
-            <p><span className="six-hundred">{blog.casualSpan}</span> {blog.menDress}</p>
+            <p>
+              <span className="six-hundred">{blog.casualSpan}</span>{" "}
+              {blog.menDress}
+            </p>
             <p>{blog.duringFormal}</p>
             <p>{blog.forWomen}</p>
-            <p><span className="six-hundred">{blog.beachWearSpan}</span> {blog.ifVisiting}</p>
+            <p>
+              <span className="six-hundred">{blog.beachWearSpan}</span>{" "}
+              {blog.ifVisiting}
+            </p>
             <p>{blog.womenWear}</p>
             <p>{blog.sunscreen}</p>
             <h3>{blog.dressCodeH3}</h3>
@@ -2744,10 +2831,7 @@ const BlogDetails = () => {
               >
                 &#60;
               </button>
-              <button
-                title="Traditional food in Panama"
-                onClick={goToFood}
-              >
+              <button title="Traditional food in Panama" onClick={goToFood}>
                 &#62;
               </button>
             </div>
@@ -2774,8 +2858,8 @@ const BlogDetails = () => {
             <div className="body intro">
               <p>{blog.intro}</p>
               <p>{blog.thisArticle}</p>
-              </div>
-              <figure>
+            </div>
+            <figure>
               <picture>
                 <source
                   type="image/webp"
@@ -2875,7 +2959,7 @@ const BlogDetails = () => {
                     "/images/food/lobster-salad-panama-320.webp 320w, /images/food/lobster-salad-panama-480.webp 480w, /images/food/lobster-salad-panama-640.webp 640w, /images/food/lobster-salad-panama-768.webp 768w, /images/food/lobster-salad-panama.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                  />
+                />
                 <source
                   type="image/jpg"
                   srcSet={
@@ -2883,18 +2967,24 @@ const BlogDetails = () => {
                     "/images/food/lobster-salad-panama-320.jpg 320w, /images/food/lobster-salad-panama-480.jpg 480w, /images/food/lobster-salad-panama-640.jpg 640w, /images/food/lobster-salad-panama-768.jpg 768w, /images/food/lobster-salad-panama.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                  />
+                />
                 <img
                   className="no-right-click"
                   src={blog.lSalads}
                   alt={blog.lSaladsAltText}
-                  />
+                />
               </picture>
               <figcaption>{blog.lSaladsCaption}</figcaption>
             </figure>
             <h2>{blog.panFoodH2}</h2>
-            <p><span className="six-hundred">{blog.sanocSpan}</span> {blog.thisPanNational}</p>
-            <p><span className="six-hundred">{blog.arrozConSpan}</span> {blog.aTradition}</p>
+            <p>
+              <span className="six-hundred">{blog.sanocSpan}</span>{" "}
+              {blog.thisPanNational}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.arrozConSpan}</span>{" "}
+              {blog.aTradition}
+            </p>
             <figure className="delicias">
               <picture>
                 <source
@@ -2921,7 +3011,10 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.delMarCaption}</figcaption>
             </figure>
-            <p><span className="six-hundred">{blog.cevSpan}</span> {blog.panaVers}</p>
+            <p>
+              <span className="six-hundred">{blog.cevSpan}</span>{" "}
+              {blog.panaVers}
+            </p>
             <figure className="ceviche">
               <picture>
                 <source
@@ -2942,29 +3035,71 @@ const BlogDetails = () => {
                 />
                 <img
                   className="no-right-click"
-                  src={blog.ceviche} 
+                  src={blog.ceviche}
                   alt={blog.cevicheAltText}
                 />
               </picture>
               <figcaption>{blog.cevicheCaption}</figcaption>
             </figure>
-            <p><span className="six-hundred">{blog.pataSpan}</span> {blog.friedGreen}</p> 
-            <p><span className="six-hundred">{blog.carimSpan}</span> {blog.theseAre}</p>
-            <p><span className="six-hundred">{blog.ropaViSpan}</span> {blog.aDish}</p>
-            <p><span className="six-hundred">{blog.tamalesSp}</span> {blog.panTam}</p>
-            <p><span className="six-hundred">{blog.bollosSpan}</span> {blog.cornDough}</p>
-            <p><span className="six-hundred">{blog.yucaSpan}</span> {blog.yuca}</p>
-            <p><span className="six-hundred">{blog.chichemeSpan}</span> {blog.aSweet}</p>
-            <p><span className="six-hundred">{blog.secoSpan}</span> {blog.aChicken}</p>
-            <p><span className="six-hundred">{blog.ensaladSpan}</span> {blog.aFestive}</p>
+            <p>
+              <span className="six-hundred">{blog.pataSpan}</span>{" "}
+              {blog.friedGreen}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.carimSpan}</span>{" "}
+              {blog.theseAre}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.ropaViSpan}</span>{" "}
+              {blog.aDish}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.tamalesSp}</span>{" "}
+              {blog.panTam}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.bollosSpan}</span>{" "}
+              {blog.cornDough}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.yucaSpan}</span> {blog.yuca}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.chichemeSpan}</span>{" "}
+              {blog.aSweet}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.secoSpan}</span>{" "}
+              {blog.aChicken}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.ensaladSpan}</span>{" "}
+              {blog.aFestive}
+            </p>
             <h2>{blog.tropFruitsH2}</h2>
             <p className="six-hundred">{blog.panamaClimate}</p>
-            <p><span className="six-hundred">{blog.guavaSpan}</span> {blog.thisFruit}</p>
-            <p><span className="six-hundred">{blog.pinaSpan}</span> {blog.PanamaProd}</p>
-            <p><span className="six-hundred">{blog.papaySpan}</span> {blog.papThrive}</p>
-            <p><span className="six-hundred">{blog.mangoSpan}</span> {blog.panamOffers}</p>
-            <p><span className="six-hundred">{blog.bananSp}</span> {blog.banPlan}</p>
-            <p><span className="six-hundred">{blog.cocoSp}</span> {blog.cocoGrow}</p>
+            <p>
+              <span className="six-hundred">{blog.guavaSpan}</span>{" "}
+              {blog.thisFruit}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.pinaSpan}</span>{" "}
+              {blog.PanamaProd}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.papaySpan}</span>{" "}
+              {blog.papThrive}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.mangoSpan}</span>{" "}
+              {blog.panamOffers}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.bananSp}</span> {blog.banPlan}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.cocoSp}</span> {blog.cocoGrow}
+            </p>
             <figure className="coco">
               <picture>
                 <source
@@ -2988,13 +3123,24 @@ const BlogDetails = () => {
                   src={blog.coco}
                   alt={blog.cocoAltText}
                 />
-              </picture> 
+              </picture>
               <figcaption>{blog.cocoCaption}</figcaption>
             </figure>
-            <p><span className="six-hundred">{blog.starSpan}</span> {blog.starFr}</p>
-            <p><span className="six-hundred">{blog.passionSpan}</span> {blog.thisTang}</p>
-            <p><span className="six-hundred">{blog.sourSopSp}</span> {blog.sourSop}</p>
-            <p><span className="six-hundred">{blog.cashfrSp}</span> {blog.cashNuts}</p>
+            <p>
+              <span className="six-hundred">{blog.starSpan}</span> {blog.starFr}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.passionSpan}</span>{" "}
+              {blog.thisTang}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.sourSopSp}</span>{" "}
+              {blog.sourSop}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.cashfrSp}</span>{" "}
+              {blog.cashNuts}
+            </p>
             <h2>{blog.desertsH2}</h2>
             <figure className="dessert">
               <picture>
@@ -3007,7 +3153,7 @@ const BlogDetails = () => {
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
                 <source
-                  type="image/jpg" 
+                  type="image/jpg"
                   srcSet={
                     process.env.PUBLIC_URL +
                     "/images/food/banana-split-panama-320.jpg 320w, /images/food/banana-split-panama-480.jpg 480w, /images/food/banana-split-panama-640.jpg 640w, /images/food/banana-split-panama-768.jpg 768w, /images/food/banana-split-panama.jpg 1170w"
@@ -3024,12 +3170,29 @@ const BlogDetails = () => {
             </figure>
             <p className="six-hundred">{blog.enjoySome}</p>
 
-            <p><span className="six-hundred">{blog.tresLechSp}</span> {blog.thisIs}</p>
-            <p><span className="six-hundred">{blog.dulceTamSp}</span> {blog.tamarindCan}</p>
-            <p><span className="six-hundred">{blog.hojaSp}</span> {blog.theseArePan}</p>
-            <p><span className="six-hundred">{blog.arrozConSp}</span> {blog.thisIsA}</p>
-            <p><span className="six-hundred">{blog.cocadesSp}</span> {blog.theseAreCo}</p>
-            <p><span className="six-hundred">{blog.chichSp}</span> {blog.chichIs}</p>
+            <p>
+              <span className="six-hundred">{blog.tresLechSp}</span>{" "}
+              {blog.thisIs}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.dulceTamSp}</span>{" "}
+              {blog.tamarindCan}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.hojaSp}</span>{" "}
+              {blog.theseArePan}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.arrozConSp}</span>{" "}
+              {blog.thisIsA}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.cocadesSp}</span>{" "}
+              {blog.theseAreCo}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.chichSp}</span> {blog.chichIs}
+            </p>
             <h2>{blog.panamaDrinksH2}</h2>
             <figure className="pina">
               <picture>
@@ -3058,21 +3221,51 @@ const BlogDetails = () => {
               <figcaption>{blog.pinaCaption}</figcaption>
             </figure>
             <p className="six-hundred">{blog.theseDrinks}</p>
-            <p><span className="six-hundred">{blog.secoHerranoSp}</span> {blog.thisIsPan}</p>
-            <p><span className="six-hundred">{blog.chichaSpan}</span> {blog.riceBased}</p>
-            <p><span className="six-hundred">{blog.ronPSpan}</span> {blog.ronPonche}</p>
-            <p><span className="six-hundred">{blog.refrescNat}</span> {blog.panamaIs}</p>
-            <p><span className="six-hundred">{blog.cafeConSpan}</span> {blog.coffeeIs}</p>
-            <p><span className="six-hundred">{blog.pipaFriSp}</span> {blog.pipa}</p>
+            <p>
+              <span className="six-hundred">{blog.secoHerranoSp}</span>{" "}
+              {blog.thisIsPan}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.chichaSpan}</span>{" "}
+              {blog.riceBased}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.ronPSpan}</span>{" "}
+              {blog.ronPonche}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.refrescNat}</span>{" "}
+              {blog.panamaIs}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.cafeConSpan}</span>{" "}
+              {blog.coffeeIs}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.pipaFriSp}</span> {blog.pipa}
+            </p>
             <h2>{blog.foodHealthH2}</h2>
             <p>{blog.foodHeealthPara}</p>
             <p>{blog.foodEstabl}</p>
             <p>{blog.someAre}</p>
-            <p><span className="six-hundred">{blog.ministrySpan}</span> {blog.theMin}</p>
-            <p><span className="six-hundred">{blog.panFoodSafeSp}</span> {blog.aupsa}</p>
-            <p><span className="six-hundred">{blog.nationalFoodSp}</span> {blog.senIs}</p>
-            <p><span className="six-hundred">{blog.panInSp}</span> {blog.idiap}</p>
-            <p><span className="six-hundred">{blog.foodAn}</span> {blog.panaFood}</p>
+            <p>
+              <span className="six-hundred">{blog.ministrySpan}</span>{" "}
+              {blog.theMin}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.panFoodSafeSp}</span>{" "}
+              {blog.aupsa}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.nationalFoodSp}</span>{" "}
+              {blog.senIs}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.panInSp}</span> {blog.idiap}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.foodAn}</span> {blog.panaFood}
+            </p>
             <h2>{blog.americanFood}</h2>
             <figure className="burger">
               <picture>
@@ -3102,11 +3295,26 @@ const BlogDetails = () => {
             </figure>
             <p>{blog.yes}</p>
             <p>{blog.someOf}</p>
-            <p><span className="six-hundred">{blog.fastFoodSp}</span> {blog.majorFast}</p>
-            <p><span className="six-hundred">{blog.casualDining}</span> {blog.thereAreCas}</p>
-            <p><span className="six-hundred">{blog.steakHouse}</span> {blog.amerStyle}</p>
-            <p><span className="six-hundred">{blog.intChains}</span> {blog.panaCity}</p>
-            <p><span className="six-hundred">{blog.sportsBars}</span> {blog.sports}</p>
+            <p>
+              <span className="six-hundred">{blog.fastFoodSp}</span>{" "}
+              {blog.majorFast}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.casualDining}</span>{" "}
+              {blog.thereAreCas}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.steakHouse}</span>{" "}
+              {blog.amerStyle}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.intChains}</span>{" "}
+              {blog.panaCity}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.sportsBars}</span>{" "}
+              {blog.sports}
+            </p>
             <h2>{blog.howEatH2}</h2>
             <h3>{blog.fondaH3}</h3>
             <figure className="highway-fonda">
@@ -3135,8 +3343,8 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.hiwayCaption}</figcaption>
             </figure>
-            <p>{blog.fondaRefers}</p> 
-            <figure className="colon-fonda"> 
+            <p>{blog.fondaRefers}</p>
+            <figure className="colon-fonda">
               <picture>
                 <source
                   type="image/webp"
@@ -3163,7 +3371,7 @@ const BlogDetails = () => {
               <figcaption>{blog.roadSideCaption}</figcaption>
             </figure>
             <p>{blog.theseEst}</p>
-            
+
             <p>{blog.theChoices}</p>
             <figure className="take-out">
               <picture>
@@ -3186,8 +3394,7 @@ const BlogDetails = () => {
                 <img
                   className="no-right-click"
                   src={blog.takeOut}
-                  alt={blog.takeOutAltText} 
-                  
+                  alt={blog.takeOutAltText}
                 />
               </picture>
               <figcaption>{blog.takeOutCaption}</figcaption>
@@ -3207,7 +3414,6 @@ const BlogDetails = () => {
                 />
                 <source
                   type="image/jpg"
-                
                   srcSet={
                     process.env.PUBLIC_URL +
                     "/images/food/jardin-panama-320.jpg 320w, /images/food/jardin-panama-480.jpg 480w, /images/food/jardin-panama-640.jpg 640w, /images/food/jardin-panama-768.jpg 768w, /images/food/jardin-panama.jpg 1170w"
@@ -3217,8 +3423,7 @@ const BlogDetails = () => {
                 <img
                   className="no-right-click"
                   src={blog.jardin}
-                  alt={blog.jardinAltText} 
-                  
+                  alt={blog.jardinAltText}
                 />
               </picture>
               <figcaption>{blog.jardinCaption}</figcaption>
@@ -3275,8 +3480,7 @@ const BlogDetails = () => {
                 <img
                   className="no-right-click"
                   src={blog.foodStand}
-                  alt={blog.foodStandAltText} 
-                  
+                  alt={blog.foodStandAltText}
                 />
               </picture>
               <figcaption>{blog.foodStandCaption}</figcaption>
@@ -3300,23 +3504,40 @@ const BlogDetails = () => {
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
                 <img
-                  className="no-right-click" 
-                  src={blog.fastFood} 
-                  alt={blog.fastFoodAltText} 
-                  
+                  className="no-right-click"
+                  src={blog.fastFood}
+                  alt={blog.fastFoodAltText}
                 />
-              </picture> 
+              </picture>
               <figcaption>{blog.fastFoodCaption}</figcaption>
             </figure>
             <h4>{blog.popularInc}</h4>
-            <p><span className="six-hundred">{blog.empSpan}</span> {blog.theseAreSav}</p>
-            <p><span className="six-hundred">{blog.carimanSpan}</span> {blog.similarTo}</p>
-            <p><span className="six-hundred">{blog.fruitCupSpan}</span> {blog.freshTropical}</p>
-            <p><span className="six-hundred">{blog.chichSpan}</span> {blog.theseAreCrisp}</p>
-            <p><span className="six-hundred">{blog.raspeoSpan}</span> {blog.raspOr}</p>
-            <p><span className="six-hundred">{blog.plantSp}</span> {blog.plantAre}</p>
+            <p>
+              <span className="six-hundred">{blog.empSpan}</span>{" "}
+              {blog.theseAreSav}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.carimanSpan}</span>{" "}
+              {blog.similarTo}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.fruitCupSpan}</span>{" "}
+              {blog.freshTropical}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.chichSpan}</span>{" "}
+              {blog.theseAreCrisp}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.raspeoSpan}</span>{" "}
+              {blog.raspOr}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.plantSp}</span>{" "}
+              {blog.plantAre}
+            </p>
             <h3>{blog.menuDel}</h3>
-            <p>{blog.manyRest}</p> 
+            <p>{blog.manyRest}</p>
             <h3>{blog.localMarkets}</h3>
             <p>{blog.visitLocal}</p>
             <h3>{blog.cook}</h3>
@@ -3341,8 +3562,7 @@ const BlogDetails = () => {
                 <img
                   className="no-right-click"
                   src={blog.cookYour}
-                  alt={blog.cookYourAltText} 
-                  
+                  alt={blog.cookYourAltText}
                 />
               </picture>
               <figcaption>{blog.cookYourCaption}</figcaption>
@@ -3373,8 +3593,7 @@ const BlogDetails = () => {
                 <img
                   className="no-right-click"
                   src={blog.coronadoBreak}
-                  alt={blog.coronadoBreakAltText} 
-                  
+                  alt={blog.coronadoBreakAltText}
                 />
               </picture>
               <figcaption>{blog.coronadoBreakCaption}</figcaption>
@@ -3412,13 +3631,33 @@ const BlogDetails = () => {
             <p>{blog.someAllow}</p>
             <h2>{blog.panamaRestOptions}</h2>
             <h3>{blog.veganR}</h3>
-            <p><span className="six-hundred">{blog.veganOSpan}</span> {blog.veganO}</p>
-            <p><span className="six-hundred">{blog.vegSuSpan}</span> {blog.allDishes}</p> 
-            <p><span className="six-hundred">{blog.veganShackSpan}</span> {blog.fullyVeg}</p>
-            <p><span className="six-hundred">{blog.placeSpan}</span> {blog.veganCafe}</p>
-            <p><span className="six-hundred">{blog.ElJardinSpan}</span> {blog.elJardin}</p>
-            <p><span className="six-hundred">{blog.natSpiceSpan}</span> {blog.natSpice}</p>
-            <p><span className="six-hundred">{blog.lovingSpan}</span> {blog.luv}</p>
+            <p>
+              <span className="six-hundred">{blog.veganOSpan}</span>{" "}
+              {blog.veganO}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.vegSuSpan}</span>{" "}
+              {blog.allDishes}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.veganShackSpan}</span>{" "}
+              {blog.fullyVeg}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.placeSpan}</span>{" "}
+              {blog.veganCafe}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.ElJardinSpan}</span>{" "}
+              {blog.elJardin}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.natSpiceSpan}</span>{" "}
+              {blog.natSpice}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.lovingSpan}</span> {blog.luv}
+            </p>
             <h3>{blog.tradR}</h3>
             <figure className="el-trap-food">
               <picture>
@@ -3440,18 +3679,30 @@ const BlogDetails = () => {
                 />
                 <img
                   className="no-right-click"
-                  src={blog.elTrapMealA}
-                  alt={blog.elTrapMealAAltText}
+                  src="/images/elCangrejo/el-trapiche-meal.jpg"
+                  alt="shish kabob"
                 />
               </picture>
-              <figcaption>{blog.elTrapMealACaption}</figcaption>
+              <figcaption>Panamanian shish kabob at El Trapiche</figcaption>
             </figure>
-            <p><span className="six-hundred">{blog.elTrapSp}</span> {blog.ElTr}</p>
-            <p><span className="six-hundred">{blog.elMuSp}</span> {blog.elMundo}</p>
-            <p><span className="six-hundred">{blog.restAngSp}</span> {blog.restAng}</p>
-            <p><span className="six-hundred">{blog.cafeCoSp}</span> {blog.cafeCoCa}</p>
-            <p><span className="six-hundred">{blog.fondaLoSp}</span> {blog.fondaLo}</p>
-
+            <p>
+              <span className="six-hundred">{blog.elTrapSp}</span> {blog.ElTr}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.elMuSp}</span> {blog.elMundo}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.restAngSp}</span>{" "}
+              {blog.restAng}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.cafeCoSp}</span>{" "}
+              {blog.cafeCoCa}
+            </p>
+            <p>
+              <span className="six-hundred">{blog.fondaLoSp}</span>{" "}
+              {blog.fondaLo}
+            </p>
 
             <figure className="margot-front">
               <picture>
@@ -3462,7 +3713,7 @@ const BlogDetails = () => {
                     "/images/food/delicias-margot-front-320.webp 320w, /images/food/delicias-margot-front-480.webp 480w, /images/food/delicias-margot-front-640.webp 640w, /images/food/delicias-margot-front-768.webp 768w, /images/food/delicias-margot-front.webp 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                  />
+                />
                 <source
                   type="image/jpg"
                   srcSet={
@@ -3470,19 +3721,17 @@ const BlogDetails = () => {
                     "/images/food/delicias-margot-front-320.jpg 320w, /images/food/delicias-margot-front-480.jpg 480w, /images/food/delicias-margot-front-640.jpg 640w, /images/food/delicias-margot-front-768.jpg 768w, /images/food/delicias-margot-front.jpg 1170w"
                   }
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                  />
+                />
                 <img
                   className="no-right-click"
                   src={blog.margF}
-                  alt={blog.margFAltText} 
-                  
-                  />
+                  alt={blog.margFAltText}
+                />
               </picture>
-              <figcaption>{blog.margFCaption}</figcaption>  
+              <figcaption>{blog.margFCaption}</figcaption>
             </figure>
             <p className="intro">{blog.final}</p>
-           
-           
+
             <div className="button-parent">
               <button
                 title="What are the cultural norms of Panama?"
@@ -3501,10 +3750,7 @@ const BlogDetails = () => {
         )}
       </main>
     );
-  }
-
-
-else {
+  } else {
     return (
       <main id="main-element" className="not-found">
         <figure className="not-found-hero">
