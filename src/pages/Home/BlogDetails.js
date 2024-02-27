@@ -37,7 +37,7 @@ const BlogDetails = () => {
     navigate("/featured/how-do-i-visit-the-panama-canal");
   };
   const goToTransportationStory = () => {
-    navigate("/blogs/how-do-i-get-around-in-panama");
+    navigate("/blogs/transportation-in-panama");
   };
 
   //transportation page forward back
@@ -58,7 +58,7 @@ const BlogDetails = () => {
   //cultural norms navigation
   const navigateCultural = useNavigate();
   const goToCulturalNorms = () => {
-    navigateCultural("/blogs/what-are-the-cultural-norms-of-panama");
+    navigateCultural("/blogs/the-culture-of-panama");
   };
 
   //food navigation
@@ -69,7 +69,7 @@ const BlogDetails = () => {
 
   const currentPageUrl = window.location.href;
 
-  if (document.title === "Is Panama Safe?") {
+  if (document.title === "Is Panama safe to travel alone?") {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
@@ -96,14 +96,14 @@ const BlogDetails = () => {
               <TwitterShareButton
                 url={currentPageUrl}
                 hashtags={["pickuppanama", "safety", "panama"]}
-                title={"Is Panama Safe?"}
+                title={"Is Panama safe to travel alone?"}
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={"Is Panama Safe?"}
+                title={"Is Panama safe to travel alone?"}
                 summary={
                   "Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more."
                 }
@@ -113,7 +113,7 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={"Is Panama Safe?"}
+                subject={"Is Panama safe to travel alone?"}
                 body={
                   "Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more."
                 }
@@ -123,6 +123,7 @@ const BlogDetails = () => {
                 <EmailIcon size={35} />
               </EmailShareButton>
             </div>
+            <h2>{blog.howSafeH2}</h2>
             <p className="moderate-crime">{blog.moderateCrime}</p>
             <p className="despite-this">{blog.despiteThis}</p>
             <p className="this-article">{blog.thisArticle}</p>
@@ -417,7 +418,7 @@ const BlogDetails = () => {
                 &#60;
               </button>
               <button
-                title="How do I get around in Panama?"
+                title="Transportation in Panama"
                 onClick={goToTransportationStory}
               >
                 &#62;
@@ -428,7 +429,7 @@ const BlogDetails = () => {
       </main>
     );
   }
-  if (document.title === "How do I get Around in Panama?") {
+  if (document.title === "Transportation in Panama") {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
@@ -455,14 +456,14 @@ const BlogDetails = () => {
               <TwitterShareButton
                 url={currentPageUrl}
                 hashtags={["pickuppanama", "transportation", "panama"]}
-                title={"How do I get around in Panama?"}
+                title={"Transportation in Panama"}
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={"How do I get around in Panama?"}
+                title={"Transportation in Panama"}
                 summary={
                   "Learn about Panama's metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
                 }
@@ -472,7 +473,7 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={"How do I get around in Panama?"}
+                subject={"Transportation in Panama"}
                 body={
                   "Learn about Panama's metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
                 }
@@ -2234,7 +2235,7 @@ const BlogDetails = () => {
             </figure>
             <div className="button-parent">
               <button
-                title="How do I get around in Panama?"
+                title="Transportation in Panama"
                 onClick={goToTransportationStory}
               >
                 &#60;
@@ -2615,7 +2616,7 @@ const BlogDetails = () => {
                 &#60;
               </button>
               <button
-                title="What are the cultural norms of Panama?"
+                title="The culture of Panama"
                 onClick={goToCulturalNorms}
               >
                 &#62;
@@ -2626,7 +2627,7 @@ const BlogDetails = () => {
       </main>
     );
   }
-  if (document.title === "What are the cultural norms of Panama?") {
+  if (document.title === "The culture of Panama") {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
@@ -2661,14 +2662,14 @@ const BlogDetails = () => {
                   "etiquette",
                   "panama",
                 ]}
-                title={"What are the cultural norms of Panama?"}
+                title={"The culture of Panama"}
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={"What are the cultural norms of Panama?"}
+                title={"The culture of Panama"}
                 summary={
                   "Learn the cultural norms of Panama and successfully navigate social interactions."
                 }
@@ -2678,7 +2679,7 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={"What are the cultural norms of Panama?"}
+                subject={"The culture of Panama"}
                 body={`Learn the cultural norms of Panama and successfully navigate social interactions.`}
                 aria-label="email"
                 separator={" "}
@@ -3734,7 +3735,7 @@ const BlogDetails = () => {
 
             <div className="button-parent">
               <button
-                title="What are the cultural norms of Panama?"
+                title="The culture of Panama"
                 onClick={goToCulturalNorms}
               >
                 &#60;

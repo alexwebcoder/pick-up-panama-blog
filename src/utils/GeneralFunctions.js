@@ -10,13 +10,13 @@ export const Capitalize = () => {
         document.getElementsByTagName('meta')["description"].content = "Read this to understand the importance of the Panama Canal and the best ways to observe it.";
     }
   
-    if (document.title === "Is panama safe") {
-        document.title = "Is Panama Safe?";
+    if (document.title === "Is panama safe to travel alone") {
+        document.title = "Is Panama safe to travel alone?";
         document.getElementsByTagName('meta')["description"].content = "Follow these tips to stay safe in Panama. Learn how to prevent muggings, avoid bad areas, and more.";
       }
     
-    if (document.title === "How do i get around in panama") {
-        document.title = "How do I get Around in Panama?"
+    if (document.title === "Transportation in panama") {
+        document.title = "Transportation in Panama"
         document.getElementsByTagName('meta')["description"].content = "Learn about Panama's metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
     }
 
@@ -26,11 +26,11 @@ export const Capitalize = () => {
     }
     if (document.title === "What languages are spoken in panama") {
         document.title = "What languages are spoken in Panama?"
-        document.getElementsByTagName('meta')["description"].content = "Find out what languages are spoken in Panama and understand why it's important to learn.";
+        document.getElementsByTagName('meta')["description"].content = "Find out what languages are spoken in Panama and understand why it's important to learn Spanish.";
     }
-    if (document.title === "What are the cultural norms of panama") {
-        document.title = "What are the cultural norms of Panama?"
-        document.getElementsByTagName('meta')["description"].content = "Learn the cultural norms of Panama and successfully navigate social interactions.";
+    if (document.title === "The culture of panama") {
+        document.title = "The culture of Panama"
+        document.getElementsByTagName('meta')["description"].content = "Learn the culture of Panama, dress codes, and how to successfully navigate social interactions.";
     }
     if (document.title === "Traditional food in panama") {
         document.title = "Traditional food in Panama"
