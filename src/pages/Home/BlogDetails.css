@@ -254,6 +254,16 @@ p.this-article {
 .food .colon-fonda {
     padding-top: calc(724/ 1170 * 100%); 
 }
+/* culture page images */
+.culture .tip {
+    padding-top: calc(988/ 1170 * 100%);
+}
+.culture .hat {
+    padding-top: calc(1470/ 1170 * 100%);
+}
+.culture .exercise {
+    padding-top: calc(528/ 1170 * 100%);
+}
 /* canal page images */
 .panama-canal figure {
     padding-top: calc(2752/ 4896 * 100%);

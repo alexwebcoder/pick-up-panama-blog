@@ -2667,11 +2667,11 @@ const BlogDetails = () => {
                 <img
                   fetchpriority="high"
                   className="no-right-click"
-                  src={blog.copsAtFruitStand}
-                  alt={blog.fruitStandCopAltText}
+                  src={blog.cascoOvImage}
+                  alt={blog.cascoOvImageAltText}
                 />
               </picture>
-              <figcaption>{blog.fruitStandCopCaption}</figcaption>
+              <figcaption>{blog.cascoOvImageCaption}</figcaption>
             </figure>
             <div className="share-parent">
               <FacebookShareButton
@@ -2733,14 +2733,92 @@ const BlogDetails = () => {
               <span className="six-hundred">{blog.famBondsSpan}</span>{" "}
               {blog.panSoc}
             </p>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/casco-viejo-smiling-cops-320.webp 320w, /images/culturalNorms/casco-viejo-smiling-cops-480.webp 480w, /images/culturalNorms/casco-viejo-smiling-cops-640.webp 640w, /images/culturalNorms/casco-viejo-smiling-cops-768.webp 768w, /images/culturalNorms/casco-viejo-smiling-cops.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/casco-viejo-smiling-cops-320.jpg 320w, /images/culturalNorms/casco-viejo-smiling-cops-480.jpg 480w, /images/culturalNorms/casco-viejo-smiling-cops-640.jpg 640w, /images/culturalNorms/casco-viejo-smiling-cops-768.jpg 768w, /images/culturalNorms/casco-viejo-smiling-cops.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.fam}
+                  alt={blog.famAltText} 
+                />
+              </picture>
+              <figcaption>{blog.famCaption}</figcaption>
+            </figure>
             <p>
               <span className="six-hundred">{blog.relInfluSpan}</span>{" "}
               {blog.mostPan}
             </p>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/casco-viejo-church-320.webp 320w, /images/culturalNorms/casco-viejo-church-480.webp 480w, /images/culturalNorms/casco-viejo-church-640.webp 640w, /images/culturalNorms/casco-viejo-church-768.webp 768w, /images/culturalNorms/casco-viejo-church.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/casco-viejo-church-320.jpg 320w, /images/culturalNorms/casco-viejo-church-480.jpg 480w, /images/culturalNorms/casco-viejo-church-640.jpg 640w, /images/culturalNorms/casco-viejo-church-768.jpg 768w, /images/culturalNorms/casco-viejo-church.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.church}
+                  alt={blog.churchAltText} 
+                />
+              </picture>
+              <figcaption>{blog.churchCaption}</figcaption>
+            </figure>
             <p>
               <span className="six-hundred">{blog.paceSpan}</span>{" "}
               {blog.punctual}
             </p>
+            <figure className="hat">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/panama-hat-320.webp 320w, /images/culturalNorms/panama-hat-480.webp 480w, /images/culturalNorms/panama-hat-640.webp 640w, /images/culturalNorms/panama-hat-768.webp 768w, /images/culturalNorms/panama-hat.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/panama-hat-320.jpg 320w, /images/culturalNorms/panama-hat-480.jpg 480w, /images/culturalNorms/panama-hat-640.jpg 640w, /images/culturalNorms/panama-hat-768.jpg 768w, /images/culturalNorms/panama-hat.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.pace}
+                  alt={blog.paceAltText}
+                />
+              </picture>
+              <figcaption>{blog.paceCaption}</figcaption>
+            </figure>
             <p>{blog.panamaOperates}</p>
             <p>
               <span className="six-hundred">{blog.personSpaceSpan}</span>{" "}
@@ -2770,6 +2848,32 @@ const BlogDetails = () => {
               <span className="six-hundred">{blog.celebrFestSP}</span>{" "}
               {blog.boasts}
             </p>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/casco-museum-320.webp 320w, /images/culturalNorms/casco-museum-480.webp 480w, /images/culturalNorms/casco-museum-640.webp 640w, /images/culturalNorms/casco-museum-768.webp 768w, /images/culturalNorms/casco-museum.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/casco-museum-320.jpg 320w, /images/culturalNorms/casco-museum-480.jpg 480w, /images/culturalNorms/casco-museum-640.jpg 640w, /images/culturalNorms/casco-museum-768.jpg 768w, /images/culturalNorms/casco-museum.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.cascoImage}
+                  alt={blog.cascoImageAltText}
+                />
+              </picture>
+              <figcaption>{blog.cascoImageCaption}</figcaption>
+            </figure>
             <h2>{blog.fauxPasH2}</h2>
             <p>
               <span className="six-hundred">{blog.discusSpan}</span>{" "}
@@ -2796,6 +2900,32 @@ const BlogDetails = () => {
               {blog.greetingsAre}
             </p>
             <h2>{blog.doTipH2}</h2>
+            <figure className="tip">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/tipping-in-panama-320.webp 320w, /images/culturalNorms/tipping-in-panama-480.webp 480w, /images/culturalNorms/tipping-in-panama-640.webp 640w, /images/culturalNorms/tipping-in-panama-768.webp 768w, /images/culturalNorms/tipping-in-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/tipping-in-panama-320.jpg 320w, /images/culturalNorms/tipping-in-panama-480.jpg 480w, /images/culturalNorms/tipping-in-panama-640.jpg 640w, /images/culturalNorms/tipping-in-panama-768.jpg 768w, /images/culturalNorms/tipping-in-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click" 
+                  src={blog.tipping}
+                  alt={blog.tippingAltText}
+                />
+              </picture>
+              <figcaption>{blog.tippingCaption}</figcaption>
+            </figure>
             <p>{blog.whileTipp}</p>
             <p>
               <span className="six-hundred">{blog.restSpan}</span>{" "}
@@ -2852,6 +2982,32 @@ const BlogDetails = () => {
               <li>{blog.driving}</li>
             </ul>
             <p>{blog.understanding}</p>
+            <figure className="last-figure exercise">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/panama-exercise-class-320.webp 320w, /images/culturalNorms/panama-exercise-class-480.webp 480w, /images/culturalNorms/panama-exercise-class-640.webp 640w, /images/culturalNorms/panama-exercise-class-768.webp 768w, /images/culturalNorms/panama-exercise-class.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/culturalNorms/panama-exercise-class-320.jpg 320w, /images/culturalNorms/panama-exercise-class-480.jpg 480w, /images/culturalNorms/panama-exercise-class-640.jpg 640w, /images/culturalNorms/panama-exercise-class-768.jpg 768w, /images/culturalNorms/panama-exercise-class.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.exercise}
+                  alt={blog.exerciseAltText}
+                />
+              </picture>
+              <figcaption>{blog.exerciseCaption}</figcaption>
+            </figure>
             <div className="button-parent">
               <button
                 title="What languages are spoken in Panama?"

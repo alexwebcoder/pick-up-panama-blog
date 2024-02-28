@@ -791,7 +791,7 @@
       "greet": "Greetings:",
       "itIsCusto": "It is customary to ",
       "strongGreet": "greet everyone.",
-      "ifYouAre":" If you enter an elevator, a bus, or pass someone while walking down the street, a simple 'buenos días' (good morning), 'buenas tardes' (good afternoon), or 'buenas noches' (good evening) is considered polite.",
+      "ifYouAre":" If you enter an elevator, a bus, or pass someone while walking down the street, a simple 'buenos días' (good morning), 'buenas tardes' (good afternoon), or 'buenas noches' (good evening) is expected.",
       "whenMeeting": "When meeting someone, a handshake is normal. In more casual settings, a kiss on the cheek may be exchanged between women.",
       "famBondsSpan": "Family bonds:",
       "panSoc": "Panamanian society is strongly influenced by family. Strong familial bonds are fostered, and extended families often live in close proximity and provide support to one another.",
@@ -866,7 +866,38 @@
       "beachAttire": "It's inappropriate for women to wear beach attire in public places other than the beach.",
       "shirts": "Men must wear shirts in public places in Panama unless they are at the beach.",
       "driving": "Foreigners can drive in Panama as long they have a valid driver's license from their home country or an international driving permit.",
-      "understanding": "Understanding and respecting these cultural nuances will help you handle social situations and establish positive relationships in Panama."
+      "understanding": "Understanding and respecting these cultural nuances will help you handle social situations and establish positive relationships in Panama.",
+      "cascoImage": "/images/culturalNorms/casco-museum.jpg",
+      "cascoImageAltText": "woman wearing pollera",
+      "cascoImageCaption": "This Casco Viejo museum display shows a woman's one piece skirt called a pollera and a man's guayabera shirt and Panama hat.",
+      "cascoOvImage": "/images/culturalNorms/casco-viejo.jpg",
+      "cascoOvImageAltText": "overhead shot of Casco Viejo",
+      "cascoOvImageCaption": "This is a shot of Casco Viejo taken from Ancon Hill.",
+
+      "tipping": "/images/culturalNorms/tipping-in-panama.jpg",
+      "tippingAltText": "money on table",
+      "tippingCaption": "My lunch payment including the tip",
+
+      "pace": "/images/culturalNorms/panama-hat.jpg",
+      "paceAltText": "panama hat and glasses",
+      "paceCaption": "This Panama hat and large sunglasses hang on the door at Picasso's Restaurant.",
+
+      "exercise": "/images/culturalNorms/panama-exercise.jpg",
+      "exerciseAltText": "an exercise class in panama",
+      "exerciseCaption": "A sunday morning exercise class near the Cinta Costera",
+
+      "church": "/images/culturalNorms/casco-viejo-church.jpg",
+      "churchAltText": "a casco viejo church",
+      "churchCaption":"St. Joseph's Church in Casco Viejo",
+
+      "fam": "/images/culturalNorms/casco-viejo-smiling-cops.jpg",
+      "famAltText": "my mom in casco viejo",
+      "famCaption":"My mom in Casco Viejo posing with two police officers"
+
+      
+ 
+
+ 
     },
     {
       "title": "Traditional food in Panama",
