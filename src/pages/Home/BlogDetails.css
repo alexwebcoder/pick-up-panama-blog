@@ -92,6 +92,10 @@
 .blog-details p {
     margin-bottom: 20px;
 }
+.blog-details p.second-para {
+    margin-bottom: 0px;
+}
+
 .blog-details .line-divider {
     margin-top: 0;
     margin-bottom: 45px;

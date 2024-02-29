@@ -2644,7 +2644,7 @@ const BlogDetails = () => {
             <h1 className="centered post-title">{blog.title}</h1>
             <div className="body intro">
               <p>{blog.intro}</p>
-              <p>{blog.byFamiliz}</p>
+              <p className="second-para">{blog.byFamiliz}</p>
             </div>
             <figure>
               <picture>
@@ -3041,7 +3041,7 @@ const BlogDetails = () => {
             <h1 className="centered post-title">{blog.title}</h1>
             <div className="body intro">
               <p>{blog.intro}</p>
-              <p>{blog.thisArticle}</p>
+              <p className="second-para">{blog.thisArticle}</p>
             </div>
             <figure>
               <picture>
