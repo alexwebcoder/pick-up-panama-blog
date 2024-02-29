@@ -855,7 +855,7 @@
       "womenWear": "Women wear light, breathable clothing suitable for the warm and tropical climate.",
       "sunscreen": "Sunscreen, hats, and sunglasses are also essential for protection from the sun. The dress is more casual here than in Panama City.",
       "dressCodeH3": "Panama dress code for banks and government offices",
-      "disregarding": "They may ask you to leave if you disregard any of these:",
+      "disregarding": "They may ask you to leave if you disregard any of these.",
       "menMustLi": "Men must wear long pants.",
       "womenShould": "Women should wear a knee length skirt or capri pants.",
       "noBare": "No bare shoulders",
@@ -870,7 +870,7 @@
       "cascoImage": "/images/culturalNorms/casco-museum.jpg",
       "cascoImageAltText": "woman wearing pollera",
       "cascoImageCaption": "This Casco Viejo museum display shows a woman's one piece skirt called a pollera and a man's guayabera shirt and Panama hat.",
-      "cascoOvImage": "/images/culturalNorms/casco-viejo.jpg",
+      "cascoOvImage": "/images/culturalNorms/casco-viejo-panama.jpg",
       "cascoOvImageAltText": "overhead shot of Casco Viejo",
       "cascoOvImageCaption": "This is a shot of Casco Viejo taken from Ancon Hill.",
       "tipping": "/images/culturalNorms/tipping-in-panama.jpg",
@@ -879,7 +879,7 @@
       "pace": "/images/culturalNorms/panama-hat.jpg",
       "paceAltText": "panama hat and glasses",
       "paceCaption": "This Panama hat and large sunglasses hang on the door at Picasso's Restaurant.",
-      "exercise": "/images/culturalNorms/panama-exercise.jpg",
+      "exercise": "/images/culturalNorms/panama-exercise-class.jpg",
       "exerciseAltText": "an exercise class in panama",
       "exerciseCaption": "A sunday morning exercise class near the Cinta Costera",
       "church": "/images/culturalNorms/casco-viejo-church.jpg",
@@ -887,7 +887,10 @@
       "churchCaption": "St. Joseph's Church in Casco Viejo",
       "fam": "/images/culturalNorms/casco-viejo-smiling-cops.jpg",
       "famAltText": "my mom in casco viejo",
-      "famCaption": "My mom in Casco Viejo posing with two police officers"
+      "famCaption": "My mom in Casco Viejo posing with two police officers",
+      "corBeach": "/images/culturalNorms/coronado-beach-panama.jpg",
+      "corBeachAltText": "coronado-beach",
+      "corBeachCaption": "Coronado Beach"
     },
     {
       "title": "Traditional food in Panama",

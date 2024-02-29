@@ -158,7 +158,7 @@ p.this-article {
 .cops-at-fruitstand {
     padding-top: calc(1180 / 1170 * 100%);
 }
-.bank-police, .food .delicias, .food .jardin, .food .lsalad, .food .margot-front{
+.bank-police, .food .delicias, .food .jardin, .food .lsalad, .food .margot-front, .culture .coronado-beach{
     padding-top: calc(878 / 1170 * 100%);
 }
 .casco-tourist, .casco-police, .colon-plate, .casco-petty-crime, .market-police, .near-casco, .culture figure {
@@ -292,7 +292,7 @@ p.this-article {
     .share-parent {
         flex-direction: row;
         position: fixed;
-        left: 8px;
+        left: 13px;
         top: 55%;
         flex-direction: column;
     }
