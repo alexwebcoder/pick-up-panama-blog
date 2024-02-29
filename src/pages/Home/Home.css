@@ -258,7 +258,12 @@ figure {
       height: 257px;
  }
 }
-@media only screen and (min-width: 1050px) and (max-width: 1460px) {
+@media only screen and (min-width: 1050px) and (max-width: 1209px) {
+  .card-container article {
+      height: 245px;
+ }
+}
+@media only screen and (min-width: 1209px) and (max-width: 1460px) {
   .card-container article {
       height: 276px;
  }
@@ -271,6 +276,21 @@ figure {
 @media only screen and (min-width: 1755px) and (max-width: 1923px) {
   .card-container article {
       height: 285px;
+ }
+}
+@media only screen and (min-width: 1924px) and (max-width: 1984px) {
+  .card-container article {
+      height: 277px;
+ }
+}
+@media only screen and (min-width: 1984px) and (max-width: 2063px) {
+  .card-container article {
+      height: 292px;
+ }
+}
+@media only screen and (min-width: 2063px) and (max-width: 2374px) {
+  .card-container article {
+      height: 328px;
  }
 }
 @media all and (min-width: 1500px) {
