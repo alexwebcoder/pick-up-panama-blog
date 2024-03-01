@@ -114,6 +114,9 @@ p.intro, div.intro {
     width: 100%;
     letter-spacing: .025em;
 }
+p.intro.no-margin-top {
+    margin-top: 0;
+}
 p.this-article {
     margin-bottom: 45px;
 }

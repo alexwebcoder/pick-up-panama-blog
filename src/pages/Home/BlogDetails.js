@@ -1167,7 +1167,10 @@ const BlogDetails = () => {
               <figcaption>{blog.alexBusCaption}</figcaption>
             </figure>
             <div className="button-parent">
-              <button title="Is Panama safe to travel alone?" onClick={goToSafetyStory}>
+              <button
+                title="Is Panama safe to travel alone?"
+                onClick={goToSafetyStory}
+              >
                 &#60;
               </button>
               <button
@@ -2615,10 +2618,7 @@ const BlogDetails = () => {
               >
                 &#60;
               </button>
-              <button
-                title="The culture of Panama"
-                onClick={goToCulturalNorms}
-              >
+              <button title="The culture of Panama" onClick={goToCulturalNorms}>
                 &#62;
               </button>
             </div>
@@ -2754,7 +2754,7 @@ const BlogDetails = () => {
                 <img
                   className="no-right-click"
                   src={blog.fam}
-                  alt={blog.famAltText} 
+                  alt={blog.famAltText}
                 />
               </picture>
               <figcaption>{blog.famCaption}</figcaption>
@@ -2784,7 +2784,7 @@ const BlogDetails = () => {
                 <img
                   className="no-right-click"
                   src={blog.church}
-                  alt={blog.churchAltText} 
+                  alt={blog.churchAltText}
                 />
               </picture>
               <figcaption>{blog.churchCaption}</figcaption>
@@ -2919,7 +2919,7 @@ const BlogDetails = () => {
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
                 <img
-                  className="no-right-click" 
+                  className="no-right-click"
                   src={blog.tipping}
                   alt={blog.tippingAltText}
                 />
@@ -3106,7 +3106,7 @@ const BlogDetails = () => {
               </FacebookShareButton>
               <TwitterShareButton
                 url={currentPageUrl}
-                hashtags={["pickuppanama", "food", "cuisine", "panama"]} 
+                hashtags={["pickuppanama", "food", "cuisine", "panama"]}
                 title={"Traditional food in Panama"}
                 aria-label="twitter"
               >
@@ -3941,13 +3941,10 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.margFCaption}</figcaption>
             </figure>
-            <p className="intro last-figure">{blog.final}</p>
+            <p className="intro no-margin-top last-figure">{blog.final}</p>
 
             <div className="button-parent">
-              <button
-                title="The culture of Panama"
-                onClick={goToCulturalNorms}
-              >
+              <button title="The culture of Panama" onClick={goToCulturalNorms}>
                 &#60;
               </button>
               <button
