@@ -20,13 +20,11 @@ const findObjectById = (idToFind, arrayOfObjects) => {
 };
 
 const BlogDetails = () => {
-  //using the useParams hook to grab values (route params) from current url (route)
   const { id } = useParams();
-  const {
-    data: blog,
-    error,
-    isPending,
-  } = useFetch("http://localhost:8000/blogs/" + id);
+  const { data, error, isPending } = useFetch(
+    'https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/'
+  );
+  const blog = data ? findObjectById(id, data) : null;
 
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
