@@ -2299,7 +2299,7 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={"What language is spoken in Panama?"}
+                subject={"What languages are spoken in Panama?"}
                 body={`Find out what languages are spoken in Panama and understand why it's important to learn Spanish.`}
                 aria-label="email"
                 separator={" "}
