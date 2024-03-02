@@ -19,6 +19,7 @@ const Navbar = () => {
                 <li className='item'><Link className='item-anchor' to='/newsfeed'>Newsfeed</Link></li>
                 <li className='item'><Link className='item-anchor' to='/about'>About</Link></li>
                 <li className='item'><Link className='item-anchor' to='/contact'>Contact</Link></li>
+                <li className='item'><Link className='item-anchor' to='/all-posts'>All Posts</Link></li>
             </ul>
             <ul className='sidenav centered' tabIndex={-1}>
                 <li><Link to='/'>Home</Link></li>

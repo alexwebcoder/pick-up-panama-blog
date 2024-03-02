@@ -9,6 +9,7 @@ import Newsfeed from "./pages/Newsfeed/Newsfeed";
 import ContactUs from './pages/ContactUs/ContactUs';
 import FeatureStory from './pages/FeatureStory/FeatureStory';
 import ScrollTop from './components/ScrollTop/ScrollTop';
+import AllPosts from './pages/AllPosts/AllPosts';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                  <Route path='/newsfeed' element={ <Newsfeed/> } />
                  <Route path='/about' element={ <About/> } />
                  <Route path='/contact' element={ <ContactUs/> } />
+                 <Route path='/all-posts' element={ <AllPosts/> } />
                  <Route path='/blogs/:id' element={ <BlogDetails/> } />
                  <Route path='/featured/:id' element={ <FeatureStory/> } />
                  <Route path='/*' element={ <NotFound /> } />

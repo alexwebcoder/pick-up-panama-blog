@@ -51,4 +51,8 @@ export const Capitalize = () => {
     if (document.title === "Panama News Feed") {
         document.getElementsByTagName('meta')["description"].content = "Read the newsfeed to stay up to date on the latest news from Panama.";
     }
+
+    if (document.title === "Pick Up Panama Blog Posts") {
+        document.getElementsByTagName('meta')["description"].content = "Explore all the helpful and informative content that is here in the blog archive. ";
+    }
 }
