@@ -41,7 +41,7 @@ export const Capitalize = () => {
     }
 
     if (document.title === "About Pick Up Panama") {
-        document.getElementsByTagName('meta')["description"].content = "Pick Up Panama helps solve some of the challenges that come with visiting Panama.";
+        document.getElementsByTagName('meta')["description"].content = "This Panama travel guide helps solve some of the challenges that come with visiting Panama.";
     }
 
     if (document.title === "Contact Pick Up Panama") {
@@ -52,7 +52,7 @@ export const Capitalize = () => {
         document.getElementsByTagName('meta')["description"].content = "Read the newsfeed to stay up to date on the latest news from Panama.";
     }
 
-    if (document.title === "Pick Up Panama Blog Posts") {
-        document.getElementsByTagName('meta')["description"].content = "Explore all the helpful and informative content that is here in the blog archive. ";
+    if (document.title === "Panama Blog") {
+        document.getElementsByTagName('meta')["description"].content = "Learn lots of Panama travel tips from this archive of panama blogs.";
     }
 }

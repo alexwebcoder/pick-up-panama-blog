@@ -19,13 +19,14 @@ const Navbar = () => {
                 <li className='item'><Link className='item-anchor' to='/newsfeed'>Newsfeed</Link></li>
                 <li className='item'><Link className='item-anchor' to='/about'>About</Link></li>
                 <li className='item'><Link className='item-anchor' to='/contact'>Contact</Link></li>
-                <li className='item'><Link className='item-anchor' to='/all-posts'>All Posts</Link></li>
+                <li className='item'><Link className='item-anchor' to='/panama-blogs'>Blog Posts</Link></li>
             </ul>
             <ul className='sidenav centered' tabIndex={-1}>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/newsfeed'>Newsfeed</Link></li>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/contact'>Contact</Link></li>
+                <li><Link to='/panama-blogs'>Blog Posts</Link></li>
             </ul>
             <div className='flag panama'>
                 <div>

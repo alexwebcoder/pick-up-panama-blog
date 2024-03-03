@@ -1,0 +1,27 @@
+.blog-posts {
+    margin-top: 181px;
+}
+h1 {
+    text-align: center;
+}
+.blog-posts .card-container {
+    margin-bottom: 47px;
+}
+/* Tablet menu */
+@media all and (min-width: 960px) {
+    .blog-posts {
+        margin-top: 158px;
+   }
+    .blog-posts .card-container {
+        margin-bottom: 67px;
+   }
+}
+/* Larger Screens */
+@media all and (min-width: 1500px) {
+    .blog-posts {
+        margin-top: 168px;
+   }
+    .blog-posts .card-container {
+        margin-bottom: 77px;
+   }
+}
