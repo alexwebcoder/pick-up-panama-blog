@@ -18,6 +18,7 @@ function App() {
           <Navbar />
               <Routes>
                  <Route path='/' element={ <Home/> } />
+                 <Route path='/index.html' element={ <Home/> } />
                  <Route path='/newsfeed' element={ <Newsfeed/> } />
                  <Route path='/about' element={ <About/> } />
                  <Route path='/contact' element={ <ContactUs/> } />
