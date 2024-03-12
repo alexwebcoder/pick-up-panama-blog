@@ -1188,7 +1188,17 @@
       "aphoneNumberH3": "A phone number in the US would look like this:",
       "usPhoneNo": "+1 (310) XXX-XXXX",
       "checkH2": "Check to make sure your phone is unlocked",
-      "yourPhoneMust": "Your phone must be unlocked or else it won't work with a SIM card of a Panamanian local carrier. Before you leave for Panama, you can use the following methods to check to see if it is unlocked."
+      "yourPhoneMust": "Your phone must be unlocked or else it won't work with a Panama SIM card. Before you leave for Panama, you can use the following methods to check to see if it is unlocked.",
+      "calling": "Call your carrier directly and asking them.",
+      "useAn": "Use an online IMEI checker: Mobile devices have a unique International Mobile Equipment Identity (IMEI) number. You can find your phone's IMEI by dialing *#06# on the keypad. When you have the IMEI number, you can google 'IMEI checker tool' to find a third party website that will check the lock status of your device. It will  tell you whether your phone is locked to a specific carrier or if it's unlocked.",
+      "ifYour": "If your phone is locked and you want to unlock it, you can use a third-party unlocking service. These services typically require you to provide your phone's IMEI number and may charge a fee to unlock your device. However, be cautious when using third-party unlocking.",
+      "simComH2": "SIM card compatibility",
+      "simCardsCome": "The SIM cards come in different sizes and frequencies. To be compatible, the frequency bands used in your US phone have to support the frequency bands used by the SIM cards of Panamanian mobile carriers.",
+      "frequencyH3": "SIM card frequency bands",
+      "evenThough": "Even though most modern smartphones are designed to work with a wide range of frequency bands, it's still a good idea to verify compatibility to ensure optimal performance.",
+      "findYourPhoneH3": "Find your phone's specifications",
+      "lookUp": "Look up the specifications of your phone online. You find this information on the manufacturer's website or by searching for your phone's model number. Look for the supported frequency bands for cellular connectivity."
+
 
 
 

@@ -4095,6 +4095,19 @@ const BlogDetails = () => {
           <p>{blog.usPhoneNo}</p>
           <h2>{blog.checkH2}</h2>
           <p><strong>{blog.yourPhoneMust}</strong></p>
+          <ul>
+            <li>{blog.calling}</li>
+            <li>{blog.useAn}</li>
+            <li>{blog.ifYour}</li>
+          </ul>
+          <h2>{blog.simComH2}</h2>
+          <p>{blog.simCardsCome}</p>
+          <h3>{blog.frequencyH3}</h3>
+          <p>{blog.evenThough}</p>
+          <h3>{blog.findYourPhoneH3}</h3>
+          <p>{blog.lookUp}</p>
+
+
 
 
 
