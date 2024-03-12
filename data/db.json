@@ -1146,6 +1146,14 @@
       "margF": "/images/food/delicias-margot-front.jpg",
       "margFAltText": "panama alex deleon",
       "margFCaption": "Alex at Delicias Margot"
+    },
+    {
+      "title": "Using your cell phone with WhatsApp in Panama",
+      "author": "Alex DeLeon",
+      "date": "March 11, 2024",
+      "id": "using-your-cell-phone-with-whatsapp-in-panama",
+      "className": "whats-app",
+      "intro": "new"
     }
   ],
   "featured": [

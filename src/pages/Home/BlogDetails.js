@@ -21,10 +21,15 @@ const findObjectById = (idToFind, arrayOfObjects) => {
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const { data, error, isPending } = useFetch(
-    'https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/'
-  );
-  const blog = data ? findObjectById(id, data) : null;
+  const {
+    data: blog,
+    error,
+    isPending,
+  } = useFetch("http://localhost:8000/blogs/" + id);
+  // const { data, error, isPending } = useFetch(
+  //   'https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/'
+  // );
+  // const blog = data ? findObjectById(id, data) : null;
 
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
@@ -3948,6 +3953,112 @@ const BlogDetails = () => {
               <button
                 title="How Do I Visit the Panama Canal?"
                 onClick={goToCanalStory}
+              >
+                &#62;
+              </button>
+            </div>
+          </section>
+        )}
+      </main>
+    );
+  }
+  if (document.title === "Using your cell phone with WhatsApp in Panama") {
+    return (
+      <main id="main-element" className={`blog-details margin `}>
+        {isPending && <div>Loading...</div>}
+        {error && <div className="load-error">{error}</div>}
+        {blog && (
+          <section className={blog.className}>
+            <div className="line-divider centered wide">
+              <p className="diamond-text-box date">
+                <span className="left"></span>
+                <span className="content caps centered">{blog.date}</span>
+                <span className="right"></span>
+              </p>
+            </div>
+            <h1 className="centered post-title">{blog.title}</h1>
+            <p className="body intro">{blog.intro}</p>
+            <div className="share-parent">
+              <FacebookShareButton
+                url={currentPageUrl}
+                hashtag="#panama"
+                aria-label="facebook"
+              >
+                <FacebookIcon size={35} />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url={currentPageUrl}
+                hashtags={["pickuppanama", "transportation", "panama"]}
+                title={"Transportation in Panama"}
+                aria-label="twitter"
+              >
+                <TwitterIcon size={35} />
+              </TwitterShareButton>
+              <LinkedinShareButton
+                url={currentPageUrl}
+                title={"Transportation in Panama"}
+                summary={
+                  "Learn about the Panama metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
+                }
+                aria-label="linkedin"
+              >
+                <LinkedinIcon size={35} />
+              </LinkedinShareButton>
+              <EmailShareButton
+                url={currentPageUrl}
+                subject={"Transportation in Panama"}
+                body={
+                  "Learn about the Panama metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
+                }
+                aria-label="email"
+                separator={" "}
+              >
+                <EmailIcon size={35} />
+              </EmailShareButton>
+            </div>
+            <figure className="hwy">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-panamerican-highway-320.webp 320w, /images/transportation/panama-panamerican-highway-480.webp 480w, /images/transportation/panama-panamerican-highway-640.webp 640w, /images/transportation/panama-panamerican-highway-768.webp 768w, /images/transportation/panama-panamerican-highway.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/transportation/panama-panamerican-highway-320.jpg 320w, /images/transportation/panama-panamerican-highway-480.jpg 480w, /images/transportation/panama-panamerican-highway-640.jpg 640w, /images/transportation/panama-panamerican-highway-768.jpg 768w, /images/transportation/panama-panamerican-highway.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  fetchpriority="high"
+                  className="no-right-click"
+                  src={blog.panAm}
+                  alt={blog.panAmAltText}
+                />
+              </picture>
+              <figcaption>{blog.panAmCaption}</figcaption>
+            </figure>
+           
+
+
+
+
+           
+            <div className="button-parent">
+              <button
+                title="Is Panama safe to travel alone?"
+                onClick={goToSafetyStory}
+              >
+                &#60;
+              </button>
+              <button
+                title="Things to do in El Cangrejo"
+                onClick={goToElCangrejoStory}
               >
                 &#62;
               </button>
