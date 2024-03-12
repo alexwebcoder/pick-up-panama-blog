@@ -3977,7 +3977,9 @@ const BlogDetails = () => {
               </p>
             </div>
             <h1 className="centered post-title">{blog.title}</h1>
-            <p className="body intro">{blog.intro}</p>
+              <p className="body intro">{blog.intro}</p>
+              <p>{blog.asLong}</p>
+              <p>{blog.thisArticle}</p>
             <div className="share-parent">
               <FacebookShareButton
                 url={currentPageUrl}
@@ -4016,7 +4018,7 @@ const BlogDetails = () => {
                 <EmailIcon size={35} />
               </EmailShareButton>
             </div>
-            <figure className="hwy">
+            {/* <figure className="hwy">
               <picture>
                 <source
                   type="image/webp"
@@ -4042,8 +4044,62 @@ const BlogDetails = () => {
                 />
               </picture>
               <figcaption>{blog.panAmCaption}</figcaption>
-            </figure>
-           
+            </figure> */}
+           <h2>{blog.whyUseH2}</h2>
+           <p>{blog.whatsApUses}</p>
+           <p>{blog.whatsAppOffers}</p>
+           <p>{blog.inAddition}</p>
+           <p>{blog.inPanama}</p>
+           <h2>{blog.setUpH2}</h2>
+           <p>
+              <span className="six-hundred">{blog.downloadSpan}</span>{" "}
+              {blog.downloadThe}
+          </p>
+          <p>
+              <span className="six-hundred">{blog.verifySpan}</span>{" "}
+              {blog.whenYouFirst}
+          </p>
+          <p>
+              <span className="six-hundred">{blog.setUpYour}</span>{" "}
+              {blog.afterVerify}
+          </p>
+          <p>
+              <span className="six-hundred">{blog.addContacts}</span>{" "}
+              {blog.whatsAppSyncs}
+          </p>
+          <p>
+              <span className="six-hundred">{blog.startMess}</span>{" "}
+              {blog.onceYou}
+          </p>
+          <p>
+              <span className="six-hundred">{blog.makeCalls}</span>{" "}
+              {blog.youCanAlso}
+          </p>
+          <p>
+              <span className="six-hundred">{blog.exploreAdd}</span>{" "}
+              {blog.whatsAppHas}
+          </p>
+          <h2>{blog.whatsAppPhoneNoH2}</h2>
+          <p>{blog.whatsAppNumbers}</p>
+          <h3>{blog.formatH3}</h3>
+          <p>{blog.countryCode}</p>
+          <h3>{blog.whatsAppNoH3}</h3>
+
+          <ul>
+            <li>{blog.fiveOSeven}</li>
+            <li>{blog.fiveOSevenIs}</li>
+            <li>{blog.theXX}</li>
+            <li>{blog.cellPhone}</li>
+          </ul>
+          <h3>{blog.aphoneNumberH3}</h3>
+          <p>{blog.usPhoneNo}</p>
+          <h2>{blog.checkH2}</h2>
+          <p><strong>{blog.yourPhoneMust}</strong></p>
+
+
+
+
+
 
 
 

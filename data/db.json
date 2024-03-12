@@ -1148,12 +1148,51 @@
       "margFCaption": "Alex at Delicias Margot"
     },
     {
-      "title": "Using your cell phone with WhatsApp in Panama",
+      "title": "Using your cell phone with WhatsApp and a Panama data plan",
       "author": "Alex DeLeon",
       "date": "March 11, 2024",
       "id": "using-your-cell-phone-with-whatsapp-in-panama",
       "className": "whats-app",
-      "intro": "new"
+      "intro": "WhatsApp is a free mobile messaging app that you can use on your phone or other devices. While in Panama, I use a Panama SIM card and data plan to make all my calls and do all my messaging over the internet with WhatsApp instead of making my calls through the mobile network that I use in the United States.",
+      "asLong": "As long as your phone is unlocked, you can swap out your SIM card and use a SIM card of a Panama mobile carrier. With the inexpensive data plan that you get in Panama, you can use WhatsApp like a normal texting app to share photos, videos and voice messages.",
+      "thisArticle": "This article will go over how to get an inexpensive data plan in Panama so that you can use your phone with WhatsApp to keep in touch with people back home.",
+      "whyUseH2": "Why use WhatsApp in Panama?",
+      "whatsApUses": "WhatsApp uses an internet connection (data plan or wifi) for communication instead of traditional cellular voice and text services. Data costs are a lot  lower than roaming charges for voice calls and SMS messages when traveling abroad. So, using WhatsApp saves you roaming fees.",
+      "whatsAppOffers": "WhatsApp offers free messaging and voice/video calls to other WhatsApp users, regardless of their location. As long as both parties have access to an internet connection, communication through WhatsApp doesn't incur additional charges beyond data usage.",
+      "inAddition": "In addition to secure text messaging and calling, WhatsApp supports various media formats such as photos, videos, documents, and voice messages with end-to-end encryption.",
+      "inPanama": "In Panama, WhatsApp is the top choice when it comes to staying connected.  A large portion of the Panamanian population is already using WhatsApp and it is easy to integrate your existing mobile number with WhatsApp. You will see that most businesses in Panama use WhatsApp as their main contact number.",
+      "setUpH2": "Set Up WhatsApp before you leave for Panama",
+      "downloadSpan": "Download WhatsApp:",
+      "downloadThe": " Download the WhatsApp application from the Google Play Store (for Android devices) or the Apple App Store (for iOS devices)",
+      "verifySpan": "Verify your phone number:",
+      "whenYouFirst": "When you first launch WhatsApp, you'll be prompted to verify your phone number. Make sure you have access to the phone number you want to use with WhatsApp, as you'll receive a verification code via SMS or a phone call.",
+      "setUpYour": "Set up your profile:",
+      "afterVerify": "After verifying your phone number, you'll be asked to set up your profile by entering your name and, optionally, adding a profile picture. This information will be visible to your contacts on WhatsApp.",
+      "addContacts": "Add contacts:",
+      "whatsAppSyncs": "WhatsApp syncs with your phone's contacts, so you'll automatically see any contacts who have WhatsApp installed. If you want to add someone who isn't in your contacts, you can manually add them by entering their phone number.",
+      "startMess": "Start messaging:",
+      "onceYou": "Once you have contacts added, you can start messaging them by tapping on their name in your WhatsApp contact list and then typing a message in the chat box at the bottom of the screen. You can also send photos, videos, documents, and voice messages.",
+      "makeCalls": "Make calls:",
+      "youCanAlso": "You can also make voice and video calls using WhatsApp. Simply open a chat with the contact you want to call, then tap the phone or video icon at the top right corner of the screen to initiate the call.",
+      "exploreAdd": "Explore additional features:",
+      "whatsAppHas": "WhatsApp has other features such as group chats, status updates, and WhatsApp Web (which allows you to use WhatsApp on your computer). Take some time to explore these features and customize your WhatsApp experience according to your preferences.",
+      "whatsAppPhoneNoH2": "WhatsApp phone numbers and Panamanian area code",
+      "whatsAppNumbers": "WhatsApp takes your regular phone number and then associates it with the WhatsApp service. This allows users to send messages, make calls, and use other WhatsApp features.",
+      "formatH3": "A WhatsApp number follows this format:",
+      "countryCode": "[Country Code][Area Code (if applicable)][Subscriber Number]",
+      "whatsAppNoH3": "A WhatsApp number in Panama might look like this:",
+      "fiveOSeven": "+507 XXXX-XXXX",
+      "fiveOSevenIs": "'507' is the country code for Panama.",
+      "theXX": "The XXXX-XXXX represents the subscriber's phone number.",
+      "cellPhone": "Cell phone numbers in Panama are 8 digits long and begin with a 6.",
+      "aphoneNumberH3": "A phone number in the US would look like this:",
+      "usPhoneNo": "+1 (310) XXX-XXXX",
+      "checkH2": "Check to make sure your phone is unlocked",
+      "yourPhoneMust": "Your phone must be unlocked or else it won't work with a SIM card of a Panamanian local carrier. Before you leave for Panama, you can use the following methods to check to see if it is unlocked."
+
+
+
+
     }
   ],
   "featured": [
