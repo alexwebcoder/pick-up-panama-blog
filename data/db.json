@@ -1197,7 +1197,31 @@
       "frequencyH3": "SIM card frequency bands",
       "evenThough": "Even though most modern smartphones are designed to work with a wide range of frequency bands, it's still a good idea to verify compatibility to ensure optimal performance.",
       "findYourPhoneH3": "Find your phone's specifications",
-      "lookUp": "Look up the specifications of your phone online. You find this information on the manufacturer's website or by searching for your phone's model number. Look for the supported frequency bands for cellular connectivity."
+      "lookUp": "Look up the specifications of your phone online. You find this information on the manufacturer's website or by searching for your phone's model number. Look for the supported frequency bands for cellular connectivity.",
+      "compareBandsH3": "Compare the frequency bands of your phone with the frequency bands of Panama mobile carriers",
+      "theMainMobile": "The main mobile carriers in Panama are Claro, Más Móvil,  Digicel and Tigo. You can visit the websites of these operators or research online to identify the frequency bands they use for their networks.",
+      "claroMasMovilH3": "The frequency bands for Claro and Más Móvil are:",
+      "claroH4": "Claro:",
+      "claroSpan1": "GSM (2G):",
+      "claroLi1": "Claro Panama primarily operates on the 850 MHz band for 2G services.",
+      "claroSpan2": "UMTS/HSPA (3G):",
+      "claroLi2": "Claro uses the 850 MHz band for 3G services.",
+      "claroSpan3": "LTE (4G):",
+      "claroLi3": "Claro utilizes the following LTE bands for 4G services in Panama:",
+      "nestLiA": "Band 4 (AWS) - 1700/2100 MHz",
+      "nestLiB": "Band 28 (APT) - 700 MHz",
+      "masMovilH4": "Más Móvil(Cable & Wireless)",
+      "masMovSpan1": "GSM (2G):",
+      "movilLiA": " +Movil (Cable & Wireless) operates on the 850 MHz band for 2G services.",
+      "masMovSpan2": "UMTS/HSPA (3G):",
+      "movilLiB": " +Movil uses the 850 MHz band for 3G services.",
+      "masMovSpan3": "LTE (4G):",
+      "movilLiC": "+Movil utilizes the following LTE bands for 4G services in Panama:",
+      "mMnested1": "Band 2 (PCS) - 1900 MHz",
+      "mMnested2": "Band 4 (AWS) - 1700/2100 MHz",
+      "mMnested3": "Band 7 (2600 MHz)",
+      "mMnested4": "Band 28 (APT) - 700 MHz"
+
 
 
 

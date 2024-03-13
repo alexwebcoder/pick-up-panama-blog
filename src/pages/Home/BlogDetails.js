@@ -4106,6 +4106,54 @@ const BlogDetails = () => {
           <p>{blog.evenThough}</p>
           <h3>{blog.findYourPhoneH3}</h3>
           <p>{blog.lookUp}</p>
+          <h3>{blog.compareBandsH3}</h3>
+          <p>{blog.theMainMobile}</p>
+          <h3>{blog.claroMasMovilH3}</h3>
+          <h4>{blog.claroH4}</h4>
+          <ul>
+            <li>
+              <span className="six-hundred">{blog.claroSpan1}</span>{" "}
+              <span>{blog.claroLi1}</span>
+            </li>
+            <li>
+              <span className="six-hundred">{blog.claroSpan2}</span>{" "}
+              <span>{blog.claroLi2}</span>
+            </li>
+            <li>
+              <span className="six-hundred">{blog.claroSpan3}</span>{" "}
+              <span>{blog.claroLi3}</span>
+            </li>
+            <li>
+              <ul>
+                <li>{blog.nestLiA}</li>
+                <li>{blog.nestLiB}</li>
+              </ul>
+            </li>
+          </ul>
+          <h4>{blog.masMovilH4}</h4>
+          <ul>
+            <li>
+              <span className="six-hundred">{blog.masMovSpan1}</span>{" "}
+              <span>{blog.movilLiA}</span>
+            </li>
+            <li>
+              <span className="six-hundred">{blog.masMovSpan2}</span>{" "}
+              <span>{blog.movilLiB}</span>
+            </li>
+            <li>
+              <span className="six-hundred">{blog.masMovSpan3}</span>{" "}
+              <span>{blog.movilLiC}</span>
+            </li>
+            <li>
+              <ul>
+                <li>{blog.mMnested1}</li>
+                <li>{blog.mMnested2}</li>
+                <li>{blog.mMnested3}</li>
+                <li>{blog.mMnested4}</li>
+              </ul>
+            </li>
+          </ul>
+
 
 
 
