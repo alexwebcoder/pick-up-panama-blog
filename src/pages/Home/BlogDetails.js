@@ -4107,7 +4107,14 @@ const BlogDetails = () => {
           <h3>{blog.findYourPhoneH3}</h3>
           <p>{blog.lookUp}</p>
           <h3>{blog.compareBandsH3}</h3>
-          <p>{blog.theMainMobile}</p>
+          <h4>{blog.theMainMobile}</h4>
+          <ul>
+            <li>{blog.mainLi1}</li>
+            <li>{blog.mainLi2}</li>
+            <li>{blog.mainLi3}</li>
+            <li>{blog.mainLi4}</li>
+          </ul>
+          <p>{blog.youCanUse}</p>
           <h3>{blog.claroMasMovilH3}</h3>
           <h4>{blog.claroH4}</h4>
           <ul>
@@ -4153,6 +4160,38 @@ const BlogDetails = () => {
               </ul>
             </li>
           </ul>
+          <h2>{blog.eSimVs}</h2>
+          <p>{blog.physical}</p>
+          <p>{blog.eSim}</p>
+          <p>{blog.eSImsAre}</p>
+          <p>{blog.soMake}</p>
+          <p>{blog.IHave}</p>
+          <h2>{blog.simPriceH2}</h2>
+          <p>{blog.thePriceOf}</p>
+          <h2>{blog.whereToBuyH2}</h2>
+          <p>{blog.prePaidareSold}</p>
+          <p>{blog.iRecommend}</p>
+          <h2>{blog.simReg}</h2>
+          <p>{blog.whenYouPur}</p>
+          <h2>{blog.panamaMobileCar}</h2>
+          <h3>{blog.ClaroPrePaid}</h3>
+          <ul>
+            <li>{blog.claroPlanLi1}</li>
+            <li>{blog.claroPlanLi2}</li>
+            <li>{blog.claroPlanLi3}</li>
+            <li>{blog.claroPlanLi4}</li>
+            <li>{blog.claroPlanLi5}</li>
+            <li>{blog.claroPlanLi6}</li>
+          </ul>
+          <h3>{blog.movilPrepaid}</h3>
+
+
+
+
+
+
+
+
 
 
 
