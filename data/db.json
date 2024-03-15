@@ -1148,13 +1148,14 @@
       "margFCaption": "Alex at Delicias Margot"
     },
     {
-      "title": "Using your cell phone with WhatsApp and a Panama data plan",
+      "title": "Using WhatsApp instead of your cell phone service in Panama",
       "author": "Alex DeLeon",
       "date": "March 11, 2024",
       "id": "using-your-cell-phone-with-whatsapp-in-panama",
       "className": "whats-app",
-      "intro": "WhatsApp is a free mobile messaging app that you can use on your phone or other devices. While in Panama, I use a Panama SIM card and data plan to make all my calls and do all my messaging over the internet with WhatsApp instead of making my calls through the mobile network that I use in the United States.",
-      "asLong": "As long as your phone is unlocked, you can swap out your SIM card and use the SIM card of a Panama mobile carrier. With the inexpensive data plan that you get in Panama, you can use WhatsApp like a normal texting app to share photos, videos and voice messages.",
+      "intro": "WhatsApp is a free mobile messaging app that you use on your phone and other devices. While in Panama, I use a Panama SIM card and data plan to make phone calls and send messages through WhatsApp instead of using the mobile network that I use in the United States.",
+      "asLong": "As long as your phone is unlocked, you can swap out your SIM card and use the SIM card of a Panama mobile carrier. With an inexpensive data plan that you get in Panama, you can use WhatsApp like a normal texting app to share photos, videos and voice messages.",
+      "bothParties": "For two people to use WhatsApp, both parties need to have WhatsApp installed and be connected to the internet and calls and messages are sent and received through the app.",
       "thisArticle": "This article will go over how to get an inexpensive data plan in Panama so that you can use your phone with WhatsApp to keep in touch with people back home.",
       "whyUseH2": "Why use WhatsApp in Panama?",
       "whatsApUses": "WhatsApp uses an internet connection (data plan or wifi) for communication instead of traditional cellular voice and text services. Data costs are a lot  lower than roaming charges for voice calls and SMS messages when traveling abroad. So, using WhatsApp saves you roaming fees.",
@@ -1192,8 +1193,10 @@
       "calling": "Call your carrier directly and asking them.",
       "useAn": "Use an online IMEI checker: Mobile devices have a unique International Mobile Equipment Identity (IMEI) number. You can find your phone's IMEI by dialing *#06# on the keypad. When you have the IMEI number, you can google 'IMEI checker tool' to find a third party website that will check the lock status of your device. It will  tell you whether your phone is locked to a specific carrier or if it's unlocked.",
       "ifYour": "If your phone is locked and you want to unlock it, you can use a third-party unlocking service. These services typically require you to provide your phone's IMEI number and may charge a fee to unlock your device. However, be cautious when using third-party unlocking.",
-      "simComH2": "SIM card compatibility",
-      "simCardsCome": "The SIM cards come in different sizes and frequencies. To be compatible, the frequency bands used in your US phone have to support the frequency bands used by the SIM cards of Panamanian mobile carriers.",
+      "whatSimH2": "What is a SIM card?",
+      "aSIMcardIs": "A SIM card, or Subscriber Identity Module, is a small chip that fits inside your phone and allows you to connect to a mobile network. This enables data services on your phone from the providor of the SIM card.",
+      "simComH3": "SIM card compatibility",
+      "simCardsCome": "SIM cards come in different sizes and frequencies. To be compatible with your phone, the frequency bands used in your US phone have to support the frequency bands used by the SIM cards of Panamanian mobile carriers.",
       "frequencyH3": "SIM card frequency bands",
       "evenThough": "Even though most modern smartphones are designed to work with a wide range of frequency bands, it's still a good idea to verify compatibility to ensure optimal performance.",
       "findYourPhoneH3": "Find your phone's specifications",
@@ -1240,14 +1243,17 @@
       "simReg": "SIM Card Registration",
       "whenYouPur": "When you purchase a SIM card in Panama, you may be required to provide personal identification, such as a passport or national ID card, as well as other relevant information. The mobile network operator will then register the SIM card under your name and activate it for use.",
       "panamaMobileCar": "Panama mobile carriers that I recommend",
-      "ClaroPrePaid": "Claro has six prepaid plans",
+      "claroPrePaid": "Claro has six prepaid plans",
       "claroPlanLi1": "Unlimited data, valid for 1 day for PAB 1 ($1)",
       "claroPlanLi2": "Unlimited data, valid for 3 days for PAB 3 ($3)",
       "claroPlanLi3": "Unlimited data, valid for 7 days for PAB 5 ($5)",
       "claroPlanLi4": "Unlimited data, valid for 10 days for PAB 7 ($7)",
       "claroPlanLi5": "Unlimited data, valid for 15 days for PAB 10 ($10)",
       "claroPlanLi6": "Unlimited data, valid for 28 days for PAB 10 ($15)",
-      "movilPrepaid": "Más Móvil"
+      "movilprePaid": "Más Móvil has three prepaid plans",
+      "movilplanLi1": "Unlimited data, valid for 3 days for PAB 3.50 ($3.50)",
+      "movilplanLi2": "Unlimited data, valid for 7 days for PAB 6 ($6)",
+      "movilplanLi3": "Unlimited data, valid for 10 days for PAB 7 ($7)"
 
 
 

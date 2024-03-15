@@ -3979,6 +3979,7 @@ const BlogDetails = () => {
             <h1 className="centered post-title">{blog.title}</h1>
               <p className="body intro">{blog.intro}</p>
               <p>{blog.asLong}</p>
+              <p>{blog.bothParties}</p>
               <p>{blog.thisArticle}</p>
             <div className="share-parent">
               <FacebookShareButton
@@ -4100,7 +4101,9 @@ const BlogDetails = () => {
             <li>{blog.useAn}</li>
             <li>{blog.ifYour}</li>
           </ul>
-          <h2>{blog.simComH2}</h2>
+          <h2>{blog.whatSimH2}</h2>
+          <p>{blog.aSIMcardIs}</p>
+          <h3>{blog.simComH3}</h3>
           <p>{blog.simCardsCome}</p>
           <h3>{blog.frequencyH3}</h3>
           <p>{blog.evenThough}</p>
@@ -4174,7 +4177,7 @@ const BlogDetails = () => {
           <h2>{blog.simReg}</h2>
           <p>{blog.whenYouPur}</p>
           <h2>{blog.panamaMobileCar}</h2>
-          <h3>{blog.ClaroPrePaid}</h3>
+          <h3>{blog.claroPrePaid}</h3>
           <ul>
             <li>{blog.claroPlanLi1}</li>
             <li>{blog.claroPlanLi2}</li>
@@ -4183,7 +4186,12 @@ const BlogDetails = () => {
             <li>{blog.claroPlanLi5}</li>
             <li>{blog.claroPlanLi6}</li>
           </ul>
-          <h3>{blog.movilPrepaid}</h3>
+          <h3>{blog.movilprePaid}</h3>
+          <ul>
+            <li>{blog.movilplanLi1}</li>
+            <li>{blog.movilplanLi2}</li>
+            <li>{blog.movilplanLi3}</li>
+          </ul> 
 
 
 
