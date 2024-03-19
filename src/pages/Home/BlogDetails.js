@@ -4112,10 +4112,42 @@ const BlogDetails = () => {
           <h3>{blog.compareBandsH3}</h3>
           <h4>{blog.theMainMobile}</h4>
           <ul>
-            <li>{blog.mainLi1}</li>
-            <li>{blog.mainLi2}</li>
-            <li>{blog.mainLi3}</li>
-            <li>{blog.mainLi4}</li>
+            <li>
+              <a
+                  className="link"
+                  target="_blank"
+                  href="https://www.claro.com.pa/personas/"
+                  rel="noopener noreferrer"
+                  aria-label="claro panama"
+                >{blog.mainLi1}</a>
+              </li>
+              <li>
+              <a
+                  className="link"
+                  target="_blank"
+                  href="https://www.masmovilpanama.com/"
+                  rel="noopener noreferrer"
+                  aria-label="mas movil panama"
+                >{blog.mainLi2}</a>
+              </li>
+              <li>
+              <a
+                  className="link"
+                  target="_blank"
+                  href="https://www.digicelgroup.com/pa/es"
+                  rel="noopener noreferrer"
+                  aria-label="digicel panama"
+                >{blog.mainLi3}</a>
+              </li>
+              <li>
+              <a
+                  className="link"
+                  target="_blank"
+                  href="https://www.tigo.com.pa/"
+                  rel="noopener noreferrer"
+                  aria-label="tigo panama"
+                >{blog.mainLi4}</a>
+              </li>
           </ul>
           <p>{blog.youCanUse}</p>
           <h3>{blog.claroMasMovilH3}</h3>
@@ -4133,7 +4165,7 @@ const BlogDetails = () => {
               <span className="six-hundred">{blog.claroSpan3}</span>{" "}
               <span>{blog.claroLi3}</span>
             </li>
-            <li>
+            <li className="no-marker">
               <ul>
                 <li>{blog.nestLiA}</li>
                 <li>{blog.nestLiB}</li>
@@ -4154,7 +4186,7 @@ const BlogDetails = () => {
               <span className="six-hundred">{blog.masMovSpan3}</span>{" "}
               <span>{blog.movilLiC}</span>
             </li>
-            <li>
+            <li className="no-marker">
               <ul>
                 <li>{blog.mMnested1}</li>
                 <li>{blog.mMnested2}</li>
