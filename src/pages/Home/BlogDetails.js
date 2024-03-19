@@ -4019,33 +4019,6 @@ const BlogDetails = () => {
                 <EmailIcon size={35} />
               </EmailShareButton>
             </div>
-            {/* <figure className="hwy">
-              <picture>
-                <source
-                  type="image/webp"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/transportation/panama-panamerican-highway-320.webp 320w, /images/transportation/panama-panamerican-highway-480.webp 480w, /images/transportation/panama-panamerican-highway-640.webp 640w, /images/transportation/panama-panamerican-highway-768.webp 768w, /images/transportation/panama-panamerican-highway.webp 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <source
-                  type="image/jpg"
-                  srcSet={
-                    process.env.PUBLIC_URL +
-                    "/images/transportation/panama-panamerican-highway-320.jpg 320w, /images/transportation/panama-panamerican-highway-480.jpg 480w, /images/transportation/panama-panamerican-highway-640.jpg 640w, /images/transportation/panama-panamerican-highway-768.jpg 768w, /images/transportation/panama-panamerican-highway.jpg 1170w"
-                  }
-                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
-                />
-                <img
-                  fetchpriority="high"
-                  className="no-right-click"
-                  src={blog.panAm}
-                  alt={blog.panAmAltText}
-                />
-              </picture>
-              <figcaption>{blog.panAmCaption}</figcaption>
-            </figure> */}
            <h2>{blog.whyUseH2}</h2>
            <p>{blog.whatsApUses}</p>
            <p>{blog.whatsAppOffers}</p>
@@ -4206,6 +4179,33 @@ const BlogDetails = () => {
           <h2>{blog.whereToBuyH2}</h2>
           <p>{blog.prePaidareSold}</p>
           <p>{blog.iRecommend}</p>
+          
+          <figure className="cell-store">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/simCard/alex-deleon-panama-320.webp 320w, /images/simCard/alex-deleon-panama-480.webp 480w, /images/simCard/alex-deleon-panama-640.webp 640w, /images/simCard/alex-deleon-panama-768.webp 768w, /images/simCard/alex-deleon-panama.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/simCard/alex-deleon-panama-320.jpg 320w, /images/simCard/alex-deleon-panama-480.jpg 480w, /images/simCard/alex-deleon-panama-640.jpg 640w, /images/simCard/alex-deleon-panama-768.jpg 768w, /images/simCard/alex-deleon-panama.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.claroStore}
+                  alt={blog.claroStoreAltText}
+                />
+              </picture>
+              <figcaption>{blog.claroStoreCaption}</figcaption>
+            </figure>
           <h2>{blog.simReg}</h2>
           <p>{blog.whenYouPur}</p>
           <h2>{blog.panamaMobileCar}</h2>

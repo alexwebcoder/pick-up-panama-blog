@@ -20,7 +20,7 @@
 .link:hover {
     text-decoration: underline;
 }
-.safety, .transportation, .el-cangrejo, .panama-canal, .spanish, .food, .culture {
+.safety, .transportation, .el-cangrejo, .panama-canal, .spanish, .food, .culture, .whats-app {
     flex: 1;
     position: relative;
 }
@@ -164,7 +164,7 @@ p.this-article {
 .cops-at-fruitstand {
     padding-top: calc(1180 / 1170 * 100%);
 }
-.bank-police, .food .delicias, .food .jardin, .food .lsalad, .food .margot-front, .culture .coronado-beach {
+.bank-police, .food .delicias, .food .jardin, .food .lsalad, .food .margot-front, .culture .coronado-beach, .whats-app .cell-store {
     padding-top: calc(878 / 1170 * 100%);
 }
 .casco-tourist, .casco-police, .colon-plate, .casco-petty-crime, .market-police, .near-casco, .culture figure {
