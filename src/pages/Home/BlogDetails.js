@@ -4075,6 +4075,58 @@ const BlogDetails = () => {
             <li>{blog.ifYour}</li>
           </ul>
           <h2>{blog.whatSimH2}</h2>
+          <figure className="sim-card-front">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/simCard/mas-movil-panama-front-320.webp 320w, /images/simCard/mas-movil-panama-front-480.webp 480w, /images/simCard/mas-movil-panama-front-640.webp 640w, /images/simCard/mas-movil-panama-front-768.webp 768w, /images/simCard/mas-movil-panama-front.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/simCard/mas-movil-panama-front-320.jpg 320w, /images/simCard/mas-movil-panama-front-480.jpg 480w, /images/simCard/mas-movil-panama-front-640.jpg 640w, /images/simCard/mas-movil-panama-front-768.jpg 768w, /images/simCard/mas-movil-panama-front.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.simFront}
+                  alt={blog.simFrontAltText}
+                />
+              </picture>
+              <figcaption>{blog.simFrontCaption}</figcaption>
+            </figure>
+            <figure className="sim-card-back">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/simCard/mas-movil-panama-back-320.webp 320w, /images/simCard/mas-movil-panama-back-480.webp 480w, /images/simCard/mas-movil-panama-back-640.webp 640w, /images/simCard/mas-movil-panama-back-768.webp 768w, /images/simCard/mas-movil-panama-back.webp 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <source
+                  type="image/jpg"
+                  srcSet={
+                    process.env.PUBLIC_URL +
+                    "/images/simCard/mas-movil-panama-back-320.jpg 320w, /images/simCard/mas-movil-panama-back-480.jpg 480w, /images/simCard/mas-movil-panama-back-640.jpg 640w, /images/simCard/mas-movil-panama-back-768.jpg 768w, /images/simCard/mas-movil-panama-back.jpg 1170w"
+                  }
+                  sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
+                />
+                <img
+                  className="no-right-click"
+                  src={blog.simBack}
+                  alt={blog.simBackAltText}
+                />
+              </picture>
+              <figcaption>{blog.simBackCaption}</figcaption>
+            </figure>
           <p>{blog.aSIMcardIs}</p>
           <h3>{blog.simComH3}</h3>
           <p>{blog.simCardsCome}</p>
@@ -4209,6 +4261,8 @@ const BlogDetails = () => {
           <h2>{blog.simReg}</h2>
           <p>{blog.whenYouPur}</p>
           <h2>{blog.panamaMobileCar}</h2>
+          <p>{blog.recommendation}</p>
+          <p>{blog.claroConnect}</p>
           <h3>{blog.claroPrePaid}</h3>
           <ul>
             <li>{blog.claroPlanLi1}</li>

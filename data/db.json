@@ -1256,7 +1256,15 @@
       "movilplanLi3": "Unlimited data, valid for 10 days for PAB 7 ($7)",
       "claroStore": "/images/simCard/alex-deleon-panama.jpg",
       "claroStoreAltText": "alex in claro store",
-      "claroStoreCaption": "Alex at the Claro store in Albrook after buying a data plan"
+      "claroStoreCaption": "Alex at the Claro store in Albrook Mall after buying a data plan",
+      "simFront": "/images/simCard/mas-movil-panama-front.jpg",
+      "simFrontAltText": "the front of mas movil sim card",
+      "simFrontCaption": "This is the front of a Más Móvil SIM card.",
+      "simBack": "/images/simCard/mas-movil-panama-back.jpg",
+      "simBackAltText": "the back of mas movil sim card",
+      "simBackCaption": "This is the  back of a Más Móvil SIM card.",
+      "recommendation": "I recommend using Más Móvil. They have the most extensive 4g network in Panama. They are reliable and their geographical coverage is wide. I used them when I was in areas far outside of Panama City and had no issues at all.",
+      "claroConnect": "Claro is known for good connectivity and wide coverage as well. I have not used Tigo or Digicel, but in looking at online coverage maps, I see that their coverage is not that wide outside of Panama City."
 
 
 

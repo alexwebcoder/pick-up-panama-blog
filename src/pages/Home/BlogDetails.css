@@ -284,6 +284,14 @@ p.this-article {
 .panama-canal .pov {
     padding-top: calc(1920/ 7376 * 100%);
 }
+
+/* Sim card images height/width */
+.sim-card-front {
+    padding-top: calc(714 / 1077 * 100%);
+}
+.sim-card-back {
+    padding-top: calc(570 / 873 * 100%);
+}
 /* Tablet menu */
 @media all and (min-width: 700px) {
     .blog-details h2 {
