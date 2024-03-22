@@ -230,14 +230,16 @@ figure {
       width: calc((100% - 75px) / 3);
       height: 100%;
  }
- .card-container article:nth-child(-n+3) {
+ .card-container article:nth-child(-n+6) {
   margin-bottom: 25px;
  }
- .card-container article:nth-child(3) {
+ .card-container article:nth-child(3), .card-container article:nth-child(6) {
   margin-right: 0;
  }
-  .card-container article:last-child {
-      margin-right: 0;
+ .card-container article:last-of-type {
+  margin-right: auto;
+  position: relative;
+  left: 15px;
  }
   .mission h1 {
       font-size: 2rem;

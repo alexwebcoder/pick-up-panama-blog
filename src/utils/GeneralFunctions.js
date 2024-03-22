@@ -38,7 +38,7 @@ export const Capitalize = () => {
     }
     if (document.title === "Using your cell phone with whatsapp in panama") {
         document.title = "Using your cell phone with WhatsApp in Panama"
-        document.getElementsByTagName('meta')["description"].content = "Save money on Cell phone service in Panama by using WhatsApp and a Panama cell phone carrier.";
+        document.getElementsByTagName('meta')["description"].content = "Save money on cell phone service in Panama by using WhatsApp and a Panama SIM card and data plan.";
     }
     if (document.title === "Pick Up Panama | Learn About Panama") {
         document.getElementsByTagName('meta')["description"].content = "Pick Up Panama is a blog that provides information, culture, and lifestyle about Panama.";
