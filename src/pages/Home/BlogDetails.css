@@ -13,6 +13,7 @@
 }
 .link {
     color: #4169E1;
+    font-weight: 600;
 }
 .no-marker {
     list-style-type: none;
@@ -375,4 +376,15 @@ p.this-article {
     .blog-details {
         margin-top: 157px;
    }
+}
+@media all and (min-width: 2400px) {
+    .blog-details .post-title {
+        width: 62%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 960px) and (max-width: 1951px) {
+    .card-container article:last-of-type {
+        height: 306px;
+    }
 }

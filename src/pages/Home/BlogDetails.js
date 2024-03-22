@@ -3997,17 +3997,17 @@ const BlogDetails = () => {
               </FacebookShareButton>
               <TwitterShareButton
                 url={currentPageUrl}
-                hashtags={["pickuppanama", "transportation", "panama"]}
-                title={"Transportation in Panama"}
+                hashtags={["pickuppanama", "whatsapp", "panama cell service"]}
+                title={"Using WhatsApp instead of your cell phone service in Panama"}
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={"Transportation in Panama"}
+                title={"Using WhatsApp instead of your cell phone service in Panama"}
                 summary={
-                  "Learn about the Panama metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
+                  "Save money on cell phone service in Panama by using WhatsApp and a Panama data plan and SIM card."
                 }
                 aria-label="linkedin"
               >
@@ -4015,9 +4015,9 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={"Transportation in Panama"}
+                subject={"Using WhatsApp instead of your cell phone service in Panama"}
                 body={
-                  "Learn about the Panama metro train, buses, and taxi system to efficiently get around without overpaying for cabs."
+                  "Save money on cell phone service in Panama by using WhatsApp and a Panama data plan and SIM card."
                 }
                 aria-label="email"
                 separator={" "}
@@ -4080,6 +4080,8 @@ const BlogDetails = () => {
             <li>{blog.useAn}</li>
             <li>{blog.ifYour}</li>
           </ul>
+          <h2>{blog.offLineMaps}</h2>
+          <p>{blog.beforeTraveling}</p>
           <h2>{blog.whatSimH2}</h2>
           <figure className="sim-card-front">
               <picture>
@@ -4283,7 +4285,8 @@ const BlogDetails = () => {
             <li>{blog.movilplanLi1}</li>
             <li>{blog.movilplanLi2}</li>
             <li>{blog.movilplanLi3}</li>
-          </ul> 
+          </ul>
+          <p className="intro no-margin-top last-figure">{blog.final}</p>
 
 
 
