@@ -36,9 +36,9 @@ export const Capitalize = () => {
         document.title = "Traditional food in Panama"
         document.getElementsByTagName('meta')["description"].content = "Discover traditional Panamanian food dishes, explore the best food in Panama City and find places to eat on a budget.";
     }
-    if (document.title === "Using your cell phone with whatsapp in panama") {
-        document.title = "Using your cell phone with WhatsApp in Panama"
-        document.getElementsByTagName('meta')["description"].content = "Save money on cell phone service in Panama by using WhatsApp and a Panama SIM card and data plan.";
+    if (document.title === "Using whatsapp instead of your cell phone service in panama") {
+        document.title = "Using WhatsApp instead of your cell phone service in Panama"
+        document.getElementsByTagName('meta')["description"].content = "Save money on cell phone service in Panama by using WhatsApp and a Panama data plan and SIM card.";
     }
     if (document.title === "Pick Up Panama | Learn About Panama") {
         document.getElementsByTagName('meta')["description"].content = "Pick Up Panama is a blog that provides information, culture, and lifestyle about Panama.";

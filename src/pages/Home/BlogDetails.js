@@ -70,6 +70,12 @@ const BlogDetails = () => {
     navigateFood("/blogs/traditional-food-in-panama");
   };
 
+  //whatsapp navigation
+  const navigateWhatsApp = useNavigate();
+  const goToWhatsAppStory = () => {
+    navigateWhatsApp ("/blogs/using-whatsapp-instead-of-your-cell-phone-service-in-panama");
+  };
+
   const currentPageUrl = window.location.href;
 
   if (document.title === "Is Panama safe to travel alone?") {
@@ -3951,8 +3957,8 @@ const BlogDetails = () => {
                 &#60;
               </button>
               <button
-                title="How Do I Visit the Panama Canal?"
-                onClick={goToCanalStory}
+                title="Using WhatsApp instead of your cell phone service in Panama"
+                onClick={goToWhatsAppStory}
               >
                 &#62;
               </button>
@@ -3962,7 +3968,7 @@ const BlogDetails = () => {
       </main>
     );
   }
-  if (document.title === "Using your cell phone with WhatsApp in Panama") {
+  if (document.title === "Using WhatsApp instead of your cell phone service in Panama") {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
@@ -4301,14 +4307,13 @@ const BlogDetails = () => {
            
             <div className="button-parent">
               <button
-                title="Is Panama safe to travel alone?"
-                onClick={goToSafetyStory}
+                title="Traditional food in Panama" onClick={goToFood}
               >
                 &#60;
               </button>
               <button
-                title="Things to do in El Cangrejo"
-                onClick={goToElCangrejoStory}
+                title="How Do I Visit the Panama Canal?"
+                onClick={goToCanalStory}
               >
                 &#62;
               </button>

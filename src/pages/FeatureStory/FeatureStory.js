@@ -29,10 +29,11 @@ const FeatureStory = () => {
   TabTitle("How Do I Visit the Panama Canal?");
   Capitalize();
 
-const navigateFood = useNavigate();
- const goToFood = () => {
-    navigateFood('/blogs/traditional-food-in-panama')
-  }
+  //whatsapp navigation
+  const navigateWhatsApp = useNavigate();
+  const goToWhatsAppStory = () => {
+    navigateWhatsApp ("/blogs/using-whatsapp-instead-of-your-cell-phone-service-in-panama");
+  };
 
   const featureNavigate = useNavigate();
   const goToSafetyStoryA = () => {
@@ -734,7 +735,7 @@ const navigateFood = useNavigate();
             </div>
             <p className="video-caption last-figure">{blog.storyVideoCaption}</p>
           <div className="button-parent">
-            <button title="Traditional food in Panama" onClick={goToFood}>&#60;</button>
+            <button title="Using WhatsApp instead of your cell phone service in Panama" onClick={goToWhatsAppStory}>&#60;</button>
             <button title="Is Panama safe to travel alone?" onClick={goToSafetyStoryA}>&#62;</button>
           </div>
         </section>
