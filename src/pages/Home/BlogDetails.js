@@ -4072,7 +4072,9 @@ const BlogDetails = () => {
             <li>{blog.cellPhone}</li>
           </ul>
           <h3>{blog.aphoneNumberH3}</h3>
-          <p>{blog.usPhoneNo}</p>
+          <ul>
+            <li>{blog.usPhoneNo}</li>
+          </ul>
           <h2>{blog.checkH2}</h2>
           <p><strong>{blog.yourPhoneMust}</strong></p>
           <ul>
@@ -4236,6 +4238,7 @@ const BlogDetails = () => {
           <p>{blog.IHave}</p>
           <h2>{blog.simPriceH2}</h2>
           <p>{blog.thePriceOf}</p>
+          <p>{blog.dataIsAll}</p>
           <h2>{blog.whereToBuyH2}</h2>
           <p>{blog.prePaidareSold}</p>
           <p>{blog.iRecommend}</p>
