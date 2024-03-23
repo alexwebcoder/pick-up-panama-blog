@@ -21,15 +21,10 @@ const findObjectById = (idToFind, arrayOfObjects) => {
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const {
-    data: blog,
-    error,
-    isPending,
-  } = useFetch("http://localhost:8000/blogs/" + id);
-  // const { data, error, isPending } = useFetch(
-  //   'https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/'
-  // );
-  // const blog = data ? findObjectById(id, data) : null;
+  const { data, error, isPending } = useFetch(
+    'https://pick-705a9-default-rtdb.firebaseio.com/blogs/.json/'
+  );
+  const blog = data ? findObjectById(id, data) : null;
 
   TabTitle(id.charAt(0).toUpperCase() + id.slice(1).split("-").join(" "));
   Capitalize();
@@ -73,7 +68,9 @@ const BlogDetails = () => {
   //whatsapp navigation
   const navigateWhatsApp = useNavigate();
   const goToWhatsAppStory = () => {
-    navigateWhatsApp ("/blogs/using-whatsapp-instead-of-your-cell-phone-service-in-panama");
+    navigateWhatsApp(
+      "/blogs/using-whatsapp-instead-of-your-cell-phone-service-in-panama"
+    );
   };
 
   const currentPageUrl = window.location.href;
@@ -3950,7 +3947,9 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.margFCaption}</figcaption>
             </figure>
-            <p className="intro no-margin-top last-figure">{blog.final}</p>
+            <p className="intro no-margin-top last-figure conclusion">
+              {blog.final}
+            </p>
 
             <div className="button-parent">
               <button title="The culture of Panama" onClick={goToCulturalNorms}>
@@ -3968,7 +3967,10 @@ const BlogDetails = () => {
       </main>
     );
   }
-  if (document.title === "Using WhatsApp instead of your cell phone service in Panama") {
+  if (
+    document.title ===
+    "Using WhatsApp instead of your cell phone service in Panama"
+  ) {
     return (
       <main id="main-element" className={`blog-details margin `}>
         {isPending && <div>Loading...</div>}
@@ -3983,10 +3985,10 @@ const BlogDetails = () => {
               </p>
             </div>
             <h1 className="centered post-title">{blog.title}</h1>
-              <p className="body intro">{blog.intro}</p>
-              <p>{blog.asLong}</p>
-              <p>{blog.bothParties}</p>
-              <p>{blog.thisArticle}</p>
+            <p className="body intro">{blog.intro}</p>
+            <p>{blog.asLong}</p>
+            <p>{blog.bothParties}</p>
+            <p>{blog.thisArticle}</p>
             <div className="share-parent">
               <FacebookShareButton
                 url={currentPageUrl}
@@ -3998,14 +4000,18 @@ const BlogDetails = () => {
               <TwitterShareButton
                 url={currentPageUrl}
                 hashtags={["pickuppanama", "whatsapp", "panama cell service"]}
-                title={"Using WhatsApp instead of your cell phone service in Panama"}
+                title={
+                  "Using WhatsApp instead of your cell phone service in Panama"
+                }
                 aria-label="twitter"
               >
                 <TwitterIcon size={35} />
               </TwitterShareButton>
               <LinkedinShareButton
                 url={currentPageUrl}
-                title={"Using WhatsApp instead of your cell phone service in Panama"}
+                title={
+                  "Using WhatsApp instead of your cell phone service in Panama"
+                }
                 summary={
                   "Save money on cell phone service in Panama by using WhatsApp and a Panama data plan and SIM card."
                 }
@@ -4015,7 +4021,9 @@ const BlogDetails = () => {
               </LinkedinShareButton>
               <EmailShareButton
                 url={currentPageUrl}
-                subject={"Using WhatsApp instead of your cell phone service in Panama"}
+                subject={
+                  "Using WhatsApp instead of your cell phone service in Panama"
+                }
                 body={
                   "Save money on cell phone service in Panama by using WhatsApp and a Panama data plan and SIM card."
                 }
@@ -4025,67 +4033,69 @@ const BlogDetails = () => {
                 <EmailIcon size={35} />
               </EmailShareButton>
             </div>
-           <h2>{blog.whyUseH2}</h2>
-           <p>{blog.whatsApUses}</p>
-           <p>{blog.whatsAppOffers}</p>
-           <p>{blog.inAddition}</p>
-           <p>{blog.inPanama}</p>
-           <h2>{blog.setUpH2}</h2>
-           <p>
+            <h2>{blog.whyUseH2}</h2>
+            <p>{blog.whatsApUses}</p>
+            <p>{blog.whatsAppOffers}</p>
+            <p>{blog.inAddition}</p>
+            <p>{blog.inPanama}</p>
+            <h2>{blog.setUpH2}</h2>
+            <p>
               <span className="six-hundred">{blog.downloadSpan}</span>{" "}
               {blog.downloadThe}
-          </p>
-          <p>
+            </p>
+            <p>
               <span className="six-hundred">{blog.verifySpan}</span>{" "}
               {blog.whenYouFirst}
-          </p>
-          <p>
+            </p>
+            <p>
               <span className="six-hundred">{blog.setUpYour}</span>{" "}
               {blog.afterVerify}
-          </p>
-          <p>
+            </p>
+            <p>
               <span className="six-hundred">{blog.addContacts}</span>{" "}
               {blog.whatsAppSyncs}
-          </p>
-          <p>
+            </p>
+            <p>
               <span className="six-hundred">{blog.startMess}</span>{" "}
               {blog.onceYou}
-          </p>
-          <p>
+            </p>
+            <p>
               <span className="six-hundred">{blog.makeCalls}</span>{" "}
               {blog.youCanAlso}
-          </p>
-          <p>
+            </p>
+            <p>
               <span className="six-hundred">{blog.exploreAdd}</span>{" "}
               {blog.whatsAppHas}
-          </p>
-          <h2>{blog.whatsAppPhoneNoH2}</h2>
-          <p>{blog.whatsAppNumbers}</p>
-          <h3>{blog.formatH3}</h3>
-          <p>{blog.countryCode}</p>
-          <h3>{blog.whatsAppNoH3}</h3>
+            </p>
+            <h2>{blog.whatsAppPhoneNoH2}</h2>
+            <p>{blog.whatsAppNumbers}</p>
+            <h3>{blog.formatH3}</h3>
+            <p>{blog.countryCode}</p>
+            <h3>{blog.whatsAppNoH3}</h3>
 
-          <ul>
-            <li>{blog.fiveOSeven}</li>
-            <li>{blog.fiveOSevenIs}</li>
-            <li>{blog.theXX}</li>
-            <li>{blog.cellPhone}</li>
-          </ul>
-          <h3>{blog.aphoneNumberH3}</h3>
-          <ul>
-            <li>{blog.usPhoneNo}</li>
-          </ul>
-          <h2>{blog.checkH2}</h2>
-          <p><strong>{blog.yourPhoneMust}</strong></p>
-          <ul>
-            <li>{blog.calling}</li>
-            <li>{blog.useAn}</li>
-            <li>{blog.ifYour}</li>
-          </ul>
-          <h2>{blog.offLineMaps}</h2>
-          <p>{blog.beforeTraveling}</p>
-          <h2>{blog.whatSimH2}</h2>
-          <figure className="sim-card-front">
+            <ul>
+              <li>{blog.fiveOSeven}</li>
+              <li>{blog.fiveOSevenIs}</li>
+              <li>{blog.theXX}</li>
+              <li>{blog.cellPhone}</li>
+            </ul>
+            <h3>{blog.aphoneNumberH3}</h3>
+            <ul>
+              <li>{blog.usPhoneNo}</li>
+            </ul>
+            <h2>{blog.checkH2}</h2>
+            <p>
+              <strong>{blog.yourPhoneMust}</strong>
+            </p>
+            <ul>
+              <li>{blog.calling}</li>
+              <li>{blog.useAn}</li>
+              <li>{blog.ifYour}</li>
+            </ul>
+            <h2>{blog.offLineMaps}</h2>
+            <p>{blog.beforeTraveling}</p>
+            <h2>{blog.whatSimH2}</h2>
+            <figure className="sim-card-front">
               <picture>
                 <source
                   type="image/webp"
@@ -4137,113 +4147,121 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.simBackCaption}</figcaption>
             </figure>
-          <p>{blog.aSIMcardIs}</p>
-          <h3>{blog.simComH3}</h3>
-          <p>{blog.simCardsCome}</p>
-          <h3>{blog.frequencyH3}</h3>
-          <p>{blog.evenThough}</p>
-          <h3>{blog.findYourPhoneH3}</h3>
-          <p>{blog.lookUp}</p>
-          <h3>{blog.compareBandsH3}</h3>
-          <h4>{blog.theMainMobile}</h4>
-          <ul>
-            <li>
-              <a
+            <p>{blog.aSIMcardIs}</p>
+            <h3>{blog.simComH3}</h3>
+            <p>{blog.simCardsCome}</p>
+            <h3>{blog.frequencyH3}</h3>
+            <p>{blog.evenThough}</p>
+            <h3>{blog.findYourPhoneH3}</h3>
+            <p>{blog.lookUp}</p>
+            <h3>{blog.compareBandsH3}</h3>
+            <h4>{blog.theMainMobile}</h4>
+            <ul>
+              <li>
+                <a
                   className="link"
                   target="_blank"
                   href="https://www.claro.com.pa/personas/"
                   rel="noopener noreferrer"
                   aria-label="claro panama"
-                >{blog.mainLi1}</a>
+                >
+                  {blog.mainLi1}
+                </a>
               </li>
               <li>
-              <a
+                <a
                   className="link"
                   target="_blank"
                   href="https://www.masmovilpanama.com/"
                   rel="noopener noreferrer"
                   aria-label="mas movil panama"
-                >{blog.mainLi2}</a>
+                >
+                  {blog.mainLi2}
+                </a>
               </li>
               <li>
-              <a
+                <a
                   className="link"
                   target="_blank"
                   href="https://www.digicelgroup.com/pa/es"
                   rel="noopener noreferrer"
                   aria-label="digicel panama"
-                >{blog.mainLi3}</a>
+                >
+                  {blog.mainLi3}
+                </a>
               </li>
               <li>
-              <a
+                <a
                   className="link"
                   target="_blank"
                   href="https://www.tigo.com.pa/"
                   rel="noopener noreferrer"
                   aria-label="tigo panama"
-                >{blog.mainLi4}</a>
+                >
+                  {blog.mainLi4}
+                </a>
               </li>
-          </ul>
-          <p>{blog.youCanUse}</p>
-          <h3>{blog.claroMasMovilH3}</h3>
-          <h4>{blog.claroH4}</h4>
-          <ul>
-            <li>
-              <span className="six-hundred">{blog.claroSpan1}</span>{" "}
-              <span>{blog.claroLi1}</span>
-            </li>
-            <li>
-              <span className="six-hundred">{blog.claroSpan2}</span>{" "}
-              <span>{blog.claroLi2}</span>
-            </li>
-            <li>
-              <span className="six-hundred">{blog.claroSpan3}</span>{" "}
-              <span>{blog.claroLi3}</span>
-            </li>
-            <li className="no-marker">
-              <ul>
-                <li>{blog.nestLiA}</li>
-                <li>{blog.nestLiB}</li>
-              </ul>
-            </li>
-          </ul>
-          <h4>{blog.masMovilH4}</h4>
-          <ul>
-            <li>
-              <span className="six-hundred">{blog.masMovSpan1}</span>{" "}
-              <span>{blog.movilLiA}</span>
-            </li>
-            <li>
-              <span className="six-hundred">{blog.masMovSpan2}</span>{" "}
-              <span>{blog.movilLiB}</span>
-            </li>
-            <li>
-              <span className="six-hundred">{blog.masMovSpan3}</span>{" "}
-              <span>{blog.movilLiC}</span>
-            </li>
-            <li className="no-marker">
-              <ul>
-                <li>{blog.mMnested1}</li>
-                <li>{blog.mMnested2}</li>
-                <li>{blog.mMnested3}</li>
-                <li>{blog.mMnested4}</li>
-              </ul>
-            </li>
-          </ul>
-          <h2>{blog.eSimVs}</h2>
-          <p>{blog.physical}</p>
-          <p>{blog.eSim}</p>
-          <p>{blog.eSImsAre}</p>
-          <p>{blog.soMake}</p>
-          <p>{blog.IHave}</p>
-          <h2>{blog.simPriceH2}</h2>
-          <p>{blog.thePriceOf}</p>
-          <p>{blog.dataIsAll}</p>
-          <h2>{blog.whereToBuyH2}</h2>
-          <p>{blog.prePaidareSold}</p>
-          <p>{blog.iRecommend}</p>
-          
-          <figure className="cell-store">
+            </ul>
+            <p>{blog.youCanUse}</p>
+            <h3>{blog.claroMasMovilH3}</h3>
+            <h4>{blog.claroH4}</h4>
+            <ul>
+              <li>
+                <span className="six-hundred">{blog.claroSpan1}</span>{" "}
+                <span>{blog.claroLi1}</span>
+              </li>
+              <li>
+                <span className="six-hundred">{blog.claroSpan2}</span>{" "}
+                <span>{blog.claroLi2}</span>
+              </li>
+              <li>
+                <span className="six-hundred">{blog.claroSpan3}</span>{" "}
+                <span>{blog.claroLi3}</span>
+              </li>
+              <li className="no-marker">
+                <ul>
+                  <li>{blog.nestLiA}</li>
+                  <li>{blog.nestLiB}</li>
+                </ul>
+              </li>
+            </ul>
+            <h4>{blog.masMovilH4}</h4>
+            <ul>
+              <li>
+                <span className="six-hundred">{blog.masMovSpan1}</span>{" "}
+                <span>{blog.movilLiA}</span>
+              </li>
+              <li>
+                <span className="six-hundred">{blog.masMovSpan2}</span>{" "}
+                <span>{blog.movilLiB}</span>
+              </li>
+              <li>
+                <span className="six-hundred">{blog.masMovSpan3}</span>{" "}
+                <span>{blog.movilLiC}</span>
+              </li>
+              <li className="no-marker">
+                <ul>
+                  <li>{blog.mMnested1}</li>
+                  <li>{blog.mMnested2}</li>
+                  <li>{blog.mMnested3}</li>
+                  <li>{blog.mMnested4}</li>
+                </ul>
+              </li>
+            </ul>
+            <h2>{blog.eSimVs}</h2>
+            <p>{blog.physical}</p>
+            <p>{blog.eSim}</p>
+            <p>{blog.eSImsAre}</p>
+            <p>{blog.soMake}</p>
+            <p>{blog.IHave}</p>
+            <h2>{blog.simPriceH2}</h2>
+            <p>{blog.thePriceOf}</p>
+            <p>{blog.dataIsAll}</p>
+            <h2>{blog.whereToBuyH2}</h2>
+            <p>{blog.prePaidareSold}</p>
+            <p>{blog.iRecommend}</p>
+
+            <figure className="cell-store">
               <picture>
                 <source
                   type="image/webp"
@@ -4262,6 +4280,7 @@ const BlogDetails = () => {
                   sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 768px) 768px, 1170px"
                 />
                 <img
+                  fetchpriority="high"
                   className="no-right-click"
                   src={blog.claroStore}
                   alt={blog.claroStoreAltText}
@@ -4269,31 +4288,31 @@ const BlogDetails = () => {
               </picture>
               <figcaption>{blog.claroStoreCaption}</figcaption>
             </figure>
-          <h2>{blog.simReg}</h2>
-          <p>{blog.whenYouPur}</p>
-          <h2>{blog.panamaMobileCar}</h2>
-          <p>{blog.recommendation}</p>
-          <p>{blog.claroConnect}</p>
-          <h3>{blog.claroPrePaid}</h3>
-          <ul>
-            <li>{blog.claroPlanLi1}</li>
-            <li>{blog.claroPlanLi2}</li>
-            <li>{blog.claroPlanLi3}</li>
-            <li>{blog.claroPlanLi4}</li>
-            <li>{blog.claroPlanLi5}</li>
-            <li>{blog.claroPlanLi6}</li>
-          </ul>
-          <h3>{blog.movilprePaid}</h3>
-          <ul>
-            <li>{blog.movilplanLi1}</li>
-            <li>{blog.movilplanLi2}</li>
-            <li>{blog.movilplanLi3}</li>
-          </ul>
-          <p className="intro no-margin-top last-figure conclusion">{blog.final}</p>
+            <h2>{blog.simReg}</h2>
+            <p>{blog.whenYouPur}</p>
+            <h2>{blog.panamaMobileCar}</h2>
+            <p>{blog.recommendation}</p>
+            <p>{blog.claroConnect}</p>
+            <h3>{blog.claroPrePaid}</h3>
+            <ul>
+              <li>{blog.claroPlanLi1}</li>
+              <li>{blog.claroPlanLi2}</li>
+              <li>{blog.claroPlanLi3}</li>
+              <li>{blog.claroPlanLi4}</li>
+              <li>{blog.claroPlanLi5}</li>
+              <li>{blog.claroPlanLi6}</li>
+            </ul>
+            <h3>{blog.movilprePaid}</h3>
+            <ul>
+              <li>{blog.movilplanLi1}</li>
+              <li>{blog.movilplanLi2}</li>
+              <li>{blog.movilplanLi3}</li>
+            </ul>
+            <p className="intro no-margin-top last-figure conclusion">
+              {blog.final}
+            </p>
             <div className="button-parent">
-              <button
-                title="Traditional food in Panama" onClick={goToFood}
-              >
+              <button title="Traditional food in Panama" onClick={goToFood}>
                 &#60;
               </button>
               <button
