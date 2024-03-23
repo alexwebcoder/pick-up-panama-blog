@@ -4289,28 +4289,7 @@ const BlogDetails = () => {
             <li>{blog.movilplanLi2}</li>
             <li>{blog.movilplanLi3}</li>
           </ul>
-          <p className="intro no-margin-top last-figure">{blog.final}</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           
+          <p className="intro no-margin-top last-figure conclusion">{blog.final}</p>
             <div className="button-parent">
               <button
                 title="Traditional food in Panama" onClick={goToFood}

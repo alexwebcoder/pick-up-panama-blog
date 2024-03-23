@@ -336,6 +336,9 @@ p.this-article {
    .button-parent button:last-child {
     margin-right: 6px;
    }
+   p.conclusion {
+    width: auto;
+}
 }
 @media all and (min-width: 1500px) {
     .blog-details .line-divider.wide:before {

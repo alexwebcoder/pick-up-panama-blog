@@ -1244,7 +1244,7 @@
       "mMnested2": "Band 4 (AWS) - 1700/2100 MHz",
       "mMnested3": "Band 7 (2600 MHz)",
       "mMnested4": "Band 28 (APT) - 700 MHz",
-      "eSimVs": "The difference between Physical SIM cards and eSIM cards",
+      "eSimVs": "The difference between physical SIM cards and eSIM cards",
       "physical": "Physical SIM cards are small, removable cards that you insert into a slot on your device. They come in various sizes, including standard (Mini-SIM), micro-SIM, and nano-SIM. Upon arrival, you would buy a physical SIM card from the Panamanian mobile carrier, take out your old SIM card (unless your phone has two SIM card slots) and put the new one in.",
       "eSim": "eSIMs are embedded directly into the device's hardware. There's no physical card to insert or remove. Instead, the eSIM is programmed with the necessary information to connect to a cellular network. Before leaving for Panama, you would order the eSIM card online, receive a QR code, follow the steps and it will automatically connect you to the Panamanian network when you land in Panama.",
       "eSImsAre": "eSIM cards are more convenient than physical SIM cards because you will have data upon arrival in Panama. However, support for eSIM technology is still kind of new so it does not have the widespread support that physical SIM cards have.",
